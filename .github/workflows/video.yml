@@ -1,0 +1,161 @@
+name: Gerar vídeo
+
+on:
+  workflow_dispatch:
+    inputs:
+      id:
+        description: "Número do roteiro (ex.: 001)"
+        required: true
+        default: "001"
+      publicar:
+        description: "Postar no YouTube?"
+        type: choice
+        options: [nao, privado, nao_listado, publico]
+        default: privado
+      agendar:
+        description: "Agendar (opcional, UTC, ex.: 2026-11-12T22:00:00Z)"
+        required: false
+  push:
+    paths: ["roteiros/[0-9][0-9][0-9].json"]
+
+concurrency:
+  group: video-${{ github.ref }}
+  cancel-in-progress: false
+
+env:
+  PARTES: 8
+
+jobs:
+  preparar:
+    runs-on: ubuntu-latest
+    outputs:
+      id: ${{ steps.id.outputs.id }}
+      partes: ${{ steps.partes.outputs.matriz }}
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 2 }
+
+      - name: Descobrir qual roteiro gerar
+        id: id
+        run: |
+          if [ -n "${{ github.event.inputs.id }}" ]; then
+            echo "id=${{ github.event.inputs.id }}" >> "$GITHUB_OUTPUT"
+          else
+            ID=$(git diff --name-only HEAD~1 HEAD -- 'roteiros/*.json' | grep -v meta | head -1 | xargs -n1 basename | cut -d. -f1)
+            echo "id=$ID" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12", cache: pip }
+
+      - name: Instalar ferramentas
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
+          pip install -q edge-tts piper-tts
+          mkdir -p modelos
+          # voz reserva (Piper) caso o Edge TTS falhe
+          curl -sL -o modelos/pt_BR-faber-medium.onnx https://huggingface.co/rhasspy/piper-voices/resolve/main/pt/pt_BR/faber/medium/pt_BR-faber-medium.onnx
+          curl -sL -o modelos/pt_BR-faber-medium.onnx.json https://huggingface.co/rhasspy/piper-voices/resolve/main/pt/pt_BR/faber/medium/pt_BR-faber-medium.onnx.json
+
+      - name: Voz e legendas
+        run: python scripts/voz.py ${{ steps.id.outputs.id }}
+
+      - name: B-roll (Pixabay)
+        env: { PIXABAY_API_KEY: "${{ secrets.PIXABAY_API_KEY }}" }
+        run: python scripts/broll.py ${{ steps.id.outputs.id }}
+
+      - name: Montar manifesto e narração
+        run: python scripts/montar.py ${{ steps.id.outputs.id }}
+
+      - name: Dividir em partes
+        id: partes
+        run: |
+          python - <<'EOF' >> "$GITHUB_OUTPUT"
+          import json, os
+          m = json.load(open(f"public/build/${{ steps.id.outputs.id }}/manifest.json"))
+          n, tot = int(os.environ["PARTES"]), m["totalFrames"]
+          passo = -(-tot // n)
+          partes = [{"i": i, "de": i * passo, "ate": min(tot, (i + 1) * passo) - 1} for i in range(n) if i * passo < tot]
+          print("matriz=" + json.dumps(partes))
+          EOF
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: build
+          path: public/build/${{ steps.id.outputs.id }}
+          retention-days: 3
+
+  renderizar:
+    needs: preparar
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: true
+      matrix:
+        parte: ${{ fromJson(needs.preparar.outputs.partes) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: npm }
+      - run: npm ci --no-audit --no-fund
+      - uses: actions/download-artifact@v4
+        with: { name: build, path: "public/build/${{ needs.preparar.outputs.id }}" }
+      - name: Renderizar parte ${{ matrix.parte.i }}
+        run: |
+          npx remotion render src/index.ts Video out/parte_${{ matrix.parte.i }}.mp4 \
+            --props=public/build/${{ needs.preparar.outputs.id }}/manifest.json \
+            --frames=${{ matrix.parte.de }}-${{ matrix.parte.ate }} --muted --concurrency=100%
+      - uses: actions/upload-artifact@v4
+        with:
+          name: parte_${{ matrix.parte.i }}
+          path: out/parte_${{ matrix.parte.i }}.mp4
+          retention-days: 2
+
+  finalizar:
+    needs: [preparar, renderizar]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: npm }
+      - run: npm ci --no-audit --no-fund
+      - uses: actions/download-artifact@v4
+        with: { pattern: parte_*, path: out, merge-multiple: true }
+      - uses: actions/download-artifact@v4
+        with: { name: build, path: "public/build/${{ needs.preparar.outputs.id }}" }
+      - name: Juntar partes e colocar o áudio
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
+          ID=${{ needs.preparar.outputs.id }}
+          ls out/parte_*.mp4 | sort -V | sed "s|^out/|file '|; s|$|'|" > out/lista.txt
+          ffmpeg -y -loglevel error -f concat -safe 0 -i out/lista.txt -c copy out/video_mudo.mp4
+          MUSICA=$(ls public/musica/*.mp3 2>/dev/null | head -1 || true)
+          if [ -n "$MUSICA" ]; then
+            ffmpeg -y -loglevel error -i out/video_mudo.mp4 -i public/build/$ID/narracao.mp3 -stream_loop -1 -i "$MUSICA" \
+              -filter_complex "[2:a]volume=0.08[m];[1:a][m]amix=inputs=2:duration=first:normalize=0[a]" \
+              -map 0:v -map "[a]" -c:v copy -c:a aac -b:a 192k -shortest out/final.mp4
+          else
+            ffmpeg -y -loglevel error -i out/video_mudo.mp4 -i public/build/$ID/narracao.mp3 \
+              -map 0:v -map 1:a -c:v copy -c:a aac -b:a 192k -shortest out/final.mp4
+          fi
+          python3 -c "import json;print(json.dumps(json.load(open('roteiros/$ID.meta.json'))['thumb']))" > out/thumb.json
+          npx remotion still src/index.ts Thumb out/thumb.png --props=out/thumb.json
+          ls -la out/final.mp4 out/thumb.png
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: video_final_${{ needs.preparar.outputs.id }}
+          path: |
+            out/final.mp4
+            out/thumb.png
+          retention-days: 14
+
+      - name: Postar no YouTube
+        if: github.event.inputs.publicar && github.event.inputs.publicar != 'nao'
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+        run: |
+          pip install -q google-api-python-client google-auth
+          python scripts/publicar.py ${{ needs.preparar.outputs.id }} out/final.mp4 out/thumb.png \
+            ${{ github.event.inputs.publicar }} ${{ github.event.inputs.agendar }}
