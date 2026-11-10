@@ -270,7 +270,7 @@ def main(vid, estimar_tempos=False):
             "id": c["id"], "texto": c["texto"], "inicio": inicio, "duracao": dur, "fala": fala,
             "palavras": palavras, "broll": mapa.get(str(c["id"])), "animacao": anim,
             "quem": c.get("quem", "cifrinho"), "personagens": atores,
-            "lofi": c.get("lofi", "leve"),
+            "lofi": c.get("lofi", "leve"), "capitulo": c.get("capitulo"),
             "brollFrames": int(duracao(RAIZ / "public" / mapa[str(c["id"])]) * FPS) if str(c["id"]) in mapa else 0,
         })
         inicio += dur

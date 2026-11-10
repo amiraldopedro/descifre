@@ -12,7 +12,8 @@
     "texto": "Teste de burrice"
    },
    "lofi": "forte",
-   "id": 1
+   "id": 1,
+   "capitulo": "Introdução"
   },
   {
    "texto": "Conta quantas você acerta de primeira. Sem pausar pra pesquisar, hein. No final, eu te digo qual é a armadilha mais perigosa de todas.",
@@ -40,7 +41,8 @@
     "texto": "Armadilha 1"
    },
    "pausa": 0.8,
-   "id": 4
+   "id": 4,
+   "capitulo": "Armadilha 1: o taco e a bola"
   },
   {
    "texto": "Um taco e uma bola custam, juntos, um real e dez centavos. O taco custa um real a mais que a bola. Quanto custa a bola?",
@@ -91,7 +93,8 @@
     "texto": "Armadilha 2"
    },
    "pausa": 0.8,
-   "id": 9
+   "id": 9,
+   "capitulo": "Armadilha 2: a frase profunda"
   },
   {
    "texto": "Qual dessas frases é mais profunda? A: água mole em pedra dura, tanto bate até que fura. B: a consciência infinita desperta a energia oculta do agora.",
@@ -144,7 +147,8 @@
     "texto": "Armadilha 3"
    },
    "pausa": 0.8,
-   "id": 14
+   "id": 14,
+   "capitulo": "Armadilha 3: o zíper"
   },
   {
    "texto": "De zero a dez, quanto você entende de como funciona um zíper? Dá uma nota. Agora, explica em voz alta, passo a passo, como os dentinhos se prendem.",
@@ -196,7 +200,8 @@
     "texto": "Armadilha 4"
    },
    "pausa": 0.8,
-   "id": 19
+   "id": 19,
+   "capitulo": "Armadilha 4: o ponto cego"
   },
   {
    "texto": "Responde com sinceridade: comparado com a pessoa média, você é mais ou menos influenciado por vieses e preconceitos?",
@@ -243,7 +248,8 @@
     "tipo": "mascote",
     "texto": "Quantas você acertou? De 0 a 4!"
    },
-   "id": 24
+   "id": 24,
+   "capitulo": "Quantas você acertou?"
   },
   {
    "texto": "Se acertou todas, parabéns. Mas lembra da armadilha quatro: achar que está livre de todas é a armadilha final.",
@@ -271,7 +277,8 @@
     "frase": "Eu posso estar errado",
     "rotulo": "O ANTÍDOTO"
    },
-   "id": 27
+   "id": 27,
+   "capitulo": "O antídoto"
   },
   {
    "texto": "Três hábitos simples: desconfie da primeira resposta rápida. Peça pra explicar antes de concordar. E procure o que provaria que você está errado.",

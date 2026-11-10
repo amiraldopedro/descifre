@@ -24,7 +24,8 @@
    "animacao": {
     "tipo": "nenhuma"
    },
-   "id": 1
+   "id": 1,
+   "capitulo": "A cena"
   },
   {
    "texto": "Mãe, eu já te expliquei mil vezes!",
@@ -96,7 +97,8 @@
     "texto": "Razão 1"
    },
    "pausa": 0.8,
-   "id": 6
+   "id": 6,
+   "capitulo": "Razão 1: a calculadora desliga"
   },
   {
    "texto": "Com um estranho ou com o chefe, o seu cérebro faz uma conta o tempo todo: quanto eu perco se for grosso agora? Com a família, essa calculadora desliga. A gente sente que o amor deles está garantido.",
@@ -125,7 +127,8 @@
     "texto": "Razão 2"
    },
    "pausa": 0.8,
-   "id": 9
+   "id": 9,
+   "capitulo": "Razão 2: ninguém lê mente"
   },
   {
    "texto": "A gente espera que quem ama entenda sem precisar explicar. Com o colega, você explica com calma. Com a mãe, você pensa: como ela ainda não sabe disso?",
@@ -152,7 +155,8 @@
     "texto": "Razão 3"
    },
    "pausa": 0.8,
-   "id": 12
+   "id": 12,
+   "capitulo": "Razão 3: o outro vira parte de você"
   },
   {
    "texto": "Quanto mais próxima uma pessoa, mais ela vira parte de você. Em mil novecentos e noventa e dois, Arthur Aron criou um teste com dois círculos, você e o outro. Quanto mais íntimos, mais os círculos se misturam.",
@@ -180,7 +184,8 @@
     "texto": "Razão 4"
    },
    "pausa": 0.8,
-   "id": 15
+   "id": 15,
+   "capitulo": "Razão 4: o sentimento escondido"
   },
   {
    "texto": "Quase sempre, a palavra dura está cobrindo outro sentimento: cansaço, preocupação, medo, solidão. Igual a um ouriço de castanha: espinhos por fora, e algo macio por dentro.",
@@ -216,7 +221,8 @@
     "tipo": "cena3d",
     "nome": "cerebro"
    },
-   "id": 19
+   "id": 19,
+   "capitulo": "Como consertar"
   },
   {
    "texto": "O psicólogo John Gottman, que estudou milhares de casais, diz que brigar todo mundo briga. O que separa as relações boas é o reparo: voltar e consertar.",
@@ -263,7 +269,8 @@
     "tipo": "sobmedida",
     "nome": "005/mensagem"
    },
-   "id": 24
+   "id": 24,
+   "capitulo": "A mensagem de uma linha"
   },
   {
    "texto": "Repara na receita: você assume o jeito, conta o sentimento escondido, e deixa claro que a culpa não era do outro. Sem textão.",

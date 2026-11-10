@@ -20,6 +20,13 @@ PRIVACIDADE = {"privado": "private", "nao_listado": "unlisted", "publico": "publ
 def capitulos(manifesto):
     """Capítulos a partir das cenas-chave (o YouTube exige começar em 0:00)."""
     fps = manifesto["fps"]
+    marcados = [c for c in manifesto["cenas"] if c.get("capitulo")]
+    if marcados:  # capítulos escritos no roteiro (campo "capitulo" na cena)
+        linhas = []
+        for c in marcados:
+            s = 0 if not linhas else int(c["inicio"] / fps)
+            linhas.append(f"{s // 60}:{s % 60:02d} {c['capitulo']}")
+        return "\n".join(linhas)
     linhas = ["0:00 Introdução"]
     for c in manifesto["cenas"]:
         a = c["animacao"]

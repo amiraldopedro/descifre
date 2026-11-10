@@ -10,7 +10,8 @@
     "tipo": "sobmedida",
     "nome": "003/cafe"
    },
-   "id": 1
+   "id": 1,
+   "capitulo": "A cadeira"
   },
   {
    "texto": "Parece bobagem. Mas a psicologia diz que gestos pequenos assim falam muito sobre quem a gente é.",
@@ -55,7 +56,8 @@
     "tipo": "sobmedida",
     "nome": "003/fatia-fina"
    },
-   "id": 6
+   "id": 6,
+   "capitulo": "O estudo das fatias finas"
   },
   {
    "texto": "Isso ganhou um nome: fatias finas. Um pedacinho de comportamento já carrega muita informação.",
@@ -84,7 +86,8 @@
     "texto": "Traço 1"
    },
    "pausa": 0.8,
-   "id": 9
+   "id": 9,
+   "capitulo": "Traço 1: o espaço dos outros"
   },
   {
    "texto": "Quem empurra a cadeira percebe o espaço que divide com os outros. O corredor, a passagem do garçom, a próxima pessoa que vai sentar ali.",
@@ -138,7 +141,8 @@
     "texto": "Traço 2"
    },
    "pausa": 0.8,
-   "id": 15
+   "id": 15,
+   "capitulo": "Traço 2: o trabalho invisível"
   },
   {
    "texto": "Quem empurra a cadeira enxerga o trabalho invisível. Alguém vai ter que arrumar aquela mesa. E essa pessoa quase nunca é notada.",
@@ -218,7 +222,8 @@
     "texto": "Traço 3"
    },
    "pausa": 0.8,
-   "id": 21
+   "id": 21,
+   "capitulo": "Traço 3: cuidar do final"
   },
   {
    "texto": "Quem empurra a cadeira se importa com como as coisas terminam. Não basta comer bem. Tem que sair bem.",
@@ -254,7 +259,8 @@
     "tipo": "ilustracao",
     "nome": "balanca"
    },
-   "id": 25
+   "id": 25,
+   "capitulo": "Bônus: a teoria do carrinho"
   },
   {
    "texto": "É um meme, não é um estudo científico. Mas a ideia por trás é a mesma: o que você faz quando ninguém está olhando.",
@@ -277,7 +283,8 @@
    "animacao": {
     "tipo": "nenhuma"
    },
-   "id": 27
+   "id": 27,
+   "capitulo": "Pista, não sentença"
   },
   {
    "texto": "E tem gente que arruma todas as cadeiras e trata mal o garçom. Um gesto é uma pista, nunca uma sentença.",

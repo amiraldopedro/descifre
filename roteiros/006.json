@@ -14,7 +14,8 @@
     }
    },
    "pausa": 3.0,
-   "id": 1
+   "id": 1,
+   "capitulo": "Teste 1: as escadas"
   },
   {
    "texto": "Guardou a letra? Esse é o primeiro de quatro testes visuais. No final eu revelo o que as suas escolhas dizem sobre você. E tem uma surpresa.",
@@ -95,7 +96,8 @@
     }
    },
    "pausa": 3.0,
-   "id": 8
+   "id": 8,
+   "capitulo": "Teste 2: as portas"
   },
   {
    "texto": "Porta vermelha: você tem coragem, mas às vezes é duro demais consigo mesmo. Porta azul: você é leal, e já se decepcionou por confiar demais. Porta amarela: você é criativo, e se cobra por não terminar tudo o que começa.",
@@ -119,7 +121,8 @@
     "a": "No meio da roda",
     "b": "Num canto, observando"
    },
-   "id": 10
+   "id": 10,
+   "capitulo": "Teste 3: a festa"
   },
   {
    "texto": "Escolhe!",
@@ -148,7 +151,8 @@
     "a": "Guardo comigo",
     "b": "Deixo onde está"
    },
-   "id": 13
+   "id": 13,
+   "capitulo": "Teste 4: a chave"
   },
   {
    "texto": "Rápido!",
@@ -181,7 +185,8 @@
     "texto": "Elas servem pra todo mundo"
    },
    "lofi": "forte",
-   "id": 17
+   "id": 17,
+   "capitulo": "A revelação"
   },
   {
    "texto": "Em mil novecentos e quarenta e nove, o psicólogo Bertram Forer aplicou um teste de personalidade nos seus alunos. Depois, entregou a cada um uma análise personalizada. De zero a cinco, a nota média de precisão foi quatro vírgula vinte e seis. Só que todos tinham recebido exatamente o mesmo texto, tirado em boa parte de um livro de astrologia.",
@@ -250,7 +255,8 @@
     "tipo": "titulo",
     "texto": "Serviria pro meu amigo?"
    },
-   "id": 24
+   "id": 24,
+   "capitulo": "Como não cair nessa"
   },
   {
    "texto": "Os testes sérios da psicologia são longos, testados em milhares de pessoas, e nem sempre dizem o que você quer ouvir. Esse é o sinal de que funcionam.",
