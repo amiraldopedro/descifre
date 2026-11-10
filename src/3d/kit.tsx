@@ -6,7 +6,7 @@
  * Regras: tudo é determinístico (usa o frame do Remotion, nunca relógio),
  * flatShading para o visual low poly, cores sempre da paleta COR.
  */
-import React, { useLayoutEffect, useMemo } from "react";
+import React, { createContext, useContext, useLayoutEffect, useMemo } from "react";
 import { ThreeCanvas } from "@remotion/three";
 import { useThree } from "@react-three/fiber";
 import * as THREE from "three";
@@ -58,6 +58,13 @@ export const useGeoDeformada = (raio: number, detalhe: number, forca: number, se
     return ng;
   }, [raio, detalhe, forca, seed, escala[0], escala[1], escala[2]]);
 
+/** Tamanho do palco: normalmente o do vídeo; no Short, uma cena deitada roda numa "telinha" 1920x1080. */
+export const TamanhoPalco = createContext<{ width: number; height: number } | null>(null);
+export const useTamanho = () => {
+  const cfg = useVideoConfig();
+  return useContext(TamanhoPalco) ?? { width: cfg.width, height: cfg.height };
+};
+
 /* ------------------------------------------------------------------ */
 /* Palco: canvas + luzes + névoa na paleta. Todas as cenas 3D usam.    */
 /* ------------------------------------------------------------------ */
@@ -68,7 +75,7 @@ export const Palco3D: React.FC<{
   fov?: number;
   fundo?: boolean; // desenha fundo azul escuro com névoa
 }> = ({ children, camera = [0, 0, 8], alvo = [0, 0, 0], fov = 40, fundo = true }) => {
-  const { width, height } = useVideoConfig();
+  const { width, height } = useTamanho();
   return (
     <ThreeCanvas
       width={width}

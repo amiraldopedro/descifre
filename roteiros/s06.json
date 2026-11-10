@@ -1,0 +1,81 @@
+{
+ "id": "s06",
+ "titulo": "Gandhi morreu com mais ou menos de 140 anos?",
+ "formato": "short",
+ "voz": "pt-BR-AntonioNeural",
+ "taxa": "+14%",
+ "trilha": "misterio",
+ "cenas": [
+  {
+   "id": 1,
+   "texto": "Responde rápido, sem pesquisar.",
+   "animacao": {
+    "tipo": "gancho",
+    "texto": "RESPONDE RÁPIDO"
+   }
+  },
+  {
+   "id": 2,
+   "texto": "Gandhi morreu com mais ou com menos de cento e quarenta anos?",
+   "broll": "old man portrait",
+   "animacao": {
+    "tipo": "pergunta",
+    "texto": "Mais ou menos de 140 anos?",
+    "a": "Mais de 140",
+    "b": "Menos de 140"
+   }
+  },
+  {
+   "id": 3,
+   "texto": "Agora chuta: com quantos anos ele morreu?",
+   "animacao": {
+    "tipo": "contagem"
+   }
+  },
+  {
+   "id": 4,
+   "texto": "Ele morreu com setenta e oito. Mas num estudo, quem ouviu cento e quarenta chutou, em média, sessenta e sete. Quem ouviu nove chutou cinquenta.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "002/ancora"
+   }
+  },
+  {
+   "id": 5,
+   "texto": "Um número absurdo puxou o chute de todo mundo. Isso é ancoragem.",
+   "broll": "anchor ship",
+   "lofi": "forte",
+   "animacao": {
+    "tipo": "conceito",
+    "nome": "Ancoragem",
+    "frase": "O primeiro número vira sua régua",
+    "rotulo": "TRUQUE DO CÉREBRO"
+   }
+  },
+  {
+   "id": 6,
+   "texto": "É o preço riscado de quinhentos reais antes do preço de duzentos.",
+   "broll": "sale price tag store",
+   "animacao": {
+    "tipo": "ilustracao",
+    "nome": "balanca"
+   }
+  },
+  {
+   "id": 7,
+   "texto": "O primeiro número não te informa. Ele te prende.",
+   "animacao": {
+    "tipo": "cena3d",
+    "nome": "cerebro"
+   }
+  },
+  {
+   "id": 8,
+   "texto": "Esse é só um dos sete testes que provam que o seu cérebro mente. Faz todos no vídeo do link.",
+   "animacao": {
+    "tipo": "cta",
+    "texto": "FAÇA AS 7 PROVAS"
+   }
+  }
+ ]
+}

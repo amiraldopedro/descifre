@@ -1,0 +1,94 @@
+{
+ "id": "s05",
+ "titulo": "Metade das pessoas não viu o gorila",
+ "formato": "short",
+ "voz": "pt-BR-AntonioNeural",
+ "taxa": "+14%",
+ "trilha": "misterio",
+ "cenas": [
+  {
+   "id": 1,
+   "texto": "Conta comigo: quantos passes o time de branco faz?",
+   "animacao": {
+    "tipo": "gancho",
+    "texto": "CONTA OS PASSES"
+   }
+  },
+  {
+   "id": 2,
+   "texto": "Em mil novecentos e noventa e nove, dois pesquisadores pediram exatamente isso para centenas de pessoas.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "002/gorila",
+    "props": {
+     "fase": "contar"
+    }
+   }
+  },
+  {
+   "id": 3,
+   "texto": "Só que, no meio do vídeo, alguém fantasiado de gorila atravessa a quadra e bate no peito.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "002/gorila",
+    "props": {
+     "fase": "revelar"
+    }
+   }
+  },
+  {
+   "id": 4,
+   "texto": "E cerca de metade simplesmente não viu o gorila.",
+   "broll": "surprised face",
+   "lofi": "forte",
+   "animacao": {
+    "tipo": "conceito",
+    "nome": "Cegueira por desatenção",
+    "frase": "O foco apaga o resto",
+    "rotulo": "TRUQUE DO CÉREBRO"
+   }
+  },
+  {
+   "id": 5,
+   "texto": "Quando você foca numa coisa, o resto pode sumir. Até um gorila.",
+   "animacao": {
+    "tipo": "cena3d",
+    "nome": "neuronios"
+   }
+  },
+  {
+   "id": 6,
+   "texto": "É por isso que mexer no celular dirigindo é tão perigoso.",
+   "broll": "texting while driving",
+   "animacao": {
+    "tipo": "nenhuma"
+   }
+  },
+  {
+   "id": 7,
+   "texto": "E aí, você teria visto?",
+   "broll": "gorilla",
+   "animacao": {
+    "tipo": "pergunta",
+    "texto": "Você teria visto o gorila?",
+    "a": "Claro que sim",
+    "b": "Talvez não"
+   }
+  },
+  {
+   "id": 8,
+   "texto": "Pensa bem.",
+   "animacao": {
+    "tipo": "contagem"
+   }
+  },
+  {
+   "id": 9,
+   "texto": "Tem mais seis provas de que o seu cérebro mente pra você. O vídeo completo tá no link.",
+   "animacao": {
+    "tipo": "cta",
+    "texto": "FAÇA AS 7 PROVAS"
+   }
+  }
+ ]
+}

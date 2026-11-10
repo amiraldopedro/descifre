@@ -6,9 +6,9 @@
  */
 import React, { useMemo } from "react";
 import * as THREE from "three";
-import { AbsoluteFill, useCurrentFrame, useVideoConfig } from "remotion";
+import { AbsoluteFill, useCurrentFrame } from "remotion";
 import { COR, FONTE_TITULO, FONTE_TEXTO } from "../../tema";
-import { CameraFixa, entre, Palco3D } from "../../3d/kit";
+import { CameraFixa, entre, Palco3D, useTamanho } from "../../3d/kit";
 import type { PropsSobMedida, SomCena } from "../tipos";
 import { Rotulo, useMolaEm } from "../comum";
 
@@ -70,7 +70,7 @@ const Barra: React.FC<{ x: number; valor: number; cor: string }> = ({ x, valor, 
 
 const AncoraCena: React.FC<PropsSobMedida> = ({ fala }) => {
   const f = useCurrentFrame();
-  const { width, height } = useVideoConfig();
+  const { width, height } = useTamanho();
   const mola = useMolaEm();
   const p = f / Math.max(1, fala);
   // projeta pontos 3D na tela para colocar os textos no lugar certo
