@@ -1,0 +1,26 @@
+name: Buscar thumbs de referência
+
+# Baixa as miniaturas de vídeos do YouTube (só para consulta) e imprime no log em base64.
+# Nada é salvo no repositório. Depois de ler o log, apague a execução.
+on:
+  workflow_dispatch:
+    inputs:
+      ids:
+        description: "IDs dos vídeos, separados por vírgula"
+        required: true
+
+jobs:
+  thumbs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixar e imprimir
+        run: |
+          sudo apt-get install -y -qq imagemagick > /dev/null 2>&1 || true
+          for id in $(echo "${{ github.event.inputs.ids }}" | tr ',' ' '); do
+            curl -sfL -o t.jpg "https://i.ytimg.com/vi/$id/maxresdefault.jpg" || curl -sfL -o t.jpg "https://i.ytimg.com/vi/$id/hqdefault.jpg" || continue
+            convert t.jpg -resize 960x540 -quality 82 p.jpg
+            echo "THUMB_INICIO $id"
+            base64 p.jpg
+            echo ""
+            echo "THUMB_FIM $id"
+          done
