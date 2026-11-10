@@ -14,6 +14,7 @@ from pathlib import Path
 RAIZ = Path(__file__).resolve().parent.parent
 CHAVE = os.environ.get("PIXABAY_API_KEY", "")
 SEM_BROLL = {"mascote", "encerramento"}  # usam o fundo cósmico da marca
+UA = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130 Safari/537.36 descifre-bot"}
 
 
 def buscar(termo, pagina=1):
@@ -21,8 +22,15 @@ def buscar(termo, pagina=1):
         "key": CHAVE, "q": termo, "per_page": 20, "page": pagina,
         "safesearch": "true", "order": "popular", "video_type": "film",
     })
-    with urllib.request.urlopen(f"https://pixabay.com/api/videos/?{q}", timeout=30) as r:
-        return json.load(r).get("hits", [])
+    req = urllib.request.Request(f"https://pixabay.com/api/videos/?{q}", headers=UA)
+    for i in range(3):
+        try:
+            with urllib.request.urlopen(req, timeout=30) as r:
+                return json.load(r).get("hits", [])
+        except Exception as e:
+            print(f"  busca '{termo}' falhou ({e})")
+            time.sleep(2 + 3 * i)
+    return []
 
 
 def escolher(hits, usados):
@@ -42,11 +50,15 @@ def baixar(url, destino: Path):
         return
     for i in range(4):
         try:
-            urllib.request.urlretrieve(url, destino)
+            req = urllib.request.Request(url, headers=UA)
+            with urllib.request.urlopen(req, timeout=120) as r, open(destino, "wb") as f:
+                while bloco := r.read(1 << 20):
+                    f.write(bloco)
             return
         except Exception:
             time.sleep(2 ** i)
-    raise RuntimeError(f"falha ao baixar {url}")
+    print(f"  falha ao baixar {url}")
+    destino.unlink(missing_ok=True)
 
 
 def main(vid):
@@ -76,6 +88,8 @@ def main(vid):
         time.sleep(0.7)  # limite: 100 buscas/min
     with ThreadPoolExecutor(6) as ex:
         list(ex.map(lambda a: baixar(*a), tarefas))
+    # remove do mapa o que não baixou (a cena usa o Cifrinho no lugar)
+    mapa = {k: v for k, v in mapa.items() if (RAIZ / "public" / v).exists()}
     (pasta / "mapa.json").write_text(json.dumps(mapa))
     print(f"b-roll pronto: {len(mapa)} clipes")
 
