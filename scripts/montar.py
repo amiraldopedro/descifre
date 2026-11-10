@@ -65,6 +65,7 @@ def main(vid, estimar_tempos=False):
         cenas.append({
             "id": c["id"], "texto": c["texto"], "inicio": inicio, "duracao": dur, "fala": fala,
             "palavras": palavras, "broll": mapa.get(str(c["id"])), "animacao": anim,
+            "brollFrames": int(duracao(RAIZ / "public" / mapa[str(c["id"])]) * FPS) if str(c["id"]) in mapa else 0,
         })
         inicio += dur
 

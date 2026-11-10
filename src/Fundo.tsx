@@ -1,5 +1,5 @@
 import React, { useMemo } from "react";
-import { AbsoluteFill, OffthreadVideo, interpolate, random, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
+import { AbsoluteFill, Loop, OffthreadVideo, interpolate, random, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
 import { COR } from "./tema";
 
 /** Fundo cósmico da marca (usado quando não há b-roll e nas cenas do mascote). */
@@ -40,23 +40,24 @@ export const FundoCosmico: React.FC = () => {
 };
 
 /** B-roll com zoom lento e tinta azul da marca. */
-export const BRoll: React.FC<{ src: string; duracao: number }> = ({ src, duracao }) => {
+export const BRoll: React.FC<{ src: string; duracao: number; clipe?: number }> = ({ src, duracao, clipe }) => {
   const f = useCurrentFrame();
   const { fps } = useVideoConfig();
   const escala = interpolate(f, [0, duracao], [1.02, 1.12]);
   return (
     <AbsoluteFill style={{ backgroundColor: COR.azulEscuro }}>
       <AbsoluteFill style={{ transform: `scale(${escala})` }}>
-        <OffthreadVideo
-          src={staticFile(src)}
-          muted
-          style={{ width: "100%", height: "100%", objectFit: "cover" }}
-          // repete o clipe se a cena for maior que o vídeo
-          loop
-          pauseWhenBuffering={false}
-          delayRenderTimeoutInMilliseconds={60_000}
-          acceptableTimeShiftInSeconds={1 / fps}
-        />
+        {/* repete o clipe se a cena for maior que ele */}
+        <Loop durationInFrames={Math.max(30, clipe && clipe > 2 ? clipe - 2 : duracao + 30)} layout="none">
+          <OffthreadVideo
+            src={staticFile(src)}
+            muted
+            style={{ width: "100%", height: "100%", objectFit: "cover" }}
+            pauseWhenBuffering={false}
+            delayRenderTimeoutInMilliseconds={60_000}
+            acceptableTimeShiftInSeconds={1 / fps}
+          />
+        </Loop>
       </AbsoluteFill>
       <AbsoluteFill
         style={{

@@ -19,7 +19,7 @@ const CenaView: React.FC<{ cena: Cena }> = ({ cena }) => {
 
   return (
     <AbsoluteFill style={{ opacity: fade }}>
-      {cosmico ? <FundoCosmico /> : <BRoll src={cena.broll!} duracao={cena.duracao} />}
+      {cosmico ? <FundoCosmico /> : <BRoll src={cena.broll!} duracao={cena.duracao} clipe={cena.brollFrames} />}
       {temOverlayGrande && !cosmico && <AbsoluteFill style={{ backgroundColor: "rgba(7,15,51,.45)" }} />}
       <CamadaAnimacao anim={cena.animacao} falando={falando} fala={cena.fala} duracao={cena.duracao} />
       {/* sem b-roll: o Cifrinho ocupa o centro da tela, conversando */}

@@ -39,6 +39,7 @@ export type Cena = {
   fala: number; // frames de fala (o resto é pausa)
   palavras: Palavra[]; // tempos em segundos, relativos ao início da cena
   broll: string | null; // caminho em public/
+  brollFrames?: number; // duração do clipe (frames)
   animacao: Animacao;
 };
 
