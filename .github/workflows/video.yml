@@ -131,7 +131,7 @@ jobs:
           MUSICA=$(ls public/musica/*.mp3 2>/dev/null | head -1 || true)
           if [ -n "$MUSICA" ]; then
             ffmpeg -y -loglevel error -i out/video_mudo.mp4 -i public/build/$ID/narracao.mp3 -stream_loop -1 -i "$MUSICA" \
-              -filter_complex "[2:a]volume=0.08[m];[1:a][m]amix=inputs=2:duration=first:normalize=0[a]" \
+              -filter_complex "[2:a]volume=0.35,aformat=channel_layouts=stereo[m];[1:a]aformat=channel_layouts=stereo,asplit=2[v1][v2];[m][v2]sidechaincompress=threshold=0.02:ratio=10:attack=80:release=700[md];[v1][md]amix=inputs=2:duration=first:normalize=0[a]" \
               -map 0:v -map "[a]" -c:v copy -c:a aac -b:a 192k -shortest out/final.mp4
           else
             ffmpeg -y -loglevel error -i out/video_mudo.mp4 -i public/build/$ID/narracao.mp3 \
