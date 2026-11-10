@@ -6,4 +6,4 @@ Config.setJpegQuality(90);
 Config.setCodec("h264");
 Config.setOverwriteOutput(true);
 Config.setChromiumMultiProcessOnLinux(true);
-Config.setChromiumOpenGlRenderer("angle"); // cenas 3D (Three.js) sem GPU
+Config.setChromiumOpenGlRenderer("swangle"); // 3D por software: o GitHub não tem GPU
