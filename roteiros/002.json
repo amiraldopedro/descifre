@@ -12,7 +12,8 @@
     "texto": "Seu cérebro mente"
    },
    "lofi": "forte",
-   "id": 1
+   "id": 1,
+   "capitulo": "Introdução"
   },
   {
    "texto": "Hoje eu vou provar isso com sete testes rápidos. Faz cada um comigo, e sem trapacear, hein.",
@@ -37,7 +38,8 @@
     "texto": "Prova 1"
    },
    "pausa": 0.8,
-   "id": 4
+   "id": 4,
+   "capitulo": "Prova 1: as duas linhas"
   },
   {
    "texto": "Olha essas duas linhas. Qual é a maior: a de cima ou a de baixo? Responde rápido.",
@@ -79,7 +81,8 @@
     "texto": "Prova 2"
    },
    "pausa": 0.8,
-   "id": 8
+   "id": 8,
+   "capitulo": "Prova 2: o gorila invisível"
   },
   {
    "texto": "Em mil novecentos e noventa e nove, dois pesquisadores mostraram um vídeo e pediram uma coisa simples: conte quantos passes o time de camiseta branca faz.",
@@ -122,7 +125,8 @@
     "texto": "Prova 3"
    },
    "pausa": 0.8,
-   "id": 12
+   "id": 12,
+   "capitulo": "Prova 3: a troca atrás da porta"
   },
   {
    "texto": "Um pesquisador para alguém na rua e pede uma informação. No meio da conversa, dois homens passam carregando uma porta entre os dois. E, escondido atrás dela, o pesquisador é trocado por outra pessoa, com outra roupa.",
@@ -155,7 +159,8 @@
     "texto": "Prova 4"
    },
    "pausa": 0.8,
-   "id": 15
+   "id": 15,
+   "capitulo": "Prova 4: a idade de Gandhi"
   },
   {
    "texto": "Responde rápido: Gandhi morreu com mais ou com menos de cento e quarenta anos?",
@@ -204,7 +209,8 @@
     "texto": "Prova 5"
    },
    "pausa": 0.8,
-   "id": 20
+   "id": 20,
+   "capitulo": "Prova 5: o elevador e as linhas de Asch"
   },
   {
    "texto": "Num programa de TV de mil novecentos e sessenta e dois, uma pessoa entra num elevador. E todo mundo lá dentro está virado para o fundo. Ela estranha. Olha pros lados. E, em poucos segundos, se vira também.",
@@ -238,7 +244,8 @@
     "texto": "Prova 6"
    },
    "pausa": 0.8,
-   "id": 24
+   "id": 24,
+   "capitulo": "Prova 6: o efeito halo"
   },
   {
    "texto": "Imagina dois currículos idênticos, palavra por palavra. Só muda a foto: uma pessoa sorrindo, bem arrumada, e outra de cara fechada. Quem parece mais competente, mais honesta e até mais inteligente?",
@@ -276,7 +283,8 @@
     "texto": "Prova 7"
    },
    "pausa": 0.8,
-   "id": 28
+   "id": 28,
+   "capitulo": "Prova 7: a regra secreta 2-4-6"
   },
   {
    "texto": "Eu tenho uma regra secreta, e a sequência dois, quatro, seis segue essa regra. Que outros três números você testaria para descobrir qual é?",
@@ -329,7 +337,8 @@
     "tipo": "mascote",
     "texto": "Quantas você acertou? De 0 a 7!"
    },
-   "id": 33
+   "id": 33,
+   "capitulo": "Quantas você acertou?"
   },
   {
    "texto": "E não se sinta mal. Esses atalhos existem porque o cérebro precisa decidir rápido, gastando pouca energia.",
