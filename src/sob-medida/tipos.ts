@@ -21,7 +21,7 @@ export type PropsSobMedida = {
 
 /** Efeito sonoro da cena. Use "p" (0..1, proporção da FALA — acompanha a narração, recomendado)
  *  ou "t" (segundos fixos desde o início da cena). "vol" opcional (padrão 1). */
-export type SomCena = { som: NomeSom; p?: number; t?: number; vol?: number };
+export type SomCena = { som: NomeSom; p?: number; t?: number; fim?: number; vol?: number; fase?: string }; // fase = só toca quando props.fase for igual // fim = segundos antes do fim da cena
 
 /** Converte proporção da fala em frame (use na cena para bater com os sons). */
 export const emP = (p: number, fala: number) => p * fala;

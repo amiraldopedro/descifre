@@ -220,14 +220,14 @@ const Cartoes: React.FC<{ texto: string; a: string; b: string; relogio?: number 
   );
 };
 
-const Conceito: React.FC<{ nome: string; frase: string }> = ({ nome, frase }) => {
+const Conceito: React.FC<{ nome: string; frase: string; rotulo?: string }> = ({ nome, frase, rotulo = "GATILHO MENTAL" }) => {
   const f = useCurrentFrame();
   const e = useMola(0, 280);
   const glitch = f < 12 ? Math.sin(f * 3) * 10 : 0;
   return (
     <AbsoluteFill style={{ alignItems: "center", paddingTop: 300 }}>
       <div style={{ fontFamily: FONTE_TEXTO, fontWeight: 800, fontSize: 46, letterSpacing: 14, color: COR.ciano, opacity: e }}>
-        GATILHO MENTAL
+        {rotulo}
       </div>
       <div
         style={{
@@ -348,7 +348,7 @@ const CenaShort: React.FC<{ cena: Cena; ultima: number | null }> = ({ cena, ulti
       {a.tipo === "contagem" && a.pergunta && (
         <Cartoes texto={a.pergunta.texto} a={a.pergunta.a} b={a.pergunta.b} relogio={f >= cena.fala ? (cena.duracao - f) / fps : undefined} />
       )}
-      {a.tipo === "conceito" && <Conceito nome={a.nome} frase={a.frase} />}
+      {a.tipo === "conceito" && <Conceito nome={a.nome} frase={a.frase} rotulo={a.rotulo} />}
       {a.tipo === "cta" && <Cta texto={a.texto} falando={falando} />}
       {a.tipo === "ilustracao" && (
         <AbsoluteFill style={{ alignItems: "center", paddingTop: temPalco ? 190 : 330 }}>

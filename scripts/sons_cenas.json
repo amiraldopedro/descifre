@@ -1,4 +1,262 @@
 {
+ "002/ancora": [
+  {
+   "som": "pop",
+   "p": 0.03
+  },
+  {
+   "som": "desce",
+   "p": 0.2
+  },
+  {
+   "som": "batida",
+   "p": 0.28
+  },
+  {
+   "som": "sobe",
+   "p": 0.6
+  },
+  {
+   "som": "ding",
+   "p": 0.84
+  },
+  {
+   "som": "sobe",
+   "p": 0.89,
+   "vol": 0.8
+  },
+  {
+   "som": "ding",
+   "p": 0.99
+  }
+ ],
+ "002/gorila": [
+  {
+   "som": "whoosh",
+   "p": 0.05,
+   "fase": "contar"
+  },
+  {
+   "som": "pop",
+   "p": 0.75,
+   "fase": "contar"
+  },
+  {
+   "som": "passos",
+   "p": 0.15,
+   "fase": "revelar"
+  },
+  {
+   "som": "batida",
+   "p": 0.47,
+   "fase": "revelar"
+  },
+  {
+   "som": "batida",
+   "p": 0.51,
+   "fase": "revelar"
+  },
+  {
+   "som": "batida",
+   "p": 0.55,
+   "fase": "revelar"
+  },
+  {
+   "som": "batida",
+   "p": 0.59,
+   "fase": "revelar"
+  },
+  {
+   "som": "boom",
+   "p": 0.74,
+   "fase": "revelar"
+  }
+ ],
+ "002/halo": [
+  {
+   "som": "whoosh",
+   "p": 0.02
+  },
+  {
+   "som": "pop",
+   "p": 0.15
+  },
+  {
+   "som": "pop",
+   "p": 0.3
+  },
+  {
+   "som": "desce",
+   "p": 0.56
+  },
+  {
+   "som": "brilho",
+   "p": 0.72
+  },
+  {
+   "som": "pop",
+   "p": 0.75
+  },
+  {
+   "som": "pop",
+   "p": 0.84
+  },
+  {
+   "som": "pop",
+   "p": 0.93
+  }
+ ],
+ "002/muller-lyer": [
+  {
+   "som": "pop",
+   "p": 0.1,
+   "fase": "pergunta"
+  },
+  {
+   "som": "pop",
+   "p": 0.2,
+   "fase": "pergunta"
+  },
+  {
+   "som": "tique",
+   "fim": 3,
+   "fase": "pergunta"
+  },
+  {
+   "som": "tique",
+   "fim": 2,
+   "fase": "pergunta"
+  },
+  {
+   "som": "tique",
+   "fim": 1,
+   "fase": "pergunta"
+  },
+  {
+   "som": "desce",
+   "p": 0.1,
+   "fase": "revelacao"
+  },
+  {
+   "som": "sobe",
+   "p": 0.3,
+   "fase": "revelacao"
+  },
+  {
+   "som": "boom",
+   "p": 0.5,
+   "fase": "revelacao"
+  }
+ ],
+ "002/porta": [
+  {
+   "som": "pop",
+   "p": 0.06
+  },
+  {
+   "som": "passos",
+   "p": 0.3
+  },
+  {
+   "som": "passos",
+   "p": 0.5
+  },
+  {
+   "som": "glitch",
+   "p": 0.58
+  },
+  {
+   "som": "ding",
+   "p": 0.88
+  }
+ ],
+ "002/wason": [
+  {
+   "som": "click",
+   "p": 0.06,
+   "fase": "pergunta"
+  },
+  {
+   "som": "pop",
+   "p": 0.32,
+   "fase": "pergunta"
+  },
+  {
+   "som": "pop",
+   "p": 0.37,
+   "fase": "pergunta"
+  },
+  {
+   "som": "pop",
+   "p": 0.42,
+   "fase": "pergunta"
+  },
+  {
+   "som": "ding",
+   "p": 0.5,
+   "fase": "pergunta"
+  },
+  {
+   "som": "tique",
+   "fim": 3,
+   "fase": "pergunta"
+  },
+  {
+   "som": "tique",
+   "fim": 2,
+   "fase": "pergunta"
+  },
+  {
+   "som": "tique",
+   "fim": 1,
+   "fase": "pergunta"
+  },
+  {
+   "som": "pop",
+   "p": 0.18,
+   "fase": "testes"
+  },
+  {
+   "som": "pop",
+   "p": 0.33,
+   "fase": "testes"
+  },
+  {
+   "som": "ding",
+   "p": 0.45,
+   "fase": "testes"
+  },
+  {
+   "som": "ding",
+   "p": 0.5,
+   "fase": "testes"
+  },
+  {
+   "som": "pop",
+   "p": 0.85,
+   "fase": "testes"
+  },
+  {
+   "som": "click",
+   "p": 0.08,
+   "fase": "revelar"
+  },
+  {
+   "som": "brilho",
+   "p": 0.12,
+   "fase": "revelar"
+  },
+  {
+   "som": "ding",
+   "p": 0.45,
+   "fase": "revelar"
+  },
+  {
+   "som": "glitch",
+   "p": 0.75,
+   "fase": "revelar"
+  }
+ ],
  "d02/elevador": [
   {
    "som": "porta",

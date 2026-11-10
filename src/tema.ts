@@ -23,9 +23,9 @@ export type Animacao =
   | { tipo: "nenhuma" }
   | { tipo: "titulo"; texto: string }
   | { tipo: "mascote"; texto: string }
-  | { tipo: "pergunta"; numero: number; texto: string; a: string; b: string }
-  | { tipo: "contagem"; pergunta?: { numero: number; texto: string; a: string; b: string } }
-  | { tipo: "conceito"; nome: string; frase: string }
+  | { tipo: "pergunta"; numero: number; texto: string; a: string; b: string; rotulo?: string; total?: number }
+  | { tipo: "contagem"; pergunta?: { numero: number; texto: string; a: string; b: string; rotulo?: string; total?: number } }
+  | { tipo: "conceito"; nome: string; frase: string; rotulo?: string }
   | { tipo: "citacao"; texto: string; autor: string }
   | { tipo: "lista"; itens: string[] }
   | { tipo: "resultado"; faixa: string; titulo: string }

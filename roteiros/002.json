@@ -1,0 +1,378 @@
+{
+ "id": "002",
+ "titulo": "Seu cérebro mente pra você: 7 provas (faça o teste)",
+ "trilha": "misterio",
+ "voz": "pt-BR-AntonioNeural",
+ "cenas": [
+  {
+   "texto": "Seu cérebro está mentindo pra você agora mesmo. E não é de vez em quando: é o tempo todo.",
+   "animacao": {
+    "tipo": "cena3d",
+    "nome": "cabeca",
+    "texto": "Seu cérebro mente"
+   },
+   "lofi": "forte",
+   "id": 1
+  },
+  {
+   "texto": "Hoje eu vou provar isso com sete testes rápidos. Faz cada um comigo, e sem trapacear, hein.",
+   "animacao": {
+    "tipo": "nenhuma"
+   },
+   "id": 2
+  },
+  {
+   "texto": "E fica até o final, porque o último teste quase ninguém acerta de primeira.",
+   "animacao": {
+    "tipo": "ilustracao",
+    "nome": "interrogacao"
+   },
+   "id": 3
+  },
+  {
+   "texto": "Prova número um.",
+   "animacao": {
+    "tipo": "cena3d",
+    "nome": "tunel",
+    "texto": "Prova 1"
+   },
+   "pausa": 0.8,
+   "id": 4
+  },
+  {
+   "texto": "Olha essas duas linhas. Qual é a maior: a de cima ou a de baixo? Responde rápido.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "002/muller-lyer",
+    "props": {
+     "fase": "pergunta"
+    }
+   },
+   "pausa": 3.0,
+   "id": 5
+  },
+  {
+   "texto": "Agora olha de novo, sem as setinhas. As duas têm exatamente o mesmo tamanho. É a ilusão de Müller-Lyer, descrita em mil oitocentos e oitenta e nove.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "002/muller-lyer",
+    "props": {
+     "fase": "revelacao"
+    }
+   },
+   "id": 6
+  },
+  {
+   "texto": "E mesmo sabendo a resposta, o seu olho continua vendo uma maior que a outra. O cérebro não mostra o mundo como ele é. Ele mostra o melhor chute dele.",
+   "animacao": {
+    "tipo": "cena3d",
+    "nome": "neuronios",
+    "texto": "O cérebro chuta"
+   },
+   "id": 7
+  },
+  {
+   "texto": "Prova número dois.",
+   "animacao": {
+    "tipo": "cena3d",
+    "nome": "tunel",
+    "texto": "Prova 2"
+   },
+   "pausa": 0.8,
+   "id": 8
+  },
+  {
+   "texto": "Em mil novecentos e noventa e nove, dois pesquisadores mostraram um vídeo e pediram uma coisa simples: conte quantos passes o time de camiseta branca faz.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "002/gorila",
+    "props": {
+     "fase": "contar"
+    }
+   },
+   "id": 9
+  },
+  {
+   "texto": "No meio do vídeo, uma pessoa fantasiada de gorila atravessa a quadra, para no meio e bate no peito. E cerca de metade dos participantes simplesmente não viu o gorila.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "002/gorila",
+    "props": {
+     "fase": "revelar"
+    }
+   },
+   "id": 10
+  },
+  {
+   "texto": "Isso tem nome: cegueira por desatenção. Quando você foca numa coisa, o resto pode sumir. É por isso que mexer no celular dirigindo é tão perigoso.",
+   "animacao": {
+    "tipo": "conceito",
+    "nome": "Cegueira por desatenção",
+    "frase": "O foco apaga o resto",
+    "rotulo": "TRUQUE DO CÉREBRO"
+   },
+   "broll": "texting while driving",
+   "id": 11
+  },
+  {
+   "texto": "Prova número três.",
+   "animacao": {
+    "tipo": "cena3d",
+    "nome": "tunel",
+    "texto": "Prova 3"
+   },
+   "pausa": 0.8,
+   "id": 12
+  },
+  {
+   "texto": "Um pesquisador para alguém na rua e pede uma informação. No meio da conversa, dois homens passam carregando uma porta entre os dois. E, escondido atrás dela, o pesquisador é trocado por outra pessoa, com outra roupa.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "002/porta"
+   },
+   "id": 13
+  },
+  {
+   "texto": "E metade das pessoas continuou explicando o caminho, sem perceber que estava falando com outro homem. É a cegueira para mudanças.",
+   "animacao": {
+    "tipo": "ilustracao",
+    "nome": "olho"
+   },
+   "personagens": [
+    {
+     "id": "cifrinho",
+     "gesto": "surpreso",
+     "expressao": "surpreso"
+    }
+   ],
+   "id": 14
+  },
+  {
+   "texto": "Prova número quatro.",
+   "animacao": {
+    "tipo": "cena3d",
+    "nome": "tunel",
+    "texto": "Prova 4"
+   },
+   "pausa": 0.8,
+   "id": 15
+  },
+  {
+   "texto": "Responde rápido: Gandhi morreu com mais ou com menos de cento e quarenta anos?",
+   "animacao": {
+    "tipo": "pergunta",
+    "numero": 4,
+    "total": 7,
+    "rotulo": "PROVA",
+    "texto": "Gandhi morreu com mais ou menos de 140 anos?",
+    "a": "Mais de 140",
+    "b": "Menos de 140"
+   },
+   "id": 16
+  },
+  {
+   "texto": "Agora chuta: com quantos anos ele morreu?",
+   "animacao": {
+    "tipo": "contagem"
+   },
+   "id": 17
+  },
+  {
+   "texto": "Ele morreu com setenta e oito anos. Mas repara: o número absurdo da pergunta puxou o seu chute. Num estudo de mil novecentos e noventa e sete, quem ouviu cento e quarenta chutou, em média, sessenta e sete anos. Quem ouviu nove chutou cinquenta.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "002/ancora"
+   },
+   "id": 18
+  },
+  {
+   "texto": "Isso se chama ancoragem. É o truque da loja que mostra o preço riscado de quinhentos reais antes do preço de duzentos. O primeiro número vira a sua régua.",
+   "animacao": {
+    "tipo": "conceito",
+    "nome": "Ancoragem",
+    "frase": "O primeiro número manda",
+    "rotulo": "TRUQUE DO CÉREBRO"
+   },
+   "broll": "sale price tag store",
+   "id": 19
+  },
+  {
+   "texto": "Prova número cinco.",
+   "animacao": {
+    "tipo": "cena3d",
+    "nome": "tunel",
+    "texto": "Prova 5"
+   },
+   "pausa": 0.8,
+   "id": 20
+  },
+  {
+   "texto": "Num programa de TV de mil novecentos e sessenta e dois, uma pessoa entra num elevador. E todo mundo lá dentro está virado para o fundo. Ela estranha. Olha pros lados. E, em poucos segundos, se vira também.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "d02/elevador"
+   },
+   "id": 21
+  },
+  {
+   "texto": "Em mil novecentos e cinquenta e um, Solomon Asch mostrou três linhas e perguntou qual era igual à de referência. Sete atores responderam errado de propósito. E três em cada quatro pessoas concordaram com o grupo pelo menos uma vez.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "d02/linhas-asch"
+   },
+   "id": 22
+  },
+  {
+   "texto": "Ficar contra o grupo incomoda de verdade. Para os nossos ancestrais, ser expulso do bando podia ser fatal. O cérebro ainda não recebeu o recado de que isso mudou.",
+   "animacao": {
+    "tipo": "cena3d",
+    "nome": "multidao"
+   },
+   "id": 23
+  },
+  {
+   "texto": "Prova número seis.",
+   "animacao": {
+    "tipo": "cena3d",
+    "nome": "tunel",
+    "texto": "Prova 6"
+   },
+   "pausa": 0.8,
+   "id": 24
+  },
+  {
+   "texto": "Imagina dois currículos idênticos, palavra por palavra. Só muda a foto: uma pessoa sorrindo, bem arrumada, e outra de cara fechada. Quem parece mais competente, mais honesta e até mais inteligente?",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "002/halo"
+   },
+   "id": 25
+  },
+  {
+   "texto": "Isso é o efeito halo: uma única qualidade boa contamina todo o resto. Num estudo de mil novecentos e setenta e sete, o mesmo professor, gravado sendo simpático ou sendo frio, mudava até o que os alunos achavam do sotaque dele.",
+   "animacao": {
+    "tipo": "conceito",
+    "nome": "Efeito halo",
+    "frase": "Uma qualidade pinta o resto",
+    "rotulo": "TRUQUE DO CÉREBRO"
+   },
+   "broll": "job interview smiling",
+   "id": 26
+  },
+  {
+   "texto": "E funciona ao contrário também. Um defeito pequeno faz a gente desconfiar de tudo. E golpista sabe disso: ele capricha na aparência.",
+   "animacao": {
+    "tipo": "ilustracao",
+    "nome": "marionete"
+   },
+   "broll": "man in suit walking",
+   "id": 27
+  },
+  {
+   "texto": "Prova número sete, a última.",
+   "animacao": {
+    "tipo": "cena3d",
+    "nome": "tunel",
+    "texto": "Prova 7"
+   },
+   "pausa": 0.8,
+   "id": 28
+  },
+  {
+   "texto": "Eu tenho uma regra secreta, e a sequência dois, quatro, seis segue essa regra. Que outros três números você testaria para descobrir qual é?",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "002/wason",
+    "props": {
+     "fase": "pergunta"
+    }
+   },
+   "pausa": 3.5,
+   "id": 29
+  },
+  {
+   "texto": "A maioria testa coisas como oito, dez, doze. Ou vinte, quarenta, sessenta. Tudo dá certo, e a pessoa jura que a regra é somar de dois em dois.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "002/wason",
+    "props": {
+     "fase": "testes"
+    }
+   },
+   "id": 30
+  },
+  {
+   "texto": "Mas a regra era só: números em ordem crescente. Um, dois, três também valia. Quase ninguém testa uma sequência que poderia dar errado.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "002/wason",
+    "props": {
+     "fase": "revelar"
+    }
+   },
+   "id": 31
+  },
+  {
+   "texto": "Isso é o viés de confirmação: a gente procura provas de que está certo, e não de que está errado. É o mesmo motivo que faz o seu feed mostrar só o que você já concorda.",
+   "animacao": {
+    "tipo": "conceito",
+    "nome": "Viés de confirmação",
+    "frase": "A gente só procura o sim",
+    "rotulo": "TRUQUE DO CÉREBRO"
+   },
+   "broll": "scrolling phone social media",
+   "id": 32
+  },
+  {
+   "texto": "E aí, quantas você acertou? Escreve aqui nos comentários, de zero a sete.",
+   "animacao": {
+    "tipo": "mascote",
+    "texto": "Quantas você acertou? De 0 a 7!"
+   },
+   "id": 33
+  },
+  {
+   "texto": "E não se sinta mal. Esses atalhos existem porque o cérebro precisa decidir rápido, gastando pouca energia.",
+   "animacao": {
+    "tipo": "cena3d",
+    "nome": "cerebro"
+   },
+   "id": 34
+  },
+  {
+   "texto": "O problema não é ter atalhos. É não saber que eles existem. E agora você sabe.",
+   "animacao": {
+    "tipo": "ilustracao",
+    "nome": "lampada"
+   },
+   "personagens": [
+    {
+     "id": "cifrinho",
+     "gesto": "apontar"
+    }
+   ],
+   "id": 35
+  },
+  {
+   "texto": "Se esse vídeo mexeu com a sua cabeça, se inscreve e manda pra aquele amigo que jura que nunca é enganado.",
+   "animacao": {
+    "tipo": "nenhuma"
+   },
+   "personagens": [
+    {
+     "id": "cifrinho",
+     "gesto": "comemorar",
+     "expressao": "piscadela"
+    }
+   ],
+   "id": 36
+  },
+  {
+   "texto": "Eu sou o Cifrinho. Descifre e domine.",
+   "animacao": {
+    "tipo": "encerramento"
+   },
+   "id": 37
+  }
+ ]
+}

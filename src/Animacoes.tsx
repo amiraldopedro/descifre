@@ -50,12 +50,14 @@ const Titulo: React.FC<{ texto: string }> = ({ texto }) => {
   );
 };
 
-const Pergunta: React.FC<{ numero: number; texto: string; a: string; b: string; relogio?: number }> = ({
+const Pergunta: React.FC<{ numero: number; texto: string; a: string; b: string; relogio?: number; rotulo?: string; total?: number }> = ({
   numero,
   texto,
   a,
   b,
   relogio,
+  rotulo = "SITUAÇÃO",
+  total = 7,
 }) => {
   const e = useEntrada();
   const ea = useEntrada(8);
@@ -104,7 +106,7 @@ const Pergunta: React.FC<{ numero: number; texto: string; a: string; b: string; 
           opacity: e,
         }}
       >
-        SITUAÇÃO {numero} DE 7
+        {rotulo} {numero} DE {total}
       </div>
       <div
         style={{
@@ -164,16 +166,16 @@ const Relogio: React.FC<{ segundos: number }> = ({ segundos }) => {
   );
 };
 
-const Conceito: React.FC<{ nome: string; frase: string }> = ({ nome, frase }) => {
+const Conceito: React.FC<{ nome: string; frase: string; rotulo?: string }> = ({ nome, frase, rotulo = "GATILHO MENTAL" }) => {
   const e = useEntrada();
   const e2 = useEntrada(10);
   return (
     <AbsoluteFill style={{ justifyContent: "center", alignItems: "center", paddingBottom: 170 }}>
       <Cartao style={{ padding: "44px 80px", textAlign: "center", transform: `scale(${0.7 + 0.3 * e})`, opacity: e }}>
         <div style={{ fontFamily: FONTE_TEXTO, fontWeight: 800, fontSize: 32, letterSpacing: 10, color: COR.vermelho }}>
-          GATILHO MENTAL
+          {rotulo}
         </div>
-        <div style={{ fontFamily: FONTE_TITULO, fontWeight: 800, fontSize: 104, color: COR.branco, marginTop: 6 }}>{nome}</div>
+        <div style={{ fontFamily: FONTE_TITULO, fontWeight: 800, fontSize: nome.length > 16 ? 76 : 104, color: COR.branco, marginTop: 6 }}>{nome}</div>
         <div
           style={{
             fontFamily: FONTE_TEXTO,

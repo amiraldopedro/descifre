@@ -197,8 +197,14 @@ def sfx(cenas, roteiro, destino: Path, short: bool):
                 por(nome, t0 + s_)
         elif tipo == "sobmedida":
             fala_s = c["fala"] / FPS
+            fase = (a.get("props") or {}).get("fase")
             for s_ in sons_sm.get(a.get("nome"), []):
-                quando = s_["t"] if "t" in s_ else s_.get("p", 0) * fala_s  # p = proporção da fala
+                if "fase" in s_ and s_["fase"] != fase:
+                    continue
+                if "fim" in s_:  # segundos antes do fim da cena (pausas, contagens)
+                    quando = c["duracao"] / FPS - s_["fim"]
+                else:
+                    quando = s_["t"] if "t" in s_ else s_.get("p", 0) * fala_s  # p = proporção da fala
                 por(s_["som"], t0 + quando, s_.get("vol", 1))
         if tipo == "contagem":
             fim = (c["inicio"] + c["duracao"]) / FPS
@@ -227,7 +233,7 @@ def main(vid, estimar_tempos=False):
     for c in roteiro["cenas"]:
         anim = dict(c["animacao"])
         if anim["tipo"] == "pergunta":
-            ultima_pergunta = {k: anim.get(k, 0) for k in ("numero", "texto", "a", "b")}
+            ultima_pergunta = {k: anim[k] for k in ("numero", "texto", "a", "b", "rotulo", "total") if k in anim}
         if anim["tipo"] == "contagem":
             anim["pergunta"] = ultima_pergunta
 
@@ -245,6 +251,7 @@ def main(vid, estimar_tempos=False):
             pausa = PAUSA_CONTAGEM if anim["tipo"] == "contagem" else PAUSA
         if anim["tipo"] == "encerramento":
             pausa = 2.5
+        pausa = c.get("pausa", pausa)  # o roteiro pode pedir um tempo para o espectador pensar
         atores, agora = [], {}
         for a in c.get("personagens", []):
             a = dict(a)
