@@ -1,0 +1,76 @@
+{
+  "id": "001",
+  "titulo": "Você é fácil de manipular? Faça este teste",
+  "duracao_alvo_min": 8,
+  "voz": "pt-BR-AntonioNeural",
+  "cenas": [
+    {"id": 1, "texto": "Responde rápido: você se acha uma pessoa difícil de manipular?", "broll": "man thinking dark", "animacao": {"tipo": "titulo", "texto": "Você é fácil de manipular?"}},
+    {"id": 2, "texto": "Quase todo mundo diz que sim. E é justamente isso que torna a gente um alvo fácil.", "broll": "crowd walking city", "animacao": {"tipo": "nenhuma"}},
+    {"id": 3, "texto": "Nos próximos minutos, você vai passar por sete situações do dia a dia. Em cada uma, escolha a opção A ou a opção B.", "broll": "notebook writing", "animacao": {"tipo": "mascote", "texto": "7 situações. Escolha A ou B."}},
+    {"id": 4, "texto": "Sem pensar demais. Responda como você realmente agiria, e não como você gostaria de agir.", "broll": "clock ticking", "animacao": {"tipo": "nenhuma"}},
+    {"id": 5, "texto": "Pega um papel ou conta nos dedos. Toda vez que você escolher a opção A, marque um ponto.", "broll": "hand writing paper", "animacao": {"tipo": "titulo", "texto": "Opção A = 1 ponto"}},
+    {"id": 6, "texto": "No final, eu revelo o que a sua pontuação diz sobre você. E te mostro como se proteger.", "broll": "shield protection", "animacao": {"tipo": "nenhuma"}},
+    {"id": 7, "texto": "Eu sou o Cifrinho, e aqui no Descifre a gente decifra a mente humana. Vamos começar.", "broll": "galaxy stars", "animacao": {"tipo": "mascote", "texto": "Vamos começar!"}},
+
+    {"id": 8, "texto": "Situação número um. Você está no shopping e uma promotora te oferece um chocolate de graça.", "broll": "shopping mall", "animacao": {"tipo": "pergunta", "numero": 1, "texto": "Te dão um brinde grátis...", "a": "Você se sente na obrigação de ouvir a oferta", "b": "Você agradece e segue em frente"}},
+    {"id": 9, "texto": "Logo depois, ela começa a falar de um cartão de crédito. Opção A: você se sente meio obrigado a ouvir até o fim. Opção B: você agradece e segue o seu caminho.", "broll": "credit card", "animacao": {"tipo": "contagem"}},
+    {"id": 10, "texto": "Se você escolheu A, marque um ponto. Você acabou de sentir o gatilho mais antigo da persuasão: a reciprocidade.", "broll": "gift box", "animacao": {"tipo": "conceito", "nome": "Reciprocidade", "frase": "Quem ganha algo sente que precisa devolver"}},
+    {"id": 11, "texto": "O nosso cérebro odeia ficar devendo. Quando alguém nos dá algo, mesmo pequeno, nasce uma vontade quase automática de retribuir.", "broll": "brain neurons", "animacao": {"tipo": "nenhuma"}},
+    {"id": 12, "texto": "O psicólogo Robert Cialdini descreveu esse gatilho no livro As Armas da Persuasão. E as empresas sabem disso muito bem.", "broll": "library books", "animacao": {"tipo": "citacao", "texto": "As Armas da Persuasão", "autor": "Robert Cialdini"}},
+    {"id": 13, "texto": "Amostra grátis, brinde, desconto surpresa. Nem sempre é generosidade. Às vezes é uma dívida que você não pediu.", "broll": "free sample store", "animacao": {"tipo": "nenhuma"}},
+
+    {"id": 14, "texto": "Situação número dois. Você vai escolher um restaurante numa cidade que não conhece.", "broll": "restaurant street night", "animacao": {"tipo": "pergunta", "numero": 2, "texto": "Dois restaurantes iguais...", "a": "Você entra no que está lotado", "b": "Você compara o cardápio e o preço"}},
+    {"id": 15, "texto": "Um está lotado, com fila na porta. O outro está vazio. Opção A: você entra no lotado sem pensar duas vezes. Opção B: você olha o cardápio e o preço dos dois antes de decidir.", "broll": "people queue", "animacao": {"tipo": "contagem"}},
+    {"id": 16, "texto": "Escolheu A? Mais um ponto. Isso se chama prova social.", "broll": "crowd people", "animacao": {"tipo": "conceito", "nome": "Prova social", "frase": "Se todo mundo faz, deve estar certo"}},
+    {"id": 17, "texto": "Quando estamos inseguros, copiamos o que os outros fazem. É um atalho mental que economiza energia.", "broll": "birds flock", "animacao": {"tipo": "nenhuma"}},
+    {"id": 18, "texto": "O problema é que esse atalho pode ser fabricado. Avaliações falsas, filas combinadas, seguidores comprados. Tudo para você pensar: se tanta gente quer, deve ser bom.", "broll": "smartphone reviews stars", "animacao": {"tipo": "lista", "itens": ["Avaliações falsas", "Filas combinadas", "Seguidores comprados"]}},
+
+    {"id": 19, "texto": "Situação número três. Você vê um anúncio: últimas três unidades, a promoção acaba em dez minutos.", "broll": "countdown timer", "animacao": {"tipo": "pergunta", "numero": 3, "texto": "Só restam 3 unidades!", "a": "Você compra logo, antes que acabe", "b": "Você espera e pesquisa em outro lugar"}},
+    {"id": 20, "texto": "Opção A: o coração acelera e você compra logo, antes que acabe. Opção B: você respira, espera e pesquisa em outro lugar.", "broll": "online shopping laptop", "animacao": {"tipo": "contagem"}},
+    {"id": 21, "texto": "Se foi A, marque um ponto. Esse é o gatilho da escassez.", "broll": "hourglass sand", "animacao": {"tipo": "conceito", "nome": "Escassez", "frase": "O que é raro parece mais valioso"}},
+    {"id": 22, "texto": "O cérebro sente mais a dor de perder do que o prazer de ganhar. Os psicólogos chamam isso de aversão à perda.", "broll": "stress worried person", "animacao": {"tipo": "nenhuma"}},
+    {"id": 23, "texto": "Por isso o relógio contando no site funciona tão bem. Ele não te dá informação. Ele te tira o tempo de pensar.", "broll": "clock fast", "animacao": {"tipo": "titulo", "texto": "Pressa é a arma do manipulador"}},
+
+    {"id": 24, "texto": "Situação número quatro. Um homem de jaleco branco aparece num vídeo recomendando um suplemento milagroso.", "broll": "doctor white coat", "animacao": {"tipo": "pergunta", "numero": 4, "texto": "Alguém de jaleco recomenda...", "a": "Se é especialista, você confia", "b": "Você procura quem ele é e as fontes"}},
+    {"id": 25, "texto": "Opção A: se ele parece especialista, você confia. Opção B: você vai procurar quem ele é e de onde vêm as informações.", "broll": "searching internet", "animacao": {"tipo": "contagem"}},
+    {"id": 26, "texto": "Escolheu A? Mais um ponto. Esse é o gatilho da autoridade.", "broll": "suit tie businessman", "animacao": {"tipo": "conceito", "nome": "Autoridade", "frase": "Obedecemos a quem parece saber mais"}},
+    {"id": 27, "texto": "Nos anos sessenta, o psicólogo Stanley Milgram mostrou o quanto as pessoas obedecem a uma figura de autoridade, mesmo contra a própria consciência.", "broll": "old laboratory", "animacao": {"tipo": "citacao", "texto": "Experimento de obediência", "autor": "Stanley Milgram, anos 1960"}},
+    {"id": 28, "texto": "Hoje, basta um jaleco, um título bonito ou um cenário caro para muita gente baixar a guarda. A aparência de autoridade não é a mesma coisa que conhecimento.", "broll": "studio camera", "animacao": {"tipo": "nenhuma"}},
+
+    {"id": 29, "texto": "Situação número cinco. Um colega te pede um favor pequeno: revisar um texto rapidinho. Você aceita.", "broll": "office coworkers", "animacao": {"tipo": "pergunta", "numero": 5, "texto": "Primeiro um favor pequeno...", "a": "Você aceita o favor maior também", "b": "Você diz não sem culpa"}},
+    {"id": 30, "texto": "Na semana seguinte, ele pede para você fazer o trabalho inteiro dele. Opção A: você aceita, afinal já ajudou antes. Opção B: você diz não, sem culpa.", "broll": "tired working late", "animacao": {"tipo": "contagem"}},
+    {"id": 31, "texto": "Se foi A, marque um ponto. Essa técnica tem até nome: o pé na porta.", "broll": "door opening", "animacao": {"tipo": "conceito", "nome": "Pé na porta", "frase": "Um sim pequeno abre caminho para um sim grande"}},
+    {"id": 32, "texto": "A gente gosta de ser coerente. Depois que dizemos sim uma vez, dizer não parece contradizer quem nós somos.", "broll": "stairs steps", "animacao": {"tipo": "nenhuma"}},
+    {"id": 33, "texto": "Vendedores, golpistas e até pessoas próximas usam isso, às vezes sem perceber. Começa pequeno, e cresce aos poucos.", "broll": "phone scam call", "animacao": {"tipo": "nenhuma"}},
+
+    {"id": 34, "texto": "Situação número seis. Alguém que você admira, muito simpático, te convida para um negócio que promete muito dinheiro.", "broll": "friends smiling coffee", "animacao": {"tipo": "pergunta", "numero": 6, "texto": "Uma pessoa simpática te convida...", "a": "Se gosto da pessoa, gosto da ideia", "b": "Você separa a pessoa da proposta"}},
+    {"id": 35, "texto": "Opção A: se você gosta da pessoa, já gosta da ideia. Opção B: você separa a pessoa da proposta e analisa os números.", "broll": "calculator money", "animacao": {"tipo": "contagem"}},
+    {"id": 36, "texto": "Escolheu A? Mais um ponto. Esse é o gatilho da afinidade.", "broll": "handshake", "animacao": {"tipo": "conceito", "nome": "Afinidade", "frase": "Dizemos sim para quem gostamos"}},
+    {"id": 37, "texto": "Elogios, coisas em comum, um sorriso no momento certo. Tudo isso faz a gente confiar mais rápido do que deveria.", "broll": "smile conversation", "animacao": {"tipo": "nenhuma"}},
+    {"id": 38, "texto": "Gostar de alguém é ótimo. Só não deixe a simpatia assinar contratos por você.", "broll": "signing contract", "animacao": {"tipo": "titulo", "texto": "Simpatia não é garantia"}},
+
+    {"id": 39, "texto": "Situação número sete, a mais séria. Você lembra claramente de uma conversa, mas a outra pessoa insiste que aquilo nunca aconteceu.", "broll": "couple argument", "animacao": {"tipo": "pergunta", "numero": 7, "texto": "Você lembra, mas a pessoa nega...", "a": "Você começa a duvidar da sua memória", "b": "Você confia no que viveu"}},
+    {"id": 40, "texto": "E diz que você está exagerando. Opção A: você começa a duvidar da sua própria memória. Opção B: você confia no que viveu, e talvez até tenha anotado.", "broll": "confused woman", "animacao": {"tipo": "contagem"}},
+    {"id": 41, "texto": "Se foi A, marque um ponto. E preste atenção, porque isso tem nome: gaslighting.", "broll": "foggy window", "animacao": {"tipo": "conceito", "nome": "Gaslighting", "frase": "Fazer você duvidar da sua própria realidade"}},
+    {"id": 42, "texto": "O nome vem de um filme antigo, em que o marido mexia nas luzes da casa e dizia que a esposa estava imaginando coisas.", "broll": "old gas lamp", "animacao": {"tipo": "nenhuma"}},
+    {"id": 43, "texto": "Uma vez é um desentendimento. Quando vira padrão, é um sinal de alerta. Ninguém que te respeita tenta apagar a sua percepção.", "broll": "warning sign", "animacao": {"tipo": "titulo", "texto": "Quando vira padrão, é alerta"}},
+
+    {"id": 44, "texto": "Agora some os seus pontos. Lembra: cada opção A vale um ponto.", "broll": "counting fingers", "animacao": {"tipo": "mascote", "texto": "Hora de somar os pontos!"}},
+    {"id": 45, "texto": "De zero a dois pontos: você tem um bom filtro. Desconfia da pressa, separa emoção de decisão e não se deixa levar fácil.", "broll": "calm confident person", "animacao": {"tipo": "resultado", "faixa": "0 a 2 pontos", "titulo": "Mente blindada"}},
+    {"id": 46, "texto": "Só cuidado com o excesso de confiança. Lembra do começo do vídeo? Quem se acha imune é quem baixa a guarda.", "broll": "chess move", "animacao": {"tipo": "nenhuma"}},
+    {"id": 47, "texto": "De três a quatro pontos: você está na média. Na maioria das vezes percebe, mas alguns gatilhos ainda pegam você desprevenido.", "broll": "person walking thinking", "animacao": {"tipo": "resultado", "faixa": "3 a 4 pontos", "titulo": "Na média"}},
+    {"id": 48, "texto": "Repare em quais situações você marcou ponto. Elas mostram exatamente onde fica a sua porta aberta.", "broll": "door light", "animacao": {"tipo": "nenhuma"}},
+    {"id": 49, "texto": "De cinco a sete pontos: você é uma pessoa generosa, que confia nos outros e evita conflito. Isso é bonito, mas é também o que os manipuladores procuram.", "broll": "kind person helping", "animacao": {"tipo": "resultado", "faixa": "5 a 7 pontos", "titulo": "Alvo fácil"}},
+    {"id": 50, "texto": "E tudo bem. Isso não é um defeito de caráter. É só um músculo que ainda não foi treinado. E dá para treinar.", "broll": "gym training", "animacao": {"tipo": "nenhuma"}},
+    {"id": 51, "texto": "Lembrando: isso não é um diagnóstico. É um espelho para você se conhecer melhor.", "broll": "mirror reflection", "animacao": {"tipo": "nenhuma"}},
+
+    {"id": 52, "texto": "Então aqui vão três escudos simples contra qualquer manipulação.", "broll": "shield", "animacao": {"tipo": "mascote", "texto": "3 escudos contra manipulação"}},
+    {"id": 53, "texto": "Escudo um: a regra das vinte e quatro horas. Toda decisão importante feita com pressa merece uma noite de sono.", "broll": "night sleep bed", "animacao": {"tipo": "lista", "itens": ["1. Espere 24 horas"]}},
+    {"id": 54, "texto": "Escudo dois: separe a pessoa da proposta. Pergunte a si mesmo: eu aceitaria isso se viesse de um estranho?", "broll": "two paths road", "animacao": {"tipo": "lista", "itens": ["1. Espere 24 horas", "2. Separe pessoa e proposta"]}},
+    {"id": 55, "texto": "Escudo três: dê nome ao gatilho. Quando você pensa, isso é escassez, ou, isso é reciprocidade, o efeito perde metade da força.", "broll": "lightbulb idea", "animacao": {"tipo": "lista", "itens": ["1. Espere 24 horas", "2. Separe pessoa e proposta", "3. Dê nome ao gatilho"]}},
+    {"id": 56, "texto": "Manipulação funciona no escuro. Quando você enxerga o mecanismo, ele para de funcionar.", "broll": "light in darkness", "animacao": {"tipo": "titulo", "texto": "Enxergou, desarmou"}},
+    {"id": 57, "texto": "Agora me conta nos comentários: quantos pontos você fez? Eu quero ver quem tem a mente blindada.", "broll": "phone comments typing", "animacao": {"tipo": "mascote", "texto": "Comenta seus pontos!"}},
+    {"id": 58, "texto": "Se esse teste abriu os seus olhos, se inscreve no canal e ativa o sininho. Toda semana tem um novo mistério da mente para decifrar.", "broll": "galaxy nebula", "animacao": {"tipo": "mascote", "texto": "Inscreva-se no Descifre"}},
+    {"id": 59, "texto": "Eu sou o Cifrinho. Descifre e domine.", "broll": "stars space", "animacao": {"tipo": "encerramento"}}
+  ]
+}
