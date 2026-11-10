@@ -1,0 +1,43 @@
+{
+  "cifrinho": {
+    "nome": "Cifrinho", "tipo": "mascote",
+    "voz": "pt-BR-AntonioNeural", "tom": "+0Hz"
+  },
+  "tesla": {
+    "nome": "Nikola Tesla", "tipo": "boneco",
+    "voz": "de-DE-FlorianMultilingualNeural", "tom": "-4Hz", "taxa": "+0%",
+    "reserva": {"voz": "pt-BR-AntonioNeural", "tom": "-16Hz", "taxa": "-3%"},
+    "visual": {"pele": "#F1D3B8", "cabelo": {"tipo": "repartido", "cor": "#1B1B22"}, "roupa": {"tipo": "terno", "cor": "#22263A", "detalhe": "#F4F7FF"}, "gravata": "#8A1C2B", "bigode": true, "aura": "raios"}
+  },
+  "homem": {
+    "nome": "", "tipo": "boneco",
+    "voz": "pt-BR-AntonioNeural", "tom": "-7Hz",
+    "visual": {"pele": "#D9A77F", "cabelo": {"tipo": "curto", "cor": "#3A2618"}, "roupa": {"tipo": "camiseta", "cor": "#2F6BFF"}}
+  },
+  "mulher": {
+    "nome": "", "tipo": "boneco",
+    "voz": "pt-BR-FranciscaNeural", "tom": "+0Hz",
+    "visual": {"pele": "#B97A56", "cabelo": {"tipo": "longo", "cor": "#22140E"}, "roupa": {"tipo": "camiseta", "cor": "#FF3B4E"}}
+  },
+  "jovem": {
+    "nome": "", "tipo": "boneco",
+    "voz": "pt-BR-ThalitaMultilingualNeural", "tom": "+0Hz",
+    "reserva": {"voz": "pt-BR-FranciscaNeural", "tom": "+12Hz", "taxa": "+6%"},
+    "visual": {"pele": "#EBC29E", "cabelo": {"tipo": "baguncado", "cor": "#6B3FA0"}, "roupa": {"tipo": "moletom", "cor": "#5BE0FF"}}
+  },
+  "idoso": {
+    "nome": "", "tipo": "boneco",
+    "voz": "pt-BR-AntonioNeural", "tom": "-20Hz", "taxa": "-8%",
+    "visual": {"pele": "#E3B994", "cabelo": {"tipo": "laterais", "cor": "#E8E8EE"}, "roupa": {"tipo": "camiseta", "cor": "#4E6B57"}, "oculos": true, "bigode": true, "pelos": "#E8E8EE"}
+  },
+  "cientista": {
+    "nome": "", "tipo": "boneco",
+    "voz": "pt-BR-FranciscaNeural", "tom": "-6Hz",
+    "visual": {"pele": "#8C5A3C", "cabelo": {"tipo": "coque", "cor": "#17110D"}, "roupa": {"tipo": "jaleco", "cor": "#F4F7FF", "detalhe": "#2F6BFF"}, "oculos": true}
+  },
+  "executivo": {
+    "nome": "", "tipo": "boneco",
+    "voz": "pt-BR-AntonioNeural", "tom": "-11Hz",
+    "visual": {"pele": "#C99572", "cabelo": {"tipo": "curto", "cor": "#111118"}, "roupa": {"tipo": "terno", "cor": "#14318F", "detalhe": "#F4F7FF"}, "gravata": "#FFD84D", "barba": true}
+  }
+}

@@ -1,0 +1,153 @@
+{
+ "id": "d01",
+ "titulo": "Demo: Cifrinho entrevista Tesla",
+ "trilha": "leve",
+ "voz": "pt-BR-AntonioNeural",
+ "cenas": [
+  {
+   "id": 1,
+   "texto": "Hoje eu trouxe um convidado que imaginava máquinas inteiras dentro da cabeça.",
+   "quem": "cifrinho",
+   "animacao": {
+    "tipo": "nenhuma"
+   },
+   "personagens": [
+    {
+     "id": "cifrinho",
+     "gesto": "acenar"
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "texto": "Senhoras e senhores: Nikola Tesla!",
+   "quem": "cifrinho",
+   "animacao": {
+    "tipo": "ilustracao",
+    "nome": "raio"
+   },
+   "personagens": [
+    {
+     "id": "cifrinho",
+     "gesto": "apontar"
+    },
+    {
+     "id": "tesla",
+     "gesto": "acenar",
+     "entrada": "teletransporte"
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "texto": "Boa noite. Eu construía cada invenção na mente, antes de tocar em uma única peça.",
+   "quem": "tesla",
+   "animacao": {
+    "tipo": "ilustracao",
+    "nome": "engrenagens"
+   },
+   "personagens": [
+    {
+     "id": "cifrinho",
+     "gesto": "surpreso"
+    },
+    {
+     "id": "tesla",
+     "gesto": "explicar"
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "texto": "Espera. Você testava a máquina só na imaginação?",
+   "quem": "cifrinho",
+   "animacao": {
+    "tipo": "ilustracao",
+    "nome": "interrogacao"
+   },
+   "personagens": [
+    {
+     "id": "cifrinho",
+     "gesto": "pensar"
+    },
+    {
+     "id": "tesla",
+     "gesto": "cruzar"
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "texto": "Exatamente. A psicologia chama isso de visualização mental. E qualquer pessoa pode treinar.",
+   "quem": "tesla",
+   "animacao": {
+    "tipo": "ilustracao",
+    "nome": "neuronios",
+    "texto": "Visualização mental"
+   },
+   "personagens": [
+    {
+     "id": "cifrinho",
+     "gesto": "parado"
+    },
+    {
+     "id": "tesla",
+     "gesto": "apontar"
+    }
+   ]
+  },
+  {
+   "id": 6,
+   "texto": "Atletas usam. Músicos usam. Cientistas usam.",
+   "quem": "cifrinho",
+   "animacao": {
+    "tipo": "nenhuma"
+   },
+   "personagens": [
+    {
+     "id": "jovem",
+     "gesto": "comemorar",
+     "entrada": "cair"
+    },
+    {
+     "id": "cientista",
+     "gesto": "explicar",
+     "entrada": "deslizar"
+    },
+    {
+     "id": "idoso",
+     "gesto": "pensar",
+     "entrada": "pop"
+    }
+   ]
+  },
+  {
+   "id": 7,
+   "texto": "Uma ideia bem imaginada já está metade construída.",
+   "quem": "tesla",
+   "animacao": {
+    "tipo": "ilustracao",
+    "nome": "lampada"
+   },
+   "personagens": [
+    {
+     "id": "cifrinho",
+     "gesto": "comemorar"
+    },
+    {
+     "id": "tesla",
+     "gesto": "comemorar",
+     "entrada": "teletransporte"
+    }
+   ]
+  },
+  {
+   "id": 8,
+   "texto": "Eu sou o Cifrinho. Descifre e domine.",
+   "quem": "cifrinho",
+   "animacao": {
+    "tipo": "encerramento"
+   }
+  }
+ ]
+}

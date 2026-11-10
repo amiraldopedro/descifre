@@ -2,6 +2,8 @@ import React from "react";
 import { AbsoluteFill, Audio, Sequence, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
 import { BRoll, FundoCosmico } from "./Fundo";
 import { Mascote } from "./Mascote";
+import { Ilustracao } from "./Ilustracoes";
+import { Palco } from "./personagens/Palco";
 import { COR, Cena, FONTE_TEXTO, FONTE_TITULO, Manifesto, Palavra } from "./tema";
 
 /* ---------- utilitários de "dopamina" ---------- */
@@ -326,7 +328,9 @@ const CenaShort: React.FC<{ cena: Cena; ultima: number | null }> = ({ cena, ulti
   // zoom de impacto no corte + deriva lenta
   const zoom = interpolate(f, [0, 6, cena.duracao], [1.35, 1.12, 1.22], { extrapolateRight: "clamp" });
   const s = a.tipo === "gancho" ? tremer(f, 30, 14) : tremer(f, 8, 6);
-  const legendaY = a.tipo === "nenhuma" ? 1020 : 1420;
+  const atores = cena.personagens ?? [];
+  const temPalco = atores.length > 0;
+  const legendaY = temPalco ? 1500 : a.tipo === "nenhuma" ? 1020 : 1420;
 
   return (
     <AbsoluteFill>
@@ -344,7 +348,13 @@ const CenaShort: React.FC<{ cena: Cena; ultima: number | null }> = ({ cena, ulti
       )}
       {a.tipo === "conceito" && <Conceito nome={a.nome} frase={a.frase} />}
       {a.tipo === "cta" && <Cta texto={a.texto} falando={falando} />}
-      {a.tipo === "nenhuma" && !cena.broll && (
+      {a.tipo === "ilustracao" && (
+        <AbsoluteFill style={{ alignItems: "center", paddingTop: temPalco ? 190 : 330 }}>
+          <Ilustracao nome={a.nome} texto={a.texto} tamanho={temPalco ? 520 : 680} />
+        </AbsoluteFill>
+      )}
+      {temPalco && <Palco atores={atores} quemFala={cena.quem ?? "cifrinho"} falando={falando} temAnim={a.tipo !== "nenhuma"} />}
+      {a.tipo === "nenhuma" && !cena.broll && !temPalco && (
         <AbsoluteFill style={{ alignItems: "center", paddingTop: 260 }}>
           <Mascote tamanho={700} falando={falando} seed={cena.id} />
         </AbsoluteFill>

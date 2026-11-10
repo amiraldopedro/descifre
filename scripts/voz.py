@@ -19,10 +19,10 @@ CONCORRENCIA = 3
 TENTATIVAS = 5
 
 
-async def edge_cena(texto, voz, mp3: Path, taxa=TAXA):
+async def edge_cena(texto, voz, mp3: Path, taxa=TAXA, tom="+0Hz"):
     import edge_tts
 
-    com = edge_tts.Communicate(texto, voz, rate=taxa, boundary="WordBoundary")
+    com = edge_tts.Communicate(texto, voz, rate=taxa, pitch=tom, boundary="WordBoundary")
     palavras = []
     with open(mp3, "wb") as f:
         async for ch in com.stream():
@@ -68,23 +68,45 @@ def piper_cena(texto, mp3: Path):
     return estimar_palavras(texto, duracao(mp3))
 
 
-async def processar(cena, voz, pasta: Path, sem, taxa=TAXA):
+ELENCO = json.loads((RAIZ / "elenco.json").read_text())
+
+
+def candidatos(cena, roteiro):
+    """Vozes a tentar para a cena: a do personagem, a reserva dele e a padrão do canal."""
+    quem = cena.get("quem", "cifrinho")
+    ficha = ELENCO.get(quem, {})
+    taxa_rot = roteiro.get("taxa", TAXA)
+    lista = []
+    if quem == "cifrinho":
+        lista.append((roteiro.get("voz", ficha.get("voz", "pt-BR-AntonioNeural")), taxa_rot, ficha.get("tom", "+0Hz")))
+    else:
+        lista.append((ficha.get("voz", "pt-BR-AntonioNeural"), ficha.get("taxa", taxa_rot), ficha.get("tom", "+0Hz")))
+        r = ficha.get("reserva")
+        if r:
+            lista.append((r["voz"], r.get("taxa", taxa_rot), r.get("tom", "+0Hz")))
+        lista.append(("pt-BR-AntonioNeural", taxa_rot, "-10Hz"))
+    return lista
+
+
+async def processar(cena, roteiro, pasta: Path, sem):
     mp3 = pasta / f"{cena['id']:03d}.mp3"
     js = mp3.with_suffix(".json")
     if mp3.exists() and js.exists():
         return "cache"
     async with sem:
         erro = None
-        for i in range(TENTATIVAS):
-            try:
-                palavras = await edge_cena(cena["texto"], voz, mp3, taxa)
-                js.write_text(json.dumps(palavras, ensure_ascii=False))
-                await asyncio.sleep(0.4)  # não martelar o servidor
-                return "edge"
-            except Exception as e:  # 403, rede, etc.
-                erro = e
-                await asyncio.sleep((2 ** i) + random.random())
-        print(f"  cena {cena['id']}: Edge falhou ({erro}); usando Piper")
+        for n, (voz, taxa, tom) in enumerate(candidatos(cena, roteiro)):
+            for i in range(TENTATIVAS if n == 0 else 3):
+                try:
+                    palavras = await edge_cena(cena["texto"], voz, mp3, taxa, tom)
+                    js.write_text(json.dumps(palavras, ensure_ascii=False))
+                    await asyncio.sleep(0.4)  # não martelar o servidor
+                    return "edge" if n == 0 else f"edge-reserva({voz})"
+                except Exception as e:  # 403, voz inexistente, rede...
+                    erro = e
+                    await asyncio.sleep((2 ** i) + random.random())
+            print(f"  cena {cena['id']}: voz {voz} falhou ({erro})")
+        print(f"  cena {cena['id']}: Edge falhou; usando Piper")
         palavras = piper_cena(cena["texto"], mp3)
         js.write_text(json.dumps(palavras, ensure_ascii=False))
         return "piper"
@@ -95,9 +117,7 @@ async def main(vid):
     pasta = RAIZ / "public" / "build" / vid / "voz"
     pasta.mkdir(parents=True, exist_ok=True)
     sem = asyncio.Semaphore(CONCORRENCIA)
-    voz = roteiro.get("voz", "pt-BR-AntonioNeural")
-    taxa = roteiro.get("taxa", TAXA)
-    res = await asyncio.gather(*[processar(c, voz, pasta, sem, taxa) for c in roteiro["cenas"]])
+    res = await asyncio.gather(*[processar(c, roteiro, pasta, sem) for c in roteiro["cenas"]])
     print("voz pronta:", {k: res.count(k) for k in set(res)})
 
 

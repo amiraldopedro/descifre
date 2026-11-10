@@ -30,6 +30,7 @@ export type Animacao =
   | { tipo: "lista"; itens: string[] }
   | { tipo: "resultado"; faixa: string; titulo: string }
   | { tipo: "encerramento" }
+  | { tipo: "ilustracao"; nome: string; texto?: string }
   | { tipo: "gancho"; texto: string }
   | { tipo: "cta"; texto: string };
 
@@ -43,6 +44,8 @@ export type Cena = {
   broll: string | null; // caminho em public/
   brollFrames?: number; // duração do clipe (frames)
   animacao: Animacao;
+  quem?: string; // id do personagem que fala (padrão: cifrinho)
+  personagens?: import("./personagens/Palco").AtorCena[];
 };
 
 export type Manifesto = {

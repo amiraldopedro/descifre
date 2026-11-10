@@ -75,7 +75,8 @@ jobs:
           import json, os
           m = json.load(open(f"public/build/${{ steps.id.outputs.id }}/manifest.json"))
           short = m.get("formato") == "short"
-          n, tot = (2 if short else int(os.environ["PARTES"])), m["totalFrames"]
+          tot = m["totalFrames"]
+          n = 2 if short else max(1, min(int(os.environ["PARTES"]), tot // 900))
           print("comp=" + ("Short" if short else "Video"))
           passo = -(-tot // n)
           partes = [{"i": i, "de": i * passo, "ate": min(tot, (i + 1) * passo) - 1} for i in range(n) if i * passo < tot]
@@ -131,7 +132,7 @@ jobs:
           ID=${{ needs.preparar.outputs.id }}
           ls out/parte_*.mp4 | sort -V | sed "s|^out/|file '|; s|$|'|" > out/lista.txt
           ffmpeg -y -loglevel error -f concat -safe 0 -i out/lista.txt -c copy out/video_mudo.mp4
-          MUSICA=$(ls public/musica/*.mp3 2>/dev/null | head -1 || true)
+          MUSICA=$(python3 -c "import json;m=json.load(open('public/build/$ID/manifest.json')).get('musica');print('public/'+m if m else '')")
           if [ -f public/build/$ID/sfx.mp3 ]; then
             # Short: narração + efeitos + música (um pouco mais alta), com ducking
             ffmpeg -y -loglevel error -i out/video_mudo.mp4 -i public/build/$ID/narracao.mp3 -i public/build/$ID/sfx.mp3 -stream_loop -1 -i "$MUSICA" \

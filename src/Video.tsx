@@ -4,6 +4,8 @@ import { BRoll, FundoCosmico } from "./Fundo";
 import { CamadaAnimacao, legendaNoTopo, usaFundoCosmico } from "./Animacoes";
 import { Legenda } from "./Legenda";
 import { Mascote } from "./Mascote";
+import { Ilustracao } from "./Ilustracoes";
+import { Palco } from "./personagens/Palco";
 import { COR, Cena, FONTE_TITULO, Manifesto } from "./tema";
 
 const TRANSICAO = 8; // frames de fade entre cenas
@@ -15,7 +17,10 @@ const CenaView: React.FC<{ cena: Cena }> = ({ cena }) => {
   const falando = cena.palavras.some((p) => t >= p.t0 && t <= p.t1);
   const fade = interpolate(f, [0, TRANSICAO], [0, 1], { extrapolateRight: "clamp" });
   const cosmico = usaFundoCosmico(cena.animacao) || !cena.broll;
-  const temOverlayGrande = cena.animacao.tipo !== "nenhuma";
+  const atores = cena.personagens ?? [];
+  const temPalco = atores.length > 0;
+  const il = cena.animacao.tipo === "ilustracao" ? cena.animacao : null;
+  const temOverlayGrande = cena.animacao.tipo !== "nenhuma" || temPalco;
 
   return (
     <AbsoluteFill style={{ opacity: fade }}>
@@ -23,7 +28,13 @@ const CenaView: React.FC<{ cena: Cena }> = ({ cena }) => {
       {temOverlayGrande && !cosmico && <AbsoluteFill style={{ backgroundColor: "rgba(7,15,51,.45)" }} />}
       <CamadaAnimacao anim={cena.animacao} falando={falando} fala={cena.fala} duracao={cena.duracao} />
       {/* sem b-roll: o Cifrinho ocupa o centro da tela, conversando */}
-      {cena.animacao.tipo === "nenhuma" && cosmico && (
+      {il && (
+        <AbsoluteFill style={{ alignItems: "center", justifyContent: temPalco ? "flex-start" : "center", paddingTop: temPalco ? 90 : 0, paddingBottom: temPalco ? 0 : 190 }}>
+          <Ilustracao nome={il.nome} texto={il.texto} tamanho={temPalco ? 420 : 540} />
+        </AbsoluteFill>
+      )}
+      {temPalco && <Palco atores={atores} quemFala={cena.quem ?? "cifrinho"} falando={falando} temAnim={cena.animacao.tipo !== "nenhuma"} />}
+      {cena.animacao.tipo === "nenhuma" && cosmico && !temPalco && (
         <AbsoluteFill style={{ justifyContent: "center", alignItems: "center", paddingBottom: 200 }}>
           <Mascote tamanho={640} falando={falando} seed={cena.id} />
         </AbsoluteFill>

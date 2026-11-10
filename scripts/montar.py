@@ -90,6 +90,8 @@ def main(vid, estimar_tempos=False):
     mapa = json.loads(mapa_path.read_text()) if mapa_path.exists() else {}
 
     cenas, inicio, ultima_pergunta, trechos = [], 0, None, []
+    apresentados = set()
+    em_cena = {}  # personagem -> último gesto (para entradas e transição de pose)
     for c in roteiro["cenas"]:
         anim = dict(c["animacao"])
         if anim["tipo"] == "pergunta":
@@ -111,11 +113,24 @@ def main(vid, estimar_tempos=False):
             pausa = PAUSA_CONTAGEM if anim["tipo"] == "contagem" else PAUSA
         if anim["tipo"] == "encerramento":
             pausa = 2.5
+        atores, agora = [], {}
+        for a in c.get("personagens", []):
+            a = dict(a)
+            a["novo"] = a["id"] not in em_cena
+            a["apresentar"] = a["id"] not in apresentados
+            apresentados.add(a["id"])
+            if not a["novo"]:
+                a["gestoAnterior"] = em_cena[a["id"]]
+            agora[a["id"]] = a.get("gesto", "explicar" if a["id"] == c.get("quem", "cifrinho") else "parado")
+            a.setdefault("gesto", agora[a["id"]])
+            atores.append(a)
+        em_cena = agora
         fala = round(fala_s * FPS)
         dur = fala + round(pausa * FPS)
         cenas.append({
             "id": c["id"], "texto": c["texto"], "inicio": inicio, "duracao": dur, "fala": fala,
             "palavras": palavras, "broll": mapa.get(str(c["id"])), "animacao": anim,
+            "quem": c.get("quem", "cifrinho"), "personagens": atores,
             "brollFrames": int(duracao(RAIZ / "public" / mapa[str(c["id"])]) * FPS) if str(c["id"]) in mapa else 0,
         })
         inicio += dur
@@ -143,7 +158,8 @@ def main(vid, estimar_tempos=False):
         sfx_short(cenas, build / "sfx.mp3")
         sfx = f"build/{vid}/sfx.mp3"
 
-    musica = next((f"musica/{p.name}" for p in sorted((RAIZ / "public" / "musica").glob("*.mp3"))), None)
+    trilha = roteiro.get("trilha", "misterio")
+    musica = f"musica/{trilha}.mp3" if (RAIZ / "public" / "musica" / f"{trilha}.mp3").exists() else None
     manifesto = {"id": vid, "titulo": roteiro["titulo"], "fps": FPS, "totalFrames": inicio,
                  "narracao": narracao, "musica": musica, "sfx": sfx,
                  "formato": roteiro.get("formato", "longo"), "cenas": cenas}

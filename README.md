@@ -18,6 +18,17 @@ brand/                   logo, foto de perfil, banner e mascote
 public/musica/           (opcional) coloque 1 música .mp3 sem direitos autorais
 ```
 
+## Personagens, animações e trilhas
+
+- `elenco.json`: personagens (visual + voz). Hoje: cifrinho, tesla, homem, mulher, jovem, idoso, cientista, executivo.
+- Na cena do roteiro: `"quem"` (quem fala), `"personagens": [{"id","gesto","expressao","entrada","lado"}]`.
+  Gestos: parado, explicar, apontar, acenar, pensar, cruzar, surpreso, comemorar.
+  Entradas: pop, deslizar, cair, teletransporte.
+- Animações: `"animacao": {"tipo": "ilustracao", "nome": "...", "texto": "..."}` com lampada, engrenagens, neuronios,
+  dominos, balanca, ampulheta, marionete, raio, grafico, cadeado, coracao, olho, interrogacao (`src/Ilustracoes.tsx`).
+- Trilha: `"trilha": "misterio" | "tenso" | "leve"` no roteiro (geradas por `scripts/trilha.py`).
+- Shorts: `"formato": "short"` no roteiro (arquivos `roteiros/sNN.json`).
+
 ## Gerar um vídeo
 
 - **Automático:** suba um novo `roteiros/NNN.json` → o vídeo é gerado (sem postar).
