@@ -32,7 +32,9 @@ export type Animacao =
   | { tipo: "encerramento" }
   | { tipo: "ilustracao"; nome: string; texto?: string }
   | { tipo: "gancho"; texto: string }
-  | { tipo: "cta"; texto: string };
+  | { tipo: "cta"; texto: string }
+  | { tipo: "cena3d"; nome: string; texto?: string } // cena 3D padrão (src/3d/cenas3d.tsx)
+  | { tipo: "sobmedida"; nome: string; props?: Record<string, any> }; // cena da história deste vídeo (src/sob-medida/ID/)
 
 export type Cena = {
   id: number;
@@ -46,6 +48,7 @@ export type Cena = {
   animacao: Animacao;
   quem?: string; // id do personagem que fala (padrão: cifrinho)
   personagens?: import("./personagens/Palco").AtorCena[];
+  lofi?: "leve" | "forte" | "nenhum"; // shader no b-roll (padrão: leve)
 };
 
 export type Manifesto = {

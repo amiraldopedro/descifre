@@ -65,8 +65,10 @@ jobs:
         env: { PIXABAY_API_KEY: "${{ secrets.PIXABAY_API_KEY }}" }
         run: python scripts/broll.py ${{ steps.id.outputs.id }}
 
-      - name: Montar manifesto e narração
-        run: python scripts/montar.py ${{ steps.id.outputs.id }}
+      - name: Montar manifesto, narração e efeitos
+        run: |
+          python scripts/registrar.py
+          python scripts/montar.py ${{ steps.id.outputs.id }}
 
       - name: Dividir em partes
         id: partes
@@ -105,6 +107,7 @@ jobs:
         with: { name: build, path: "public/build/${{ needs.preparar.outputs.id }}" }
       - name: Renderizar parte ${{ matrix.parte.i }}
         run: |
+          python3 scripts/registrar.py
           npx remotion render src/index.ts ${{ needs.preparar.outputs.comp }} out/parte_${{ matrix.parte.i }}.mp4 \
             --props=public/build/${{ needs.preparar.outputs.id }}/manifest.json \
             --frames=${{ matrix.parte.de }}-${{ matrix.parte.ate }} --muted --concurrency=100%
@@ -132,24 +135,7 @@ jobs:
           ID=${{ needs.preparar.outputs.id }}
           ls out/parte_*.mp4 | sort -V | sed "s|^out/|file '|; s|$|'|" > out/lista.txt
           ffmpeg -y -loglevel error -f concat -safe 0 -i out/lista.txt -c copy out/video_mudo.mp4
-          MUSICA=$(python3 -c "import json;m=json.load(open('public/build/$ID/manifest.json')).get('musica');print('public/'+m if m else '')")
-          if [ -f public/build/$ID/sfx.mp3 ]; then
-            # Short: narração + efeitos + música (um pouco mais alta), com ducking
-            ffmpeg -y -loglevel error -i out/video_mudo.mp4 -i public/build/$ID/narracao.mp3 -i public/build/$ID/sfx.mp3 -stream_loop -1 -i "$MUSICA" \
-              -filter_complex "[3:a]volume=0.5,aformat=channel_layouts=stereo[m];[1:a]aformat=channel_layouts=stereo,asplit=2[v1][v2];[m][v2]sidechaincompress=threshold=0.02:ratio=8:attack=60:release=500[md];[2:a]volume=0.55,aformat=channel_layouts=stereo[fx];[v1][fx][md]amix=inputs=3:duration=first:normalize=0[a]" \
-              -map 0:v -map "[a]" -c:v copy -c:a aac -b:a 192k -shortest out/final.mp4
-            MUSICA=""; FEITO=1
-          fi
-          if [ -n "${FEITO:-}" ]; then
-            true
-          elif [ -n "$MUSICA" ]; then
-            ffmpeg -y -loglevel error -i out/video_mudo.mp4 -i public/build/$ID/narracao.mp3 -stream_loop -1 -i "$MUSICA" \
-              -filter_complex "[2:a]volume=0.35,aformat=channel_layouts=stereo[m];[1:a]aformat=channel_layouts=stereo,asplit=2[v1][v2];[m][v2]sidechaincompress=threshold=0.02:ratio=10:attack=80:release=700[md];[v1][md]amix=inputs=2:duration=first:normalize=0[a]" \
-              -map 0:v -map "[a]" -c:v copy -c:a aac -b:a 192k -shortest out/final.mp4
-          else
-            ffmpeg -y -loglevel error -i out/video_mudo.mp4 -i public/build/$ID/narracao.mp3 \
-              -map 0:v -map 1:a -c:v copy -c:a aac -b:a 192k -shortest out/final.mp4
-          fi
+          python3 scripts/mixar.py $ID out/video_mudo.mp4 out/final.mp4
           if python3 -c "import json,sys;sys.exit(0 if 'thumb' in json.load(open('roteiros/$ID.meta.json')) else 1)"; then
             python3 -c "import json;print(json.dumps(json.load(open('roteiros/$ID.meta.json'))['thumb']))" > out/thumb.json
             npx remotion still src/index.ts Thumb out/thumb.png --props=out/thumb.json

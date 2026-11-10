@@ -6,6 +6,7 @@ import { Legenda } from "./Legenda";
 import { Mascote } from "./Mascote";
 import { Ilustracao } from "./Ilustracoes";
 import { Palco } from "./personagens/Palco";
+import { CamadaEspecial } from "./CamadaEspecial";
 import { COR, Cena, FONTE_TITULO, Manifesto } from "./tema";
 
 const TRANSICAO = 8; // frames de fade entre cenas
@@ -24,9 +25,10 @@ const CenaView: React.FC<{ cena: Cena }> = ({ cena }) => {
 
   return (
     <AbsoluteFill style={{ opacity: fade }}>
-      {cosmico ? <FundoCosmico /> : <BRoll src={cena.broll!} duracao={cena.duracao} clipe={cena.brollFrames} />}
+      {cosmico ? <FundoCosmico /> : <BRoll src={cena.broll!} duracao={cena.duracao} clipe={cena.brollFrames} lofi={cena.lofi} />}
       {temOverlayGrande && !cosmico && <AbsoluteFill style={{ backgroundColor: "rgba(7,15,51,.45)" }} />}
       <CamadaAnimacao anim={cena.animacao} falando={falando} fala={cena.fala} duracao={cena.duracao} />
+      <CamadaEspecial cena={cena} falando={falando} />
       {/* sem b-roll: o Cifrinho ocupa o centro da tela, conversando */}
       {il && (
         <AbsoluteFill style={{ alignItems: "center", justifyContent: temPalco ? "flex-start" : "center", paddingTop: temPalco ? 90 : 0, paddingBottom: temPalco ? 0 : 190 }}>

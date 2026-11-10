@@ -1,0 +1,70 @@
+{
+ "id": "d02",
+ "titulo": "Demo: Efeito manada (3D e cenas sob medida)",
+ "trilha": "misterio",
+ "voz": "pt-BR-AntonioNeural",
+ "cenas": [
+  {
+   "texto": "Por que a gente segue a multidão, mesmo quando a multidão está errada?",
+   "animacao": {
+    "tipo": "cena3d",
+    "nome": "tunel",
+    "texto": "Efeito manada"
+   },
+   "id": 1
+  },
+  {
+   "texto": "Num experimento famoso, uma pessoa entra num elevador. E todo mundo lá dentro está virado para o fundo. Ela estranha. Olha pros lados. E, em poucos segundos, se vira também.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "d02/elevador"
+   },
+   "id": 2
+  },
+  {
+   "texto": "Nos anos cinquenta, Solomon Asch mostrou três linhas e perguntou qual era igual à de referência. Sete atores responderam errado de propósito. E muita gente concordou com eles.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "d02/linhas-asch"
+   },
+   "id": 3
+  },
+  {
+   "texto": "O cérebro trata a discordância do grupo quase como um alarme de perigo.",
+   "animacao": {
+    "tipo": "cena3d",
+    "nome": "cerebro"
+   },
+   "id": 4
+  },
+  {
+   "texto": "Por isso um único líder confiante consegue virar uma multidão inteira.",
+   "animacao": {
+    "tipo": "cena3d",
+    "nome": "multidao"
+   },
+   "id": 5
+  },
+  {
+   "texto": "Da próxima vez que todo mundo concordar rápido demais, pare e pense sozinho.",
+   "animacao": {
+    "tipo": "ilustracao",
+    "nome": "lampada"
+   },
+   "personagens": [
+    {
+     "id": "cifrinho",
+     "gesto": "apontar"
+    }
+   ],
+   "id": 6
+  },
+  {
+   "texto": "Descifre e domine.",
+   "animacao": {
+    "tipo": "encerramento"
+   },
+   "id": 7
+  }
+ ]
+}

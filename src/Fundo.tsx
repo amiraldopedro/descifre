@@ -2,6 +2,56 @@ import React, { useMemo } from "react";
 import { AbsoluteFill, Loop, OffthreadVideo, interpolate, random, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
 import { COR } from "./tema";
 
+/** Shader lo-fi: grão fino, aberração cromática, scanlines sutis.
+ *  nivel: "leve" (b-roll normal) ou "forte" (glitch em revelações/shorts). */
+export const ShaderLoFi: React.FC<{ nivel?: "leve" | "forte" }> = ({ nivel = "leve" }) => {
+  const f = useCurrentFrame();
+  const forte = nivel === "forte";
+  const graoOpacidade = forte ? 0.18 : 0.08;
+  const abCr = forte ? 4 : 1.5; // px de aberração cromática
+  const scanOpacidade = forte ? 0.12 : 0.04;
+  const glitchOffset = forte ? Math.sin(f * 1.7) * (f % 17 < 2 ? 12 : 0) : 0;
+
+  return (
+    <>
+      {/* Aberração cromática via sombras coloridas deslocadas */}
+      <AbsoluteFill
+        style={{
+          mixBlendMode: "screen",
+          opacity: 0.15,
+          background: `linear-gradient(90deg, rgba(255,59,78,0.3) 0%, transparent 30%, transparent 70%, rgba(47,107,255,0.3) 100%)`,
+          transform: `translateX(${glitchOffset}px)`,
+        }}
+      />
+      {/* Scanlines */}
+      <AbsoluteFill
+        style={{
+          opacity: scanOpacidade,
+          backgroundImage: `repeating-linear-gradient(0deg, transparent, transparent 3px, rgba(0,0,0,0.6) 3px, rgba(0,0,0,0.6) 4px)`,
+          pointerEvents: "none",
+        }}
+      />
+      {/* Grão — SVG noise filter */}
+      <AbsoluteFill style={{ opacity: graoOpacidade, mixBlendMode: "overlay", pointerEvents: "none" }}>
+        <svg width="100%" height="100%" style={{ position: "absolute" }}>
+          <filter id={`grao-${nivel}`}>
+            <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves={3} seed={f % 60} />
+            <feColorMatrix type="saturate" values="0" />
+          </filter>
+          <rect width="100%" height="100%" filter={`url(#grao-${nivel})`} />
+        </svg>
+      </AbsoluteFill>
+      {/* Vinheta (bordas escuras) */}
+      <AbsoluteFill
+        style={{
+          background: `radial-gradient(ellipse at center, transparent 55%, rgba(7,15,51,${forte ? 0.6 : 0.3}) 100%)`,
+          pointerEvents: "none",
+        }}
+      />
+    </>
+  );
+};
+
 /** Fundo cósmico da marca (usado quando não há b-roll e nas cenas do mascote). */
 export const FundoCosmico: React.FC = () => {
   const f = useCurrentFrame();
@@ -41,7 +91,12 @@ export const FundoCosmico: React.FC = () => {
 };
 
 /** B-roll com zoom lento e tinta azul da marca. */
-export const BRoll: React.FC<{ src: string; duracao: number; clipe?: number }> = ({ src, duracao, clipe }) => {
+export const BRoll: React.FC<{ src: string; duracao: number; clipe?: number; lofi?: "leve" | "forte" | "nenhum" }> = ({
+  src,
+  duracao,
+  clipe,
+  lofi = "leve",
+}) => {
   const f = useCurrentFrame();
   const { fps } = useVideoConfig();
   const escala = interpolate(f, [0, duracao], [1.02, 1.12]);
@@ -66,6 +121,7 @@ export const BRoll: React.FC<{ src: string; duracao: number; clipe?: number }> =
         }}
       />
       <AbsoluteFill style={{ backgroundColor: COR.azul, mixBlendMode: "soft-light", opacity: 0.35 }} />
+      {lofi !== "nenhum" && <ShaderLoFi nivel={lofi} />}
     </AbsoluteFill>
   );
 };

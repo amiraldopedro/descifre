@@ -4,6 +4,7 @@ import { BRoll, FundoCosmico } from "./Fundo";
 import { Mascote } from "./Mascote";
 import { Ilustracao } from "./Ilustracoes";
 import { Palco } from "./personagens/Palco";
+import { CamadaEspecial, ehEspecial } from "./CamadaEspecial";
 import { COR, Cena, FONTE_TEXTO, FONTE_TITULO, Manifesto, Palavra } from "./tema";
 
 /* ---------- utilitários de "dopamina" ---------- */
@@ -335,12 +336,13 @@ const CenaShort: React.FC<{ cena: Cena; ultima: number | null }> = ({ cena, ulti
   return (
     <AbsoluteFill>
       <AbsoluteFill style={{ transform: `translate(${s.x}px, ${s.y}px) scale(${zoom})` }}>
-        {cosmico ? <FundoCosmico /> : <BRoll src={cena.broll!} duracao={cena.duracao} clipe={cena.brollFrames} />}
+        {cosmico ? <FundoCosmico /> : <BRoll src={cena.broll!} duracao={cena.duracao} clipe={cena.brollFrames} lofi={cena.lofi ?? (a.tipo === "gancho" ? "forte" : "leve")} />}
       </AbsoluteFill>
       <AbsoluteFill
         style={{ background: "linear-gradient(180deg, rgba(7,15,51,.55) 0%, rgba(7,15,51,.1) 35%, rgba(7,15,51,.2) 60%, rgba(7,15,51,.8) 100%)" }}
       />
       {a.tipo !== "nenhuma" && a.tipo !== "gancho" && <AbsoluteFill style={{ backgroundColor: "rgba(7,15,51,.35)" }} />}
+      {ehEspecial(cena) && <CamadaEspecial cena={cena} falando={falando} />}
       {a.tipo === "gancho" && <Gancho texto={a.texto} />}
       {a.tipo === "pergunta" && <Cartoes texto={a.texto} a={a.a} b={a.b} />}
       {a.tipo === "contagem" && a.pergunta && (

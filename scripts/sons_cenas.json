@@ -1,0 +1,66 @@
+{
+ "d02/elevador": [
+  {
+   "som": "porta",
+   "p": 0.05
+  },
+  {
+   "som": "passos",
+   "p": 0.15
+  },
+  {
+   "som": "tique",
+   "p": 0.55
+  },
+  {
+   "som": "whoosh",
+   "p": 0.84
+  },
+  {
+   "som": "ding",
+   "p": 0.95
+  }
+ ],
+ "d02/linhas-asch": [
+  {
+   "som": "pop",
+   "t": 0.2
+  },
+  {
+   "som": "click",
+   "p": 0.5
+  },
+  {
+   "som": "click",
+   "p": 0.545
+  },
+  {
+   "som": "click",
+   "p": 0.59
+  },
+  {
+   "som": "click",
+   "p": 0.635
+  },
+  {
+   "som": "click",
+   "p": 0.68
+  },
+  {
+   "som": "click",
+   "p": 0.725
+  },
+  {
+   "som": "click",
+   "p": 0.77
+  },
+  {
+   "som": "tique",
+   "p": 0.845
+  },
+  {
+   "som": "glitch",
+   "p": 0.945
+  }
+ ]
+}
