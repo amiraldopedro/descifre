@@ -1,0 +1,328 @@
+{
+ "id": "003",
+ "titulo": "Quem empurra a cadeira ao sair tem estes 3 traços",
+ "trilha": "misterio",
+ "voz": "pt-BR-AntonioNeural",
+ "cenas": [
+  {
+   "texto": "Duas pessoas terminam o café e levantam da mesa. Uma empurra a cadeira de volta. A outra só vai embora.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "003/cafe"
+   },
+   "id": 1
+  },
+  {
+   "texto": "Parece bobagem. Mas a psicologia diz que gestos pequenos assim falam muito sobre quem a gente é.",
+   "animacao": {
+    "tipo": "ilustracao",
+    "nome": "olho"
+   },
+   "id": 2
+  },
+  {
+   "texto": "E você? Quando levanta de uma mesa, empurra a cadeira ou deixa ela pra trás? Guarda essa resposta.",
+   "animacao": {
+    "tipo": "mascote",
+    "texto": "Você empurra a cadeira?"
+   },
+   "id": 3
+  },
+  {
+   "texto": "Eu sou o Cifrinho, e hoje a gente vai descifrar os três traços que costumam aparecer em quem tem esse hábito.",
+   "personagens": [
+    {
+     "id": "cifrinho",
+     "gesto": "explicar"
+    }
+   ],
+   "animacao": {
+    "tipo": "nenhuma"
+   },
+   "id": 4
+  },
+  {
+   "texto": "Antes, um aviso honesto: um gesto sozinho não diz tudo sobre ninguém. Mas pedaços pequenos de comportamento revelam mais do que parece.",
+   "animacao": {
+    "tipo": "titulo",
+    "texto": "Pedaços pequenos revelam muito"
+   },
+   "id": 5
+  },
+  {
+   "texto": "Em mil novecentos e noventa e três, Nalini Ambady e Robert Rosenthal mostraram a estranhos vídeos de professores dando aula. Trinta segundos, sem som. E as notas desses estranhos bateram com as avaliações que os alunos deram depois de um semestre inteiro. Até com clipes de seis segundos.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "003/fatia-fina"
+   },
+   "id": 6
+  },
+  {
+   "texto": "Isso ganhou um nome: fatias finas. Um pedacinho de comportamento já carrega muita informação.",
+   "animacao": {
+    "tipo": "conceito",
+    "nome": "Fatias finas",
+    "frase": "Um pedacinho revela muito",
+    "rotulo": "CONCEITO"
+   },
+   "broll": "people cafe watching",
+   "id": 7
+  },
+  {
+   "texto": "A cadeira é uma dessas fatias. Ela aparece quando ninguém está te avaliando. E é aí que o jeito de verdade aparece.",
+   "animacao": {
+    "tipo": "cena3d",
+    "nome": "cristais"
+   },
+   "id": 8
+  },
+  {
+   "texto": "Traço número um.",
+   "animacao": {
+    "tipo": "cena3d",
+    "nome": "tunel",
+    "texto": "Traço 1"
+   },
+   "pausa": 0.8,
+   "id": 9
+  },
+  {
+   "texto": "Quem empurra a cadeira percebe o espaço que divide com os outros. O corredor, a passagem do garçom, a próxima pessoa que vai sentar ali.",
+   "broll": "waiter restaurant busy",
+   "animacao": {
+    "tipo": "nenhuma"
+   },
+   "id": 10
+  },
+  {
+   "texto": "Na psicologia da personalidade, isso tem a ver com a conscienciosidade: o gosto por ordem, cuidado e responsabilidade. É um dos cinco grandes traços do modelo Big Five.",
+   "animacao": {
+    "tipo": "conceito",
+    "nome": "Conscienciosidade",
+    "frase": "Ordem, cuidado e responsabilidade",
+    "rotulo": "TRAÇO 1"
+   },
+   "id": 11
+  },
+  {
+   "texto": "E não é pouca coisa. Em várias pesquisas, esse é um dos traços que mais ajudam a prever um bom desempenho no trabalho.",
+   "animacao": {
+    "tipo": "ilustracao",
+    "nome": "grafico"
+   },
+   "broll": "office teamwork",
+   "id": 12
+  },
+  {
+   "texto": "Agora, um experimento curioso. Em dois mil e oito, pesquisadores holandeses prenderam panfletos no guidão de bicicletas num beco. Com a parede limpa, cerca de um terço das pessoas jogou o panfleto no chão. Com a parede pichada, mais de dois terços.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "003/beco"
+   },
+   "id": 13
+  },
+  {
+   "texto": "Desordem chama desordem. E quem arruma o próprio pedaço, nem que seja uma cadeira, puxa o ambiente pro lado contrário.",
+   "animacao": {
+    "tipo": "titulo",
+    "texto": "Desordem chama desordem"
+   },
+   "broll": "messy street trash",
+   "id": 14
+  },
+  {
+   "texto": "Traço número dois.",
+   "animacao": {
+    "tipo": "cena3d",
+    "nome": "tunel",
+    "texto": "Traço 2"
+   },
+   "pausa": 0.8,
+   "id": 15
+  },
+  {
+   "texto": "Quem empurra a cadeira enxerga o trabalho invisível. Alguém vai ter que arrumar aquela mesa. E essa pessoa quase nunca é notada.",
+   "broll": "cleaning restaurant table",
+   "animacao": {
+    "tipo": "nenhuma"
+   },
+   "id": 16
+  },
+  {
+   "texto": "Obrigada! Quase ninguém faz isso.",
+   "quem": "mulher",
+   "personagens": [
+    {
+     "id": "mulher",
+     "gesto": "acenar",
+     "expressao": "feliz",
+     "entrada": "deslizar",
+     "lado": "esquerda"
+    },
+    {
+     "id": "cifrinho",
+     "gesto": "surpreso",
+     "lado": "direita"
+    }
+   ],
+   "animacao": {
+    "tipo": "nenhuma"
+   },
+   "id": 17
+  },
+  {
+   "texto": "Viu? Um gesto de dois segundos, e alguém se sentiu visto.",
+   "personagens": [
+    {
+     "id": "mulher",
+     "gesto": "parado",
+     "expressao": "feliz",
+     "lado": "esquerda"
+    },
+    {
+     "id": "cifrinho",
+     "gesto": "apontar",
+     "lado": "direita"
+    }
+   ],
+   "animacao": {
+    "tipo": "ilustracao",
+    "nome": "coracao"
+   },
+   "id": 18
+  },
+  {
+   "texto": "Os psicólogos chamam isso de comportamento pró-social: ajudar sem esperar nada em troca. E ele costuma andar junto com a empatia.",
+   "animacao": {
+    "tipo": "conceito",
+    "nome": "Comportamento pró-social",
+    "frase": "Ajudar sem esperar troco",
+    "rotulo": "TRAÇO 2"
+   },
+   "id": 19
+  },
+  {
+   "texto": "Por isso tanta gente diz que dá pra conhecer alguém pelo jeito que ele trata quem não pode fazer nada por ele.",
+   "animacao": {
+    "tipo": "titulo",
+    "texto": "Como você trata quem não te dá nada?"
+   },
+   "broll": "waiter serving coffee",
+   "id": 20
+  },
+  {
+   "texto": "Traço número três.",
+   "animacao": {
+    "tipo": "cena3d",
+    "nome": "tunel",
+    "texto": "Traço 3"
+   },
+   "pausa": 0.8,
+   "id": 21
+  },
+  {
+   "texto": "Quem empurra a cadeira se importa com como as coisas terminam. Não basta comer bem. Tem que sair bem.",
+   "animacao": {
+    "tipo": "ilustracao",
+    "nome": "ampulheta"
+   },
+   "id": 22
+  },
+  {
+   "texto": "O psicólogo Daniel Kahneman mostrou que a gente lembra de uma experiência pelo momento mais intenso e pelo jeito que ela terminou. Num estudo de mil novecentos e noventa e três, pessoas colocaram a mão em água gelada. E a maioria preferiu repetir a versão mais longa, só porque o final era um pouco menos gelado.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "003/pico-fim"
+   },
+   "id": 23
+  },
+  {
+   "texto": "Isso se chama regra do pico e do fim. E quem cuida do final de um jantar costuma cuidar do final de um projeto, de uma conversa, e até de um relacionamento.",
+   "animacao": {
+    "tipo": "conceito",
+    "nome": "Regra do pico e do fim",
+    "frase": "O final pinta a memória",
+    "rotulo": "TRAÇO 3"
+   },
+   "broll": "friends saying goodbye",
+   "id": 24
+  },
+  {
+   "texto": "Bônus: a internet tem uma versão disso, a teoria do carrinho de mercado. Devolver o carrinho no lugar certo, sem ninguém mandar, seria o teste final do bom cidadão.",
+   "broll": "shopping cart parking lot",
+   "animacao": {
+    "tipo": "ilustracao",
+    "nome": "balanca"
+   },
+   "id": 25
+  },
+  {
+   "texto": "É um meme, não é um estudo científico. Mas a ideia por trás é a mesma: o que você faz quando ninguém está olhando.",
+   "animacao": {
+    "tipo": "titulo",
+    "texto": "Quando ninguém está olhando"
+   },
+   "lofi": "forte",
+   "id": 26
+  },
+  {
+   "texto": "E aqui vai a ressalva. Tem gente maravilhosa que esquece a cadeira. Pode ser pressa, distração, ou só o costume da casa onde cresceu.",
+   "personagens": [
+    {
+     "id": "cifrinho",
+     "gesto": "pensar",
+     "expressao": "pensativo"
+    }
+   ],
+   "animacao": {
+    "tipo": "nenhuma"
+   },
+   "id": 27
+  },
+  {
+   "texto": "E tem gente que arruma todas as cadeiras e trata mal o garçom. Um gesto é uma pista, nunca uma sentença.",
+   "animacao": {
+    "tipo": "titulo",
+    "texto": "Pista, não sentença"
+   },
+   "id": 28
+  },
+  {
+   "texto": "O que vale é o padrão. Pequenos cuidados repetidos todo dia dizem mais do que qualquer discurso.",
+   "animacao": {
+    "tipo": "cena3d",
+    "nome": "cerebro"
+   },
+   "id": 29
+  },
+  {
+   "texto": "Agora me conta nos comentários: você é do time que empurra a cadeira ou do time que deixa pra trás? Sem mentir, hein.",
+   "animacao": {
+    "tipo": "mascote",
+    "texto": "Empurra ou deixa? Comenta!"
+   },
+   "id": 30
+  },
+  {
+   "texto": "Se curtiu, se inscreve e manda esse vídeo pra aquela pessoa que sempre arruma a mesa.",
+   "personagens": [
+    {
+     "id": "cifrinho",
+     "gesto": "comemorar",
+     "expressao": "piscadela"
+    }
+   ],
+   "animacao": {
+    "tipo": "nenhuma"
+   },
+   "id": 31
+  },
+  {
+   "texto": "Eu sou o Cifrinho. Descifre e domine.",
+   "animacao": {
+    "tipo": "encerramento"
+   },
+   "id": 32
+  }
+ ]
+}

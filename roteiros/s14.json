@@ -1,0 +1,85 @@
+{
+ "id": "s14",
+ "titulo": "Esse texto descreve você?",
+ "formato": "short",
+ "voz": "pt-BR-AntonioNeural",
+ "taxa": "+14%",
+ "trilha": "misterio",
+ "cenas": [
+  {
+   "texto": "Ouve isso e me diz se não é você.",
+   "animacao": {
+    "tipo": "gancho",
+    "texto": "ESSE TEXTO É VOCÊ?"
+   },
+   "id": 1
+  },
+  {
+   "texto": "Você é sociável, mas precisa de um tempo sozinho pra recarregar.",
+   "personagens": [
+    {
+     "id": "cifrinho",
+     "gesto": "explicar"
+    }
+   ],
+   "animacao": {
+    "tipo": "nenhuma"
+   },
+   "id": 2
+  },
+  {
+   "texto": "Às vezes é duro demais consigo mesmo. E tem um potencial que ainda não usou.",
+   "animacao": {
+    "tipo": "ilustracao",
+    "nome": "olho"
+   },
+   "id": 3
+  },
+  {
+   "texto": "Parece você?",
+   "broll": "mirror reflection",
+   "animacao": {
+    "tipo": "pergunta",
+    "texto": "Parece você?",
+    "a": "Muito!",
+    "b": "Nem um pouco"
+   },
+   "id": 4
+  },
+  {
+   "texto": "Pensa.",
+   "animacao": {
+    "tipo": "contagem"
+   },
+   "id": 5
+  },
+  {
+   "texto": "Esse texto serve pra quase todo mundo. Isso é o efeito Barnum.",
+   "lofi": "forte",
+   "animacao": {
+    "tipo": "conceito",
+    "nome": "Efeito Barnum",
+    "frase": "Frase vaga parece feita pra você",
+    "rotulo": "A REVELAÇÃO"
+   },
+   "id": 6
+  },
+  {
+   "texto": "Horóscopo, teste de internet e golpista usam a mesma receita.",
+   "broll": "horoscope zodiac",
+   "animacao": {
+    "tipo": "ilustracao",
+    "nome": "marionete"
+   },
+   "id": 7
+  },
+  {
+   "texto": "Faz o teste das escadas no vídeo do link. E vê se ele te engana.",
+   "animacao": {
+    "tipo": "cta",
+    "texto": "FAÇA O TESTE"
+   },
+   "id": 8
+  }
+ ]
+}

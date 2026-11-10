@@ -1,0 +1,294 @@
+{
+ "id": "006",
+ "titulo": "Escolha uma escada: o teste que revela o que você esconde",
+ "trilha": "misterio",
+ "voz": "pt-BR-AntonioNeural",
+ "cenas": [
+  {
+   "texto": "Escolha uma escada. Sem pensar. A primeira que chamar a sua atenção.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "006/escadas",
+    "props": {
+     "fase": "escolha"
+    }
+   },
+   "pausa": 3.0,
+   "id": 1
+  },
+  {
+   "texto": "Guardou a letra? Esse é o primeiro de quatro testes visuais. No final eu revelo o que as suas escolhas dizem sobre você. E tem uma surpresa.",
+   "animacao": {
+    "tipo": "mascote",
+    "texto": "4 testes. Escolha pelo instinto!"
+   },
+   "id": 2
+  },
+  {
+   "texto": "Eu sou o Cifrinho. Responde rápido, sem pensar demais, e anota as suas letras.",
+   "personagens": [
+    {
+     "id": "cifrinho",
+     "gesto": "apontar"
+    }
+   ],
+   "animacao": {
+    "tipo": "nenhuma"
+   },
+   "id": 3
+  },
+  {
+   "texto": "Escada A, a espiral. Você é cuidadoso e pensa muito antes de agir. Às vezes, a sua cabeça dá voltas demais na hora de dormir.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "006/escadas",
+    "props": {
+     "fase": "destaque",
+     "letra": "A"
+    }
+   },
+   "id": 4
+  },
+  {
+   "texto": "Escada B, a reta. Você é direto e gosta de resultado. Mas, por dentro, tem mais dúvidas do que mostra.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "006/escadas",
+    "props": {
+     "fase": "destaque",
+     "letra": "B"
+    }
+   },
+   "id": 5
+  },
+  {
+   "texto": "Escada C, a do jardim. Você valoriza o caminho, não só a chegada. E já se sentiu incompreendido por gente apressada.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "006/escadas",
+    "props": {
+     "fase": "destaque",
+     "letra": "C"
+    }
+   },
+   "id": 6
+  },
+  {
+   "texto": "Escada D, a escondida atrás da porta. Você guarda partes de si que pouca gente conhece. E tem um potencial que ainda não usou.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "006/escadas",
+    "props": {
+     "fase": "destaque",
+     "letra": "D"
+    }
+   },
+   "id": 7
+  },
+  {
+   "texto": "Teste número dois. Três portas. Qual você abriria?",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "006/portas",
+    "props": {
+     "fase": "escolha"
+    }
+   },
+   "pausa": 3.0,
+   "id": 8
+  },
+  {
+   "texto": "Porta vermelha: você tem coragem, mas às vezes é duro demais consigo mesmo. Porta azul: você é leal, e já se decepcionou por confiar demais. Porta amarela: você é criativo, e se cobra por não terminar tudo o que começa.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "006/portas",
+    "props": {
+     "fase": "revelar"
+    }
+   },
+   "id": 9
+  },
+  {
+   "texto": "Teste número três. Você chega numa festa. Onde você fica?",
+   "animacao": {
+    "tipo": "pergunta",
+    "numero": 3,
+    "total": 4,
+    "rotulo": "TESTE",
+    "texto": "Você chega numa festa...",
+    "a": "No meio da roda",
+    "b": "Num canto, observando"
+   },
+   "id": 10
+  },
+  {
+   "texto": "Escolhe!",
+   "animacao": {
+    "tipo": "contagem"
+   },
+   "id": 11
+  },
+  {
+   "texto": "Se foi A: você é sociável, mas precisa de um tempo sozinho pra recarregar. Se foi B: você é observador, mas, com quem confia, se solta muito.",
+   "broll": "party friends night",
+   "animacao": {
+    "tipo": "ilustracao",
+    "nome": "olho"
+   },
+   "id": 12
+  },
+  {
+   "texto": "Último teste. Você acha uma chave antiga no chão. O que faz?",
+   "animacao": {
+    "tipo": "pergunta",
+    "numero": 4,
+    "total": 4,
+    "rotulo": "TESTE",
+    "texto": "Uma chave antiga no chão...",
+    "a": "Guardo comigo",
+    "b": "Deixo onde está"
+   },
+   "id": 13
+  },
+  {
+   "texto": "Rápido!",
+   "animacao": {
+    "tipo": "contagem"
+   },
+   "id": 14
+  },
+  {
+   "texto": "Se foi A: você é curioso e não deixa oportunidade passar, mesmo que às vezes se arrependa. Se foi B: você respeita limites, mas sente que poderia ousar mais.",
+   "broll": "old key ground",
+   "animacao": {
+    "tipo": "ilustracao",
+    "nome": "cadeado"
+   },
+   "id": 15
+  },
+  {
+   "texto": "E aí? Quantas leituras pareceram com você? Três? Quatro? Todas?",
+   "animacao": {
+    "tipo": "mascote",
+    "texto": "Quantas acertaram você?"
+   },
+   "id": 16
+  },
+  {
+   "texto": "Agora a surpresa. Volta e ouve de novo: quase todas essas frases servem pra qualquer pessoa. Inclusive as das letras que você não escolheu.",
+   "animacao": {
+    "tipo": "titulo",
+    "texto": "Elas servem pra todo mundo"
+   },
+   "lofi": "forte",
+   "id": 17
+  },
+  {
+   "texto": "Em mil novecentos e quarenta e nove, o psicólogo Bertram Forer aplicou um teste de personalidade nos seus alunos. Depois, entregou a cada um uma análise personalizada. De zero a cinco, a nota média de precisão foi quatro vírgula vinte e seis. Só que todos tinham recebido exatamente o mesmo texto, tirado em boa parte de um livro de astrologia.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "006/forer"
+   },
+   "id": 18
+  },
+  {
+   "texto": "Isso virou o efeito Barnum, ou efeito Forer: frases vagas que parecem escritas só pra você.",
+   "animacao": {
+    "tipo": "conceito",
+    "nome": "Efeito Barnum",
+    "frase": "Frase vaga parece feita pra você",
+    "rotulo": "A REVELAÇÃO"
+   },
+   "id": 19
+  },
+  {
+   "texto": "A receita tem três ingredientes: frase vaga, elogio na medida, e um contraste. Você é sociável, mas precisa de um tempo sozinho. Quem não precisa?",
+   "animacao": {
+    "tipo": "lista",
+    "itens": [
+     "1. Frase vaga",
+     "2. Elogio na medida",
+     "3. Um contraste"
+    ]
+   },
+   "id": 20
+  },
+  {
+   "texto": "As leituras deste vídeo usaram exatamente essa receita. Desculpa. Era pra você sentir na pele.",
+   "personagens": [
+    {
+     "id": "cifrinho",
+     "gesto": "comemorar",
+     "expressao": "piscadela"
+    }
+   ],
+   "animacao": {
+    "tipo": "nenhuma"
+   },
+   "id": 21
+  },
+  {
+   "texto": "E esse truque está em todo lugar: horóscopo, teste de internet, vidente, e até golpista que finge te conhecer pra ganhar a sua confiança.",
+   "broll": "horoscope zodiac",
+   "animacao": {
+    "tipo": "ilustracao",
+    "nome": "marionete"
+   },
+   "id": 22
+  },
+  {
+   "texto": "O nome vem do showman P. T. Barnum, famoso por ter um pouco de tudo para todo mundo. É exatamente o que essas frases fazem.",
+   "animacao": {
+    "tipo": "cena3d",
+    "nome": "cristais"
+   },
+   "id": 23
+  },
+  {
+   "texto": "Como se proteger? Faça uma pergunta: essa frase serviria pro meu amigo também? Se serviria, ela não diz nada sobre mim.",
+   "animacao": {
+    "tipo": "titulo",
+    "texto": "Serviria pro meu amigo?"
+   },
+   "id": 24
+  },
+  {
+   "texto": "Os testes sérios da psicologia são longos, testados em milhares de pessoas, e nem sempre dizem o que você quer ouvir. Esse é o sinal de que funcionam.",
+   "broll": "psychologist questionnaire",
+   "animacao": {
+    "tipo": "ilustracao",
+    "nome": "balanca"
+   },
+   "id": 25
+  },
+  {
+   "texto": "Agora comenta: qual escada você escolheu? E confessa se o teste te enganou.",
+   "animacao": {
+    "tipo": "mascote",
+    "texto": "Qual escada? Comenta!"
+   },
+   "id": 26
+  },
+  {
+   "texto": "Manda esse vídeo pra aquele amigo que lê o horóscopo todo dia. E se inscreve no canal.",
+   "personagens": [
+    {
+     "id": "cifrinho",
+     "gesto": "apontar",
+     "expressao": "feliz"
+    }
+   ],
+   "animacao": {
+    "tipo": "nenhuma"
+   },
+   "id": 27
+  },
+  {
+   "texto": "Eu sou o Cifrinho. Descifre e domine.",
+   "animacao": {
+    "tipo": "encerramento"
+   },
+   "id": 28
+  }
+ ]
+}

@@ -1,0 +1,53 @@
+{
+ "id": "s15",
+ "titulo": "Os meninos rejeitados que ganharam o Nobel",
+ "formato": "short",
+ "voz": "pt-BR-AntonioNeural",
+ "taxa": "+14%",
+ "trilha": "misterio",
+ "cenas": [
+  {
+   "texto": "Dois meninos foram rejeitados num estudo de gênios. E ganharam o Nobel.",
+   "animacao": {
+    "tipo": "gancho",
+    "texto": "REJEITADOS. E NOBEL."
+   },
+   "id": 1
+  },
+  {
+   "texto": "Em mil novecentos e vinte e um, Lewis Terman acompanhou mais de mil e quinhentas crianças com QI altíssimo. Muitas se deram bem. Mas nenhuma ganhou um Nobel. E dois meninos recusados no teste ganharam o Nobel de Física: Shockley e Alvarez.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "007/terman"
+   },
+   "id": 2
+  },
+  {
+   "texto": "QI ajuda, mas não decide sozinho.",
+   "lofi": "forte",
+   "animacao": {
+    "tipo": "conceito",
+    "nome": "QI não é destino",
+    "frase": "Curiosidade e esforço contam",
+    "rotulo": "A VIRADA"
+   },
+   "id": 3
+  },
+  {
+   "texto": "Curiosidade, esforço e oportunidade também entram na conta.",
+   "animacao": {
+    "tipo": "cena3d",
+    "nome": "cerebro"
+   },
+   "id": 4
+  },
+  {
+   "texto": "Sobe a escada do QI completa no vídeo do link.",
+   "animacao": {
+    "tipo": "cta",
+    "texto": "SUBA A ESCADA DO QI"
+   },
+   "id": 5
+  }
+ ]
+}

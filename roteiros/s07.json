@@ -1,0 +1,79 @@
+{
+ "id": "s07",
+ "titulo": "Você empurra a cadeira quando levanta?",
+ "formato": "short",
+ "voz": "pt-BR-AntonioNeural",
+ "taxa": "+14%",
+ "trilha": "misterio",
+ "cenas": [
+  {
+   "texto": "Quando você levanta da mesa, empurra a cadeira?",
+   "animacao": {
+    "tipo": "gancho",
+    "texto": "VOCÊ EMPURRA A CADEIRA?"
+   },
+   "id": 1
+  },
+  {
+   "texto": "Duas pessoas terminam o café e levantam da mesa. Uma empurra a cadeira de volta. A outra só vai embora.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "003/cafe"
+   },
+   "id": 2
+  },
+  {
+   "texto": "E você, faz o quê?",
+   "broll": "restaurant chairs table",
+   "animacao": {
+    "tipo": "pergunta",
+    "texto": "E você?",
+    "a": "Empurro sempre",
+    "b": "Deixo pra trás"
+   },
+   "id": 3
+  },
+  {
+   "texto": "Responde!",
+   "animacao": {
+    "tipo": "contagem"
+   },
+   "id": 4
+  },
+  {
+   "texto": "Pra psicologia, gestos pequenos assim dizem muito. Esse fala de cuidado com o espaço dos outros.",
+   "animacao": {
+    "tipo": "conceito",
+    "nome": "Conscienciosidade",
+    "frase": "Ordem e cuidado",
+    "rotulo": "TRAÇO 1"
+   },
+   "id": 5
+  },
+  {
+   "texto": "E de enxergar quem vai arrumar a mesa depois.",
+   "broll": "cleaning restaurant table",
+   "animacao": {
+    "tipo": "ilustracao",
+    "nome": "coracao"
+   },
+   "id": 6
+  },
+  {
+   "texto": "Mas calma: um gesto é uma pista, nunca uma sentença.",
+   "animacao": {
+    "tipo": "cena3d",
+    "nome": "cristais"
+   },
+   "id": 7
+  },
+  {
+   "texto": "Os três traços completos estão no vídeo do link.",
+   "animacao": {
+    "tipo": "cta",
+    "texto": "VEJA OS 3 TRAÇOS"
+   },
+   "id": 8
+  }
+ ]
+}

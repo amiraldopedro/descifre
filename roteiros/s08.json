@@ -1,0 +1,80 @@
+{
+ "id": "s08",
+ "titulo": "O teste do carrinho de mercado",
+ "formato": "short",
+ "voz": "pt-BR-AntonioNeural",
+ "taxa": "+14%",
+ "trilha": "misterio",
+ "cenas": [
+  {
+   "texto": "Existe um teste que mostra quem você é de verdade. E ele é um carrinho de mercado.",
+   "animacao": {
+    "tipo": "gancho",
+    "texto": "O TESTE DO CARRINHO"
+   },
+   "id": 1
+  },
+  {
+   "texto": "Você terminou as compras. Ninguém vai te multar se deixar o carrinho no estacionamento.",
+   "broll": "shopping cart parking lot",
+   "animacao": {
+    "tipo": "pergunta",
+    "texto": "O que você faz?",
+    "a": "Devolvo no lugar",
+    "b": "Deixo ali mesmo"
+   },
+   "id": 2
+  },
+  {
+   "texto": "Responde rápido.",
+   "animacao": {
+    "tipo": "contagem"
+   },
+   "id": 3
+  },
+  {
+   "texto": "A internet chama isso de teoria do carrinho: o teste final do bom cidadão.",
+   "animacao": {
+    "tipo": "conceito",
+    "nome": "Teoria do carrinho",
+    "frase": "O que você faz sem ninguém olhando",
+    "rotulo": "MEME DA INTERNET"
+   },
+   "id": 4
+  },
+  {
+   "texto": "É meme, não é ciência. Mas a ciência tem um parecido.",
+   "animacao": {
+    "tipo": "cena3d",
+    "nome": "neuronios"
+   },
+   "id": 5
+  },
+  {
+   "texto": "Em dois mil e oito, pesquisadores prenderam panfletos em bicicletas num beco. Com a parede limpa, um terço jogou o papel no chão. Com a parede pichada, mais de dois terços.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "003/beco"
+   },
+   "id": 6
+  },
+  {
+   "texto": "Desordem chama desordem. Devolver o carrinho é puxar o mundo pro outro lado.",
+   "broll": "clean street city",
+   "lofi": "forte",
+   "animacao": {
+    "tipo": "ilustracao",
+    "nome": "balanca"
+   },
+   "id": 7
+  },
+  {
+   "texto": "Tem mais um gesto que revela três traços seus. Tá no vídeo do link.",
+   "animacao": {
+    "tipo": "cta",
+    "texto": "VEJA O VÍDEO"
+   },
+   "id": 8
+  }
+ ]
+}

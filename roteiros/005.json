@@ -1,0 +1,371 @@
+{
+ "id": "005",
+ "titulo": "Por que somos grossos com quem mais amamos (e como consertar)",
+ "trilha": "leve",
+ "voz": "pt-BR-AntonioNeural",
+ "cenas": [
+  {
+   "texto": "Filho, como é que eu mando foto no zap mesmo?",
+   "quem": "mulher",
+   "personagens": [
+    {
+     "id": "mulher",
+     "gesto": "pensar",
+     "expressao": "pensativo",
+     "entrada": "deslizar",
+     "lado": "esquerda"
+    },
+    {
+     "id": "jovem",
+     "gesto": "parado",
+     "lado": "direita"
+    }
+   ],
+   "animacao": {
+    "tipo": "nenhuma"
+   },
+   "id": 1
+  },
+  {
+   "texto": "Mãe, eu já te expliquei mil vezes!",
+   "quem": "jovem",
+   "personagens": [
+    {
+     "id": "mulher",
+     "gesto": "surpreso",
+     "expressao": "surpreso",
+     "lado": "esquerda"
+    },
+    {
+     "id": "jovem",
+     "gesto": "cruzar",
+     "expressao": "bravo",
+     "lado": "direita"
+    }
+   ],
+   "lofi": "forte",
+   "animacao": {
+    "tipo": "nenhuma"
+   },
+   "id": 2
+  },
+  {
+   "texto": "Alô? Oi, chefe! Claro, sem problema nenhum, eu te explico de novo!",
+   "quem": "jovem",
+   "personagens": [
+    {
+     "id": "jovem",
+     "gesto": "acenar",
+     "expressao": "feliz",
+     "lado": "centro"
+    }
+   ],
+   "animacao": {
+    "tipo": "titulo",
+    "texto": "Com o chefe: paciência infinita"
+   },
+   "id": 3
+  },
+  {
+   "texto": "Conhece essa cena? A gente trata estranho com educação, e solta a grosseria justamente em quem mais ama.",
+   "animacao": {
+    "tipo": "mascote",
+    "texto": "Por que somos grossos com quem amamos?"
+   },
+   "id": 4
+  },
+  {
+   "texto": "E depois, no caminho de volta pra casa, bate aquela culpa. Eu sou o Cifrinho, e hoje eu vou te mostrar quatro razões pra isso acontecer. E uma mensagem de uma linha que conserta o estrago.",
+   "personagens": [
+    {
+     "id": "cifrinho",
+     "gesto": "explicar"
+    }
+   ],
+   "animacao": {
+    "tipo": "ilustracao",
+    "nome": "coracao"
+   },
+   "id": 5
+  },
+  {
+   "texto": "Razão número um.",
+   "animacao": {
+    "tipo": "cena3d",
+    "nome": "tunel",
+    "texto": "Razão 1"
+   },
+   "pausa": 0.8,
+   "id": 6
+  },
+  {
+   "texto": "Com um estranho ou com o chefe, o seu cérebro faz uma conta o tempo todo: quanto eu perco se for grosso agora? Com a família, essa calculadora desliga. A gente sente que o amor deles está garantido.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "005/calculadora"
+   },
+   "id": 7
+  },
+  {
+   "texto": "É a segurança virando descuido. O lugar onde você mais relaxa também é onde você mais escorrega.",
+   "animacao": {
+    "tipo": "conceito",
+    "nome": "Custo social",
+    "frase": "Com quem é garantido, a gente relaxa demais",
+    "rotulo": "RAZÃO 1"
+   },
+   "broll": "family dinner table",
+   "id": 8
+  },
+  {
+   "texto": "Razão número dois.",
+   "animacao": {
+    "tipo": "cena3d",
+    "nome": "tunel",
+    "texto": "Razão 2"
+   },
+   "pausa": 0.8,
+   "id": 9
+  },
+  {
+   "texto": "A gente espera que quem ama entenda sem precisar explicar. Com o colega, você explica com calma. Com a mãe, você pensa: como ela ainda não sabe disso?",
+   "broll": "mother daughter talking kitchen",
+   "animacao": {
+    "tipo": "ilustracao",
+    "nome": "interrogacao"
+   },
+   "id": 10
+  },
+  {
+   "texto": "Só que ninguém lê mente. E quando a expectativa quebra, vem a irritação. Mais expectativa, menos paciência.",
+   "animacao": {
+    "tipo": "titulo",
+    "texto": "Mais expectativa, menos paciência"
+   },
+   "id": 11
+  },
+  {
+   "texto": "Razão número três.",
+   "animacao": {
+    "tipo": "cena3d",
+    "nome": "tunel",
+    "texto": "Razão 3"
+   },
+   "pausa": 0.8,
+   "id": 12
+  },
+  {
+   "texto": "Quanto mais próxima uma pessoa, mais ela vira parte de você. Em mil novecentos e noventa e dois, Arthur Aron criou um teste com dois círculos, você e o outro. Quanto mais íntimos, mais os círculos se misturam.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "005/circulos"
+   },
+   "id": 13
+  },
+  {
+   "texto": "Por isso o erro da sua mãe parece um erro seu. A vergonha que você sente dela, na verdade, é vergonha de você mesmo. E a gente bate onde dói.",
+   "animacao": {
+    "tipo": "conceito",
+    "nome": "O outro em mim",
+    "frase": "Quem é próximo vira parte de nós",
+    "rotulo": "RAZÃO 3"
+   },
+   "id": 14
+  },
+  {
+   "texto": "Razão número quatro, a mais escondida.",
+   "animacao": {
+    "tipo": "cena3d",
+    "nome": "tunel",
+    "texto": "Razão 4"
+   },
+   "pausa": 0.8,
+   "id": 15
+  },
+  {
+   "texto": "Quase sempre, a palavra dura está cobrindo outro sentimento: cansaço, preocupação, medo, solidão. Igual a um ouriço de castanha: espinhos por fora, e algo macio por dentro.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "005/ourico"
+   },
+   "id": 16
+  },
+  {
+   "texto": "O mãe, eu já expliquei, muitas vezes quer dizer: eu tô exausto e não tenho espaço pra mais nada hoje.",
+   "broll": "tired man couch night",
+   "animacao": {
+    "tipo": "titulo",
+    "texto": "A grosseria esconde outra coisa"
+   },
+   "id": 17
+  },
+  {
+   "texto": "E tem mais: depois de um dia de raiva engolida no trabalho, a gente descarrega em quem não tem nada a ver. Uma revisão de dezenas de estudos, de dois mil, mostrou isso: é a agressão deslocada.",
+   "animacao": {
+    "tipo": "conceito",
+    "nome": "Agressão deslocada",
+    "frase": "A raiva sai em quem não tem culpa",
+    "rotulo": "BÔNUS"
+   },
+   "broll": "stressed office worker",
+   "id": 18
+  },
+  {
+   "texto": "Então como consertar?",
+   "animacao": {
+    "tipo": "cena3d",
+    "nome": "cerebro"
+   },
+   "id": 19
+  },
+  {
+   "texto": "O psicólogo John Gottman, que estudou milhares de casais, diz que brigar todo mundo briga. O que separa as relações boas é o reparo: voltar e consertar.",
+   "animacao": {
+    "tipo": "citacao",
+    "texto": "Todo mundo briga. O que importa é o reparo.",
+    "autor": "Ideia de John Gottman"
+   },
+   "id": 20
+  },
+  {
+   "texto": "Ele também viu que os três primeiros minutos de uma conversa difícil preveem como ela vai terminar em noventa e seis por cento das vezes. Começou atacando, termina mal.",
+   "animacao": {
+    "tipo": "ilustracao",
+    "nome": "ampulheta"
+   },
+   "id": 21
+  },
+  {
+   "texto": "E ele apontou os quatro sinais mais perigosos numa briga: crítica, desprezo, defensiva e silêncio total. O desprezo, aquele revirar de olhos, é o pior deles.",
+   "animacao": {
+    "tipo": "lista",
+    "itens": [
+     "1. Crítica",
+     "2. Desprezo",
+     "3. Defensiva",
+     "4. Silêncio total"
+    ]
+   },
+   "id": 22
+  },
+  {
+   "texto": "A boa notícia é que dá pra trocar o ataque por um começo suave. Em vez de você nunca entende, tenta: eu tô cansado, me dá um minuto.",
+   "broll": "couple talking calm",
+   "animacao": {
+    "tipo": "titulo",
+    "texto": "Troque o ataque por um começo suave"
+   },
+   "id": 23
+  },
+  {
+   "texto": "Então aqui vai a mensagem de uma linha. No mesmo dia, manda: desculpa pelo jeito que eu falei. Eu tava cansado, e você não merecia isso.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "005/mensagem"
+   },
+   "id": 24
+  },
+  {
+   "texto": "Repara na receita: você assume o jeito, conta o sentimento escondido, e deixa claro que a culpa não era do outro. Sem textão.",
+   "animacao": {
+    "tipo": "lista",
+    "itens": [
+     "1. Assuma o jeito",
+     "2. Conte o sentimento",
+     "3. Tire a culpa do outro"
+    ]
+   },
+   "id": 25
+  },
+  {
+   "texto": "Filho, como é que eu mando foto no zap mesmo?",
+   "quem": "mulher",
+   "personagens": [
+    {
+     "id": "mulher",
+     "gesto": "pensar",
+     "expressao": "pensativo",
+     "lado": "esquerda"
+    },
+    {
+     "id": "jovem",
+     "gesto": "parado",
+     "lado": "direita"
+    }
+   ],
+   "animacao": {
+    "tipo": "nenhuma"
+   },
+   "id": 26
+  },
+  {
+   "texto": "Vem cá, mãe. Eu te mostro. Devagar dessa vez.",
+   "quem": "jovem",
+   "personagens": [
+    {
+     "id": "mulher",
+     "gesto": "comemorar",
+     "expressao": "feliz",
+     "lado": "esquerda"
+    },
+    {
+     "id": "jovem",
+     "gesto": "explicar",
+     "expressao": "feliz",
+     "lado": "direita"
+    }
+   ],
+   "animacao": {
+    "tipo": "ilustracao",
+    "nome": "coracao"
+   },
+   "id": 27
+  },
+  {
+   "texto": "Um cuidado importante: uma grosseria de vez em quando é humana. Humilhação, ameaça e desprezo todo dia já não são. Se isso acontece com você, conversar com alguém de confiança ou com um profissional ajuda muito.",
+   "animacao": {
+    "tipo": "ilustracao",
+    "nome": "cadeado"
+   },
+   "broll": "friends support talking",
+   "id": 28
+  },
+  {
+   "texto": "A gente não precisa ser perfeito com quem ama. Só precisa voltar e consertar.",
+   "animacao": {
+    "tipo": "titulo",
+    "texto": "Não é ser perfeito. É voltar e consertar."
+   },
+   "id": 29
+  },
+  {
+   "texto": "E aí, quem é a pessoa que mais recebe a sua grosseria? Não precisa dizer o nome. Só manda a mensagem hoje.",
+   "animacao": {
+    "tipo": "mascote",
+    "texto": "Manda a mensagem hoje!"
+   },
+   "id": 30
+  },
+  {
+   "texto": "Se esse vídeo te pegou, compartilha com alguém da família. E se inscreve no canal.",
+   "personagens": [
+    {
+     "id": "cifrinho",
+     "gesto": "comemorar",
+     "expressao": "piscadela"
+    }
+   ],
+   "animacao": {
+    "tipo": "nenhuma"
+   },
+   "id": 31
+  },
+  {
+   "texto": "Eu sou o Cifrinho. Descifre e domine.",
+   "animacao": {
+    "tipo": "encerramento"
+   },
+   "id": 32
+  }
+ ]
+}

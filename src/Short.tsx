@@ -77,13 +77,15 @@ const LegendaGigante: React.FC<{ palavras: Palavra[]; y: number }> = ({ palavras
     >
       {g.map((p, i) => {
         const ativa = t >= p.t0 && t <= p.t1 + 0.04;
+        const palavra = p.w.replace(/[,.:;!?]$/, "");
+        const tam = palavra.length > 9 ? Math.floor((108 * 9) / palavra.length) : 108; // palavra longa encolhe para caber
         return (
           <span
             key={i}
             style={{
               fontFamily: FONTE_TITULO,
               fontWeight: 800,
-              fontSize: 108,
+              fontSize: tam,
               lineHeight: 1.08,
               textTransform: "uppercase",
               display: "inline-block",
@@ -92,7 +94,7 @@ const LegendaGigante: React.FC<{ palavras: Palavra[]; y: number }> = ({ palavras
               ...texto3D(),
             }}
           >
-            {p.w.replace(/[,.:;!?]$/, "")}
+            {palavra}
           </span>
         );
       })}

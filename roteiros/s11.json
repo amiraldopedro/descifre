@@ -1,0 +1,93 @@
+{
+ "id": "s11",
+ "titulo": "Você fala com sua mãe como fala com o chefe?",
+ "formato": "short",
+ "voz": "pt-BR-AntonioNeural",
+ "taxa": "+14%",
+ "trilha": "misterio",
+ "cenas": [
+  {
+   "texto": "Você fala com a sua mãe do mesmo jeito que fala com o seu chefe?",
+   "animacao": {
+    "tipo": "gancho",
+    "texto": "MÃE OU CHEFE?"
+   },
+   "id": 1
+  },
+  {
+   "texto": "Filho, como é que eu mando foto no zap?",
+   "quem": "mulher",
+   "personagens": [
+    {
+     "id": "mulher",
+     "gesto": "pensar",
+     "expressao": "pensativo",
+     "lado": "esquerda"
+    },
+    {
+     "id": "jovem",
+     "gesto": "parado",
+     "lado": "direita"
+    }
+   ],
+   "animacao": {
+    "tipo": "nenhuma"
+   },
+   "id": 2
+  },
+  {
+   "texto": "Mãe, eu já te expliquei mil vezes!",
+   "quem": "jovem",
+   "personagens": [
+    {
+     "id": "mulher",
+     "gesto": "surpreso",
+     "expressao": "surpreso",
+     "lado": "esquerda"
+    },
+    {
+     "id": "jovem",
+     "gesto": "cruzar",
+     "expressao": "bravo",
+     "lado": "direita"
+    }
+   ],
+   "animacao": {
+    "tipo": "nenhuma"
+   },
+   "id": 3
+  },
+  {
+   "texto": "Oi, chefe! Claro, eu te explico de novo!",
+   "quem": "jovem",
+   "personagens": [
+    {
+     "id": "jovem",
+     "gesto": "acenar",
+     "expressao": "feliz",
+     "lado": "centro"
+    }
+   ],
+   "animacao": {
+    "tipo": "nenhuma"
+   },
+   "id": 4
+  },
+  {
+   "texto": "Com o chefe, o seu cérebro calcula quanto você perde se for grosso. Com a família, essa calculadora desliga. O amor parece garantido.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "005/calculadora"
+   },
+   "id": 5
+  },
+  {
+   "texto": "Tem mais três razões, e uma mensagem que conserta tudo, no vídeo do link.",
+   "animacao": {
+    "tipo": "cta",
+    "texto": "VEJA COMO CONSERTAR"
+   },
+   "id": 6
+  }
+ ]
+}

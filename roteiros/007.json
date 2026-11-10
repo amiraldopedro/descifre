@@ -1,0 +1,264 @@
+{
+ "id": "007",
+ "titulo": "QI 70, 100, 130 e 160: como cada mente vê o mundo",
+ "trilha": "misterio",
+ "voz": "pt-BR-AntonioNeural",
+ "cenas": [
+  {
+   "texto": "Imagina uma escada. No primeiro degrau, QI setenta. No último, cento e sessenta. Será que o mundo parece o mesmo lá de cima?",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "007/escada",
+    "props": {
+     "degrau": 0
+    }
+   },
+   "lofi": "forte",
+   "id": 1
+  },
+  {
+   "texto": "Hoje a gente sobe essa escada degrau por degrau. E no final tem um dado que muda o jeito de ver o seu próprio número.",
+   "animacao": {
+    "tipo": "mascote",
+    "texto": "Sobe a escada comigo!"
+   },
+   "id": 2
+  },
+  {
+   "texto": "Eu sou o Cifrinho. E um aviso antes: QI não mede o valor de ninguém. Mede algumas habilidades de raciocínio, num teste, num dia.",
+   "personagens": [
+    {
+     "id": "cifrinho",
+     "gesto": "explicar"
+    }
+   ],
+   "animacao": {
+    "tipo": "nenhuma"
+   },
+   "id": 3
+  },
+  {
+   "texto": "Primeiro, a régua. O teste é calibrado pra média ser cem. Cerca de dois terços das pessoas ficam entre oitenta e cinco e cento e quinze. Só uns dois por cento passam de cento e trinta. E cento e sessenta? Mais ou menos uma pessoa em cada trinta mil.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "007/curva"
+   },
+   "id": 4
+  },
+  {
+   "texto": "Degrau setenta. Aqui a pessoa trabalha, faz amigos, ama e se diverte. O desafio é que o mundo é escrito pra quem lê rápido: contrato, letra miúda, bula de remédio, aplicativo de banco.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "007/escada",
+    "props": {
+     "degrau": 1
+    }
+   },
+   "id": 5
+  },
+  {
+   "texto": "Isso deixa essas pessoas mais expostas a golpes. Não por falta de valor, mas porque o mundo não explica com calma. Paciência, aqui, é uma forma de respeito.",
+   "animacao": {
+    "tipo": "titulo",
+    "texto": "Paciência é respeito"
+   },
+   "broll": "helping elderly phone",
+   "id": 6
+  },
+  {
+   "texto": "Degrau cem. Aqui o mundo foi feito sob medida. Escola, placa de trânsito, manual, novela: quase tudo é pensado pra média.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "007/escada",
+    "props": {
+     "degrau": 2
+    }
+   },
+   "id": 7
+  },
+  {
+   "texto": "E é aqui que está a maioria das pessoas. Que é justamente quem faz o mundo funcionar todo dia.",
+   "broll": "busy city people walking",
+   "animacao": {
+    "tipo": "ilustracao",
+    "nome": "engrenagens"
+   },
+   "id": 8
+  },
+  {
+   "texto": "Degrau cento e trinta. Os padrões aparecem rápido. A pessoa termina a frase do professor na cabeça, e o tédio vira um problema de verdade na escola.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "007/escada",
+    "props": {
+     "degrau": 3
+    }
+   },
+   "id": 9
+  },
+  {
+   "texto": "Mas tem um preço: quem pensa rápido também erra rápido, e com confiança. As armadilhas mentais que eu mostrei no teste de burrice pegam esse degrau em cheio.",
+   "animacao": {
+    "tipo": "ilustracao",
+    "nome": "raio"
+   },
+   "id": 10
+  },
+  {
+   "texto": "Degrau cento e sessenta. Aqui a distância pros outros fica grande. A psicóloga Leta Hollingworth sugeriu, nos anos quarenta, que a conversa fica difícil quando a diferença passa de uns trinta pontos. É mais uma observação dela do que uma regra comprovada.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "007/escada",
+    "props": {
+     "degrau": 4
+    }
+   },
+   "id": 11
+  },
+  {
+   "texto": "Eu entendia a matéria em dez minutos. O difícil era a hora do recreio.",
+   "quem": "cientista",
+   "personagens": [
+    {
+     "id": "cientista",
+     "gesto": "pensar",
+     "expressao": "pensativo",
+     "entrada": "pop",
+     "lado": "esquerda"
+    },
+    {
+     "id": "cifrinho",
+     "gesto": "surpreso",
+     "lado": "direita"
+    }
+   ],
+   "animacao": {
+    "tipo": "nenhuma"
+   },
+   "id": 12
+  },
+  {
+   "texto": "Muita gente superdotada descreve isso: a sensação de falar outra língua, mesmo no meio dos amigos.",
+   "personagens": [
+    {
+     "id": "cientista",
+     "gesto": "parado",
+     "lado": "esquerda"
+    },
+    {
+     "id": "cifrinho",
+     "gesto": "explicar",
+     "lado": "direita"
+    }
+   ],
+   "animacao": {
+    "tipo": "ilustracao",
+    "nome": "interrogacao"
+   },
+   "id": 13
+  },
+  {
+   "texto": "Mas será que QI alto garante sucesso? Aqui entra o estudo mais famoso sobre isso.",
+   "animacao": {
+    "tipo": "cena3d",
+    "nome": "cerebro"
+   },
+   "id": 14
+  },
+  {
+   "texto": "Em mil novecentos e vinte e um, Lewis Terman começou a acompanhar mais de mil e quinhentas crianças com QI altíssimo. Muitas tiveram ótimas carreiras. Mas nenhuma ganhou um Nobel. E dois meninos testados e recusados, por não terem QI alto o bastante, ganharam o Nobel de Física: William Shockley e Luis Alvarez.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "007/terman"
+   },
+   "id": 15
+  },
+  {
+   "texto": "QI ajuda, mas não decide sozinho. Curiosidade, esforço, oportunidade e até sorte entram na conta.",
+   "animacao": {
+    "tipo": "conceito",
+    "nome": "QI não é destino",
+    "frase": "Curiosidade e esforço também contam",
+    "rotulo": "A VIRADA"
+   },
+   "id": 16
+  },
+  {
+   "texto": "E agora o dado que muda tudo. Em mil novecentos e oitenta e quatro, James Flynn percebeu que as notas de QI subiam cerca de três pontos por década, em vários países. Medida com a régua de hoje, a pessoa média de cem anos atrás ficaria perto de setenta.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "007/flynn"
+   },
+   "lofi": "forte",
+   "id": 17
+  },
+  {
+   "texto": "Ninguém virou gênio de repente. Escola, nutrição e um mundo cheio de símbolos treinaram o cérebro de todo mundo. E em alguns países, como a Noruega, essa subida até começou a cair.",
+   "animacao": {
+    "tipo": "conceito",
+    "nome": "Efeito Flynn",
+    "frase": "A régua muda com o mundo",
+    "rotulo": "O DADO"
+   },
+   "id": 18
+  },
+  {
+   "texto": "Ou seja: o seu número diz tanto sobre a sua época quanto sobre você.",
+   "animacao": {
+    "tipo": "titulo",
+    "texto": "Seu número também é da sua época"
+   },
+   "id": 19
+  },
+  {
+   "texto": "Então, como conversar entre degraus? Quem está acima: explique sem pressa e sem arrogância. Quem está abaixo: pergunte sem vergonha. Os dois saem ganhando.",
+   "animacao": {
+    "tipo": "lista",
+    "itens": [
+     "1. Explique sem pressa",
+     "2. Pergunte sem vergonha",
+     "3. Os dois ganham"
+    ]
+   },
+   "id": 20
+  },
+  {
+   "texto": "E desconfie de teste de QI de internet. Os de verdade são aplicados por profissionais e levam mais de uma hora.",
+   "broll": "online quiz laptop",
+   "animacao": {
+    "tipo": "ilustracao",
+    "nome": "cadeado"
+   },
+   "id": 21
+  },
+  {
+   "texto": "Agora me conta: qual degrau mais te surpreendeu? Comenta aqui.",
+   "animacao": {
+    "tipo": "mascote",
+    "texto": "Qual degrau te surpreendeu?"
+   },
+   "id": 22
+  },
+  {
+   "texto": "Se curtiu, se inscreve e manda pra aquele amigo que vive falando do próprio QI.",
+   "personagens": [
+    {
+     "id": "cifrinho",
+     "gesto": "comemorar",
+     "expressao": "piscadela"
+    }
+   ],
+   "animacao": {
+    "tipo": "nenhuma"
+   },
+   "id": 23
+  },
+  {
+   "texto": "Eu sou o Cifrinho. Descifre e domine.",
+   "animacao": {
+    "tipo": "encerramento"
+   },
+   "id": 24
+  }
+ ]
+}

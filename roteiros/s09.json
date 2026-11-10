@@ -1,0 +1,68 @@
+{
+ "id": "s09",
+ "titulo": "Mais da metade de Harvard errou essa",
+ "formato": "short",
+ "voz": "pt-BR-AntonioNeural",
+ "taxa": "+14%",
+ "trilha": "misterio",
+ "cenas": [
+  {
+   "texto": "Mais da metade dos alunos de Harvard errou essa pergunta.",
+   "animacao": {
+    "tipo": "gancho",
+    "texto": "HARVARD ERROU ESSA"
+   },
+   "id": 1
+  },
+  {
+   "texto": "Um taco e uma bola custam, juntos, um real e dez. O taco custa um real a mais que a bola. Quanto custa a bola?",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "004/bastao",
+    "props": {
+     "fase": "pergunta"
+    }
+   },
+   "pausa": 3.0,
+   "id": 2
+  },
+  {
+   "texto": "Pensou dez centavos? Bem-vindo ao clube. Mas aí os dois dariam um real e vinte. A resposta certa é cinco centavos.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "004/bastao",
+    "props": {
+     "fase": "revelar"
+    }
+   },
+   "id": 3
+  },
+  {
+   "texto": "A primeira resposta chega tão rápido e tão confiante que a gente nem confere.",
+   "lofi": "forte",
+   "animacao": {
+    "tipo": "conceito",
+    "nome": "Resposta rápida",
+    "frase": "Chega rápido, chega errada",
+    "rotulo": "ARMADILHA 1"
+   },
+   "id": 4
+  },
+  {
+   "texto": "É o Teste de Reflexão Cognitiva, de Shane Frederick.",
+   "animacao": {
+    "tipo": "cena3d",
+    "nome": "cerebro"
+   },
+   "id": 5
+  },
+  {
+   "texto": "Tem mais três armadilhas no vídeo do link. Quantas você acerta?",
+   "animacao": {
+    "tipo": "cta",
+    "texto": "FAÇA O TESTE"
+   },
+   "id": 6
+  }
+ ]
+}

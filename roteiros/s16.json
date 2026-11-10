@@ -1,0 +1,52 @@
+{
+ "id": "s16",
+ "titulo": "Com a régua de hoje, seus bisavós teriam QI 70?",
+ "formato": "short",
+ "voz": "pt-BR-AntonioNeural",
+ "taxa": "+14%",
+ "trilha": "misterio",
+ "cenas": [
+  {
+   "texto": "Se a gente medisse o QI das pessoas de cem anos atrás com a régua de hoje...",
+   "animacao": {
+    "tipo": "gancho",
+    "texto": "QI 70 HÁ 100 ANOS?"
+   },
+   "id": 1
+  },
+  {
+   "texto": "Pois é. James Flynn percebeu que as notas de QI subiam uns três pontos por década, em vários países. Com a régua de hoje, a média de cem anos atrás ficaria perto de setenta.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "007/flynn"
+   },
+   "id": 2
+  },
+  {
+   "texto": "Ninguém era burro. Escola, nutrição e um mundo cheio de símbolos treinaram o cérebro de todo mundo.",
+   "animacao": {
+    "tipo": "conceito",
+    "nome": "Efeito Flynn",
+    "frase": "A régua muda com o mundo",
+    "rotulo": "O DADO"
+   },
+   "id": 3
+  },
+  {
+   "texto": "Ou seja: o seu QI também é da sua época.",
+   "animacao": {
+    "tipo": "cena3d",
+    "nome": "neuronios"
+   },
+   "id": 4
+  },
+  {
+   "texto": "A escada do QI completa tá no vídeo do link.",
+   "animacao": {
+    "tipo": "cta",
+    "texto": "SUBA A ESCADA DO QI"
+   },
+   "id": 5
+  }
+ ]
+}

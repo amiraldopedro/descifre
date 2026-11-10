@@ -1,0 +1,318 @@
+{
+ "id": "004",
+ "titulo": "Teste de burrice: 4 armadilhas que enganam gente inteligente",
+ "trilha": "misterio",
+ "voz": "pt-BR-AntonioNeural",
+ "cenas": [
+  {
+   "texto": "Esse vídeo tem quatro armadilhas. Elas enganam gente inteligente, estudantes das melhores universidades do mundo, e talvez você.",
+   "animacao": {
+    "tipo": "cena3d",
+    "nome": "cabeca",
+    "texto": "Teste de burrice"
+   },
+   "lofi": "forte",
+   "id": 1
+  },
+  {
+   "texto": "Conta quantas você acerta de primeira. Sem pausar pra pesquisar, hein. No final, eu te digo qual é a armadilha mais perigosa de todas.",
+   "animacao": {
+    "tipo": "mascote",
+    "texto": "4 armadilhas. Conta os acertos!"
+   },
+   "id": 2
+  },
+  {
+   "texto": "E já adianto: ser inteligente não protege ninguém. O psicólogo Keith Stanovich até criou uma palavra pra isso: disracionalia, a pessoa inteligente que pensa errado.",
+   "animacao": {
+    "tipo": "conceito",
+    "nome": "Disracionalia",
+    "frase": "Inteligente, mas pensa errado",
+    "rotulo": "CONCEITO"
+   },
+   "id": 3
+  },
+  {
+   "texto": "Armadilha número um.",
+   "animacao": {
+    "tipo": "cena3d",
+    "nome": "tunel",
+    "texto": "Armadilha 1"
+   },
+   "pausa": 0.8,
+   "id": 4
+  },
+  {
+   "texto": "Um taco e uma bola custam, juntos, um real e dez centavos. O taco custa um real a mais que a bola. Quanto custa a bola?",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "004/bastao",
+    "props": {
+     "fase": "pergunta"
+    }
+   },
+   "pausa": 3.5,
+   "id": 5
+  },
+  {
+   "texto": "Se você pensou dez centavos, bem-vindo ao clube. Mas aí o taco custaria um real e dez, e os dois juntos dariam um real e vinte. A resposta certa é cinco centavos.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "004/bastao",
+    "props": {
+     "fase": "revelar"
+    }
+   },
+   "id": 6
+  },
+  {
+   "texto": "Essa pergunta faz parte do Teste de Reflexão Cognitiva, de Shane Frederick, de dois mil e cinco. Mais da metade dos alunos de Harvard, do MIT e de Princeton errou.",
+   "animacao": {
+    "tipo": "citacao",
+    "texto": "Teste de Reflexão Cognitiva",
+    "autor": "Shane Frederick, 2005"
+   },
+   "broll": "university campus students",
+   "id": 7
+  },
+  {
+   "texto": "O problema não é a conta. É que a primeira resposta chega tão rápido e tão confiante que a gente nem confere.",
+   "animacao": {
+    "tipo": "ilustracao",
+    "nome": "raio"
+   },
+   "id": 8
+  },
+  {
+   "texto": "Armadilha número dois.",
+   "animacao": {
+    "tipo": "cena3d",
+    "nome": "tunel",
+    "texto": "Armadilha 2"
+   },
+   "pausa": 0.8,
+   "id": 9
+  },
+  {
+   "texto": "Qual dessas frases é mais profunda? A: água mole em pedra dura, tanto bate até que fura. B: a consciência infinita desperta a energia oculta do agora.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "004/frases",
+    "props": {
+     "fase": "pergunta"
+    }
+   },
+   "pausa": 3.0,
+   "id": 10
+  },
+  {
+   "texto": "Se a B te pareceu mais sábia, cuidado. Ela não quer dizer nada. Foi montada só com palavras bonitas.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "004/frases",
+    "props": {
+     "fase": "revelar"
+    }
+   },
+   "lofi": "forte",
+   "id": 11
+  },
+  {
+   "texto": "Em dois mil e quinze, Gordon Pennycook e colegas mostraram frases assim, geradas por computador, para centenas de pessoas. E muita gente deu nota alta de profundidade pra frases vazias.",
+   "animacao": {
+    "tipo": "conceito",
+    "nome": "Pseudo-profundidade",
+    "frase": "Palavra bonita não é ideia",
+    "rotulo": "ARMADILHA 2"
+   },
+   "broll": "motivational quote sunset",
+   "id": 12
+  },
+  {
+   "texto": "Quem caiu mais? Justamente quem tinha o hábito de não parar pra pensar. Frase de efeito em rede social é feita pra essa armadilha.",
+   "broll": "scrolling phone social media",
+   "animacao": {
+    "tipo": "nenhuma"
+   },
+   "id": 13
+  },
+  {
+   "texto": "Armadilha número três.",
+   "animacao": {
+    "tipo": "cena3d",
+    "nome": "tunel",
+    "texto": "Armadilha 3"
+   },
+   "pausa": 0.8,
+   "id": 14
+  },
+  {
+   "texto": "De zero a dez, quanto você entende de como funciona um zíper? Dá uma nota. Agora, explica em voz alta, passo a passo, como os dentinhos se prendem.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "004/ziper"
+   },
+   "pausa": 2.5,
+   "id": 15
+  },
+  {
+   "texto": "Travou, né? Em dois mil e dois, Rozenblit e Keil fizeram exatamente isso. Depois de tentar explicar, as pessoas baixavam a própria nota.",
+   "personagens": [
+    {
+     "id": "cifrinho",
+     "gesto": "pensar",
+     "expressao": "pensativo"
+    }
+   ],
+   "animacao": {
+    "tipo": "ilustracao",
+    "nome": "engrenagens"
+   },
+   "id": 16
+  },
+  {
+   "texto": "Isso é a ilusão de profundidade explicativa: a gente confunde estar acostumado com uma coisa com entender essa coisa.",
+   "animacao": {
+    "tipo": "conceito",
+    "nome": "Ilusão de profundidade",
+    "frase": "Familiar não é entendido",
+    "rotulo": "ARMADILHA 3"
+   },
+   "id": 17
+  },
+  {
+   "texto": "E o truque funciona com política, economia e saúde também. Pedir pra pessoa explicar em detalhes costuma baixar a certeza e até a briga.",
+   "broll": "people debate discussion",
+   "animacao": {
+    "tipo": "nenhuma"
+   },
+   "id": 18
+  },
+  {
+   "texto": "Armadilha número quatro, a mais perigosa.",
+   "animacao": {
+    "tipo": "cena3d",
+    "nome": "tunel",
+    "texto": "Armadilha 4"
+   },
+   "pausa": 0.8,
+   "id": 19
+  },
+  {
+   "texto": "Responde com sinceridade: comparado com a pessoa média, você é mais ou menos influenciado por vieses e preconceitos?",
+   "animacao": {
+    "tipo": "pergunta",
+    "numero": 4,
+    "total": 4,
+    "rotulo": "ARMADILHA",
+    "texto": "Você é mais ou menos enviesado que a média?",
+    "a": "Menos que a média",
+    "b": "Igual ou mais"
+   },
+   "id": 20
+  },
+  {
+   "texto": "Pensa bem.",
+   "animacao": {
+    "tipo": "contagem"
+   },
+   "id": 21
+  },
+  {
+   "texto": "Se você respondeu menos, caiu. Em dois mil e dois, Emily Pronin e colegas mostraram que a maioria das pessoas se acha menos enviesada que a média. E isso é matematicamente impossível.",
+   "animacao": {
+    "tipo": "conceito",
+    "nome": "Ponto cego do viés",
+    "frase": "O viés é sempre do outro",
+    "rotulo": "ARMADILHA 4"
+   },
+   "lofi": "forte",
+   "id": 22
+  },
+  {
+   "texto": "E tem mais: inteligência não cura isso. Num estudo de dois mil e doze, quem tinha mais habilidade de raciocínio mostrou um ponto cego até maior.",
+   "animacao": {
+    "tipo": "cena3d",
+    "nome": "multidao"
+   },
+   "id": 23
+  },
+  {
+   "texto": "Então, quantas você acertou? De zero a quatro.",
+   "animacao": {
+    "tipo": "mascote",
+    "texto": "Quantas você acertou? De 0 a 4!"
+   },
+   "id": 24
+  },
+  {
+   "texto": "Se acertou todas, parabéns. Mas lembra da armadilha quatro: achar que está livre de todas é a armadilha final.",
+   "animacao": {
+    "tipo": "resultado",
+    "faixa": "4 de 4",
+    "titulo": "Cuidado com o ponto cego"
+   },
+   "id": 25
+  },
+  {
+   "texto": "Se errou algumas, ótimo. Você acabou de ver o seu cérebro em ação. E é isso que te protege.",
+   "animacao": {
+    "tipo": "resultado",
+    "faixa": "0 a 3",
+    "titulo": "Cérebro humano, normal"
+   },
+   "id": 26
+  },
+  {
+   "texto": "Os pesquisadores chamam isso de humildade intelectual: saber que você pode estar errado. E ela está ligada a avaliar melhor as provas antes de acreditar em algo.",
+   "animacao": {
+    "tipo": "conceito",
+    "nome": "Humildade intelectual",
+    "frase": "Eu posso estar errado",
+    "rotulo": "O ANTÍDOTO"
+   },
+   "id": 27
+  },
+  {
+   "texto": "Três hábitos simples: desconfie da primeira resposta rápida. Peça pra explicar antes de concordar. E procure o que provaria que você está errado.",
+   "animacao": {
+    "tipo": "lista",
+    "itens": [
+     "1. Confira a resposta rápida",
+     "2. Peça explicação",
+     "3. Procure o contrário"
+    ]
+   },
+   "id": 28
+  },
+  {
+   "texto": "A pessoa mais perigosa não é a que erra. É a que tem certeza de que nunca erra.",
+   "animacao": {
+    "tipo": "titulo",
+    "texto": "Certeza demais é a armadilha"
+   },
+   "id": 29
+  },
+  {
+   "texto": "Comenta quantas você acertou, e manda esse teste pra aquele amigo que se acha o mais inteligente do grupo.",
+   "personagens": [
+    {
+     "id": "cifrinho",
+     "gesto": "apontar",
+     "expressao": "piscadela"
+    }
+   ],
+   "animacao": {
+    "tipo": "nenhuma"
+   },
+   "id": 30
+  },
+  {
+   "texto": "Se inscreve no canal, que toda semana tem um novo mistério da mente. Eu sou o Cifrinho. Descifre e domine.",
+   "animacao": {
+    "tipo": "encerramento"
+   },
+   "id": 31
+  }
+ ]
+}

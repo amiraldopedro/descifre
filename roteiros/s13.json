@@ -1,0 +1,65 @@
+{
+ "id": "s13",
+ "titulo": "Escolha uma escada",
+ "formato": "short",
+ "voz": "pt-BR-AntonioNeural",
+ "taxa": "+14%",
+ "trilha": "misterio",
+ "cenas": [
+  {
+   "texto": "Escolhe uma escada. Rápido.",
+   "animacao": {
+    "tipo": "gancho",
+    "texto": "ESCOLHA UMA ESCADA"
+   },
+   "id": 1
+  },
+  {
+   "texto": "A, B, C ou D. A primeira que chamar a sua atenção.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "006/escadas",
+    "props": {
+     "fase": "escolha"
+    }
+   },
+   "pausa": 2.5,
+   "id": 2
+  },
+  {
+   "texto": "A: você pensa demais antes de dormir. B: tem mais dúvidas do que mostra. C: já se sentiu incompreendido. D: tem um potencial guardado.",
+   "animacao": {
+    "tipo": "cena3d",
+    "nome": "cristais"
+   },
+   "id": 3
+  },
+  {
+   "texto": "Acertou? Agora a pegadinha: todas servem pra você.",
+   "lofi": "forte",
+   "animacao": {
+    "tipo": "conceito",
+    "nome": "Efeito Barnum",
+    "frase": "Frase vaga parece feita pra você",
+    "rotulo": "A PEGADINHA"
+   },
+   "id": 4
+  },
+  {
+   "texto": "Em mil novecentos e quarenta e nove, Bertram Forer deu a cada aluno uma análise personalizada. A nota de precisão foi quatro vírgula vinte e seis, de cinco. Mas todos receberam o mesmo texto.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "006/forer"
+   },
+   "id": 5
+  },
+  {
+   "texto": "Faz os quatro testes completos no vídeo do link.",
+   "animacao": {
+    "tipo": "cta",
+    "texto": "FAÇA OS 4 TESTES"
+   },
+   "id": 6
+  }
+ ]
+}

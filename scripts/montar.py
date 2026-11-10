@@ -94,7 +94,7 @@ def _sons():
     def glitch():
         n = int(0.45 * SR); out = np.zeros(n)
         for i in range(9):
-            i0 = int(rng.uniform(0, n - 2000)); d = int(rng.uniform(400, 2500))
+            i0 = int(rng.uniform(0, n - 2000)); d = min(int(rng.uniform(400, 2500)), n - i0)
             out[i0:i0 + d] += np.sign(rng.standard_normal(d)) * 0.2 * rng.uniform(0.3, 1)
         return out
 

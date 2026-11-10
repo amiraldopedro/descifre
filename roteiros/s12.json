@@ -1,0 +1,60 @@
+{
+ "id": "s12",
+ "titulo": "A mensagem de uma linha que conserta uma grosseria",
+ "formato": "short",
+ "voz": "pt-BR-AntonioNeural",
+ "taxa": "+14%",
+ "trilha": "misterio",
+ "cenas": [
+  {
+   "texto": "Foi grosso com alguém que você ama? Uma linha conserta.",
+   "animacao": {
+    "tipo": "gancho",
+    "texto": "1 LINHA CONSERTA"
+   },
+   "id": 1
+  },
+  {
+   "texto": "Brigar, todo mundo briga. O que salva a relação é voltar e consertar.",
+   "animacao": {
+    "tipo": "conceito",
+    "nome": "Reparo",
+    "frase": "Voltar e consertar",
+    "rotulo": "IDEIA DE JOHN GOTTMAN"
+   },
+   "id": 2
+  },
+  {
+   "texto": "Então manda, no mesmo dia: desculpa pelo jeito que eu falei. Eu tava cansado, e você não merecia isso.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "005/mensagem"
+   },
+   "id": 3
+  },
+  {
+   "texto": "Você assume o jeito, conta o sentimento escondido, e tira a culpa do outro.",
+   "animacao": {
+    "tipo": "ilustracao",
+    "nome": "coracao"
+   },
+   "id": 4
+  },
+  {
+   "texto": "Sem textão. Só isso. Manda hoje.",
+   "broll": "phone message texting",
+   "animacao": {
+    "tipo": "nenhuma"
+   },
+   "id": 5
+  },
+  {
+   "texto": "Por que a gente é grosso com quem ama? Tá no vídeo do link.",
+   "animacao": {
+    "tipo": "cta",
+    "texto": "VEJA O VÍDEO"
+   },
+   "id": 6
+  }
+ ]
+}

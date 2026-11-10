@@ -257,6 +257,697 @@
    "fase": "revelar"
   }
  ],
+ "003/beco": [
+  {
+   "som": "whoosh",
+   "p": 0.12
+  },
+  {
+   "som": "pop",
+   "p": 0.3
+  },
+  {
+   "som": "pop",
+   "p": 0.33
+  },
+  {
+   "som": "pop",
+   "p": 0.36
+  },
+  {
+   "som": "desce",
+   "p": 0.5
+  },
+  {
+   "som": "glitch",
+   "p": 0.73
+  },
+  {
+   "som": "sobe",
+   "p": 0.8
+  },
+  {
+   "som": "boom",
+   "p": 0.95
+  }
+ ],
+ "003/cafe": [
+  {
+   "som": "whoosh",
+   "p": 0.02
+  },
+  {
+   "som": "sobe",
+   "p": 0.22
+  },
+  {
+   "som": "mecanico",
+   "p": 0.5
+  },
+  {
+   "som": "click",
+   "p": 0.66
+  },
+  {
+   "som": "passos",
+   "p": 0.74
+  },
+  {
+   "som": "ding",
+   "p": 0.9
+  }
+ ],
+ "003/fatia-fina": [
+  {
+   "som": "whoosh",
+   "p": 0.02
+  },
+  {
+   "som": "click",
+   "p": 0.34
+  },
+  {
+   "som": "tique",
+   "p": 0.37
+  },
+  {
+   "som": "tique",
+   "p": 0.4
+  },
+  {
+   "som": "sobe",
+   "p": 0.48
+  },
+  {
+   "som": "pop",
+   "p": 0.62
+  },
+  {
+   "som": "brilho",
+   "p": 0.75
+  },
+  {
+   "som": "zap",
+   "p": 0.84
+  }
+ ],
+ "003/pico-fim": [
+  {
+   "som": "whoosh",
+   "p": 0.02
+  },
+  {
+   "som": "ding",
+   "p": 0.22
+  },
+  {
+   "som": "ding",
+   "p": 0.32
+  },
+  {
+   "som": "brilho",
+   "p": 0.36
+  },
+  {
+   "som": "whoosh",
+   "p": 0.41
+  },
+  {
+   "som": "pop",
+   "p": 0.46
+  },
+  {
+   "som": "pop",
+   "p": 0.5
+  },
+  {
+   "som": "boom",
+   "p": 0.8
+  }
+ ],
+ "004/bastao": [
+  {
+   "som": "whoosh",
+   "p": 0.02,
+   "fase": "pergunta"
+  },
+  {
+   "som": "pop",
+   "p": 0.12,
+   "fase": "pergunta"
+  },
+  {
+   "som": "pop",
+   "p": 0.45,
+   "fase": "pergunta"
+  },
+  {
+   "som": "ding",
+   "p": 0.75,
+   "fase": "pergunta"
+  },
+  {
+   "som": "tique",
+   "fim": 3,
+   "fase": "pergunta"
+  },
+  {
+   "som": "tique",
+   "fim": 2,
+   "fase": "pergunta"
+  },
+  {
+   "som": "tique",
+   "fim": 1,
+   "fase": "pergunta"
+  },
+  {
+   "som": "pop",
+   "p": 0.04,
+   "fase": "revelar"
+  },
+  {
+   "som": "pop",
+   "p": 0.36,
+   "fase": "revelar"
+  },
+  {
+   "som": "glitch",
+   "p": 0.58,
+   "fase": "revelar"
+  },
+  {
+   "som": "zap",
+   "p": 0.74,
+   "fase": "revelar"
+  },
+  {
+   "som": "brilho",
+   "p": 0.8,
+   "fase": "revelar"
+  }
+ ],
+ "004/frases": [
+  {
+   "som": "whoosh",
+   "p": 0.02,
+   "fase": "pergunta"
+  },
+  {
+   "som": "pop",
+   "p": 0.18,
+   "fase": "pergunta"
+  },
+  {
+   "som": "brilho",
+   "p": 0.55,
+   "fase": "pergunta"
+  },
+  {
+   "som": "tique",
+   "fim": 3,
+   "fase": "pergunta"
+  },
+  {
+   "som": "tique",
+   "fim": 2,
+   "fase": "pergunta"
+  },
+  {
+   "som": "tique",
+   "fim": 1,
+   "fase": "pergunta"
+  },
+  {
+   "som": "click",
+   "p": 0.05,
+   "fase": "revelar"
+  },
+  {
+   "som": "boom",
+   "p": 0.38,
+   "fase": "revelar"
+  },
+  {
+   "som": "mecanico",
+   "p": 0.62,
+   "fase": "revelar"
+  },
+  {
+   "som": "pop",
+   "p": 0.9,
+   "fase": "revelar"
+  }
+ ],
+ "004/ziper": [
+  {
+   "som": "whoosh",
+   "p": 0.02
+  },
+  {
+   "som": "sobe",
+   "p": 0.2
+  },
+  {
+   "som": "ding",
+   "p": 0.32
+  },
+  {
+   "som": "mecanico",
+   "p": 0.45
+  },
+  {
+   "som": "pop",
+   "p": 0.6
+  },
+  {
+   "som": "pop",
+   "p": 0.7
+  },
+  {
+   "som": "pop",
+   "p": 0.8
+  },
+  {
+   "som": "desce",
+   "fim": 2.2
+  }
+ ],
+ "005/calculadora": [
+  {
+   "som": "whoosh",
+   "p": 0.02
+  },
+  {
+   "som": "tique",
+   "p": 0.15
+  },
+  {
+   "som": "tique",
+   "p": 0.22
+  },
+  {
+   "som": "tique",
+   "p": 0.29
+  },
+  {
+   "som": "tique",
+   "p": 0.36
+  },
+  {
+   "som": "ding",
+   "p": 0.42
+  },
+  {
+   "som": "pop",
+   "p": 0.47
+  },
+  {
+   "som": "desce",
+   "p": 0.55
+  },
+  {
+   "som": "brilho",
+   "p": 0.75
+  }
+ ],
+ "005/circulos": [
+  {
+   "som": "whoosh",
+   "p": 0.02
+  },
+  {
+   "som": "pop",
+   "p": 0.34
+  },
+  {
+   "som": "pop",
+   "p": 0.38
+  },
+  {
+   "som": "pop",
+   "p": 0.42
+  },
+  {
+   "som": "pop",
+   "p": 0.46
+  },
+  {
+   "som": "pop",
+   "p": 0.5
+  },
+  {
+   "som": "pop",
+   "p": 0.54
+  },
+  {
+   "som": "pop",
+   "p": 0.58
+  },
+  {
+   "som": "sobe",
+   "p": 0.7
+  },
+  {
+   "som": "brilho",
+   "p": 0.95
+  }
+ ],
+ "005/mensagem": [
+  {
+   "som": "whoosh",
+   "p": 0.02
+  },
+  {
+   "som": "click",
+   "p": 0.3
+  },
+  {
+   "som": "click",
+   "p": 0.38
+  },
+  {
+   "som": "click",
+   "p": 0.46
+  },
+  {
+   "som": "pop",
+   "p": 0.56
+  },
+  {
+   "som": "click",
+   "p": 0.68
+  },
+  {
+   "som": "click",
+   "p": 0.76
+  },
+  {
+   "som": "click",
+   "p": 0.84
+  },
+  {
+   "som": "pop",
+   "p": 0.9
+  },
+  {
+   "som": "brilho",
+   "p": 0.97
+  }
+ ],
+ "005/ourico": [
+  {
+   "som": "whoosh",
+   "p": 0.02
+  },
+  {
+   "som": "pop",
+   "p": 0.3
+  },
+  {
+   "som": "pop",
+   "p": 0.38
+  },
+  {
+   "som": "pop",
+   "p": 0.45
+  },
+  {
+   "som": "pop",
+   "p": 0.52
+  },
+  {
+   "som": "mecanico",
+   "p": 0.72
+  },
+  {
+   "som": "brilho",
+   "p": 0.84
+  }
+ ],
+ "006/escadas": [
+  {
+   "som": "whoosh",
+   "p": 0.02,
+   "fase": "escolha"
+  },
+  {
+   "som": "pop",
+   "p": 0.25,
+   "fase": "escolha"
+  },
+  {
+   "som": "pop",
+   "p": 0.35,
+   "fase": "escolha"
+  },
+  {
+   "som": "pop",
+   "p": 0.45,
+   "fase": "escolha"
+  },
+  {
+   "som": "pop",
+   "p": 0.55,
+   "fase": "escolha"
+  },
+  {
+   "som": "tique",
+   "fim": 3,
+   "fase": "escolha"
+  },
+  {
+   "som": "tique",
+   "fim": 2,
+   "fase": "escolha"
+  },
+  {
+   "som": "tique",
+   "fim": 1,
+   "fase": "escolha"
+  },
+  {
+   "som": "whoosh",
+   "p": 0.02,
+   "fase": "destaque"
+  },
+  {
+   "som": "ding",
+   "p": 0.3,
+   "fase": "destaque"
+  },
+  {
+   "som": "brilho",
+   "p": 0.65,
+   "fase": "destaque"
+  }
+ ],
+ "006/forer": [
+  {
+   "som": "whoosh",
+   "p": 0.02
+  },
+  {
+   "som": "pop",
+   "p": 0.26
+  },
+  {
+   "som": "pop",
+   "p": 0.29
+  },
+  {
+   "som": "pop",
+   "p": 0.32
+  },
+  {
+   "som": "pop",
+   "p": 0.35
+  },
+  {
+   "som": "sobe",
+   "p": 0.44
+  },
+  {
+   "som": "ding",
+   "p": 0.58
+  },
+  {
+   "som": "glitch",
+   "p": 0.66
+  },
+  {
+   "som": "boom",
+   "p": 0.74
+  },
+  {
+   "som": "brilho",
+   "p": 0.86
+  }
+ ],
+ "006/portas": [
+  {
+   "som": "whoosh",
+   "p": 0.02,
+   "fase": "escolha"
+  },
+  {
+   "som": "pop",
+   "p": 0.35,
+   "fase": "escolha"
+  },
+  {
+   "som": "pop",
+   "p": 0.45,
+   "fase": "escolha"
+  },
+  {
+   "som": "pop",
+   "p": 0.55,
+   "fase": "escolha"
+  },
+  {
+   "som": "tique",
+   "fim": 3,
+   "fase": "escolha"
+  },
+  {
+   "som": "tique",
+   "fim": 2,
+   "fase": "escolha"
+  },
+  {
+   "som": "tique",
+   "fim": 1,
+   "fase": "escolha"
+  },
+  {
+   "som": "porta",
+   "p": 0.03,
+   "fase": "revelar"
+  },
+  {
+   "som": "porta",
+   "p": 0.36,
+   "fase": "revelar"
+  },
+  {
+   "som": "porta",
+   "p": 0.69,
+   "fase": "revelar"
+  }
+ ],
+ "007/curva": [
+  {
+   "som": "whoosh",
+   "p": 0.02
+  },
+  {
+   "som": "ding",
+   "p": 0.14
+  },
+  {
+   "som": "sobe",
+   "p": 0.3
+  },
+  {
+   "som": "pop",
+   "p": 0.56
+  },
+  {
+   "som": "zap",
+   "p": 0.76
+  },
+  {
+   "som": "brilho",
+   "p": 0.85
+  }
+ ],
+ "007/escada": [
+  {
+   "som": "whoosh",
+   "p": 0.02
+  },
+  {
+   "som": "sobe",
+   "p": 0.06
+  },
+  {
+   "som": "pop",
+   "p": 0.2
+  },
+  {
+   "som": "brilho",
+   "p": 0.3
+  },
+  {
+   "som": "pop",
+   "p": 0.55
+  }
+ ],
+ "007/flynn": [
+  {
+   "som": "glitch",
+   "p": 0.02
+  },
+  {
+   "som": "sobe",
+   "p": 0.2
+  },
+  {
+   "som": "pop",
+   "p": 0.45
+  },
+  {
+   "som": "whoosh",
+   "p": 0.6
+  },
+  {
+   "som": "mecanico",
+   "p": 0.72
+  },
+  {
+   "som": "boom",
+   "p": 0.88
+  }
+ ],
+ "007/terman": [
+  {
+   "som": "whoosh",
+   "p": 0.02
+  },
+  {
+   "som": "sobe",
+   "p": 0.06
+  },
+  {
+   "som": "brilho",
+   "p": 0.32
+  },
+  {
+   "som": "desce",
+   "p": 0.42
+  },
+  {
+   "som": "whoosh",
+   "p": 0.52
+  },
+  {
+   "som": "batida",
+   "p": 0.62
+  },
+  {
+   "som": "batida",
+   "p": 0.66
+  },
+  {
+   "som": "ding",
+   "p": 0.8
+  },
+  {
+   "som": "ding",
+   "p": 0.88
+  }
+ ],
  "d02/elevador": [
   {
    "som": "porta",

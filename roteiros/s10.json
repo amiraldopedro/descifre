@@ -1,0 +1,68 @@
+{
+ "id": "s10",
+ "titulo": "Explica como funciona um zíper",
+ "formato": "short",
+ "voz": "pt-BR-AntonioNeural",
+ "taxa": "+14%",
+ "trilha": "misterio",
+ "cenas": [
+  {
+   "texto": "Você sabe como funciona um zíper? Tem certeza?",
+   "animacao": {
+    "tipo": "gancho",
+    "texto": "EXPLICA UM ZÍPER"
+   },
+   "id": 1
+  },
+  {
+   "texto": "De zero a dez, quanto você entende de zíper? Dá uma nota. Agora explica em voz alta como os dentinhos se prendem.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "004/ziper"
+   },
+   "pausa": 2.5,
+   "id": 2
+  },
+  {
+   "texto": "Travou? Quase todo mundo trava.",
+   "personagens": [
+    {
+     "id": "cifrinho",
+     "gesto": "pensar",
+     "expressao": "pensativo"
+    }
+   ],
+   "animacao": {
+    "tipo": "nenhuma"
+   },
+   "id": 3
+  },
+  {
+   "texto": "Em dois mil e dois, pesquisadores viram isso: depois de tentar explicar, as pessoas baixavam a própria nota.",
+   "animacao": {
+    "tipo": "conceito",
+    "nome": "Ilusão de profundidade",
+    "frase": "Familiar não é entendido",
+    "rotulo": "ARMADILHA 3"
+   },
+   "id": 4
+  },
+  {
+   "texto": "E funciona com política também. Pede pra pessoa explicar em detalhes, e a certeza diminui.",
+   "broll": "people debate discussion",
+   "animacao": {
+    "tipo": "ilustracao",
+    "nome": "engrenagens"
+   },
+   "id": 5
+  },
+  {
+   "texto": "Tem mais três armadilhas no vídeo do link.",
+   "animacao": {
+    "tipo": "cta",
+    "texto": "FAÇA O TESTE"
+   },
+   "id": 6
+  }
+ ]
+}
