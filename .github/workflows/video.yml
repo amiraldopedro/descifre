@@ -11,7 +11,7 @@ on:
         description: "Postar no YouTube?"
         type: choice
         options: [nao, privado, nao_listado, publico]
-        default: privado
+        default: nao
       agendar:
         description: "Agendar (opcional, UTC, ex.: 2026-11-12T22:00:00Z)"
         required: false
