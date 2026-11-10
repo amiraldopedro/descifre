@@ -29,7 +29,9 @@ export type Animacao =
   | { tipo: "citacao"; texto: string; autor: string }
   | { tipo: "lista"; itens: string[] }
   | { tipo: "resultado"; faixa: string; titulo: string }
-  | { tipo: "encerramento" };
+  | { tipo: "encerramento" }
+  | { tipo: "gancho"; texto: string }
+  | { tipo: "cta"; texto: string };
 
 export type Cena = {
   id: number;
@@ -50,5 +52,7 @@ export type Manifesto = {
   totalFrames: number;
   narracao: string | null;
   musica: string | null;
+  sfx?: string | null;
+  formato?: "longo" | "short";
   cenas: Cena[];
 };

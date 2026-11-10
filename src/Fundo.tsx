@@ -5,10 +5,11 @@ import { COR } from "./tema";
 /** Fundo cósmico da marca (usado quando não há b-roll e nas cenas do mascote). */
 export const FundoCosmico: React.FC = () => {
   const f = useCurrentFrame();
+  const { width: W, height: H } = useVideoConfig();
   const estrelas = useMemo(
     () =>
       new Array(140).fill(0).map((_, i) => ({
-        x: random(`x${i}`) * 1920,
+        x: random(`x${i}`) * 1920,  // espalhadas e escaladas abaixo
         y: random(`y${i}`) * 1080,
         r: 1 + random(`r${i}`) * 2.2,
         v: 0.05 + random(`v${i}`) * 0.25,
@@ -18,18 +19,18 @@ export const FundoCosmico: React.FC = () => {
   );
   return (
     <AbsoluteFill style={{ background: `radial-gradient(circle at 50% 40%, ${COR.azul} 0%, ${COR.azulEscuro} 75%)` }}>
-      <svg width={1920} height={1080}>
+      <svg width={W} height={H} viewBox={`0 0 ${W} ${H}`}>
         {estrelas.map((e, i) => (
           <circle
             key={i}
-            cx={(e.x + f * e.v) % 1920}
-            cy={e.y}
+            cx={((e.x / 1920) * W + f * e.v) % W}
+            cy={(e.y / 1080) * H}
             r={e.r}
             fill={COR.branco}
             opacity={e.o * (0.6 + 0.4 * Math.sin(f / 15 + i))}
           />
         ))}
-        <g transform={`rotate(${f * 0.08} 960 540)`} fill="none" stroke={COR.ciano} opacity={0.14} strokeWidth={2}>
+        <g transform={`rotate(${f * 0.08} ${W / 2} ${H / 2}) translate(${W / 2 - 960} ${H / 2 - 540})`} fill="none" stroke={COR.ciano} opacity={0.14} strokeWidth={2}>
           <circle cx={960} cy={540} r={380} />
           <circle cx={960} cy={540} r={520} strokeDasharray="6 18" />
           <circle cx={960} cy={540} r={680} />

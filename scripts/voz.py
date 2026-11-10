@@ -19,10 +19,10 @@ CONCORRENCIA = 3
 TENTATIVAS = 5
 
 
-async def edge_cena(texto, voz, mp3: Path):
+async def edge_cena(texto, voz, mp3: Path, taxa=TAXA):
     import edge_tts
 
-    com = edge_tts.Communicate(texto, voz, rate=TAXA, boundary="WordBoundary")
+    com = edge_tts.Communicate(texto, voz, rate=taxa, boundary="WordBoundary")
     palavras = []
     with open(mp3, "wb") as f:
         async for ch in com.stream():
@@ -68,7 +68,7 @@ def piper_cena(texto, mp3: Path):
     return estimar_palavras(texto, duracao(mp3))
 
 
-async def processar(cena, voz, pasta: Path, sem):
+async def processar(cena, voz, pasta: Path, sem, taxa=TAXA):
     mp3 = pasta / f"{cena['id']:03d}.mp3"
     js = mp3.with_suffix(".json")
     if mp3.exists() and js.exists():
@@ -77,7 +77,7 @@ async def processar(cena, voz, pasta: Path, sem):
         erro = None
         for i in range(TENTATIVAS):
             try:
-                palavras = await edge_cena(cena["texto"], voz, mp3)
+                palavras = await edge_cena(cena["texto"], voz, mp3, taxa)
                 js.write_text(json.dumps(palavras, ensure_ascii=False))
                 await asyncio.sleep(0.4)  # não martelar o servidor
                 return "edge"
@@ -96,7 +96,8 @@ async def main(vid):
     pasta.mkdir(parents=True, exist_ok=True)
     sem = asyncio.Semaphore(CONCORRENCIA)
     voz = roteiro.get("voz", "pt-BR-AntonioNeural")
-    res = await asyncio.gather(*[processar(c, voz, pasta, sem) for c in roteiro["cenas"]])
+    taxa = roteiro.get("taxa", TAXA)
+    res = await asyncio.gather(*[processar(c, voz, pasta, sem, taxa) for c in roteiro["cenas"]])
     print("voz pronta:", {k: res.count(k) for k in set(res)})
 
 

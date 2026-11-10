@@ -1,0 +1,80 @@
+{
+ "id": "s03",
+ "titulo": "Você lembra, mas a pessoa jura que não aconteceu",
+ "formato": "short",
+ "voz": "pt-BR-AntonioNeural",
+ "taxa": "+14%",
+ "cenas": [
+  {
+   "id": 1,
+   "texto": "Você lembra. Mas a pessoa jura que nunca aconteceu.",
+   "broll": "couple argument",
+   "animacao": {
+    "tipo": "gancho",
+    "texto": "ISSO NUNCA ACONTECEU?"
+   }
+  },
+  {
+   "id": 2,
+   "texto": "E ainda diz que você está exagerando.",
+   "broll": "confused woman",
+   "animacao": {
+    "tipo": "nenhuma"
+   }
+  },
+  {
+   "id": 3,
+   "texto": "O que você faz?",
+   "broll": "foggy window",
+   "animacao": {
+    "tipo": "pergunta",
+    "texto": "E aí?",
+    "a": "Duvido da minha memória",
+    "b": "Confio no que vivi"
+   }
+  },
+  {
+   "id": 4,
+   "texto": "Responde com sinceridade.",
+   "broll": "rain window night",
+   "animacao": {
+    "tipo": "contagem"
+   }
+  },
+  {
+   "id": 5,
+   "texto": "Se foi A, preste atenção. Isso tem nome: gaslighting.",
+   "broll": "dark room lamp",
+   "animacao": {
+    "tipo": "conceito",
+    "nome": "Gaslighting",
+    "frase": "Te fazer duvidar da realidade"
+   }
+  },
+  {
+   "id": 6,
+   "texto": "Uma vez é desentendimento. Quando vira padrão, é sinal de alerta.",
+   "broll": "warning sign",
+   "animacao": {
+    "tipo": "nenhuma"
+   }
+  },
+  {
+   "id": 7,
+   "texto": "Ninguém que te respeita tenta apagar o que você viu.",
+   "broll": "woman looking mirror",
+   "animacao": {
+    "tipo": "nenhuma"
+   }
+  },
+  {
+   "id": 8,
+   "texto": "Essa é a situação mais séria do teste. Faz o teste completo no vídeo do link.",
+   "broll": "galaxy stars",
+   "animacao": {
+    "tipo": "cta",
+    "texto": "FAÇA O TESTE COMPLETO"
+   }
+  }
+ ]
+}

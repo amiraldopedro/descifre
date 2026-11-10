@@ -1,0 +1,80 @@
+{
+ "id": "s01",
+ "titulo": "Te deram um chocolate de graça? Cuidado.",
+ "formato": "short",
+ "voz": "pt-BR-AntonioNeural",
+ "taxa": "+14%",
+ "cenas": [
+  {
+   "id": 1,
+   "texto": "Te deram um chocolate de graça?",
+   "broll": "chocolate gift hand",
+   "animacao": {
+    "tipo": "gancho",
+    "texto": "CHOCOLATE GRÁTIS?"
+   }
+  },
+  {
+   "id": 2,
+   "texto": "Parece só gentileza. Mas não é.",
+   "broll": "smiling saleswoman",
+   "animacao": {
+    "tipo": "nenhuma"
+   }
+  },
+  {
+   "id": 3,
+   "texto": "Logo depois, a moça oferece um cartão de crédito.",
+   "broll": "credit card shopping",
+   "animacao": {
+    "tipo": "pergunta",
+    "texto": "E agora?",
+    "a": "Escuto até o fim",
+    "b": "Agradeço e saio"
+   }
+  },
+  {
+   "id": 4,
+   "texto": "A ou B? Responde rápido.",
+   "broll": "clock fast",
+   "animacao": {
+    "tipo": "contagem"
+   }
+  },
+  {
+   "id": 5,
+   "texto": "Se foi A, seu cérebro caiu na reciprocidade.",
+   "broll": "brain neurons",
+   "animacao": {
+    "tipo": "conceito",
+    "nome": "Reciprocidade",
+    "frase": "Ganhou? Sente que deve."
+   }
+  },
+  {
+   "id": 6,
+   "texto": "Quem ganha algo sente que precisa devolver. Mesmo sem ter pedido nada.",
+   "broll": "gift box",
+   "animacao": {
+    "tipo": "nenhuma"
+   }
+  },
+  {
+   "id": 7,
+   "texto": "E isso é só a situação um de sete.",
+   "broll": "mystery dark",
+   "animacao": {
+    "tipo": "nenhuma"
+   }
+  },
+  {
+   "id": 8,
+   "texto": "Faz o teste completo no vídeo do link e descobre se você é fácil de manipular.",
+   "broll": "galaxy stars",
+   "animacao": {
+    "tipo": "cta",
+    "texto": "FAÇA O TESTE COMPLETO"
+   }
+  }
+ ]
+}

@@ -1,0 +1,80 @@
+{
+ "id": "s02",
+ "titulo": "ÚLTIMAS 3 UNIDADES: o truque que te faz comprar",
+ "formato": "short",
+ "voz": "pt-BR-AntonioNeural",
+ "taxa": "+14%",
+ "cenas": [
+  {
+   "id": 1,
+   "texto": "Últimas três unidades!",
+   "broll": "countdown timer",
+   "animacao": {
+    "tipo": "gancho",
+    "texto": "SÓ RESTAM 3!"
+   }
+  },
+  {
+   "id": 2,
+   "texto": "A promoção acaba em dez minutos.",
+   "broll": "online shopping laptop",
+   "animacao": {
+    "tipo": "nenhuma"
+   }
+  },
+  {
+   "id": 3,
+   "texto": "O que você faz?",
+   "broll": "shopping cart",
+   "animacao": {
+    "tipo": "pergunta",
+    "texto": "O que você faz?",
+    "a": "Compro antes que acabe",
+    "b": "Espero e pesquiso"
+   }
+  },
+  {
+   "id": 4,
+   "texto": "Pensa rápido.",
+   "broll": "hourglass sand",
+   "animacao": {
+    "tipo": "contagem"
+   }
+  },
+  {
+   "id": 5,
+   "texto": "Se foi A, você caiu na escassez.",
+   "broll": "rush crowd",
+   "animacao": {
+    "tipo": "conceito",
+    "nome": "Escassez",
+    "frase": "Raro parece valioso"
+   }
+  },
+  {
+   "id": 6,
+   "texto": "Seu cérebro sente mais a dor de perder do que o prazer de ganhar.",
+   "broll": "stress worried person",
+   "animacao": {
+    "tipo": "nenhuma"
+   }
+  },
+  {
+   "id": 7,
+   "texto": "O relógio no site não te informa nada. Ele rouba o seu tempo de pensar.",
+   "broll": "clock ticking",
+   "animacao": {
+    "tipo": "nenhuma"
+   }
+  },
+  {
+   "id": 8,
+   "texto": "Essa é a situação três de sete. Faz o teste completo no vídeo do link.",
+   "broll": "galaxy stars",
+   "animacao": {
+    "tipo": "cta",
+    "texto": "VOCÊ É FÁCIL DE MANIPULAR?"
+   }
+  }
+ ]
+}

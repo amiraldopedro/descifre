@@ -1,0 +1,94 @@
+{
+ "id": "s04",
+ "titulo": "Teste relâmpago: 3 perguntas em 30 segundos",
+ "formato": "short",
+ "voz": "pt-BR-AntonioNeural",
+ "taxa": "+14%",
+ "cenas": [
+  {
+   "id": 1,
+   "texto": "Teste relâmpago. Três perguntas. Responde rápido.",
+   "broll": "lightning storm",
+   "animacao": {
+    "tipo": "gancho",
+    "texto": "TESTE RELÂMPAGO"
+   }
+  },
+  {
+   "id": 2,
+   "texto": "Restaurante lotado ou vazio?",
+   "broll": "restaurant night",
+   "animacao": {
+    "tipo": "pergunta",
+    "texto": "1. Lotado ou vazio?",
+    "a": "Entro no lotado",
+    "b": "Comparo os dois"
+   }
+  },
+  {
+   "id": 3,
+   "texto": "Rápido!",
+   "broll": "people queue",
+   "animacao": {
+    "tipo": "contagem"
+   }
+  },
+  {
+   "id": 4,
+   "texto": "Alguém de jaleco recomenda um remédio milagroso.",
+   "broll": "doctor white coat",
+   "animacao": {
+    "tipo": "pergunta",
+    "texto": "2. O cara de jaleco",
+    "a": "Confio",
+    "b": "Pesquiso quem é"
+   }
+  },
+  {
+   "id": 5,
+   "texto": "Vai!",
+   "broll": "searching internet",
+   "animacao": {
+    "tipo": "contagem"
+   }
+  },
+  {
+   "id": 6,
+   "texto": "Um colega pede um favor pequeno. Depois, um enorme.",
+   "broll": "office coworkers",
+   "animacao": {
+    "tipo": "pergunta",
+    "texto": "3. O favor que cresce",
+    "a": "Aceito de novo",
+    "b": "Digo não"
+   }
+  },
+  {
+   "id": 7,
+   "texto": "Última!",
+   "broll": "tired working late",
+   "animacao": {
+    "tipo": "contagem"
+   }
+  },
+  {
+   "id": 8,
+   "texto": "Marcou A em duas ou mais? Você pode ser um alvo fácil.",
+   "broll": "target dart",
+   "animacao": {
+    "tipo": "conceito",
+    "nome": "Alvo fácil?",
+    "frase": "2 ou mais respostas A"
+   }
+  },
+  {
+   "id": 9,
+   "texto": "Faltam quatro situações e o resultado completo. Tá no vídeo do link.",
+   "broll": "galaxy stars",
+   "animacao": {
+    "tipo": "cta",
+    "texto": "VEJA SEU RESULTADO"
+   }
+  }
+ ]
+}

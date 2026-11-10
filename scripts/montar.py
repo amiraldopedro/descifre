@@ -34,8 +34,56 @@ def estimar(texto):
     return dur + 0.1, out
 
 
+def sfx_short(cenas, destino: Path):
+    """Efeitos sonoros sintetizados: whoosh nos cortes, tique na contagem, 'ding' na revelação."""
+    import numpy as np
+    sr = 44100
+    total = int((cenas[-1]["inicio"] + cenas[-1]["duracao"]) / FPS * sr) + sr
+    trilha = np.zeros(total)
+    rng = np.random.default_rng(3)
+
+    def whoosh(d=0.35):
+        n = int(d * sr); t = np.linspace(0, 1, n)
+        ruido = rng.standard_normal(n)
+        # filtro passa-baixa variável simples (média móvel cada vez menor = sobe o brilho)
+        out = np.convolve(ruido, np.ones(8) / 8, "same") * np.sin(np.pi * t) ** 2
+        return out * 0.35
+
+    def tique(f=1800, d=0.06):
+        t = np.arange(int(d * sr)) / sr
+        return np.sin(2 * np.pi * f * t) * np.exp(-t * 60) * 0.5
+
+    def ding(d=0.9):
+        t = np.arange(int(d * sr)) / sr
+        return (np.sin(2 * np.pi * 1318 * t) + 0.5 * np.sin(2 * np.pi * 1976 * t)) * np.exp(-t * 5) * 0.35
+
+    def boom(d=0.5):
+        t = np.arange(int(d * sr)) / sr
+        return np.sin(2 * np.pi * (90 - 50 * t) * t) * np.exp(-t * 7) * 0.7
+
+    def por(som, seg):
+        i = int(seg * sr); f = min(total, i + len(som)); trilha[i:f] += som[: f - i]
+
+    for c in cenas:
+        t0 = c["inicio"] / FPS
+        tipo = c["animacao"]["tipo"]
+        por(whoosh(), max(0, t0 - 0.12))
+        if tipo in ("gancho", "cta"):
+            por(boom(), t0)
+        if tipo == "conceito":
+            por(ding(), t0 + 0.05)
+        if tipo == "contagem":
+            fim = (c["inicio"] + c["duracao"]) / FPS
+            for k in range(1, 4):
+                por(tique(2000 if k < 3 else 2600), fim - k * 0.66)
+    trilha = (trilha / max(1e-6, np.abs(trilha).max()) * 0.8 * 32767).astype("<i2")
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-f", "s16le", "-ar", str(sr), "-ac", "1", "-i", "-",
+                    "-b:a", "160k", str(destino)], input=trilha.tobytes(), check=True)
+
+
 def main(vid, estimar_tempos=False):
     roteiro = json.loads((RAIZ / "roteiros" / f"{vid}.json").read_text())
+    short = roteiro.get("formato") == "short"
     build = RAIZ / "public" / "build" / vid
     voz_dir = build / "voz"
     mapa_path = build / "broll" / "mapa.json"
@@ -45,7 +93,7 @@ def main(vid, estimar_tempos=False):
     for c in roteiro["cenas"]:
         anim = dict(c["animacao"])
         if anim["tipo"] == "pergunta":
-            ultima_pergunta = {k: anim[k] for k in ("numero", "texto", "a", "b")}
+            ultima_pergunta = {k: anim.get(k, 0) for k in ("numero", "texto", "a", "b")}
         if anim["tipo"] == "contagem":
             anim["pergunta"] = ultima_pergunta
 
@@ -57,7 +105,10 @@ def main(vid, estimar_tempos=False):
         else:
             fala_s, palavras = estimar(c["texto"])
 
-        pausa = PAUSA_CONTAGEM if anim["tipo"] == "contagem" else PAUSA
+        if short:
+            pausa = 2.0 if anim["tipo"] == "contagem" else (1.2 if anim["tipo"] == "cta" else 0.08)
+        else:
+            pausa = PAUSA_CONTAGEM if anim["tipo"] == "contagem" else PAUSA
         if anim["tipo"] == "encerramento":
             pausa = 2.5
         fala = round(fala_s * FPS)
@@ -86,9 +137,16 @@ def main(vid, estimar_tempos=False):
                         "-map", "[out]", "-ar", "48000", "-b:a", "192k", str(saida)], check=True)
         narracao = f"build/{vid}/narracao.mp3"
 
+    sfx = None
+    if short:
+        build.mkdir(parents=True, exist_ok=True)
+        sfx_short(cenas, build / "sfx.mp3")
+        sfx = f"build/{vid}/sfx.mp3"
+
     musica = next((f"musica/{p.name}" for p in sorted((RAIZ / "public" / "musica").glob("*.mp3"))), None)
     manifesto = {"id": vid, "titulo": roteiro["titulo"], "fps": FPS, "totalFrames": inicio,
-                 "narracao": narracao, "musica": musica, "cenas": cenas}
+                 "narracao": narracao, "musica": musica, "sfx": sfx,
+                 "formato": roteiro.get("formato", "longo"), "cenas": cenas}
     build.mkdir(parents=True, exist_ok=True)
     (build / "manifest.json").write_text(json.dumps(manifesto, ensure_ascii=False))
     print(f"manifesto: {len(cenas)} cenas, {inicio} frames ({inicio / FPS / 60:.1f} min)")

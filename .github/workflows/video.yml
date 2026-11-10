@@ -16,10 +16,10 @@ on:
         description: "Agendar (opcional, UTC, ex.: 2026-11-12T22:00:00Z)"
         required: false
   push:
-    paths: ["roteiros/[0-9][0-9][0-9].json"]
+    paths: ["roteiros/[0-9][0-9][0-9].json", "roteiros/s[0-9][0-9].json"]
 
 concurrency:
-  group: video-${{ github.ref }}
+  group: video-${{ github.event.inputs.id || github.sha }}
   cancel-in-progress: false
 
 env:
@@ -31,6 +31,7 @@ jobs:
     outputs:
       id: ${{ steps.id.outputs.id }}
       partes: ${{ steps.partes.outputs.matriz }}
+      comp: ${{ steps.partes.outputs.comp }}
     steps:
       - uses: actions/checkout@v4
         with: { fetch-depth: 2 }
@@ -41,7 +42,7 @@ jobs:
           if [ -n "${{ github.event.inputs.id }}" ]; then
             echo "id=${{ github.event.inputs.id }}" >> "$GITHUB_OUTPUT"
           else
-            ID=$(git diff --name-only HEAD~1 HEAD -- 'roteiros/*.json' | grep -v meta | head -1 | xargs -n1 basename | cut -d. -f1)
+            ID=$(git diff --name-only HEAD~1 HEAD -- 'roteiros/*.json' | grep -v meta | head -1 | xargs -r -n1 basename | cut -d. -f1)
             echo "id=$ID" >> "$GITHUB_OUTPUT"
           fi
 
@@ -73,7 +74,9 @@ jobs:
           python - <<'EOF' >> "$GITHUB_OUTPUT"
           import json, os
           m = json.load(open(f"public/build/${{ steps.id.outputs.id }}/manifest.json"))
-          n, tot = int(os.environ["PARTES"]), m["totalFrames"]
+          short = m.get("formato") == "short"
+          n, tot = (2 if short else int(os.environ["PARTES"])), m["totalFrames"]
+          print("comp=" + ("Short" if short else "Video"))
           passo = -(-tot // n)
           partes = [{"i": i, "de": i * passo, "ate": min(tot, (i + 1) * passo) - 1} for i in range(n) if i * passo < tot]
           print("matriz=" + json.dumps(partes))
@@ -101,7 +104,7 @@ jobs:
         with: { name: build, path: "public/build/${{ needs.preparar.outputs.id }}" }
       - name: Renderizar parte ${{ matrix.parte.i }}
         run: |
-          npx remotion render src/index.ts Video out/parte_${{ matrix.parte.i }}.mp4 \
+          npx remotion render src/index.ts ${{ needs.preparar.outputs.comp }} out/parte_${{ matrix.parte.i }}.mp4 \
             --props=public/build/${{ needs.preparar.outputs.id }}/manifest.json \
             --frames=${{ matrix.parte.de }}-${{ matrix.parte.ate }} --muted --concurrency=100%
       - uses: actions/upload-artifact@v4
@@ -129,7 +132,16 @@ jobs:
           ls out/parte_*.mp4 | sort -V | sed "s|^out/|file '|; s|$|'|" > out/lista.txt
           ffmpeg -y -loglevel error -f concat -safe 0 -i out/lista.txt -c copy out/video_mudo.mp4
           MUSICA=$(ls public/musica/*.mp3 2>/dev/null | head -1 || true)
-          if [ -n "$MUSICA" ]; then
+          if [ -f public/build/$ID/sfx.mp3 ]; then
+            # Short: narração + efeitos + música (um pouco mais alta), com ducking
+            ffmpeg -y -loglevel error -i out/video_mudo.mp4 -i public/build/$ID/narracao.mp3 -i public/build/$ID/sfx.mp3 -stream_loop -1 -i "$MUSICA" \
+              -filter_complex "[3:a]volume=0.5,aformat=channel_layouts=stereo[m];[1:a]aformat=channel_layouts=stereo,asplit=2[v1][v2];[m][v2]sidechaincompress=threshold=0.02:ratio=8:attack=60:release=500[md];[2:a]volume=0.55,aformat=channel_layouts=stereo[fx];[v1][fx][md]amix=inputs=3:duration=first:normalize=0[a]" \
+              -map 0:v -map "[a]" -c:v copy -c:a aac -b:a 192k -shortest out/final.mp4
+            MUSICA=""; FEITO=1
+          fi
+          if [ -n "${FEITO:-}" ]; then
+            true
+          elif [ -n "$MUSICA" ]; then
             ffmpeg -y -loglevel error -i out/video_mudo.mp4 -i public/build/$ID/narracao.mp3 -stream_loop -1 -i "$MUSICA" \
               -filter_complex "[2:a]volume=0.35,aformat=channel_layouts=stereo[m];[1:a]aformat=channel_layouts=stereo,asplit=2[v1][v2];[m][v2]sidechaincompress=threshold=0.02:ratio=10:attack=80:release=700[md];[v1][md]amix=inputs=2:duration=first:normalize=0[a]" \
               -map 0:v -map "[a]" -c:v copy -c:a aac -b:a 192k -shortest out/final.mp4
@@ -137,8 +149,12 @@ jobs:
             ffmpeg -y -loglevel error -i out/video_mudo.mp4 -i public/build/$ID/narracao.mp3 \
               -map 0:v -map 1:a -c:v copy -c:a aac -b:a 192k -shortest out/final.mp4
           fi
-          python3 -c "import json;print(json.dumps(json.load(open('roteiros/$ID.meta.json'))['thumb']))" > out/thumb.json
-          npx remotion still src/index.ts Thumb out/thumb.png --props=out/thumb.json
+          if python3 -c "import json,sys;sys.exit(0 if 'thumb' in json.load(open('roteiros/$ID.meta.json')) else 1)"; then
+            python3 -c "import json;print(json.dumps(json.load(open('roteiros/$ID.meta.json'))['thumb']))" > out/thumb.json
+            npx remotion still src/index.ts Thumb out/thumb.png --props=out/thumb.json
+          else
+            npx remotion still src/index.ts Short out/thumb.png --props=public/build/$ID/manifest.json --frame=20
+          fi
           ls -la out/final.mp4 out/thumb.png
 
       - uses: actions/upload-artifact@v4
