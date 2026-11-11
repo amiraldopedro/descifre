@@ -23,7 +23,7 @@ jobs:
             curl -sfL --max-time 240 --retry 3 -o /tmp/ff.tar.xz $BASE/$NOME.tar.xz && tar -xJf /tmp/ff.tar.xz -C /tmp \
               && sudo cp /tmp/$NOME/bin/ff* /usr/local/bin/ && break
           done
-          pip install -q --timeout 60 edge-tts
+          pip install -q --timeout 60 edge-tts numpy
       - name: Voz, manifesto e capítulos
         run: |
           for ID in ${{ inputs.ids }}; do
