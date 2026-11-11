@@ -374,8 +374,11 @@ def main(vid, estimar_tempos=False):
         filtros.append(f"{mix}amix=inputs={len(trechos)}:normalize=0,loudnorm=I=-16:TP=-1.5[out]")
         script = build / "filtro.txt"
         script.write_text(";".join(filtros))
-        subprocess.run(["ffmpeg", "-y", "-loglevel", "error", *entradas, "-filter_complex_script", str(script),
-                        "-map", "[out]", "-ar", "48000", "-b:a", "192k", str(saida)], check=True)
+        resto = ["-map", "[out]", "-ar", "48000", "-b:a", "192k", str(saida)]
+        try:  # ffmpeg 7.1+ lê o filtro de arquivo com "-/filter_complex"; versões antigas com "-filter_complex_script"
+            subprocess.run(["ffmpeg", "-y", "-loglevel", "error", *entradas, "-/filter_complex", str(script), *resto], check=True)
+        except subprocess.CalledProcessError:
+            subprocess.run(["ffmpeg", "-y", "-loglevel", "error", *entradas, "-filter_complex_script", str(script), *resto], check=True)
         narracao = f"build/{vid}/narracao.mp3"
 
     build.mkdir(parents=True, exist_ok=True)
