@@ -31,8 +31,10 @@ async def edge_cena(texto, voz, mp3: Path, taxa=TAXA, tom="+0Hz"):
             elif ch["type"] == "WordBoundary":
                 t0 = ch["offset"] / 1e7
                 palavras.append({"w": ch["text"], "t0": round(t0, 3), "t1": round(t0 + ch["duration"] / 1e7, 3)})
-    if mp3.stat().st_size < 1000 or not palavras:
+    if mp3.stat().st_size < 1000:
         raise RuntimeError("áudio vazio")
+    if not palavras:  # algumas vozes multilíngues não mandam os tempos: estima pelo tamanho
+        palavras = estimar_palavras(texto, duracao(mp3))
     return palavras
 
 
@@ -79,6 +81,7 @@ def candidatos(cena, roteiro):
     lista = []
     if quem == "cifrinho":
         lista.append((roteiro.get("voz", ficha.get("voz", "pt-BR-AntonioNeural")), taxa_rot, ficha.get("tom", "+0Hz")))
+        lista.append(("pt-BR-AntonioNeural", taxa_rot, "+0Hz"))  # reserva se a voz principal falhar
     else:
         lista.append((ficha.get("voz", "pt-BR-AntonioNeural"), ficha.get("taxa", taxa_rot), ficha.get("tom", "+0Hz")))
         r = ficha.get("reserva")
