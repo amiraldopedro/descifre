@@ -26,6 +26,9 @@ PADRAO = "psicologia,curiosidades,teste psicológico,ilusão de ótica,mente hum
 
 
 def yt():
+    chave = os.environ.get("YT_API_KEY")
+    if chave:  # chave simples da YouTube Data API (só leitura)
+        return build("youtube", "v3", developerKey=chave, cache_discovery=False)
     cred = Credentials(None, refresh_token=os.environ["YT_REFRESH_TOKEN"], client_id=os.environ["YT_CLIENT_ID"],
                        client_secret=os.environ["YT_CLIENT_SECRET"], token_uri="https://oauth2.googleapis.com/token",
                        scopes=["https://www.googleapis.com/auth/youtube"])
