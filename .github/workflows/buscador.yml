@@ -1,0 +1,61 @@
+name: Buscador de canais em alta
+
+on:
+  workflow_dispatch:
+    inputs:
+      termos:
+        description: "Palavras-chave separadas por vírgula (vazio = lista padrão do nicho)"
+        required: false
+        default: ""
+      dias:
+        description: "Só vídeos publicados nos últimos N dias"
+        required: false
+        default: "21"
+      tipo:
+        description: "shorts, longos ou todos"
+        required: false
+        default: "todos"
+      min_views:
+        description: "Mínimo de visualizações"
+        required: false
+        default: "50000"
+      regiao:
+        description: "País (BR, US, ES, MX...)"
+        required: false
+        default: "BR"
+      idioma:
+        description: "Idioma (pt, en, es...)"
+        required: false
+        default: "pt"
+
+permissions:
+  contents: write
+
+jobs:
+  buscar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install -q --timeout 60 google-api-python-client google-auth
+      - name: Buscar
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+        run: |
+          ARGS="--dias ${{ inputs.dias }} --tipo ${{ inputs.tipo }} --min-views ${{ inputs.min_views }} --regiao ${{ inputs.regiao }} --idioma ${{ inputs.idioma }}"
+          if [ -n "${{ inputs.termos }}" ]; then
+            python scripts/buscador.py --termos "${{ inputs.termos }}" $ARGS
+          else
+            python scripts/buscador.py $ARGS
+          fi
+      - name: Salvar relatório
+        run: |
+          git config user.name "fabrica-descifre"
+          git config user.email "fabrica@users.noreply.github.com"
+          git add relatorios/buscador
+          git commit -m "Buscador: relatório $(date -u +%F) [skip ci]" || exit 0
+          git pull --rebase -q && git push -q
