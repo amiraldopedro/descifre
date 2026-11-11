@@ -74,25 +74,68 @@ export const Palco3D: React.FC<{
   alvo?: [number, number, number];
   fov?: number;
   fundo?: boolean; // desenha fundo azul escuro com névoa
-}> = ({ children, camera = [0, 0, 8], alvo = [0, 0, 0], fov = 40, fundo = true }) => {
+  sombras?: boolean; // sombras de verdade (padrão: sim)
+  clima?: "noite" | "dia" | "dourado"; // cor da luz principal
+}> = ({ children, camera = [0, 0, 8], alvo = [0, 0, 0], fov = 40, fundo = true, sombras = true, clima = "noite" }) => {
   const { width, height } = useTamanho();
+  const chave = clima === "dia" ? "#FFF4E0" : clima === "dourado" ? "#FFC98A" : "#E8EEFF";
+  const ceu = clima === "dia" ? "#9CC8FF" : COR.azulClaro;
   return (
     <ThreeCanvas
       width={width}
       height={height}
       camera={{ position: camera, fov }}
-      gl={{ antialias: true, preserveDrawingBuffer: true }}
+      shadows={sombras ? { type: THREE.PCFSoftShadowMap } : false}
+      gl={{ antialias: true, preserveDrawingBuffer: true, toneMapping: THREE.ACESFilmicToneMapping, toneMappingExposure: 1.15 }}
       onCreated={({ camera: c }) => c.lookAt(...alvo)}
     >
       {fundo && <color attach="background" args={[COR.azulEscuro]} />}
-      {fundo && <fog attach="fog" args={[COR.azulEscuro, 9, 26]} />}
-      <ambientLight intensity={0.35} color={COR.azulClaro} />
-      <directionalLight position={[4, 6, 5]} intensity={1.6} color={COR.branco} />
-      <pointLight position={[-5, -2, 3]} intensity={30} color={COR.vermelho} distance={18} />
-      <pointLight position={[5, 1, -2]} intensity={30} color={COR.ciano} distance={18} />
+      {fundo && <fog attach="fog" args={[COR.azulEscuro, 10, 30]} />}
+      {/* luz de céu (de cima, azul) e de chão (de baixo, escura): dá volume a tudo */}
+      <hemisphereLight args={[ceu, "#0A0F2A", 0.9]} />
+      <ambientLight intensity={0.12} color={COR.branco} />
+      {/* luz principal com sombra macia */}
+      <directionalLight
+        position={[6, 11, 7]}
+        intensity={2.3}
+        color={chave}
+        castShadow={sombras}
+        shadow-mapSize-width={2048}
+        shadow-mapSize-height={2048}
+        shadow-bias={-0.0004}
+        shadow-normalBias={0.02}
+        shadow-radius={4}
+        shadow-camera-left={-14}
+        shadow-camera-right={14}
+        shadow-camera-top={14}
+        shadow-camera-bottom={-14}
+        shadow-camera-near={0.5}
+        shadow-camera-far={45}
+      />
+      {/* contorno: luz ciano por trás separa os objetos do fundo */}
+      <directionalLight position={[-6, 4, -8]} intensity={1.4} color={COR.ciano} />
+      {/* preenchimento colorido da marca */}
+      <pointLight position={[-6, -1, 4]} intensity={22} color={COR.vermelho} distance={20} />
+      <pointLight position={[6, 2, -3]} intensity={18} color={COR.ciano} distance={20} />
+      {sombras && <Sombras />}
       {children}
     </ThreeCanvas>
   );
+};
+
+/** Liga sombra em toda malha da cena (as de material básico, como brilhos e linhas, não projetam sombra). */
+const Sombras: React.FC = () => {
+  const scene = useThree((s) => s.scene);
+  useLayoutEffect(() => {
+    scene.traverse((o) => {
+      const m = o as THREE.Mesh;
+      if (!m.isMesh) return;
+      const basico = (m.material as THREE.Material & { isMeshBasicMaterial?: boolean })?.isMeshBasicMaterial;
+      m.castShadow = !basico;
+      m.receiveShadow = !basico;
+    });
+  });
+  return null;
 };
 
 /** Câmera em órbita lenta (coloque dentro do Palco3D). */
@@ -307,12 +350,13 @@ export const Cristal: React.FC<{ posicao?: [number, number, number]; cor?: strin
 };
 
 /** Chão low poly ondulado (cenários: "terreno da mente", paisagens). */
-export const TerrenoLowPoly: React.FC<{ largura?: number; seg?: number; altura?: number; cor?: string; y?: number }> = ({
+export const TerrenoLowPoly: React.FC<{ largura?: number; seg?: number; altura?: number; cor?: string; y?: number; cor2?: string }> = ({
   largura = 40,
   seg = 40,
   altura = 0.6,
   cor = COR.azul,
   y = -2,
+  cor2,
 }) => {
   const geo = useMemo(() => {
     const g = new THREE.PlaneGeometry(largura, largura, seg, seg);
@@ -324,52 +368,155 @@ export const TerrenoLowPoly: React.FC<{ largura?: number; seg?: number; altura?:
     }
     const ng = g.toNonIndexed();
     ng.computeVertexNormals();
+    // cada triângulo ganha um tom levemente diferente (visual low poly "pintado")
+    const a = new THREE.Color(cor);
+    const b = new THREE.Color(cor2 ?? cor).offsetHSL(0, 0, cor2 ? 0 : 0.06);
+    const cores: number[] = [];
+    for (let t = 0; t < ng.attributes.position.count / 3; t++) {
+      const c = a.clone().lerp(b, random(`tc${t}`)).offsetHSL(0, 0, (random(`tl${t}`) - 0.5) * 0.04);
+      for (let k = 0; k < 3; k++) cores.push(c.r, c.g, c.b);
+    }
+    ng.setAttribute("color", new THREE.Float32BufferAttribute(cores, 3));
     return ng;
-  }, [largura, seg, altura]);
+  }, [largura, seg, altura, cor, cor2]);
   return (
     <mesh geometry={geo} rotation={[-Math.PI / 2, 0, 0]} position={[0, y, 0]}>
-      <meshStandardMaterial color={cor} flatShading roughness={0.9} />
+      <meshStandardMaterial vertexColors flatShading roughness={0.95} />
     </mesh>
   );
 };
 
-/** Boneco low poly genérico (pessoas numa história 3D: multidão, vítima, manipulador). */
-export const PessoaLowPoly: React.FC<{ posicao?: [number, number, number]; cor?: string; escala?: number; balanco?: number; seed?: number; olhando?: number }> = ({
+/** Pessoa low poly (pessoas numa história 3D). Frente = +z.
+ *  cor = camisa. Opcionais: calca, pele, cabelo, estilo do cabelo, andar (0..1, balança pernas e braços),
+ *  bracos ("baixo" | "cima" | "frente" | "cruzados"), sentado. */
+export const PessoaLowPoly: React.FC<{
+  posicao?: [number, number, number];
+  cor?: string;
+  escala?: number;
+  balanco?: number;
+  seed?: number;
+  olhando?: number;
+  calca?: string;
+  pele?: string;
+  cabelo?: string;
+  estilo?: "curto" | "longo" | "careca" | "coque";
+  andar?: number;
+  bracos?: "baixo" | "cima" | "frente" | "cruzados";
+  sentado?: boolean;
+}> = ({
   posicao = [0, 0, 0],
   cor = COR.azulClaro,
   escala = 1,
   balanco = 1,
   seed = 0,
   olhando = 0,
+  calca = "#2A2F4F",
+  pele,
+  cabelo,
+  estilo,
+  andar = 0,
+  bracos = "baixo",
+  sentado = false,
 }) => {
   const f = useCurrentFrame();
-  const b = Math.sin((f + seed * 13) / 10) * 0.06 * balanco;
+  const PELES = ["#F1D3B8", "#E0B48F", "#C68E63", "#8D5A3B", "#F5DCC6"];
+  const CABELOS = ["#1B1B2F", "#3B2A20", "#6B4A2E", "#C9A15B", "#D8D8E0"];
+  const ESTILOS = ["curto", "longo", "curto", "coque", "careca"] as const;
+  const pl = pele ?? PELES[Math.floor(random(`pele${seed}`) * PELES.length)];
+  const cb = cabelo ?? CABELOS[Math.floor(random(`cab${seed}`) * CABELOS.length)];
+  const es = estilo ?? ESTILOS[Math.floor(random(`est${seed}`) * ESTILOS.length)];
+  const b = Math.sin((f + seed * 13) / 12) * 0.035 * balanco; // respiração/balanço
+  const ciclo = Math.sin((f + seed * 7) / 4.5) * andar;
+  const quique = Math.abs(Math.cos((f + seed * 7) / 4.5)) * 0.05 * andar;
+  const pernaY = sentado ? 0.45 : 0;
+  const brD = bracos === "cima" ? -2.6 : bracos === "frente" ? -1.3 : bracos === "cruzados" ? -1.1 : 0.08 - ciclo * 0.6;
+  const brE = bracos === "cima" ? -2.6 : bracos === "frente" ? -1.3 : bracos === "cruzados" ? -1.1 : 0.08 + ciclo * 0.6;
+  const mat = (c: string) => <meshStandardMaterial color={c} flatShading roughness={0.75} />;
   return (
-    <group position={posicao} scale={escala} rotation={[0, olhando, b]}>
-      <mesh position={[0, 0.65, 0]}>
-        <cylinderGeometry args={[0.28, 0.4, 1.1, 6]} />
-        <meshStandardMaterial color={cor} flatShading />
-      </mesh>
-      <mesh position={[0, 1.5, 0]}>
-        <icosahedronGeometry args={[0.32, 0]} />
-        <meshStandardMaterial color="#F1D3B8" flatShading />
-      </mesh>
-      {/* rosto (frente = +z): dá para ver quem está de costas */}
-      {[-0.11, 0.11].map((x) => (
-        <mesh key={x} position={[x, 1.55, 0.27]}>
-          <sphereGeometry args={[0.055, 6, 4]} />
-          <meshBasicMaterial color={COR.azulEscuro} />
-        </mesh>
+    <group position={[posicao[0], posicao[1] + quique - pernaY, posicao[2]]} scale={escala} rotation={[0, olhando, b]}>
+      {/* pernas e sapatos */}
+      {[-0.13, 0.13].map((x, i) => (
+        <group key={x} position={[x, 0.78, 0]} rotation={[sentado ? -1.5 : (i ? ciclo : -ciclo) * 0.7, 0, 0]}>
+          <mesh position={[0, -0.36, 0]}>
+            <cylinderGeometry args={[0.11, 0.09, 0.74, 6]} />
+            {mat(calca)}
+          </mesh>
+          <mesh position={[0, -0.76, 0.06]}>
+            <boxGeometry args={[0.17, 0.1, 0.3]} />
+            {mat("#1A1A2A")}
+          </mesh>
+        </group>
       ))}
-      <mesh position={[0, 1.42, 0.3]} rotation={[Math.PI / 2, 0, 0]}>
-        <coneGeometry args={[0.06, 0.14, 4]} />
-        <meshStandardMaterial color="#E2B898" flatShading />
+      {/* tronco (camisa) e quadril */}
+      <mesh position={[0, 0.84, 0]}>
+        <cylinderGeometry args={[0.24, 0.22, 0.2, 7]} />
+        {mat(calca)}
       </mesh>
-      {/* cabelo atrás da cabeça */}
-      <mesh position={[0, 1.56, -0.1]} scale={[1.08, 1.02, 1.0]}>
-        <icosahedronGeometry args={[0.31, 0]} />
-        <meshStandardMaterial color={COR.azulEscuro} flatShading />
+      <mesh position={[0, 1.18, 0]}>
+        <cylinderGeometry args={[0.3, 0.23, 0.56, 7]} />
+        {mat(cor)}
       </mesh>
+      {/* braços */}
+      {[
+        [-0.36, brE],
+        [0.36, brD],
+      ].map(([x, rot], i) => (
+        <group key={i} position={[x, 1.4, 0]} rotation={[rot, 0, (i ? -1 : 1) * (bracos === "cruzados" ? 0.9 : 0.12)]}>
+          <mesh position={[0, -0.27, 0]}>
+            <cylinderGeometry args={[0.075, 0.065, 0.5, 6]} />
+            {mat(cor)}
+          </mesh>
+          <mesh position={[0, -0.56, 0]}>
+            <icosahedronGeometry args={[0.07, 0]} />
+            {mat(pl)}
+          </mesh>
+        </group>
+      ))}
+      {/* pescoço e cabeça */}
+      <mesh position={[0, 1.5, 0]}>
+        <cylinderGeometry args={[0.08, 0.09, 0.12, 6]} />
+        {mat(pl)}
+      </mesh>
+      <mesh position={[0, 1.74, 0]} scale={[1, 1.1, 1]}>
+        <icosahedronGeometry args={[0.24, 1]} />
+        {mat(pl)}
+      </mesh>
+      {/* olhos (branco + pupila) e nariz: dá para ver quem olha para onde */}
+      {[-0.085, 0.085].map((x) => (
+        <group key={x} position={[x, 1.77, 0.21]}>
+          <mesh>
+            <sphereGeometry args={[0.045, 8, 6]} />
+            <meshBasicMaterial color="#FFFFFF" />
+          </mesh>
+          <mesh position={[0, 0, 0.03]}>
+            <sphereGeometry args={[0.025, 6, 4]} />
+            <meshBasicMaterial color={COR.azulEscuro} />
+          </mesh>
+        </group>
+      ))}
+      <mesh position={[0, 1.7, 0.25]} rotation={[Math.PI / 2, 0, 0]}>
+        <coneGeometry args={[0.035, 0.09, 4]} />
+        {mat(pl)}
+      </mesh>
+      {/* cabelo */}
+      {es !== "careca" && (
+        <mesh position={[0, 1.83, -0.03]} scale={[1.06, es === "longo" ? 1.05 : 0.8, 1.06]}>
+          <icosahedronGeometry args={[0.25, 1]} />
+          {mat(cb)}
+        </mesh>
+      )}
+      {es === "longo" && (
+        <mesh position={[0, 1.55, -0.12]}>
+          <boxGeometry args={[0.46, 0.45, 0.14]} />
+          {mat(cb)}
+        </mesh>
+      )}
+      {es === "coque" && (
+        <mesh position={[0, 1.98, -0.12]}>
+          <icosahedronGeometry args={[0.1, 0]} />
+          {mat(cb)}
+        </mesh>
+      )}
     </group>
   );
 };
