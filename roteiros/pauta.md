@@ -13,9 +13,12 @@ Pesquisa de 10/11/2026: 17 outliers em 14 idiomas. Adaptar o tema e a estrutura,
 | 004 | Teste de burrice: 4 armadilhas que enganam gente inteligente | "Psychologists Use These 4 Tests to Spot a Fool" (EN 120x) | s09 (taco e bola), s10 (zíper) |
 | 005 | Por que somos grossos com quem mais amamos | "Quem é duro com os próximos é duro consigo" (JA 411x) | s11 (mãe x chefe), s12 (mensagem de 1 linha) |
 | 006 | Escolha uma escada: o teste que revela o que você esconde | Teste das escadas (JA 389x) + Barnum | s13 (escadas), s14 (esse texto é você?) |
+| 008 | DOCUMENTÁRIO: Os experimentos mais sombrios da psicologia, a história completa (22,5 min) | Estrutura dos documentários do Ampulheta (1,2 mi views com 24 mil inscritos) | a fazer |
 | 007 | QI 70, 100, 130 e 160: como cada mente vê o mundo | IQ 70 vs 160 (JA 447x, EN 164x) | s15 (Terman/Nobel), s16 (efeito Flynn) |
 
 ## Próximos (reserva)
+
+- Documentários no mesmo formato: "A história completa da mente humana" (de Freud às neurociências); no Amiraldo Teologias, "Toda a história do cristianismo"
 
 - Geração X: por que eles fazem tudo sozinhos (adaptar ao Brasil: Plano Collor, hiperinflação) — KO 276x
 - A psicologia de quem dorme com a TV ligada — EN 226x
