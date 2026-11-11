@@ -948,6 +948,311 @@
    "p": 0.88
   }
  ],
+ "008/acampamento": [
+  {
+   "som": "whoosh",
+   "p": 0.02,
+   "fase": "grupos"
+  },
+  {
+   "som": "pop",
+   "p": 0.12,
+   "fase": "grupos"
+  },
+  {
+   "som": "pop",
+   "p": 0.18,
+   "fase": "grupos"
+  },
+  {
+   "som": "sobe",
+   "p": 0.72,
+   "fase": "grupos"
+  },
+  {
+   "som": "ding",
+   "p": 0.8,
+   "fase": "grupos"
+  },
+  {
+   "som": "whoosh",
+   "p": 0.02,
+   "fase": "corda"
+  },
+  {
+   "som": "desce",
+   "p": 0.08,
+   "fase": "corda"
+  },
+  {
+   "som": "mecanico",
+   "p": 0.4,
+   "fase": "corda"
+  },
+  {
+   "som": "pop",
+   "p": 0.6,
+   "fase": "corda"
+  },
+  {
+   "som": "sobe",
+   "p": 0.72,
+   "fase": "corda"
+  },
+  {
+   "som": "brilho",
+   "p": 0.95,
+   "fase": "corda"
+  }
+ ],
+ "008/albert": [
+  {
+   "som": "whoosh",
+   "p": 0.02
+  },
+  {
+   "som": "passos",
+   "p": 0.08,
+   "vol": 0.4
+  },
+  {
+   "som": "boom",
+   "p": 0.45
+  },
+  {
+   "som": "boom",
+   "p": 0.6
+  },
+  {
+   "som": "desce",
+   "p": 0.72
+  },
+  {
+   "som": "glitch",
+   "p": 0.84
+  }
+ ],
+ "008/calendario": [
+  {
+   "som": "whoosh",
+   "p": 0.02
+  },
+  {
+   "som": "click",
+   "p": 0.12
+  },
+  {
+   "som": "click",
+   "p": 0.24
+  },
+  {
+   "som": "click",
+   "p": 0.36
+  },
+  {
+   "som": "click",
+   "p": 0.48
+  },
+  {
+   "som": "click",
+   "p": 0.6
+  },
+  {
+   "som": "click",
+   "p": 0.74
+  },
+  {
+   "som": "boom",
+   "p": 0.8
+  }
+ ],
+ "008/harlow": [
+  {
+   "som": "whoosh",
+   "p": 0.02
+  },
+  {
+   "som": "mecanico",
+   "p": 0.16
+  },
+  {
+   "som": "pop",
+   "p": 0.32
+  },
+  {
+   "som": "brilho",
+   "p": 0.5
+  },
+  {
+   "som": "passos",
+   "p": 0.76,
+   "vol": 0.4
+  },
+  {
+   "som": "passos",
+   "p": 0.9,
+   "vol": 0.4
+  }
+ ],
+ "008/interfone": [
+  {
+   "som": "whoosh",
+   "p": 0.02
+  },
+  {
+   "som": "glitch",
+   "p": 0.24
+  },
+  {
+   "som": "passos",
+   "p": 0.48,
+   "vol": 0.5
+  },
+  {
+   "som": "ding",
+   "p": 0.6
+  },
+  {
+   "som": "whoosh",
+   "p": 0.7
+  },
+  {
+   "som": "desce",
+   "p": 0.86
+  }
+ ],
+ "008/milgram": [
+  {
+   "som": "zap",
+   "p": 0.06
+  },
+  {
+   "som": "zap",
+   "p": 0.2
+  },
+  {
+   "som": "zap",
+   "p": 0.34
+  },
+  {
+   "som": "zap",
+   "p": 0.46
+  },
+  {
+   "som": "desce",
+   "p": 0.52
+  },
+  {
+   "som": "tique",
+   "p": 0.6
+  },
+  {
+   "som": "click",
+   "p": 0.7
+  }
+ ],
+ "008/monstro": [
+  {
+   "som": "whoosh",
+   "p": 0.02
+  },
+  {
+   "som": "pop",
+   "p": 0.06
+  },
+  {
+   "som": "pop",
+   "p": 0.12
+  },
+  {
+   "som": "pop",
+   "p": 0.18
+  },
+  {
+   "som": "ding",
+   "p": 0.4
+  },
+  {
+   "som": "desce",
+   "p": 0.55
+  },
+  {
+   "som": "batida",
+   "p": 0.74
+  },
+  {
+   "som": "batida",
+   "p": 0.84
+  }
+ ],
+ "008/onda": [
+  {
+   "som": "click",
+   "p": 0.04
+  },
+  {
+   "som": "click",
+   "p": 0.32
+  },
+  {
+   "som": "pop",
+   "p": 0.45
+  },
+  {
+   "som": "pop",
+   "p": 0.56
+  },
+  {
+   "som": "pop",
+   "p": 0.66
+  },
+  {
+   "som": "boom",
+   "p": 0.8
+  }
+ ],
+ "008/samaritano": [
+  {
+   "som": "whoosh",
+   "p": 0.02
+  },
+  {
+   "som": "desce",
+   "p": 0.12
+  },
+  {
+   "som": "tique",
+   "p": 0.52
+  },
+  {
+   "som": "tique",
+   "p": 0.56
+  },
+  {
+   "som": "tique",
+   "p": 0.6
+  },
+  {
+   "som": "passos",
+   "p": 0.55
+  },
+  {
+   "som": "passos",
+   "p": 0.8,
+   "vol": 0.5
+  },
+  {
+   "som": "brilho",
+   "p": 0.95
+  }
+ ],
+ "cenario/lugar": [
+  {
+   "som": "whoosh",
+   "p": 0.01,
+   "vol": 0.5
+  }
+ ],
  "d02/elevador": [
   {
    "som": "porta",

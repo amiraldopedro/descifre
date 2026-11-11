@@ -24,9 +24,19 @@ import * as m20 from "./007/curva";
 import * as m21 from "./007/escada";
 import * as m22 from "./007/flynn";
 import * as m23 from "./007/terman";
-import * as m24 from "./d02/elevador";
-import * as m25 from "./d02/linhas-asch";
-import * as m26 from "./d03/gerador";
+import * as m24 from "./008/acampamento";
+import * as m25 from "./008/albert";
+import * as m26 from "./008/calendario";
+import * as m27 from "./008/harlow";
+import * as m28 from "./008/interfone";
+import * as m29 from "./008/milgram";
+import * as m30 from "./008/monstro";
+import * as m31 from "./008/onda";
+import * as m32 from "./008/samaritano";
+import * as m33 from "./cenario/lugar";
+import * as m34 from "./d02/elevador";
+import * as m35 from "./d02/linhas-asch";
+import * as m36 from "./d03/gerador";
 export const SOB_MEDIDA: Record<string, ModuloSobMedida> = {
   "002/ancora": m0 as ModuloSobMedida,
   "002/gorila": m1 as ModuloSobMedida,
@@ -52,7 +62,17 @@ export const SOB_MEDIDA: Record<string, ModuloSobMedida> = {
   "007/escada": m21 as ModuloSobMedida,
   "007/flynn": m22 as ModuloSobMedida,
   "007/terman": m23 as ModuloSobMedida,
-  "d02/elevador": m24 as ModuloSobMedida,
-  "d02/linhas-asch": m25 as ModuloSobMedida,
-  "d03/gerador": m26 as ModuloSobMedida,
+  "008/acampamento": m24 as ModuloSobMedida,
+  "008/albert": m25 as ModuloSobMedida,
+  "008/calendario": m26 as ModuloSobMedida,
+  "008/harlow": m27 as ModuloSobMedida,
+  "008/interfone": m28 as ModuloSobMedida,
+  "008/milgram": m29 as ModuloSobMedida,
+  "008/monstro": m30 as ModuloSobMedida,
+  "008/onda": m31 as ModuloSobMedida,
+  "008/samaritano": m32 as ModuloSobMedida,
+  "cenario/lugar": m33 as ModuloSobMedida,
+  "d02/elevador": m34 as ModuloSobMedida,
+  "d02/linhas-asch": m35 as ModuloSobMedida,
+  "d03/gerador": m36 as ModuloSobMedida,
 };

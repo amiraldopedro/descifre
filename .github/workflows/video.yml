@@ -78,7 +78,7 @@ jobs:
           m = json.load(open(f"public/build/${{ steps.id.outputs.id }}/manifest.json"))
           short = m.get("formato") == "short"
           tot = m["totalFrames"]
-          n = 2 if short else max(1, min(int(os.environ["PARTES"]), tot // 900))
+          n = 2 if short else max(1, min(16 if tot > 20000 else int(os.environ["PARTES"]), tot // 900))  # documentário longo: 16 partes
           print("comp=" + ("Short" if short else "Video"))
           passo = -(-tot // n)
           partes = [{"i": i, "de": i * passo, "ate": min(tot, (i + 1) * passo) - 1} for i in range(n) if i * passo < tot]

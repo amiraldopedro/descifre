@@ -39,7 +39,7 @@ export type Animacao =
   | { tipo: "local"; texto: string; ano?: string | number } // etiqueta "LUGAR · ANO" no canto
   | { tipo: "documento"; titulo: string; autor: string; ano: string | number; revista?: string; trecho: string; destaque: string; nota?: string; p0?: number; p1?: number }
   | { tipo: "carimbo"; texto: string; frase?: string; p?: number } // MITO, VERDADE, EM DEBATE
-  | { tipo: "capitulo"; numero: number; titulo: string }
+  | { tipo: "capitulo"; numero: number; titulo: string; rotulo?: string }
   | { tipo: "fim"; texto?: string; thumb?: string | { linha1: string; destaque: string; selo?: string } } // só Shorts
   | { tipo: "vinheta" }; // abertura de 3,5 s, sempre igual
 

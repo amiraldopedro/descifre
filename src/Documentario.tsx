@@ -233,7 +233,8 @@ export const Carimbo: React.FC<{ texto: string; frase?: string; p?: number; fala
 
 /* --------------------------------------------------------------- capítulo */
 
-export const Capitulo: React.FC<{ numero: number; titulo: string }> = ({ numero, titulo }) => {
+export const Capitulo: React.FC<{ numero: number; titulo: string; rotulo?: string }> = ({ numero, titulo, rotulo }) => {
+  // rotulo: "PRÓLOGO" / "EPÍLOGO" no lugar de "CAPÍTULO N" (o número grande do fundo some)
   const f = useCurrentFrame();
   const vertical = useVertical();
   const e1 = useMola(8, 16);
@@ -246,12 +247,12 @@ export const Capitulo: React.FC<{ numero: number; titulo: string }> = ({ numero,
       <AbsoluteFill style={{ background: `linear-gradient(160deg, ${COR.azul}CC 0%, ${COR.azulEscuro}F0 70%)` }} />
       <AbsoluteFill style={{ alignItems: "center", justifyContent: "center" }}>
         <div style={{ fontFamily: FONTE_TITULO, fontWeight: 800, fontSize: vertical ? 900 : 760, lineHeight: 1, color: "transparent", WebkitTextStroke: `3px ${COR.ciano}`, opacity: 0.1, transform: `scale(${1.08 - 0.08 * e1})` }}>
-          {numero}
+          {rotulo ? "" : numero}
         </div>
       </AbsoluteFill>
       <AbsoluteFill style={{ alignItems: "center", justifyContent: "center", padding: vertical ? "0 70px" : "0 160px" }}>
         <div style={{ fontFamily: FONTE_TEXTO, fontWeight: 800, fontSize: vertical ? 44 : 36, letterSpacing: 18, color: COR.ciano, opacity: e1, transform: `translateY(${(1 - e1) * 20}px)` }}>
-          CAPÍTULO {numero}
+          {rotulo ? rotulo.toUpperCase() : `CAPÍTULO ${numero}`}
         </div>
         <div
           style={{
@@ -334,7 +335,7 @@ export const CamadaDocumentario: React.FC<{ cena: Cena; falando: boolean }> = ({
     case "carimbo":
       return <Carimbo texto={a.texto} frase={a.frase} p={a.p} fala={cena.fala} />;
     case "capitulo":
-      return <Capitulo numero={a.numero} titulo={a.titulo} />;
+      return <Capitulo numero={a.numero} titulo={a.titulo} rotulo={a.rotulo} />;
     case "fim":
       return <Fim texto={a.texto} thumb={a.thumb} falando={falando} />;
     case "vinheta":

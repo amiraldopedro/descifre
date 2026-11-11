@@ -1,0 +1,1270 @@
+{
+ "id": "008",
+ "titulo": "Os experimentos mais sombrios da psicologia: a história completa",
+ "trilha": "misterio",
+ "voz": "pt-BR-AntonioNeural",
+ "vinheta": true,
+ "cenas": [
+  {
+   "texto": "Um bebê aprende a ter medo de um coelho.",
+   "previa": 16,
+   "capitulo": "Trailer",
+   "animacao": {
+    "tipo": "nenhuma"
+   },
+   "id": 1
+  },
+  {
+   "texto": "Crianças órfãs ouvem que gaguejam, sem gaguejar.",
+   "previa": 27,
+   "animacao": {
+    "tipo": "nenhuma"
+   },
+   "id": 2
+  },
+  {
+   "texto": "Macacos escolhem um pano macio em vez de comida.",
+   "previa": 36,
+   "animacao": {
+    "tipo": "nenhuma"
+   },
+   "id": 3
+  },
+  {
+   "texto": "Pessoas comuns apertam um botão de quatrocentos e cinquenta volts.",
+   "previa": 56,
+   "animacao": {
+    "tipo": "nenhuma"
+   },
+   "id": 4
+  },
+  {
+   "texto": "Trinta e oito vizinhos que, dizem, ouviram tudo e não fizeram nada.",
+   "previa": 68,
+   "animacao": {
+    "tipo": "nenhuma"
+   },
+   "id": 5
+  },
+  {
+   "texto": "E uma prisão de mentira que precisou ser fechada às pressas.",
+   "previa": 92,
+   "animacao": {
+    "tipo": "nenhuma"
+   },
+   "id": 6
+  },
+  {
+   "texto": "Esses experimentos mudaram o que a gente sabe sobre a mente humana. Mas quanto do que te contaram sobre eles é verdade?",
+   "animacao": {
+    "tipo": "titulo",
+    "texto": "Os experimentos mais sombrios da psicologia"
+   },
+   "id": 7
+  },
+  {
+   "texto": "",
+   "animacao": {
+    "tipo": "capitulo",
+    "numero": 0,
+    "titulo": "O homem de jaleco cinza",
+    "rotulo": "Prólogo"
+   },
+   "id": 8
+  },
+  {
+   "texto": "New Haven, Estados Unidos, verão de mil novecentos e sessenta e um. Um homem comum desce até uma sala da Universidade de Yale. Ele respondeu a um anúncio de jornal: quatro dólares e meio por uma hora de um estudo sobre memória.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "cenario/lugar",
+    "props": {
+     "lugar": "universidade",
+     "hora": "noite",
+     "pessoa": "andando",
+     "luz": true
+    }
+   },
+   "local": {
+    "texto": "Universidade de Yale",
+    "ano": 1961
+   },
+   "id": 9
+  },
+  {
+   "texto": "Lá dentro, um homem de jaleco cinza explica as regras. Em poucos minutos, aquele voluntário vai estar com o dedo sobre um botão. E vai ouvir uma frase que entrou para a história da psicologia: o experimento exige que você continue.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "cenario/lugar",
+    "props": {
+     "lugar": "laboratorio",
+     "hora": "noite"
+    }
+   },
+   "id": 10
+  },
+  {
+   "texto": "Eu sou o Cifrinho. E hoje a gente vai contar, em ordem, os experimentos mais sombrios da psicologia. O que eles mostraram, o que deu errado, e os mitos que nasceram deles.",
+   "personagens": [
+    {
+     "id": "cifrinho",
+     "gesto": "explicar",
+     "expressao": "pensativo"
+    }
+   ],
+   "animacao": {
+    "tipo": "nenhuma"
+   },
+   "id": 11
+  },
+  {
+   "texto": "Porque alguns desses estudos mudaram o mundo. E outros, a gente descobriu depois, não eram bem o que pareciam.",
+   "animacao": {
+    "tipo": "carimbo",
+    "texto": "EM DEBATE"
+   },
+   "lofi": "forte",
+   "id": 12
+  },
+  {
+   "texto": "",
+   "animacao": {
+    "tipo": "capitulo",
+    "numero": 1,
+    "titulo": "O menino e o rato branco"
+   },
+   "id": 13
+  },
+  {
+   "texto": "Baltimore, mil novecentos e vinte. O psicólogo John Watson acreditava que quase tudo o que sentimos é aprendido. Até o medo. E ele queria provar isso com um bebê.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "cenario/lugar",
+    "props": {
+     "lugar": "universidade",
+     "hora": "dourado"
+    }
+   },
+   "local": {
+    "texto": "Universidade Johns Hopkins",
+    "ano": 1920
+   },
+   "id": 14
+  },
+  {
+   "texto": "O escolhido foi um menino de nove meses, que ficou conhecido como Albert. Nos primeiros testes, Albert não tinha medo de nada: nem de um rato branco, nem de um coelho, nem de uma máscara.",
+   "personagens": [
+    {
+     "id": "cientista",
+     "gesto": "explicar",
+     "lado": "esquerda",
+     "entrada": "deslizar"
+    }
+   ],
+   "animacao": {
+    "tipo": "ilustracao",
+    "nome": "interrogacao"
+   },
+   "id": 15
+  },
+  {
+   "texto": "Então começou o experimento. Sempre que Albert esticava a mão para o rato, Watson batia com um martelo numa barra de aço, bem atrás da cabeça dele. O barulho era assustador. Depois de algumas repetições, bastava o rato aparecer para o bebê chorar.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "008/albert"
+   },
+   "id": 16
+  },
+  {
+   "texto": "Os pesquisadores filmaram tudo. Nas imagens, dá para ver o bebê virando o rosto, engatinhando para longe do rato e chorando. O filme ainda existe e é mostrado em aulas de psicologia até hoje.",
+   "broll": "old film projector",
+   "animacao": {
+    "tipo": "ilustracao",
+    "nome": "olho"
+   },
+   "id": 17
+  },
+  {
+   "texto": "E o medo se espalhou. Albert passou a chorar diante de um coelho, de um cachorro, de um casaco de pele e até de uma máscara de Papai Noel.",
+   "animacao": {
+    "tipo": "lista",
+    "itens": [
+     "Coelho",
+     "Cachorro",
+     "Casaco de pele",
+     "Máscara de Papai Noel"
+    ]
+   },
+   "id": 18
+  },
+  {
+   "texto": "Watson e sua assistente, Rosalie Rayner, publicaram tudo no mesmo ano. Para eles, era a prova de que emoções podem ser condicionadas, como os cachorros de Pavlov salivavam ao ouvir um sino.",
+   "animacao": {
+    "tipo": "documento",
+    "titulo": "Conditioned emotional reactions",
+    "autor": "J. B. Watson e R. Rayner",
+    "ano": 1920,
+    "trecho": "The infant was confronted suddenly and for the first time successively with a white rat, a rabbit, a dog, a monkey, with masks...",
+    "destaque": "a white rat, a rabbit, a dog",
+    "p0": 0.25,
+    "p1": 0.8,
+    "revista": "Journal of Experimental Psychology"
+   },
+   "id": 19
+  },
+  {
+   "texto": "Isso tem nome: condicionamento clássico. Um estímulo neutro, colado a um susto, vira gatilho de medo.",
+   "animacao": {
+    "tipo": "conceito",
+    "nome": "Condicionamento",
+    "frase": "O neutro vira gatilho",
+    "rotulo": "O QUE ELES MOSTRARAM"
+   },
+   "id": 20
+  },
+  {
+   "texto": "Mas a parte mais sombria vem depois. Watson planejava ensinar Albert a perder o medo. Isso nunca aconteceu. A mãe levou o menino embora, e o medo ficou com ele.",
+   "broll": "old black and white baby photo",
+   "lofi": "forte",
+   "animacao": {
+    "tipo": "nenhuma"
+   },
+   "id": 21
+  },
+  {
+   "texto": "E quem era Albert? Até hoje, ninguém tem certeza. Um estudo de dois mil e nove apontou um menino que morreu aos seis anos. Outro, de dois mil e catorze, apontou um homem que viveu até os oitenta e sete e, segundo a família, não gostava de cachorros.",
+   "animacao": {
+    "tipo": "carimbo",
+    "texto": "EM DEBATE",
+    "frase": "Sabemos quem era o pequeno Albert",
+    "p": 0.2
+   },
+   "id": 22
+  },
+  {
+   "texto": "O experimento nunca seria aprovado hoje. Mas ele ajudou a criar algo bom: as terapias que tratam fobias justamente desfazendo esse tipo de aprendizado, aos poucos.",
+   "animacao": {
+    "tipo": "ilustracao",
+    "nome": "cadeado"
+   },
+   "id": 23
+  },
+  {
+   "texto": "",
+   "animacao": {
+    "tipo": "capitulo",
+    "numero": 2,
+    "titulo": "O Estudo Monstro"
+   },
+   "id": 24
+  },
+  {
+   "texto": "Davenport, Iowa, mil novecentos e trinta e nove. Num orfanato para filhos de soldados, uma estudante de mestrado chamada Mary Tudor começa uma pesquisa sobre gagueira, orientada pelo professor Wendell Johnson.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "cenario/lugar",
+    "props": {
+     "lugar": "hospital",
+     "hora": "dourado"
+    }
+   },
+   "local": {
+    "texto": "Davenport, Iowa",
+    "ano": 1939
+   },
+   "id": 25
+  },
+  {
+   "texto": "Johnson tinha uma teoria: a gagueira não nascia na boca, mas no ouvido de quem escuta. Se adultos chamassem a atenção para cada tropeço normal da fala, a criança ficaria tão ansiosa que passaria a gaguejar.",
+   "personagens": [
+    {
+     "id": "cientista",
+     "gesto": "explicar",
+     "lado": "esquerda",
+     "entrada": "deslizar"
+    }
+   ],
+   "animacao": {
+    "tipo": "ilustracao",
+    "nome": "neuronios"
+   },
+   "id": 26
+  },
+  {
+   "texto": "Para testar, Mary escolheu vinte e duas crianças órfãs. Algumas falavam perfeitamente. E, a seis delas, Mary passou meses dizendo: você está começando a gaguejar. Pare. Não fale se não conseguir falar direito.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "008/monstro"
+   },
+   "id": 27
+  },
+  {
+   "texto": "As crianças mudaram. Ficaram tímidas, pararam de levantar a mão na aula, algumas passaram a evitar falar. Uma delas contou, já idosa, que carregou aquela vergonha a vida inteira.",
+   "broll": "sad child window old",
+   "lofi": "forte",
+   "animacao": {
+    "tipo": "nenhuma"
+   },
+   "id": 28
+  },
+  {
+   "texto": "Os colegas de Johnson apelidaram a pesquisa de Estudo Monstro. Ela nunca foi publicada, e ficou escondida por mais de sessenta anos.",
+   "animacao": {
+    "tipo": "conceito",
+    "nome": "O Estudo Monstro",
+    "frase": "Escondido por mais de 60 anos",
+    "rotulo": "O APELIDO"
+   },
+   "id": 29
+  },
+  {
+   "texto": "Em dois mil e um, um jornal da Califórnia revelou a história. A Universidade de Iowa pediu desculpas publicamente. E, em dois mil e sete, o estado pagou uma indenização a alguns dos órfãos, já idosos.",
+   "animacao": {
+    "tipo": "carimbo",
+    "texto": "VERDADE",
+    "frase": "O estudo prejudicou crianças de verdade",
+    "p": 0.45
+   },
+   "id": 30
+  },
+  {
+   "texto": "A ironia é que a teoria de Johnson sobre a causa da gagueira não se confirmou. A ciência hoje sabe que a gagueira tem forte influência genética e neurológica. As crianças pagaram o preço de uma ideia errada.",
+   "animacao": {
+    "tipo": "cena3d",
+    "nome": "neuronios"
+   },
+   "id": 31
+  },
+  {
+   "texto": "",
+   "animacao": {
+    "tipo": "capitulo",
+    "numero": 3,
+    "titulo": "O amor de pano"
+   },
+   "id": 32
+  },
+  {
+   "texto": "Wisconsin, final dos anos cinquenta. Naquela época, muitos especialistas diziam que um bebê ama a mãe por um motivo simples: ela dá comida. Carinho demais, diziam alguns manuais, até estragava a criança.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "cenario/lugar",
+    "props": {
+     "lugar": "universidade",
+     "hora": "dia"
+    }
+   },
+   "local": {
+    "texto": "Universidade de Wisconsin",
+    "ano": 1958
+   },
+   "id": 33
+  },
+  {
+   "texto": "Em hospitais, bebês ficavam dias sem colo, e visitas dos pais eram limitadas para evitar infecções. Muitos adoeciam e definhavam mesmo bem alimentados. Ninguém sabia direito por quê.",
+   "broll": "vintage hospital nursery",
+   "animacao": {
+    "tipo": "ilustracao",
+    "nome": "coracao"
+   },
+   "id": 34
+  },
+  {
+   "texto": "O psicólogo Harry Harlow resolveu testar isso com filhotes de macaco rhesus, separados das mães logo depois de nascer.",
+   "broll": "rhesus monkey baby",
+   "animacao": {
+    "tipo": "nenhuma"
+   },
+   "id": 35
+  },
+  {
+   "texto": "Na jaula, ele colocou duas mães de mentira. Uma feita de arame, com uma mamadeira. Outra coberta de pano macio, sem comida nenhuma. Os filhotes passavam a maior parte do dia agarrados na mãe de pano. Iam até a de arame só para mamar, e voltavam correndo.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "008/harlow"
+   },
+   "id": 36
+  },
+  {
+   "texto": "Quando algo assustador entrava na jaula, era na mãe de pano que eles se agarravam. O amor não era só comida. Era conforto, toque, segurança.",
+   "animacao": {
+    "tipo": "conceito",
+    "nome": "Conforto do contato",
+    "frase": "Amor não é só comida",
+    "rotulo": "O QUE ELE MOSTROU"
+   },
+   "id": 37
+  },
+  {
+   "texto": "Harlow apresentou isso em mil novecentos e cinquenta e oito, numa palestra chamada A natureza do amor. Ela ajudou a fortalecer a teoria do apego, de John Bowlby, e mudou o jeito de cuidar de bebês em hospitais e orfanatos.",
+   "animacao": {
+    "tipo": "documento",
+    "titulo": "The nature of love",
+    "autor": "Harry F. Harlow",
+    "ano": 1958,
+    "trecho": "We were not surprised to discover that contact comfort was an important basic affectional or love variable, but we did not expect it to overshadow so completely the variable of nursing.",
+    "destaque": "contact comfort",
+    "p0": 0.25,
+    "p1": 0.8,
+    "revista": "American Psychologist"
+   },
+   "id": 38
+  },
+  {
+   "texto": "Só que Harlow foi além. Nos anos seguintes, ele isolou filhotes por meses, sem contato nenhum. Alguns saíram com danos que nunca passaram. Ele chegou a construir uma câmara de isolamento que apelidou de poço do desespero.",
+   "broll": "dark empty cage",
+   "lofi": "forte",
+   "animacao": {
+    "tipo": "nenhuma"
+   },
+   "id": 39
+  },
+  {
+   "texto": "Esses estudos viraram um dos maiores argumentos do movimento pelos direitos dos animais, e ajudaram a criar regras para pesquisas com bichos.",
+   "animacao": {
+    "tipo": "ilustracao",
+    "nome": "balanca"
+   },
+   "id": 40
+  },
+  {
+   "texto": "O paradoxo de Harlow é esse: um dos estudos mais cruéis da psicologia provou algo bonito. Que ninguém cresce bem sem colo.",
+   "animacao": {
+    "tipo": "cena3d",
+    "nome": "cerebro"
+   },
+   "id": 41
+  },
+  {
+   "texto": "",
+   "animacao": {
+    "tipo": "capitulo",
+    "numero": 4,
+    "titulo": "Águias contra Cascavéis"
+   },
+   "id": 42
+  },
+  {
+   "texto": "Oklahoma, verão de mil novecentos e cinquenta e quatro. Vinte e dois meninos de onze e doze anos chegam a um acampamento de férias num parque chamado Robbers Cave, a caverna dos ladrões. Nenhum deles sabe que está num experimento.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "cenario/lugar",
+    "props": {
+     "lugar": "acampamento",
+     "hora": "dourado"
+    }
+   },
+   "local": {
+    "texto": "Robbers Cave, Oklahoma",
+    "ano": 1954
+   },
+   "id": 43
+  },
+  {
+   "texto": "O psicólogo Muzafer Sherif dividiu os meninos em dois grupos, em cabanas separadas. Na primeira semana, cada grupo nem sabia que o outro existia. Eles criaram nomes: as Águias e as Cascavéis.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "008/acampamento",
+    "props": {
+     "fase": "grupos"
+    }
+   },
+   "id": 44
+  },
+  {
+   "texto": "Então os pesquisadores organizaram um torneio. Cabo de guerra, beisebol, caça ao tesouro, com prêmios só para quem vencesse. Em poucos dias, a rivalidade virou ódio.",
+   "broll": "tug of war kids",
+   "animacao": {
+    "tipo": "nenhuma"
+   },
+   "id": 45
+  },
+  {
+   "texto": "As Águias queimaram a bandeira das Cascavéis. As Cascavéis invadiram a cabana das Águias. Teve xingamento, comida jogada no refeitório e meninos guardando pedras nas meias.",
+   "animacao": {
+    "tipo": "ilustracao",
+    "nome": "raio"
+   },
+   "lofi": "forte",
+   "id": 46
+  },
+  {
+   "texto": "Aí veio a parte mais interessante. Juntar os grupos para ver filme ou comer não adiantou. A paz só veio quando os pesquisadores criaram problemas que nenhum grupo resolvia sozinho.",
+   "animacao": {
+    "tipo": "conceito",
+    "nome": "Meta comum",
+    "frase": "Um problema que ninguém resolve sozinho",
+    "rotulo": "A VIRADA"
+   },
+   "id": 47
+  },
+  {
+   "texto": "A água do acampamento foi cortada, e todos tiveram que procurar o defeito juntos. Depois, o caminhão da comida não pegou. E os meninos usaram a mesma corda do cabo de guerra para puxar o caminhão, Águias e Cascavéis lado a lado.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "008/acampamento",
+    "props": {
+     "fase": "corda"
+    }
+   },
+   "id": 48
+  },
+  {
+   "texto": "No fim, eles voltaram para casa no mesmo ônibus, por escolha deles. A lição ficou famosa: grupos rivais se aproximam quando dependem uns dos outros.",
+   "broll": "school bus kids",
+   "animacao": {
+    "tipo": "nenhuma"
+   },
+   "id": 49
+  },
+  {
+   "texto": "Mas tem um capítulo que quase ninguém conta. Um ano antes, Sherif tentou o mesmo experimento em outro acampamento, em Nova York. E deu tudo errado: os meninos se recusaram a brigar, e chegaram a desconfiar que estavam sendo manipulados.",
+   "animacao": {
+    "tipo": "carimbo",
+    "texto": "EM DEBATE",
+    "frase": "Rivalidade surge sempre que há competição",
+    "p": 0.25
+   },
+   "id": 50
+  },
+  {
+   "texto": "Esse primeiro teste foi abandonado e quase esquecido, até a pesquisadora Gina Perry contar a história num livro de dois mil e dezoito. A guerra entre grupos não nasce sozinha com tanta facilidade.",
+   "animacao": {
+    "tipo": "ilustracao",
+    "nome": "olho"
+   },
+   "id": 51
+  },
+  {
+   "texto": "",
+   "animacao": {
+    "tipo": "capitulo",
+    "numero": 5,
+    "titulo": "450 volts"
+   },
+   "id": 52
+  },
+  {
+   "texto": "Voltamos ao porão de Yale, em mil novecentos e sessenta e um. O psicólogo Stanley Milgram queria entender o Holocausto. Como pessoas comuns obedecem a ordens terríveis?",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "cenario/lugar",
+    "props": {
+     "lugar": "laboratorio",
+     "hora": "noite"
+    }
+   },
+   "local": {
+    "texto": "Universidade de Yale",
+    "ano": 1961
+   },
+   "id": 53
+  },
+  {
+   "texto": "Lá dentro, o voluntário fazia o papel de professor. A cada erro do aluno, numa sala ao lado, ele devia dar um choque, começando em quinze volts e subindo até quatrocentos e cinquenta. O aluno era um ator. Os choques eram falsos. Mas o professor não sabia disso.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "d03/gerador"
+   },
+   "id": 54
+  },
+  {
+   "texto": "Cada voluntário tirava um papelzinho para saber se seria professor ou aluno. O sorteio era falso: os dois papéis diziam professor. O aluno, um ator simpático de quarenta e sete anos, era amarrado a uma cadeira na sala ao lado, com eletrodos nos pulsos.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "cenario/lugar",
+    "props": {
+     "lugar": "laboratorio",
+     "hora": "noite"
+    }
+   },
+   "camera": "pan",
+   "id": 55
+  },
+  {
+   "texto": "Conforme a voltagem subia, o aluno gritava, reclamava do coração, implorava para sair. E então ficava em silêncio. Se o professor hesitava, o homem de jaleco dizia apenas: por favor, continue.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "008/milgram"
+   },
+   "id": 56
+  },
+  {
+   "texto": "Antes do estudo, alunos de psicologia de Yale previram que quase ninguém, pouco mais de um por cento, iria até o fim.",
+   "animacao": {
+    "tipo": "pergunta",
+    "numero": 1,
+    "total": 1,
+    "rotulo": "E VOCÊ?",
+    "texto": "Você iria até 450 volts?",
+    "a": "Nunca",
+    "b": "Talvez"
+   },
+   "id": 57
+  },
+  {
+   "texto": "Pensa bem.",
+   "animacao": {
+    "tipo": "contagem"
+   },
+   "id": 58
+  },
+  {
+   "texto": "Dos quarenta voluntários, vinte e seis apertaram o último botão. Sessenta e cinco por cento.",
+   "animacao": {
+    "tipo": "documento",
+    "titulo": "Behavioral study of obedience",
+    "autor": "Stanley Milgram",
+    "ano": 1963,
+    "trecho": "Of the 40 subjects, 26 obeyed the orders of the experimenter to the end, proceeding to punish the victim until they reached the most potent shock available on the shock generator.",
+    "destaque": "26 obeyed the orders of the experimenter to the end",
+    "p0": 0.25,
+    "p1": 0.8,
+    "revista": "Journal of Abnormal and Social Psychology"
+   },
+   "id": 59
+  },
+  {
+   "texto": "Mas eles obedeciam com prazer? Não. O próprio Milgram descreveu voluntários suando, tremendo, gaguejando, com crises de riso nervoso.",
+   "animacao": {
+    "tipo": "carimbo",
+    "texto": "MITO",
+    "frase": "Eles obedeciam sem sofrer",
+    "p": 0.2
+   },
+   "broll": "nervous man sweating",
+   "id": 60
+  },
+  {
+   "texto": "E a obediência mudava muito com a situação. Quando o experimentador dava as ordens por telefone, ela caiu para cerca de vinte por cento. Quando dois colegas se recusavam a continuar, só quatro em cada quarenta iam até o fim.",
+   "animacao": {
+    "tipo": "ilustracao",
+    "nome": "dominos"
+   },
+   "id": 61
+  },
+  {
+   "texto": "Décadas depois, a pesquisadora Gina Perry ouviu as gravações e leu os arquivos. Encontrou voluntários que desconfiavam que tudo era encenação, e alguns que só souberam da verdade meses depois.",
+   "broll": "old documents archive",
+   "animacao": {
+    "tipo": "nenhuma"
+   },
+   "id": 62
+  },
+  {
+   "texto": "O que fica: a obediência não é um defeito de algumas pessoas. Ela depende da situação. E basta uma voz discordando para muita gente ter coragem de dizer não.",
+   "animacao": {
+    "tipo": "conceito",
+    "nome": "Obediência",
+    "frase": "Uma voz contra muda tudo",
+    "rotulo": "A LIÇÃO"
+   },
+   "id": 63
+  },
+  {
+   "texto": "",
+   "animacao": {
+    "tipo": "capitulo",
+    "numero": 6,
+    "titulo": "As 38 testemunhas"
+   },
+   "id": 64
+  },
+  {
+   "texto": "Nova York, madrugada de treze de março de mil novecentos e sessenta e quatro. Kitty Genovese, de vinte e oito anos, voltava do trabalho para casa, no bairro do Queens. Ela foi atacada e morta perto do próprio prédio.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "cenario/lugar",
+    "props": {
+     "lugar": "cidade",
+     "hora": "noite"
+    }
+   },
+   "local": {
+    "texto": "Queens, Nova York",
+    "ano": 1964
+   },
+   "id": 65
+  },
+  {
+   "texto": "Duas semanas depois, o jornal The New York Times publicou uma reportagem que chocou o país: trinta e oito vizinhos teriam visto ou ouvido o ataque, e ninguém chamou a polícia.",
+   "animacao": {
+    "tipo": "citacao",
+    "texto": "38 testemunhas e nenhuma ligação",
+    "autor": "A versão do jornal, 1964"
+   },
+   "broll": "old newspaper printing",
+   "id": 66
+  },
+  {
+   "texto": "A história virou símbolo da frieza das grandes cidades. E apareceu por décadas em livros de psicologia.",
+   "animacao": {
+    "tipo": "ilustracao",
+    "nome": "olho"
+   },
+   "id": 67
+  },
+  {
+   "texto": "Só que ela estava errada. Pesquisas posteriores mostraram que poucas pessoas viram o ataque de fato, que pelo menos uma ligou para a polícia, e que uma vizinha desceu e segurou Kitty nos braços. O próprio jornal reconheceu os erros em dois mil e dezesseis.",
+   "animacao": {
+    "tipo": "carimbo",
+    "texto": "MITO",
+    "frase": "38 vizinhos viram tudo e não fizeram nada",
+    "p": 0.12
+   },
+   "lofi": "forte",
+   "id": 68
+  },
+  {
+   "texto": "Mas o mito gerou uma pergunta real. Dois psicólogos, John Darley e Bibb Latané, quiseram saber: estar no meio de muita gente diminui a chance de alguém ajudar?",
+   "personagens": [
+    {
+     "id": "cientista",
+     "gesto": "pensar",
+     "lado": "esquerda"
+    },
+    {
+     "id": "jovem",
+     "gesto": "explicar",
+     "lado": "direita",
+     "entrada": "deslizar"
+    }
+   ],
+   "animacao": {
+    "tipo": "ilustracao",
+    "nome": "interrogacao"
+   },
+   "id": 69
+  },
+  {
+   "texto": "Em mil novecentos e sessenta e oito, eles colocaram estudantes em cabines, conversando por um interfone. De repente, um dos participantes parecia ter uma convulsão. Quem achava que estava sozinho com a vítima ajudou em oitenta e cinco por cento dos casos. Quem achava que havia mais quatro pessoas ouvindo, só em trinta e um por cento.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "008/interfone"
+   },
+   "id": 70
+  },
+  {
+   "texto": "Isso virou o efeito espectador: quanto mais gente presente, mais cada um acha que outro vai agir. A responsabilidade se dilui.",
+   "animacao": {
+    "tipo": "conceito",
+    "nome": "Efeito espectador",
+    "frase": "Com muita gente, ninguém age",
+    "rotulo": "O QUE ELES MOSTRARAM"
+   },
+   "id": 71
+  },
+  {
+   "texto": "A boa notícia: estudos com câmeras de rua, em vários países, mostram que em brigas de verdade, na maioria das vezes, alguém intervém. E existe um antídoto simples: em uma emergência, aponte para uma pessoa e diga, você, chame ajuda.",
+   "animacao": {
+    "tipo": "cena3d",
+    "nome": "multidao"
+   },
+   "id": 72
+  },
+  {
+   "texto": "",
+   "animacao": {
+    "tipo": "capitulo",
+    "numero": 7,
+    "titulo": "A Terceira Onda"
+   },
+   "id": 73
+  },
+  {
+   "texto": "Palo Alto, Califórnia, abril de mil novecentos e sessenta e sete. Numa aula de história do ensino médio, um aluno pergunta ao professor Ron Jones: como o povo alemão deixou o nazismo acontecer?",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "cenario/lugar",
+    "props": {
+     "lugar": "universidade",
+     "hora": "dia"
+    }
+   },
+   "local": {
+    "texto": "Escola Cubberley, Palo Alto",
+    "ano": 1967
+   },
+   "id": 74
+  },
+  {
+   "texto": "Em vez de responder, Jones resolveu mostrar. Na segunda-feira, ele escreveu na lousa: força pela disciplina. Ensinou os alunos a sentar retos, a responder em pé, em frases curtas.",
+   "personagens": [
+    {
+     "id": "executivo",
+     "gesto": "apontar",
+     "lado": "esquerda",
+     "entrada": "deslizar"
+    },
+    {
+     "id": "jovem",
+     "gesto": "parado",
+     "lado": "direita"
+    }
+   ],
+   "animacao": {
+    "tipo": "ilustracao",
+    "nome": "engrenagens"
+   },
+   "id": 75
+  },
+  {
+   "texto": "Na terça, veio força pela comunidade, com uma saudação própria. Na quarta, força pela ação: cartões de membro, a missão de recrutar e até de denunciar quem não seguisse as regras. O movimento ganhou um nome: a Terceira Onda.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "008/onda"
+   },
+   "id": 76
+  },
+  {
+   "texto": "Segundo Jones, em poucos dias a turma de trinta alunos virou um grupo de cerca de duzentos, de outras salas. Alunos vigiavam alunos. E ele próprio começou a gostar do poder.",
+   "animacao": {
+    "tipo": "cena3d",
+    "nome": "multidao"
+   },
+   "lofi": "forte",
+   "id": 77
+  },
+  {
+   "texto": "Na sexta, Jones reuniu todos num auditório, prometendo a revelação do líder nacional do movimento. A tela se acendeu e mostrou imagens da Alemanha nazista. Vocês teriam sido bons alemães, disse ele.",
+   "broll": "empty school auditorium",
+   "animacao": {
+    "tipo": "nenhuma"
+   },
+   "id": 78
+  },
+  {
+   "texto": "A história virou livro, filme na Alemanha e aula obrigatória em muitos lugares. Só que quase tudo o que se sabe vem do relato do próprio professor, escrito anos depois. Não houve registro científico nem grupo de comparação.",
+   "animacao": {
+    "tipo": "carimbo",
+    "texto": "EM DEBATE",
+    "frase": "Uma turma virou um movimento autoritário em 5 dias",
+    "p": 0.3
+   },
+   "id": 79
+  },
+  {
+   "texto": "Alguns ex-alunos confirmaram partes da história num documentário. Outros lembram de algo bem menor. Como experimento, ela é frágil. Como alerta, continua forte: grupos, símbolos e regras podem mudar o comportamento rápido demais.",
+   "animacao": {
+    "tipo": "conceito",
+    "nome": "Pertencer",
+    "frase": "Símbolos e regras puxam o grupo",
+    "rotulo": "O ALERTA"
+   },
+   "id": 80
+  },
+  {
+   "texto": "",
+   "animacao": {
+    "tipo": "capitulo",
+    "numero": 8,
+    "titulo": "Com pressa"
+   },
+   "id": 81
+  },
+  {
+   "texto": "Princeton, mil novecentos e setenta e três. Darley voltou, agora com Daniel Batson, para um teste ainda mais irônico. Os voluntários eram estudantes de um seminário, gente que estudava para ser pastor.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "cenario/lugar",
+    "props": {
+     "lugar": "universidade",
+     "hora": "dourado",
+     "pessoa": "andando"
+    }
+   },
+   "local": {
+    "texto": "Seminário de Princeton",
+    "ano": 1973
+   },
+   "id": 82
+  },
+  {
+   "texto": "Cada um precisava ir até outro prédio para dar uma palestra. Parte deles ia falar justamente sobre a parábola do Bom Samaritano, a história do homem que para na estrada para socorrer um ferido.",
+   "broll": "old bible reading",
+   "animacao": {
+    "tipo": "nenhuma"
+   },
+   "id": 83
+  },
+  {
+   "texto": "No caminho, os pesquisadores colocaram um homem caído numa porta, tossindo e gemendo. O que mudava era só a pressa. A alguns, eles diziam: você está atrasado, corre. A outros: ainda tem tempo.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "008/samaritano"
+   },
+   "id": 84
+  },
+  {
+   "texto": "Entre os que tinham tempo, cerca de sessenta e três por cento pararam para ajudar. Entre os atrasados, só dez por cento. Alguns, literalmente, passaram por cima do homem caído.",
+   "animacao": {
+    "tipo": "lista",
+    "itens": [
+     "Com tempo: 63% ajudaram",
+     "Atrasados: 10% ajudaram"
+    ]
+   },
+   "id": 85
+  },
+  {
+   "texto": "E o tema da palestra quase não fez diferença. Pensar no Bom Samaritano não fazia ninguém agir como ele.",
+   "animacao": {
+    "tipo": "carimbo",
+    "texto": "VERDADE",
+    "frase": "A pressa pesa mais que as boas intenções",
+    "p": 0.35
+   },
+   "id": 86
+  },
+  {
+   "texto": "A lição é desconfortável: muitas vezes, quem deixa de ajudar não é uma pessoa má. É uma pessoa com pressa.",
+   "personagens": [
+    {
+     "id": "cifrinho",
+     "gesto": "pensar",
+     "expressao": "pensativo"
+    }
+   ],
+   "animacao": {
+    "tipo": "nenhuma"
+   },
+   "id": 87
+  },
+  {
+   "texto": "",
+   "animacao": {
+    "tipo": "capitulo",
+    "numero": 9,
+    "titulo": "A prisão no porão"
+   },
+   "id": 88
+  },
+  {
+   "texto": "Palo Alto, Califórnia, agosto de mil novecentos e setenta e um. Num domingo de manhã, viaturas de polícia de verdade prendem nove estudantes em casa, na frente dos vizinhos. É o começo do experimento da prisão de Stanford.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "cenario/lugar",
+    "props": {
+     "lugar": "universidade",
+     "hora": "dia"
+    }
+   },
+   "local": {
+    "texto": "Universidade Stanford",
+    "ano": 1971
+   },
+   "id": 89
+  },
+  {
+   "texto": "O psicólogo Philip Zimbardo montou uma prisão de mentira no porão do prédio de psicologia. Vinte e quatro universitários, todos considerados saudáveis, foram sorteados: metade seriam guardas, metade presos.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "cenario/lugar",
+    "props": {
+     "lugar": "corredor",
+     "hora": "noite",
+     "pessoa": "parada"
+    }
+   },
+   "id": 90
+  },
+  {
+   "texto": "Os guardas ganharam uniforme e óculos escuros espelhados. Os presos, um avental com um número no lugar do nome. O plano era durar duas semanas.",
+   "personagens": [
+    {
+     "id": "executivo",
+     "gesto": "cruzar",
+     "expressao": "bravo",
+     "lado": "esquerda",
+     "entrada": "deslizar"
+    },
+    {
+     "id": "jovem",
+     "gesto": "surpreso",
+     "expressao": "surpreso",
+     "lado": "direita"
+    }
+   ],
+   "animacao": {
+    "tipo": "nenhuma"
+   },
+   "id": 91
+  },
+  {
+   "texto": "Em poucos dias, alguns guardas começaram a humilhar os presos: contagens no meio da noite, flexões como castigo, um quartinho escuro como solitária. Presos entraram em crise. No sexto dia, o experimento foi encerrado.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "008/calendario"
+   },
+   "id": 92
+  },
+  {
+   "texto": "No segundo dia, os presos fizeram uma rebelião e se trancaram nas celas. Os guardas responderam com extintores de incêndio e tiraram os colchões. Daí em diante, o clima só piorou.",
+   "broll": "prison cell bars dark",
+   "animacao": {
+    "tipo": "nenhuma"
+   },
+   "id": 93
+  },
+  {
+   "texto": "Quem convenceu Zimbardo a parar foi Christina Maslach, uma psicóloga recém-formada, que viu os presos sendo levados ao banheiro com sacos na cabeça e protestou.",
+   "broll": "woman psychologist portrait vintage",
+   "animacao": {
+    "tipo": "nenhuma"
+   },
+   "id": 94
+  },
+  {
+   "texto": "Por décadas, a conclusão parecia clara: coloque pessoas boas num lugar mau, e elas viram monstros. A situação engole o indivíduo.",
+   "animacao": {
+    "tipo": "ilustracao",
+    "nome": "marionete"
+   },
+   "id": 95
+  },
+  {
+   "texto": "Só que, a partir de dois mil e dezoito, gravações e documentos dos arquivos mostraram outra história. Os guardas tinham recebido orientações para serem duros. O guarda mais cruel disse depois que estava imitando um personagem de filme. E um dos presos contou que exagerou a própria crise para ser liberado.",
+   "animacao": {
+    "tipo": "carimbo",
+    "texto": "EM DEBATE",
+    "frase": "Pessoas boas viram monstros sozinhas",
+    "p": 0.15
+   },
+   "lofi": "forte",
+   "id": 96
+  },
+  {
+   "texto": "Hoje, muitos psicólogos tratam Stanford mais como uma demonstração do que como um experimento científico. Ela mostra o que a liderança de um lugar pode incentivar, mais do que uma maldade escondida em todo mundo.",
+   "animacao": {
+    "tipo": "conceito",
+    "nome": "Situação e liderança",
+    "frase": "O ambiente incentiva, não obriga",
+    "rotulo": "A LEITURA DE HOJE"
+   },
+   "id": 97
+  },
+  {
+   "texto": "",
+   "animacao": {
+    "tipo": "capitulo",
+    "numero": 10,
+    "titulo": "Sãos no lugar dos loucos"
+   },
+   "id": 98
+  },
+  {
+   "texto": "Estados Unidos, começo dos anos setenta. O psicólogo David Rosenhan fez uma pergunta incômoda: os médicos conseguem mesmo distinguir quem está doente de quem está são?",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "cenario/lugar",
+    "props": {
+     "lugar": "hospital",
+     "hora": "dia"
+    }
+   },
+   "local": {
+    "texto": "Estados Unidos",
+    "ano": 1973
+   },
+   "id": 99
+  },
+  {
+   "texto": "Segundo ele, oito pessoas sem nenhum transtorno, incluindo ele mesmo, se apresentaram em doze hospitais psiquiátricos dizendo ouvir uma voz que falava palavras como vazio e oco. Depois de internadas, passaram a agir normalmente.",
+   "broll": "old hospital corridor",
+   "animacao": {
+    "tipo": "nenhuma"
+   },
+   "id": 100
+  },
+  {
+   "texto": "Todas foram internadas. Ficaram, em média, dezenove dias, e uma delas, cinquenta e dois. E, curiosamente, vários pacientes de verdade desconfiaram que elas eram falsas. Os médicos, não.",
+   "animacao": {
+    "tipo": "documento",
+    "titulo": "On being sane in insane places",
+    "autor": "D. L. Rosenhan",
+    "ano": 1973,
+    "trecho": "It is clear that we cannot distinguish the sane from the insane in psychiatric hospitals.",
+    "destaque": "we cannot distinguish the sane from the insane",
+    "p0": 0.25,
+    "p1": 0.8,
+    "revista": "Science"
+   },
+   "id": 101
+  },
+  {
+   "texto": "O estudo, publicado na revista Science, foi uma bomba. Ajudou a mudar a forma como os transtornos mentais são diagnosticados e a esvaziar hospitais que mais prendiam do que tratavam.",
+   "animacao": {
+    "tipo": "ilustracao",
+    "nome": "engrenagens"
+   },
+   "id": 102
+  },
+  {
+   "texto": "Mas, em dois mil e dezenove, a jornalista Susannah Cahalan investigou os arquivos do próprio Rosenhan. Encontrou números que não batiam, relatos diferentes do artigo, e não conseguiu achar quase nenhum dos falsos pacientes.",
+   "animacao": {
+    "tipo": "carimbo",
+    "texto": "EM DEBATE",
+    "frase": "O estudo aconteceu como foi descrito",
+    "p": 0.2
+   },
+   "lofi": "forte",
+   "id": 103
+  },
+  {
+   "texto": "A pergunta de Rosenhan continua importante. Mas a resposta dele pode ter sido, em parte, inventada.",
+   "animacao": {
+    "tipo": "cena3d",
+    "nome": "cristais"
+   },
+   "id": 104
+  },
+  {
+   "texto": "",
+   "animacao": {
+    "tipo": "capitulo",
+    "numero": 11,
+    "titulo": "As regras que nasceram do escândalo"
+   },
+   "id": 105
+  },
+  {
+   "texto": "Depois de tudo isso, ficou claro que a ciência precisava de limites. Em mil novecentos e setenta e dois, veio à tona outro escândalo, fora da psicologia: um estudo do governo americano, em Tuskegee, deixou homens negros com sífilis sem tratamento por quarenta anos, só para observar a doença.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "cenario/lugar",
+    "props": {
+     "lugar": "governo",
+     "hora": "dourado"
+    }
+   },
+   "local": {
+    "texto": "Washington",
+    "ano": 1979
+   },
+   "id": 106
+  },
+  {
+   "texto": "A reação veio em forma de regras. Em mil novecentos e setenta e nove, o Relatório Belmont definiu três princípios para qualquer pesquisa com pessoas: respeito, fazer o bem e não causar dano, e justiça.",
+   "animacao": {
+    "tipo": "lista",
+    "itens": [
+     "1. Respeito às pessoas",
+     "2. Fazer o bem, não causar dano",
+     "3. Justiça"
+    ]
+   },
+   "id": 107
+  },
+  {
+   "texto": "Na prática, isso significa consentimento de verdade, direito de desistir a qualquer momento e comitês de ética que aprovam o estudo antes de ele começar.",
+   "animacao": {
+    "tipo": "ilustracao",
+    "nome": "cadeado"
+   },
+   "id": 108
+  },
+  {
+   "texto": "E o Brasil tem o seu sistema. Desde mil novecentos e noventa e seis, toda pesquisa com seres humanos por aqui passa por um Comitê de Ética em Pesquisa. As regras atuais são de dois mil e doze.",
+   "broll": "brazil university campus",
+   "local": {
+    "texto": "Brasil",
+    "ano": 2012
+   },
+   "animacao": {
+    "tipo": "nenhuma"
+   },
+   "id": 109
+  },
+  {
+   "texto": "Por isso, nenhum desses experimentos seria aprovado do mesmo jeito hoje. E, curiosamente, versões mais cuidadosas de alguns deles continuam sendo feitas, para ver o que realmente se repete.",
+   "animacao": {
+    "tipo": "cena3d",
+    "nome": "neuronios"
+   },
+   "id": 110
+  },
+  {
+   "texto": "Em dois mil e nove, por exemplo, um pesquisador repetiu Milgram parando nos cento e cinquenta volts, o ponto em que o aluno pede para sair. Setenta por cento dos participantes estavam dispostos a continuar, uma taxa parecida com a dos anos sessenta.",
+   "animacao": {
+    "tipo": "carimbo",
+    "texto": "VERDADE",
+    "frase": "A obediência de Milgram se repetiu",
+    "p": 0.4
+   },
+   "id": 111
+  },
+  {
+   "texto": "",
+   "animacao": {
+    "tipo": "capitulo",
+    "numero": 12,
+    "titulo": "O que eles dizem sobre nós",
+    "rotulo": "Epílogo"
+   },
+   "id": 112
+  },
+  {
+   "texto": "Então, voltando à pergunta do começo: pessoas comuns fariam coisas terríveis? Às vezes, sim. Mas a história completa é menos sombria do que a lenda.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "cenario/lugar",
+    "props": {
+     "lugar": "universidade",
+     "hora": "dourado",
+     "pessoa": "parada"
+    }
+   },
+   "id": 113
+  },
+  {
+   "texto": "Albert mostrou que o medo se aprende, e por isso também se desaprende. Os órfãos de Iowa, que palavras de adultos marcam uma criança. Os macacos de Harlow, que precisamos de colo. Os meninos de Robbers Cave, que rivais viram parceiros quando dependem uns dos outros.",
+   "animacao": {
+    "tipo": "lista",
+    "itens": [
+     "O medo se aprende e se desaprende",
+     "Palavras marcam crianças",
+     "Ninguém cresce sem colo",
+     "Meta comum une rivais"
+    ]
+   },
+   "id": 114
+  },
+  {
+   "texto": "Milgram mostrou que uma única voz discordando muda tudo. Darley e Latané, que em emergências é preciso apontar para alguém. E o seminário de Princeton, que a pressa nos rouba a bondade.",
+   "animacao": {
+    "tipo": "lista",
+    "itens": [
+     "Uma voz contra encoraja outras",
+     "Na emergência, aponte alguém",
+     "Pressa rouba bondade"
+    ]
+   },
+   "id": 115
+  },
+  {
+   "texto": "E Stanford, a Terceira Onda, Rosenhan e as trinta e oito testemunhas mostraram outra coisa: até a ciência pode contar histórias boas demais para serem verdade. Por isso, vale sempre perguntar: e qual é a fonte?",
+   "animacao": {
+    "tipo": "conceito",
+    "nome": "Qual é a fonte?",
+    "frase": "Histórias boas demais merecem dúvida",
+    "rotulo": "A ÚLTIMA LIÇÃO"
+   },
+   "id": 116
+  },
+  {
+   "texto": "Todas as fontes deste documentário estão na descrição. E me conta nos comentários: qual desses experimentos mais te surpreendeu?",
+   "animacao": {
+    "tipo": "mascote",
+    "texto": "Qual mais te surpreendeu?"
+   },
+   "id": 117
+  },
+  {
+   "texto": "Se você gostou desse formato de documentário, se inscreve. Tem muita história da mente humana pra gente contar. Eu sou o Cifrinho. Descifre e domine.",
+   "animacao": {
+    "tipo": "encerramento"
+   },
+   "capitulo": "Até a próxima",
+   "id": 118
+  }
+ ]
+}

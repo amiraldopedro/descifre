@@ -157,6 +157,21 @@ SONS_ENTRADA = {"pop": "pop", "deslizar": "whoosh", "teletransporte": "zap", "ca
 SONS_VINHETA = ([("sobe", 0.25, 1.0), ("brilho", 0.87, 1.0), ("whoosh", 1.0, 0.7)]
                 + [("click", (55 + i * 3) / 30, 0.35) for i in range(8)] + [("brilho", 2.6, 0.7)])
 DURACAO_FIXA = {"vinheta": 105}  # frames
+def romano(n):
+    out = ""
+    for v, r in ((10, "X"), (9, "IX"), (5, "V"), (4, "IV"), (1, "I")):
+        while n >= v:
+            out += r; n -= v
+    return out
+
+
+def nome_capitulo(a):
+    """Nome do capítulo no YouTube, como nos documentários: "Prólogo: título" ou "III. Título"."""
+    if a.get("rotulo"):
+        return f"{a['rotulo']}: {a['titulo']}"
+    return f"{romano(a['numero'])}. {a['titulo']}" if a.get("numero") else a["titulo"]
+
+
 DURACAO_MINIMA = {"capitulo": 96, "fim": 135}  # frames (3,2 s e 4,5 s)
 
 
@@ -332,7 +347,7 @@ def main(vid, estimar_tempos=False):
             dur = DURACAO_FIXA[anim["tipo"]]
         dur = max(dur, DURACAO_MINIMA.get(anim["tipo"], 0))
         broll = mapa.get(str(c["id"])) or (mapa.get(str(alvo["id"])) if alvo else None)
-        capitulo = c.get("capitulo") or (anim["titulo"] if anim["tipo"] == "capitulo" else None)
+        capitulo = c.get("capitulo") or (nome_capitulo(anim) if anim["tipo"] == "capitulo" else None)
         cenas.append({
             "id": c["id"], "texto": c.get("texto", ""), "inicio": inicio, "duracao": dur, "fala": fala,
             "palavras": palavras, "broll": broll, "animacao": anim,
