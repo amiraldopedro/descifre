@@ -62,7 +62,15 @@ const CenaView: React.FC<PropsCena> = ({ cena, entrada, saida }) => {
   );
 };
 
-const MarcaDagua: React.FC = () => (
+/** Some durante a vinheta e as cartelas de capítulo (elas já mostram a marca / ocupam a tela). */
+const MarcaDagua: React.FC<{ cenas: Cena[] }> = ({ cenas }) => {
+  const f = useCurrentFrame();
+  const atual = cenas.find((c) => f >= c.inicio && f < c.inicio + c.duracao);
+  if (atual && (atual.animacao.tipo === "vinheta" || atual.animacao.tipo === "capitulo")) return null;
+  return <MarcaDaguaTexto />;
+};
+
+const MarcaDaguaTexto: React.FC = () => (
   <div
     style={{
       position: "absolute",
@@ -102,7 +110,7 @@ export const Video: React.FC<Manifesto> = (m) => {
           </Sequence>
         );
       })}
-      <MarcaDagua />
+      <MarcaDagua cenas={m.cenas} />
       <Progresso total={m.totalFrames} />
       {m.narracao && <Audio src={staticFile(m.narracao)} />}
       {m.musica && <Audio src={staticFile(m.musica)} volume={0.07} loop />}

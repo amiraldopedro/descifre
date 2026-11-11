@@ -155,7 +155,7 @@ SONS_CENA3D = {"tunel": [("sobe", 0.0), ("whoosh", 0.6)], "neuronios": [("zap", 
 SONS_ENTRADA = {"pop": "pop", "deslizar": "whoosh", "teletransporte": "zap", "cair": "batida"}
 # vinheta de abertura (src/Vinheta.tsx): olho abre (sobe), brilho, anel (whoosh), letras decifradas (clicks), slogan
 SONS_VINHETA = ([("sobe", 0.25, 1.0), ("brilho", 0.87, 1.0), ("whoosh", 1.0, 0.7)]
-                + [("click", (50 + i * 3) / 30, 0.35) for i in range(8)] + [("brilho", 2.5, 0.7)])
+                + [("click", (55 + i * 3) / 30, 0.35) for i in range(8)] + [("brilho", 2.6, 0.7)])
 DURACAO_FIXA = {"vinheta": 105}  # frames
 DURACAO_MINIMA = {"capitulo": 96, "fim": 135}  # frames (3,2 s e 4,5 s)
 

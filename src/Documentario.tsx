@@ -18,6 +18,7 @@ import { AbsoluteFill, Img, interpolate, random, spring, staticFile, useCurrentF
 import { FundoCosmico } from "./Fundo";
 import { Mascote } from "./Mascote";
 import { Thumb } from "./Thumb";
+import { Vinheta } from "./Vinheta";
 import { Animacao, Cena, COR, FONTE_TEXTO, FONTE_TITULO } from "./tema";
 
 const SERIFA = "'Libre Baskerville', Georgia, serif";
@@ -336,6 +337,8 @@ export const CamadaDocumentario: React.FC<{ cena: Cena; falando: boolean }> = ({
       return <Capitulo numero={a.numero} titulo={a.titulo} />;
     case "fim":
       return <Fim texto={a.texto} thumb={a.thumb} falando={falando} />;
+    case "vinheta":
+      return <Vinheta />;
     default:
       return null;
   }

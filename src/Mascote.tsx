@@ -16,7 +16,9 @@ export const Mascote: React.FC<{
   gesto?: Gesto;
   gestoAnterior?: Gesto;
   expressao?: Expressao;
-}> = ({ tamanho, falando = false, seed = 0, gesto, gestoAnterior, expressao }) => {
+  terceiroOlho?: number; // abertura do terceiro olho, 0 (fechado) a 1 (aberto) — usado na vinheta
+  flutua?: boolean;
+}> = ({ tamanho, falando = false, seed = 0, gesto, gestoAnterior, expressao, terceiroOlho = 1, flutua = true }) => {
   const f = useCurrentFrame() + seed * 37;
   const g: Gesto = gesto ?? (falando ? "explicar" : "parado");
   const exp: Expressao = expressao ?? (g === "surpreso" ? "surpreso" : g === "pensar" ? "pensativo" : "feliz");
@@ -27,7 +29,7 @@ export const Mascote: React.FC<{
   const ciclo = f % 105;
   const piscar = ciclo > 100 ? interpolate(ciclo, [100, 102.5, 105], [1, 0.1, 1]) : 1;
   const abre = exp === "surpreso" ? 1.18 : 1;
-  const flutuar = Math.sin(f / 18) * 10;
+  const flutuar = flutua ? Math.sin(f / 18) * 10 : 0;
   const giroAnel = Math.sin(f / 40) * 4;
   const brilho = exp === "surpreso" ? 1 : 0.75 + Math.sin(f / 10) * 0.25;
   const boca = falando ? 10 + Math.abs(Math.sin(f / 2.2)) * 14 : 0;
@@ -106,10 +108,15 @@ export const Mascote: React.FC<{
         ) : (
           <path d="M386 462 Q412 486 440 462" fill="none" stroke={COR.azulEscuro} strokeWidth={8} strokeLinecap="round" />
         )}
-        <g filter="url(#mBrilho)" opacity={brilho}>
-          <path d="M384 316 Q412 294 440 316 Q412 338 384 316 Z" fill={COR.ciano} />
-          <circle cx={412} cy={316} r={8} fill={COR.azulEscuro} />
+        <g filter="url(#mBrilho)" opacity={terceiroOlho < 1 ? 0.5 + 0.5 * terceiroOlho : brilho}>
+          <g transform={`translate(412 316) scale(1 ${Math.max(0.04, terceiroOlho)}) translate(-412 -316)`}>
+            <path d="M384 316 Q412 294 440 316 Q412 338 384 316 Z" fill={COR.ciano} />
+            <circle cx={412} cy={316} r={8} fill={COR.azulEscuro} />
+          </g>
         </g>
+        {terceiroOlho < 0.25 && (
+          <path d="M382 314 Q412 330 442 314" fill="none" stroke={COR.vermelhoEsc} strokeWidth={6} strokeLinecap="round" opacity={1 - terceiroOlho * 4} />
+        )}
         <g transform={`rotate(${-14 + giroAnel} 410 410)`} clipPath="url(#mFrente)">
           {anel}
           <circle cx={660} cy={440} r={14} fill={COR.ciano} filter="url(#mBrilho)" />
