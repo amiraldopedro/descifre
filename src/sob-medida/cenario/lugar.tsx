@@ -6,12 +6,19 @@
  * props.hora:  noite (padrão) | dourado | dia
  * props.pessoa: "andando" põe uma silhueta atravessando a cena; "parada" deixa uma silhueta olhando o lugar
  * props.luz:   true acende holofotes/feixes de luz no céu (lugares externos)
+ * props.figuras: personagens ilustrados no chão do cenário:
+ *   [{"traje":"camponesa","pose":"dancando","rosto":"riso","x":900,"escala":1,"fundo":0,"seed":3,"entra":0.2}]
+ *   x em pixels (0..1920), fundo 0 (perto) .. 1 (longe), entra = proporção da fala em que aparece
+ * props.multidao: {"n":14,"traje":"camponesa","pose":"dancando","rosto":"riso","entra":0.3,"intensidade":0.8,"contagio":true}
+ *   (contagio: as pessoas começam a dançar uma de cada vez, da esquerda para a direita)
+ * lugares extras: vila-medieval | vila-puritana | sala-radio | escola
  * As camadas andam em velocidades diferentes (o fundo mais devagar), então a cena nunca fica parada.
  */
 import React from "react";
 import { AbsoluteFill, interpolate, random, useCurrentFrame } from "remotion";
 import { COR } from "../../tema";
 import type { PropsSobMedida, SomCena } from "../tipos";
+import { Figura, type PropsFigura } from "../../ilustra/Figura";
 
 export const sons: SomCena[] = [{ som: "whoosh", p: 0.01, vol: 0.5 }];
 
@@ -210,6 +217,133 @@ const Governo: React.FC<{ c: [string, string, string]; jan: string; f: number }>
   </g>
 );
 
+
+/* ---------------------------------------------------------------- lugares do documentário de histeria coletiva */
+
+const VilaMedieval: React.FC<{ c: [string, string, string]; jan: string; f: number }> = ({ c, jan, f }) => (
+  <g>
+    {/* catedral com uma torre só, ao fundo */}
+    <g fill={c[0]}>
+      <rect x={1180} y={300} width={300} height={CHAO - 300} />
+      <polygon points="1180,300 1330,200 1480,300" />
+      <rect x={1290} y={70} width={80} height={260} />
+      <polygon points="1280,80 1330,-60 1380,80" />
+      <circle cx={1330} cy={380} r={46} fill={jan} opacity={0.5} />
+    </g>
+    {/* casas enxaimel */}
+    {Array.from({ length: 7 }).map((_, i) => {
+      const x = i * 270 - 60, w = 230, h = 260 + (i % 3) * 50;
+      return (
+        <g key={i}>
+          <rect x={x} y={CHAO - h} width={w} height={h} fill={i % 2 ? "#C9B48A" : "#BFA77A"} />
+          <polygon points={`${x - 16},${CHAO - h} ${x + w / 2},${CHAO - h - 150} ${x + w + 16},${CHAO - h}`} fill="#6A3A2A" />
+          <g stroke="#4A2E1E" strokeWidth={10}>
+            <path d={`M${x} ${CHAO - h + 4} H${x + w} M${x} ${CHAO - h / 2} H${x + w} M${x + 8} ${CHAO - h} V${CHAO} M${x + w - 8} ${CHAO - h} V${CHAO} M${x + w / 2} ${CHAO - h} V${CHAO - h / 2}`} />
+            <path d={`M${x + 8} ${CHAO - h / 2} L${x + w / 2} ${CHAO - h} M${x + w - 8} ${CHAO - h / 2} L${x + w / 2} ${CHAO - h}`} strokeWidth={7} />
+          </g>
+          <rect x={x + 30} y={CHAO - h + 40} width={50} height={60} fill={jan} opacity={0.75 + 0.2 * Math.sin(f / 30 + i)} />
+          <rect x={x + w - 80} y={CHAO - h + 40} width={50} height={60} fill={jan} opacity={0.5} />
+          <path d={`M${x + w / 2 - 34} ${CHAO} V${CHAO - 110} Q${x + w / 2} ${CHAO - 150} ${x + w / 2 + 34} ${CHAO - 110} V${CHAO} Z`} fill="#3A2416" />
+        </g>
+      );
+    })}
+  </g>
+);
+
+const VilaPuritana: React.FC<{ c: [string, string, string]; jan: string; f: number }> = ({ c, jan, f }) => (
+  <g>
+    {/* casa de reuniões com torre do sino */}
+    <g fill={c[1]}>
+      <rect x={760} y={460} width={420} height={CHAO - 460} />
+      <polygon points="740,460 970,330 1200,460" />
+      <rect x={930} y={230} width={80} height={130} />
+      <polygon points="920,230 970,150 1020,230" />
+    </g>
+    {[0, 1, 2, 3].map((i) => <rect key={i} x={800 + i * 100} y={560} width={34} height={60} fill={jan} opacity={0.6} />)}
+    {/* casas de madeira com telhado em duas águas e chaminé */}
+    {[[80, 0.9], [420, 1], [1300, 1], [1640, 0.9]].map(([x, k], i) => {
+      const w = 280 * Number(k), h = 210 * Number(k);
+      const X = Number(x);
+      return (
+        <g key={i}>
+          <rect x={X} y={CHAO - h} width={w} height={h} fill="#4A3A30" />
+          {Array.from({ length: 7 }).map((_, l) => <path key={l} d={`M${X} ${CHAO - h + 18 + l * 28} H${X + w}`} stroke="#3A2C24" strokeWidth={4} />)}
+          <polygon points={`${X - 20},${CHAO - h} ${X + w / 2},${CHAO - h - 140 * Number(k)} ${X + w + 20},${CHAO - h}`} fill="#2A2228" />
+          <rect x={X + w * 0.7} y={CHAO - h - 150 * Number(k)} width={28} height={80} fill="#5A3A30" />
+          <rect x={X + 40} y={CHAO - h + 60} width={44} height={54} fill={jan} opacity={0.75 + 0.2 * Math.sin(f / 25 + i)} />
+        </g>
+      );
+    })}
+    {/* cerca */}
+    <g stroke="#3A2C24" strokeWidth={8}>
+      <path d={`M-50 ${CHAO - 40} H${W + 50}`} />
+      {Array.from({ length: 40 }).map((_, i) => <path key={i} d={`M${i * 50} ${CHAO} V${CHAO - 64}`} />)}
+    </g>
+  </g>
+);
+
+const Escola: React.FC<{ c: [string, string, string]; jan: string; f: number }> = ({ c, jan, f }) => (
+  <g>
+    {/* acácias */}
+    {[200, 1600].map((x, i) => (
+      <g key={x} fill={c[0]}>
+        <path d={`M${x} ${CHAO} L${x + 10} ${CHAO - 240} L${x + 60} ${CHAO - 300} M${x + 10} ${CHAO - 240} L${x - 40} ${CHAO - 290}`} stroke={c[0]} strokeWidth={18} />
+        <ellipse cx={x + 10} cy={CHAO - 320} rx={220} ry={46} />
+      </g>
+    ))}
+    {/* prédio da escola com telhado de zinco */}
+    <rect x={460} y={CHAO - 260} width={1000} height={260} fill="#D9C3A0" />
+    <polygon points={`420,${CHAO - 260} 960,${CHAO - 390} 1500,${CHAO - 260}`} fill="#8C9AA8" />
+    {Array.from({ length: 20 }).map((_, i) => <path key={i} d={`M${440 + i * 54} ${CHAO - 262 - Math.max(0, 6.4 * Math.min(i, 19 - i))} l0 0`} stroke="#6A7886" strokeWidth={3} />)}
+    {Array.from({ length: 6 }).map((_, i) => (
+      <g key={i}>
+        <rect x={520 + i * 160} y={CHAO - 200} width={80} height={90} fill="#3A2A1E" opacity={0.85} />
+        <path d={`M${520 + i * 160} ${CHAO - 155} h80 M${560 + i * 160} ${CHAO - 200} v90`} stroke="#D9C3A0" strokeWidth={5} />
+      </g>
+    ))}
+    <rect x={910} y={CHAO - 130} width={100} height={130} fill="#5A3A24" />
+    <text x={960} y={CHAO - 225} textAnchor="middle" fill="#5A3A24" fontFamily="Georgia, serif" fontSize={30} letterSpacing={4}>SCHOOL</text>
+  </g>
+);
+
+const SalaRadio: React.FC<{ f: number }> = ({ f }) => {
+  const brilho = 0.75 + 0.25 * Math.sin(f / 5);
+  return (
+    <g>
+      <rect width={W} height={H} fill="#3A2A3A" />
+      {/* papel de parede */}
+      {Array.from({ length: 24 }).map((_, i) => <path key={i} d={`M${i * 90} 0 V${CHAO - 60}`} stroke="#4A3448" strokeWidth={22} />)}
+      <rect y={CHAO - 60} width={W} height={H - CHAO + 60} fill="#4A2E22" />
+      <rect y={CHAO - 72} width={W} height={16} fill="#5A3A28" />
+      {/* janela de noite */}
+      <rect x={1340} y={160} width={360} height={420} fill="#0B1235" stroke="#5A3A28" strokeWidth={18} />
+      <path d="M1520 160 V580 M1340 370 H1700" stroke="#5A3A28" strokeWidth={10} />
+      <circle cx={1440} cy={250} r={26} fill="#F4F1E0" opacity={0.9} />
+      {/* luminária */}
+      <rect x={300} y={360} width={10} height={CHAO - 380} fill="#2A1A14" />
+      <polygon points="250,360 360,360 330,280 280,280" fill="#E8C98A" />
+      <circle cx={305} cy={420} r={260} fill="url(#brilho)" opacity={0.5} />
+      {/* o rádio */}
+      <g transform="translate(760 330)">
+        <path d="M0 470 L0 120 Q0 0 200 0 Q400 0 400 120 L400 470 Z" fill="#6A3A22" stroke="#3A1E10" strokeWidth={10} />
+        <path d="M60 140 Q60 60 200 60 Q340 60 340 140 L340 300 L60 300 Z" fill="#2A1A10" />
+        {Array.from({ length: 9 }).map((_, i) => <path key={i} d={`M${80 + i * 30} 90 V290`} stroke="#5A3A22" strokeWidth={8} />)}
+        <rect x={110} y={330} width={180} height={50} rx={10} fill="#FFD27A" opacity={brilho} />
+        <path d={`M${130 + (f % 120)} 335 v40`} stroke="#7A2A1A" strokeWidth={4} />
+        {[140, 260].map((x) => <circle key={x} cx={x} cy={420} r={20} fill="#C9A36A" />)}
+        <circle cx={200} cy={355} r={260} fill="url(#brilho)" opacity={0.45 * brilho} />
+      </g>
+      {/* poltrona */}
+      <g transform="translate(1160 560)">
+        <rect x={0} y={60} width={320} height={190} rx={30} fill="#7A2E3A" />
+        <rect x={20} y={-80} width={280} height={180} rx={40} fill="#8A3A46" />
+        <rect x={-20} y={40} width={60} height={200} rx={24} fill="#6A2430" />
+        <rect x={280} y={40} width={60} height={200} rx={24} fill="#6A2430" />
+      </g>
+    </g>
+  );
+};
+
 /* interiores: parede, chão em perspectiva, luz pendurada */
 const Interior: React.FC<{ tipo: "laboratorio" | "corredor"; hora: Hora; f: number }> = ({ tipo, f }) => {
   const balanco = Math.sin(f / 28) * 4;
@@ -275,7 +409,7 @@ const Interior: React.FC<{ tipo: "laboratorio" | "corredor"; hora: Hora; f: numb
 
 /* ---------------------------------------------------------------- composição */
 
-const Lugar: React.FC<PropsSobMedida> = ({ dur, props }) => {
+const Lugar: React.FC<PropsSobMedida> = ({ dur, fala, props }) => {
   const f = useCurrentFrame();
   const lugar = String(props.lugar ?? "universidade");
   const hora = (props.hora as Hora) ?? "noite";
@@ -283,7 +417,7 @@ const Lugar: React.FC<PropsSobMedida> = ({ dur, props }) => {
   const t = f / Math.max(1, dur);
   // parallax: perto anda mais que longe
   const px = (k: number) => -t * 120 * k;
-  const interno = lugar === "laboratorio" || lugar === "corredor";
+  const interno = lugar === "laboratorio" || lugar === "corredor" || lugar === "sala-radio";
   const pessoa = props.pessoa as string | undefined;
   const xPessoa = pessoa === "andando" ? interpolate(t, [0, 1], [-120, W + 120]) : 1460;
   return (
@@ -319,7 +453,7 @@ const Lugar: React.FC<PropsSobMedida> = ({ dur, props }) => {
         </defs>
         {interno ? (
           <g transform={`translate(${px(0.4)} 0) scale(${1.08 + t * 0.05})`} style={{ transformOrigin: "960px 540px" }}>
-            <Interior tipo={lugar as "laboratorio" | "corredor"} hora={hora} f={f} />
+            {lugar === "sala-radio" ? <SalaRadio f={f} /> : <Interior tipo={lugar as "laboratorio" | "corredor"} hora={hora} f={f} />}
           </g>
         ) : (
           <>
@@ -332,7 +466,7 @@ const Lugar: React.FC<PropsSobMedida> = ({ dur, props }) => {
             </g>
             <g transform={`translate(${px(0.35)} 0)`}>
               <Morros y={760} amp={70} cor={c[0]} seed="meio" />
-              {lugar !== "cidade" && lugar !== "acampamento" && Array.from({ length: 16 }).map((_, i) => <Arvore key={i} x={i * 140 - 40} base={CHAO - 10} h={110 + rnd(`ar${i}`) * 70} cor={c[0]} />)}
+              {!["cidade", "acampamento", "vila-medieval", "vila-puritana"].includes(lugar) && Array.from({ length: 16 }).map((_, i) => <Arvore key={i} x={i * 140 - 40} base={CHAO - 10} h={110 + rnd(`ar${i}`) * 70} cor={c[0]} />)}
             </g>
             <g transform={`translate(${px(0.6)} 0)`}>
               {lugar === "universidade" && <Universidade c={c} jan={jan} f={f} />}
@@ -340,6 +474,9 @@ const Lugar: React.FC<PropsSobMedida> = ({ dur, props }) => {
               {lugar === "acampamento" && <Acampamento c={c} jan={jan} f={f} />}
               {lugar === "hospital" && <Hospital c={c} jan={jan} f={f} />}
               {lugar === "governo" && <Governo c={c} jan={jan} f={f} />}
+              {lugar === "vila-medieval" && <VilaMedieval c={c} jan={jan} f={f} />}
+              {lugar === "vila-puritana" && <VilaPuritana c={c} jan={jan} f={f} />}
+              {lugar === "escola" && <Escola c={c} jan={jan} f={f} />}
             </g>
             <g transform={`translate(${px(1)} 0)`}>
               <rect x={-300} y={CHAO} width={W + 900} height={H - CHAO} fill={c[2]} />
@@ -347,8 +484,57 @@ const Lugar: React.FC<PropsSobMedida> = ({ dur, props }) => {
           </>
         )}
         {pessoa && <Silhueta x={xPessoa} base={interno ? 1000 : CHAO + 6} escala={interno ? 2.2 : 1} cor="#03061A" f={f} andando={pessoa === "andando"} />}
-        <rect width={W} height={H} fill="url(#vinheta)" />
       </svg>
+      <Personagens props={props} f={f} dur={dur} fala={fala} hora={hora} interno={interno} />
+      <svg width={W} height={H} viewBox={`0 0 ${W} ${H}`} style={{ position: "absolute", inset: 0 }}>
+        <rect width={W} height={H} fill="url(#vinheta2)" />
+        <defs>
+          <radialGradient id="vinheta2" cx="0.5" cy="0.5" r="0.75">
+            <stop offset="0.55" stopColor="#000" stopOpacity="0" />
+            <stop offset="1" stopColor="#000" stopOpacity="0.65" />
+          </radialGradient>
+        </defs>
+      </svg>
+    </AbsoluteFill>
+  );
+};
+
+type FiguraNoCenario = PropsFigura & { x: number; escala?: number; fundo?: number; entra?: number };
+
+const Personagens: React.FC<{ props: Record<string, unknown>; f: number; dur: number; fala: number; hora: Hora; interno: boolean }> = ({ props, f, fala, hora, interno }) => {
+  const lista: FiguraNoCenario[] = [...((props.figuras as FiguraNoCenario[]) ?? [])];
+  const m = props.multidao as (PropsFigura & { n?: number; entra?: number; contagio?: boolean }) | undefined;
+  if (m) {
+    const n = m.n ?? 12;
+    for (let i = 0; i < n; i++) {
+      const fileira = i % 3;
+      lista.push({
+        ...m, seed: 100 + i, x: 120 + ((i * 1680) / n + rnd(`mx${i}`) * 90) % 1700, fundo: fileira * 0.35, escala: 1,
+        entra: m.contagio ? (m.entra ?? 0.1) + (i / n) * 0.6 : m.entra,
+        pose: m.contagio ? m.pose : m.pose,
+      });
+    }
+  }
+  const p = f / Math.max(1, fala);
+  const chao = interno ? 1010 : CHAO + 30;
+  const ordenada = lista.map((x, i) => ({ ...x, i })).sort((a, b) => (b.fundo ?? 0) - (a.fundo ?? 0));
+  return (
+    <AbsoluteFill>
+      {ordenada.map((fg) => {
+        const fundo = fg.fundo ?? 0;
+        const esc = (fg.escala ?? 1) * (1 - fundo * 0.45) * (interno ? 1.5 : 1);
+        const alt = 470 * esc, larg = 210 * esc;
+        const aparece = fg.entra === undefined ? 1 : Math.min(1, Math.max(0, (p - fg.entra) / 0.06));
+        // contágio: antes de "pegar", a pessoa fica parada olhando
+        const contagiado = !m?.contagio || fg.seed === undefined || fg.seed < 100 || p >= (fg.entra ?? 0);
+        const pose = contagiado ? fg.pose : "parado";
+        const visivel = m?.contagio && (fg.seed ?? 0) >= 100 ? 1 : aparece;
+        return (
+          <div key={fg.i} style={{ position: "absolute", left: fg.x - larg / 2, top: chao - fundo * 150 - alt, width: larg, height: alt, opacity: visivel, transform: `translateY(${(1 - visivel) * 30}px)` }}>
+            <Figura {...fg} pose={pose} escuro={(fg.escuro ?? 0) + fundo * 0.45 + (hora === "noite" && !interno ? 0.25 : 0)} luz={fg.luz ?? (interno ? "esquerda" : "direita")} />
+          </div>
+        );
+      })}
     </AbsoluteFill>
   );
 };

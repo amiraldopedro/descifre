@@ -37,6 +37,8 @@ import * as m33 from "./cenario/lugar";
 import * as m34 from "./d02/elevador";
 import * as m35 from "./d02/linhas-asch";
 import * as m36 from "./d03/gerador";
+import * as m37 from "./ilustra/galeria";
+import * as m38 from "./mapa/voo";
 export const SOB_MEDIDA: Record<string, ModuloSobMedida> = {
   "002/ancora": m0 as ModuloSobMedida,
   "002/gorila": m1 as ModuloSobMedida,
@@ -75,4 +77,6 @@ export const SOB_MEDIDA: Record<string, ModuloSobMedida> = {
   "d02/elevador": m34 as ModuloSobMedida,
   "d02/linhas-asch": m35 as ModuloSobMedida,
   "d03/gerador": m36 as ModuloSobMedida,
+  "ilustra/galeria": m37 as ModuloSobMedida,
+  "mapa/voo": m38 as ModuloSobMedida,
 };

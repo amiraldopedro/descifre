@@ -1339,5 +1339,12 @@
    "som": "batida",
    "p": 0.7
   }
+ ],
+ "ilustra/galeria": [],
+ "mapa/voo": [
+  {
+   "som": "whoosh",
+   "p": 0.02
+  }
  ]
 }
