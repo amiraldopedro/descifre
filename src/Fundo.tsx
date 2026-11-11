@@ -1,5 +1,5 @@
 import React, { useMemo } from "react";
-import { AbsoluteFill, Loop, OffthreadVideo, interpolate, random, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
+import { AbsoluteFill, Loop, OffthreadVideo, random, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
 import { COR } from "./tema";
 
 /** Shader lo-fi: grão fino, aberração cromática, scanlines sutis.
@@ -90,19 +90,17 @@ export const FundoCosmico: React.FC = () => {
   );
 };
 
-/** B-roll com zoom lento e tinta azul da marca. */
+/** B-roll com tinta azul da marca. O movimento (push/pan) vem da câmera da cena (src/Camera.tsx). */
 export const BRoll: React.FC<{ src: string; duracao: number; clipe?: number; lofi?: "leve" | "forte" | "nenhum" }> = ({
   src,
   duracao,
   clipe,
   lofi = "leve",
 }) => {
-  const f = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const escala = interpolate(f, [0, duracao], [1.02, 1.12]);
   return (
     <AbsoluteFill style={{ backgroundColor: COR.azulEscuro }}>
-      <AbsoluteFill style={{ transform: `scale(${escala})` }}>
+      <AbsoluteFill>
         {/* repete o clipe se a cena for maior que ele */}
         <Loop durationInFrames={Math.max(30, clipe && clipe > 2 ? clipe - 2 : duracao + 30)} layout="none">
           <OffthreadVideo

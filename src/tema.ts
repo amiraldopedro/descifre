@@ -49,6 +49,8 @@ export type Cena = {
   quem?: string; // id do personagem que fala (padrão: cifrinho)
   personagens?: import("./personagens/Palco").AtorCena[];
   lofi?: "leve" | "forte" | "nenhum"; // shader no b-roll (padrão: leve)
+  camera?: "push" | "pan" | "parada"; // movimento lento da câmera (padrão: alterna push/pan)
+  transicao?: "fusao" | "corte" | "preto" | "glitch"; // como a cena ENTRA (padrão: fusão)
 };
 
 export type Manifesto = {

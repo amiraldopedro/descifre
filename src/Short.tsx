@@ -6,6 +6,7 @@ import { Ilustracao } from "./Ilustracoes";
 import { Palco } from "./personagens/Palco";
 import { CamadaEspecial, ehEspecial } from "./CamadaEspecial";
 import { COR, Cena, FONTE_TEXTO, FONTE_TITULO, Manifesto, Palavra } from "./tema";
+import { FUSAO, GlitchEntrada, TipoTransicao, cameraDaCena, sobra, transicaoDaCena, tremidaGlitch, useCamera, useTransicao } from "./Camera";
 
 /* ---------- utilitários de "dopamina" ---------- */
 
@@ -321,50 +322,59 @@ const Cta: React.FC<{ texto: string; falando: boolean }> = ({ texto, falando }) 
 
 /* ---------- cena ---------- */
 
-const CenaShort: React.FC<{ cena: Cena; ultima: number | null }> = ({ cena, ultima }) => {
+type PropsCena = { cena: Cena; entrada: TipoTransicao; saida: TipoTransicao };
+
+const CenaShort: React.FC<PropsCena> = ({ cena, entrada, saida }) => {
   const f = useCurrentFrame();
   const { fps } = useVideoConfig();
   const t = f / fps;
   const falando = cena.palavras.some((p) => t >= p.t0 && t <= p.t1);
   const a = cena.animacao;
   const cosmico = !cena.broll || a.tipo === "cta";
-  // zoom de impacto no corte + deriva lenta
-  const zoom = interpolate(f, [0, 6, cena.duracao], [1.35, 1.12, 1.22], { extrapolateRight: "clamp" });
-  const s = a.tipo === "gancho" ? tremer(f, 30, 14) : tremer(f, 8, 6);
+  const cam = useCamera(cameraDaCena(cena), cena.duracao + sobra(saida, FUSAO.short), cena.id);
+  const tr = useTransicao(entrada, saida, cena.duracao, FUSAO.short);
+  const gancho = a.tipo === "gancho";
+  // o gancho (1º segundo) mantém o impacto: zoom de soco + tremida; o resto usa a câmera lenta e fusões
+  const impacto = gancho ? interpolate(f, [0, 6], [1.3, 1.08], { extrapolateRight: "clamp" }) : 1;
+  const s = gancho ? tremer(f, 30, 14) : { x: 0, y: 0 };
   const atores = cena.personagens ?? [];
   const temPalco = atores.length > 0;
   const legendaY = temPalco ? 1500 : a.tipo === "nenhuma" ? 1020 : 1420;
 
   return (
-    <AbsoluteFill>
-      <AbsoluteFill style={{ transform: `translate(${s.x}px, ${s.y}px) scale(${zoom})` }}>
-        {cosmico ? <FundoCosmico /> : <BRoll src={cena.broll!} duracao={cena.duracao} clipe={cena.brollFrames} lofi={cena.lofi ?? (a.tipo === "gancho" ? "forte" : "leve")} />}
+    <AbsoluteFill style={{ opacity: tr.opacidade, transform: entrada === "glitch" ? `translateX(${tremidaGlitch(f)}px)` : undefined }}>
+      <AbsoluteFill style={{ transform: `translate(${s.x}px, ${s.y}px) scale(${impacto}) ${cam.fundo}` }}>
+        {cosmico ? <FundoCosmico /> : <BRoll src={cena.broll!} duracao={cena.duracao} clipe={cena.brollFrames} lofi={cena.lofi ?? (gancho ? "forte" : "leve")} />}
       </AbsoluteFill>
       <AbsoluteFill
         style={{ background: "linear-gradient(180deg, rgba(7,15,51,.55) 0%, rgba(7,15,51,.1) 35%, rgba(7,15,51,.2) 60%, rgba(7,15,51,.8) 100%)" }}
       />
-      {a.tipo !== "nenhuma" && a.tipo !== "gancho" && <AbsoluteFill style={{ backgroundColor: "rgba(7,15,51,.35)" }} />}
-      {ehEspecial(cena) && <CamadaEspecial cena={cena} falando={falando} />}
-      {a.tipo === "gancho" && <Gancho texto={a.texto} />}
-      {a.tipo === "pergunta" && <Cartoes texto={a.texto} a={a.a} b={a.b} />}
-      {a.tipo === "contagem" && a.pergunta && (
-        <Cartoes texto={a.pergunta.texto} a={a.pergunta.a} b={a.pergunta.b} relogio={f >= cena.fala ? (cena.duracao - f) / fps : undefined} />
-      )}
-      {a.tipo === "conceito" && <Conceito nome={a.nome} frase={a.frase} rotulo={a.rotulo} />}
-      {a.tipo === "cta" && <Cta texto={a.texto} falando={falando} />}
-      {a.tipo === "ilustracao" && (
-        <AbsoluteFill style={{ alignItems: "center", paddingTop: temPalco ? 190 : 330 }}>
-          <Ilustracao nome={a.nome} texto={a.texto} tamanho={temPalco ? 520 : 680} />
-        </AbsoluteFill>
-      )}
-      {temPalco && <Palco atores={atores} quemFala={cena.quem ?? "cifrinho"} falando={falando} temAnim={a.tipo !== "nenhuma"} />}
-      {a.tipo === "nenhuma" && !cena.broll && !temPalco && (
-        <AbsoluteFill style={{ alignItems: "center", paddingTop: 260 }}>
-          <Mascote tamanho={700} falando={falando} seed={cena.id} />
-        </AbsoluteFill>
-      )}
+      {a.tipo !== "nenhuma" && !gancho && <AbsoluteFill style={{ backgroundColor: "rgba(7,15,51,.35)" }} />}
+      <AbsoluteFill style={{ transform: cam.frente }}>
+        {ehEspecial(cena) && <CamadaEspecial cena={cena} falando={falando} />}
+        {gancho && <Gancho texto={a.texto} />}
+        {a.tipo === "pergunta" && <Cartoes texto={a.texto} a={a.a} b={a.b} />}
+        {a.tipo === "contagem" && a.pergunta && (
+          <Cartoes texto={a.pergunta.texto} a={a.pergunta.a} b={a.pergunta.b} relogio={f >= cena.fala ? (cena.duracao - f) / fps : undefined} />
+        )}
+        {a.tipo === "conceito" && <Conceito nome={a.nome} frase={a.frase} rotulo={a.rotulo} />}
+        {a.tipo === "cta" && <Cta texto={a.texto} falando={falando} />}
+        {a.tipo === "ilustracao" && (
+          <AbsoluteFill style={{ alignItems: "center", paddingTop: temPalco ? 190 : 330 }}>
+            <Ilustracao nome={a.nome} texto={a.texto} tamanho={temPalco ? 520 : 680} />
+          </AbsoluteFill>
+        )}
+        {temPalco && <Palco atores={atores} quemFala={cena.quem ?? "cifrinho"} falando={falando} temAnim={a.tipo !== "nenhuma"} />}
+        {a.tipo === "nenhuma" && !cena.broll && !temPalco && (
+          <AbsoluteFill style={{ alignItems: "center", paddingTop: 260 }}>
+            <Mascote tamanho={700} falando={falando} seed={cena.id} />
+          </AbsoluteFill>
+        )}
+      </AbsoluteFill>
       {a.tipo !== "cta" && <LegendaGigante palavras={cena.palavras} y={legendaY} />}
-      <Flash />
+      {gancho && <Flash />}
+      {entrada === "glitch" && <GlitchEntrada />}
+      {tr.preto > 0 && <AbsoluteFill style={{ backgroundColor: "#000", opacity: tr.preto }} />}
     </AbsoluteFill>
   );
 };
@@ -380,13 +390,18 @@ const BarraProgresso: React.FC<{ total: number }> = ({ total }) => {
 
 export const ShortVideo: React.FC<Manifesto & { sfx?: string | null }> = (m) => (
   <AbsoluteFill style={{ backgroundColor: COR.azulEscuro }}>
-    {m.cenas.map((c) => (
-      <Sequence key={c.id} from={c.inicio} durationInFrames={c.duracao} layout="none">
-        <AbsoluteFill>
-          <CenaShort cena={c} ultima={null} />
-        </AbsoluteFill>
-      </Sequence>
-    ))}
+    {m.cenas.map((c, i) => {
+      const entrada = transicaoDaCena(c, m.cenas[i - 1]);
+      const prox = m.cenas[i + 1];
+      const saida = prox ? transicaoDaCena(prox, c) : "corte";
+      return (
+        <Sequence key={c.id} from={c.inicio} durationInFrames={c.duracao + sobra(saida, FUSAO.short)} layout="none">
+          <AbsoluteFill>
+            <CenaShort cena={c} entrada={entrada} saida={saida} />
+          </AbsoluteFill>
+        </Sequence>
+      );
+    })}
     <BarraProgresso total={m.totalFrames} />
     <div style={{ position: "absolute", top: 76, width: "100%", textAlign: "center", fontFamily: FONTE_TITULO, fontWeight: 800, fontSize: 40, color: COR.branco, opacity: 0.85 }}>
       DES<span style={{ color: COR.vermelho }}>C</span>IFRE
