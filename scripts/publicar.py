@@ -59,10 +59,14 @@ def main(vid, video, thumb, privacidade="privado", agendar=None):
               "containsSyntheticMedia": True}
     if agendar:  # agenda: precisa subir como privado com publishAt
         status.update(privacyStatus="private", publishAt=agendar)
+    descricao = meta["descricao"].replace("{capitulos}", capitulos(man))
+    cred_p = RAIZ / "public" / "build" / vid / "creditos.json"
+    if cred_p.exists() and json.loads(cred_p.read_text()):
+        descricao += "\n\nImagens de arquivo (domínio público):\n" + "\n".join("• " + c for c in json.loads(cred_p.read_text()))
     corpo = {
         "snippet": {
             "title": meta["titulo"][:100],
-            "description": meta["descricao"].replace("{capitulos}", capitulos(man))[:5000],
+            "description": descricao[:5000],
             "tags": meta["tags"],
             "categoryId": meta.get("categoria", "27"),
             "defaultLanguage": "pt-BR",

@@ -57,7 +57,7 @@ export type Cena = {
   personagens?: import("./personagens/Palco").AtorCena[];
   lofi?: "leve" | "forte" | "nenhum"; // shader no b-roll (padrão: leve)
   camera?: "push" | "pan" | "parada"; // movimento lento da câmera (padrão: alterna push/pan)
-  transicao?: "fusao" | "corte" | "preto" | "glitch"; // como a cena ENTRA (padrão: fusão)
+  transicao?: "fusao" | "corte" | "preto" | "glitch" | "zoom" | "deslize" | "luz"; // como a cena ENTRA (padrão: fusão)
   local?: { texto: string; ano?: string | number }; // etiqueta de lugar/ano por cima de qualquer visual
   previa?: number; // gancho: esta cena mostra o visual da cena N (prévia)
   capitulo?: string | null;

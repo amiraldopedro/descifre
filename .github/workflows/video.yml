@@ -65,6 +65,10 @@ jobs:
         env: { PIXABAY_API_KEY: "${{ secrets.PIXABAY_API_KEY }}" }
         run: python scripts/broll.py ${{ steps.id.outputs.id }}
 
+      - name: Imagens de arquivo reais (Commons e Internet Archive)
+        continue-on-error: true
+        run: python scripts/arquivo.py ${{ steps.id.outputs.id }}
+
       - name: Montar manifesto, narração e efeitos
         run: |
           python scripts/registrar.py

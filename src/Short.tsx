@@ -7,7 +7,7 @@ import { Palco } from "./personagens/Palco";
 import { CamadaEspecial, ehEspecial } from "./CamadaEspecial";
 import { COR, Cena, FONTE_TEXTO, FONTE_TITULO, Manifesto, Palavra } from "./tema";
 import { CamadaDocumentario, DOC_TELA_CHEIA, EtiquetaLocal } from "./Documentario";
-import { FUSAO, GlitchEntrada, TipoTransicao, cameraDaCena, sobra, transicaoDaCena, tremidaGlitch, useCamera, useTransicao } from "./Camera";
+import { FUSAO, Clarao, GlitchEntrada, TipoTransicao, cameraDaCena, sobra, transicaoDaCena, tremidaGlitch, useCamera, useTransicao } from "./Camera";
 
 /* ---------- utilitários de "dopamina" ---------- */
 
@@ -346,7 +346,7 @@ const CenaShort: React.FC<PropsCena> = ({ cena, entrada, saida }) => {
   const semLegenda = a.tipo === "cta" || a.tipo === "fim" || a.tipo === "capitulo" || a.tipo === "vinheta";
 
   return (
-    <AbsoluteFill style={{ opacity: tr.opacidade, transform: entrada === "glitch" ? `translateX(${tremidaGlitch(f)}px)` : undefined }}>
+    <AbsoluteFill style={{ opacity: tr.opacidade, ...tr.estilo, transform: entrada === "glitch" ? `translateX(${tremidaGlitch(f)}px)` : tr.estilo.transform }}>
       <AbsoluteFill style={{ transform: `translate(${s.x}px, ${s.y}px) scale(${impacto}) ${cam.fundo}` }}>
         {cosmico ? <FundoCosmico /> : <BRoll src={cena.broll!} duracao={cena.duracao} clipe={cena.brollFrames} lofi={cena.lofi ?? (gancho ? "forte" : "leve")} />}
       </AbsoluteFill>
@@ -380,6 +380,7 @@ const CenaShort: React.FC<PropsCena> = ({ cena, entrada, saida }) => {
       {!semLegenda && <LegendaGigante palavras={cena.palavras} y={legendaY} />}
       {gancho && <Flash />}
       {entrada === "glitch" && <GlitchEntrada />}
+      <Clarao forca={tr.clarao} />
       {tr.preto > 0 && <AbsoluteFill style={{ backgroundColor: "#000", opacity: tr.preto }} />}
     </AbsoluteFill>
   );

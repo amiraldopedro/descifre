@@ -9,7 +9,7 @@ import { Palco } from "./personagens/Palco";
 import { CamadaEspecial } from "./CamadaEspecial";
 import { COR, Cena, FONTE_TITULO, Manifesto } from "./tema";
 import { CamadaDocumentario, DOC_TELA_CHEIA, EtiquetaLocal } from "./Documentario";
-import { FUSAO, GlitchEntrada, TipoTransicao, cameraDaCena, sobra, transicaoDaCena, tremidaGlitch, useCamera, useTransicao } from "./Camera";
+import { FUSAO, Clarao, GlitchEntrada, TipoTransicao, cameraDaCena, sobra, transicaoDaCena, tremidaGlitch, useCamera, useTransicao } from "./Camera";
 
 type PropsCena = { cena: Cena; entrada: TipoTransicao; saida: TipoTransicao };
 
@@ -31,7 +31,7 @@ const CenaView: React.FC<PropsCena> = ({ cena, entrada, saida }) => {
   const semLegenda = tipo === "encerramento" || tipo === "capitulo" || tipo === "vinheta";
 
   return (
-    <AbsoluteFill style={{ opacity: tr.opacidade, transform: entrada === "glitch" ? `translateX(${tremidaGlitch(f)}px)` : undefined }}>
+    <AbsoluteFill style={{ opacity: tr.opacidade, ...tr.estilo, transform: entrada === "glitch" ? `translateX(${tremidaGlitch(f)}px)` : tr.estilo.transform }}>
       {/* fundo: anda mais devagar que o primeiro plano (parallax) */}
       <AbsoluteFill style={{ transform: cam.fundo }}>
         {cosmico ? <FundoCosmico /> : <BRoll src={cena.broll!} duracao={cena.duracao} clipe={cena.brollFrames} lofi={cena.lofi} />}
@@ -57,6 +57,7 @@ const CenaView: React.FC<PropsCena> = ({ cena, entrada, saida }) => {
       <EtiquetaLocal cena={cena} />
       {!semLegenda && <Legenda palavras={cena.palavras} topo={false} />}
       {entrada === "glitch" && <GlitchEntrada />}
+      <Clarao forca={tr.clarao} />
       {tr.preto > 0 && <AbsoluteFill style={{ backgroundColor: "#000", opacity: tr.preto }} />}
     </AbsoluteFill>
   );
