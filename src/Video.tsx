@@ -8,6 +8,7 @@ import { Ilustracao } from "./Ilustracoes";
 import { Palco } from "./personagens/Palco";
 import { CamadaEspecial } from "./CamadaEspecial";
 import { COR, Cena, FONTE_TITULO, Manifesto } from "./tema";
+import { CamadaDocumentario, DOC_TELA_CHEIA, EtiquetaLocal } from "./Documentario";
 import { FUSAO, GlitchEntrada, TipoTransicao, cameraDaCena, sobra, transicaoDaCena, tremidaGlitch, useCamera, useTransicao } from "./Camera";
 
 type PropsCena = { cena: Cena; entrada: TipoTransicao; saida: TipoTransicao };
@@ -19,11 +20,15 @@ const CenaView: React.FC<PropsCena> = ({ cena, entrada, saida }) => {
   const falando = cena.palavras.some((p) => t >= p.t0 && t <= p.t1);
   const cam = useCamera(cameraDaCena(cena), cena.duracao + sobra(saida, FUSAO.longo), cena.id);
   const tr = useTransicao(entrada, saida, cena.duracao, FUSAO.longo);
-  const cosmico = usaFundoCosmico(cena.animacao) || !cena.broll;
+  const tipo = cena.animacao.tipo;
+  const telaCheia = DOC_TELA_CHEIA.has(tipo);
+  const cosmico = usaFundoCosmico(cena.animacao) || !cena.broll || telaCheia;
   const atores = cena.personagens ?? [];
   const temPalco = atores.length > 0;
-  const il = cena.animacao.tipo === "ilustracao" ? cena.animacao : null;
-  const temOverlayGrande = cena.animacao.tipo !== "nenhuma" || temPalco;
+  const il = tipo === "ilustracao" ? cena.animacao : null;
+  const soEtiqueta = tipo === "nenhuma" || tipo === "local"; // "local" não cobre a tela
+  const temOverlayGrande = !soEtiqueta || temPalco;
+  const semLegenda = tipo === "encerramento" || tipo === "capitulo" || tipo === "vinheta";
 
   return (
     <AbsoluteFill style={{ opacity: tr.opacidade, transform: entrada === "glitch" ? `translateX(${tremidaGlitch(f)}px)` : undefined }}>
@@ -35,20 +40,22 @@ const CenaView: React.FC<PropsCena> = ({ cena, entrada, saida }) => {
       <AbsoluteFill style={{ transform: cam.frente }}>
         <CamadaAnimacao anim={cena.animacao} falando={falando} fala={cena.fala} duracao={cena.duracao} />
         <CamadaEspecial cena={cena} falando={falando} />
+        <CamadaDocumentario cena={cena} falando={falando} />
         {/* sem b-roll: o Cifrinho ocupa o centro da tela, conversando */}
         {il && (
           <AbsoluteFill style={{ alignItems: "center", justifyContent: temPalco ? "flex-start" : "center", paddingTop: temPalco ? 90 : 0, paddingBottom: temPalco ? 0 : 190 }}>
             <Ilustracao nome={il.nome} texto={il.texto} tamanho={temPalco ? 420 : 540} />
           </AbsoluteFill>
         )}
-        {temPalco && <Palco atores={atores} quemFala={cena.quem ?? "cifrinho"} falando={falando} temAnim={cena.animacao.tipo !== "nenhuma"} />}
-        {cena.animacao.tipo === "nenhuma" && cosmico && !temPalco && (
+        {temPalco && <Palco atores={atores} quemFala={cena.quem ?? "cifrinho"} falando={falando} temAnim={!soEtiqueta} />}
+        {soEtiqueta && cosmico && !temPalco && (
           <AbsoluteFill style={{ justifyContent: "center", alignItems: "center", paddingBottom: 200 }}>
             <Mascote tamanho={640} falando={falando} seed={cena.id} />
           </AbsoluteFill>
         )}
       </AbsoluteFill>
-      {cena.animacao.tipo !== "encerramento" && <Legenda palavras={cena.palavras} topo={false} />}
+      <EtiquetaLocal cena={cena} />
+      {!semLegenda && <Legenda palavras={cena.palavras} topo={false} />}
       {entrada === "glitch" && <GlitchEntrada />}
       {tr.preto > 0 && <AbsoluteFill style={{ backgroundColor: "#000", opacity: tr.preto }} />}
     </AbsoluteFill>

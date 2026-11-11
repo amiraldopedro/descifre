@@ -28,6 +28,6 @@ export const emP = (p: number, fala: number) => p * fala;
 
 export type NomeSom =
   | "whoosh" | "pop" | "ding" | "click" | "tique" | "boom" | "zap" | "brilho"
-  | "mecanico" | "batida" | "glitch" | "sobe" | "desce" | "porta" | "passos";
+  | "mecanico" | "batida" | "glitch" | "sobe" | "desce" | "porta" | "passos" | "papel" | "marcador";
 
 export type ModuloSobMedida = { default: React.FC<PropsSobMedida>; sons?: SomCena[]; vertical?: boolean }; // vertical = a cena já se adapta ao Short (senão roda numa telinha 16:9)

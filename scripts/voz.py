@@ -91,6 +91,8 @@ def candidatos(cena, roteiro):
 async def processar(cena, roteiro, pasta: Path, sem):
     mp3 = pasta / f"{cena['id']:03d}.mp3"
     js = mp3.with_suffix(".json")
+    if not cena.get("texto", "").strip():
+        return "sem fala"  # vinheta, cartela de capítulo
     if mp3.exists() and js.exists():
         return "cache"
     async with sem:

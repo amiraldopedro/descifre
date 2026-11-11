@@ -13,7 +13,7 @@ from pathlib import Path
 
 RAIZ = Path(__file__).resolve().parent.parent
 CHAVE = os.environ.get("PIXABAY_API_KEY", "")
-SEM_BROLL = {"mascote", "encerramento"}  # usam o fundo cósmico da marca
+SEM_BROLL = {"mascote", "encerramento", "documento", "capitulo", "fim", "vinheta"}  # usam o fundo da marca
 UA = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130 Safari/537.36 descifre-bot"}
 
 
@@ -69,7 +69,7 @@ def main(vid):
     pasta.mkdir(parents=True, exist_ok=True)
     usados, tarefas, mapa = set(), [], {}
     for c in roteiro["cenas"]:
-        if c["animacao"]["tipo"] in SEM_BROLL or not c.get("broll"):
+        if c.get("animacao", {}).get("tipo") in SEM_BROLL or not c.get("broll"):
             continue
         termos = [c["broll"], " ".join(c["broll"].split()[:1])]
         vid_id = url = None

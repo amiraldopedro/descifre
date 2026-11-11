@@ -118,8 +118,20 @@ def _sons():
             out[i0:i0 + len(b)] += b
         return out
 
+    def papel(d=0.5):  # folha deslizando na mesa
+        n = int(d * SR); x = np.linspace(0, 1, n); r = rng.standard_normal(n)
+        agudo = r - np.convolve(r, np.ones(6) / 6, "same")
+        estalos = np.convolve((rng.random(n) < 0.004) * rng.uniform(-1, 1, n) * 3, np.ones(30) / 30, "same")
+        return (agudo * 0.5 + estalos) * np.sin(np.pi * x) ** 1.5 * 0.35
+
+    def marcador(d=0.7):  # marca-texto riscando o papel
+        n = int(d * SR); t = np.arange(n) / SR
+        chiado = np.convolve(rng.standard_normal(n), np.ones(3) / 3, "same") * (0.6 + 0.4 * np.sin(2 * np.pi * 14 * t))
+        return chiado * np.minimum(1, t / 0.05) * np.minimum(1, (d - t) / 0.08) * 0.22
+
     return dict(whoosh=whoosh, pop=pop, ding=ding, click=click, tique=tique, boom=boom, zap=zap, brilho=brilho,
-                mecanico=mecanico, batida=batida, glitch=glitch, sobe=sobe, desce=desce, porta=porta, passos=passos)
+                mecanico=mecanico, batida=batida, glitch=glitch, sobe=sobe, desce=desce, porta=porta, passos=passos,
+                papel=papel, marcador=marcador)
 
 
 # som de cada ilustração: lista de (som, segundo dentro da cena) — bate com o tempo da animação em Ilustracoes.tsx
@@ -141,6 +153,18 @@ SONS_ILUSTRACAO = {
 SONS_CENA3D = {"tunel": [("sobe", 0.0), ("whoosh", 0.6)], "neuronios": [("zap", 0.2), ("brilho", 1.0)],
                "cerebro": [("brilho", 0.3)], "multidao": [("passos", 0.4)]}
 SONS_ENTRADA = {"pop": "pop", "deslizar": "whoosh", "teletransporte": "zap", "cair": "batida"}
+# vinheta de abertura (src/Vinheta.tsx): olho abre (sobe), brilho, anel (whoosh), letras decifradas (clicks), slogan
+SONS_VINHETA = ([("sobe", 0.25, 1.0), ("brilho", 0.87, 1.0), ("whoosh", 1.0, 0.7)]
+                + [("click", (50 + i * 3) / 30, 0.35) for i in range(8)] + [("brilho", 2.5, 0.7)])
+DURACAO_FIXA = {"vinheta": 105}  # frames
+DURACAO_MINIMA = {"capitulo": 96, "fim": 135}  # frames (3,2 s e 4,5 s)
+
+
+def sons_local(por, t0):
+    """Etiqueta de lugar: desliza e digita."""
+    por("whoosh", t0 + 0.12, 0.35)
+    for k in range(6):
+        por("click", t0 + 0.34 + k * 0.09, 0.3)
 
 
 def sfx(cenas, roteiro, destino: Path, short: bool):
@@ -161,16 +185,20 @@ def sfx(cenas, roteiro, destino: Path, short: bool):
         som = S[nome]() * vol
         i = int(max(0, seg) * SR); f = min(total, i + len(som)); trilha[i:f] += som[: f - i]
 
-    anterior = None
+    anterior, tipo_ant = None, None
     for c in cenas:
         t0 = c["inicio"] / FPS
         a = c["animacao"]; tipo = a["tipo"]
         manual = por_id.get(c["id"], {}).get("sons")
-        if short:
+        if tipo in ("vinheta", "capitulo") or tipo_ant == "capitulo":
+            pass  # fade para o preto / vinheta: sem whoosh
+        elif short:
             por("whoosh", t0 - 0.12)
         elif tipo != "nenhuma" or (c["broll"] is None) != (anterior is None):
             por("whoosh", t0 - 0.1, 0.5)  # longo: só nos cortes que mudam algo na tela
-        anterior = c["broll"]
+        anterior, tipo_ant = c["broll"], tipo
+        if c.get("local") and tipo != "local":
+            sons_local(por, t0)
         if manual is not None:  # o roteiro manda: "sons": [{"som": "zap", "t": 1.2}]
             for s_ in manual:
                 por(s_["som"], t0 + s_["t"], s_.get("vol", 1))
@@ -189,6 +217,21 @@ def sfx(cenas, roteiro, destino: Path, short: bool):
             por("boom", t0); por("brilho", t0 + 0.2)
         elif tipo == "encerramento":
             por("brilho", t0 + 0.1)
+        elif tipo == "local":
+            sons_local(por, t0)
+        elif tipo == "documento":
+            por("papel", t0 + 0.02)
+            por("marcador", t0 + a.get("p0", 0.25) * c["fala"] / FPS)
+        elif tipo == "carimbo":  # mesma conta de batidaCarimbo() em src/Documentario.tsx
+            hit = (round(a.get("p", 0.3) * c["fala"]) if a.get("frase") else 6) / FPS
+            por("batida", t0 + hit); por("boom", t0 + hit, 0.7)
+        elif tipo == "capitulo":
+            por("boom", t0 + 0.4, 0.6); por("brilho", t0 + 0.55, 0.5)
+        elif tipo == "fim":
+            por("whoosh", t0 + 0.15); por("pop", t0 + 0.3); por("ding", t0 + 0.6, 0.7)
+        elif tipo == "vinheta":
+            for nome, s_, v in SONS_VINHETA:
+                por(nome, t0 + s_, v)
         elif tipo == "ilustracao":
             for nome, s_ in SONS_ILUSTRACAO.get(a.get("nome"), [("pop", 0.05)]):
                 por(nome, t0 + s_)
@@ -227,18 +270,34 @@ def main(vid, estimar_tempos=False):
     mapa_path = build / "broll" / "mapa.json"
     mapa = json.loads(mapa_path.read_text()) if mapa_path.exists() else {}
 
+    cenas_rot = list(roteiro["cenas"])
+    if roteiro.get("vinheta") and (not cenas_rot or cenas_rot[0].get("animacao", {}).get("tipo") != "vinheta"):
+        cenas_rot.insert(0, {"id": 0, "texto": "", "animacao": {"tipo": "vinheta"}})  # abertura sempre igual
+    por_id = {c["id"]: c for c in cenas_rot}
+
     cenas, inicio, ultima_pergunta, trechos = [], 0, None, []
     apresentados = set()
     em_cena = {}  # personagem -> último gesto (para entradas e transição de pose)
-    for c in roteiro["cenas"]:
-        anim = dict(c["animacao"])
+    for idx, c in enumerate(cenas_rot):
+        # "previa": N -> gancho que mostra o visual da cena N (animação, b-roll, personagens, local)
+        alvo = por_id.get(c["previa"]) if c.get("previa") is not None else None
+        if c.get("previa") is not None and alvo is None:
+            raise SystemExit(f"cena {c['id']}: previa {c['previa']} não existe")
+        visual = alvo or c
+        anim = dict(visual.get("animacao", {"tipo": "nenhuma"}))
+        if anim["tipo"] == "fim" and anim.get("video") and not anim.get("thumb"):
+            meta = RAIZ / "roteiros" / f"{anim['video']}.meta.json"  # thumb do vídeo longo
+            if meta.exists():
+                anim["thumb"] = json.loads(meta.read_text()).get("thumb")
         if anim["tipo"] == "pergunta":
             ultima_pergunta = {k: anim[k] for k in ("numero", "texto", "a", "b", "rotulo", "total") if k in anim}
         if anim["tipo"] == "contagem":
             anim["pergunta"] = ultima_pergunta
 
         mp3 = voz_dir / f"{c['id']:03d}.mp3"
-        if not estimar_tempos and mp3.exists():
+        if not c.get("texto", "").strip():
+            fala_s, palavras = 0.0, []  # cena sem narração (vinheta, capítulo)
+        elif not estimar_tempos and mp3.exists():
             fala_s = duracao(mp3)
             palavras = json.loads(mp3.with_suffix(".json").read_text())
             trechos.append((mp3, inicio / FPS))
@@ -252,8 +311,11 @@ def main(vid, estimar_tempos=False):
         if anim["tipo"] == "encerramento":
             pausa = 2.5
         pausa = c.get("pausa", pausa)  # o roteiro pode pedir um tempo para o espectador pensar
+        prox = cenas_rot[idx + 1] if idx + 1 < len(cenas_rot) else None
+        if prox and prox.get("animacao", {}).get("tipo") == "capitulo":
+            pausa += 0.4  # respiro antes do fade para o preto
         atores, agora = [], {}
-        for a in c.get("personagens", []):
+        for a in c.get("personagens", visual.get("personagens", [])):
             a = dict(a)
             a["novo"] = a["id"] not in em_cena
             a["apresentar"] = a["id"] not in apresentados
@@ -266,14 +328,23 @@ def main(vid, estimar_tempos=False):
         em_cena = agora
         fala = round(fala_s * FPS)
         dur = fala + round(pausa * FPS)
+        if anim["tipo"] in DURACAO_FIXA:
+            dur = DURACAO_FIXA[anim["tipo"]]
+        dur = max(dur, DURACAO_MINIMA.get(anim["tipo"], 0))
+        broll = mapa.get(str(c["id"])) or (mapa.get(str(alvo["id"])) if alvo else None)
+        capitulo = c.get("capitulo") or (anim["titulo"] if anim["tipo"] == "capitulo" else None)
         cenas.append({
-            "id": c["id"], "texto": c["texto"], "inicio": inicio, "duracao": dur, "fala": fala,
-            "palavras": palavras, "broll": mapa.get(str(c["id"])), "animacao": anim,
+            "id": c["id"], "texto": c.get("texto", ""), "inicio": inicio, "duracao": dur, "fala": fala,
+            "palavras": palavras, "broll": broll, "animacao": anim,
             "quem": c.get("quem", "cifrinho"), "personagens": atores,
-            "lofi": c.get("lofi", "leve"), "capitulo": c.get("capitulo"),
-            "brollFrames": int(duracao(RAIZ / "public" / mapa[str(c["id"])]) * FPS) if str(c["id"]) in mapa else 0,
+            "lofi": c.get("lofi", visual.get("lofi", "leve")), "capitulo": capitulo,
+            "brollFrames": int(duracao(RAIZ / "public" / broll) * FPS) if broll else 0,
+            "camera": c.get("camera"), "transicao": c.get("transicao"),
+            "local": c.get("local") or (alvo or {}).get("local"), "previa": c.get("previa"),
         })
         inicio += dur
+    if any(x["animacao"]["tipo"] == "capitulo" for x in cenas) and not cenas[0]["capitulo"]:
+        cenas[0]["capitulo"] = "Introdução"  # o YouTube exige o 1º capítulo em 0:00
 
     narracao = None
     if trechos:

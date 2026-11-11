@@ -6,6 +6,7 @@ import { Ilustracao } from "./Ilustracoes";
 import { Palco } from "./personagens/Palco";
 import { CamadaEspecial, ehEspecial } from "./CamadaEspecial";
 import { COR, Cena, FONTE_TEXTO, FONTE_TITULO, Manifesto, Palavra } from "./tema";
+import { CamadaDocumentario, DOC_TELA_CHEIA, EtiquetaLocal } from "./Documentario";
 import { FUSAO, GlitchEntrada, TipoTransicao, cameraDaCena, sobra, transicaoDaCena, tremidaGlitch, useCamera, useTransicao } from "./Camera";
 
 /* ---------- utilitários de "dopamina" ---------- */
@@ -330,7 +331,9 @@ const CenaShort: React.FC<PropsCena> = ({ cena, entrada, saida }) => {
   const t = f / fps;
   const falando = cena.palavras.some((p) => t >= p.t0 && t <= p.t1);
   const a = cena.animacao;
-  const cosmico = !cena.broll || a.tipo === "cta";
+  const telaCheia = DOC_TELA_CHEIA.has(a.tipo);
+  const cosmico = !cena.broll || a.tipo === "cta" || telaCheia;
+  const soEtiqueta = a.tipo === "nenhuma" || a.tipo === "local";
   const cam = useCamera(cameraDaCena(cena), cena.duracao + sobra(saida, FUSAO.short), cena.id);
   const tr = useTransicao(entrada, saida, cena.duracao, FUSAO.short);
   const gancho = a.tipo === "gancho";
@@ -339,7 +342,8 @@ const CenaShort: React.FC<PropsCena> = ({ cena, entrada, saida }) => {
   const s = gancho ? tremer(f, 30, 14) : { x: 0, y: 0 };
   const atores = cena.personagens ?? [];
   const temPalco = atores.length > 0;
-  const legendaY = temPalco ? 1500 : a.tipo === "nenhuma" ? 1020 : 1420;
+  const legendaY = temPalco ? 1500 : soEtiqueta ? 1020 : a.tipo === "documento" || a.tipo === "carimbo" ? 1460 : 1420;
+  const semLegenda = a.tipo === "cta" || a.tipo === "fim" || a.tipo === "capitulo" || a.tipo === "vinheta";
 
   return (
     <AbsoluteFill style={{ opacity: tr.opacidade, transform: entrada === "glitch" ? `translateX(${tremidaGlitch(f)}px)` : undefined }}>
@@ -349,9 +353,10 @@ const CenaShort: React.FC<PropsCena> = ({ cena, entrada, saida }) => {
       <AbsoluteFill
         style={{ background: "linear-gradient(180deg, rgba(7,15,51,.55) 0%, rgba(7,15,51,.1) 35%, rgba(7,15,51,.2) 60%, rgba(7,15,51,.8) 100%)" }}
       />
-      {a.tipo !== "nenhuma" && !gancho && <AbsoluteFill style={{ backgroundColor: "rgba(7,15,51,.35)" }} />}
+      {!soEtiqueta && !gancho && !telaCheia && <AbsoluteFill style={{ backgroundColor: "rgba(7,15,51,.35)" }} />}
       <AbsoluteFill style={{ transform: cam.frente }}>
         {ehEspecial(cena) && <CamadaEspecial cena={cena} falando={falando} />}
+        <CamadaDocumentario cena={cena} falando={falando} />
         {gancho && <Gancho texto={a.texto} />}
         {a.tipo === "pergunta" && <Cartoes texto={a.texto} a={a.a} b={a.b} />}
         {a.tipo === "contagem" && a.pergunta && (
@@ -364,14 +369,15 @@ const CenaShort: React.FC<PropsCena> = ({ cena, entrada, saida }) => {
             <Ilustracao nome={a.nome} texto={a.texto} tamanho={temPalco ? 520 : 680} />
           </AbsoluteFill>
         )}
-        {temPalco && <Palco atores={atores} quemFala={cena.quem ?? "cifrinho"} falando={falando} temAnim={a.tipo !== "nenhuma"} />}
-        {a.tipo === "nenhuma" && !cena.broll && !temPalco && (
+        {temPalco && <Palco atores={atores} quemFala={cena.quem ?? "cifrinho"} falando={falando} temAnim={!soEtiqueta} />}
+        {soEtiqueta && !cena.broll && !temPalco && (
           <AbsoluteFill style={{ alignItems: "center", paddingTop: 260 }}>
             <Mascote tamanho={700} falando={falando} seed={cena.id} />
           </AbsoluteFill>
         )}
       </AbsoluteFill>
-      {a.tipo !== "cta" && <LegendaGigante palavras={cena.palavras} y={legendaY} />}
+      <EtiquetaLocal cena={cena} />
+      {!semLegenda && <LegendaGigante palavras={cena.palavras} y={legendaY} />}
       {gancho && <Flash />}
       {entrada === "glitch" && <GlitchEntrada />}
       {tr.preto > 0 && <AbsoluteFill style={{ backgroundColor: "#000", opacity: tr.preto }} />}
