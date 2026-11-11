@@ -1,0 +1,69 @@
+name: Analisar canal de referência
+
+# Coleta dados públicos de um canal (títulos, descrições, tags, capítulos, legendas automáticas
+# e quadros de amostra) só para estudo de estrutura. Tudo sai no log em base64; nada é salvo no
+# repositório. Depois de ler o log, apague a execução.
+on:
+  workflow_dispatch:
+    inputs:
+      canal:
+        description: "URL do canal (ex.: https://www.youtube.com/@ampulheta_ac)"
+        required: true
+      quantos:
+        description: "Quantos vídeos analisar a fundo"
+        default: "4"
+
+jobs:
+  analisar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - name: Ferramentas
+        run: |
+          pip install -q -U yt-dlp
+          sudo apt-get install -y -qq ffmpeg imagemagick > /dev/null 2>&1 || true
+      - name: Coletar
+        run: |
+          mkdir -p a && cd a
+          C="${{ github.event.inputs.canal }}"
+          yt-dlp --flat-playlist -J "$C/videos" > lista_videos.json || true
+          yt-dlp --flat-playlist -J "$C/shorts" > lista_shorts.json || true
+          python3 - <<'EOF'
+          import json
+          try:
+              d = json.load(open("lista_videos.json"))
+              es = [e for e in d.get("entries", []) if e]
+          except Exception as ex:
+              print("lista falhou:", ex); es = []
+          es.sort(key=lambda e: -(e.get("view_count") or 0))
+          n = int("${{ github.event.inputs.quantos }}")
+          ids = [e["id"] for e in es[:n]]
+          # o mais recente também
+          if es:
+              rec = json.load(open("lista_videos.json"))["entries"][0]["id"]
+              if rec not in ids: ids.append(rec)
+          open("ids.txt", "w").write("\n".join(ids))
+          print("analisar:", ids)
+          EOF
+          for id in $(cat ids.txt); do
+            mkdir -p $id
+            yt-dlp -J "https://www.youtube.com/watch?v=$id" > $id/meta.json || true
+            yt-dlp --skip-download --write-auto-subs --write-subs --sub-langs "pt.*,pt-BR" --sub-format vtt -o "$id/legenda" "https://www.youtube.com/watch?v=$id" || true
+          done
+          # quadros de amostra dos 2 primeiros: 1 a cada 40 s, em folhas
+          for id in $(head -2 ids.txt); do
+            yt-dlp -f "bv*[height<=360]/b[height<=360]" -o "$id/v.%(ext)s" "https://www.youtube.com/watch?v=$id" || continue
+            v=$(ls $id/v.* | head -1)
+            ffmpeg -v error -i "$v" -vf "fps=1/40,scale=320:-1" $id/q_%03d.jpg
+            montage $id/q_*.jpg -tile 6x -geometry +4+4 -background '#111' $id/folha.jpg || true
+            # primeiros 90 s em detalhe (1 a cada 5 s) para ver o gancho
+            ffmpeg -v error -t 90 -i "$v" -vf "fps=1/5,scale=320:-1" $id/g_%03d.jpg
+            montage $id/g_*.jpg -tile 6x -geometry +4+4 -background '#111' $id/gancho.jpg || true
+            rm -f "$v" $id/q_*.jpg $id/g_*.jpg
+          done
+          cd .. && tar czf a.tgz a && ls -la a.tgz
+      - name: Imprimir
+        run: |
+          echo "PACOTE_INICIO"
+          base64 a.tgz
+          echo "PACOTE_FIM"
