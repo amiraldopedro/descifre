@@ -127,20 +127,32 @@ const Voo: React.FC<PropsSobMedida> = ({ fala, dur, props }) => {
         <rect width={W} height={H} fill="url(#vinhetaMapa)" />
       </svg>
       {/* etiquetas dos pontos (HTML, para a fonte serifada) */}
-      {pontos.map((pt, i) => {
-        const [x, y] = rotaPts[i];
+      {(() => {
+        // etiquetas de pontos vizinhos não se sobrepõem: troca o lado e, se preciso, desce a caixa
+        const lados: { x: number; y: number; dir: boolean; top: number }[] = [];
+        rotaPts.forEach(([x, y], i) => {
+          let dir = x < W - 520;
+          let top = y - 96;
+          const perto = (d: boolean, t: number) => lados.some((o) => o.dir === d && Math.abs(o.top - t) < 110 && Math.abs(o.x - x) < 420);
+          if (perto(dir, top)) dir = !dir;
+          while (perto(dir, top)) top += 115;
+          lados[i] = { x, y, dir, top };
+        });
+        return pontos.map((pt, i) => {
+        const [x] = rotaPts[i];
         const kp = mola(fala * ((pt.p ?? 0.45) + 0.03));
         if (kp < 0.01) return null;
-        const direita = x < W - 520;
+        const direita = lados[i].dir;
         return (
-          <div key={pt.nome} style={{ position: "absolute", left: direita ? x + 34 : x - 34, top: y - 96, transform: `translateX(${direita ? 0 : -100}%) scale(${kp})`, transformOrigin: direita ? "left center" : "right center" }}>
+          <div key={pt.nome} style={{ position: "absolute", left: direita ? x + 34 : x - 34, top: lados[i].top, transform: `translateX(${direita ? 0 : -100}%) scale(${kp})`, transformOrigin: direita ? "left center" : "right center" }}>
             <div style={{ background: "rgba(7,15,51,.88)", borderLeft: `6px solid ${COR.ciano}`, padding: "10px 22px", borderRadius: "0 12px 12px 0", boxShadow: "0 10px 30px rgba(0,0,0,.4)" }}>
               <div style={{ fontFamily: SERIFA, fontSize: 40, color: COR.branco, whiteSpace: "nowrap" }}>{pt.nome}</div>
               {pt.ano !== undefined && <div style={{ fontFamily: FONTE_TITULO, fontWeight: 800, fontSize: 26, color: COR.amarelo, letterSpacing: 4 }}>{pt.ano}</div>}
             </div>
           </div>
         );
-      })}
+        });
+      })()}
     </AbsoluteFill>
   );
 };

@@ -1,0 +1,1715 @@
+{
+ "id": "009",
+ "titulo": "Histeria coletiva: quando cidades inteiras enlouqueceram",
+ "trilha": "misterio",
+ "voz": "en-US-BrianMultilingualNeural",
+ "vinheta": true,
+ "taxa": "+0%",
+ "cenas": [
+  {
+   "texto": "Uma mulher começa a dançar no meio da rua. E não consegue parar.",
+   "previa": 12,
+   "capitulo": "Trailer",
+   "transicao": "corte",
+   "animacao": {
+    "tipo": "nenhuma"
+   },
+   "id": 1
+  },
+  {
+   "texto": "Meninas se contorcem e apontam para os vizinhos. Dezenove pessoas vão para a forca.",
+   "previa": 31,
+   "transicao": "deslize",
+   "animacao": {
+    "tipo": "nenhuma"
+   },
+   "id": 2
+  },
+  {
+   "texto": "Um programa de rádio faz um país acreditar que está sendo invadido por marcianos.",
+   "previa": 51,
+   "transicao": "zoom",
+   "animacao": {
+    "tipo": "nenhuma"
+   },
+   "id": 3
+  },
+  {
+   "texto": "E numa escola na África, as alunas começam a rir. Por meses.",
+   "previa": 67,
+   "transicao": "luz",
+   "animacao": {
+    "tipo": "nenhuma"
+   },
+   "id": 4
+  },
+  {
+   "texto": "Ninguém estava fingindo. E é isso que dá medo. Quando a mente de uma pessoa passa a doença para a mente da outra, cidades inteiras enlouquecem.",
+   "animacao": {
+    "tipo": "titulo",
+    "texto": "Histeria coletiva"
+   },
+   "lofi": "forte",
+   "id": 5
+  },
+  {
+   "texto": "",
+   "animacao": {
+    "tipo": "capitulo",
+    "numero": 0,
+    "titulo": "Contágio sem vírus",
+    "rotulo": "Prólogo"
+   },
+   "id": 6
+  },
+  {
+   "texto": "Imagine uma doença que não tem vírus, nem bactéria, nem veneno. Ela não aparece em exame de sangue. Mas causa desmaios, tremores, paralisias e convulsões de verdade. E pula de uma pessoa para outra só pelo olhar.",
+   "animacao": {
+    "tipo": "cena3d",
+    "nome": "cerebro"
+   },
+   "lofi": "leve",
+   "id": 7
+  },
+  {
+   "texto": "Os médicos chamam isso de doença psicogênica em massa. O nome popular é histeria coletiva. E ela já fez cidades inteiras perderem o controle.",
+   "animacao": {
+    "tipo": "conceito",
+    "nome": "Doença psicogênica em massa",
+    "frase": "Sintomas reais, sem causa física",
+    "rotulo": "O NOME CERTO"
+   },
+   "id": 8
+  },
+  {
+   "texto": "Eu sou o Cifrinho. E hoje a gente vai viajar por quinhentos anos de surtos coletivos. Da Idade Média até o TikTok. O que aconteceu de verdade, o que virou lenda, e por que nenhum de nós está imune.",
+   "personagens": [
+    {
+     "id": "cifrinho",
+     "gesto": "explicar",
+     "expressao": "pensativo"
+    }
+   ],
+   "animacao": {
+    "tipo": "nenhuma"
+   },
+   "id": 9
+  },
+  {
+   "texto": "",
+   "animacao": {
+    "tipo": "capitulo",
+    "numero": 1,
+    "titulo": "A dança que matava"
+   },
+   "id": 10
+  },
+  {
+   "texto": "Para começar, a gente precisa voltar mais de quinhentos anos. Até uma cidade às margens do rio Reno, que hoje fica na França, mas na época pertencia ao Sacro Império Romano-Germânico.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "mapa/voo",
+    "props": {
+     "pontos": [
+      {
+       "nome": "Estrasburgo",
+       "ano": 1518,
+       "lon": 7.75,
+       "lat": 48.58,
+       "p": 0.55
+      }
+     ],
+     "destaque": [
+      "France",
+      "Germany"
+     ],
+     "de": {
+      "lon": 5,
+      "lat": 30,
+      "zoom": 1.1
+     },
+     "ate": {
+      "lon": 7.75,
+      "lat": 48.58,
+      "zoom": 7
+     },
+     "rota": false,
+     "noite": false
+    }
+   },
+   "transicao": "zoom",
+   "id": 11
+  },
+  {
+   "texto": "Estrasburgo, julho de mil quinhentos e dezoito. Uma mulher, que os registros chamam de Frau Troffea, sai de casa, para numa ruela estreita e começa a dançar. Sem música. Sem festa. Sem motivo.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "cenario/lugar",
+    "props": {
+     "lugar": "vila-medieval",
+     "hora": "dourado",
+     "figuras": [
+      {
+       "traje": "camponesa",
+       "pose": "dancando",
+       "rosto": "fechado",
+       "x": 960,
+       "intensidade": 0.7,
+       "seed": 7
+      },
+      {
+       "traje": "campones",
+       "pose": "parado",
+       "rosto": "preocupado",
+       "x": 520,
+       "fundo": 0.4,
+       "seed": 2
+      },
+      {
+       "traje": "camponesa",
+       "pose": "apontando",
+       "rosto": "preocupado",
+       "x": 1420,
+       "fundo": 0.5,
+       "seed": 5
+      }
+     ]
+    }
+   },
+   "local": {
+    "texto": "Estrasburgo",
+    "ano": 1518
+   },
+   "id": 12
+  },
+  {
+   "texto": "Para entender o que estava acontecendo, é preciso saber como andava a vida ali. Os anos anteriores tinham sido terríveis. Invernos gelados, granizo destruindo as plantações, colheitas perdidas uma atrás da outra.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "cenario/lugar",
+    "props": {
+     "lugar": "vila-medieval",
+     "hora": "noite",
+     "figuras": [
+      {
+       "traje": "campones",
+       "pose": "parado",
+       "rosto": "fechado",
+       "x": 760,
+       "seed": 13,
+       "escuro": 0.2
+      },
+      {
+       "traje": "camponesa",
+       "pose": "parado",
+       "rosto": "preocupado",
+       "x": 1180,
+       "seed": 14,
+       "escuro": 0.2
+      }
+     ]
+    }
+   },
+   "id": 13
+  },
+  {
+   "texto": "O preço do pão disparou. Mendigos enchiam as ruas. A varíola, a sífilis e a hanseníase circulavam pela cidade. E, para piorar, os padres pregavam que tudo aquilo era castigo de Deus pelos pecados do povo.",
+   "broll": "medieval town night candles",
+   "lofi": "forte",
+   "animacao": {
+    "tipo": "nenhuma"
+   },
+   "id": 14
+  },
+  {
+   "texto": "Ela dança por horas, até desabar de cansaço. Dorme. E, quando acorda, volta a dançar. Os relatos dizem que isso durou de quatro a seis dias, com os pés sangrando dentro dos sapatos.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "cenario/lugar",
+    "props": {
+     "lugar": "vila-medieval",
+     "hora": "noite",
+     "figuras": [
+      {
+       "traje": "camponesa",
+       "pose": "dancando",
+       "rosto": "grito",
+       "x": 960,
+       "intensidade": 1,
+       "seed": 7,
+       "escala": 1.15
+      }
+     ]
+    }
+   },
+   "lofi": "forte",
+   "id": 15
+  },
+  {
+   "texto": "Então aconteceu o que ninguém esperava. Outras pessoas começaram a dançar também. Em uma semana, eram mais de trinta. E, segundo algumas crônicas, até o fim do verão foram centenas.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "cenario/lugar",
+    "props": {
+     "lugar": "vila-medieval",
+     "hora": "dourado",
+     "multidao": {
+      "n": 14,
+      "traje": "camponesa",
+      "pose": "dancando",
+      "rosto": "fechado",
+      "entra": 0.1,
+      "contagio": true
+     }
+    }
+   },
+   "transicao": "luz",
+   "id": 16
+  },
+  {
+   "texto": "Existem gravuras da época que mostram surtos parecidos em outras cidades: gente de olhos revirados, sendo carregada pelos braços, girando sem parar enquanto os outros tentam segurar.",
+   "arquivo": {
+    "busca": "Hondius Brueghel dancers Molenbeek engraving",
+    "fonte": "commons"
+   },
+   "broll": "old engraving crowd",
+   "lofi": "leve",
+   "animacao": {
+    "tipo": "nenhuma"
+   },
+   "id": 17
+  },
+  {
+   "texto": "Os médicos de Estrasburgo foram chamados. E o diagnóstico deles foi: sangue quente. A cura, segundo eles, era dançar ainda mais, até o calor sair do corpo.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "cenario/lugar",
+    "props": {
+     "lugar": "vila-medieval",
+     "hora": "dourado",
+     "figuras": [
+      {
+       "traje": "medico",
+       "pose": "apontando",
+       "rosto": "neutro",
+       "x": 700
+      },
+      {
+       "traje": "camponesa",
+       "pose": "dancando",
+       "rosto": "fechado",
+       "x": 1250,
+       "seed": 9
+      }
+     ]
+    }
+   },
+   "id": 18
+  },
+  {
+   "texto": "E as autoridades obedeceram. Liberaram salões, montaram um palco de madeira no mercado e contrataram músicos e dançarinos fortes para segurar as pessoas de pé. Na prática, transformaram a epidemia num espetáculo.",
+   "animacao": {
+    "tipo": "documento",
+    "titulo": "Crônica de Estrasburgo",
+    "autor": "Registros da cidade",
+    "ano": 1518,
+    "trecho": "Os conselheiros mandaram montar um palco no mercado de cavalos e pagaram músicos para tocar dia e noite.",
+    "destaque": "pagaram músicos",
+    "p0": 0.25,
+    "p1": 0.8,
+    "nota": "trecho resumido e traduzido"
+   },
+   "transicao": "deslize",
+   "id": 19
+  },
+  {
+   "texto": "Foi um desastre. Mais gente via a dança, mais gente entrava nela. Alguns caíam desmaiados no meio da praça. Uma crônica escrita anos depois fala em quinze mortes por dia.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "cenario/lugar",
+    "props": {
+     "lugar": "vila-medieval",
+     "hora": "noite",
+     "multidao": {
+      "n": 16,
+      "traje": "campones",
+      "pose": "dancando",
+      "rosto": "grito",
+      "intensidade": 1
+     }
+    }
+   },
+   "lofi": "forte",
+   "id": 20
+  },
+  {
+   "texto": "Só que esse número é um dos pontos mais discutidos da história. Os registros oficiais da cidade, escritos na hora, não falam em mortes. É bem possível que alguém tenha morrido de exaustão ou do coração. Mas quinze por dia provavelmente é exagero.",
+   "animacao": {
+    "tipo": "carimbo",
+    "texto": "EM DEBATE",
+    "frase": "Quinze mortes por dia",
+    "p": 0.15
+   },
+   "id": 21
+  },
+  {
+   "texto": "Quando perceberam o erro, as autoridades mudaram de estratégia. Proibiram a música e a dança em público. E passaram a ver aquilo como castigo de um santo: São Vito, que segundo a crença da época podia amaldiçoar pecadores com dança.",
+   "animacao": {
+    "tipo": "ilustracao",
+    "nome": "cadeado"
+   },
+   "id": 22
+  },
+  {
+   "texto": "Os dançarinos foram levados em carroças até um santuário de São Vito, numa gruta nas montanhas perto de Saverne. Lá, receberam sapatos vermelhos, cruzes e orações. E, no começo de setembro, a dança foi parando.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "mapa/voo",
+    "props": {
+     "pontos": [
+      {
+       "nome": "Estrasburgo",
+       "lon": 7.75,
+       "lat": 48.58,
+       "p": 0.2
+      },
+      {
+       "nome": "Saverne",
+       "lon": 7.36,
+       "lat": 48.74,
+       "p": 0.6
+      }
+     ],
+     "destaque": [
+      "France"
+     ],
+     "de": {
+      "lon": 7.6,
+      "lat": 48.6,
+      "zoom": 6
+     },
+     "ate": {
+      "lon": 7.55,
+      "lat": 48.66,
+      "zoom": 22
+     },
+     "rota": true,
+     "noite": false
+    }
+   },
+   "id": 23
+  },
+  {
+   "texto": "Por muito tempo, a explicação favorita foi o esporão do centeio: um fungo que contamina o pão e causa alucinações. O problema é que ele causa espasmos e corta a circulação. Ninguém consegue dançar por dias assim.",
+   "animacao": {
+    "tipo": "carimbo",
+    "texto": "MITO",
+    "frase": "Foi o fungo do pão",
+    "p": 0.2
+   },
+   "id": 24
+  },
+  {
+   "texto": "E Estrasburgo não foi um caso isolado. Desde mil trezentos e setenta e quatro, surtos de dança apareceram em várias cidades ao longo do rio Reno, como Aachen, Colônia e Metz. Quase sempre na mesma região, onde a lenda de São Vito era forte.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "mapa/voo",
+    "props": {
+     "pontos": [
+      {
+       "nome": "Aachen",
+       "ano": 1374,
+       "lon": 6.08,
+       "lat": 50.78,
+       "p": 0.25
+      },
+      {
+       "nome": "Colônia",
+       "lon": 6.96,
+       "lat": 50.94,
+       "p": 0.45
+      },
+      {
+       "nome": "Metz",
+       "lon": 6.18,
+       "lat": 49.12,
+       "p": 0.6
+      },
+      {
+       "nome": "Estrasburgo",
+       "ano": 1518,
+       "lon": 7.75,
+       "lat": 48.58,
+       "p": 0.8
+      }
+     ],
+     "destaque": [
+      "Germany",
+      "France"
+     ],
+     "de": {
+      "lon": 7,
+      "lat": 49.5,
+      "zoom": 5
+     },
+     "ate": {
+      "lon": 6.9,
+      "lat": 49.7,
+      "zoom": 7
+     },
+     "rota": true,
+     "noite": false
+    }
+   },
+   "id": 25
+  },
+  {
+   "texto": "O historiador John Waller, que estudou o caso a fundo, tem outra explicação. Estrasburgo vinha de anos de fome, frio, varíola e sífilis. As pessoas estavam no limite. E todas acreditavam na maldição de São Vito.",
+   "animacao": {
+    "tipo": "documento",
+    "titulo": "A Time to Dance, a Time to Die",
+    "autor": "John Waller",
+    "ano": 2008,
+    "trecho": "A dança foi um transe coletivo, nascido do desespero e de uma crença compartilhada.",
+    "destaque": "transe coletivo",
+    "p0": 0.25,
+    "p1": 0.8,
+    "nota": "ideia central do livro, em tradução livre"
+   },
+   "id": 26
+  },
+  {
+   "texto": "Junte desespero extremo com uma crença que todo mundo compartilha, e a mente faz o resto. Quem acreditava que podia ser amaldiçoado entrava em transe. E quem entrava em transe dançava.",
+   "animacao": {
+    "tipo": "lista",
+    "itens": [
+     "Fome e doenças",
+     "Medo de castigo divino",
+     "Uma crença compartilhada",
+     "Um primeiro caso visível"
+    ]
+   },
+   "id": 27
+  },
+  {
+   "texto": "Anos depois, o médico Paracelso escreveu sobre esses surtos e deu a eles um nome que existe até hoje: coreomania. A loucura da dança. E ela estava longe de ser a última.",
+   "arquivo": {
+    "busca": "Paracelsus portrait Quentin Matsys",
+    "fonte": "commons"
+   },
+   "broll": "old manuscript candle",
+   "animacao": {
+    "tipo": "nenhuma"
+   },
+   "id": 28
+  },
+  {
+   "texto": "",
+   "animacao": {
+    "tipo": "capitulo",
+    "numero": 2,
+    "titulo": "As bruxas de Salém"
+   },
+   "id": 29
+  },
+  {
+   "texto": "Cento e setenta anos depois, do outro lado do oceano Atlântico. Uma pequena colônia inglesa na América do Norte, fundada por puritanos, gente que vivia sob regras religiosas rígidas.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "mapa/voo",
+    "props": {
+     "pontos": [
+      {
+       "nome": "Estrasburgo",
+       "lon": 7.75,
+       "lat": 48.58,
+       "p": 0.1
+      },
+      {
+       "nome": "Salém",
+       "ano": 1692,
+       "lon": -70.9,
+       "lat": 42.52,
+       "p": 0.75
+      }
+     ],
+     "destaque": [
+      "United States of America"
+     ],
+     "de": {
+      "lon": -20,
+      "lat": 45,
+      "zoom": 1.3
+     },
+     "ate": {
+      "lon": -70.9,
+      "lat": 42.52,
+      "zoom": 8
+     },
+     "rota": true,
+     "noite": false
+    }
+   },
+   "transicao": "zoom",
+   "id": 30
+  },
+  {
+   "texto": "Salém, Massachusetts, inverno de mil seiscentos e noventa e dois. Na casa do reverendo Samuel Parris, a filha dele, Betty, de nove anos, e a prima, Abigail, de onze, começam a agir de um jeito estranho.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "cenario/lugar",
+    "props": {
+     "lugar": "vila-puritana",
+     "hora": "noite",
+     "figuras": [
+      {
+       "traje": "puritano",
+       "pose": "parado",
+       "rosto": "preocupado",
+       "x": 620,
+       "seed": 3
+      },
+      {
+       "traje": "puritana",
+       "pose": "assustado",
+       "rosto": "grito",
+       "x": 1100,
+       "escala": 0.75,
+       "seed": 11
+      },
+      {
+       "traje": "puritana",
+       "pose": "assustado",
+       "rosto": "assustado",
+       "x": 1350,
+       "escala": 0.8,
+       "seed": 12
+      }
+     ]
+    }
+   },
+   "local": {
+    "texto": "Salém, Massachusetts",
+    "ano": 1692
+   },
+   "id": 31
+  },
+  {
+   "texto": "A vila já vivia com medo. Havia uma guerra contra povos indígenas na fronteira, com refugiados chegando de vilas atacadas. Havia brigas por terras entre famílias vizinhas. E havia a certeza de que o diabo andava solto pela floresta escura em volta.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "cenario/lugar",
+    "props": {
+     "lugar": "vila-puritana",
+     "hora": "noite",
+     "figuras": [
+      {
+       "traje": "puritano",
+       "pose": "parado",
+       "rosto": "fechado",
+       "x": 760,
+       "seed": 15,
+       "escuro": 0.25
+      },
+      {
+       "traje": "puritano",
+       "pose": "apontando",
+       "rosto": "preocupado",
+       "x": 1200,
+       "seed": 16,
+       "escuro": 0.25
+      }
+     ]
+    }
+   },
+   "id": 32
+  },
+  {
+   "texto": "Elas gritam, se escondem debaixo dos móveis, se contorcem em posições impossíveis e reclamam de beliscões invisíveis. O médico da vila examina as meninas e não encontra nada. E dá o veredito que muda tudo: é obra de bruxaria.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "cenario/lugar",
+    "props": {
+     "lugar": "vila-puritana",
+     "hora": "noite",
+     "figuras": [
+      {
+       "traje": "medico",
+       "pose": "apontando",
+       "rosto": "preocupado",
+       "x": 700,
+       "seed": 4
+      },
+      {
+       "traje": "puritana",
+       "pose": "assustado",
+       "rosto": "grito",
+       "x": 1200,
+       "escala": 0.8,
+       "seed": 11
+      }
+     ]
+    }
+   },
+   "lofi": "forte",
+   "id": 33
+  },
+  {
+   "texto": "Pressionadas pelos adultos a dizer quem as estava enfeitiçando, as meninas apontam três mulheres. Uma delas era Tituba, uma mulher escravizada que trabalhava na casa do reverendo.",
+   "animacao": {
+    "tipo": "lista",
+    "itens": [
+     "Tituba",
+     "Sarah Good",
+     "Sarah Osborne"
+    ]
+   },
+   "id": 34
+  },
+  {
+   "texto": "As outras duas negaram tudo. Mas Tituba, interrogada e provavelmente agredida, confessou. Disse que o diabo aparecia para ela como um homem alto de preto, que havia um livro onde as bruxas assinavam o nome, e que existiam outras bruxas na vila.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "cenario/lugar",
+    "props": {
+     "lugar": "vila-puritana",
+     "hora": "noite",
+     "figuras": [
+      {
+       "traje": "puritana",
+       "pose": "falando",
+       "rosto": "assustado",
+       "x": 960,
+       "seed": 17,
+       "pele": "#6B4630"
+      }
+     ]
+    }
+   },
+   "lofi": "forte",
+   "id": 35
+  },
+  {
+   "texto": "Aquela confissão foi como jogar gasolina na fogueira. Se existiam outras bruxas, era preciso encontrá-las. E a caçada começou.",
+   "animacao": {
+    "tipo": "ilustracao",
+    "nome": "raio"
+   },
+   "id": 36
+  },
+  {
+   "texto": "E aí a histeria se espalha. Outras meninas da vila começam a ter os mesmos ataques. A cada sessão no tribunal, elas caem no chão, gritam e dizem ver o espírito dos acusados voando pela sala.",
+   "arquivo": {
+    "busca": "Examination of a Witch Matteson 1853",
+    "fonte": "commons"
+   },
+   "broll": "old courtroom painting",
+   "transicao": "luz",
+   "animacao": {
+    "tipo": "nenhuma"
+   },
+   "id": 37
+  },
+  {
+   "texto": "O tribunal aceitava esse tipo de prova. Chamavam de prova espectral: se a vítima dizia ter visto o fantasma de alguém atacando, isso bastava. E não havia defesa possível contra algo que só a acusadora enxergava.",
+   "animacao": {
+    "tipo": "conceito",
+    "nome": "Prova espectral",
+    "frase": "Ver um fantasma bastava para condenar",
+    "rotulo": "A REGRA DO TRIBUNAL"
+   },
+   "id": 38
+  },
+  {
+   "texto": "Em poucos meses, mais de cento e cinquenta pessoas foram presas, de várias vilas da região. Gente pobre, viúvas, vizinhos com quem alguém tinha uma briga antiga. E até um ex-pastor da própria vila.",
+   "arquivo": {
+    "busca": "Salem witch trial lithograph 1892",
+    "fonte": "commons"
+   },
+   "broll": "old documents candle",
+   "animacao": {
+    "tipo": "nenhuma"
+   },
+   "id": 39
+  },
+  {
+   "texto": "Nem as pessoas mais respeitadas escapavam. Rebecca Nurse, uma senhora de setenta e um anos, conhecida pela fé, foi acusada. O júri a declarou inocente. As meninas começaram a gritar no tribunal. E o juiz pediu que o júri pensasse de novo. Ela foi condenada e enforcada.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "cenario/lugar",
+    "props": {
+     "lugar": "vila-puritana",
+     "hora": "dourado",
+     "figuras": [
+      {
+       "traje": "puritana",
+       "pose": "parado",
+       "rosto": "preocupado",
+       "x": 960,
+       "seed": 18,
+       "cabelo": "#C8C8C8"
+      }
+     ]
+    }
+   },
+   "transicao": "deslize",
+   "id": 40
+  },
+  {
+   "texto": "Entre junho e setembro de mil seiscentos e noventa e dois, dezenove pessoas foram enforcadas. Um homem de mais de setenta anos, Giles Corey, se recusou a ser julgado, e foi esmagado com pedras até a morte. Outros morreram na prisão.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "cenario/lugar",
+    "props": {
+     "lugar": "vila-puritana",
+     "hora": "noite",
+     "figuras": [
+      {
+       "traje": "puritano",
+       "pose": "parado",
+       "rosto": "fechado",
+       "x": 960,
+       "seed": 21,
+       "escuro": 0.3
+      }
+     ]
+    }
+   },
+   "lofi": "forte",
+   "id": 41
+  },
+  {
+   "texto": "E aqui vai uma correção importante. Muita gente acha que as bruxas de Salém foram queimadas na fogueira. Nenhuma foi. Na colônia inglesa, a pena era a forca.",
+   "animacao": {
+    "tipo": "carimbo",
+    "texto": "MITO",
+    "frase": "As bruxas de Salém foram queimadas",
+    "p": 0.2
+   },
+   "id": 42
+  },
+  {
+   "texto": "A loucura só parou quando a própria elite começou a ser acusada. Em outubro, o governador da colônia encerrou o tribunal especial e proibiu a prova espectral. Os presos que restavam foram sendo soltos.",
+   "animacao": {
+    "tipo": "documento",
+    "titulo": "Cases of Conscience",
+    "autor": "Increase Mather",
+    "ano": 1692,
+    "trecho": "It were better that ten suspected witches should escape, than that one innocent person should be condemned.",
+    "destaque": "ten suspected witches should escape",
+    "p0": 0.25,
+    "p1": 0.8,
+    "nota": "pastor de Boston, contra a prova espectral"
+   },
+   "id": 43
+  },
+  {
+   "texto": "Anos depois, um dos juízes, Samuel Sewall, se levantou na igreja e pediu perdão em público. Uma das meninas acusadoras, Ann Putnam, também pediu desculpas, dizendo que tinha sido enganada.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "cenario/lugar",
+    "props": {
+     "lugar": "vila-puritana",
+     "hora": "dia",
+     "figuras": [
+      {
+       "traje": "puritano",
+       "pose": "falando",
+       "rosto": "preocupado",
+       "x": 960,
+       "seed": 3
+      }
+     ]
+    }
+   },
+   "id": 44
+  },
+  {
+   "texto": "E a última acusada só foi oficialmente inocentada em dois mil e vinte e dois, mais de trezentos anos depois, graças a um projeto de uma turma de alunos de uma escola de Massachusetts.",
+   "animacao": {
+    "tipo": "carimbo",
+    "texto": "VERDADE",
+    "frase": "Uma acusada só foi inocentada em 2022",
+    "p": 0.3
+   },
+   "id": 45
+  },
+  {
+   "texto": "O que aconteceu com as meninas? Há quem defenda que também foi o fungo do centeio. Mas a explicação mais aceita é parecida com a de Estrasburgo: uma comunidade com medo de ataques, de doenças e do diabo, e crianças sob pressão enorme, numa sociedade onde bruxaria era uma explicação aceita para tudo.",
+   "animacao": {
+    "tipo": "carimbo",
+    "texto": "EM DEBATE",
+    "frase": "O fungo explica Salém",
+    "p": 0.15
+   },
+   "id": 46
+  },
+  {
+   "texto": "Os ataques eram reais. O medo era real. O que nunca existiu foram as bruxas.",
+   "animacao": {
+    "tipo": "ilustracao",
+    "nome": "olho"
+   },
+   "lofi": "forte",
+   "id": 47
+  },
+  {
+   "texto": "",
+   "animacao": {
+    "tipo": "capitulo",
+    "numero": 3,
+    "titulo": "Marcianos em Nova Jersey"
+   },
+   "id": 48
+  },
+  {
+   "texto": "Agora a gente pula para o século vinte. Trinta de outubro de mil novecentos e trinta e oito, véspera de Halloween, nos Estados Unidos. O rádio é a televisão da época, e quase toda casa tem um.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "mapa/voo",
+    "props": {
+     "pontos": [
+      {
+       "nome": "Grover's Mill",
+       "ano": 1938,
+       "lon": -74.6,
+       "lat": 40.31,
+       "p": 0.6
+      }
+     ],
+     "destaque": [
+      "United States of America"
+     ],
+     "de": {
+      "lon": -95,
+      "lat": 38,
+      "zoom": 1.6
+     },
+     "ate": {
+      "lon": -74.6,
+      "lat": 40.31,
+      "zoom": 9
+     },
+     "rota": false,
+     "noite": true
+    }
+   },
+   "transicao": "zoom",
+   "id": 49
+  },
+  {
+   "texto": "Famílias inteiras se sentavam em volta daqueles aparelhos de madeira para ouvir notícias, novelas e música. O que saía do rádio era tratado como verdade.",
+   "arquivo": {
+    "fonte": "archive",
+    "archive": "0596_On_the_Air_20_09_04_00",
+    "inicio": 548,
+    "dur": 10
+   },
+   "broll": "vintage radio",
+   "lofi": "leve",
+   "animacao": {
+    "tipo": "nenhuma"
+   },
+   "id": 50
+  },
+  {
+   "texto": "Às oito da noite, a rede CBS coloca no ar o programa de um jovem diretor de teatro de vinte e três anos: Orson Welles. Naquela noite, ele adaptou um livro de ficção científica: A Guerra dos Mundos.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "cenario/lugar",
+    "props": {
+     "lugar": "sala-radio",
+     "hora": "noite",
+     "figuras": [
+      {
+       "traje": "anos30",
+       "pose": "ouvindo",
+       "rosto": "neutro",
+       "x": 1320,
+       "escala": 0.8,
+       "seed": 5
+      },
+      {
+       "traje": "anos30mulher",
+       "pose": "sentado",
+       "rosto": "neutro",
+       "x": 560,
+       "escala": 0.8,
+       "seed": 6
+      }
+     ]
+    }
+   },
+   "local": {
+    "texto": "Nova York",
+    "ano": 1938
+   },
+   "id": 51
+  },
+  {
+   "texto": "Mas Welles teve uma ideia ousada. Em vez de contar a história como uma novela, ele a transformou em boletins de notícia. A música é interrompida. Um repórter anuncia explosões em Marte. Depois, um objeto estranho cai numa fazenda em Grover's Mill, Nova Jersey.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "cenario/lugar",
+    "props": {
+     "lugar": "sala-radio",
+     "hora": "noite",
+     "figuras": [
+      {
+       "traje": "anos30",
+       "pose": "ouvindo",
+       "rosto": "preocupado",
+       "x": 1320,
+       "escala": 0.8,
+       "seed": 5
+      },
+      {
+       "traje": "anos30mulher",
+       "pose": "assustado",
+       "rosto": "assustado",
+       "x": 560,
+       "escala": 0.8,
+       "seed": 6
+      }
+     ]
+    }
+   },
+   "transicao": "luz",
+   "id": 52
+  },
+  {
+   "texto": "O programa avisou no começo que era uma peça de teatro. E avisou de novo no meio. Mas muita gente teria ligado o rádio depois do começo, vindo de outra estação, e caído direto no meio das notícias falsas.",
+   "animacao": {
+    "tipo": "conceito",
+    "nome": "Era só teatro",
+    "frase": "o aviso foi dado no começo e no meio",
+    "rotulo": "O DETALHE"
+   },
+   "id": 53
+  },
+  {
+   "texto": "O repórter descreve criaturas saindo de um cilindro de metal. Raios de calor. Soldados mortos. Gritos. E então, silêncio no ar.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "cenario/lugar",
+    "props": {
+     "lugar": "sala-radio",
+     "hora": "noite",
+     "figuras": [
+      {
+       "traje": "anos30",
+       "pose": "assustado",
+       "rosto": "grito",
+       "x": 1320,
+       "escala": 0.8,
+       "seed": 5
+      },
+      {
+       "traje": "anos30mulher",
+       "pose": "assustado",
+       "rosto": "grito",
+       "x": 560,
+       "escala": 0.8,
+       "seed": 6
+      }
+     ]
+    }
+   },
+   "lofi": "forte",
+   "id": 54
+  },
+  {
+   "texto": "No dia seguinte, os jornais do país inteiro estampavam: pânico. Ouvintes fugindo de casa com toalhas molhadas no rosto, igrejas cheias, estradas congestionadas. Conta a lenda que moradores de Grover's Mill atiraram numa caixa d'água achando que era uma máquina marciana.",
+   "arquivo": {
+    "busca": "New York Times October 31 1938 radio listeners panic",
+    "fonte": "commons"
+   },
+   "broll": "old newspaper printing press",
+   "transicao": "deslize",
+   "animacao": {
+    "tipo": "nenhuma"
+   },
+   "id": 55
+  },
+  {
+   "texto": "Orson Welles teve que dar uma entrevista coletiva. Com cara de quem não dormiu, pediu desculpas e disse que nunca imaginou que alguém fosse acreditar.",
+   "arquivo": {
+    "busca": "Orson Welles 1938 press conference War of the Worlds",
+    "fonte": "commons"
+   },
+   "broll": "old press conference camera flash",
+   "animacao": {
+    "tipo": "nenhuma"
+   },
+   "id": 56
+  },
+  {
+   "texto": "Dois anos depois, o psicólogo Hadley Cantril, da Universidade de Princeton, publicou um estudo famoso. Ele estimou que seis milhões de pessoas ouviram o programa, e que mais de um milhão ficaram assustadas.",
+   "animacao": {
+    "tipo": "documento",
+    "titulo": "The Invasion from Mars",
+    "autor": "Hadley Cantril",
+    "ano": 1940,
+    "trecho": "Long before the broadcast had ended, people all over the United States were praying, crying, fleeing frantically to escape death from the Martians.",
+    "destaque": "praying, crying, fleeing",
+    "p0": 0.25,
+    "p1": 0.8,
+    "nota": "estudo da Universidade de Princeton"
+   },
+   "id": 57
+  },
+  {
+   "texto": "Essa é a versão que entrou para os livros. Só que pesquisadores modernos olharam de novo para os dados. E a história é bem menos dramática.",
+   "animacao": {
+    "tipo": "ilustracao",
+    "nome": "interrogacao"
+   },
+   "id": 58
+  },
+  {
+   "texto": "Uma pesquisa de audiência feita naquela mesma noite ligou para milhares de casas. Só dois por cento disseram estar ouvindo o programa de Welles. A maioria estava ouvindo um programa de comédia em outra rádio.",
+   "animacao": {
+    "tipo": "conceito",
+    "nome": "2%",
+    "frase": "dos entrevistados ouviam Welles naquela noite",
+    "rotulo": "A AUDIÊNCIA REAL"
+   },
+   "id": 59
+  },
+  {
+   "texto": "E por que os jornais exageraram tanto? Uma das explicações é que o rádio estava roubando anunciantes dos jornais. Mostrar o rádio como um perigo para a população era um ótimo negócio.",
+   "animacao": {
+    "tipo": "carimbo",
+    "texto": "MITO",
+    "frase": "O país inteiro entrou em pânico",
+    "p": 0.15
+   },
+   "id": 60
+  },
+  {
+   "texto": "Mas não pense que um programa de rádio não pode causar uma tragédia de verdade. Onze anos depois, em mil novecentos e quarenta e nove, uma rádio de Quito, no Equador, fez a sua própria versão da Guerra dos Mundos, em espanhol, com nomes de lugares reais da cidade.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "mapa/voo",
+    "props": {
+     "pontos": [
+      {
+       "nome": "Quito",
+       "ano": 1949,
+       "lon": -78.47,
+       "lat": -0.18,
+       "p": 0.6
+      }
+     ],
+     "destaque": [
+      "Ecuador"
+     ],
+     "de": {
+      "lon": -70,
+      "lat": -10,
+      "zoom": 1.8
+     },
+     "ate": {
+      "lon": -78.47,
+      "lat": -0.18,
+      "zoom": 9
+     },
+     "rota": false,
+     "noite": true
+    }
+   },
+   "transicao": "zoom",
+   "id": 61
+  },
+  {
+   "texto": "As pessoas saíram às ruas apavoradas. E quando descobriram que era tudo encenação, a revolta foi enorme. Uma multidão atacou e incendiou o prédio da rádio e do jornal. Pelo menos seis pessoas morreram. Essa é uma das histórias mais trágicas do rádio na América Latina.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "cenario/lugar",
+    "props": {
+     "lugar": "cidade",
+     "hora": "noite",
+     "luz": true,
+     "multidao": {
+      "n": 10,
+      "traje": "anos30",
+      "pose": "assustado",
+      "rosto": "grito"
+     }
+    }
+   },
+   "lofi": "forte",
+   "id": 62
+  },
+  {
+   "texto": "Isso não quer dizer que ninguém se assustou. O historiador Brad Schwartz leu as cartas que os ouvintes mandaram depois. Muita gente realmente acreditou, ligou para a polícia, rezou e chorou. Mas foi um susto espalhado, não uma fuga em massa.",
+   "animacao": {
+    "tipo": "documento",
+    "titulo": "Broadcast Hysteria",
+    "autor": "A. Brad Schwartz",
+    "ano": 2015,
+    "trecho": "Muitos ouvintes se assustaram, mas a grande maioria não fugiu de casa. O pânico nacional foi, em boa parte, criado depois.",
+    "destaque": "criado depois",
+    "p0": 0.25,
+    "p1": 0.8,
+    "nota": "ideia central do livro, em tradução livre"
+   },
+   "id": 63
+  },
+  {
+   "texto": "E aqui está a ironia mais curiosa desta história. A histeria coletiva da Guerra dos Mundos talvez não tenha acontecido nas ruas. Ela aconteceu nos jornais. Milhões de pessoas passaram décadas acreditando num pânico que, em grande parte, nunca existiu.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "cenario/lugar",
+    "props": {
+     "lugar": "sala-radio",
+     "hora": "noite",
+     "figuras": [
+      {
+       "traje": "anos30",
+       "pose": "sentado",
+       "rosto": "fechado",
+       "x": 1320,
+       "escala": 0.8,
+       "seed": 5
+      }
+     ]
+    }
+   },
+   "lofi": "leve",
+   "id": 64
+  },
+  {
+   "texto": "",
+   "animacao": {
+    "tipo": "capitulo",
+    "numero": 4,
+    "titulo": "A epidemia de riso"
+   },
+   "id": 65
+  },
+  {
+   "texto": "Agora a gente vai para a África Oriental. Às margens do lago Vitória, num país que tinha acabado de ficar independente: Tanganica, que hoje faz parte da Tanzânia.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "mapa/voo",
+    "props": {
+     "pontos": [
+      {
+       "nome": "Kashasha",
+       "ano": 1962,
+       "lon": 31.6,
+       "lat": -1.25,
+       "p": 0.65
+      }
+     ],
+     "destaque": [
+      "Tanzania"
+     ],
+     "de": {
+      "lon": 25,
+      "lat": 5,
+      "zoom": 1.6
+     },
+     "ate": {
+      "lon": 31.6,
+      "lat": -1.25,
+      "zoom": 9
+     },
+     "rota": false,
+     "noite": false
+    }
+   },
+   "transicao": "zoom",
+   "id": 66
+  },
+  {
+   "texto": "Kashasha, trinta de janeiro de mil novecentos e sessenta e dois. Num internato de meninas mantido por uma missão religiosa, três alunas começam a rir. E não conseguem parar.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "cenario/lugar",
+    "props": {
+     "lugar": "escola",
+     "hora": "dia",
+     "figuras": [
+      {
+       "traje": "estudante",
+       "pose": "rindo",
+       "rosto": "riso",
+       "x": 760,
+       "seed": 31
+      },
+      {
+       "traje": "estudante",
+       "pose": "rindo",
+       "rosto": "riso",
+       "x": 960,
+       "seed": 32
+      },
+      {
+       "traje": "estudante",
+       "pose": "rindo",
+       "rosto": "riso",
+       "x": 1160,
+       "seed": 33
+      }
+     ]
+    }
+   },
+   "local": {
+    "texto": "Kashasha, Tanganica",
+    "ano": 1962
+   },
+   "id": 67
+  },
+  {
+   "texto": "Parece engraçado, mas não era. As crises de riso duravam de minutos a horas, misturadas com choro, desmaios, falta de ar e inquietação. Algumas meninas tinham crises durante semanas. Elas estavam assustadas.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "cenario/lugar",
+    "props": {
+     "lugar": "escola",
+     "hora": "dourado",
+     "figuras": [
+      {
+       "traje": "estudante",
+       "pose": "rindo",
+       "rosto": "grito",
+       "x": 960,
+       "escala": 1.15,
+       "seed": 31
+      }
+     ]
+    }
+   },
+   "lofi": "forte",
+   "id": 68
+  },
+  {
+   "texto": "O riso se espalhou pela escola. De cento e cinquenta e nove alunas, noventa e cinco foram afetadas. Em março, sem saber o que fazer, a direção fechou o internato e mandou todo mundo para casa.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "cenario/lugar",
+    "props": {
+     "lugar": "escola",
+     "hora": "dia",
+     "multidao": {
+      "n": 12,
+      "traje": "estudante",
+      "pose": "rindo",
+      "rosto": "riso",
+      "entra": 0.05,
+      "contagio": true
+     }
+    }
+   },
+   "transicao": "luz",
+   "id": 69
+  },
+  {
+   "texto": "E foi aí que o surto saiu da escola. As meninas voltaram para suas aldeias, e o riso foi junto. Numa vila próxima, mais de duzentas pessoas tiveram crises. Outras escolas da região também precisaram fechar.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "mapa/voo",
+    "props": {
+     "pontos": [
+      {
+       "nome": "Kashasha",
+       "lon": 31.6,
+       "lat": -1.25,
+       "p": 0.1
+      },
+      {
+       "nome": "Nshamba",
+       "lon": 31.55,
+       "lat": -1.8,
+       "p": 0.5
+      },
+      {
+       "nome": "Bukoba",
+       "lon": 31.8,
+       "lat": -1.33,
+       "p": 0.8
+      }
+     ],
+     "destaque": [
+      "Tanzania"
+     ],
+     "de": {
+      "lon": 31.6,
+      "lat": -1.4,
+      "zoom": 9
+     },
+     "ate": {
+      "lon": 31.65,
+      "lat": -1.5,
+      "zoom": 14
+     },
+     "rota": true,
+     "noite": false
+    }
+   },
+   "id": 70
+  },
+  {
+   "texto": "Médicos examinaram as pacientes. Fizeram exames, procuraram infecções e venenos na comida. Não encontraram nada. O surto foi descrito no ano seguinte numa revista médica da África Central.",
+   "animacao": {
+    "tipo": "documento",
+    "titulo": "An epidemic of laughing in the Bukoba district of Tanganyika",
+    "autor": "A. M. Rankin e P. J. Philip",
+    "ano": 1963,
+    "trecho": "The epidemic began on 30th January 1962 at a mission-run boarding school for girls.",
+    "destaque": "30th January 1962",
+    "p0": 0.25,
+    "p1": 0.8,
+    "revista": "Central African Journal of Medicine"
+   },
+   "id": 71
+  },
+  {
+   "texto": "Ao todo, estima-se que cerca de mil pessoas foram afetadas ao longo de um ano e meio. Ninguém morreu. E o surto foi sumindo aos poucos, do mesmo jeito misterioso que começou.",
+   "animacao": {
+    "tipo": "conceito",
+    "nome": "~1.000",
+    "frase": "pessoas afetadas em 18 meses",
+    "rotulo": "O TAMANHO DO SURTO"
+   },
+   "id": 72
+  },
+  {
+   "texto": "Um detalhe intrigante: as professoras não foram afetadas. O surto pegava as alunas, os jovens das aldeias, às vezes os pais delas. Mas quase nunca quem estava no comando.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "cenario/lugar",
+    "props": {
+     "lugar": "escola",
+     "hora": "dia",
+     "figuras": [
+      {
+       "traje": "jaleco",
+       "pose": "parado",
+       "rosto": "neutro",
+       "x": 700,
+       "seed": 34
+      },
+      {
+       "traje": "estudante",
+       "pose": "rindo",
+       "rosto": "riso",
+       "x": 1150,
+       "seed": 35
+      }
+     ]
+    }
+   },
+   "id": 73
+  },
+  {
+   "texto": "A explicação mais aceita lembra muito as outras. Era um momento de mudança enorme no país. Os internatos eram rígidos, e as alunas viviam entre as tradições de casa e as regras de fora. Pressão sem válvula de escape.",
+   "animacao": {
+    "tipo": "carimbo",
+    "texto": "EM DEBATE",
+    "frase": "O riso foi causado por estresse",
+    "p": 0.2
+   },
+   "id": 74
+  },
+  {
+   "texto": "Esse padrão se repete em quase todos os casos: quem tinha menos poder sobre a própria vida era quem adoecia primeiro.",
+   "animacao": {
+    "tipo": "ilustracao",
+    "nome": "balanca"
+   },
+   "id": 75
+  },
+  {
+   "texto": "",
+   "animacao": {
+    "tipo": "capitulo",
+    "numero": 5,
+    "titulo": "A histeria na era das telas"
+   },
+   "id": 76
+  },
+  {
+   "texto": "Você deve estar pensando: isso é coisa do passado. Hoje a gente tem ciência, internet e informação. Será?",
+   "personagens": [
+    {
+     "id": "cifrinho",
+     "gesto": "pensar",
+     "expressao": "pensativo"
+    }
+   ],
+   "animacao": {
+    "tipo": "nenhuma"
+   },
+   "id": 77
+  },
+  {
+   "texto": "Antes, um caso pouco conhecido. Estados Unidos, junho de mil novecentos e sessenta e dois. Numa fábrica de tecidos, uma funcionária desmaia e diz ter sido picada por um inseto vindo de um carregamento de pano. Em poucos dias, sessenta e dois trabalhadores têm náuseas, tontura e desmaios.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "cenario/lugar",
+    "props": {
+     "lugar": "hospital",
+     "hora": "dia",
+     "figuras": [
+      {
+       "traje": "comum",
+       "pose": "assustado",
+       "rosto": "preocupado",
+       "x": 760,
+       "seed": 43
+      },
+      {
+       "traje": "medico",
+       "pose": "falando",
+       "rosto": "neutro",
+       "x": 1200,
+       "seed": 44
+      }
+     ]
+    }
+   },
+   "local": {
+    "texto": "Fábrica têxtil, EUA",
+    "ano": 1962
+   },
+   "id": 78
+  },
+  {
+   "texto": "Agentes de saúde e entomologistas vasculharam a fábrica. Não encontraram nenhum inseto capaz de causar aquilo. Os casos se concentravam entre as funcionárias mais sobrecarregadas, e entre amigas. O caso ficou conhecido como a epidemia do inseto de junho.",
+   "animacao": {
+    "tipo": "carimbo",
+    "texto": "VERDADE",
+    "frase": "O inseto nunca foi encontrado",
+    "p": 0.3
+   },
+   "id": 79
+  },
+  {
+   "texto": "Le Roy, interior do estado de Nova York, dois mil e onze. Uma estudante do ensino médio acorda de um cochilo com tiques: movimentos bruscos e sons que ela não controla. Em poucas semanas, outras garotas da mesma escola começam a ter os mesmos sintomas.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "mapa/voo",
+    "props": {
+     "pontos": [
+      {
+       "nome": "Le Roy",
+       "ano": 2011,
+       "lon": -77.99,
+       "lat": 42.98,
+       "p": 0.5
+      }
+     ],
+     "destaque": [
+      "United States of America"
+     ],
+     "de": {
+      "lon": -90,
+      "lat": 40,
+      "zoom": 2
+     },
+     "ate": {
+      "lon": -77.99,
+      "lat": 42.98,
+      "zoom": 9
+     },
+     "rota": false,
+     "noite": false
+    }
+   },
+   "local": {
+    "texto": "Le Roy, Nova York",
+    "ano": 2011
+   },
+   "id": 80
+  },
+  {
+   "texto": "O caso virou notícia nacional. A ativista Erin Brockovich foi até a cidade investigar um antigo vazamento de produtos químicos de um trem. Nada foi encontrado. Os médicos diagnosticaram transtorno conversivo, com contágio em grupo.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "cenario/lugar",
+    "props": {
+     "lugar": "universidade",
+     "hora": "dourado",
+     "figuras": [
+      {
+       "traje": "comum",
+       "pose": "assustado",
+       "rosto": "preocupado",
+       "x": 760,
+       "seed": 41
+      },
+      {
+       "traje": "jaleco",
+       "pose": "falando",
+       "rosto": "neutro",
+       "x": 1200,
+       "seed": 42
+      }
+     ]
+    }
+   },
+   "id": 81
+  },
+  {
+   "texto": "E a parte assustadora: as garotas que mais apareceram na TV e na internet foram as que demoraram mais para melhorar. A exposição alimentava o surto.",
+   "animacao": {
+    "tipo": "carimbo",
+    "texto": "VERDADE",
+    "frase": "A exposição piorou os sintomas",
+    "p": 0.3
+   },
+   "id": 82
+  },
+  {
+   "texto": "Agora avance para dois mil e vinte. Pandemia, todo mundo trancado em casa, olhando para o celular. Neurologistas de vários países começam a receber um número fora do normal de adolescentes com tiques que surgiram de repente.",
+   "broll": "teenager phone dark room",
+   "lofi": "leve",
+   "transicao": "deslize",
+   "animacao": {
+    "tipo": "nenhuma"
+   },
+   "id": 83
+  },
+  {
+   "texto": "Os tiques eram muito parecidos entre si. E muito parecidos com os de influenciadores com síndrome de Tourette que estavam viralizando nas redes. Alguns pacientes repetiam até as mesmas palavras dos vídeos.",
+   "animacao": {
+    "tipo": "lista",
+    "itens": [
+     "Surgem de repente",
+     "Iguais aos dos vídeos virais",
+     "Mais comuns em meninas",
+     "Pioram com o estresse"
+    ]
+   },
+   "id": 84
+  },
+  {
+   "texto": "Na Alemanha, uma equipe de médicos ligou dezenas de casos a um único youtuber. Eles propuseram um nome novo para isso: doença sociogênica em massa induzida pelas redes sociais.",
+   "animacao": {
+    "tipo": "documento",
+    "titulo": "Stop that! It's not Tourette's but a new type of mass sociogenic illness",
+    "autor": "K. Müller-Vahl e colegas",
+    "ano": 2022,
+    "trecho": "We propose to term this new type of mass sociogenic illness mass social media-induced illness.",
+    "destaque": "mass social media-induced illness",
+    "p0": 0.25,
+    "p1": 0.8,
+    "revista": "Brain"
+   },
+   "id": 85
+  },
+  {
+   "texto": "Perceba o que mudou. Em Estrasburgo, a pessoa precisava ver alguém dançando na rua. Hoje, o primeiro caso visível está no seu bolso. E chega a milhões de pessoas ao mesmo tempo.",
+   "animacao": {
+    "tipo": "cena3d",
+    "nome": "neuronios"
+   },
+   "lofi": "forte",
+   "id": 86
+  },
+  {
+   "texto": "",
+   "animacao": {
+    "tipo": "capitulo",
+    "numero": 6,
+    "titulo": "Por que a mente se contagia",
+    "rotulo": "Epílogo"
+   },
+   "id": 87
+  },
+  {
+   "texto": "Quinhentos anos, quatro continentes, e o mesmo padrão. Os pesquisadores que estudam esses surtos, como o sociólogo Robert Bartholomew, apontam quase sempre os mesmos ingredientes.",
+   "animacao": {
+    "tipo": "ilustracao",
+    "nome": "neuronios"
+   },
+   "id": 88
+  },
+  {
+   "texto": "Primeiro, um grupo fechado: uma cidade isolada, uma vila, um internato, uma escola. Segundo, muito estresse acumulado, sem válvula de escape. Terceiro, uma crença compartilhada sobre o que pode acontecer. E, por fim, um primeiro caso que todo mundo vê.",
+   "animacao": {
+    "tipo": "lista",
+    "itens": [
+     "Um grupo fechado",
+     "Estresse acumulado",
+     "Uma crença compartilhada",
+     "Um primeiro caso visível"
+    ]
+   },
+   "id": 89
+  },
+  {
+   "texto": "E o mais importante: ninguém está fingindo. O cérebro realmente produz a dor, o desmaio, o tremor, o riso. É o mesmo mecanismo do efeito nocebo, quando alguém passa mal só porque acredita que vai passar mal.",
+   "animacao": {
+    "tipo": "conceito",
+    "nome": "Efeito nocebo",
+    "frase": "A expectativa vira sintoma",
+    "rotulo": "O MECANISMO"
+   },
+   "id": 90
+  },
+  {
+   "texto": "Tem também a imitação. A gente copia sem perceber o bocejo, o sorriso e o jeito de falar de quem está perto. Em situações de medo, esse espelhamento fica ainda mais forte. Ver alguém passar mal ensina o cérebro a esperar o mesmo.",
+   "animacao": {
+    "tipo": "cena3d",
+    "nome": "neuronios"
+   },
+   "id": 91
+  },
+  {
+   "texto": "Por isso chamar essas pessoas de loucas ou mentirosas não ajuda. O que costuma funcionar é o contrário do que fizeram em Estrasburgo: tirar o palco, separar os casos, diminuir a atenção, acolher sem alarde e tratar o estresse que estava por baixo.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "cenario/lugar",
+    "props": {
+     "lugar": "vila-medieval",
+     "hora": "dia",
+     "figuras": [
+      {
+       "traje": "camponesa",
+       "pose": "parado",
+       "rosto": "neutro",
+       "x": 960,
+       "seed": 7
+      }
+     ]
+    }
+   },
+   "transicao": "luz",
+   "id": 92
+  },
+  {
+   "texto": "Talvez a lição mais assustadora seja essa. A gente gosta de pensar que é dono da própria mente. Mas, em certas condições, ela aprende a sentir o que os outros à nossa volta estão sentindo. Para o bem e para o mal.",
+   "animacao": {
+    "tipo": "cena3d",
+    "nome": "cerebro"
+   },
+   "id": 93
+  },
+  {
+   "texto": "E agora me conta aqui nos comentários: qual dessas histórias te deu mais arrepio? A dança de Estrasburgo, as bruxas de Salém, os marcianos ou a epidemia de riso?",
+   "personagens": [
+    {
+     "id": "cifrinho",
+     "gesto": "acenar",
+     "expressao": "feliz"
+    }
+   ],
+   "animacao": {
+    "tipo": "nenhuma"
+   },
+   "id": 94
+  },
+  {
+   "texto": "Se você curtiu esse documentário, se inscreve. Ainda tem muita história da mente humana pra gente contar. Eu sou o Cifrinho. Descifre e domine.",
+   "animacao": {
+    "tipo": "encerramento"
+   },
+   "capitulo": "Até a próxima",
+   "id": 95
+  }
+ ]
+}
