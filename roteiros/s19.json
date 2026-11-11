@@ -1,0 +1,136 @@
+{
+ "id": "s19",
+ "titulo": "Qual desses distúrbios você escolheria?",
+ "formato": "short",
+ "voz": "en-US-BrianMultilingualNeural",
+ "taxa": "+8%",
+ "trilha": "misterio",
+ "cenas": [
+  {
+   "texto": "Se você fosse obrigado a ter um desses distúrbios reais, qual escolheria?",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "ilusao/escolha",
+    "props": {
+     "cartas": [
+      {
+       "titulo": "Cotard",
+       "frase": "Ter certeza de que está morto",
+       "emoji": "💀"
+      },
+      {
+       "titulo": "Capgras",
+       "frase": "Achar que sua família foi trocada",
+       "emoji": "🎭"
+      },
+      {
+       "titulo": "Alice",
+       "frase": "Ver o mundo encolher e esticar",
+       "emoji": "🍄"
+      }
+     ]
+    }
+   },
+   "id": 1
+  },
+  {
+   "texto": "Pensa rápido.",
+   "animacao": {
+    "tipo": "contagem"
+   },
+   "id": 2
+  },
+  {
+   "texto": "Na síndrome de Cotard, a pessoa jura que está morta, ou que perdeu os órgãos. Alguns param de comer.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "ilusao/escolha",
+    "props": {
+     "abrir": 0,
+     "cartas": [
+      {
+       "titulo": "Cotard",
+       "frase": "Ter certeza de que está morto",
+       "emoji": "💀"
+      },
+      {
+       "titulo": "Capgras",
+       "frase": "Achar que sua família foi trocada",
+       "emoji": "🎭"
+      },
+      {
+       "titulo": "Alice",
+       "frase": "Ver o mundo encolher e esticar",
+       "emoji": "🍄"
+      }
+     ]
+    }
+   },
+   "id": 3
+  },
+  {
+   "texto": "Na síndrome de Capgras, você reconhece o rosto da sua mãe, mas tem certeza de que é uma impostora.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "ilusao/escolha",
+    "props": {
+     "abrir": 1,
+     "cartas": [
+      {
+       "titulo": "Cotard",
+       "frase": "Ter certeza de que está morto",
+       "emoji": "💀"
+      },
+      {
+       "titulo": "Capgras",
+       "frase": "Achar que sua família foi trocada",
+       "emoji": "🎭"
+      },
+      {
+       "titulo": "Alice",
+       "frase": "Ver o mundo encolher e esticar",
+       "emoji": "🍄"
+      }
+     ]
+    }
+   },
+   "id": 4
+  },
+  {
+   "texto": "E na síndrome de Alice no País das Maravilhas, objetos e partes do corpo parecem mudar de tamanho na sua frente.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "ilusao/escolha",
+    "props": {
+     "abrir": 2,
+     "cartas": [
+      {
+       "titulo": "Cotard",
+       "frase": "Ter certeza de que está morto",
+       "emoji": "💀"
+      },
+      {
+       "titulo": "Capgras",
+       "frase": "Achar que sua família foi trocada",
+       "emoji": "🎭"
+      },
+      {
+       "titulo": "Alice",
+       "frase": "Ver o mundo encolher e esticar",
+       "emoji": "🍄"
+      }
+     ]
+    }
+   },
+   "id": 5
+  },
+  {
+   "texto": "Comenta o número da sua escolha. E se a mente te assusta, assiste o documentário do link.",
+   "animacao": {
+    "tipo": "cta",
+    "texto": "COMENTA 1, 2 OU 3"
+   },
+   "id": 6
+  }
+ ]
+}

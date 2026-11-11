@@ -1,0 +1,74 @@
+{
+ "id": "s18",
+ "titulo": "Qual caminhão está freando?",
+ "formato": "short",
+ "voz": "en-US-BrianMultilingualNeural",
+ "taxa": "+8%",
+ "trilha": "misterio",
+ "cenas": [
+  {
+   "texto": "Olha bem. Qual desses caminhões está freando?",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "ilusao/passos",
+    "props": {
+     "fase": "teste"
+    }
+   },
+   "pausa": 2.5,
+   "id": 1
+  },
+  {
+   "texto": "O amarelo? O azul? Responde aí nos comentários.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "ilusao/passos",
+    "props": {
+     "fase": "teste"
+    }
+   },
+   "id": 2
+  },
+  {
+   "texto": "Agora olha o que acontece quando as listras somem.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "ilusao/passos",
+    "props": {
+     "fase": "revelar"
+    }
+   },
+   "pausa": 1.5,
+   "id": 3
+  },
+  {
+   "texto": "Nenhum freia. Os dois andam juntos, na mesma velocidade, o tempo todo.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "ilusao/passos",
+    "props": {
+     "fase": "revelado"
+    }
+   },
+   "id": 4
+  },
+  {
+   "texto": "As listras mudam o contraste em volta, e o seu cérebro lê contraste como movimento. É a ilusão dos passos, de Stuart Anstis.",
+   "animacao": {
+    "tipo": "conceito",
+    "nome": "Ilusão dos passos",
+    "frase": "Contraste vira movimento",
+    "rotulo": "O NOME"
+   },
+   "id": 5
+  },
+  {
+   "texto": "Tem mais armadilhas que enganam gente inteligente no vídeo do link.",
+   "animacao": {
+    "tipo": "cta",
+    "texto": "FAÇA O TESTE"
+   },
+   "id": 6
+  }
+ ]
+}

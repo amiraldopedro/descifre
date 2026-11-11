@@ -1,0 +1,83 @@
+{
+ "id": "s17",
+ "titulo": "O contrário do placebo",
+ "formato": "short",
+ "voz": "en-US-BrianMultilingualNeural",
+ "taxa": "+8%",
+ "trilha": "misterio",
+ "cenas": [
+  {
+   "texto": "Existe o contrário do placebo. E ele te faz mal de verdade.",
+   "animacao": {
+    "tipo": "gancho",
+    "texto": "O CONTRÁRIO DO PLACEBO"
+   },
+   "id": 1
+  },
+  {
+   "texto": "No placebo, você toma um comprimido de açúcar e melhora porque acredita. No nocebo, você piora porque espera piorar.",
+   "animacao": {
+    "tipo": "conceito",
+    "nome": "Efeito nocebo",
+    "frase": "A expectativa vira sintoma",
+    "rotulo": "O NOME"
+   },
+   "id": 2
+  },
+  {
+   "texto": "Em dois mil e vinte, médicos de Londres deram a pacientes, sem eles saberem, ora remédio para colesterol, ora comprimido de açúcar.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "cenario/lugar",
+    "props": {
+     "lugar": "hospital",
+     "hora": "dia",
+     "figuras": [
+      {
+       "traje": "comum",
+       "pose": "parado",
+       "rosto": "preocupado",
+       "x": 760,
+       "seed": 51
+      },
+      {
+       "traje": "medico",
+       "pose": "falando",
+       "rosto": "neutro",
+       "x": 1200,
+       "seed": 52
+      }
+     ]
+    }
+   },
+   "id": 3
+  },
+  {
+   "texto": "Resultado: noventa por cento dos efeitos colaterais que eles sentiam com o remédio também apareciam com o açúcar.",
+   "animacao": {
+    "tipo": "conceito",
+    "nome": "90%",
+    "frase": "dos sintomas vieram da expectativa",
+    "rotulo": "O ESTUDO"
+   },
+   "id": 4
+  },
+  {
+   "texto": "A dor era real. A causa era a mente.",
+   "lofi": "forte",
+   "animacao": {
+    "tipo": "cena3d",
+    "nome": "cerebro"
+   },
+   "id": 5
+  },
+  {
+   "texto": "E quando isso pula de uma pessoa pra outra, cidades inteiras adoecem. Tá no documentário do link.",
+   "animacao": {
+    "tipo": "cta",
+    "texto": "VEJA O DOCUMENTÁRIO"
+   },
+   "id": 6
+  }
+ ]
+}

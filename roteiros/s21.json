@@ -1,0 +1,70 @@
+{
+ "id": "s21",
+ "titulo": "Que lado do cérebro você usa?",
+ "formato": "short",
+ "voz": "en-US-BrianMultilingualNeural",
+ "taxa": "+8%",
+ "trilha": "misterio",
+ "cenas": [
+  {
+   "texto": "Teste rápido. O que você viu primeiro?",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "ilusao/vaso",
+    "props": {
+     "fase": "teste"
+    }
+   },
+   "pausa": 2.5,
+   "id": 1
+  },
+  {
+   "texto": "Dizem que quem vê o vaso usa o lado esquerdo do cérebro, e quem vê os rostos usa o direito.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "ilusao/vaso",
+    "props": {
+     "fase": "revelar"
+    }
+   },
+   "id": 2
+  },
+  {
+   "texto": "Pegadinha. Isso é mito.",
+   "animacao": {
+    "tipo": "gancho",
+    "texto": "É MITO"
+   },
+   "id": 3
+  },
+  {
+   "texto": "Em dois mil e treze, pesquisadores de Utah analisaram o cérebro de mais de mil pessoas. Ninguém tinha um lado dominante. Todo mundo usa os dois.",
+   "animacao": {
+    "tipo": "conceito",
+    "nome": "Mais de 1.000 cérebros",
+    "frase": "Nenhum lado dominante",
+    "rotulo": "O ESTUDO"
+   },
+   "id": 4
+  },
+  {
+   "texto": "O que muda é o que o seu cérebro escolhe como fundo e como figura. E ele pode trocar a qualquer momento.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "ilusao/vaso",
+    "props": {
+     "fase": "revelar"
+    }
+   },
+   "id": 5
+  },
+  {
+   "texto": "Comenta o que você viu primeiro. E tem mais armadilhas da mente no vídeo do link.",
+   "animacao": {
+    "tipo": "cta",
+    "texto": "VASO OU ROSTOS?"
+   },
+   "id": 6
+  }
+ ]
+}

@@ -1,0 +1,60 @@
+{
+ "id": "s20",
+ "titulo": "Por que você bocejou agora?",
+ "formato": "short",
+ "voz": "en-US-BrianMultilingualNeural",
+ "taxa": "+8%",
+ "trilha": "misterio",
+ "cenas": [
+  {
+   "texto": "Aposto que você vai bocejar antes desse vídeo acabar.",
+   "animacao": {
+    "tipo": "gancho",
+    "texto": "VOCÊ VAI BOCEJAR"
+   },
+   "id": 1
+  },
+  {
+   "texto": "Ver alguém bocejar, ouvir um bocejo, ou até ler a palavra bocejo já basta. Em estudos, cerca de metade das pessoas boceja só de assistir.",
+   "broll": "person yawning",
+   "animacao": {
+    "tipo": "conceito",
+    "nome": "Bocejo contagioso",
+    "frase": "Basta ver, ouvir ou ler",
+    "rotulo": "O FENÔMENO"
+   },
+   "id": 2
+  },
+  {
+   "texto": "E ele pega mais forte entre pessoas próximas. Você boceja mais com a família do que com estranhos.",
+   "personagens": [
+    {
+     "id": "cifrinho",
+     "gesto": "explicar",
+     "expressao": "feliz"
+    }
+   ],
+   "animacao": {
+    "tipo": "nenhuma"
+   },
+   "id": 3
+  },
+  {
+   "texto": "O cérebro copia o que vê nos outros sem pedir licença. É o mesmo mecanismo por trás de surtos que já fizeram cidades inteiras dançarem sem parar.",
+   "lofi": "forte",
+   "animacao": {
+    "tipo": "cena3d",
+    "nome": "neuronios"
+   },
+   "id": 4
+  },
+  {
+   "texto": "Bocejou? Comenta aí. E a história completa tá no documentário do link.",
+   "animacao": {
+    "tipo": "cta",
+    "texto": "BOCEJOU? COMENTA"
+   },
+   "id": 5
+  }
+ ]
+}
