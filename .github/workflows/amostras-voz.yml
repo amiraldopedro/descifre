@@ -1,0 +1,95 @@
+name: Amostras de voz
+
+# Gera a mesma frase com várias vozes grátis (Edge, Kokoro, Chatterbox) e salva em amostras/voz/ para comparar.
+on:
+  workflow_dispatch:
+    inputs:
+      texto:
+        description: "Frase de teste"
+        default: "Estrasburgo, julho de mil quinhentos e dezoito. Uma mulher sai de casa e começa a dançar no meio da rua. Ela não para. No dia seguinte, outras pessoas se juntam a ela. E ninguém sabe explicar por quê."
+
+permissions:
+  contents: write
+
+jobs:
+  amostras:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Ferramentas
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg espeak-ng > /dev/null
+          pip install -q edge-tts soundfile numpy
+          pip install -q "kokoro>=0.9.4" || true
+          pip install -q --extra-index-url https://download.pytorch.org/whl/cpu chatterbox-tts || true
+      - name: Gerar
+        env:
+          TEXTO: ${{ github.event.inputs.texto }}
+        run: |
+          mkdir -p amostras/voz
+          python - <<'EOF'
+          import asyncio, os, subprocess, traceback
+          texto = os.environ["TEXTO"]
+          out = "amostras/voz"
+          def mp3(wav, nome):
+              subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", wav, "-b:a", "128k", f"{out}/{nome}.mp3"], check=True)
+              print("ok", nome)
+
+          # 1) Edge (a voz de hoje e as multilíngues)
+          async def edge():
+              import edge_tts
+              for nome, voz in [("1_edge_antonio_atual", "pt-BR-AntonioNeural"), ("2_edge_thalita_multilingue", "pt-BR-ThalitaMultilingualNeural"),
+                                ("3_edge_andrew_multilingue", "en-US-AndrewMultilingualNeural"), ("4_edge_brian_multilingue", "en-US-BrianMultilingualNeural")]:
+                  try:
+                      await edge_tts.Communicate(texto, voz, rate="-4%").save(f"{out}/{nome}.mp3"); print("ok", nome)
+                  except Exception:
+                      traceback.print_exc()
+          asyncio.run(edge())
+
+          # 2) Kokoro (Apache 2.0)
+          try:
+              import numpy as np, soundfile as sf
+              from kokoro import KPipeline
+              pipe = KPipeline(lang_code="p")
+              for v in ["pm_alex", "pm_santa", "pf_dora"]:
+                  a = np.concatenate([c for _, _, c in pipe(texto, voice=v, speed=0.95)])
+                  sf.write("k.wav", a, 24000); mp3("k.wav", f"5_kokoro_{v}")
+          except Exception:
+              traceback.print_exc()
+
+          # 3) Chatterbox Multilingual (MIT)
+          try:
+              import torch, torchaudio as ta
+              from chatterbox.mtl_tts import ChatterboxMultilingualTTS
+              try:
+                  m = ChatterboxMultilingualTTS.from_pretrained(device="cpu", t3_model="v3")
+              except TypeError:
+                  m = ChatterboxMultilingualTTS.from_pretrained(device="cpu")
+              for nome, ex, cfg in [("6_chatterbox_padrao", 0.5, 0.5), ("7_chatterbox_dramatico", 0.8, 0.35)]:
+                  w = m.generate(texto, language_id="pt", exaggeration=ex, cfg_weight=cfg)
+                  ta.save("c.wav", w, m.sr); mp3("c.wav", nome)
+              # versão própria para português do Brasil, se a biblioteca souber carregar
+              try:
+                  from huggingface_hub import snapshot_download
+                  d = snapshot_download("ResembleAI/Chatterbox-Multilingual-pt-br")
+                  print("arquivos pt-br:", os.listdir(d))
+                  mb = ChatterboxMultilingualTTS.from_local(d, device="cpu")
+                  w = mb.generate(texto, language_id="pt", exaggeration=0.6, cfg_weight=0.45)
+                  ta.save("c.wav", w, mb.sr); mp3("c.wav", "8_chatterbox_ptbr")
+              except Exception:
+                  traceback.print_exc()
+          except Exception:
+              traceback.print_exc()
+          EOF
+          ls -la amostras/voz
+      - name: Salvar no repositório
+        run: |
+          git config user.name "descifre-bot"
+          git config user.email "descifre-bot@users.noreply.github.com"
+          git add amostras/voz
+          git commit -m "Amostras de voz [skip ci]" || exit 0
+          git pull --rebase origin main && git push origin HEAD:main
