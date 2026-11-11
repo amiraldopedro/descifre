@@ -1,0 +1,44 @@
+name: Capítulos (só tempos, sem renderizar)
+
+on:
+  workflow_dispatch:
+    inputs:
+      ids:
+        description: "IDs separados por espaço, ex: 008 009"
+        required: true
+
+jobs:
+  capitulos:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: Ferramentas
+        timeout-minutes: 6
+        run: |
+          BASE=https://github.com/BtbN/FFmpeg-Builds/releases/download/latest
+          for NOME in ffmpeg-n7.1-latest-linux64-gpl-7.1 ffmpeg-master-latest-linux64-gpl; do
+            curl -sfL --max-time 240 --retry 3 -o /tmp/ff.tar.xz $BASE/$NOME.tar.xz && tar -xJf /tmp/ff.tar.xz -C /tmp \
+              && sudo cp /tmp/$NOME/bin/ff* /usr/local/bin/ && break
+          done
+          pip install -q --timeout 60 edge-tts
+      - name: Voz, manifesto e capítulos
+        run: |
+          for ID in ${{ inputs.ids }}; do
+            python scripts/voz.py $ID > /dev/null
+            python scripts/montar.py $ID > /dev/null
+            python - "$ID" <<'EOF'
+          import json, sys, re
+          vid = sys.argv[1]
+          src = open("scripts/publicar.py").read()
+          ini = src.index("def capitulos")
+          fim = src.index("\ndef ", ini + 5)
+          ns = {"json": json, "re": re}
+          exec(src[ini:fim], ns)
+          m = json.load(open(f"public/build/{vid}/manifest.json"))
+          print(f"===== {vid} ({sum(c['duracao'] for c in m['cenas'])} frames)")
+          print(ns["capitulos"](m))
+          EOF
+          done
