@@ -50,13 +50,16 @@ jobs:
         with: { python-version: "3.12" }
 
       - name: Instalar ferramentas
+        timeout-minutes: 8
         run: |
-          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
-          pip install -q edge-tts piper-tts
+          APT="-o Acquire::Retries=3 -o Acquire::http::Timeout=30 -o Acquire::https::Timeout=30"
+          command -v ffmpeg || (sudo apt-get $APT update -qq && sudo apt-get $APT install -y -qq --no-install-recommends ffmpeg > /dev/null)
+          pip install -q --timeout 60 edge-tts piper-tts
           mkdir -p modelos
-          # voz reserva (Piper) caso o Edge TTS falhe
-          curl -sL -o modelos/pt_BR-faber-medium.onnx https://huggingface.co/rhasspy/piper-voices/resolve/main/pt/pt_BR/faber/medium/pt_BR-faber-medium.onnx
-          curl -sL -o modelos/pt_BR-faber-medium.onnx.json https://huggingface.co/rhasspy/piper-voices/resolve/main/pt/pt_BR/faber/medium/pt_BR-faber-medium.onnx.json
+          # voz reserva (Piper) caso o Edge TTS falhe; se o download travar, segue sem ela
+          for ext in onnx onnx.json; do
+            curl -sL --max-time 180 --retry 2 -o modelos/pt_BR-faber-medium.$ext https://huggingface.co/rhasspy/piper-voices/resolve/main/pt/pt_BR/faber/medium/pt_BR-faber-medium.$ext || rm -f modelos/pt_BR-faber-medium.$ext
+          done
 
       - name: Voz e legendas
         run: python scripts/voz.py ${{ steps.id.outputs.id }}
@@ -67,6 +70,7 @@ jobs:
 
       - name: Imagens de arquivo reais (Commons e Internet Archive)
         continue-on-error: true
+        timeout-minutes: 12
         run: python scripts/arquivo.py ${{ steps.id.outputs.id }}
 
       - name: Montar manifesto, narração e efeitos
@@ -135,7 +139,8 @@ jobs:
         with: { name: build, path: "public/build/${{ needs.preparar.outputs.id }}" }
       - name: Juntar partes e colocar o áudio
         run: |
-          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
+          APT="-o Acquire::Retries=3 -o Acquire::http::Timeout=30 -o Acquire::https::Timeout=30"
+          command -v ffmpeg || (sudo apt-get $APT update -qq && sudo apt-get $APT install -y -qq --no-install-recommends ffmpeg > /dev/null)
           ID=${{ needs.preparar.outputs.id }}
           ls out/parte_*.mp4 | sort -V | sed "s|^out/|file '|; s|$|'|" > out/lista.txt
           ffmpeg -y -loglevel error -f concat -safe 0 -i out/lista.txt -c copy out/video_mudo.mp4

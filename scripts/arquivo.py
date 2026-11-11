@@ -83,7 +83,7 @@ def archive(busca=None, ident=None):
 def recortar(url, tipo, destino: Path, inicio=0, dur=8):
     escala = "scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080"
     if tipo == "video":
-        cmd = ["ffmpeg", "-y", "-loglevel", "error", "-ss", str(inicio), "-i", url, "-t", str(dur), "-an",
+        cmd = ["ffmpeg", "-y", "-loglevel", "error", "-rw_timeout", "30000000", "-ss", str(inicio), "-i", url, "-t", str(dur), "-an",
                "-vf", f"{escala},fps=30,format=yuv420p", "-c:v", "libx264", "-preset", "veryfast", "-crf", "21", str(destino)]
     else:
         # imagem parada: aproxima devagar (Ken Burns), sem tremer
@@ -96,7 +96,7 @@ def recortar(url, tipo, destino: Path, inicio=0, dur=8):
                       f"zoompan=z='1+0.12*on/{n}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d={n}:s=1920x1080:fps=30,format=yuv420p",
                "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", str(destino)]
     try:
-        subprocess.run(cmd, check=True, timeout=600)
+        subprocess.run(cmd, check=True, timeout=150)
         return destino.exists() and destino.stat().st_size > 20_000
     except Exception as e:
         print(f"  ffmpeg falhou: {e}")
