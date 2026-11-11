@@ -26,6 +26,7 @@ import * as m22 from "./007/flynn";
 import * as m23 from "./007/terman";
 import * as m24 from "./d02/elevador";
 import * as m25 from "./d02/linhas-asch";
+import * as m26 from "./d03/gerador";
 export const SOB_MEDIDA: Record<string, ModuloSobMedida> = {
   "002/ancora": m0 as ModuloSobMedida,
   "002/gorila": m1 as ModuloSobMedida,
@@ -53,4 +54,5 @@ export const SOB_MEDIDA: Record<string, ModuloSobMedida> = {
   "007/terman": m23 as ModuloSobMedida,
   "d02/elevador": m24 as ModuloSobMedida,
   "d02/linhas-asch": m25 as ModuloSobMedida,
+  "d03/gerador": m26 as ModuloSobMedida,
 };

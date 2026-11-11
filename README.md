@@ -29,6 +29,28 @@ public/musica/           (opcional) coloque 1 música .mp3 sem direitos autorais
 - Trilha: `"trilha": "misterio" | "tenso" | "leve"` no roteiro (geradas por `scripts/trilha.py`).
 - Shorts: `"formato": "short"` no roteiro (arquivos `roteiros/sNN.json`).
 
+## Linguagem de documentário animado
+
+- **Câmera sempre em movimento:** toda cena aproxima devagar (push) ou desliza de lado (pan), alternando sozinha;
+  o fundo anda menos que o primeiro plano (parallax). Por cena: `"camera": "push" | "pan" | "parada"`.
+- **Fusão entre cenas** (~0,5 s) em vez de corte seco. Por cena: `"transicao": "fusao" | "corte" | "preto"`
+  (`preto` = fade para o preto, automático antes e depois de um capítulo). Cena com `"lofi": "forte"` entra com glitch.
+- **Vinheta:** `"vinheta": true` no roteiro coloca a abertura de 3,5 s do Cifrinho no começo (ou `{"tipo": "vinheta"}`).
+- **Gancho com prévias:** `"previa": 8` faz a cena mostrar o visual da cena 8 (animação, b-roll, personagens).
+- **Cenas sem fala:** `"texto": ""` (vinheta, cartela de capítulo).
+- Novos tipos de `animacao` (`src/Documentario.tsx`, sons em `scripts/montar.py`):
+
+| tipo | campos | o que faz |
+|---|---|---|
+| `local` | `texto`, `ano?` | etiqueta "LUGAR · ANO" no canto; também como campo `"local": {...}` por cima de qualquer cena |
+| `documento` | `titulo`, `autor`, `ano`, `revista?`, `trecho`, `destaque`, `nota?`, `p0?`, `p1?` | página de estudo em papel velho; marca-texto amarelo passa no `destaque` entre `p0` e `p1` da fala |
+| `carimbo` | `texto` (MITO / VERDADE / EM DEBATE), `frase?`, `p?` | carimbo bate na tela (vermelho / ciano / amarelo); com `frase`, bate em `p` da fala |
+| `capitulo` | `numero`, `titulo` | cartela cheia com fade para o preto; vira capítulo do YouTube sozinho |
+| `fim` (Shorts) | `texto?` (linhas com `\|`), `thumb?` ou `video` | "VÍDEO COMPLETO NO CANAL" com a thumb do longo (`video: "002"` usa a thumb do `002.meta.json`) e o Cifrinho apontando |
+| `vinheta` | — | abertura de 3,5 s, sempre igual |
+
+Exemplo completo: `roteiros/d03.json` (experimento de Milgram).
+
 ## Gerar um vídeo
 
 - **Automático:** suba um novo `roteiros/NNN.json` → o vídeo é gerado (sem postar).

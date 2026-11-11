@@ -1011,5 +1011,28 @@
    "som": "glitch",
    "p": 0.945
   }
+ ],
+ "d03/gerador": [
+  {
+   "som": "whoosh",
+   "p": 0.02
+  },
+  {
+   "som": "mecanico",
+   "p": 0.3
+  },
+  {
+   "som": "zap",
+   "p": 0.55
+  },
+  {
+   "som": "boom",
+   "p": 0.555,
+   "vol": 0.6
+  },
+  {
+   "som": "batida",
+   "p": 0.7
+  }
  ]
 }

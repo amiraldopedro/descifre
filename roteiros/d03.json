@@ -1,0 +1,164 @@
+{
+ "id": "d03",
+ "titulo": "Demo: O experimento da obediência (documentário animado)",
+ "trilha": "misterio",
+ "voz": "pt-BR-AntonioNeural",
+ "vinheta": true,
+ "cenas": [
+  {
+   "id": 1,
+   "texto": "Por que pessoas comuns aceitariam dar choques de 450 volts num desconhecido?",
+   "previa": 8,
+   "animacao": {
+    "tipo": "nenhuma"
+   }
+  },
+  {
+   "id": 2,
+   "texto": "O que dizia o estudo que chocou o mundo?",
+   "previa": 9,
+   "animacao": {
+    "tipo": "nenhuma"
+   }
+  },
+  {
+   "id": 3,
+   "texto": "Por que, décadas depois, os arquivos desse experimento viraram polêmica?",
+   "previa": 15,
+   "animacao": {
+    "tipo": "nenhuma"
+   }
+  },
+  {
+   "id": 4,
+   "texto": "E, afinal, isso prova que qualquer pessoa obedece a qualquer ordem?",
+   "previa": 13,
+   "animacao": {
+    "tipo": "nenhuma"
+   }
+  },
+  {
+   "id": 5,
+   "texto": "Neste vídeo, a gente responde cada uma dessas perguntas.",
+   "animacao": {
+    "tipo": "titulo",
+    "texto": "O experimento da obediência"
+   }
+  },
+  {
+   "id": 6,
+   "texto": "",
+   "animacao": {
+    "tipo": "capitulo",
+    "numero": 1,
+    "titulo": "A máquina de choque"
+   }
+  },
+  {
+   "id": 7,
+   "texto": "Universidade de Yale, 1961. Um anúncio de jornal procura voluntários para um estudo sobre memória. O pagamento: quatro dólares e meio.",
+   "broll": "old university building",
+   "animacao": {
+    "tipo": "local",
+    "texto": "Universidade de Yale",
+    "ano": 1961
+   }
+  },
+  {
+   "id": 8,
+   "texto": "Lá dentro, o voluntário fazia o papel de professor. A cada erro do aluno, numa sala ao lado, ele devia dar um choque, começando em 15 volts e subindo até 450. O aluno era um ator. Os choques eram falsos. Mas o professor não sabia disso.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "d03/gerador"
+   }
+  },
+  {
+   "id": 9,
+   "texto": "Em 1963, Stanley Milgram publicou o resultado. Dos 40 voluntários, 26 obedeceram até o fim e apertaram o último botão.",
+   "animacao": {
+    "tipo": "documento",
+    "titulo": "Behavioral Study of Obedience",
+    "autor": "Stanley Milgram",
+    "ano": 1963,
+    "revista": "Journal of Abnormal and Social Psychology",
+    "trecho": "Dos 40 participantes, 26 obedeceram às ordens do experimentador até o fim, punindo a vítima até o choque mais forte do gerador.",
+    "destaque": "26 obedeceram às ordens do experimentador até o fim",
+    "nota": "tradução livre",
+    "p0": 0.5,
+    "p1": 0.92
+   }
+  },
+  {
+   "id": 10,
+   "texto": "Antes do estudo, alunos de psicologia de Yale tinham previsto que pouco mais de um por cento iria tão longe. Foram sessenta e cinco por cento.",
+   "animacao": {
+    "tipo": "conceito",
+    "rotulo": "FORAM ATÉ 450 VOLTS",
+    "nome": "65%",
+    "frase": "A previsão era de cerca de 1%"
+   }
+  },
+  {
+   "id": 11,
+   "texto": "",
+   "animacao": {
+    "tipo": "capitulo",
+    "numero": 2,
+    "titulo": "O que ficou em debate"
+   }
+  },
+  {
+   "id": 12,
+   "texto": "Mas eles obedeciam com prazer? Não. No próprio artigo, Milgram conta que muitos suavam, tremiam e tinham crises de riso nervoso.",
+   "broll": "nervous man sweating",
+   "animacao": {
+    "tipo": "carimbo",
+    "texto": "MITO",
+    "frase": "Eles obedeciam com prazer",
+    "p": 0.22
+   }
+  },
+  {
+   "id": 13,
+   "texto": "E isso prova que qualquer pessoa obedece a qualquer ordem? Aí a história complica.",
+   "animacao": {
+    "tipo": "carimbo",
+    "texto": "EM DEBATE",
+    "frase": "Qualquer um obedece a qualquer ordem",
+    "p": 0.72
+   }
+  },
+  {
+   "id": 14,
+   "texto": "Quando o experimentador dava as ordens por telefone, a obediência despencou. E quando dois colegas se recusavam a continuar, só quatro em cada quarenta iam até o fim.",
+   "animacao": {
+    "tipo": "ilustracao",
+    "nome": "balanca",
+    "texto": "O CONTEXTO PESA"
+   }
+  },
+  {
+   "id": 15,
+   "texto": "Décadas depois, quem revisou os arquivos de Milgram encontrou outro problema: boa parte dos voluntários desconfiava que os choques eram de mentira.",
+   "broll": "old documents archive",
+   "animacao": {
+    "tipo": "nenhuma"
+   }
+  },
+  {
+   "id": 16,
+   "texto": "A lição que fica: a obediência depende da situação. E perceber essa pressão é o primeiro passo para dizer não.",
+   "animacao": {
+    "tipo": "mascote",
+    "texto": "Obediência depende da situação."
+   }
+  },
+  {
+   "id": 17,
+   "texto": "Eu sou o Cifrinho. Descifre e domine.",
+   "animacao": {
+    "tipo": "encerramento"
+   }
+  }
+ ]
+}
