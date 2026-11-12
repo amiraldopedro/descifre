@@ -1,6 +1,37 @@
 {
  "itens": [
   {
+   "id": "s29",
+   "criado": "2026-11-12T04:54:48+00:00",
+   "notas": [],
+   "historico": [
+    {
+     "quando": "2026-11-12T04:54:57+00:00",
+     "status": "agendado"
+    }
+   ],
+   "tipo": "short",
+   "titulo": "O Pânico dos Marcianos Nunca Existiu #shorts",
+   "descricao": "O mito do pânico da Guerra dos Mundos (Pooley e Socolow, 2013; Schwartz, 2015).\n\nVídeo completo: https://youtu.be/EpxCyMwZYZg\n\n#psicologia #shorts",
+   "tags": [
+    "guerra dos mundos",
+    "orson welles",
+    "1938",
+    "histeria coletiva",
+    "mito",
+    "shorts",
+    "descifre"
+   ],
+   "thumb_texto": {},
+   "tema": "O pânico dos marcianos nunca existiu",
+   "duracao_s": 33,
+   "run": "43157592336",
+   "download": "https://github.com/amiraldopedro/descifre/actions/runs/43157592336",
+   "status": "agendado",
+   "youtube_id": "pUhRJe4_bCY",
+   "agendado_para": "2026-11-19T22:00:00Z"
+  },
+  {
    "id": "s24",
    "criado": "2026-11-12T04:54:33+00:00",
    "notas": [],
@@ -949,5 +980,5 @@
   ],
   "fuso": "America/Sao_Paulo"
  },
- "atualizado": "2026-11-12T04:54:40+00:00"
+ "atualizado": "2026-11-12T04:54:57+00:00"
 }
