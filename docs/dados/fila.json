@@ -792,7 +792,12 @@
    "id": "s01",
    "criado": "2026-11-12T00:42:05+00:00",
    "notas": [],
-   "historico": [],
+   "historico": [
+    {
+     "quando": "2026-11-12T04:58:08+00:00",
+     "status": "descartado"
+    }
+   ],
    "tipo": "short",
    "titulo": "Te deram um chocolate de graça? Cuidado. #shorts",
    "descricao": "Faça o teste completo: [LINK DO VÍDEO]\n\n#psicologia #manipulação #shorts",
@@ -805,7 +810,7 @@
    ],
    "thumb_texto": {},
    "tema": "Te deram um chocolate de graça? Cuidado.",
-   "status": "renderizado"
+   "status": "descartado"
   },
   {
    "id": "009",
@@ -1135,5 +1140,5 @@
   ],
   "fuso": "America/Sao_Paulo"
  },
- "atualizado": "2026-11-12T04:57:24+00:00"
+ "atualizado": "2026-11-12T04:58:08+00:00"
 }
