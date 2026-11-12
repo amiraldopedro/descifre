@@ -1,6 +1,36 @@
 {
  "itens": [
   {
+   "id": "s24",
+   "criado": "2026-11-12T04:54:33+00:00",
+   "notas": [],
+   "historico": [
+    {
+     "quando": "2026-11-12T04:54:40+00:00",
+     "status": "agendado"
+    }
+   ],
+   "tipo": "short",
+   "titulo": "O Experimento da Prisão de Stanford Foi Armação? #shorts",
+   "descricao": "O que as gravações e entrevistas revelaram sobre o experimento da prisão de Stanford (Le Texier, 2019).\n\nVídeo completo: https://youtu.be/Zpu8nbqIgPI\n\n#psicologia #shorts",
+   "tags": [
+    "prisão de stanford",
+    "zimbardo",
+    "experimentos de psicologia",
+    "mito",
+    "shorts",
+    "descifre"
+   ],
+   "thumb_texto": {},
+   "tema": "A prisão de Stanford era armação?",
+   "duracao_s": 37,
+   "run": "43157556775",
+   "download": "https://github.com/amiraldopedro/descifre/actions/runs/43157556775",
+   "status": "agendado",
+   "youtube_id": "lUAzYfYnEVk",
+   "agendado_para": "2026-11-16T22:00:00Z"
+  },
+  {
    "id": "s21",
    "criado": "2026-11-12T00:42:06+00:00",
    "notas": [],
@@ -919,5 +949,5 @@
   ],
   "fuso": "America/Sao_Paulo"
  },
- "atualizado": "2026-11-12T04:41:17+00:00"
+ "atualizado": "2026-11-12T04:54:40+00:00"
 }
