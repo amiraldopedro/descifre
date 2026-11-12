@@ -4,10 +4,15 @@
    "id": "s21",
    "criado": "2026-11-12T00:42:06+00:00",
    "notas": [],
-   "historico": [],
+   "historico": [
+    {
+     "quando": "2026-11-12T04:41:17+00:00",
+     "status": "agendado"
+    }
+   ],
    "tipo": "short",
    "titulo": "Que Lado do Cérebro Você Usa? (Pegadinha) #shorts",
-   "descricao": "O vaso de Rubin e o mito do cérebro esquerdo e direito (Nielsen e colegas, Universidade de Utah, 2013).\n\nVídeo completo: [LINK DO VÍDEO]\n\n#psicologia #shorts",
+   "descricao": "O vaso de Rubin e o mito do cérebro esquerdo e direito (Nielsen e colegas, Universidade de Utah, 2013).\n\nVídeo completo: https://youtu.be/D3enVn9AkA0\n\n#psicologia #shorts",
    "tags": [
     "lado do cérebro",
     "teste psicológico",
@@ -22,16 +27,23 @@
    "duracao_s": 40,
    "run": "43089155684",
    "download": "https://github.com/amiraldopedro/descifre/actions/runs/43089155684",
-   "status": "renderizado"
+   "status": "agendado",
+   "youtube_id": "vqKFT9rxZok",
+   "agendado_para": "2026-11-25T22:00:00Z"
   },
   {
    "id": "s20",
    "criado": "2026-11-12T00:42:06+00:00",
    "notas": [],
-   "historico": [],
+   "historico": [
+    {
+     "quando": "2026-11-12T04:39:21+00:00",
+     "status": "agendado"
+    }
+   ],
    "tipo": "short",
    "titulo": "Por Que Você Bocejou Agora? 🥱 #shorts",
-   "descricao": "O bocejo contagioso: ver, ouvir ou ler sobre um bocejo já basta (Provine; Norscia e Palagi, 2011).\n\nVídeo completo: [LINK DO VÍDEO]\n\n#psicologia #shorts",
+   "descricao": "O bocejo contagioso: ver, ouvir ou ler sobre um bocejo já basta (Provine; Norscia e Palagi, 2011).\n\nVídeo completo: https://youtu.be/EpxCyMwZYZg\n\n#psicologia #shorts",
    "tags": [
     "bocejo contagioso",
     "por que bocejamos",
@@ -45,16 +57,23 @@
    "duracao_s": 36,
    "run": "43089136723",
    "download": "https://github.com/amiraldopedro/descifre/actions/runs/43089136723",
-   "status": "renderizado"
+   "status": "agendado",
+   "youtube_id": "XmZ_RJKy9yM",
+   "agendado_para": "2026-11-14T15:00:00Z"
   },
   {
    "id": "s19",
    "criado": "2026-11-12T00:42:06+00:00",
    "notas": [],
-   "historico": [],
+   "historico": [
+    {
+     "quando": "2026-11-12T04:39:08+00:00",
+     "status": "agendado"
+    }
+   ],
    "tipo": "short",
    "titulo": "Qual Desses Distúrbios Você Escolheria? #shorts",
-   "descricao": "Síndrome de Cotard, síndrome de Capgras ou síndrome de Alice no País das Maravilhas: três distúrbios reais e raros da mente.\n\nVídeo completo: [LINK DO VÍDEO]\n\n#psicologia #shorts",
+   "descricao": "Síndrome de Cotard, síndrome de Capgras ou síndrome de Alice no País das Maravilhas: três distúrbios reais e raros da mente.\n\nVídeo completo: https://youtu.be/EpxCyMwZYZg\n\n#psicologia #shorts",
    "tags": [
     "síndrome de cotard",
     "síndrome de capgras",
@@ -69,16 +88,23 @@
    "duracao_s": 38,
    "run": "43089118506",
    "download": "https://github.com/amiraldopedro/descifre/actions/runs/43089118506",
-   "status": "renderizado"
+   "status": "agendado",
+   "youtube_id": "FT2N4-jIc7I",
+   "agendado_para": "2026-11-13T15:00:00Z"
   },
   {
    "id": "s18",
    "criado": "2026-11-12T00:42:06+00:00",
    "notas": [],
-   "historico": [],
+   "historico": [
+    {
+     "quando": "2026-11-12T04:40:57+00:00",
+     "status": "agendado"
+    }
+   ],
    "tipo": "short",
    "titulo": "Qual Caminhão Está Freando? 🚚 #shorts",
-   "descricao": "Nenhum. É a ilusão dos passos (Stuart Anstis): o contraste das listras engana o cérebro.\n\nVídeo completo: [LINK DO VÍDEO]\n\n#psicologia #shorts",
+   "descricao": "Nenhum. É a ilusão dos passos (Stuart Anstis): o contraste das listras engana o cérebro.\n\nVídeo completo: https://youtu.be/D3enVn9AkA0\n\n#psicologia #shorts",
    "tags": [
     "ilusão de ótica",
     "teste",
@@ -92,16 +118,23 @@
    "duracao_s": 32,
    "run": "43089100016",
    "download": "https://github.com/amiraldopedro/descifre/actions/runs/43089100016",
-   "status": "renderizado"
+   "status": "agendado",
+   "youtube_id": "YIK0S5cp6tE",
+   "agendado_para": "2026-11-24T22:00:00Z"
   },
   {
    "id": "s17",
    "criado": "2026-11-12T00:42:06+00:00",
    "notas": [],
-   "historico": [],
+   "historico": [
+    {
+     "quando": "2026-11-12T04:39:01+00:00",
+     "status": "agendado"
+    }
+   ],
    "tipo": "short",
    "titulo": "O Contrário do Placebo (e Ele Te Faz Mal de Verdade) #shorts",
-   "descricao": "O efeito nocebo: no estudo SAMSON (NEJM, 2020), 90% dos sintomas sentidos com estatina também apareciam com comprimido de açúcar.\n\nVídeo completo: [LINK DO VÍDEO]\n\n#psicologia #shorts",
+   "descricao": "O efeito nocebo: no estudo SAMSON (NEJM, 2020), 90% dos sintomas sentidos com estatina também apareciam com comprimido de açúcar.\n\nVídeo completo: https://youtu.be/EpxCyMwZYZg\n\n#psicologia #shorts",
    "tags": [
     "efeito nocebo",
     "placebo",
@@ -115,16 +148,23 @@
    "duracao_s": 38,
    "run": "43089081733",
    "download": "https://github.com/amiraldopedro/descifre/actions/runs/43089081733",
-   "status": "renderizado"
+   "status": "agendado",
+   "youtube_id": "eOriluDjg68",
+   "agendado_para": "2026-11-12T22:00:00Z"
   },
   {
    "id": "s16",
    "criado": "2026-11-12T00:42:06+00:00",
    "notas": [],
-   "historico": [],
+   "historico": [
+    {
+     "quando": "2026-11-12T04:40:04+00:00",
+     "status": "agendado"
+    }
+   ],
    "tipo": "short",
    "titulo": "Seus Bisavós Teriam QI 70? (Efeito Flynn) #shorts",
-   "descricao": "O efeito Flynn: o QI médio subiu cerca de 3 pontos por década no século 20.\n\nVídeo completo: [LINK DO VÍDEO]\n\n#psicologia #shorts",
+   "descricao": "O efeito Flynn: o QI médio subiu cerca de 3 pontos por década no século 20.\n\nVídeo completo: https://youtu.be/zuFiW7qSO7Y\n\n#psicologia #shorts",
    "tags": [
     "QI",
     "efeito Flynn",
@@ -138,16 +178,23 @@
    "duracao_s": 35,
    "run": "42874245513",
    "download": "https://github.com/amiraldopedro/descifre/actions/runs/42874245513",
-   "status": "renderizado"
+   "status": "agendado",
+   "youtube_id": "49s6VduOowo",
+   "agendado_para": "2026-11-18T22:00:00Z"
   },
   {
    "id": "s15",
    "criado": "2026-11-12T00:42:06+00:00",
    "notas": [],
-   "historico": [],
+   "historico": [
+    {
+     "quando": "2026-11-12T04:39:54+00:00",
+     "status": "agendado"
+    }
+   ],
    "tipo": "short",
    "titulo": "Os Meninos Rejeitados Que Ganharam o Nobel #shorts",
-   "descricao": "O estudo de Terman com crianças superdotadas e os dois recusados que ganharam o Nobel de Física.\n\nVídeo completo: [LINK DO VÍDEO]\n\n#psicologia #shorts",
+   "descricao": "O estudo de Terman com crianças superdotadas e os dois recusados que ganharam o Nobel de Física.\n\nVídeo completo: https://youtu.be/zuFiW7qSO7Y\n\n#psicologia #shorts",
    "tags": [
     "QI",
     "Terman",
@@ -162,16 +209,23 @@
    "duracao_s": 31,
    "run": "42874235992",
    "download": "https://github.com/amiraldopedro/descifre/actions/runs/42874235992",
-   "status": "renderizado"
+   "status": "agendado",
+   "youtube_id": "yoOL8Y84Ijw",
+   "agendado_para": "2026-11-18T15:00:00Z"
   },
   {
    "id": "s14",
    "criado": "2026-11-12T00:42:06+00:00",
    "notas": [],
-   "historico": [],
+   "historico": [
+    {
+     "quando": "2026-11-12T04:39:44+00:00",
+     "status": "agendado"
+    }
+   ],
    "tipo": "short",
    "titulo": "Esse Texto Descreve Você? (Efeito Barnum) #shorts",
-   "descricao": "Por que horóscopo e testes de internet parecem tão certeiros.\n\nVídeo completo: [LINK DO VÍDEO]\n\n#psicologia #shorts",
+   "descricao": "Por que horóscopo e testes de internet parecem tão certeiros.\n\nVídeo completo: https://youtu.be/QG9r_mC34mE\n\n#psicologia #shorts",
    "tags": [
     "efeito Barnum",
     "horóscopo",
@@ -185,16 +239,23 @@
    "duracao_s": 33,
    "run": "42874224650",
    "download": "https://github.com/amiraldopedro/descifre/actions/runs/42874224650",
-   "status": "renderizado"
+   "status": "agendado",
+   "youtube_id": "s6oo_WYGK0c",
+   "agendado_para": "2026-11-17T15:00:00Z"
   },
   {
    "id": "s13",
    "criado": "2026-11-12T00:42:06+00:00",
    "notas": [],
-   "historico": [],
+   "historico": [
+    {
+     "quando": "2026-11-12T04:39:36+00:00",
+     "status": "agendado"
+    }
+   ],
    "tipo": "short",
    "titulo": "Escolha Uma Escada (Teste de Personalidade) #shorts",
-   "descricao": "Escolha pelo instinto... e cuidado com a pegadinha no final (Forer, 1949).\n\nVídeo completo: [LINK DO VÍDEO]\n\n#psicologia #shorts",
+   "descricao": "Escolha pelo instinto... e cuidado com a pegadinha no final (Forer, 1949).\n\nVídeo completo: https://youtu.be/QG9r_mC34mE\n\n#psicologia #shorts",
    "tags": [
     "teste de personalidade",
     "escolha uma escada",
@@ -208,16 +269,23 @@
    "duracao_s": 38,
    "run": "42874214556",
    "download": "https://github.com/amiraldopedro/descifre/actions/runs/42874214556",
-   "status": "renderizado"
+   "status": "agendado",
+   "youtube_id": "5hyvtK6FZ1w",
+   "agendado_para": "2026-11-16T15:00:00Z"
   },
   {
    "id": "s12",
    "criado": "2026-11-12T00:42:06+00:00",
    "notas": [],
-   "historico": [],
+   "historico": [
+    {
+     "quando": "2026-11-12T04:39:29+00:00",
+     "status": "agendado"
+    }
+   ],
    "tipo": "short",
    "titulo": "A Mensagem de 1 Linha Que Conserta Uma Grosseria #shorts",
-   "descricao": "Use no mesmo dia. Baseado na ideia de reparo de John Gottman.\n\nVídeo completo: [LINK DO VÍDEO]\n\n#psicologia #shorts",
+   "descricao": "Use no mesmo dia. Baseado na ideia de reparo de John Gottman.\n\nVídeo completo: https://youtu.be/nq2w988sRd8\n\n#psicologia #shorts",
    "tags": [
     "relacionamentos",
     "desculpa",
@@ -231,16 +299,23 @@
    "duracao_s": 30,
    "run": "42874202428",
    "download": "https://github.com/amiraldopedro/descifre/actions/runs/42874202428",
-   "status": "renderizado"
+   "status": "agendado",
+   "youtube_id": "ITFcqVthlRQ",
+   "agendado_para": "2026-11-14T22:00:00Z"
   },
   {
    "id": "s11",
    "criado": "2026-11-12T00:42:05+00:00",
    "notas": [],
-   "historico": [],
+   "historico": [
+    {
+     "quando": "2026-11-12T04:39:15+00:00",
+     "status": "agendado"
+    }
+   ],
    "tipo": "short",
    "titulo": "Você Fala Com Sua Mãe Como Fala Com o Chefe? #shorts",
-   "descricao": "Por que a gente é grosso justamente com quem ama?\n\nVídeo completo: [LINK DO VÍDEO]\n\n#psicologia #shorts",
+   "descricao": "Por que a gente é grosso justamente com quem ama?\n\nVídeo completo: https://youtu.be/nq2w988sRd8\n\n#psicologia #shorts",
    "tags": [
     "psicologia",
     "família",
@@ -254,16 +329,23 @@
    "duracao_s": 30,
    "run": "42874192544",
    "download": "https://github.com/amiraldopedro/descifre/actions/runs/42874192544",
-   "status": "renderizado"
+   "status": "agendado",
+   "youtube_id": "IRTDFDaSRng",
+   "agendado_para": "2026-11-13T22:00:00Z"
   },
   {
    "id": "s10",
    "criado": "2026-11-12T00:42:05+00:00",
    "notas": [],
-   "historico": [],
+   "historico": [
+    {
+     "quando": "2026-11-12T04:41:09+00:00",
+     "status": "agendado"
+    }
+   ],
    "tipo": "short",
    "titulo": "Explica Como Funciona um Zíper (Você Não Consegue) #shorts",
-   "descricao": "A ilusão de profundidade explicativa (Rozenblit e Keil, 2002).\n\nVídeo completo: [LINK DO VÍDEO]\n\n#psicologia #shorts",
+   "descricao": "A ilusão de profundidade explicativa (Rozenblit e Keil, 2002).\n\nVídeo completo: https://youtu.be/D3enVn9AkA0\n\n#psicologia #shorts",
    "tags": [
     "psicologia",
     "zíper",
@@ -277,16 +359,23 @@
    "duracao_s": 33,
    "run": "42874182237",
    "download": "https://github.com/amiraldopedro/descifre/actions/runs/42874182237",
-   "status": "renderizado"
+   "status": "agendado",
+   "youtube_id": "JIYCggQjYmU",
+   "agendado_para": "2026-11-25T15:00:00Z"
   },
   {
    "id": "s09",
    "criado": "2026-11-12T00:42:05+00:00",
    "notas": [],
-   "historico": [],
+   "historico": [
+    {
+     "quando": "2026-11-12T04:40:50+00:00",
+     "status": "agendado"
+    }
+   ],
    "tipo": "short",
    "titulo": "Mais da Metade de Harvard Errou Essa Pergunta #shorts",
-   "descricao": "Taco e bola custam R$ 1,10. Quanto custa a bola? (Frederick, 2005)\n\nVídeo completo: [LINK DO VÍDEO]\n\n#psicologia #shorts",
+   "descricao": "Taco e bola custam R$ 1,10. Quanto custa a bola? (Frederick, 2005)\n\nVídeo completo: https://youtu.be/D3enVn9AkA0\n\n#psicologia #shorts",
    "tags": [
     "pegadinha",
     "teste de inteligência",
@@ -300,16 +389,23 @@
    "duracao_s": 38,
    "run": "42874172019",
    "download": "https://github.com/amiraldopedro/descifre/actions/runs/42874172019",
-   "status": "renderizado"
+   "status": "agendado",
+   "youtube_id": "N9QpTP-W2Rk",
+   "agendado_para": "2026-11-24T15:00:00Z"
   },
   {
    "id": "s08",
    "criado": "2026-11-12T00:42:05+00:00",
    "notas": [],
-   "historico": [],
+   "historico": [
+    {
+     "quando": "2026-11-12T04:40:20+00:00",
+     "status": "agendado"
+    }
+   ],
    "tipo": "short",
    "titulo": "O Teste do Carrinho de Mercado #shorts",
-   "descricao": "Você devolve o carrinho? A teoria do carrinho é meme, mas a ciência tem um parecido (Keizer e colegas, 2008).\n\nVídeo completo: [LINK DO VÍDEO]\n\n#psicologia #shorts",
+   "descricao": "Você devolve o carrinho? A teoria do carrinho é meme, mas a ciência tem um parecido (Keizer e colegas, 2008).\n\nVídeo completo: https://youtu.be/E680HDKOb08\n\n#psicologia #shorts",
    "tags": [
     "teoria do carrinho",
     "psicologia",
@@ -323,16 +419,23 @@
    "duracao_s": 48,
    "run": "42874160808",
    "download": "https://github.com/amiraldopedro/descifre/actions/runs/42874160808",
-   "status": "renderizado"
+   "status": "agendado",
+   "youtube_id": "rSfMtWA9_KM",
+   "agendado_para": "2026-11-20T22:00:00Z"
   },
   {
    "id": "s07",
    "criado": "2026-11-12T00:42:05+00:00",
    "notas": [],
-   "historico": [],
+   "historico": [
+    {
+     "quando": "2026-11-12T04:40:10+00:00",
+     "status": "agendado"
+    }
+   ],
    "tipo": "short",
    "titulo": "Você Empurra a Cadeira Quando Levanta? #shorts",
-   "descricao": "Esse gesto de 2 segundos diz muito sobre você.\n\nVídeo completo: [LINK DO VÍDEO]\n\n#psicologia #shorts",
+   "descricao": "Esse gesto de 2 segundos diz muito sobre você.\n\nVídeo completo: https://youtu.be/E680HDKOb08\n\n#psicologia #shorts",
    "tags": [
     "psicologia",
     "personalidade",
@@ -346,16 +449,23 @@
    "duracao_s": 34,
    "run": "42874149494",
    "download": "https://github.com/amiraldopedro/descifre/actions/runs/42874149494",
-   "status": "renderizado"
+   "status": "agendado",
+   "youtube_id": "1JofgeV51cY",
+   "agendado_para": "2026-11-20T15:00:00Z"
   },
   {
    "id": "s06",
    "criado": "2026-11-12T00:42:05+00:00",
    "notas": [],
-   "historico": [],
+   "historico": [
+    {
+     "quando": "2026-11-12T04:40:40+00:00",
+     "status": "agendado"
+    }
+   ],
    "tipo": "short",
    "titulo": "Gandhi morreu com mais ou menos de 140 anos? #shorts",
-   "descricao": "Responde antes de ver! As 7 provas completas: [LINK DO VÍDEO]\n\nEstudo: Strack e Mussweiler (1997), ancoragem.\n\n#psicologia #vieses #shorts",
+   "descricao": "Responde antes de ver! As 7 provas completas: https://youtu.be/qY0j5kTWY48\n\nEstudo: Strack e Mussweiler (1997), ancoragem.\n\n#psicologia #vieses #shorts",
    "tags": [
     "psicologia",
     "ancoragem",
@@ -370,16 +480,23 @@
    "duracao_s": 42,
    "run": "42874138401",
    "download": "https://github.com/amiraldopedro/descifre/actions/runs/42874138401",
-   "status": "renderizado"
+   "status": "agendado",
+   "youtube_id": "bZpi4XCywko",
+   "agendado_para": "2026-11-22T22:00:00Z"
   },
   {
    "id": "s05",
    "criado": "2026-11-12T00:42:05+00:00",
    "notas": [],
-   "historico": [],
+   "historico": [
+    {
+     "quando": "2026-11-12T04:40:30+00:00",
+     "status": "agendado"
+    }
+   ],
    "tipo": "short",
    "titulo": "Metade das pessoas não viu o gorila 🦍 #shorts",
-   "descricao": "Você teria visto? As 7 provas completas: [LINK DO VÍDEO]\n\nEstudo: Simons e Chabris (1999), cegueira por desatenção.\n\n#psicologia #cerebro #shorts",
+   "descricao": "Você teria visto? As 7 provas completas: https://youtu.be/qY0j5kTWY48\n\nEstudo: Simons e Chabris (1999), cegueira por desatenção.\n\n#psicologia #cerebro #shorts",
    "tags": [
     "psicologia",
     "gorila invisível",
@@ -394,7 +511,9 @@
    "duracao_s": 42,
    "run": "42874127494",
    "download": "https://github.com/amiraldopedro/descifre/actions/runs/42874127494",
-   "status": "renderizado"
+   "status": "agendado",
+   "youtube_id": "l99BC3fBuJY",
+   "agendado_para": "2026-11-22T15:00:00Z"
   },
   {
    "id": "s04",
@@ -659,10 +778,15 @@
    "id": "004",
    "criado": "2026-11-12T00:42:04+00:00",
    "notas": [],
-   "historico": [],
+   "historico": [
+    {
+     "quando": "2026-11-12T04:38:50+00:00",
+     "status": "agendado"
+    }
+   ],
    "tipo": "longo",
    "titulo": "Teste de Burrice: 4 Armadilhas Que Enganam Gente Inteligente",
-   "descricao": "4 armadilhas mentais que derrubam até alunos de Harvard e do MIT. Faça o teste sem pesquisar e comente quantas você acertou, de 0 a 4.\n\n{capitulos}\n\nAs armadilhas:\n1. O taco e a bola: Teste de Reflexão Cognitiva (Frederick, 2005)\n2. Frases pseudo-profundas (Pennycook e colegas, 2015)\n3. Ilusão de profundidade explicativa: o zíper (Rozenblit e Keil, 2002)\n4. Ponto cego do viés (Pronin, Lin e Ross, 2002)\nDisracionalia: Keith Stanovich. Humildade intelectual: Leary e colegas (2017).\n\nDescifre e domine.\n#psicologia #teste #vieses",
+   "descricao": "4 armadilhas mentais que derrubam até alunos de Harvard e do MIT. Faça o teste sem pesquisar e comente quantas você acertou, de 0 a 4.\n\n\n\nAs armadilhas:\n1. O taco e a bola: Teste de Reflexão Cognitiva (Frederick, 2005)\n2. Frases pseudo-profundas (Pennycook e colegas, 2015)\n3. Ilusão de profundidade explicativa: o zíper (Rozenblit e Keil, 2002)\n4. Ponto cego do viés (Pronin, Lin e Ross, 2002)\nDisracionalia: Keith Stanovich. Humildade intelectual: Leary e colegas (2017).\n\nDescifre e domine.\n#psicologia #teste #vieses",
    "tags": [
     "psicologia",
     "teste de inteligência",
@@ -684,7 +808,9 @@
    "duracao_s": 257,
    "run": "42874087660",
    "download": "https://github.com/amiraldopedro/descifre/actions/runs/42874087660",
-   "status": "renderizado"
+   "status": "agendado",
+   "youtube_id": "D3enVn9AkA0",
+   "agendado_para": "2026-11-24T13:00:00Z"
   },
   {
    "id": "003",
@@ -793,5 +919,5 @@
   ],
   "fuso": "America/Sao_Paulo"
  },
- "atualizado": "2026-11-12T04:38:05+00:00"
+ "atualizado": "2026-11-12T04:41:17+00:00"
 }
