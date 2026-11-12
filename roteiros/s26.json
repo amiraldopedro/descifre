@@ -1,0 +1,61 @@
+{
+ "id": "s26",
+ "titulo": "38 testemunhas e ninguém ajudou?",
+ "formato": "short",
+ "voz": "en-US-BrianMultilingualNeural",
+ "taxa": "+8%",
+ "trilha": "misterio",
+ "cenas": [
+  {
+   "texto": "Trinta e oito pessoas viram uma mulher ser atacada e ninguém fez nada. Será?",
+   "animacao": {
+    "tipo": "gancho",
+    "texto": "38 TESTEMUNHAS?"
+   },
+   "id": 1
+  },
+  {
+   "texto": "Em mil novecentos e sessenta e quatro, um jornal de Nova York publicou que trinta e oito vizinhos assistiram ao ataque contra Kitty Genovese sem ligar para a polícia.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "cenario/lugar",
+    "props": {
+     "lugar": "cidade",
+     "hora": "noite",
+     "luz": true
+    }
+   },
+   "local": {
+    "texto": "Nova York",
+    "ano": 1964
+   },
+   "id": 2
+  },
+  {
+   "texto": "A história virou lição em todo livro de psicologia. Mas investigações depois mostraram que poucas pessoas viram de fato, e que alguém ligou, sim.",
+   "animacao": {
+    "tipo": "carimbo",
+    "texto": "MITO",
+    "frase": "38 pessoas assistiram sem fazer nada",
+    "p": 0.2
+   },
+   "id": 3
+  },
+  {
+   "texto": "O curioso é que o efeito é real: quanto mais gente em volta, menos cada um ajuda. Um experimento provou isso com um interfone.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "008/interfone"
+   },
+   "id": 4
+  },
+  {
+   "texto": "Os detalhes estão no documentário. Link aí.",
+   "animacao": {
+    "tipo": "cta",
+    "texto": "VEJA O DOCUMENTÁRIO"
+   },
+   "id": 5
+  }
+ ]
+}

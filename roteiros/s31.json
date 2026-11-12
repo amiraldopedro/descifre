@@ -1,0 +1,119 @@
+{
+ "id": "s31",
+ "titulo": "A epidemia de riso",
+ "formato": "short",
+ "voz": "en-US-BrianMultilingualNeural",
+ "taxa": "+8%",
+ "trilha": "misterio",
+ "cenas": [
+  {
+   "texto": "Em mil novecentos e sessenta e dois, numa escola na África, três alunas começaram a rir. E não pararam por meses.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "cenario/lugar",
+    "props": {
+     "lugar": "escola",
+     "hora": "dia",
+     "figuras": [
+      {
+       "traje": "estudante",
+       "pose": "rindo",
+       "rosto": "riso",
+       "x": 760,
+       "seed": 31
+      },
+      {
+       "traje": "estudante",
+       "pose": "rindo",
+       "rosto": "riso",
+       "x": 960,
+       "seed": 32
+      },
+      {
+       "traje": "estudante",
+       "pose": "rindo",
+       "rosto": "riso",
+       "x": 1160,
+       "seed": 33
+      }
+     ]
+    }
+   },
+   "local": {
+    "texto": "Tanganica",
+    "ano": 1962
+   },
+   "id": 1
+  },
+  {
+   "texto": "O riso vinha com choro, desmaios e falta de ar. Noventa e cinco alunas foram afetadas, e a escola fechou.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "cenario/lugar",
+    "props": {
+     "lugar": "escola",
+     "hora": "dourado",
+     "multidao": {
+      "n": 10,
+      "traje": "estudante",
+      "pose": "rindo",
+      "rosto": "riso",
+      "entra": 0.05,
+      "contagio": true
+     }
+    }
+   },
+   "id": 2
+  },
+  {
+   "texto": "Quando elas voltaram para casa, o riso foi junto. Cerca de mil pessoas foram afetadas na região.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "mapa/voo",
+    "props": {
+     "pontos": [
+      {
+       "nome": "Kashasha",
+       "ano": 1962,
+       "lon": 31.6,
+       "lat": -1.25,
+       "p": 0.4
+      }
+     ],
+     "destaque": [
+      "Tanzania"
+     ],
+     "de": {
+      "lon": 25,
+      "lat": 5,
+      "zoom": 1.6
+     },
+     "ate": {
+      "lon": 31.6,
+      "lat": -1.25,
+      "zoom": 9
+     }
+    }
+   },
+   "id": 3
+  },
+  {
+   "texto": "Nenhum vírus. Só estresse e contágio da mente.",
+   "animacao": {
+    "tipo": "carimbo",
+    "texto": "VERDADE",
+    "frase": "Cerca de mil pessoas afetadas",
+    "p": 0.2
+   },
+   "id": 4
+  },
+  {
+   "texto": "Tem histórias ainda mais estranhas no documentário do link.",
+   "animacao": {
+    "tipo": "cta",
+    "texto": "VEJA O DOCUMENTÁRIO"
+   },
+   "id": 5
+  }
+ ]
+}

@@ -1,0 +1,53 @@
+{
+ "id": "s22",
+ "titulo": "O bebê que aprendeu a ter medo",
+ "formato": "short",
+ "voz": "en-US-BrianMultilingualNeural",
+ "taxa": "+8%",
+ "trilha": "misterio",
+ "cenas": [
+  {
+   "texto": "Em mil novecentos e vinte, um psicólogo ensinou um bebê de nove meses a ter pavor de um ratinho branco.",
+   "animacao": {
+    "tipo": "gancho",
+    "texto": "ELE ENSINOU UM BEBÊ A TER MEDO"
+   },
+   "id": 1
+  },
+  {
+   "texto": "No começo, o pequeno Albert adorava o rato. Mas toda vez que ele esticava a mão, John Watson batia num ferro com um martelo, bem atrás da cabeça dele.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "008/albert"
+   },
+   "id": 2
+  },
+  {
+   "texto": "Em poucas semanas, bastava o rato aparecer para o bebê chorar. E o medo se espalhou para coelhos, cachorros e até uma barba de Papai Noel.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "008/albert"
+   },
+   "lofi": "forte",
+   "id": 3
+  },
+  {
+   "texto": "Watson nunca desfez o medo. E até hoje ninguém sabe ao certo quem era Albert.",
+   "animacao": {
+    "tipo": "carimbo",
+    "texto": "VERDADE",
+    "frase": "O medo nunca foi desfeito",
+    "p": 0.2
+   },
+   "id": 4
+  },
+  {
+   "texto": "Esse é só o primeiro dos experimentos mais sombrios da psicologia. A história completa tá no link.",
+   "animacao": {
+    "tipo": "cta",
+    "texto": "VEJA O DOCUMENTÁRIO"
+   },
+   "id": 5
+  }
+ ]
+}

@@ -1,0 +1,55 @@
+{
+ "id": "s24",
+ "titulo": "A prisão de Stanford era armação?",
+ "formato": "short",
+ "voz": "en-US-BrianMultilingualNeural",
+ "taxa": "+8%",
+ "trilha": "misterio",
+ "cenas": [
+  {
+   "texto": "O experimento mais famoso da psicologia pode ter sido uma armação.",
+   "animacao": {
+    "tipo": "gancho",
+    "texto": "FOI ARMAÇÃO?"
+   },
+   "id": 1
+  },
+  {
+   "texto": "Em mil novecentos e setenta e um, estudantes foram divididos em guardas e presos num porão de Stanford. Em seis dias, os guardas estavam humilhando os presos, e o estudo foi encerrado.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "008/calendario"
+   },
+   "id": 2
+  },
+  {
+   "texto": "A lição ensinada por décadas: qualquer pessoa vira monstro se ganhar poder.",
+   "animacao": {
+    "tipo": "carimbo",
+    "texto": "EM DEBATE",
+    "frase": "Qualquer um vira monstro",
+    "p": 0.2
+   },
+   "id": 3
+  },
+  {
+   "texto": "Só que gravações liberadas depois mostram que os guardas foram orientados a serem duros. E um preso admitiu que fingiu o surto para sair mais cedo.",
+   "animacao": {
+    "tipo": "conceito",
+    "nome": "Orientados",
+    "frase": "os guardas receberam instruções",
+    "rotulo": "O QUE APARECEU DEPOIS"
+   },
+   "lofi": "forte",
+   "id": 4
+  },
+  {
+   "texto": "Isso muda tudo o que você aprendeu. A história completa tá no documentário do link.",
+   "animacao": {
+    "tipo": "cta",
+    "texto": "VEJA O DOCUMENTÁRIO"
+   },
+   "id": 5
+  }
+ ]
+}

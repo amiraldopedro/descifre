@@ -1,0 +1,53 @@
+{
+ "id": "s23",
+ "titulo": "450 volts: você apertaria?",
+ "formato": "short",
+ "voz": "en-US-BrianMultilingualNeural",
+ "taxa": "+8%",
+ "trilha": "misterio",
+ "cenas": [
+  {
+   "texto": "Se um homem de jaleco mandasse você dar um choque de quatrocentos e cinquenta volts num desconhecido, você daria?",
+   "animacao": {
+    "tipo": "gancho",
+    "texto": "VOCÊ DARIA O CHOQUE?"
+   },
+   "id": 1
+  },
+  {
+   "texto": "Em mil novecentos e sessenta e um, Stanley Milgram fez essa pergunta na prática. A pessoa que levava os choques era um ator. Mas quem apertava os botões não sabia.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "008/milgram"
+   },
+   "id": 2
+  },
+  {
+   "texto": "O ator gritava, reclamava do coração, implorava. E o pesquisador só dizia: por favor, continue.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "008/milgram"
+   },
+   "lofi": "forte",
+   "id": 3
+  },
+  {
+   "texto": "Resultado: sessenta e cinco por cento foram até o último botão, o de quatrocentos e cinquenta volts.",
+   "animacao": {
+    "tipo": "conceito",
+    "nome": "65%",
+    "frase": "foram até o fim",
+    "rotulo": "O RESULTADO"
+   },
+   "id": 4
+  },
+  {
+   "texto": "E você? Comenta: você pararia antes? A história completa, com o que deu errado nesse estudo, tá no link.",
+   "animacao": {
+    "tipo": "cta",
+    "texto": "VOCÊ PARARIA?"
+   },
+   "id": 5
+  }
+ ]
+}

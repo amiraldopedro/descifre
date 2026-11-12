@@ -1,0 +1,92 @@
+{
+ "id": "s30",
+ "titulo": "As bruxas de Salém não foram queimadas",
+ "formato": "short",
+ "voz": "en-US-BrianMultilingualNeural",
+ "taxa": "+8%",
+ "trilha": "misterio",
+ "cenas": [
+  {
+   "texto": "As bruxas de Salém não foram queimadas na fogueira.",
+   "animacao": {
+    "tipo": "carimbo",
+    "texto": "MITO",
+    "frase": "As bruxas foram queimadas",
+    "p": 0.2
+   },
+   "id": 1
+  },
+  {
+   "texto": "Em mil seiscentos e noventa e dois, duas meninas começaram a ter ataques. O médico disse: é bruxaria.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "cenario/lugar",
+    "props": {
+     "lugar": "vila-puritana",
+     "hora": "noite",
+     "figuras": [
+      {
+       "traje": "medico",
+       "pose": "apontando",
+       "rosto": "preocupado",
+       "x": 700,
+       "seed": 4
+      },
+      {
+       "traje": "puritana",
+       "pose": "assustado",
+       "rosto": "grito",
+       "x": 1200,
+       "escala": 0.8,
+       "seed": 11
+      }
+     ]
+    }
+   },
+   "local": {
+    "texto": "Salém",
+    "ano": 1692
+   },
+   "id": 2
+  },
+  {
+   "texto": "Em meses, mais de cento e cinquenta pessoas foram presas. Dezenove foram enforcadas. Um homem foi esmagado com pedras.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "cenario/lugar",
+    "props": {
+     "lugar": "vila-puritana",
+     "hora": "noite",
+     "figuras": [
+      {
+       "traje": "puritano",
+       "pose": "parado",
+       "rosto": "fechado",
+       "x": 960,
+       "seed": 21,
+       "escuro": 0.3
+      }
+     ]
+    }
+   },
+   "lofi": "forte",
+   "id": 3
+  },
+  {
+   "texto": "Os ataques eram reais. O medo era real. As bruxas nunca existiram.",
+   "animacao": {
+    "tipo": "ilustracao",
+    "nome": "olho"
+   },
+   "id": 4
+  },
+  {
+   "texto": "A história completa tá no documentário do link.",
+   "animacao": {
+    "tipo": "cta",
+    "texto": "VEJA O DOCUMENTÁRIO"
+   },
+   "id": 5
+  }
+ ]
+}

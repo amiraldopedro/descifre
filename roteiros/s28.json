@@ -1,0 +1,94 @@
+{
+ "id": "s28",
+ "titulo": "A dança que matou uma cidade",
+ "formato": "short",
+ "voz": "en-US-BrianMultilingualNeural",
+ "taxa": "+8%",
+ "trilha": "misterio",
+ "cenas": [
+  {
+   "texto": "Em mil quinhentos e dezoito, uma mulher começou a dançar na rua. E não conseguiu parar.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "cenario/lugar",
+    "props": {
+     "lugar": "vila-medieval",
+     "hora": "dourado",
+     "figuras": [
+      {
+       "traje": "camponesa",
+       "pose": "dancando",
+       "rosto": "fechado",
+       "x": 960,
+       "intensidade": 0.8,
+       "seed": 7
+      }
+     ]
+    }
+   },
+   "local": {
+    "texto": "Estrasburgo",
+    "ano": 1518
+   },
+   "id": 1
+  },
+  {
+   "texto": "Em uma semana, mais de trinta pessoas dançavam com ela. Os médicos receitaram mais dança, e a cidade contratou músicos.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "cenario/lugar",
+    "props": {
+     "lugar": "vila-medieval",
+     "hora": "dourado",
+     "multidao": {
+      "n": 12,
+      "traje": "camponesa",
+      "pose": "dancando",
+      "rosto": "fechado",
+      "entra": 0.1,
+      "contagio": true
+     }
+    }
+   },
+   "id": 2
+  },
+  {
+   "texto": "Pessoas desmaiavam de exaustão no meio da praça.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "cenario/lugar",
+    "props": {
+     "lugar": "vila-medieval",
+     "hora": "noite",
+     "multidao": {
+      "n": 14,
+      "traje": "campones",
+      "pose": "dancando",
+      "rosto": "grito",
+      "intensidade": 1
+     }
+    }
+   },
+   "lofi": "forte",
+   "id": 3
+  },
+  {
+   "texto": "Não era veneno nem doença. Era medo, fome e uma crença compartilhada.",
+   "animacao": {
+    "tipo": "conceito",
+    "nome": "Histeria coletiva",
+    "frase": "a mente passou para a mente",
+    "rotulo": "A EXPLICAÇÃO"
+   },
+   "id": 4
+  },
+  {
+   "texto": "A história completa, e outras ainda mais estranhas, tá no documentário do link.",
+   "animacao": {
+    "tipo": "cta",
+    "texto": "VEJA O DOCUMENTÁRIO"
+   },
+   "id": 5
+  }
+ ]
+}

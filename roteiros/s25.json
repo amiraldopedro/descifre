@@ -1,0 +1,52 @@
+{
+ "id": "s25",
+ "titulo": "Os macacos que escolheram o amor",
+ "formato": "short",
+ "voz": "en-US-BrianMultilingualNeural",
+ "taxa": "+8%",
+ "trilha": "misterio",
+ "cenas": [
+  {
+   "texto": "Entre comida e um abraço, o que um filhote escolhe?",
+   "animacao": {
+    "tipo": "gancho",
+    "texto": "COMIDA OU ABRAÇO?"
+   },
+   "id": 1
+  },
+  {
+   "texto": "Harry Harlow colocou filhotes de macaco com duas mães falsas. Uma de arame, com mamadeira. Outra de pano macio, sem comida nenhuma.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "008/harlow"
+   },
+   "id": 2
+  },
+  {
+   "texto": "Os filhotes passavam o dia agarrados na mãe de pano. Iam até a de arame só para mamar, e voltavam correndo.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "008/harlow"
+   },
+   "id": 3
+  },
+  {
+   "texto": "Foi um dos estudos mais cruéis da história. Mas provou que carinho não é frescura: é necessidade.",
+   "animacao": {
+    "tipo": "carimbo",
+    "texto": "VERDADE",
+    "frase": "Carinho é necessidade",
+    "p": 0.2
+   },
+   "id": 4
+  },
+  {
+   "texto": "Essa e outras histórias sombrias estão no documentário completo. Link aí.",
+   "animacao": {
+    "tipo": "cta",
+    "texto": "VEJA O DOCUMENTÁRIO"
+   },
+   "id": 5
+  }
+ ]
+}

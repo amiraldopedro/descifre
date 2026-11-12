@@ -1,0 +1,75 @@
+{
+ "id": "s27",
+ "titulo": "Os falsos loucos de Rosenhan",
+ "formato": "short",
+ "voz": "en-US-BrianMultilingualNeural",
+ "taxa": "+8%",
+ "trilha": "misterio",
+ "cenas": [
+  {
+   "texto": "Oito pessoas saudáveis fingiram ouvir vozes para entrar em hospícios. E nenhum médico percebeu.",
+   "animacao": {
+    "tipo": "gancho",
+    "texto": "NINGUÉM PERCEBEU"
+   },
+   "id": 1
+  },
+  {
+   "texto": "Em mil novecentos e setenta e três, o psicólogo David Rosenhan disse que mandou voluntários a doze hospitais. Lá dentro, eles agiam normalmente.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "cenario/lugar",
+    "props": {
+     "lugar": "hospital",
+     "hora": "noite",
+     "figuras": [
+      {
+       "traje": "comum",
+       "pose": "parado",
+       "rosto": "neutro",
+       "x": 760,
+       "seed": 61
+      },
+      {
+       "traje": "jaleco",
+       "pose": "apontando",
+       "rosto": "fechado",
+       "x": 1180,
+       "seed": 62
+      }
+     ]
+    }
+   },
+   "id": 2
+  },
+  {
+   "texto": "Mesmo assim, ficaram internados por semanas. E quem desconfiou foram os outros pacientes, não os médicos.",
+   "animacao": {
+    "tipo": "conceito",
+    "nome": "Semanas",
+    "frase": "internados sem estar doentes",
+    "rotulo": "O RESULTADO"
+   },
+   "lofi": "forte",
+   "id": 3
+  },
+  {
+   "texto": "Só que uma jornalista investigou depois e encontrou indícios de que parte do estudo foi inventada.",
+   "animacao": {
+    "tipo": "carimbo",
+    "texto": "EM DEBATE",
+    "frase": "O estudo foi real?",
+    "p": 0.2
+   },
+   "id": 4
+  },
+  {
+   "texto": "A história inteira tá no documentário do link.",
+   "animacao": {
+    "tipo": "cta",
+    "texto": "VEJA O DOCUMENTÁRIO"
+   },
+   "id": 5
+  }
+ ]
+}

@@ -1,0 +1,81 @@
+{
+ "id": "s29",
+ "titulo": "O pânico dos marcianos nunca existiu",
+ "formato": "short",
+ "voz": "en-US-BrianMultilingualNeural",
+ "taxa": "+8%",
+ "trilha": "misterio",
+ "cenas": [
+  {
+   "texto": "Em mil novecentos e trinta e oito, um programa de rádio fez os Estados Unidos acreditarem numa invasão de marcianos. Será mesmo?",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "cenario/lugar",
+    "props": {
+     "lugar": "sala-radio",
+     "hora": "noite",
+     "figuras": [
+      {
+       "traje": "anos30",
+       "pose": "assustado",
+       "rosto": "grito",
+       "x": 1320,
+       "escala": 0.8,
+       "seed": 5
+      },
+      {
+       "traje": "anos30mulher",
+       "pose": "assustado",
+       "rosto": "assustado",
+       "x": 560,
+       "escala": 0.8,
+       "seed": 6
+      }
+     ]
+    }
+   },
+   "local": {
+    "texto": "Estados Unidos",
+    "ano": 1938
+   },
+   "id": 1
+  },
+  {
+   "texto": "No dia seguinte, os jornais falavam em fuga em massa e estradas lotadas.",
+   "animacao": {
+    "tipo": "carimbo",
+    "texto": "MITO",
+    "frase": "O país inteiro entrou em pânico",
+    "p": 0.2
+   },
+   "id": 2
+  },
+  {
+   "texto": "Mas uma pesquisa feita na mesma noite mostrou que só dois por cento estavam ouvindo o programa.",
+   "animacao": {
+    "tipo": "conceito",
+    "nome": "2%",
+    "frase": "ouviam o programa",
+    "rotulo": "A AUDIÊNCIA REAL"
+   },
+   "id": 3
+  },
+  {
+   "texto": "Os jornais exageraram porque o rádio estava roubando os anunciantes deles. O pânico foi criado depois, no papel.",
+   "lofi": "forte",
+   "animacao": {
+    "tipo": "ilustracao",
+    "nome": "interrogacao"
+   },
+   "id": 4
+  },
+  {
+   "texto": "Essa e outras histórias de loucura coletiva estão no documentário do link.",
+   "animacao": {
+    "tipo": "cta",
+    "texto": "VEJA O DOCUMENTÁRIO"
+   },
+   "id": 5
+  }
+ ]
+}
