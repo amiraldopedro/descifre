@@ -759,7 +759,7 @@
    "notas": [],
    "historico": [],
    "tipo": "longo",
-   "titulo": "Você é Fácil de Manipular? Faça Este Teste (7 Situações)",
+   "titulo": "Você é Fácil de Manipular? Faça Este Teste (7 Situações Reais)",
    "descricao": "Sete situações do dia a dia, sete gatilhos mentais. Some seus pontos e descubra o quanto você é vulnerável à manipulação, e como se proteger.\n\nNeste vídeo:\n{capitulos}\n\nComenta aí quantos pontos você fez!\n\nReferências: Robert Cialdini, As Armas da Persuasão; experimentos de obediência de Stanley Milgram; aversão à perda (Kahneman e Tversky).\n\nEste teste não é um diagnóstico. É um espelho para você se conhecer melhor.\n\nDescifre e domine.\n#psicologia #comportamento #manipulação",
    "tags": [
     "psicologia",
@@ -778,7 +778,8 @@
    },
    "tema": "Você é fácil de manipular? Faça este teste",
    "duracao_s": 460,
-   "status": "renderizado"
+   "status": "publicado",
+   "youtube_id": "sZwWHfmSUzU"
   }
  ],
  "regras": {
@@ -792,5 +793,5 @@
   ],
   "fuso": "America/Sao_Paulo"
  },
- "atualizado": "2026-11-12T04:21:22+00:00"
+ "atualizado": "2026-11-12T04:38:05+00:00"
 }

@@ -1,0 +1,71 @@
+name: Subir e agendar vídeos já renderizados
+
+# Pega o vídeo pronto de uma rodada anterior (artefato video_final_ID) e sobe para o YouTube já agendado,
+# sem renderizar de novo. A lista fica em agenda/plano.json:
+#   [{"id": "s17", "run": 43089081733, "quando": "2026-11-12T22:00:00Z"}, ...]
+# Os longos vêm antes dos Shorts, para o link do Short apontar para o vídeo original.
+
+on:
+  workflow_dispatch:
+    inputs:
+      plano: { description: "Arquivo do plano", required: false, default: "agenda/plano.json" }
+
+permissions:
+  contents: write
+  actions: read
+
+concurrency:
+  group: painel-fila
+  cancel-in-progress: false
+
+jobs:
+  subir:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install -q --timeout 60 google-api-python-client google-auth
+      - name: Subir e agendar
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+          GH_TOKEN: ${{ github.token }}
+          PLANO: ${{ inputs.plano }}
+        run: |
+          python - <<'EOF'
+          import json, os, subprocess, sys
+          sys.path.insert(0, "scripts")
+          import painel, publicar
+          plano = json.load(open(os.environ["PLANO"]))
+          plano.sort(key=lambda x: (not x["id"][0].isdigit(), x["quando"]))  # longos primeiro
+          ok, falhas = [], []
+          for p in plano:
+              vid, run, quando = p["id"], str(p["run"]), p["quando"]
+              it = painel.achar(painel.carregar(), vid)
+              if it and it.get("youtube_id") and it.get("status") in ("agendado", "publicado"):
+                  print(f"{vid}: já está no YouTube, pulando"); continue
+              pasta = f"out/{vid}"
+              r = subprocess.run(["gh", "run", "download", run, "-n", f"video_final_{vid}", "-D", pasta], capture_output=True, text=True)
+              if r.returncode != 0:
+                  print(f"{vid}: artefato não encontrado ({r.stderr.strip()[:120]})"); falhas.append(vid); continue
+              video = next((os.path.join(d, f) for d, _, fs in os.walk(pasta) for f in fs if f.endswith(".mp4")), None)
+              thumb = next((os.path.join(d, f) for d, _, fs in os.walk(pasta) for f in fs if f.endswith(".png")), "")
+              painel.registrar(vid, run=run)
+              try:
+                  yid = publicar.main(vid, video, thumb, "privado", quando)
+                  print(f"{vid}: agendado para {quando} → https://youtu.be/{yid}"); ok.append(vid)
+              except Exception as e:
+                  print(f"{vid}: falhou ao subir ({str(e)[:200]})"); falhas.append(vid)
+          print(f"\nagendados: {len(ok)} {ok}\nfalhas: {falhas}")
+          EOF
+      - name: Salvar fila
+        if: always()
+        run: |
+          git config user.name "fabrica-descifre"
+          git config user.email "fabrica@users.noreply.github.com"
+          git add docs/dados/fila.json
+          git commit -qm "Painel: vídeos agendados [skip ci]" || exit 0
+          for i in 1 2 3; do git pull -q --rebase && git push -q && break; sleep 5; done

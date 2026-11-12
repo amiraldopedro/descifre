@@ -20,6 +20,8 @@ PRIVACIDADE = {"rascunho": "unlisted", "privado": "private", "nao_listado": "unl
 
 
 def capitulos(manifesto):
+    if not manifesto.get("cenas"):
+        return ""
     """Capítulos a partir das cenas-chave (o YouTube exige começar em 0:00)."""
     fps = manifesto["fps"]
     marcados = [c for c in manifesto["cenas"] if c.get("capitulo")]
@@ -58,7 +60,8 @@ def trocar_link(descricao, meta):
 
 def main(vid, video, thumb, privacidade="privado", agendar=None):
     meta = json.loads((RAIZ / "roteiros" / f"{vid}.meta.json").read_text())
-    man = json.loads((RAIZ / "public" / "build" / vid / "manifest.json").read_text())
+    man_p = RAIZ / "public" / "build" / vid / "manifest.json"
+    man = json.loads(man_p.read_text()) if man_p.exists() else {"fps": 30, "cenas": []}
     cred = Credentials(
         None,
         refresh_token=os.environ["YT_REFRESH_TOKEN"],
