@@ -1,6 +1,36 @@
 {
  "itens": [
   {
+   "id": "s23",
+   "criado": "2026-11-12T04:56:34+00:00",
+   "notas": [],
+   "historico": [
+    {
+     "quando": "2026-11-12T04:56:42+00:00",
+     "status": "agendado"
+    }
+   ],
+   "tipo": "short",
+   "titulo": "450 Volts: Você Apertaria o Botão? (Experimento de Milgram) #shorts",
+   "descricao": "O experimento de obediência de Stanley Milgram (1961): 65% foram até o choque de 450 volts.\n\nVídeo completo: https://youtu.be/Zpu8nbqIgPI\n\n#psicologia #shorts",
+   "tags": [
+    "experimento de milgram",
+    "obediência",
+    "450 volts",
+    "experimentos de psicologia",
+    "shorts",
+    "descifre"
+   ],
+   "thumb_texto": {},
+   "tema": "450 volts: você apertaria?",
+   "duracao_s": 42,
+   "run": "43157545584",
+   "download": "https://github.com/amiraldopedro/descifre/actions/runs/43157545584",
+   "status": "agendado",
+   "youtube_id": "2b4uaaaNyog",
+   "agendado_para": "2026-11-15T22:00:00Z"
+  },
+  {
    "id": "s26",
    "criado": "2026-11-12T04:55:56+00:00",
    "notas": [],
@@ -1100,5 +1130,5 @@
   ],
   "fuso": "America/Sao_Paulo"
  },
- "atualizado": "2026-11-12T04:56:02+00:00"
+ "atualizado": "2026-11-12T04:56:42+00:00"
 }
