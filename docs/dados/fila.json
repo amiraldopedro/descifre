@@ -1,6 +1,36 @@
 {
  "itens": [
   {
+   "id": "s27",
+   "criado": "2026-11-12T04:55:46+00:00",
+   "notas": [],
+   "historico": [
+    {
+     "quando": "2026-11-12T04:55:53+00:00",
+     "status": "agendado"
+    }
+   ],
+   "tipo": "short",
+   "titulo": "Eles Fingiram Ser Loucos e Ninguém Percebeu #shorts",
+   "descricao": "O estudo de David Rosenhan (1973) e as dúvidas levantadas por Susannah Cahalan (2019).\n\nVídeo completo: https://youtu.be/Zpu8nbqIgPI\n\n#psicologia #shorts",
+   "tags": [
+    "rosenhan",
+    "hospício",
+    "psiquiatria",
+    "experimentos de psicologia",
+    "shorts",
+    "descifre"
+   ],
+   "thumb_texto": {},
+   "tema": "Os falsos loucos de Rosenhan",
+   "duracao_s": 34,
+   "run": "43157638413",
+   "download": "https://github.com/amiraldopedro/descifre/actions/runs/43157638413",
+   "status": "agendado",
+   "youtube_id": "62DAMS2vQzc",
+   "agendado_para": "2026-11-23T22:00:00Z"
+  },
+  {
    "id": "s25",
    "criado": "2026-11-12T04:55:28+00:00",
    "notas": [],
@@ -1040,5 +1070,5 @@
   ],
   "fuso": "America/Sao_Paulo"
  },
- "atualizado": "2026-11-12T04:55:36+00:00"
+ "atualizado": "2026-11-12T04:55:53+00:00"
 }
