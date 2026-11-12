@@ -1,6 +1,89 @@
 {
  "itens": [
   {
+   "id": "s31",
+   "criado": "2026-11-12T05:03:58+00:00",
+   "notas": [],
+   "historico": [
+    {
+     "quando": "2026-11-12T05:03:58+00:00",
+     "status": "agendado"
+    }
+   ],
+   "tipo": "short",
+   "titulo": "A Epidemia de Riso Que Fechou Escolas (1962) #shorts",
+   "descricao": "A epidemia de riso de Tanganica em 1962 (Rankin e Philip, 1963).\n\nVídeo completo: https://youtu.be/EpxCyMwZYZg\n\n#psicologia #shorts",
+   "tags": [
+    "epidemia de riso",
+    "tanganica 1962",
+    "histeria coletiva",
+    "curiosidades",
+    "shorts",
+    "descifre"
+   ],
+   "thumb_texto": {},
+   "tema": "A epidemia de riso",
+   "youtube_id": "QxZLkJqWiRU",
+   "status": "agendado",
+   "agendado_para": "2026-11-23T15:00:00Z"
+  },
+  {
+   "id": "s28",
+   "criado": "2026-11-12T05:03:58+00:00",
+   "notas": [],
+   "historico": [
+    {
+     "quando": "2026-11-12T05:03:58+00:00",
+     "status": "agendado"
+    }
+   ],
+   "tipo": "short",
+   "titulo": "A Dança Que Não Parava (Estrasburgo, 1518) #shorts",
+   "descricao": "A praga da dança de Estrasburgo em 1518 (Waller, 2008).\n\nVídeo completo: https://youtu.be/EpxCyMwZYZg\n\n#psicologia #shorts",
+   "tags": [
+    "praga da dança",
+    "1518",
+    "estrasburgo",
+    "histeria coletiva",
+    "shorts",
+    "descifre"
+   ],
+   "thumb_texto": {},
+   "tema": "A dança que matou uma cidade",
+   "duracao_s": 28,
+   "youtube_id": "U5k3FogsKeg",
+   "status": "agendado",
+   "agendado_para": "2026-11-19T15:00:00Z"
+  },
+  {
+   "id": "s22",
+   "criado": "2026-11-12T05:03:58+00:00",
+   "notas": [],
+   "historico": [
+    {
+     "quando": "2026-11-12T05:03:58+00:00",
+     "status": "agendado"
+    }
+   ],
+   "tipo": "short",
+   "titulo": "Ele Ensinou um Bebê a Ter Medo (Experimento Real) #shorts",
+   "descricao": "O experimento do Pequeno Albert (Watson e Rayner, 1920): como um bebê aprendeu a ter medo de um rato branco.\n\nVídeo completo: https://youtu.be/Zpu8nbqIgPI\n\n#psicologia #shorts",
+   "tags": [
+    "pequeno albert",
+    "john watson",
+    "experimentos de psicologia",
+    "condicionamento",
+    "shorts",
+    "descifre"
+   ],
+   "thumb_texto": {},
+   "tema": "O bebê que aprendeu a ter medo",
+   "duracao_s": 42,
+   "youtube_id": "ui2xeEa7j6M",
+   "status": "agendado",
+   "agendado_para": "2026-11-15T15:00:00Z"
+  },
+  {
    "id": "s23",
    "criado": "2026-11-12T04:56:34+00:00",
    "notas": [],
@@ -1140,5 +1223,5 @@
   ],
   "fuso": "America/Sao_Paulo"
  },
- "atualizado": "2026-11-12T04:58:08+00:00"
+ "atualizado": "2026-11-12T05:03:58+00:00"
 }

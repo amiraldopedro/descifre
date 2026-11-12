@@ -200,6 +200,13 @@ jobs:
           elif [ "$MODO" != "nao" ]; then
             echo "::notice::autorização do YouTube ainda não configurada: fica como renderizado no painel"
           fi
-          git add docs/dados/fila.json
-          git commit -qm "Painel: $ID pronto [skip ci]" || exit 0
-          for i in 1 2 3; do git pull -q --rebase && git push -q && break; sleep 5; done
+          # salva só este vídeo na fila, mesmo com várias rodadas terminando juntas
+          python -c "import json,sys; sys.path.insert(0,'scripts'); import painel; json.dump(painel.achar(painel.carregar(),'$ID'), open('/tmp/item.json','w'))"
+          for i in 1 2 3 4 5 6; do
+            git fetch -q origin main && git reset -q --hard origin/main
+            python -c "import json,sys; sys.path.insert(0,'scripts'); import painel; it=json.load(open('/tmp/item.json')); f=painel.carregar(); f['itens']=[x for x in f['itens'] if x['id']!=it['id']]+[it]; painel.salvar(f)"
+            git add docs/dados/fila.json
+            git commit -qm "Painel: $ID pronto [skip ci]" || exit 0
+            git push -q && break
+            sleep $((RANDOM % 10 + 3))
+          done
