@@ -8,10 +8,10 @@ on:
         required: true
         default: "001"
       publicar:
-        description: "Postar no YouTube?"
+        description: "YouTube: rascunho = sobe PRIVADO e espera aprovação no painel"
         type: choice
-        options: [nao, privado, nao_listado, publico]
-        default: nao
+        options: [rascunho, nao, privado, nao_listado, publico]
+        default: rascunho
       agendar:
         description: "Agendar (opcional, UTC, ex.: 2026-11-12T22:00:00Z)"
         required: false
@@ -137,6 +137,8 @@ jobs:
   finalizar:
     needs: [preparar, renderizar]
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -179,13 +181,25 @@ jobs:
             out/thumb.png
           retention-days: 14
 
-      - name: Postar no YouTube
-        if: github.event.inputs.publicar && github.event.inputs.publicar != 'nao'
+      - name: YouTube (rascunho privado) e fila do painel
         env:
           YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
           YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
           YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+          MODO: ${{ github.event.inputs.publicar || 'rascunho' }}
+          AGENDAR: ${{ github.event.inputs.agendar }}
+          ID: ${{ needs.preparar.outputs.id }}
         run: |
-          pip install -q google-api-python-client google-auth
-          python scripts/publicar.py ${{ needs.preparar.outputs.id }} out/final.mp4 out/thumb.png \
-            ${{ github.event.inputs.publicar }} ${{ github.event.inputs.agendar }}
+          pip install -q --timeout 60 google-api-python-client google-auth
+          git config user.name "fabrica-descifre"
+          git config user.email "fabrica@users.noreply.github.com"
+          git pull -q --rebase || true
+          python scripts/painel.py registrar $ID --run ${{ github.run_id }}
+          if [ "$MODO" != "nao" ] && [ -n "$YT_REFRESH_TOKEN" ]; then
+            python scripts/publicar.py $ID out/final.mp4 out/thumb.png $MODO $AGENDAR || echo "::warning::não subiu para o YouTube"
+          elif [ "$MODO" != "nao" ]; then
+            echo "::notice::autorização do YouTube ainda não configurada: fica como renderizado no painel"
+          fi
+          git add docs/dados/fila.json
+          git commit -qm "Painel: $ID pronto [skip ci]" || exit 0
+          for i in 1 2 3; do git pull -q --rebase && git push -q && break; sleep 5; done

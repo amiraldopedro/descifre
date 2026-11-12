@@ -9,12 +9,14 @@ import os
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+
 from google.oauth2.credentials import Credentials
 from googleapiclient.discovery import build
 from googleapiclient.http import MediaFileUpload
 
 RAIZ = Path(__file__).resolve().parent.parent
-PRIVACIDADE = {"privado": "private", "nao_listado": "unlisted", "publico": "public"}
+PRIVACIDADE = {"rascunho": "unlisted", "privado": "private", "nao_listado": "unlisted", "publico": "public"}
 
 
 def capitulos(manifesto):
@@ -43,6 +45,17 @@ def capitulos(manifesto):
     return "\n".join(linhas)
 
 
+def trocar_link(descricao, meta):
+    """Shorts: troca [LINK DO VÍDEO] pelo link do vídeo longo ligado a ele, se já estiver no YouTube."""
+    if "[LINK DO VÍDEO]" not in descricao or not meta.get("video_relacionado"):
+        return descricao
+    import painel
+    for it in painel.carregar()["itens"]:
+        if it.get("titulo", "").strip().lower() == meta["video_relacionado"].strip().lower() and it.get("youtube_id"):
+            return descricao.replace("[LINK DO VÍDEO]", f"https://youtu.be/{it['youtube_id']}")
+    return descricao
+
+
 def main(vid, video, thumb, privacidade="privado", agendar=None):
     meta = json.loads((RAIZ / "roteiros" / f"{vid}.meta.json").read_text())
     man = json.loads((RAIZ / "public" / "build" / vid / "manifest.json").read_text())
@@ -60,6 +73,7 @@ def main(vid, video, thumb, privacidade="privado", agendar=None):
     if agendar:  # agenda: precisa subir como privado com publishAt
         status.update(privacyStatus="private", publishAt=agendar)
     descricao = meta["descricao"].replace("{capitulos}", capitulos(man))
+    descricao = trocar_link(descricao, meta)
     cred_p = RAIZ / "public" / "build" / vid / "creditos.json"
     if cred_p.exists() and json.loads(cred_p.read_text()):
         descricao += "\n\nImagens de arquivo (domínio público):\n" + "\n".join("• " + c for c in json.loads(cred_p.read_text()))
@@ -88,6 +102,14 @@ def main(vid, video, thumb, privacidade="privado", agendar=None):
         print("thumbnail definida")
     except Exception as e:  # canal sem verificação por telefone não aceita thumbnail personalizada
         print(f"aviso: thumbnail não aplicada ({e})")
+    import painel
+    estado = "agendado" if agendar else {"private": "rascunho", "unlisted": "rascunho", "public": "publicado"}[status["privacyStatus"]]
+    painel.registrar(vid, youtube=vid_id, status=estado, quando=agendar)
+    f = painel.carregar()
+    it = painel.achar(f, vid)
+    it.update(titulo=corpo["snippet"]["title"], descricao=corpo["snippet"]["description"], tags=corpo["snippet"]["tags"])
+    painel.salvar(f)
+    return vid_id
 
 
 if __name__ == "__main__":

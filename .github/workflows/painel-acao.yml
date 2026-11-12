@@ -1,0 +1,51 @@
+name: Painel - ação
+
+on:
+  workflow_dispatch:
+    inputs:
+      id: { description: "ID do vídeo (ex.: 009, s17)", required: true }
+      acao: { description: "aprovar, salvar, ajustar, descartar ou voltar", required: true }
+      quando: { description: "Data e hora em Brasília (ex.: 2026-11-14T18:00). Vazio = próximo horário livre", required: false, default: "" }
+      titulo: { description: "Novo título (opcional)", required: false, default: "" }
+      descricao: { description: "Nova descrição (opcional)", required: false, default: "" }
+      tags: { description: "Novas tags separadas por vírgula (opcional)", required: false, default: "" }
+      nota: { description: "Pedido de ajuste (para 'ajustar')", required: false, default: "" }
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: painel-fila
+  cancel-in-progress: false
+
+jobs:
+  acao:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install -q --timeout 60 google-api-python-client google-auth
+      - name: Executar
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+          GH_TOKEN: ${{ github.token }}
+          ID: ${{ inputs.id }}
+          ACAO: ${{ inputs.acao }}
+          QUANDO: ${{ inputs.quando }}
+          TITULO: ${{ inputs.titulo }}
+          DESCRICAO: ${{ inputs.descricao }}
+          TAGS: ${{ inputs.tags }}
+          NOTA: ${{ inputs.nota }}
+        run: python scripts/acao.py
+      - name: Salvar fila
+        run: |
+          git config user.name "fabrica-descifre"
+          git config user.email "fabrica@users.noreply.github.com"
+          git add docs/dados/fila.json
+          git commit -qm "Painel: ${{ inputs.acao }} ${{ inputs.id }} [skip ci]" || exit 0
+          for i in 1 2 3; do git pull -q --rebase && git push -q && break; sleep 5; done

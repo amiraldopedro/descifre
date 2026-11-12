@@ -1,0 +1,38 @@
+name: Painel - dados do canal
+
+on:
+  schedule:
+    - cron: "17 9 * * *"   # todo dia, 6h17 em Brasília
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: painel-fila
+  cancel-in-progress: false
+
+jobs:
+  dados:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install -q --timeout 60 google-api-python-client google-auth
+      - name: Coletar
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+        run: |
+          if [ -z "$YT_REFRESH_TOKEN" ]; then echo "::notice::autorização do YouTube ainda não configurada"; exit 0; fi
+          python scripts/dados.py
+      - name: Salvar
+        run: |
+          git config user.name "fabrica-descifre"
+          git config user.email "fabrica@users.noreply.github.com"
+          git add docs/dados
+          git commit -qm "Painel: dados do canal $(date -u +%F) [skip ci]" || exit 0
+          for i in 1 2 3; do git pull -q --rebase && git push -q && break; sleep 5; done

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Painel Descifre</title>
+<style>
+:root{--fundo:#070B24;--card:#10173F;--card2:#151E52;--linha:#222C6B;--texto:#EEF1FF;--sub:#9AA3D6;--amarelo:#FFD84D;--vermelho:#FF3B4E;--ciano:#5BE0FF;--verde:#38D9A0;--roxo:#9B7BFF}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fundo);color:var(--texto);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:15px}
+a{color:var(--ciano)}
+header{display:flex;align-items:center;gap:16px;padding:18px 24px;border-bottom:1px solid var(--linha);flex-wrap:wrap}
+.logo{font-weight:900;font-size:22px;letter-spacing:1px}.logo b{color:var(--vermelho)}
+.stats{display:flex;gap:22px;margin-left:auto;flex-wrap:wrap}
+.stat{text-align:right}.stat .n{font-size:20px;font-weight:800}.stat .l{font-size:12px;color:var(--sub)}
+nav{display:flex;gap:4px;padding:0 16px;border-bottom:1px solid var(--linha);overflow-x:auto;position:sticky;top:0;background:var(--fundo);z-index:5}
+nav button{background:none;border:0;color:var(--sub);padding:14px 14px;font-size:15px;font-weight:600;cursor:pointer;border-bottom:3px solid transparent;white-space:nowrap}
+nav button.on{color:var(--texto);border-color:var(--amarelo)}
+nav .badge{background:var(--vermelho);color:#fff;border-radius:99px;font-size:11px;padding:1px 7px;margin-left:6px}
+main{padding:20px 24px 60px;max-width:1300px;margin:0 auto}
+.dica{color:var(--sub);font-size:13px;margin:0 0 16px}
+.grade{display:grid;grid-template-columns:repeat(auto-fill,minmax(360px,1fr));gap:18px}
+.card{background:var(--card);border:1px solid var(--linha);border-radius:16px;overflow:hidden;display:flex;flex-direction:column}
+.capa{position:relative;aspect-ratio:16/9;background:linear-gradient(135deg,#1A2A7A,#0B1030);display:flex;align-items:center;justify-content:center;text-align:center;padding:18px;cursor:pointer}
+.capa.short{aspect-ratio:16/9}
+.capa img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.capa .txt{position:relative;font-weight:900;font-size:20px;text-shadow:0 2px 8px #000}
+.capa .play{position:absolute;bottom:10px;right:10px;background:rgba(0,0,0,.7);border-radius:99px;padding:6px 12px;font-size:13px}
+.capa iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.corpo{padding:14px 16px;display:flex;flex-direction:column;gap:10px;flex:1}
+.linha1{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.pill{font-size:12px;padding:3px 9px;border-radius:99px;background:var(--card2);color:var(--sub);font-weight:600}
+.st-renderizado{background:#2A3480;color:#C9D0FF}.st-rascunho{background:#5A4A10;color:var(--amarelo)}.st-ajuste{background:#5A1A2A;color:#FF9AA6}
+.st-agendado{background:#103A5A;color:var(--ciano)}.st-publicado{background:#0E4A38;color:var(--verde)}.st-descartado{background:#2A2A3A;color:#888}.st-aprovado{background:#103A5A;color:var(--ciano)}
+label.c{font-size:12px;color:var(--sub);display:flex;justify-content:space-between}
+input[type=text],input[type=datetime-local],textarea{width:100%;background:var(--fundo);color:var(--texto);border:1px solid var(--linha);border-radius:10px;padding:9px 11px;font:inherit;font-size:14px}
+textarea{min-height:110px;resize:vertical}
+.acoes{display:flex;gap:8px;flex-wrap:wrap;margin-top:auto}
+.btn{border:0;border-radius:10px;padding:10px 14px;font-weight:700;font-size:14px;cursor:pointer;background:var(--card2);color:var(--texto)}
+.btn:hover{filter:brightness(1.2)}.btn.ok{background:var(--verde);color:#04241A}.btn.am{background:var(--amarelo);color:#2A2000}.btn.ruim{background:transparent;color:#FF9AA6;border:1px solid #5A1A2A}
+.btn:disabled{opacity:.4;cursor:not-allowed}
+details summary{cursor:pointer;color:var(--sub);font-size:13px}
+.vazio{color:var(--sub);padding:40px;text-align:center;border:1px dashed var(--linha);border-radius:16px}
+table{width:100%;border-collapse:collapse;font-size:14px}th,td{padding:9px 10px;border-bottom:1px solid var(--linha);text-align:left}th{color:var(--sub);font-weight:600}td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
+.cal{display:grid;grid-template-columns:repeat(7,1fr);gap:8px}
+.dia{background:var(--card);border:1px solid var(--linha);border-radius:12px;min-height:120px;padding:8px}
+.dia .d{font-size:12px;color:var(--sub);margin-bottom:6px}.dia.hoje{border-color:var(--amarelo)}
+.ev{font-size:12px;border-radius:8px;padding:5px 7px;margin-bottom:5px;background:#103A5A;color:#CFEFFF}.ev.short{background:#3A1A5A;color:#E6D6FF}
+.paineis{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:18px}
+.box{background:var(--card);border:1px solid var(--linha);border-radius:16px;padding:16px}.box h3{margin:0 0 12px;font-size:15px;color:var(--sub);font-weight:600}
+.barra{height:10px;border-radius:99px;background:var(--card2);overflow:hidden}.barra i{display:block;height:100%;background:var(--ciano)}
+.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:var(--card2);border:1px solid var(--linha);padding:12px 18px;border-radius:12px;display:none;z-index:20;max-width:90vw}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.6);display:none;align-items:center;justify-content:center;z-index:30}
+.modal .in{background:var(--card);border:1px solid var(--linha);border-radius:16px;padding:22px;max-width:520px;width:92vw}
+.md h1,.md h2,.md h3{margin:.8em 0 .4em}.md p,.md li{line-height:1.55}
+.filtros{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+.filtros button{background:var(--card);border:1px solid var(--linha);color:var(--sub);border-radius:99px;padding:6px 12px;cursor:pointer;font-weight:600}.filtros button.on{color:var(--fundo);background:var(--amarelo);border-color:var(--amarelo)}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">DES<b>C</b>IFRE <span style="font-weight:500;color:var(--sub);font-size:15px">· painel</span></div>
+  <div class="stats" id="stats"></div>
+  <button class="btn" id="bConectar">🔑 Conectar</button>
+</header>
+<nav id="nav"></nav>
+<main id="main"></main>
+<div class="toast" id="toast"></div>
+<div class="modal" id="modal"><div class="in">
+  <h3 style="margin-top:0">Conectar o painel ao GitHub</h3>
+  <p class="dica">Os botões do painel mandam o GitHub fazer o trabalho: agendar, salvar o SEO e pedir ajustes. Para isso, este navegador precisa de uma chave do GitHub. Ela fica guardada só aqui, no seu navegador.</p>
+  <ol class="dica" style="padding-left:18px">
+    <li>Abra <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">github.com/settings/personal-access-tokens/new</a></li>
+    <li>Em <b>Repository access</b>, escolha <b>Only select repositories → descifre</b></li>
+    <li>Em <b>Permissions</b>, dê <b>Actions: Read and write</b> e <b>Contents: Read-only</b></li>
+    <li>Gere a chave, copie e cole abaixo</li>
+  </ol>
+  <input type="text" id="tok" placeholder="github_pat_..." autocomplete="off">
+  <div class="acoes" style="margin-top:14px"><button class="btn ok" id="bSalvarTok">Salvar</button><button class="btn" id="bSairTok">Desconectar</button><button class="btn" id="bFechar">Fechar</button></div>
+</div></div>
+<script>
+const REPO="amiraldopedro/descifre";
+const ABAS=[["revisar","Para revisar"],["agenda","Agenda"],["publicados","Publicados"],["canal","Canal"],["analises","Análises"],["ideias","Ideias"],["todos","Todos"]];
+let aba=location.hash.slice(1)||"revisar", FILA={itens:[]}, CANAL=null, IDEIAS=null, ANALISES=null, filtroTipo="";
+const $=s=>document.querySelector(s);
+const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const fmt=n=>n==null?"–":Number(n).toLocaleString("pt-BR");
+const tok=()=>{try{return localStorage.getItem("descifre_tok")||""}catch(e){return""}};
+const STATUS={renderizado:"pronto (não subiu)",rascunho:"para aprovar",ajuste:"ajuste pedido",aprovado:"aprovado (subindo)",agendado:"agendado",publicado:"publicado",descartado:"descartado"};
+const dataBR=iso=>{if(!iso)return"";const d=new Date(iso);return d.toLocaleString("pt-BR",{weekday:"short",day:"2-digit",month:"2-digit",hour:"2-digit",minute:"2-digit",timeZone:"America/Sao_Paulo"})};
+function toast(t,ms=4000){const e=$("#toast");e.textContent=t;e.style.display="block";clearTimeout(e._t);e._t=setTimeout(()=>e.style.display="none",ms)}
+
+async function lerJSON(caminho){
+  // com chave: lê direto do GitHub (sempre atualizado); sem chave: a cópia publicada da página
+  const t=tok();
+  try{
+    if(t){const r=await fetch(`https://api.github.com/repos/${REPO}/contents/docs/${caminho}?ref=main&t=${Date.now()}`,{headers:{Authorization:"Bearer "+t,Accept:"application/vnd.github.raw+json"}});if(r.ok)return await r.json();}
+    const r=await fetch(caminho+"?t="+Date.now());if(r.ok)return await r.json();
+  }catch(e){}
+  return null;
+}
+async function carregar(){
+  [FILA,CANAL,IDEIAS]=await Promise.all([lerJSON("dados/fila.json"),lerJSON("dados/canal.json"),lerJSON("dados/ideias.json")]);
+  FILA=FILA||{itens:[]};desenha();
+}
+async function disparar(inputs){
+  const t=tok(); if(!t){$("#modal").style.display="flex";return false}
+  const r=await fetch(`https://api.github.com/repos/${REPO}/actions/workflows/painel-acao.yml/dispatches`,{method:"POST",headers:{Authorization:"Bearer "+t,Accept:"application/vnd.github+json"},body:JSON.stringify({ref:"main",inputs})});
+  if(r.status===204){toast("Enviado! O GitHub está fazendo isso. O painel atualiza em 1 a 2 minutos.",6000);vigiar();return true}
+  toast("Não deu certo ("+r.status+"). Confira a chave em 🔑 Conectar.",7000);return false;
+}
+function vigiar(){let n=0;clearInterval(window._v);window._v=setInterval(()=>{carregar();if(++n>8)clearInterval(window._v)},20000)}
+
+function nav(){
+  const nRev=FILA.itens.filter(i=>["rascunho","renderizado","ajuste"].includes(i.status)).length;
+  $("#nav").innerHTML=ABAS.map(([k,n])=>`<button class="${k==aba?"on":""}" data-k="${k}">${n}${k=="revisar"&&nRev?`<span class="badge">${nRev}</span>`:""}</button>`).join("");
+  document.querySelectorAll("#nav button").forEach(b=>b.onclick=()=>{aba=b.dataset.k;location.hash=aba;desenha()});
+}
+function stats(){
+  const c=CANAL?.canal, ag=FILA.itens.filter(i=>i.status=="agendado").length;
+  $("#stats").innerHTML=(c?`<div class="stat"><div class="n">${fmt(c.inscritos)}</div><div class="l">inscritos</div></div><div class="stat"><div class="n">${fmt(c.views)}</div><div class="l">views no canal</div></div>`:"")+
+  `<div class="stat"><div class="n">${ag}</div><div class="l">agendados</div></div><div class="stat"><div class="n" style="color:${tok()?"var(--verde)":"var(--vermelho)"}">${tok()?"●":"○"}</div><div class="l">${tok()?"conectado":"só leitura"}</div></div>`;
+}
+function filtros(){return `<div class="filtros">${[["","Tudo"],["longo","Vídeos longos"],["short","Shorts"]].map(([k,n])=>`<button class="${filtroTipo==k?"on":""}" data-f="${k}">${n}</button>`).join("")}</div>`}
+function ligaFiltros(){document.querySelectorAll("[data-f]").forEach(b=>b.onclick=()=>{filtroTipo=b.dataset.f;desenha()})}
+const porTipo=l=>l.filter(i=>!filtroTipo||i.tipo==filtroTipo);
+
+function card(i){
+  const yt=i.youtube_id, capa=yt?`<img src="https://i.ytimg.com/vi/${yt}/hqdefault.jpg" alt="">`:"";
+  const th=i.thumb_texto||{};
+  const txt=[th.linha1,th.destaque].filter(Boolean).join(" ")||i.titulo;
+  const pode=["renderizado","rascunho","ajuste"].includes(i.status);
+  const ag=i.status=="agendado";
+  return `<div class="card" data-id="${i.id}">
+   <div class="capa ${i.tipo}" data-yt="${yt||""}">${capa}<div class="txt">${yt?"":esc(txt)}</div><div class="play">${yt?"▶ assistir":i.download?"⬇ baixar":""}</div></div>
+   <div class="corpo">
+    <div class="linha1"><span class="pill st-${i.status}">${STATUS[i.status]||i.status}</span><span class="pill">${i.tipo=="short"?"Short":"Longo"} · ${i.id}</span>${i.duracao_s?`<span class="pill">${Math.floor(i.duracao_s/60)}:${String(i.duracao_s%60).padStart(2,"0")}</span>`:""}${i.views!=null?`<span class="pill">${fmt(i.views)} views</span>`:""}</div>
+    ${ag?`<div>📅 <b>${dataBR(i.agendado_para)}</b></div>`:""}
+    ${(i.notas||[]).length?`<div class="dica" style="margin:0">✏️ ${esc(i.notas[i.notas.length-1].texto)}</div>`:""}
+    <label class="c">Título <span class="cont">${(i.titulo||"").length}/100</span></label>
+    <input type="text" class="fTit" value="${esc(i.titulo)}" maxlength="100">
+    <details><summary>Descrição e tags</summary>
+      <textarea class="fDesc">${esc(i.descricao)}</textarea>
+      <label class="c" style="margin-top:8px">Tags (separadas por vírgula)</label>
+      <input type="text" class="fTags" value="${esc((i.tags||[]).join(", "))}">
+    </details>
+    ${pode?`<label class="c">Quando publicar (vazio = próximo horário livre)</label><input type="datetime-local" class="fQuando">`:""}
+    <div class="acoes">
+      ${pode?`<button class="btn ok bAprovar">✅ Aprovar e agendar</button>`:""}
+      ${ag?`<button class="btn bVoltar">↩ Tirar da agenda</button>`:""}
+      ${i.status!="descartado"?`<button class="btn bSalvar">💾 Salvar SEO</button>`:""}
+      ${pode?`<button class="btn am bAjustar">✏️ Pedir ajuste</button><button class="btn ruim bDescartar">Descartar</button>`:""}
+      ${yt?`<a class="btn" style="text-decoration:none" target="_blank" rel="noopener" href="https://studio.youtube.com/video/${yt}/edit">Studio ↗</a>`:""}
+      ${i.download&&!yt?`<a class="btn" style="text-decoration:none" target="_blank" rel="noopener" href="${i.download}">⬇ Baixar</a>`:""}
+    </div>
+   </div></div>`;
+}
+function ligaCards(){
+  document.querySelectorAll(".card").forEach(c=>{
+    const id=c.dataset.id, it=FILA.itens.find(x=>x.id==id);
+    const seo=()=>({titulo:c.querySelector(".fTit").value.trim(),descricao:c.querySelector(".fDesc").value.trim(),tags:c.querySelector(".fTags").value.trim()});
+    c.querySelector(".fTit").oninput=e=>c.querySelector(".cont").textContent=e.target.value.length+"/100";
+    const cp=c.querySelector(".capa");cp.onclick=()=>{const y=cp.dataset.yt;if(y){cp.innerHTML=`<iframe src="https://www.youtube.com/embed/${y}?autoplay=1" allow="autoplay; encrypted-media; fullscreen" allowfullscreen></iframe>`}else if(it.download)window.open(it.download,"_blank")};
+    const on=(sel,fn)=>{const b=c.querySelector(sel);if(b)b.onclick=fn};
+    on(".bAprovar",async()=>{const q=c.querySelector(".fQuando").value;const s=seo();if(await disparar({id,acao:"aprovar",quando:q,titulo:s.titulo,descricao:s.descricao,tags:s.tags})){it.status=it.youtube_id?"agendado":"aprovado";desenha()}});
+    on(".bSalvar",async()=>{const s=seo();await disparar({id,acao:"salvar",titulo:s.titulo,descricao:s.descricao,tags:s.tags})});
+    on(".bAjustar",async()=>{const n=prompt("O que você quer mudar neste vídeo? (o Claude refaz)");if(n&&await disparar({id,acao:"ajustar",nota:n})){it.status="ajuste";(it.notas=it.notas||[]).push({texto:n});desenha()}});
+    on(".bDescartar",async()=>{if(confirm("Descartar "+id+"? Ele não vai ao ar.")&&await disparar({id,acao:"descartar"})){it.status="descartado";desenha()}});
+    on(".bVoltar",async()=>{if(await disparar({id,acao:"voltar"})){it.status=it.youtube_id?"rascunho":"renderizado";desenha()}});
+  });
+}
+function lista(itens,vazio){return itens.length?`<div class="grade">${itens.map(card).join("")}</div>`:`<div class="vazio">${vazio}</div>`}
+
+function vRevisar(){
+  const l=porTipo(FILA.itens.filter(i=>["rascunho","ajuste","renderizado","aprovado"].includes(i.status)));
+  const ord={rascunho:0,ajuste:1,aprovado:2,renderizado:3};l.sort((a,b)=>ord[a.status]-ord[b.status]||(b.id>a.id?1:-1));
+  return `<p class="dica">Assista, ajuste o título e a descrição se quiser, e aprove. Sem data, ele entra no próximo horário livre: longos às terças e sextas às 18h, Shorts às 12h e às 19h. Os itens "pronto (não subiu)" ainda não estão no YouTube; ao aprovar, o GitHub gera de novo e já sobe agendado.</p>${filtros()}${lista(l,"Nada para revisar agora. 🎉")}`;
+}
+function vAgenda(){
+  const ag=FILA.itens.filter(i=>i.status=="agendado"&&i.agendado_para).sort((a,b)=>a.agendado_para.localeCompare(b.agendado_para));
+  const hoje=new Date();hoje.setHours(0,0,0,0);const ini=new Date(hoje);ini.setDate(ini.getDate()-((ini.getDay()+6)%7));
+  let cal="";for(let d=0;d<21;d++){const dia=new Date(ini);dia.setDate(ini.getDate()+d);const k=dia.toLocaleDateString("sv-SE",{timeZone:"America/Sao_Paulo"});
+    const ev=ag.filter(i=>new Date(i.agendado_para).toLocaleDateString("sv-SE",{timeZone:"America/Sao_Paulo"})==k);
+    cal+=`<div class="dia ${+dia==+hoje?"hoje":""}"><div class="d">${dia.toLocaleDateString("pt-BR",{weekday:"short",day:"2-digit",month:"2-digit"})}</div>${ev.map(i=>`<div class="ev ${i.tipo}">${new Date(i.agendado_para).toLocaleTimeString("pt-BR",{hour:"2-digit",minute:"2-digit",timeZone:"America/Sao_Paulo"})} · ${esc(i.titulo.replace(/#shorts/i,""))}</div>`).join("")}</div>`}
+  return `<p class="dica">As próximas 3 semanas. Azul = vídeo longo, roxo = Short. O YouTube publica sozinho na hora marcada.</p><div class="cal">${["seg","ter","qua","qui","sex","sáb","dom"].map(d=>`<div class="d" style="text-align:center;color:var(--sub);font-size:12px">${d}</div>`).join("")}${cal}</div><h3 style="margin-top:28px">Lista</h3>${lista(ag,"Nada agendado ainda.")}`;
+}
+function vPublicados(){
+  const l=porTipo(FILA.itens.filter(i=>i.status=="publicado"));
+  const vids=(CANAL?.videos||[]).filter(v=>v.privacidade=="public");
+  const tab=vids.length?`<div class="box" style="margin-bottom:18px"><h3>Todos os vídeos públicos do canal</h3><div style="overflow-x:auto"><table><tr><th>Vídeo</th><th class="n">Views</th><th class="n">Clique na thumb</th><th class="n">Assistem em média</th><th class="n">Inscritos ganhos</th><th class="n">Comentários</th></tr>${vids.map(v=>`<tr><td><a target="_blank" rel="noopener" href="https://youtu.be/${v.youtube_id}">${esc(v.titulo)}</a><div class="dica" style="margin:0">${dataBR(v.publicado)}</div></td><td class="n">${fmt(v.views)}</td><td class="n">${v.videoThumbnailImpressionsClickRate!=null?(v.videoThumbnailImpressionsClickRate*100).toFixed(1)+"%":"–"}</td><td class="n">${v.averageViewPercentage!=null?Math.round(v.averageViewPercentage)+"%":"–"}</td><td class="n">${fmt(v.subscribersGained)}</td><td class="n">${fmt(v.comentarios)}</td></tr>`).join("")}</table></div></div>`:"";
+  return tab+filtros()+lista(l,"Quando os vídeos forem ao ar, aparecem aqui com os números.");
+}
+function linhaSVG(pts,cor){if(pts.length<2)return"";const W=600,H=160,mx=Math.max(...pts,1);const p=pts.map((v,i)=>`${(i/(pts.length-1)*W).toFixed(1)},${(H-v/mx*H*0.92).toFixed(1)}`).join(" ");
+  return `<svg viewBox="0 0 ${W} ${H+4}" style="width:100%;height:170px"><polyline points="${p}" fill="none" stroke="${cor}" stroke-width="2.5"/><text x="4" y="14" fill="#9AA3D6" font-size="12">máx ${fmt(mx)}</text></svg>`}
+function vCanal(){
+  if(!CANAL)return `<div class="vazio">Os dados do canal aparecem aqui assim que a autorização do YouTube for configurada. A coleta roda todo dia às 6h.</div>`;
+  const pd=CANAL.por_dia||[];const v=pd.map(d=>d.views),ins=pd.map(d=>(d.subscribersGained||0)-(d.subscribersLost||0)),min=pd.map(d=>d.estimatedMinutesWatched||0);
+  const s28=a=>a.slice(-28).reduce((x,y)=>x+y,0);
+  const fontes=CANAL.fontes||[],tf=fontes.reduce((a,b)=>a+b.views,0)||1;
+  const NOMES={YT_SEARCH:"Busca do YouTube",SUGGESTED:"Vídeos sugeridos",BROWSE:"Página inicial e inscrições",SHORTS:"Feed de Shorts",EXT_URL:"Sites e apps de fora",PLAYLIST:"Playlists",CHANNEL:"Página do canal",NO_LINK_OTHER:"Direto ou desconhecido",NOTIFICATION:"Notificações",END_SCREEN:"Telas finais",HASHTAGS:"Hashtags",SUBSCRIBER:"Inscritos",RELATED_VIDEO:"Vídeo relacionado"};
+  const tc=CANAL.tipo_conteudo||[];
+  const pub=(CANAL.publico||[]).sort((a,b)=>b.viewerPercentage-a.viewerPercentage).slice(0,6);
+  return `<p class="dica">Atualizado em ${dataBR(CANAL.atualizado)}.</p>
+  <div class="paineis">
+   <div class="box"><h3>Views por dia (90 dias) · ${fmt(s28(v))} nos últimos 28</h3>${linhaSVG(v,"#5BE0FF")}</div>
+   <div class="box"><h3>Inscritos ganhos por dia · ${fmt(s28(ins))} nos últimos 28</h3>${linhaSVG(ins.map(x=>Math.max(0,x)),"#FFD84D")}</div>
+   <div class="box"><h3>Minutos assistidos por dia · ${fmt(Math.round(s28(min)))} nos últimos 28</h3>${linhaSVG(min,"#38D9A0")}</div>
+   <div class="box"><h3>De onde vem o público (28 dias)</h3>${fontes.slice(0,8).map(f=>`<div style="margin-bottom:9px"><div style="display:flex;justify-content:space-between;font-size:13px"><span>${NOMES[f.insightTrafficSourceType]||f.insightTrafficSourceType}</span><span>${Math.round(f.views/tf*100)}%</span></div><div class="barra"><i style="width:${f.views/tf*100}%"></i></div></div>`).join("")||"–"}</div>
+   <div class="box"><h3>Longos x Shorts (28 dias)</h3><table><tr><th>Tipo</th><th class="n">Views</th><th class="n">Minutos</th><th class="n">Inscritos</th></tr>${tc.map(t=>`<tr><td>${{shorts:"Shorts",videoOnDemand:"Vídeos longos",liveStream:"Lives"}[t.creatorContentType]||t.creatorContentType}</td><td class="n">${fmt(t.views)}</td><td class="n">${fmt(Math.round(t.estimatedMinutesWatched))}</td><td class="n">${fmt(t.subscribersGained)}</td></tr>`).join("")}</table></div>
+   <div class="box"><h3>Quem assiste (90 dias)</h3>${pub.map(p=>`<div style="display:flex;justify-content:space-between;font-size:13px;margin-bottom:6px"><span>${p.gender=="female"?"Mulheres":p.gender=="male"?"Homens":"Outros"} ${p.ageGroup.replace("age","").replace("-"," a ")} anos</span><b>${p.viewerPercentage.toFixed(1)}%</b></div>`).join("")||"–"}
+   <h3 style="margin-top:14px">Países</h3>${(CANAL.paises||[]).slice(0,5).map(p=>`<div style="display:flex;justify-content:space-between;font-size:13px"><span>${p.country}</span><span>${fmt(p.views)}</span></div>`).join("")}</div>
+  </div>`;
+}
+async function vAnalises(){
+  if(ANALISES===null){ANALISES=[];try{const r=await fetch(`https://api.github.com/repos/${REPO}/contents/docs/analises`,{headers:tok()?{Authorization:"Bearer "+tok()}:{}});if(r.ok)ANALISES=(await r.json()).filter(f=>f.name.endsWith(".md")).sort((a,b)=>b.name.localeCompare(a.name))}catch(e){}desenha();return""}
+  if(!ANALISES.length)return `<div class="vazio">Toda segunda-feira o Claude lê os números da semana e escreve aqui: o que funcionou, o que não funcionou e o que fazer a seguir.</div>`;
+  return `<div class="filtros">${ANALISES.map((a,k)=>`<button data-a="${k}" class="${k==(window._a||0)?"on":""}">${a.name.replace(".md","")}</button>`).join("")}</div><div class="box md" id="mdbox">Carregando…</div>`;
+}
+function md(t){return esc(t).replace(/^### (.*)$/gm,"<h3>$1</h3>").replace(/^## (.*)$/gm,"<h2>$1</h2>").replace(/^# (.*)$/gm,"<h1>$1</h1>").replace(/\*\*(.+?)\*\*/g,"<b>$1</b>").replace(/^- (.*)$/gm,"<li>$1</li>").replace(/\[(.+?)\]\((https?:[^)]+)\)/g,'<a href="$2" target="_blank" rel="noopener">$1</a>').replace(/\n\n/g,"<p>")}
+async function abreAnalise(){const a=ANALISES[window._a||0];if(!a)return;const r=await fetch(a.download_url);$("#mdbox").innerHTML=md(await r.text());document.querySelectorAll("[data-a]").forEach(b=>b.onclick=()=>{window._a=+b.dataset.a;desenha()})}
+function vIdeias(){
+  if(!IDEIAS)return `<div class="vazio">Rode o "Buscador de canais em alta" no GitHub (aba Actions) e os vídeos estourados aparecem aqui.</div>`;
+  const L=IDEIAS.linhas||[];
+  return `<p class="dica">Vídeos publicados nos últimos ${IDEIAS.filtro.dias} dias que fizeram muito mais views que o tamanho do canal. Termos: ${esc(IDEIAS.filtro.termos.join(", "))}. Estouro = views ÷ inscritos.</p>
+  <div class="box" style="overflow-x:auto"><table><tr><th class="n">Estouro</th><th>Vídeo</th><th class="n">Views</th><th class="n">Views/dia</th><th class="n">Inscritos</th><th class="n">Idade</th></tr>${L.map(x=>`<tr><td class="n" style="color:var(--amarelo);font-weight:800">${x.estouro==null?"?":x.estouro+"x"}</td><td><a target="_blank" rel="noopener" href="https://www.youtube.com/${x.short?"shorts/":"watch?v="}${x.id}">${esc(x.video)}</a><div class="dica" style="margin:0">${esc(x.canal)}${x.canal_novo?' · <span style="color:var(--vermelho)">canal novo</span>':""}</div></td><td class="n">${fmt(x.views)}</td><td class="n">${fmt(x.views_dia)}</td><td class="n">${fmt(x.inscritos)}</td><td class="n">${x.dias} d</td></tr>`).join("")}</table></div>`;
+}
+function vTodos(){return filtros()+lista(porTipo(FILA.itens),"Fila vazia.")}
+
+async function desenha(){
+  nav();stats();
+  const V={revisar:vRevisar,agenda:vAgenda,publicados:vPublicados,canal:vCanal,analises:vAnalises,ideias:vIdeias,todos:vTodos}[aba]||vRevisar;
+  const h=await V(); if(h!=="")$("#main").innerHTML=h;
+  ligaCards();ligaFiltros();if(aba=="analises"&&ANALISES?.length)abreAnalise();
+}
+$("#bConectar").onclick=()=>{$("#tok").value=tok();$("#modal").style.display="flex"};
+$("#bFechar").onclick=()=>$("#modal").style.display="none";
+$("#bSalvarTok").onclick=()=>{try{localStorage.setItem("descifre_tok",$("#tok").value.trim())}catch(e){}$("#modal").style.display="none";toast("Conectado.");carregar()};
+$("#bSairTok").onclick=()=>{try{localStorage.removeItem("descifre_tok")}catch(e){}$("#tok").value="";$("#modal").style.display="none";carregar()};
+carregar();
+</script>
+</body>
+</html>

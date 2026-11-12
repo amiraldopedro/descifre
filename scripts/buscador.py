@@ -128,6 +128,9 @@ def main():
     (pasta / f"{nome}.json").write_text(json.dumps({"filtro": filtro, "linhas": linhas}, ensure_ascii=False, indent=1))
     (pasta / f"{nome}.html").write_text(pagina(filtro, linhas))
     (pasta / "ultimo.html").write_text(pagina(filtro, linhas))
+    painel_p = RAIZ / "docs" / "dados" / "ideias.json"  # aba "Ideias" do painel
+    painel_p.parent.mkdir(parents=True, exist_ok=True)
+    painel_p.write_text(json.dumps({"filtro": filtro, "linhas": linhas[:150]}, ensure_ascii=False, indent=1))
 
     print(f"\n{len(linhas)} vídeos estourados. Top 40:")
     for x in linhas[:40]:
