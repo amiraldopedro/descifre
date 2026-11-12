@@ -25,7 +25,8 @@
    "tema": "A epidemia de riso",
    "youtube_id": "QxZLkJqWiRU",
    "status": "agendado",
-   "agendado_para": "2026-11-23T15:00:00Z"
+   "agendado_para": "2026-11-23T15:00:00Z",
+   "views": 0
   },
   {
    "id": "s28",
@@ -53,7 +54,8 @@
    "duracao_s": 28,
    "youtube_id": "U5k3FogsKeg",
    "status": "agendado",
-   "agendado_para": "2026-11-19T15:00:00Z"
+   "agendado_para": "2026-11-19T15:00:00Z",
+   "views": 0
   },
   {
    "id": "s22",
@@ -81,7 +83,8 @@
    "duracao_s": 42,
    "youtube_id": "ui2xeEa7j6M",
    "status": "agendado",
-   "agendado_para": "2026-11-15T15:00:00Z"
+   "agendado_para": "2026-11-15T15:00:00Z",
+   "views": 0
   },
   {
    "id": "s23",
@@ -111,7 +114,8 @@
    "download": "https://github.com/amiraldopedro/descifre/actions/runs/43157545584",
    "status": "agendado",
    "youtube_id": "2b4uaaaNyog",
-   "agendado_para": "2026-11-15T22:00:00Z"
+   "agendado_para": "2026-11-15T22:00:00Z",
+   "views": 0
   },
   {
    "id": "s26",
@@ -141,7 +145,8 @@
    "download": "https://github.com/amiraldopedro/descifre/actions/runs/43157615454",
    "status": "agendado",
    "youtube_id": "UFOUQSQhAMg",
-   "agendado_para": "2026-11-21T22:00:00Z"
+   "agendado_para": "2026-11-21T22:00:00Z",
+   "views": 0
   },
   {
    "id": "s27",
@@ -171,7 +176,8 @@
    "download": "https://github.com/amiraldopedro/descifre/actions/runs/43157638413",
    "status": "agendado",
    "youtube_id": "62DAMS2vQzc",
-   "agendado_para": "2026-11-23T22:00:00Z"
+   "agendado_para": "2026-11-23T22:00:00Z",
+   "views": 0
   },
   {
    "id": "s25",
@@ -201,7 +207,8 @@
    "download": "https://github.com/amiraldopedro/descifre/actions/runs/43157568601",
    "status": "agendado",
    "youtube_id": "cvADyq44aiI",
-   "agendado_para": "2026-11-17T22:00:00Z"
+   "agendado_para": "2026-11-17T22:00:00Z",
+   "views": 0
   },
   {
    "id": "s30",
@@ -231,7 +238,8 @@
    "download": "https://github.com/amiraldopedro/descifre/actions/runs/43157604329",
    "status": "agendado",
    "youtube_id": "bkbOSYdmTy8",
-   "agendado_para": "2026-11-21T15:00:00Z"
+   "agendado_para": "2026-11-21T15:00:00Z",
+   "views": 0
   },
   {
    "id": "s29",
@@ -262,7 +270,8 @@
    "download": "https://github.com/amiraldopedro/descifre/actions/runs/43157592336",
    "status": "agendado",
    "youtube_id": "pUhRJe4_bCY",
-   "agendado_para": "2026-11-19T22:00:00Z"
+   "agendado_para": "2026-11-19T22:00:00Z",
+   "views": 0
   },
   {
    "id": "s24",
@@ -292,7 +301,8 @@
    "download": "https://github.com/amiraldopedro/descifre/actions/runs/43157556775",
    "status": "agendado",
    "youtube_id": "lUAzYfYnEVk",
-   "agendado_para": "2026-11-16T22:00:00Z"
+   "agendado_para": "2026-11-16T22:00:00Z",
+   "views": 0
   },
   {
    "id": "s21",
@@ -323,7 +333,8 @@
    "download": "https://github.com/amiraldopedro/descifre/actions/runs/43089155684",
    "status": "agendado",
    "youtube_id": "vqKFT9rxZok",
-   "agendado_para": "2026-11-25T22:00:00Z"
+   "agendado_para": "2026-11-25T22:00:00Z",
+   "views": 0
   },
   {
    "id": "s20",
@@ -353,7 +364,8 @@
    "download": "https://github.com/amiraldopedro/descifre/actions/runs/43089136723",
    "status": "agendado",
    "youtube_id": "XmZ_RJKy9yM",
-   "agendado_para": "2026-11-14T15:00:00Z"
+   "agendado_para": "2026-11-14T15:00:00Z",
+   "views": 0
   },
   {
    "id": "s19",
@@ -384,7 +396,8 @@
    "download": "https://github.com/amiraldopedro/descifre/actions/runs/43089118506",
    "status": "agendado",
    "youtube_id": "FT2N4-jIc7I",
-   "agendado_para": "2026-11-13T15:00:00Z"
+   "agendado_para": "2026-11-13T15:00:00Z",
+   "views": 0
   },
   {
    "id": "s18",
@@ -414,7 +427,8 @@
    "download": "https://github.com/amiraldopedro/descifre/actions/runs/43089100016",
    "status": "agendado",
    "youtube_id": "YIK0S5cp6tE",
-   "agendado_para": "2026-11-24T22:00:00Z"
+   "agendado_para": "2026-11-24T22:00:00Z",
+   "views": 0
   },
   {
    "id": "s17",
@@ -424,6 +438,10 @@
     {
      "quando": "2026-11-12T04:39:01+00:00",
      "status": "agendado"
+    },
+    {
+     "quando": "2026-11-12T17:35:31+00:00",
+     "status": "publicado"
     }
    ],
    "tipo": "short",
@@ -442,9 +460,11 @@
    "duracao_s": 38,
    "run": "43089081733",
    "download": "https://github.com/amiraldopedro/descifre/actions/runs/43089081733",
-   "status": "agendado",
+   "status": "publicado",
    "youtube_id": "eOriluDjg68",
-   "agendado_para": "2026-11-12T22:00:00Z"
+   "agendado_para": "2026-11-12T22:00:00Z",
+   "views": 136,
+   "publicado_em": "2026-11-12T15:08:09Z"
   },
   {
    "id": "s16",
@@ -474,7 +494,8 @@
    "download": "https://github.com/amiraldopedro/descifre/actions/runs/42874245513",
    "status": "agendado",
    "youtube_id": "49s6VduOowo",
-   "agendado_para": "2026-11-18T22:00:00Z"
+   "agendado_para": "2026-11-18T22:00:00Z",
+   "views": 0
   },
   {
    "id": "s15",
@@ -505,7 +526,8 @@
    "download": "https://github.com/amiraldopedro/descifre/actions/runs/42874235992",
    "status": "agendado",
    "youtube_id": "yoOL8Y84Ijw",
-   "agendado_para": "2026-11-18T15:00:00Z"
+   "agendado_para": "2026-11-18T15:00:00Z",
+   "views": 0
   },
   {
    "id": "s14",
@@ -535,7 +557,8 @@
    "download": "https://github.com/amiraldopedro/descifre/actions/runs/42874224650",
    "status": "agendado",
    "youtube_id": "s6oo_WYGK0c",
-   "agendado_para": "2026-11-17T15:00:00Z"
+   "agendado_para": "2026-11-17T15:00:00Z",
+   "views": 0
   },
   {
    "id": "s13",
@@ -565,7 +588,8 @@
    "download": "https://github.com/amiraldopedro/descifre/actions/runs/42874214556",
    "status": "agendado",
    "youtube_id": "5hyvtK6FZ1w",
-   "agendado_para": "2026-11-16T15:00:00Z"
+   "agendado_para": "2026-11-16T15:00:00Z",
+   "views": 0
   },
   {
    "id": "s12",
@@ -595,7 +619,8 @@
    "download": "https://github.com/amiraldopedro/descifre/actions/runs/42874202428",
    "status": "agendado",
    "youtube_id": "ITFcqVthlRQ",
-   "agendado_para": "2026-11-14T22:00:00Z"
+   "agendado_para": "2026-11-14T22:00:00Z",
+   "views": 0
   },
   {
    "id": "s11",
@@ -625,7 +650,8 @@
    "download": "https://github.com/amiraldopedro/descifre/actions/runs/42874192544",
    "status": "agendado",
    "youtube_id": "IRTDFDaSRng",
-   "agendado_para": "2026-11-13T22:00:00Z"
+   "agendado_para": "2026-11-13T22:00:00Z",
+   "views": 0
   },
   {
    "id": "s10",
@@ -655,7 +681,8 @@
    "download": "https://github.com/amiraldopedro/descifre/actions/runs/42874182237",
    "status": "agendado",
    "youtube_id": "JIYCggQjYmU",
-   "agendado_para": "2026-11-25T15:00:00Z"
+   "agendado_para": "2026-11-25T15:00:00Z",
+   "views": 0
   },
   {
    "id": "s09",
@@ -685,7 +712,8 @@
    "download": "https://github.com/amiraldopedro/descifre/actions/runs/42874172019",
    "status": "agendado",
    "youtube_id": "N9QpTP-W2Rk",
-   "agendado_para": "2026-11-24T15:00:00Z"
+   "agendado_para": "2026-11-24T15:00:00Z",
+   "views": 0
   },
   {
    "id": "s08",
@@ -715,7 +743,8 @@
    "download": "https://github.com/amiraldopedro/descifre/actions/runs/42874160808",
    "status": "agendado",
    "youtube_id": "rSfMtWA9_KM",
-   "agendado_para": "2026-11-20T22:00:00Z"
+   "agendado_para": "2026-11-20T22:00:00Z",
+   "views": 0
   },
   {
    "id": "s07",
@@ -745,7 +774,8 @@
    "download": "https://github.com/amiraldopedro/descifre/actions/runs/42874149494",
    "status": "agendado",
    "youtube_id": "1JofgeV51cY",
-   "agendado_para": "2026-11-20T15:00:00Z"
+   "agendado_para": "2026-11-20T15:00:00Z",
+   "views": 0
   },
   {
    "id": "s06",
@@ -776,7 +806,8 @@
    "download": "https://github.com/amiraldopedro/descifre/actions/runs/42874138401",
    "status": "agendado",
    "youtube_id": "bZpi4XCywko",
-   "agendado_para": "2026-11-22T22:00:00Z"
+   "agendado_para": "2026-11-22T22:00:00Z",
+   "views": 0
   },
   {
    "id": "s05",
@@ -807,7 +838,8 @@
    "download": "https://github.com/amiraldopedro/descifre/actions/runs/42874127494",
    "status": "agendado",
    "youtube_id": "l99BC3fBuJY",
-   "agendado_para": "2026-11-22T15:00:00Z"
+   "agendado_para": "2026-11-22T15:00:00Z",
+   "views": 0
   },
   {
    "id": "s04",
@@ -899,7 +931,12 @@
    "id": "009",
    "criado": "2026-11-12T00:42:05+00:00",
    "notas": [],
-   "historico": [],
+   "historico": [
+    {
+     "quando": "2026-11-12T17:35:31+00:00",
+     "status": "publicado"
+    }
+   ],
    "tipo": "longo",
    "titulo": "HISTERIA COLETIVA: quando cidades inteiras enlouqueceram",
    "descricao": "Uma mulher começa a dançar no meio da rua e não consegue parar. Meninas se contorcem e apontam bruxas entre os vizinhos. Um programa de rádio faz o país acreditar numa invasão de marcianos. E numa escola na África, as alunas começam a rir por meses. Nenhuma dessas pessoas estava fingindo.\n\nNeste documentário, a gente conta em ordem os surtos de histeria coletiva mais impressionantes da história: a praga da dança de Estrasburgo (1518), as bruxas de Salém (1692), o suposto pânico da Guerra dos Mundos (1938), a epidemia de riso de Tanganica (1962) e os surtos da era das redes sociais, de Le Roy aos tiques do TikTok. O que aconteceu de verdade, o que é mito, e por que a mente humana pode se contagiar.\n\nCAPÍTULOS\n{capitulos}\n\nFONTES\n- Waller, J. (2008). A Time to Dance, a Time to Die: The Extraordinary Story of the Dancing Plague of 1518.\n- Waller, J. (2009). A forgotten plague: making sense of dancing mania. The Lancet.\n- Boyer, P. e Nissenbaum, S. (1974). Salem Possessed.\n- Mather, I. (1693). Cases of Conscience Concerning Evil Spirits.\n- Cantril, H. (1940). The Invasion from Mars. Princeton University Press.\n- Pooley, J. e Socolow, M. (2013). The Myth of the War of the Worlds Panic. Slate.\n- Schwartz, A. B. (2015). Broadcast Hysteria.\n- Rankin, A. M. e Philip, P. J. (1963). An epidemic of laughing in the Bukoba district of Tanganyika. Central African Journal of Medicine.\n- Bartholomew, R. e Wessely, S. (2002). Protean nature of mass sociogenic illness. British Journal of Psychiatry.\n- Müller-Vahl, K. e colegas (2022). Stop that! It's not Tourette's but a new type of mass sociogenic illness. Brain.\n\nArte, mapas e animações feitos pelo canal. Narração com voz sintética.\nDescifre e domine.\n#psicologia #documentário #histeriacoletiva",
@@ -928,10 +965,11 @@
    "duracao_s": 1149,
    "run": "43040714232",
    "download": "https://github.com/amiraldopedro/descifre/actions/runs/43040714232",
-   "status": "agendado",
+   "status": "publicado",
    "youtube_id": "EpxCyMwZYZg",
-   "views": 0,
-   "agendado_para": "2026-11-12T13:00:00Z"
+   "views": 2,
+   "agendado_para": "2026-11-12T13:00:00Z",
+   "publicado_em": "2026-11-12T13:00:31Z"
   },
   {
    "id": "008",
@@ -1075,7 +1113,7 @@
    "download": "https://github.com/amiraldopedro/descifre/actions/runs/42874097609",
    "status": "publicado",
    "youtube_id": "nq2w988sRd8",
-   "views": 18,
+   "views": 19,
    "publicado_em": "2026-11-11T13:00:15Z"
   },
   {
@@ -1114,7 +1152,8 @@
    "download": "https://github.com/amiraldopedro/descifre/actions/runs/42874087660",
    "status": "agendado",
    "youtube_id": "D3enVn9AkA0",
-   "agendado_para": "2026-11-24T13:00:00Z"
+   "agendado_para": "2026-11-24T13:00:00Z",
+   "views": 0
   },
   {
    "id": "003",
@@ -1209,7 +1248,8 @@
    "tema": "Você é fácil de manipular? Faça este teste",
    "duracao_s": 460,
    "status": "publicado",
-   "youtube_id": "sZwWHfmSUzU"
+   "youtube_id": "sZwWHfmSUzU",
+   "views": 3
   }
  ],
  "regras": {
@@ -1223,5 +1263,5 @@
   ],
   "fuso": "America/Sao_Paulo"
  },
- "atualizado": "2026-11-12T05:03:58+00:00"
+ "atualizado": "2026-11-12T17:35:31+00:00"
 }
