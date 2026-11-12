@@ -1,6 +1,36 @@
 {
  "itens": [
   {
+   "id": "s30",
+   "criado": "2026-11-12T04:55:00+00:00",
+   "notas": [],
+   "historico": [
+    {
+     "quando": "2026-11-12T04:55:09+00:00",
+     "status": "agendado"
+    }
+   ],
+   "tipo": "short",
+   "titulo": "As Bruxas de Salém NÃO Foram Queimadas #shorts",
+   "descricao": "O que aconteceu de verdade em Salém, Massachusetts, em 1692.\n\nVídeo completo: https://youtu.be/EpxCyMwZYZg\n\n#psicologia #shorts",
+   "tags": [
+    "bruxas de salém",
+    "salém 1692",
+    "histeria coletiva",
+    "mito",
+    "shorts",
+    "descifre"
+   ],
+   "thumb_texto": {},
+   "tema": "As bruxas de Salém não foram queimadas",
+   "duracao_s": 30,
+   "run": "43157604329",
+   "download": "https://github.com/amiraldopedro/descifre/actions/runs/43157604329",
+   "status": "agendado",
+   "youtube_id": "bkbOSYdmTy8",
+   "agendado_para": "2026-11-21T15:00:00Z"
+  },
+  {
    "id": "s29",
    "criado": "2026-11-12T04:54:48+00:00",
    "notas": [],
@@ -980,5 +1010,5 @@
   ],
   "fuso": "America/Sao_Paulo"
  },
- "atualizado": "2026-11-12T04:54:57+00:00"
+ "atualizado": "2026-11-12T04:55:09+00:00"
 }
