@@ -1,0 +1,1926 @@
+{
+ "atualizado": "2026-11-12T04:21:22+00:00",
+ "canal": {
+  "nome": "Descifre & Domine",
+  "inscritos": 52,
+  "views": 8974,
+  "videos": 34,
+  "foto": "https://yt3.ggpht.com/HYZlBga0r2QFBe6BtP5x0daOyXKSEbxO_IHJPcIopp_nYfYzlRTeAMEHfH9JlxvvK3LHNqxJ=s88-c-k-c0x00ffffff-no-rj"
+ },
+ "por_dia": [
+  {
+   "day": "2026-08-14",
+   "views": 9,
+   "estimatedMinutesWatched": 50,
+   "subscribersGained": 0,
+   "subscribersLost": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "day": "2026-08-15",
+   "views": 7,
+   "estimatedMinutesWatched": 28,
+   "subscribersGained": 1,
+   "subscribersLost": 0,
+   "likes": 1,
+   "comments": 1
+  },
+  {
+   "day": "2026-08-16",
+   "views": 3,
+   "estimatedMinutesWatched": 16,
+   "subscribersGained": 0,
+   "subscribersLost": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "day": "2026-08-17",
+   "views": 18,
+   "estimatedMinutesWatched": 103,
+   "subscribersGained": 1,
+   "subscribersLost": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "day": "2026-08-18",
+   "views": 13,
+   "estimatedMinutesWatched": 98,
+   "subscribersGained": 0,
+   "subscribersLost": 0,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "day": "2026-08-19",
+   "views": 12,
+   "estimatedMinutesWatched": 96,
+   "subscribersGained": 0,
+   "subscribersLost": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "day": "2026-08-20",
+   "views": 9,
+   "estimatedMinutesWatched": 63,
+   "subscribersGained": 0,
+   "subscribersLost": 0,
+   "likes": 2,
+   "comments": 0
+  },
+  {
+   "day": "2026-08-21",
+   "views": 15,
+   "estimatedMinutesWatched": 129,
+   "subscribersGained": 0,
+   "subscribersLost": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "day": "2026-08-22",
+   "views": 7,
+   "estimatedMinutesWatched": 65,
+   "subscribersGained": 0,
+   "subscribersLost": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "day": "2026-08-23",
+   "views": 8,
+   "estimatedMinutesWatched": 42,
+   "subscribersGained": 0,
+   "subscribersLost": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "day": "2026-08-24",
+   "views": 11,
+   "estimatedMinutesWatched": 115,
+   "subscribersGained": 0,
+   "subscribersLost": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "day": "2026-08-25",
+   "views": 6,
+   "estimatedMinutesWatched": 39,
+   "subscribersGained": 0,
+   "subscribersLost": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "day": "2026-08-26",
+   "views": 4,
+   "estimatedMinutesWatched": 21,
+   "subscribersGained": 1,
+   "subscribersLost": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "day": "2026-08-27",
+   "views": 21,
+   "estimatedMinutesWatched": 46,
+   "subscribersGained": 0,
+   "subscribersLost": 0,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "day": "2026-08-28",
+   "views": 11,
+   "estimatedMinutesWatched": 46,
+   "subscribersGained": 0,
+   "subscribersLost": 0,
+   "likes": -2,
+   "comments": 0
+  },
+  {
+   "day": "2026-08-29",
+   "views": 23,
+   "estimatedMinutesWatched": 74,
+   "subscribersGained": 0,
+   "subscribersLost": 0,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "day": "2026-08-30",
+   "views": 13,
+   "estimatedMinutesWatched": 60,
+   "subscribersGained": 0,
+   "subscribersLost": 0,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "day": "2026-08-31",
+   "views": 31,
+   "estimatedMinutesWatched": 35,
+   "subscribersGained": 0,
+   "subscribersLost": 0,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "day": "2026-09-01",
+   "views": 26,
+   "estimatedMinutesWatched": 98,
+   "subscribersGained": 0,
+   "subscribersLost": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "day": "2026-09-02",
+   "views": 92,
+   "estimatedMinutesWatched": 101,
+   "subscribersGained": 1,
+   "subscribersLost": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "day": "2026-09-03",
+   "views": 58,
+   "estimatedMinutesWatched": 3,
+   "subscribersGained": 0,
+   "subscribersLost": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "day": "2026-09-04",
+   "views": 25,
+   "estimatedMinutesWatched": 110,
+   "subscribersGained": 0,
+   "subscribersLost": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "day": "2026-09-05",
+   "views": 25,
+   "estimatedMinutesWatched": 41,
+   "subscribersGained": 0,
+   "subscribersLost": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "day": "2026-09-06",
+   "views": 16,
+   "estimatedMinutesWatched": 33,
+   "subscribersGained": 0,
+   "subscribersLost": 0,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "day": "2026-09-07",
+   "views": 13,
+   "estimatedMinutesWatched": 45,
+   "subscribersGained": 0,
+   "subscribersLost": 0,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "day": "2026-09-08",
+   "views": 28,
+   "estimatedMinutesWatched": 136,
+   "subscribersGained": 0,
+   "subscribersLost": 0,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "day": "2026-09-09",
+   "views": 21,
+   "estimatedMinutesWatched": 76,
+   "subscribersGained": 0,
+   "subscribersLost": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "day": "2026-09-10",
+   "views": 15,
+   "estimatedMinutesWatched": 36,
+   "subscribersGained": 0,
+   "subscribersLost": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "day": "2026-09-11",
+   "views": 14,
+   "estimatedMinutesWatched": 38,
+   "subscribersGained": 0,
+   "subscribersLost": 0,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "day": "2026-09-12",
+   "views": 21,
+   "estimatedMinutesWatched": 72,
+   "subscribersGained": 0,
+   "subscribersLost": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "day": "2026-09-13",
+   "views": 25,
+   "estimatedMinutesWatched": 56,
+   "subscribersGained": 2,
+   "subscribersLost": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "day": "2026-09-14",
+   "views": 12,
+   "estimatedMinutesWatched": 23,
+   "subscribersGained": 0,
+   "subscribersLost": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "day": "2026-09-15",
+   "views": 16,
+   "estimatedMinutesWatched": 18,
+   "subscribersGained": 0,
+   "subscribersLost": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "day": "2026-09-16",
+   "views": 11,
+   "estimatedMinutesWatched": 36,
+   "subscribersGained": 0,
+   "subscribersLost": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "day": "2026-09-17",
+   "views": 16,
+   "estimatedMinutesWatched": 60,
+   "subscribersGained": 0,
+   "subscribersLost": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "day": "2026-09-18",
+   "views": 19,
+   "estimatedMinutesWatched": 16,
+   "subscribersGained": 1,
+   "subscribersLost": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "day": "2026-09-19",
+   "views": 10,
+   "estimatedMinutesWatched": 33,
+   "subscribersGained": 0,
+   "subscribersLost": 0,
+   "likes": 1,
+   "comments": 1
+  },
+  {
+   "day": "2026-09-20",
+   "views": 23,
+   "estimatedMinutesWatched": 78,
+   "subscribersGained": 1,
+   "subscribersLost": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "day": "2026-09-21",
+   "views": 15,
+   "estimatedMinutesWatched": 55,
+   "subscribersGained": 0,
+   "subscribersLost": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "day": "2026-09-22",
+   "views": 27,
+   "estimatedMinutesWatched": 76,
+   "subscribersGained": 0,
+   "subscribersLost": 0,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "day": "2026-09-23",
+   "views": 19,
+   "estimatedMinutesWatched": 110,
+   "subscribersGained": 0,
+   "subscribersLost": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "day": "2026-09-24",
+   "views": 18,
+   "estimatedMinutesWatched": 56,
+   "subscribersGained": 1,
+   "subscribersLost": 0,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "day": "2026-09-25",
+   "views": 18,
+   "estimatedMinutesWatched": 41,
+   "subscribersGained": 0,
+   "subscribersLost": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "day": "2026-09-26",
+   "views": 13,
+   "estimatedMinutesWatched": 21,
+   "subscribersGained": 0,
+   "subscribersLost": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "day": "2026-09-27",
+   "views": 33,
+   "estimatedMinutesWatched": 194,
+   "subscribersGained": 0,
+   "subscribersLost": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "day": "2026-09-28",
+   "views": 40,
+   "estimatedMinutesWatched": 170,
+   "subscribersGained": 0,
+   "subscribersLost": 0,
+   "likes": 2,
+   "comments": 0
+  },
+  {
+   "day": "2026-09-29",
+   "views": 25,
+   "estimatedMinutesWatched": 111,
+   "subscribersGained": 0,
+   "subscribersLost": 0,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "day": "2026-09-30",
+   "views": 14,
+   "estimatedMinutesWatched": 28,
+   "subscribersGained": 0,
+   "subscribersLost": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "day": "2026-10-01",
+   "views": 21,
+   "estimatedMinutesWatched": 67,
+   "subscribersGained": 0,
+   "subscribersLost": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "day": "2026-10-02",
+   "views": 19,
+   "estimatedMinutesWatched": 25,
+   "subscribersGained": 1,
+   "subscribersLost": 0,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "day": "2026-10-03",
+   "views": 18,
+   "estimatedMinutesWatched": 73,
+   "subscribersGained": 0,
+   "subscribersLost": 0,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "day": "2026-10-04",
+   "views": 8,
+   "estimatedMinutesWatched": 4,
+   "subscribersGained": 0,
+   "subscribersLost": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "day": "2026-10-05",
+   "views": 26,
+   "estimatedMinutesWatched": 81,
+   "subscribersGained": 1,
+   "subscribersLost": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "day": "2026-10-06",
+   "views": 16,
+   "estimatedMinutesWatched": 22,
+   "subscribersGained": 0,
+   "subscribersLost": 0,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "day": "2026-10-07",
+   "views": 14,
+   "estimatedMinutesWatched": 27,
+   "subscribersGained": 1,
+   "subscribersLost": 0,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "day": "2026-10-08",
+   "views": 19,
+   "estimatedMinutesWatched": 45,
+   "subscribersGained": 0,
+   "subscribersLost": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "day": "2026-10-09",
+   "views": 19,
+   "estimatedMinutesWatched": 54,
+   "subscribersGained": 0,
+   "subscribersLost": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "day": "2026-10-10",
+   "views": 18,
+   "estimatedMinutesWatched": 42,
+   "subscribersGained": 0,
+   "subscribersLost": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "day": "2026-10-11",
+   "views": 16,
+   "estimatedMinutesWatched": 48,
+   "subscribersGained": 0,
+   "subscribersLost": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "day": "2026-10-12",
+   "views": 29,
+   "estimatedMinutesWatched": 76,
+   "subscribersGained": 0,
+   "subscribersLost": 0,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "day": "2026-10-13",
+   "views": 19,
+   "estimatedMinutesWatched": 61,
+   "subscribersGained": 0,
+   "subscribersLost": 0,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "day": "2026-10-14",
+   "views": 17,
+   "estimatedMinutesWatched": 14,
+   "subscribersGained": 0,
+   "subscribersLost": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "day": "2026-10-15",
+   "views": 21,
+   "estimatedMinutesWatched": 66,
+   "subscribersGained": 0,
+   "subscribersLost": 0,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "day": "2026-10-16",
+   "views": 32,
+   "estimatedMinutesWatched": 101,
+   "subscribersGained": 0,
+   "subscribersLost": 0,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "day": "2026-10-17",
+   "views": 25,
+   "estimatedMinutesWatched": 69,
+   "subscribersGained": 0,
+   "subscribersLost": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "day": "2026-10-18",
+   "views": 13,
+   "estimatedMinutesWatched": 67,
+   "subscribersGained": 0,
+   "subscribersLost": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "day": "2026-10-19",
+   "views": 18,
+   "estimatedMinutesWatched": 42,
+   "subscribersGained": 1,
+   "subscribersLost": 0,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "day": "2026-10-20",
+   "views": 31,
+   "estimatedMinutesWatched": 106,
+   "subscribersGained": 0,
+   "subscribersLost": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "day": "2026-10-21",
+   "views": 23,
+   "estimatedMinutesWatched": 64,
+   "subscribersGained": 0,
+   "subscribersLost": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "day": "2026-10-22",
+   "views": 25,
+   "estimatedMinutesWatched": 77,
+   "subscribersGained": 2,
+   "subscribersLost": 0,
+   "likes": 2,
+   "comments": 0
+  },
+  {
+   "day": "2026-10-23",
+   "views": 31,
+   "estimatedMinutesWatched": 109,
+   "subscribersGained": 0,
+   "subscribersLost": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "day": "2026-10-24",
+   "views": 20,
+   "estimatedMinutesWatched": 84,
+   "subscribersGained": 0,
+   "subscribersLost": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "day": "2026-10-25",
+   "views": 12,
+   "estimatedMinutesWatched": 16,
+   "subscribersGained": 0,
+   "subscribersLost": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "day": "2026-10-26",
+   "views": 20,
+   "estimatedMinutesWatched": 40,
+   "subscribersGained": 0,
+   "subscribersLost": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "day": "2026-10-27",
+   "views": 31,
+   "estimatedMinutesWatched": 112,
+   "subscribersGained": 1,
+   "subscribersLost": 0,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "day": "2026-10-28",
+   "views": 24,
+   "estimatedMinutesWatched": 44,
+   "subscribersGained": 0,
+   "subscribersLost": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "day": "2026-10-29",
+   "views": 17,
+   "estimatedMinutesWatched": 36,
+   "subscribersGained": 0,
+   "subscribersLost": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "day": "2026-10-30",
+   "views": 15,
+   "estimatedMinutesWatched": 57,
+   "subscribersGained": 0,
+   "subscribersLost": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "day": "2026-10-31",
+   "views": 19,
+   "estimatedMinutesWatched": 46,
+   "subscribersGained": 0,
+   "subscribersLost": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "day": "2026-11-01",
+   "views": 14,
+   "estimatedMinutesWatched": 45,
+   "subscribersGained": 2,
+   "subscribersLost": 0,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "day": "2026-11-02",
+   "views": 27,
+   "estimatedMinutesWatched": 49,
+   "subscribersGained": 0,
+   "subscribersLost": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "day": "2026-11-03",
+   "views": 19,
+   "estimatedMinutesWatched": 46,
+   "subscribersGained": 0,
+   "subscribersLost": 0,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "day": "2026-11-04",
+   "views": 21,
+   "estimatedMinutesWatched": 15,
+   "subscribersGained": 1,
+   "subscribersLost": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "day": "2026-11-05",
+   "views": 24,
+   "estimatedMinutesWatched": 131,
+   "subscribersGained": 0,
+   "subscribersLost": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "day": "2026-11-06",
+   "views": 19,
+   "estimatedMinutesWatched": 48,
+   "subscribersGained": 0,
+   "subscribersLost": 0,
+   "likes": 1,
+   "comments": 0
+  },
+  {
+   "day": "2026-11-07",
+   "views": 20,
+   "estimatedMinutesWatched": 90,
+   "subscribersGained": 1,
+   "subscribersLost": 0,
+   "likes": 3,
+   "comments": 0
+  },
+  {
+   "day": "2026-11-08",
+   "views": 13,
+   "estimatedMinutesWatched": 38,
+   "subscribersGained": 1,
+   "subscribersLost": 0,
+   "likes": 0,
+   "comments": 0
+  },
+  {
+   "day": "2026-11-09",
+   "views": 24,
+   "estimatedMinutesWatched": 81,
+   "subscribersGained": 1,
+   "subscribersLost": 0,
+   "likes": 2,
+   "comments": 0
+  }
+ ],
+ "videos": [
+  {
+   "youtube_id": "Zpu8nbqIgPI",
+   "titulo": "OS EXPERIMENTOS MAIS SOMBRIOS DA PSICOLOGIA: a história completa",
+   "publicado": "2026-11-11T18:40:16Z",
+   "privacidade": "private",
+   "agendado_para": "2026-11-14T13:00:00Z",
+   "views": 0,
+   "curtidas": 0,
+   "comentarios": 0,
+   "duracao": "PT22M30S"
+  },
+  {
+   "youtube_id": "EpxCyMwZYZg",
+   "titulo": "HISTERIA COLETIVA: quando cidades inteiras enlouqueceram",
+   "publicado": "2026-11-11T18:19:59Z",
+   "privacidade": "private",
+   "agendado_para": "2026-11-12T13:00:00Z",
+   "views": 0,
+   "curtidas": 0,
+   "comentarios": 0,
+   "duracao": "PT21M37S"
+  },
+  {
+   "youtube_id": "AHbWaxz3P4c",
+   "titulo": "Teste Relampago! Voce acerta?  #gatilhosmentais #manipulação #psicologia",
+   "publicado": "2026-11-11T13:00:40Z",
+   "privacidade": "public",
+   "agendado_para": null,
+   "views": 139,
+   "curtidas": 2,
+   "comentarios": 0,
+   "duracao": "PT38S"
+  },
+  {
+   "youtube_id": "nq2w988sRd8",
+   "titulo": "Por Que Somos Grossos Com Quem Mais Amamos (e Como Consertar)",
+   "publicado": "2026-11-11T13:00:15Z",
+   "privacidade": "public",
+   "agendado_para": null,
+   "views": 18,
+   "curtidas": 2,
+   "comentarios": 1,
+   "duracao": "PT4M18S"
+  },
+  {
+   "youtube_id": "RgsJyavriQw",
+   "titulo": "Isso nunca aconteceu? Faça esse teste  #gatilhosmentais #psicologia #manipulação",
+   "publicado": "2026-11-10T20:10:55Z",
+   "privacidade": "public",
+   "agendado_para": null,
+   "views": 1015,
+   "curtidas": 12,
+   "comentarios": 0,
+   "duracao": "PT33S"
+  },
+  {
+   "youtube_id": "qY0j5kTWY48",
+   "titulo": "Seu Cérebro Mente Pra Você: 7 Provas (Faça o Teste)",
+   "publicado": "2026-11-10T19:52:00Z",
+   "privacidade": "private",
+   "agendado_para": "2026-11-22T13:00:00Z",
+   "views": 0,
+   "curtidas": 0,
+   "comentarios": 0,
+   "duracao": "PT5M30S"
+  },
+  {
+   "youtube_id": "E680HDKOb08",
+   "titulo": "Quem Empurra a Cadeira ao Sair Tem Estes 3 Traços",
+   "publicado": "2026-11-10T19:23:47Z",
+   "privacidade": "private",
+   "agendado_para": "2026-11-20T13:00:00Z",
+   "views": 0,
+   "curtidas": 0,
+   "comentarios": 0,
+   "duracao": "PT4M34S"
+  },
+  {
+   "youtube_id": "zuFiW7qSO7Y",
+   "titulo": "QI 70, 100, 130 e 160: Como Cada Mente Vê o Mundo",
+   "publicado": "2026-11-10T19:15:39Z",
+   "privacidade": "private",
+   "agendado_para": "2026-11-18T13:00:00Z",
+   "views": 0,
+   "curtidas": 0,
+   "comentarios": 0,
+   "duracao": "PT4M9S"
+  },
+  {
+   "youtube_id": "QG9r_mC34mE",
+   "titulo": "Escolha Uma Escada: O Teste Que Revela o Que Você Esconde",
+   "publicado": "2026-11-10T19:12:16Z",
+   "privacidade": "private",
+   "agendado_para": "2026-11-16T13:00:00Z",
+   "views": 0,
+   "curtidas": 0,
+   "comentarios": 0,
+   "duracao": "PT4M21S"
+  },
+  {
+   "youtube_id": "sJCFxNu2aFg",
+   "titulo": "Qual a sua escolha? Vamos descobrir se você é manipulável.  #gatilhosmentais #psicologia",
+   "publicado": "2026-11-10T14:35:00Z",
+   "privacidade": "public",
+   "agendado_para": null,
+   "views": 553,
+   "curtidas": 11,
+   "comentarios": 0,
+   "duracao": "PT29S"
+  },
+  {
+   "youtube_id": "sZwWHfmSUzU",
+   "titulo": "Você é Fácil de Manipular? Faça Este Teste (7 Situações Reais)",
+   "publicado": "2026-11-10T02:34:36Z",
+   "privacidade": "public",
+   "agendado_para": null,
+   "views": 3,
+   "curtidas": 3,
+   "comentarios": 1,
+   "duracao": "PT8M28S",
+   "estimatedMinutesWatched": 8,
+   "averageViewDuration": 171,
+   "averageViewPercentage": 33.8,
+   "subscribersGained": 0,
+   "likes": 1,
+   "comments": 0,
+   "shares": 0
+  },
+  {
+   "youtube_id": "Veu_u73ic9g",
+   "titulo": "Curiosidade da MENTE HUMANA - sao mais de 50 OCULTAS",
+   "publicado": "2025-10-18T22:00:28Z",
+   "privacidade": "public",
+   "agendado_para": null,
+   "views": 9,
+   "curtidas": 0,
+   "comentarios": 0,
+   "duracao": "PT1M5S",
+   "estimatedMinutesWatched": 3,
+   "averageViewDuration": 24,
+   "averageViewPercentage": 37.09,
+   "subscribersGained": 0,
+   "likes": 0,
+   "comments": 0,
+   "shares": 0
+  },
+  {
+   "youtube_id": "PUCpS-922XI",
+   "titulo": "É ASSIM QUE SEU CEREBRO FUNCIONA #aprendizado #curiosidades",
+   "publicado": "2025-10-18T13:00:55Z",
+   "privacidade": "public",
+   "agendado_para": null,
+   "views": 8,
+   "curtidas": 0,
+   "comentarios": 0,
+   "duracao": "PT1M29S",
+   "estimatedMinutesWatched": 2,
+   "averageViewDuration": 21,
+   "averageViewPercentage": 24.21,
+   "subscribersGained": 0,
+   "likes": 0,
+   "comments": 0,
+   "shares": 0
+  },
+  {
+   "youtube_id": "p98rkqE2oR0",
+   "titulo": "Psicologia sobre SEU CEREBRO e como Funciona - ENTENDA #curiosidades #aprendizado",
+   "publicado": "2025-10-17T20:00:40Z",
+   "privacidade": "public",
+   "agendado_para": null,
+   "views": 157,
+   "curtidas": 0,
+   "comentarios": 0,
+   "duracao": "PT57S",
+   "estimatedMinutesWatched": 7,
+   "averageViewDuration": 20,
+   "averageViewPercentage": 35.13,
+   "subscribersGained": 0,
+   "likes": 0,
+   "comments": 0,
+   "shares": 0
+  },
+  {
+   "youtube_id": "0-FHLQrO9v4",
+   "titulo": "CURIOSIDADE do cerebro - ENTENDA #curiosidades #aprendizado",
+   "publicado": "2025-10-17T13:00:01Z",
+   "privacidade": "public",
+   "agendado_para": null,
+   "views": 119,
+   "curtidas": 0,
+   "comentarios": 0,
+   "duracao": "PT1M21S",
+   "estimatedMinutesWatched": 5,
+   "averageViewDuration": 19,
+   "averageViewPercentage": 23.91,
+   "subscribersGained": 0,
+   "likes": 0,
+   "comments": 0,
+   "shares": 0
+  },
+  {
+   "youtube_id": "2zd8_gE_I20",
+   "titulo": "Entenda seu CEREBRO - Ele é muito COMPLEXO #aprendizado #ciencia #psicologia",
+   "publicado": "2025-10-16T22:00:05Z",
+   "privacidade": "public",
+   "agendado_para": null,
+   "views": 2,
+   "curtidas": 0,
+   "comentarios": 0,
+   "duracao": "PT1M31S",
+   "estimatedMinutesWatched": 0,
+   "averageViewDuration": 5,
+   "averageViewPercentage": 6.04,
+   "subscribersGained": 0,
+   "likes": 0,
+   "comments": 0,
+   "shares": 0
+  },
+  {
+   "youtube_id": "gMNPBI7Ggog",
+   "titulo": "PESSOA MANIPULADORA #manipulation #psicologia",
+   "publicado": "2025-10-16T13:01:27Z",
+   "privacidade": "public",
+   "agendado_para": null,
+   "views": 10,
+   "curtidas": 0,
+   "comentarios": 0,
+   "duracao": "PT1M13S",
+   "estimatedMinutesWatched": 1,
+   "averageViewDuration": 21,
+   "averageViewPercentage": 29.909999999999997,
+   "subscribersGained": 0,
+   "likes": 0,
+   "comments": 0,
+   "shares": 0
+  },
+  {
+   "youtube_id": "3r3bs2Go410",
+   "titulo": "Mantenha Longe OS MANIPULADORES",
+   "publicado": "2025-10-15T22:00:06Z",
+   "privacidade": "public",
+   "agendado_para": null,
+   "views": 5,
+   "curtidas": 0,
+   "comentarios": 0,
+   "duracao": "PT1M31S",
+   "estimatedMinutesWatched": 0,
+   "averageViewDuration": 4,
+   "averageViewPercentage": 4.4,
+   "subscribersGained": 0,
+   "likes": 0,
+   "comments": 0,
+   "shares": 0
+  },
+  {
+   "youtube_id": "ZpJ_GMWME3Y",
+   "titulo": "Descobertas da humanidade PART #2",
+   "publicado": "2025-10-15T19:00:37Z",
+   "privacidade": "public",
+   "agendado_para": null,
+   "views": 176,
+   "curtidas": 4,
+   "comentarios": 0,
+   "duracao": "PT31S",
+   "estimatedMinutesWatched": 9,
+   "averageViewDuration": 13,
+   "averageViewPercentage": 42.57,
+   "subscribersGained": 0,
+   "likes": 4,
+   "comments": 0,
+   "shares": 0
+  },
+  {
+   "youtube_id": "cX8BkcPInpk",
+   "titulo": "50 Fatos Psicológicos Interessantes Sobre o Comportamento Humano",
+   "publicado": "2025-10-15T13:01:22Z",
+   "privacidade": "public",
+   "agendado_para": null,
+   "views": 3156,
+   "curtidas": 95,
+   "comentarios": 5,
+   "duracao": "PT15M59S",
+   "estimatedMinutesWatched": 14299,
+   "averageViewDuration": 367,
+   "averageViewPercentage": 38.32,
+   "subscribersGained": 30,
+   "likes": 94,
+   "comments": 3,
+   "shares": 30
+  },
+  {
+   "youtube_id": "ce0UC8b69o4",
+   "titulo": "Esse TIPO DE PESSOA É RUIM #aprendizado #curiosidades  #ciencia",
+   "publicado": "2025-10-14T21:30:16Z",
+   "privacidade": "public",
+   "agendado_para": null,
+   "views": 220,
+   "curtidas": 0,
+   "comentarios": 0,
+   "duracao": "PT31S",
+   "estimatedMinutesWatched": 5,
+   "averageViewDuration": 11,
+   "averageViewPercentage": 36.56,
+   "subscribersGained": 0,
+   "likes": 0,
+   "comments": 0,
+   "shares": 0
+  },
+  {
+   "youtube_id": "ObfIYTUT2RY",
+   "titulo": "COMO ESTUDAR COM METODO COREANO",
+   "publicado": "2025-10-14T19:00:32Z",
+   "privacidade": "public",
+   "agendado_para": null,
+   "views": 7,
+   "curtidas": 0,
+   "comentarios": 0,
+   "duracao": "PT31S",
+   "estimatedMinutesWatched": 0,
+   "averageViewDuration": 10,
+   "averageViewPercentage": 32.26,
+   "subscribersGained": 0,
+   "likes": 0,
+   "comments": 0,
+   "shares": 0
+  },
+  {
+   "youtube_id": "59D5Hsvlmyw",
+   "titulo": "Se Alguém te Diz Isto, CUIDADO: Pode ser Gaslighting",
+   "publicado": "2025-10-14T13:00:10Z",
+   "privacidade": "public",
+   "agendado_para": null,
+   "views": 8,
+   "curtidas": 0,
+   "comentarios": 0,
+   "duracao": "PT11M19S",
+   "estimatedMinutesWatched": 31,
+   "averageViewDuration": 232,
+   "averageViewPercentage": 34.28,
+   "subscribersGained": 0,
+   "likes": 0,
+   "comments": 0,
+   "shares": 0
+  },
+  {
+   "youtube_id": "ekRFVlD0G8A",
+   "titulo": "Estudo de maneira inteligente METODO COREANO",
+   "publicado": "2025-10-13T19:00:29Z",
+   "privacidade": "public",
+   "agendado_para": null,
+   "views": 86,
+   "curtidas": 3,
+   "comentarios": 0,
+   "duracao": "PT57S",
+   "estimatedMinutesWatched": 6,
+   "averageViewDuration": 20,
+   "averageViewPercentage": 36.33,
+   "subscribersGained": 1,
+   "likes": 3,
+   "comments": 0,
+   "shares": 0
+  },
+  {
+   "youtube_id": "U4eUEOckrhI",
+   "titulo": "Nikola Tesla Revela: Como Se Tornar um Gênio e Estudar com Mente Inquebrável",
+   "publicado": "2025-10-13T13:00:56Z",
+   "privacidade": "public",
+   "agendado_para": null,
+   "views": 106,
+   "curtidas": 6,
+   "comentarios": 2,
+   "duracao": "PT10M1S",
+   "estimatedMinutesWatched": 278,
+   "averageViewDuration": 222,
+   "averageViewPercentage": 36.95,
+   "subscribersGained": 1,
+   "likes": 6,
+   "comments": 1,
+   "shares": 3
+  },
+  {
+   "youtube_id": "bBXqwljU8bk",
+   "titulo": "Metodo de Estudo Coreano  #enem #comportamentooppositivo #estudo",
+   "publicado": "2025-10-12T13:01:09Z",
+   "privacidade": "public",
+   "agendado_para": null,
+   "views": 75,
+   "curtidas": 0,
+   "comentarios": 0,
+   "duracao": "PT31S",
+   "estimatedMinutesWatched": 3,
+   "averageViewDuration": 18,
+   "averageViewPercentage": 60.54999999999999,
+   "subscribersGained": 0,
+   "likes": 0,
+   "comments": 0,
+   "shares": 0
+  },
+  {
+   "youtube_id": "2llje-_fb94",
+   "titulo": "Você Está Perdendo Tempo com Pessoas Erradas? 2 Sinais para Identificar o Caráter",
+   "publicado": "2025-10-12T13:00:05Z",
+   "privacidade": "public",
+   "agendado_para": null,
+   "views": 16,
+   "curtidas": 1,
+   "comentarios": 0,
+   "duracao": "PT8M49S",
+   "estimatedMinutesWatched": 48,
+   "averageViewDuration": 182,
+   "averageViewPercentage": 34.47,
+   "subscribersGained": 0,
+   "likes": 1,
+   "comments": 0,
+   "shares": 0
+  },
+  {
+   "youtube_id": "_hNxDM9d-p8",
+   "titulo": "Descobertas da humanidade no século XII #aprendizado #ciencia",
+   "publicado": "2025-10-11T22:00:39Z",
+   "privacidade": "public",
+   "agendado_para": null,
+   "views": 1259,
+   "curtidas": 64,
+   "comentarios": 0,
+   "duracao": "PT1M31S",
+   "estimatedMinutesWatched": 482,
+   "averageViewDuration": 55,
+   "averageViewPercentage": 61.28,
+   "subscribersGained": 3,
+   "likes": 64,
+   "comments": 0,
+   "shares": 1
+  },
+  {
+   "youtube_id": "ILjQPRluWwM",
+   "titulo": "O que a Grécia Antiga pode nos ensinar sobre atração hoje?",
+   "publicado": "2025-10-11T13:00:26Z",
+   "privacidade": "public",
+   "agendado_para": null,
+   "views": 20,
+   "curtidas": 0,
+   "comentarios": 0,
+   "duracao": "PT6M47S",
+   "estimatedMinutesWatched": 25,
+   "averageViewDuration": 91,
+   "averageViewPercentage": 22.39,
+   "subscribersGained": 0,
+   "likes": 0,
+   "comments": 0,
+   "shares": 0
+  },
+  {
+   "youtube_id": "Qh9UvE1jKVc",
+   "titulo": "Descobertas da humanidade #aprendizado #ciencia",
+   "publicado": "2025-10-10T22:00:35Z",
+   "privacidade": "public",
+   "agendado_para": null,
+   "views": 143,
+   "curtidas": 3,
+   "comentarios": 0,
+   "duracao": "PT31S",
+   "estimatedMinutesWatched": 5,
+   "averageViewDuration": 14,
+   "averageViewPercentage": 48.33,
+   "subscribersGained": 0,
+   "likes": 3,
+   "comments": 0,
+   "shares": 0
+  },
+  {
+   "youtube_id": "vQqMjbP9-TM",
+   "titulo": "Por que os Coreanos Aprendem Tão Rápido (Método Gamsi)",
+   "publicado": "2025-10-10T13:01:51Z",
+   "privacidade": "public",
+   "agendado_para": null,
+   "views": 45,
+   "curtidas": 2,
+   "comentarios": 0,
+   "duracao": "PT8M50S",
+   "estimatedMinutesWatched": 114,
+   "averageViewDuration": 155,
+   "averageViewPercentage": 29.39,
+   "subscribersGained": 2,
+   "likes": 2,
+   "comments": 0,
+   "shares": 3
+  },
+  {
+   "youtube_id": "JdqpGaXdUZo",
+   "titulo": "Descobertas da humanidade  #aprendizado #ciencia",
+   "publicado": "2025-10-09T22:00:31Z",
+   "privacidade": "public",
+   "agendado_para": null,
+   "views": 1283,
+   "curtidas": 43,
+   "comentarios": 0,
+   "duracao": "PT49S",
+   "estimatedMinutesWatched": 213,
+   "averageViewDuration": 21,
+   "averageViewPercentage": 44.03,
+   "subscribersGained": 2,
+   "likes": 44,
+   "comments": 0,
+   "shares": 0
+  },
+  {
+   "youtube_id": "y2RWD-pBeWQ",
+   "titulo": "🔥 Os Grandes Avanços do Século XVII que MUDARAM o Mundo para Sempre!",
+   "publicado": "2025-10-09T13:01:56Z",
+   "privacidade": "public",
+   "agendado_para": null,
+   "views": 12,
+   "curtidas": 1,
+   "comentarios": 0,
+   "duracao": "PT4M48S",
+   "estimatedMinutesWatched": 16,
+   "averageViewDuration": 101,
+   "averageViewPercentage": 35.4,
+   "subscribersGained": 0,
+   "likes": 1,
+   "comments": 0,
+   "shares": 0
+  },
+  {
+   "youtube_id": "ZghALdjDkGM",
+   "titulo": "Guia Para Ter Uma Vida MISERÁVEL pro resto da VIDA ( Talvez é o que VOCÊ ta fazendo)",
+   "publicado": "2025-10-08T13:01:09Z",
+   "privacidade": "public",
+   "agendado_para": null,
+   "views": 62,
+   "curtidas": 2,
+   "comentarios": 0,
+   "duracao": "PT6M44S",
+   "estimatedMinutesWatched": 139,
+   "averageViewDuration": 139,
+   "averageViewPercentage": 34.44,
+   "subscribersGained": 0,
+   "likes": 2,
+   "comments": 0,
+   "shares": 0
+  },
+  {
+   "youtube_id": "wpo6mOCsidA",
+   "titulo": "O Segredo Para Nunca Esquecer o Que Lê",
+   "publicado": "2025-10-07T13:02:00Z",
+   "privacidade": "public",
+   "agendado_para": null,
+   "views": 153,
+   "curtidas": 10,
+   "comentarios": 0,
+   "duracao": "PT7M39S",
+   "estimatedMinutesWatched": 392,
+   "averageViewDuration": 154,
+   "averageViewPercentage": 33.56,
+   "subscribersGained": 1,
+   "likes": 10,
+   "comments": 0,
+   "shares": 4
+  },
+  {
+   "youtube_id": "CNmEqB0J1yA",
+   "titulo": "Você Nunca Vai Dominar Nada da Noite Para o Dia (E Aqui Está o Motivo)",
+   "publicado": "2025-10-06T13:00:23Z",
+   "privacidade": "public",
+   "agendado_para": null,
+   "views": 44,
+   "curtidas": 5,
+   "comentarios": 2,
+   "duracao": "PT6M14S",
+   "estimatedMinutesWatched": 66,
+   "averageViewDuration": 91,
+   "averageViewPercentage": 24.36,
+   "subscribersGained": 0,
+   "likes": 5,
+   "comments": 1,
+   "shares": 2
+  },
+  {
+   "youtube_id": "91i1L24fC80",
+   "titulo": "A Rotina dos Bilionários (E Como Você Pode Copiar)",
+   "publicado": "2025-10-05T13:00:16Z",
+   "privacidade": "public",
+   "agendado_para": null,
+   "views": 8,
+   "curtidas": 0,
+   "comentarios": 0,
+   "duracao": "PT7M11S",
+   "estimatedMinutesWatched": 3,
+   "averageViewDuration": 28,
+   "averageViewPercentage": 6.550000000000001,
+   "subscribersGained": 0,
+   "likes": 0,
+   "comments": 0,
+   "shares": 1
+  },
+  {
+   "youtube_id": "eLOL-WZgpK8",
+   "titulo": "A Fórmula Para Ser Irresistível (Segundo a Psicologia)",
+   "publicado": "2025-10-04T13:01:21Z",
+   "privacidade": "public",
+   "agendado_para": null,
+   "views": 149,
+   "curtidas": 13,
+   "comentarios": 0,
+   "duracao": "PT5M43S",
+   "estimatedMinutesWatched": 319,
+   "averageViewDuration": 129,
+   "averageViewPercentage": 37.81,
+   "subscribersGained": 7,
+   "likes": 13,
+   "comments": 0,
+   "shares": 6
+  },
+  {
+   "youtube_id": "4_n_hZvc-VU",
+   "titulo": "Pare de Se Julgar: A Ciência Explica Por Que Fazemos Isso",
+   "publicado": "2025-10-03T13:00:17Z",
+   "privacidade": "public",
+   "agendado_para": null,
+   "views": 6,
+   "curtidas": 1,
+   "comentarios": 0,
+   "duracao": "PT6M47S",
+   "estimatedMinutesWatched": 7,
+   "averageViewDuration": 84,
+   "averageViewPercentage": 20.79,
+   "subscribersGained": 0,
+   "likes": 1,
+   "comments": 0,
+   "shares": 0
+  },
+  {
+   "youtube_id": "ZZlJ1vWxxnU",
+   "titulo": "Como Aprender 10x Mais Rápido (Método Científico)",
+   "publicado": "2025-10-02T12:47:54Z",
+   "privacidade": "public",
+   "agendado_para": null,
+   "views": 16,
+   "curtidas": 1,
+   "comentarios": 0,
+   "duracao": "PT6M38S",
+   "estimatedMinutesWatched": 7,
+   "averageViewDuration": 26,
+   "averageViewPercentage": 6.79,
+   "subscribersGained": 0,
+   "likes": 1,
+   "comments": 0,
+   "shares": 2
+  }
+ ],
+ "fontes": [
+  {
+   "insightTrafficSourceType": "YT_SEARCH",
+   "views": 451,
+   "estimatedMinutesWatched": 1336
+  },
+  {
+   "insightTrafficSourceType": "SUBSCRIBER",
+   "views": 39,
+   "estimatedMinutesWatched": 97
+  },
+  {
+   "insightTrafficSourceType": "RELATED_VIDEO",
+   "views": 30,
+   "estimatedMinutesWatched": 123
+  },
+  {
+   "insightTrafficSourceType": "EXT_URL",
+   "views": 13,
+   "estimatedMinutesWatched": 27
+  },
+  {
+   "insightTrafficSourceType": "YT_OTHER_PAGE",
+   "views": 9,
+   "estimatedMinutesWatched": 71
+  },
+  {
+   "insightTrafficSourceType": "NO_LINK_OTHER",
+   "views": 5,
+   "estimatedMinutesWatched": 19
+  },
+  {
+   "insightTrafficSourceType": "YT_CHANNEL",
+   "views": 5,
+   "estimatedMinutesWatched": 9
+  },
+  {
+   "insightTrafficSourceType": "END_SCREEN",
+   "views": 5,
+   "estimatedMinutesWatched": 1
+  }
+ ],
+ "paises": [
+  {
+   "country": "BR",
+   "views": 276
+  }
+ ],
+ "publico": [],
+ "tipo_conteudo": [
+  {
+   "creatorContentType": "shorts",
+   "views": 6,
+   "estimatedMinutesWatched": 1,
+   "subscribersGained": 0
+  },
+  {
+   "creatorContentType": "videoOnDemand",
+   "views": 551,
+   "estimatedMinutesWatched": 1685,
+   "subscribersGained": 10
+  }
+ ],
+ "retencao": {
+  "p98rkqE2oR0": [
+   [
+    0.01,
+    1.125
+   ],
+   [
+    0.02,
+    1.125
+   ],
+   [
+    0.03,
+    1.125
+   ],
+   [
+    0.04,
+    1.125
+   ],
+   [
+    0.05,
+    1.125
+   ],
+   [
+    0.06,
+    1.125
+   ],
+   [
+    0.07,
+    1.125
+   ],
+   [
+    0.08,
+    1.125
+   ],
+   [
+    0.09,
+    1
+   ],
+   [
+    0.1,
+    0.812
+   ],
+   [
+    0.11,
+    0.812
+   ],
+   [
+    0.12,
+    0.75
+   ],
+   [
+    0.13,
+    0.75
+   ],
+   [
+    0.14,
+    0.75
+   ],
+   [
+    0.15,
+    0.688
+   ],
+   [
+    0.16,
+    0.688
+   ],
+   [
+    0.17,
+    0.688
+   ],
+   [
+    0.18,
+    0.688
+   ],
+   [
+    0.19,
+    0.625
+   ],
+   [
+    0.2,
+    0.625
+   ],
+   [
+    0.21,
+    0.562
+   ],
+   [
+    0.22,
+    0.562
+   ],
+   [
+    0.23,
+    0.562
+   ],
+   [
+    0.24,
+    0.562
+   ],
+   [
+    0.25,
+    0.5
+   ],
+   [
+    0.26,
+    0.438
+   ],
+   [
+    0.27,
+    0.438
+   ],
+   [
+    0.28,
+    0.438
+   ],
+   [
+    0.29,
+    0.438
+   ],
+   [
+    0.3,
+    0.438
+   ],
+   [
+    0.31,
+    0.438
+   ],
+   [
+    0.32,
+    0.438
+   ],
+   [
+    0.33,
+    0.438
+   ],
+   [
+    0.34,
+    0.375
+   ],
+   [
+    0.35,
+    0.375
+   ],
+   [
+    0.36,
+    0.375
+   ],
+   [
+    0.37,
+    0.312
+   ],
+   [
+    0.38,
+    0.25
+   ],
+   [
+    0.39,
+    0.25
+   ],
+   [
+    0.4,
+    0.25
+   ],
+   [
+    0.41,
+    0.25
+   ],
+   [
+    0.42,
+    0.25
+   ],
+   [
+    0.43,
+    0.25
+   ],
+   [
+    0.44,
+    0.25
+   ],
+   [
+    0.45,
+    0.25
+   ],
+   [
+    0.46,
+    0.25
+   ],
+   [
+    0.47,
+    0.25
+   ],
+   [
+    0.48,
+    0.25
+   ],
+   [
+    0.49,
+    0.25
+   ],
+   [
+    0.5,
+    0.25
+   ],
+   [
+    0.51,
+    0.25
+   ],
+   [
+    0.52,
+    0.25
+   ],
+   [
+    0.53,
+    0.25
+   ],
+   [
+    0.54,
+    0.25
+   ],
+   [
+    0.55,
+    0.25
+   ],
+   [
+    0.56,
+    0.188
+   ],
+   [
+    0.57,
+    0.188
+   ],
+   [
+    0.58,
+    0.188
+   ],
+   [
+    0.59,
+    0.125
+   ],
+   [
+    0.6,
+    0.125
+   ],
+   [
+    0.61,
+    0.125
+   ],
+   [
+    0.62,
+    0.125
+   ],
+   [
+    0.63,
+    0.125
+   ],
+   [
+    0.64,
+    0.125
+   ],
+   [
+    0.65,
+    0.125
+   ],
+   [
+    0.66,
+    0.125
+   ],
+   [
+    0.67,
+    0.125
+   ],
+   [
+    0.68,
+    0.125
+   ],
+   [
+    0.69,
+    0.125
+   ],
+   [
+    0.7,
+    0.125
+   ],
+   [
+    0.71,
+    0.125
+   ],
+   [
+    0.72,
+    0.125
+   ],
+   [
+    0.73,
+    0.125
+   ],
+   [
+    0.74,
+    0.125
+   ],
+   [
+    0.75,
+    0.125
+   ],
+   [
+    0.76,
+    0.125
+   ],
+   [
+    0.77,
+    0.125
+   ],
+   [
+    0.78,
+    0.125
+   ],
+   [
+    0.79,
+    0.125
+   ],
+   [
+    0.8,
+    0.125
+   ],
+   [
+    0.81,
+    0.125
+   ],
+   [
+    0.82,
+    0.125
+   ],
+   [
+    0.83,
+    0.125
+   ],
+   [
+    0.84,
+    0.125
+   ],
+   [
+    0.85,
+    0.125
+   ],
+   [
+    0.86,
+    0.125
+   ],
+   [
+    0.87,
+    0.125
+   ],
+   [
+    0.88,
+    0.125
+   ],
+   [
+    0.89,
+    0.125
+   ],
+   [
+    0.9,
+    0.125
+   ],
+   [
+    0.91,
+    0.125
+   ],
+   [
+    0.92,
+    0.125
+   ],
+   [
+    0.93,
+    0.125
+   ],
+   [
+    0.94,
+    0.125
+   ],
+   [
+    0.95,
+    0.125
+   ],
+   [
+    0.96,
+    0.125
+   ],
+   [
+    0.97,
+    0.125
+   ],
+   [
+    0.98,
+    0.125
+   ],
+   [
+    0.99,
+    0.125
+   ],
+   [
+    1,
+    0.125
+   ]
+  ]
+ },
+ "avisos": [
+  "videoThumbnailImpressions,videoThumbnailImpressionsClickRate / video: <HttpError 400 when requesting https://youtubeanalytics.googleapis.com/v2/reports?ids=channel%3D%3DMINE&startDate=2020-01-01&endDate=2026-11-12&dimensions=video"
+ ]
+}
