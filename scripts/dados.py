@@ -75,8 +75,7 @@ def main():
                         metrics="views,estimatedMinutesWatched,subscribersGained,subscribersLost,likes,comments")
     por_video = relatorio(an, avisos, startDate="2020-01-01", endDate=hoje.isoformat(), dimensions="video", sort="-views",
                           maxResults=200, metrics="views,estimatedMinutesWatched,averageViewDuration,averageViewPercentage,subscribersGained,likes,comments,shares")
-    impressoes = relatorio(an, avisos, startDate="2020-01-01", endDate=hoje.isoformat(), dimensions="video", sort="-videoThumbnailImpressions",
-                           maxResults=200, metrics="videoThumbnailImpressions,videoThumbnailImpressionsClickRate")
+    impressoes = []  # a API não entrega impressões/clique na thumb por vídeo (só no Studio)
     fontes = relatorio(an, avisos, startDate=ini28, endDate=hoje.isoformat(), dimensions="insightTrafficSourceType", sort="-views", metrics="views,estimatedMinutesWatched")
     paises = relatorio(an, avisos, startDate=ini28, endDate=hoje.isoformat(), dimensions="country", sort="-views", maxResults=10, metrics="views")
     publico = relatorio(an, avisos, startDate=ini90, endDate=hoje.isoformat(), dimensions="ageGroup,gender", metrics="viewerPercentage")
