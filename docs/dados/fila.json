@@ -1,6 +1,36 @@
 {
  "itens": [
   {
+   "id": "s26",
+   "criado": "2026-11-12T04:55:56+00:00",
+   "notas": [],
+   "historico": [
+    {
+     "quando": "2026-11-12T04:56:02+00:00",
+     "status": "agendado"
+    }
+   ],
+   "tipo": "short",
+   "titulo": "38 Testemunhas e Ninguém Ajudou? (O Caso Kitty Genovese) #shorts",
+   "descricao": "O caso Kitty Genovese e o efeito espectador (Darley e Latané, 1968; Manning e colegas, 2007).\n\nVídeo completo: https://youtu.be/Zpu8nbqIgPI\n\n#psicologia #shorts",
+   "tags": [
+    "kitty genovese",
+    "efeito espectador",
+    "experimentos de psicologia",
+    "mito",
+    "shorts",
+    "descifre"
+   ],
+   "thumb_texto": {},
+   "tema": "38 testemunhas e ninguém ajudou?",
+   "duracao_s": 37,
+   "run": "43157615454",
+   "download": "https://github.com/amiraldopedro/descifre/actions/runs/43157615454",
+   "status": "agendado",
+   "youtube_id": "UFOUQSQhAMg",
+   "agendado_para": "2026-11-21T22:00:00Z"
+  },
+  {
    "id": "s27",
    "criado": "2026-11-12T04:55:46+00:00",
    "notas": [],
@@ -1070,5 +1100,5 @@
   ],
   "fuso": "America/Sao_Paulo"
  },
- "atualizado": "2026-11-12T04:55:53+00:00"
+ "atualizado": "2026-11-12T04:56:02+00:00"
 }
