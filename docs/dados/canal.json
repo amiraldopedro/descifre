@@ -1,22 +1,13 @@
 {
- "atualizado": "2026-11-12T17:35:31+00:00",
+ "atualizado": "2026-11-13T17:12:28+00:00",
  "canal": {
   "nome": "Descifre & Domine",
-  "inscritos": 52,
-  "views": 9172,
-  "videos": 36,
-  "foto": "https://yt3.ggpht.com/HYZlBga0r2QFBe6BtP5x0daOyXKSEbxO_IHJPcIopp_nYfYzlRTeAMEHfH9JlxvvK3LHNqxJ=s88-c-k-c0x00ffffff-no-rj"
+  "inscritos": 53,
+  "views": 9488,
+  "videos": 37,
+  "foto": "https://yt3.ggpht.com/7Icg6egJLFOFwkgsi62NDeasvlxROJNTG4xwD9zW3QXpBDFZXnp9fRwoogERz3lbiCJG8mkHuH0=s88-c-k-c0x00ffffff-no-rj"
  },
  "por_dia": [
-  {
-   "day": "2026-08-14",
-   "views": 9,
-   "estimatedMinutesWatched": 50,
-   "subscribersGained": 0,
-   "subscribersLost": 0,
-   "likes": 0,
-   "comments": 0
-  },
   {
    "day": "2026-08-15",
    "views": 7,
@@ -799,16 +790,36 @@
    "subscribersLost": 0,
    "likes": 2,
    "comments": 0
+  },
+  {
+   "day": "2026-11-10",
+   "views": 1612,
+   "estimatedMinutesWatched": 245,
+   "subscribersGained": 1,
+   "subscribersLost": 0,
+   "likes": 24,
+   "comments": 1
   }
  ],
  "videos": [
+  {
+   "youtube_id": "FT2N4-jIc7I",
+   "titulo": "Qual Desses Distúrbios Você Escolheria? #shorts",
+   "publicado": "2026-11-13T15:00:02Z",
+   "privacidade": "public",
+   "agendado_para": null,
+   "views": 0,
+   "curtidas": 0,
+   "comentarios": 0,
+   "duracao": "PT36S"
+  },
   {
    "youtube_id": "eOriluDjg68",
    "titulo": "O Contrário do Placebo (e Ele Te Faz Mal de Verdade) #shorts",
    "publicado": "2026-11-12T15:08:09Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 136,
+   "views": 167,
    "curtidas": 0,
    "comentarios": 0,
    "duracao": "PT39S"
@@ -819,8 +830,8 @@
    "publicado": "2026-11-12T13:00:31Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 2,
-   "curtidas": 1,
+   "views": 18,
+   "curtidas": 2,
    "comentarios": 1,
    "duracao": "PT21M37S"
   },
@@ -1100,17 +1111,6 @@
    "duracao": "PT28S"
   },
   {
-   "youtube_id": "FT2N4-jIc7I",
-   "titulo": "Qual Desses Distúrbios Você Escolheria? #shorts",
-   "publicado": "2026-11-12T04:39:03Z",
-   "privacidade": "private",
-   "agendado_para": "2026-11-13T15:00:00Z",
-   "views": 0,
-   "curtidas": 0,
-   "comentarios": 0,
-   "duracao": "PT36S"
-  },
-  {
    "youtube_id": "D3enVn9AkA0",
    "titulo": "Teste de Burrice: 4 Armadilhas Que Enganam Gente Inteligente",
    "publicado": "2026-11-12T04:38:44Z",
@@ -1149,7 +1149,7 @@
    "publicado": "2026-11-11T13:00:15Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 19,
+   "views": 29,
    "curtidas": 2,
    "comentarios": 1,
    "duracao": "PT4M18S"
@@ -1160,10 +1160,17 @@
    "publicado": "2026-11-10T20:10:55Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 1065,
+   "views": 1014,
    "curtidas": 13,
    "comentarios": 0,
-   "duracao": "PT33S"
+   "duracao": "PT33S",
+   "estimatedMinutesWatched": 65,
+   "averageViewDuration": 14,
+   "averageViewPercentage": 43.75,
+   "subscribersGained": 0,
+   "likes": 12,
+   "comments": 0,
+   "shares": 0
   },
   {
    "youtube_id": "qY0j5kTWY48",
@@ -1215,10 +1222,17 @@
    "publicado": "2026-11-10T14:35:00Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 553,
+   "views": 552,
    "curtidas": 11,
    "comentarios": 0,
-   "duracao": "PT29S"
+   "duracao": "PT29S",
+   "estimatedMinutesWatched": 83,
+   "averageViewDuration": 38,
+   "averageViewPercentage": 132.34,
+   "subscribersGained": 1,
+   "likes": 11,
+   "comments": 0,
+   "shares": 0
   },
   {
    "youtube_id": "sZwWHfmSUzU",
@@ -1226,16 +1240,16 @@
    "publicado": "2026-11-10T02:34:36Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 3,
-   "curtidas": 3,
+   "views": 32,
+   "curtidas": 4,
    "comentarios": 1,
    "duracao": "PT8M28S",
-   "estimatedMinutesWatched": 8,
+   "estimatedMinutesWatched": 88,
    "averageViewDuration": 171,
-   "averageViewPercentage": 33.8,
+   "averageViewPercentage": 33.72,
    "subscribersGained": 0,
-   "likes": 1,
-   "comments": 0,
+   "likes": 3,
+   "comments": 1,
    "shares": 0
   },
   {
@@ -1262,7 +1276,7 @@
    "publicado": "2025-10-18T13:00:55Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 8,
+   "views": 9,
    "curtidas": 0,
    "comentarios": 0,
    "duracao": "PT1M29S",
@@ -1280,7 +1294,7 @@
    "publicado": "2025-10-17T20:00:40Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 157,
+   "views": 158,
    "curtidas": 0,
    "comentarios": 0,
    "duracao": "PT57S",
@@ -1388,13 +1402,13 @@
    "publicado": "2025-10-15T13:01:22Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 3156,
+   "views": 3169,
    "curtidas": 95,
    "comentarios": 5,
    "duracao": "PT15M59S",
-   "estimatedMinutesWatched": 14299,
+   "estimatedMinutesWatched": 14316,
    "averageViewDuration": 367,
-   "averageViewPercentage": 38.32,
+   "averageViewPercentage": 38.28,
    "subscribersGained": 30,
    "likes": 94,
    "comments": 3,
@@ -1478,7 +1492,7 @@
    "publicado": "2025-10-13T13:00:56Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 106,
+   "views": 107,
    "curtidas": 6,
    "comentarios": 2,
    "duracao": "PT10M1S",
@@ -1612,7 +1626,7 @@
    "averageViewDuration": 21,
    "averageViewPercentage": 44.03,
    "subscribersGained": 2,
-   "likes": 44,
+   "likes": 43,
    "comments": 0,
    "shares": 0
   },
@@ -1763,67 +1777,1343 @@
  ],
  "fontes": [
   {
-   "insightTrafficSourceType": "YT_SEARCH",
-   "views": 451,
-   "estimatedMinutesWatched": 1336
+   "insightTrafficSourceType": "SHORTS",
+   "views": 1527,
+   "estimatedMinutesWatched": 144
   },
   {
-   "insightTrafficSourceType": "SUBSCRIBER",
-   "views": 39,
-   "estimatedMinutesWatched": 97
+   "insightTrafficSourceType": "YT_SEARCH",
+   "views": 474,
+   "estimatedMinutesWatched": 1288
   },
   {
    "insightTrafficSourceType": "RELATED_VIDEO",
-   "views": 30,
-   "estimatedMinutesWatched": 123
+   "views": 48,
+   "estimatedMinutesWatched": 189
+  },
+  {
+   "insightTrafficSourceType": "SUBSCRIBER",
+   "views": 41,
+   "estimatedMinutesWatched": 97
+  },
+  {
+   "insightTrafficSourceType": "YT_CHANNEL",
+   "views": 14,
+   "estimatedMinutesWatched": 10
   },
   {
    "insightTrafficSourceType": "EXT_URL",
-   "views": 13,
-   "estimatedMinutesWatched": 27
+   "views": 14,
+   "estimatedMinutesWatched": 28
   },
   {
    "insightTrafficSourceType": "YT_OTHER_PAGE",
-   "views": 9,
+   "views": 10,
    "estimatedMinutesWatched": 71
   },
   {
    "insightTrafficSourceType": "NO_LINK_OTHER",
-   "views": 5,
-   "estimatedMinutesWatched": 19
-  },
-  {
-   "insightTrafficSourceType": "YT_CHANNEL",
-   "views": 5,
-   "estimatedMinutesWatched": 9
+   "views": 7,
+   "estimatedMinutesWatched": 20
   },
   {
    "insightTrafficSourceType": "END_SCREEN",
    "views": 5,
    "estimatedMinutesWatched": 1
+  },
+  {
+   "insightTrafficSourceType": "SHORTS_CONTENT_LINKS",
+   "views": 4,
+   "estimatedMinutesWatched": 8
+  },
+  {
+   "insightTrafficSourceType": "NOTIFICATION",
+   "views": 3,
+   "estimatedMinutesWatched": 1
+  },
+  {
+   "insightTrafficSourceType": "PLAYLIST",
+   "views": 1,
+   "estimatedMinutesWatched": 4
   }
  ],
  "paises": [
   {
    "country": "BR",
-   "views": 276
+   "views": 1778
+  },
+  {
+   "country": "PT",
+   "views": 62
+  },
+  {
+   "country": "AO",
+   "views": 16
   }
  ],
- "publico": [],
+ "publico": [
+  {
+   "ageGroup": "age13-17",
+   "gender": "female",
+   "viewerPercentage": 17.1
+  },
+  {
+   "ageGroup": "age13-17",
+   "gender": "male",
+   "viewerPercentage": 16.5
+  },
+  {
+   "ageGroup": "age25-34",
+   "gender": "female",
+   "viewerPercentage": 9.6
+  },
+  {
+   "ageGroup": "age25-34",
+   "gender": "male",
+   "viewerPercentage": 14.3
+  },
+  {
+   "ageGroup": "age35-44",
+   "gender": "female",
+   "viewerPercentage": 15.3
+  },
+  {
+   "ageGroup": "age35-44",
+   "gender": "male",
+   "viewerPercentage": 11.5
+  },
+  {
+   "ageGroup": "age45-54",
+   "gender": "female",
+   "viewerPercentage": 6.9
+  },
+  {
+   "ageGroup": "age45-54",
+   "gender": "male",
+   "viewerPercentage": 8.9
+  }
+ ],
  "tipo_conteudo": [
   {
    "creatorContentType": "shorts",
-   "views": 6,
-   "estimatedMinutesWatched": 1,
-   "subscribersGained": 0
+   "views": 1574,
+   "estimatedMinutesWatched": 151,
+   "subscribersGained": 1
   },
   {
    "creatorContentType": "videoOnDemand",
-   "views": 551,
-   "estimatedMinutesWatched": 1685,
+   "views": 574,
+   "estimatedMinutesWatched": 1714,
    "subscribersGained": 10
   }
  ],
- "retencao": {},
+ "retencao": {
+  "RgsJyavriQw": [
+   [
+    0.01,
+    1.128
+   ],
+   [
+    0.02,
+    1.128
+   ],
+   [
+    0.03,
+    1.123
+   ],
+   [
+    0.04,
+    1.113
+   ],
+   [
+    0.05,
+    1.103
+   ],
+   [
+    0.06,
+    1.103
+   ],
+   [
+    0.07,
+    1.099
+   ],
+   [
+    0.08,
+    1.099
+   ],
+   [
+    0.09,
+    1.099
+   ],
+   [
+    0.1,
+    1.094
+   ],
+   [
+    0.11,
+    1.094
+   ],
+   [
+    0.12,
+    1.084
+   ],
+   [
+    0.13,
+    1.079
+   ],
+   [
+    0.14,
+    1.044
+   ],
+   [
+    0.15,
+    1.005
+   ],
+   [
+    0.16,
+    0.966
+   ],
+   [
+    0.17,
+    0.946
+   ],
+   [
+    0.18,
+    0.887
+   ],
+   [
+    0.19,
+    0.847
+   ],
+   [
+    0.2,
+    0.833
+   ],
+   [
+    0.21,
+    0.724
+   ],
+   [
+    0.22,
+    0.67
+   ],
+   [
+    0.23,
+    0.63
+   ],
+   [
+    0.24,
+    0.611
+   ],
+   [
+    0.25,
+    0.586
+   ],
+   [
+    0.26,
+    0.557
+   ],
+   [
+    0.27,
+    0.542
+   ],
+   [
+    0.28,
+    0.547
+   ],
+   [
+    0.29,
+    0.537
+   ],
+   [
+    0.3,
+    0.517
+   ],
+   [
+    0.31,
+    0.473
+   ],
+   [
+    0.32,
+    0.463
+   ],
+   [
+    0.33,
+    0.453
+   ],
+   [
+    0.34,
+    0.438
+   ],
+   [
+    0.35,
+    0.429
+   ],
+   [
+    0.36,
+    0.424
+   ],
+   [
+    0.37,
+    0.404
+   ],
+   [
+    0.38,
+    0.399
+   ],
+   [
+    0.39,
+    0.384
+   ],
+   [
+    0.4,
+    0.379
+   ],
+   [
+    0.41,
+    0.365
+   ],
+   [
+    0.42,
+    0.365
+   ],
+   [
+    0.43,
+    0.365
+   ],
+   [
+    0.44,
+    0.345
+   ],
+   [
+    0.45,
+    0.335
+   ],
+   [
+    0.46,
+    0.335
+   ],
+   [
+    0.47,
+    0.33
+   ],
+   [
+    0.48,
+    0.315
+   ],
+   [
+    0.49,
+    0.31
+   ],
+   [
+    0.5,
+    0.31
+   ],
+   [
+    0.51,
+    0.296
+   ],
+   [
+    0.52,
+    0.296
+   ],
+   [
+    0.53,
+    0.286
+   ],
+   [
+    0.54,
+    0.286
+   ],
+   [
+    0.55,
+    0.286
+   ],
+   [
+    0.56,
+    0.276
+   ],
+   [
+    0.57,
+    0.276
+   ],
+   [
+    0.58,
+    0.276
+   ],
+   [
+    0.59,
+    0.266
+   ],
+   [
+    0.6,
+    0.261
+   ],
+   [
+    0.61,
+    0.256
+   ],
+   [
+    0.62,
+    0.251
+   ],
+   [
+    0.63,
+    0.251
+   ],
+   [
+    0.64,
+    0.251
+   ],
+   [
+    0.65,
+    0.246
+   ],
+   [
+    0.66,
+    0.236
+   ],
+   [
+    0.67,
+    0.227
+   ],
+   [
+    0.68,
+    0.212
+   ],
+   [
+    0.69,
+    0.202
+   ],
+   [
+    0.7,
+    0.197
+   ],
+   [
+    0.71,
+    0.192
+   ],
+   [
+    0.72,
+    0.192
+   ],
+   [
+    0.73,
+    0.182
+   ],
+   [
+    0.74,
+    0.182
+   ],
+   [
+    0.75,
+    0.182
+   ],
+   [
+    0.76,
+    0.182
+   ],
+   [
+    0.77,
+    0.182
+   ],
+   [
+    0.78,
+    0.182
+   ],
+   [
+    0.79,
+    0.182
+   ],
+   [
+    0.8,
+    0.177
+   ],
+   [
+    0.81,
+    0.172
+   ],
+   [
+    0.82,
+    0.172
+   ],
+   [
+    0.83,
+    0.168
+   ],
+   [
+    0.84,
+    0.168
+   ],
+   [
+    0.85,
+    0.168
+   ],
+   [
+    0.86,
+    0.163
+   ],
+   [
+    0.87,
+    0.163
+   ],
+   [
+    0.88,
+    0.158
+   ],
+   [
+    0.89,
+    0.153
+   ],
+   [
+    0.9,
+    0.153
+   ],
+   [
+    0.91,
+    0.153
+   ],
+   [
+    0.92,
+    0.153
+   ],
+   [
+    0.93,
+    0.153
+   ],
+   [
+    0.94,
+    0.153
+   ],
+   [
+    0.95,
+    0.153
+   ],
+   [
+    0.96,
+    0.148
+   ],
+   [
+    0.97,
+    0.143
+   ],
+   [
+    0.98,
+    0.143
+   ],
+   [
+    0.99,
+    0.143
+   ],
+   [
+    1,
+    0.143
+   ]
+  ],
+  "sJCFxNu2aFg": [
+   [
+    0.01,
+    1.948
+   ],
+   [
+    0.02,
+    1.948
+   ],
+   [
+    0.03,
+    1.957
+   ],
+   [
+    0.04,
+    1.957
+   ],
+   [
+    0.05,
+    1.957
+   ],
+   [
+    0.06,
+    1.957
+   ],
+   [
+    0.07,
+    1.957
+   ],
+   [
+    0.08,
+    1.948
+   ],
+   [
+    0.09,
+    1.948
+   ],
+   [
+    0.1,
+    1.94
+   ],
+   [
+    0.11,
+    1.94
+   ],
+   [
+    0.12,
+    1.922
+   ],
+   [
+    0.13,
+    1.922
+   ],
+   [
+    0.14,
+    1.914
+   ],
+   [
+    0.15,
+    1.862
+   ],
+   [
+    0.16,
+    1.81
+   ],
+   [
+    0.17,
+    1.767
+   ],
+   [
+    0.18,
+    1.69
+   ],
+   [
+    0.19,
+    1.629
+   ],
+   [
+    0.2,
+    1.603
+   ],
+   [
+    0.21,
+    1.578
+   ],
+   [
+    0.22,
+    1.552
+   ],
+   [
+    0.23,
+    1.526
+   ],
+   [
+    0.24,
+    1.5
+   ],
+   [
+    0.25,
+    1.457
+   ],
+   [
+    0.26,
+    1.448
+   ],
+   [
+    0.27,
+    1.422
+   ],
+   [
+    0.28,
+    1.397
+   ],
+   [
+    0.29,
+    1.371
+   ],
+   [
+    0.3,
+    1.371
+   ],
+   [
+    0.31,
+    1.362
+   ],
+   [
+    0.32,
+    1.345
+   ],
+   [
+    0.33,
+    1.336
+   ],
+   [
+    0.34,
+    1.336
+   ],
+   [
+    0.35,
+    1.328
+   ],
+   [
+    0.36,
+    1.31
+   ],
+   [
+    0.37,
+    1.31
+   ],
+   [
+    0.38,
+    1.302
+   ],
+   [
+    0.39,
+    1.293
+   ],
+   [
+    0.4,
+    1.284
+   ],
+   [
+    0.41,
+    1.284
+   ],
+   [
+    0.42,
+    1.284
+   ],
+   [
+    0.43,
+    1.276
+   ],
+   [
+    0.44,
+    1.276
+   ],
+   [
+    0.45,
+    1.259
+   ],
+   [
+    0.46,
+    1.259
+   ],
+   [
+    0.47,
+    1.259
+   ],
+   [
+    0.48,
+    1.241
+   ],
+   [
+    0.49,
+    1.241
+   ],
+   [
+    0.5,
+    1.233
+   ],
+   [
+    0.51,
+    1.233
+   ],
+   [
+    0.52,
+    1.216
+   ],
+   [
+    0.53,
+    1.216
+   ],
+   [
+    0.54,
+    1.216
+   ],
+   [
+    0.55,
+    1.216
+   ],
+   [
+    0.56,
+    1.198
+   ],
+   [
+    0.57,
+    1.198
+   ],
+   [
+    0.58,
+    1.19
+   ],
+   [
+    0.59,
+    1.181
+   ],
+   [
+    0.6,
+    1.181
+   ],
+   [
+    0.61,
+    1.172
+   ],
+   [
+    0.62,
+    1.147
+   ],
+   [
+    0.63,
+    1.129
+   ],
+   [
+    0.64,
+    1.129
+   ],
+   [
+    0.65,
+    1.121
+   ],
+   [
+    0.66,
+    1.121
+   ],
+   [
+    0.67,
+    1.112
+   ],
+   [
+    0.68,
+    1.112
+   ],
+   [
+    0.69,
+    1.112
+   ],
+   [
+    0.7,
+    1.112
+   ],
+   [
+    0.71,
+    1.103
+   ],
+   [
+    0.72,
+    1.103
+   ],
+   [
+    0.73,
+    1.103
+   ],
+   [
+    0.74,
+    1.095
+   ],
+   [
+    0.75,
+    1.095
+   ],
+   [
+    0.76,
+    1.086
+   ],
+   [
+    0.77,
+    1.078
+   ],
+   [
+    0.78,
+    1.078
+   ],
+   [
+    0.79,
+    1.078
+   ],
+   [
+    0.8,
+    1.078
+   ],
+   [
+    0.81,
+    1.069
+   ],
+   [
+    0.82,
+    1.069
+   ],
+   [
+    0.83,
+    1.069
+   ],
+   [
+    0.84,
+    1.069
+   ],
+   [
+    0.85,
+    1.069
+   ],
+   [
+    0.86,
+    1.069
+   ],
+   [
+    0.87,
+    1.069
+   ],
+   [
+    0.88,
+    1.052
+   ],
+   [
+    0.89,
+    1.043
+   ],
+   [
+    0.9,
+    1.043
+   ],
+   [
+    0.91,
+    1.043
+   ],
+   [
+    0.92,
+    1.034
+   ],
+   [
+    0.93,
+    1.026
+   ],
+   [
+    0.94,
+    1.026
+   ],
+   [
+    0.95,
+    1.026
+   ],
+   [
+    0.96,
+    1.017
+   ],
+   [
+    0.97,
+    1.017
+   ],
+   [
+    0.98,
+    1.017
+   ],
+   [
+    0.99,
+    1.017
+   ],
+   [
+    1,
+    1.009
+   ]
+  ],
+  "sZwWHfmSUzU": [
+   [
+    0.01,
+    1
+   ],
+   [
+    0.02,
+    0.807
+   ],
+   [
+    0.03,
+    0.742
+   ],
+   [
+    0.04,
+    0.645
+   ],
+   [
+    0.05,
+    0.613
+   ],
+   [
+    0.06,
+    0.645
+   ],
+   [
+    0.07,
+    0.645
+   ],
+   [
+    0.08,
+    0.613
+   ],
+   [
+    0.09,
+    0.548
+   ],
+   [
+    0.1,
+    0.516
+   ],
+   [
+    0.11,
+    0.548
+   ],
+   [
+    0.12,
+    0.548
+   ],
+   [
+    0.13,
+    0.516
+   ],
+   [
+    0.14,
+    0.484
+   ],
+   [
+    0.15,
+    0.452
+   ],
+   [
+    0.16,
+    0.452
+   ],
+   [
+    0.17,
+    0.452
+   ],
+   [
+    0.18,
+    0.419
+   ],
+   [
+    0.19,
+    0.419
+   ],
+   [
+    0.2,
+    0.419
+   ],
+   [
+    0.21,
+    0.387
+   ],
+   [
+    0.22,
+    0.387
+   ],
+   [
+    0.23,
+    0.387
+   ],
+   [
+    0.24,
+    0.387
+   ],
+   [
+    0.25,
+    0.387
+   ],
+   [
+    0.26,
+    0.387
+   ],
+   [
+    0.27,
+    0.387
+   ],
+   [
+    0.28,
+    0.387
+   ],
+   [
+    0.29,
+    0.387
+   ],
+   [
+    0.3,
+    0.387
+   ],
+   [
+    0.31,
+    0.387
+   ],
+   [
+    0.32,
+    0.387
+   ],
+   [
+    0.33,
+    0.387
+   ],
+   [
+    0.34,
+    0.387
+   ],
+   [
+    0.35,
+    0.387
+   ],
+   [
+    0.36,
+    0.387
+   ],
+   [
+    0.37,
+    0.387
+   ],
+   [
+    0.38,
+    0.387
+   ],
+   [
+    0.39,
+    0.387
+   ],
+   [
+    0.4,
+    0.387
+   ],
+   [
+    0.41,
+    0.355
+   ],
+   [
+    0.42,
+    0.355
+   ],
+   [
+    0.43,
+    0.355
+   ],
+   [
+    0.44,
+    0.419
+   ],
+   [
+    0.45,
+    0.452
+   ],
+   [
+    0.46,
+    0.419
+   ],
+   [
+    0.47,
+    0.387
+   ],
+   [
+    0.48,
+    0.387
+   ],
+   [
+    0.49,
+    0.387
+   ],
+   [
+    0.5,
+    0.355
+   ],
+   [
+    0.51,
+    0.29
+   ],
+   [
+    0.52,
+    0.29
+   ],
+   [
+    0.53,
+    0.29
+   ],
+   [
+    0.54,
+    0.29
+   ],
+   [
+    0.55,
+    0.29
+   ],
+   [
+    0.56,
+    0.29
+   ],
+   [
+    0.57,
+    0.29
+   ],
+   [
+    0.58,
+    0.29
+   ],
+   [
+    0.59,
+    0.29
+   ],
+   [
+    0.6,
+    0.29
+   ],
+   [
+    0.61,
+    0.29
+   ],
+   [
+    0.62,
+    0.29
+   ],
+   [
+    0.63,
+    0.29
+   ],
+   [
+    0.64,
+    0.29
+   ],
+   [
+    0.65,
+    0.29
+   ],
+   [
+    0.66,
+    0.29
+   ],
+   [
+    0.67,
+    0.29
+   ],
+   [
+    0.68,
+    0.29
+   ],
+   [
+    0.69,
+    0.29
+   ],
+   [
+    0.7,
+    0.29
+   ],
+   [
+    0.71,
+    0.29
+   ],
+   [
+    0.72,
+    0.258
+   ],
+   [
+    0.73,
+    0.258
+   ],
+   [
+    0.74,
+    0.258
+   ],
+   [
+    0.75,
+    0.258
+   ],
+   [
+    0.76,
+    0.258
+   ],
+   [
+    0.77,
+    0.258
+   ],
+   [
+    0.78,
+    0.258
+   ],
+   [
+    0.79,
+    0.258
+   ],
+   [
+    0.8,
+    0.258
+   ],
+   [
+    0.81,
+    0.258
+   ],
+   [
+    0.82,
+    0.258
+   ],
+   [
+    0.83,
+    0.226
+   ],
+   [
+    0.84,
+    0.161
+   ],
+   [
+    0.85,
+    0.161
+   ],
+   [
+    0.86,
+    0.161
+   ],
+   [
+    0.87,
+    0.161
+   ],
+   [
+    0.88,
+    0.161
+   ],
+   [
+    0.89,
+    0.161
+   ],
+   [
+    0.9,
+    0.161
+   ],
+   [
+    0.91,
+    0.161
+   ],
+   [
+    0.92,
+    0.161
+   ],
+   [
+    0.93,
+    0.161
+   ],
+   [
+    0.94,
+    0.161
+   ],
+   [
+    0.95,
+    0.161
+   ],
+   [
+    0.96,
+    0.161
+   ],
+   [
+    0.97,
+    0.129
+   ],
+   [
+    0.98,
+    0.129
+   ],
+   [
+    0.99,
+    0.129
+   ],
+   [
+    1,
+    0.097
+   ]
+  ]
+ },
  "avisos": []
 }
