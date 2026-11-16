@@ -1,6 +1,38 @@
 {
  "itens": [
   {
+   "id": "s37",
+   "criado": "2026-11-16T22:01:12+00:00",
+   "notas": [],
+   "historico": [
+    {
+     "quando": "2026-11-16T22:01:20+00:00",
+     "status": "agendado"
+    }
+   ],
+   "tipo": "short",
+   "titulo": "Por Que Você Acorda Antes do Despertador #shorts",
+   "descricao": "Estudo de Born e colegas (Nature, 1999): o corpo antecipa a hora de acordar liberando ACTH antes do horário esperado.\n\nVídeo completo: https://youtu.be/qY0j5kTWY48\n\n#psicologia #curiosidades #shorts\n\nMúsica: \"Investigations\" — Kevin MacLeod (incompetech.com), licença CC BY 4.0 (creativecommons.org/licenses/by/4.0)",
+   "tags": [
+    "acordar antes do despertador",
+    "relógio biológico",
+    "sono",
+    "cérebro",
+    "psicologia",
+    "curiosidades",
+    "shorts",
+    "descifre"
+   ],
+   "thumb_texto": {},
+   "tema": "Acorda antes do despertador",
+   "duracao_s": 36,
+   "run": "43964991706",
+   "download": "https://github.com/amiraldopedro/descifre/actions/runs/43964991706",
+   "status": "agendado",
+   "youtube_id": "e_a3ithW9e0",
+   "agendado_para": "2026-12-01T15:00:00Z"
+  },
+  {
    "id": "s34",
    "criado": "2026-11-16T22:00:56+00:00",
    "notas": [],
@@ -1502,5 +1534,5 @@
   ],
   "fuso": "America/Sao_Paulo"
  },
- "atualizado": "2026-11-16T22:01:10+00:00"
+ "atualizado": "2026-11-16T22:01:20+00:00"
 }
