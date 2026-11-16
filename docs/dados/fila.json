@@ -1,6 +1,38 @@
 {
  "itens": [
   {
+   "id": "s35",
+   "criado": "2026-11-16T22:01:24+00:00",
+   "notas": [],
+   "historico": [
+    {
+     "quando": "2026-11-16T22:01:33+00:00",
+     "status": "agendado"
+    }
+   ],
+   "tipo": "short",
+   "titulo": "Por Que Você É Grosso Justo Com Quem Mais Ama #shorts",
+   "descricao": "Por que descontamos em quem amamos: a energia gasta para se controlar fora de casa e a sensação de segurança no lar.\n\nVídeo completo: https://youtu.be/nq2w988sRd8\n\n#psicologia #curiosidades #shorts\n\nMúsica: \"Heavy Interlude\" — Kevin MacLeod (incompetech.com), licença CC BY 4.0 (creativecommons.org/licenses/by/4.0)",
+   "tags": [
+    "grosso com quem ama",
+    "relacionamento",
+    "família",
+    "irritação",
+    "psicologia",
+    "curiosidades",
+    "shorts",
+    "descifre"
+   ],
+   "thumb_texto": {},
+   "tema": "Grosso só em casa",
+   "duracao_s": 36,
+   "run": "43964895975",
+   "download": "https://github.com/amiraldopedro/descifre/actions/runs/43964895975",
+   "status": "agendado",
+   "youtube_id": "rls5I5TkubE",
+   "agendado_para": "2026-11-26T15:00:00Z"
+  },
+  {
    "id": "s37",
    "criado": "2026-11-16T22:01:12+00:00",
    "notas": [],
@@ -1534,5 +1566,5 @@
   ],
   "fuso": "America/Sao_Paulo"
  },
- "atualizado": "2026-11-16T22:01:20+00:00"
+ "atualizado": "2026-11-16T22:01:34+00:00"
 }
