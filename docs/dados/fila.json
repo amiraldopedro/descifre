@@ -88,7 +88,7 @@
    "youtube_id": "ui2xeEa7j6M",
    "status": "publicado",
    "agendado_para": "2026-11-15T15:00:00Z",
-   "views": 6,
+   "views": 202,
    "publicado_em": "2026-11-15T15:00:33Z"
   },
   {
@@ -99,6 +99,10 @@
     {
      "quando": "2026-11-12T04:56:42+00:00",
      "status": "agendado"
+    },
+    {
+     "quando": "2026-11-16T19:35:28+00:00",
+     "status": "publicado"
     }
    ],
    "tipo": "short",
@@ -117,10 +121,11 @@
    "duracao_s": 42,
    "run": "43157545584",
    "download": "https://github.com/amiraldopedro/descifre/actions/runs/43157545584",
-   "status": "agendado",
+   "status": "publicado",
    "youtube_id": "2b4uaaaNyog",
    "agendado_para": "2026-11-15T22:00:00Z",
-   "views": 0
+   "views": 21,
+   "publicado_em": "2026-11-15T22:00:21Z"
   },
   {
    "id": "s26",
@@ -374,7 +379,7 @@
    "status": "publicado",
    "youtube_id": "XmZ_RJKy9yM",
    "agendado_para": "2026-11-14T15:00:00Z",
-   "views": 189,
+   "views": 255,
    "publicado_em": "2026-11-14T15:00:16Z"
   },
   {
@@ -411,7 +416,7 @@
    "status": "publicado",
    "youtube_id": "FT2N4-jIc7I",
    "agendado_para": "2026-11-13T15:00:00Z",
-   "views": 313,
+   "views": 240,
    "publicado_em": "2026-11-13T15:00:02Z"
   },
   {
@@ -478,7 +483,7 @@
    "status": "publicado",
    "youtube_id": "eOriluDjg68",
    "agendado_para": "2026-11-12T22:00:00Z",
-   "views": 167,
+   "views": 170,
    "publicado_em": "2026-11-12T15:08:09Z"
   },
   {
@@ -583,6 +588,10 @@
     {
      "quando": "2026-11-12T04:39:36+00:00",
      "status": "agendado"
+    },
+    {
+     "quando": "2026-11-16T19:35:28+00:00",
+     "status": "publicado"
     }
    ],
    "tipo": "short",
@@ -601,10 +610,11 @@
    "duracao_s": 38,
    "run": "42874214556",
    "download": "https://github.com/amiraldopedro/descifre/actions/runs/42874214556",
-   "status": "agendado",
+   "status": "publicado",
    "youtube_id": "5hyvtK6FZ1w",
    "agendado_para": "2026-11-16T15:00:00Z",
-   "views": 0
+   "views": 11,
+   "publicado_em": "2026-11-16T15:00:25Z"
   },
   {
    "id": "s12",
@@ -639,7 +649,7 @@
    "status": "publicado",
    "youtube_id": "ITFcqVthlRQ",
    "agendado_para": "2026-11-14T22:00:00Z",
-   "views": 59,
+   "views": 71,
    "publicado_em": "2026-11-14T22:00:15Z"
   },
   {
@@ -992,7 +1002,7 @@
    "download": "https://github.com/amiraldopedro/descifre/actions/runs/43040714232",
    "status": "publicado",
    "youtube_id": "EpxCyMwZYZg",
-   "views": 14,
+   "views": 27,
    "agendado_para": "2026-11-12T13:00:00Z",
    "publicado_em": "2026-11-12T13:00:31Z"
   },
@@ -1036,7 +1046,7 @@
    "download": "https://github.com/amiraldopedro/descifre/actions/runs/43018427007",
    "status": "publicado",
    "youtube_id": "Zpu8nbqIgPI",
-   "views": 52,
+   "views": 102,
    "agendado_para": "2026-11-14T13:00:00Z",
    "publicado_em": "2026-11-14T13:00:00Z"
   },
@@ -1078,7 +1088,12 @@
    "id": "006",
    "criado": "2026-11-12T00:42:04+00:00",
    "notas": [],
-   "historico": [],
+   "historico": [
+    {
+     "quando": "2026-11-16T19:35:28+00:00",
+     "status": "publicado"
+    }
+   ],
    "tipo": "longo",
    "titulo": "Escolha Uma Escada: O Teste Que Revela o Que Você Esconde",
    "descricao": "4 testes visuais rápidos: escolha pelo instinto e anote suas letras. No final, uma revelação que muda o jeito como você vê testes de personalidade.\n\n{capitulos}\n\nReferências:\n- Efeito Forer/Barnum: Bertram Forer (1949)\n\nComenta qual escada você escolheu!\nDescifre e domine.\n#psicologia #testedepersonalidade #efeitobarnum",
@@ -1103,10 +1118,11 @@
    "duracao_s": 233,
    "run": "42874107393",
    "download": "https://github.com/amiraldopedro/descifre/actions/runs/42874107393",
-   "status": "agendado",
+   "status": "publicado",
    "youtube_id": "QG9r_mC34mE",
    "views": 0,
-   "agendado_para": "2026-11-16T13:00:00Z"
+   "agendado_para": "2026-11-16T13:00:00Z",
+   "publicado_em": "2026-11-16T13:00:28Z"
   },
   {
    "id": "005",
@@ -1144,7 +1160,7 @@
    "download": "https://github.com/amiraldopedro/descifre/actions/runs/42874097609",
    "status": "publicado",
    "youtube_id": "nq2w988sRd8",
-   "views": 25,
+   "views": 30,
    "publicado_em": "2026-11-11T13:00:15Z"
   },
   {
@@ -1294,5 +1310,5 @@
   ],
   "fuso": "America/Sao_Paulo"
  },
- "atualizado": "2026-11-15T16:20:57+00:00"
+ "atualizado": "2026-11-16T19:35:28+00:00"
 }
