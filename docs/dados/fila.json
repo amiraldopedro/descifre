@@ -1,6 +1,38 @@
 {
  "itens": [
   {
+   "id": "s36",
+   "criado": "2026-11-16T22:00:49+00:00",
+   "notas": [],
+   "historico": [
+    {
+     "quando": "2026-11-16T22:01:00+00:00",
+     "status": "agendado"
+    }
+   ],
+   "tipo": "short",
+   "titulo": "A Teoria do Carrinho: O Teste de Caráter Que Ninguém Vê #shorts",
+   "descricao": "A 'teoria do carrinho de supermercado' e o traço de personalidade que a psicologia realmente mede: a conscienciosidade.\n\nVídeo completo: https://youtu.be/E680HDKOb08\n\n#psicologia #curiosidades #shorts\n\nMúsica: \"Sneaky Snitch\" — Kevin MacLeod (incompetech.com), licença CC BY 4.0 (creativecommons.org/licenses/by/4.0)",
+   "tags": [
+    "teoria do carrinho",
+    "caráter",
+    "personalidade",
+    "conscienciosidade",
+    "psicologia",
+    "curiosidades",
+    "shorts",
+    "descifre"
+   ],
+   "thumb_texto": {},
+   "tema": "A teoria do carrinho de mercado",
+   "duracao_s": 41,
+   "run": "43964972307",
+   "download": "https://github.com/amiraldopedro/descifre/actions/runs/43964972307",
+   "status": "agendado",
+   "youtube_id": "24BLho16FZE",
+   "agendado_para": "2026-11-30T15:00:00Z"
+  },
+  {
    "id": "s42",
    "criado": "2026-11-16T21:59:54+00:00",
    "notas": [],
@@ -1406,5 +1438,5 @@
   ],
   "fuso": "America/Sao_Paulo"
  },
- "atualizado": "2026-11-16T22:00:00+00:00"
+ "atualizado": "2026-11-16T22:01:00+00:00"
 }
