@@ -1,6 +1,38 @@
 {
  "itens": [
   {
+   "id": "s38",
+   "criado": "2026-11-16T22:01:47+00:00",
+   "notas": [],
+   "historico": [
+    {
+     "quando": "2026-11-16T22:01:53+00:00",
+     "status": "agendado"
+    }
+   ],
+   "tipo": "short",
+   "titulo": "Ele Ficou 11 Dias Sem Dormir: Veja o Que Aconteceu #shorts",
+   "descricao": "O recorde de Randy Gardner (1964): 264 horas acordado e o que aconteceu com o cérebro dele.\n\nVídeo completo: https://youtu.be/qY0j5kTWY48\n\n#psicologia #curiosidades #shorts\n\nMúsica: \"Volatile Reaction\" — Kevin MacLeod (incompetech.com), licença CC BY 4.0 (creativecommons.org/licenses/by/4.0)",
+   "tags": [
+    "randy gardner",
+    "11 dias sem dormir",
+    "privação de sono",
+    "recorde",
+    "psicologia",
+    "curiosidades",
+    "shorts",
+    "descifre"
+   ],
+   "thumb_texto": {},
+   "tema": "11 dias sem dormir",
+   "duracao_s": 41,
+   "run": "43964904544",
+   "download": "https://github.com/amiraldopedro/descifre/actions/runs/43964904544",
+   "status": "agendado",
+   "youtube_id": "IPVqsFM_jow",
+   "agendado_para": "2026-11-26T22:00:00Z"
+  },
+  {
    "id": "s43",
    "criado": "2026-11-16T22:01:26+00:00",
    "notas": [],
@@ -1598,5 +1630,5 @@
   ],
   "fuso": "America/Sao_Paulo"
  },
- "atualizado": "2026-11-16T22:01:38+00:00"
+ "atualizado": "2026-11-16T22:01:53+00:00"
 }
