@@ -1,0 +1,140 @@
+{
+ "suspense1": {
+  "titulo": "Unseen Horrors",
+  "clima": "suspense",
+  "autor": "Kevin MacLeod",
+  "fonte": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Unseen%20Horrors.mp3",
+  "licenca": "CC BY 4.0",
+  "credito": "\"Unseen Horrors\" — Kevin MacLeod (incompetech.com), licença CC BY 4.0 (creativecommons.org/licenses/by/4.0)"
+ },
+ "suspense2": {
+  "titulo": "Ice Flow",
+  "clima": "suspense",
+  "autor": "Kevin MacLeod",
+  "fonte": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Ice%20Flow.mp3",
+  "licenca": "CC BY 4.0",
+  "credito": "\"Ice Flow\" — Kevin MacLeod (incompetech.com), licença CC BY 4.0 (creativecommons.org/licenses/by/4.0)"
+ },
+ "suspense3": {
+  "titulo": "Interloper",
+  "clima": "suspense",
+  "autor": "Kevin MacLeod",
+  "fonte": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Interloper.mp3",
+  "licenca": "CC BY 4.0",
+  "credito": "\"Interloper\" — Kevin MacLeod (incompetech.com), licença CC BY 4.0 (creativecommons.org/licenses/by/4.0)"
+ },
+ "suspense4": {
+  "titulo": "Darkest Child",
+  "clima": "terror",
+  "autor": "Kevin MacLeod",
+  "fonte": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Darkest%20Child.mp3",
+  "licenca": "CC BY 4.0",
+  "credito": "\"Darkest Child\" — Kevin MacLeod (incompetech.com), licença CC BY 4.0 (creativecommons.org/licenses/by/4.0)"
+ },
+ "misterio2": {
+  "titulo": "Investigations",
+  "clima": "misterio",
+  "autor": "Kevin MacLeod",
+  "fonte": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Investigations.mp3",
+  "licenca": "CC BY 4.0",
+  "credito": "\"Investigations\" — Kevin MacLeod (incompetech.com), licença CC BY 4.0 (creativecommons.org/licenses/by/4.0)"
+ },
+ "misterio3": {
+  "titulo": "Mesmerize",
+  "clima": "misterio",
+  "autor": "Kevin MacLeod",
+  "fonte": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Mesmerize.mp3",
+  "licenca": "CC BY 4.0",
+  "credito": "\"Mesmerize\" — Kevin MacLeod (incompetech.com), licença CC BY 4.0 (creativecommons.org/licenses/by/4.0)"
+ },
+ "drama1": {
+  "titulo": "Lightless Dawn",
+  "clima": "drama",
+  "autor": "Kevin MacLeod",
+  "fonte": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Lightless%20Dawn.mp3",
+  "licenca": "CC BY 4.0",
+  "credito": "\"Lightless Dawn\" — Kevin MacLeod (incompetech.com), licença CC BY 4.0 (creativecommons.org/licenses/by/4.0)"
+ },
+ "drama2": {
+  "titulo": "Heavy Interlude",
+  "clima": "drama",
+  "autor": "Kevin MacLeod",
+  "fonte": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Heavy%20Interlude.mp3",
+  "licenca": "CC BY 4.0",
+  "credito": "\"Heavy Interlude\" — Kevin MacLeod (incompetech.com), licença CC BY 4.0 (creativecommons.org/licenses/by/4.0)"
+ },
+ "drama3": {
+  "titulo": "Stormfront",
+  "clima": "drama",
+  "autor": "Kevin MacLeod",
+  "fonte": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Stormfront.mp3",
+  "licenca": "CC BY 4.0",
+  "credito": "\"Stormfront\" — Kevin MacLeod (incompetech.com), licença CC BY 4.0 (creativecommons.org/licenses/by/4.0)"
+ },
+ "acao1": {
+  "titulo": "Volatile Reaction",
+  "clima": "acao",
+  "autor": "Kevin MacLeod",
+  "fonte": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Volatile%20Reaction.mp3",
+  "licenca": "CC BY 4.0",
+  "credito": "\"Volatile Reaction\" — Kevin MacLeod (incompetech.com), licença CC BY 4.0 (creativecommons.org/licenses/by/4.0)"
+ },
+ "acao2": {
+  "titulo": "Hitman",
+  "clima": "acao",
+  "autor": "Kevin MacLeod",
+  "fonte": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Hitman.mp3",
+  "licenca": "CC BY 4.0",
+  "credito": "\"Hitman\" — Kevin MacLeod (incompetech.com), licença CC BY 4.0 (creativecommons.org/licenses/by/4.0)"
+ },
+ "acao3": {
+  "titulo": "Exhilarate",
+  "clima": "acao",
+  "autor": "Kevin MacLeod",
+  "fonte": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Exhilarate.mp3",
+  "licenca": "CC BY 4.0",
+  "credito": "\"Exhilarate\" — Kevin MacLeod (incompetech.com), licença CC BY 4.0 (creativecommons.org/licenses/by/4.0)"
+ },
+ "scifi2": {
+  "titulo": "Space Fighter Loop",
+  "clima": "ficcao",
+  "autor": "Kevin MacLeod",
+  "fonte": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Space%20Fighter%20Loop.mp3",
+  "licenca": "CC BY 4.0",
+  "credito": "\"Space Fighter Loop\" — Kevin MacLeod (incompetech.com), licença CC BY 4.0 (creativecommons.org/licenses/by/4.0)"
+ },
+ "scifi3": {
+  "titulo": "Crypto",
+  "clima": "ficcao",
+  "autor": "Kevin MacLeod",
+  "fonte": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Crypto.mp3",
+  "licenca": "CC BY 4.0",
+  "credito": "\"Crypto\" — Kevin MacLeod (incompetech.com), licença CC BY 4.0 (creativecommons.org/licenses/by/4.0)"
+ },
+ "curioso1": {
+  "titulo": "Sneaky Snitch",
+  "clima": "curioso",
+  "autor": "Kevin MacLeod",
+  "fonte": "https://incompetech.com/music/royalty-free/mp3-royaltyfree/Sneaky%20Snitch.mp3",
+  "licenca": "CC BY 4.0",
+  "credito": "\"Sneaky Snitch\" — Kevin MacLeod (incompetech.com), licença CC BY 4.0 (creativecommons.org/licenses/by/4.0)"
+ },
+ "leve": {
+  "titulo": "leve",
+  "clima": "leve",
+  "autor": "Descifre (composição própria)",
+  "licenca": "própria"
+ },
+ "misterio": {
+  "titulo": "misterio",
+  "clima": "misterio",
+  "autor": "Descifre (composição própria)",
+  "licenca": "própria"
+ },
+ "tenso": {
+  "titulo": "tenso",
+  "clima": "suspense",
+  "autor": "Descifre (composição própria)",
+  "licenca": "própria"
+ }
+}
