@@ -1,6 +1,38 @@
 {
  "itens": [
   {
+   "id": "s32",
+   "criado": "2026-11-16T22:03:39+00:00",
+   "notas": [],
+   "historico": [
+    {
+     "quando": "2026-11-16T22:03:48+00:00",
+     "status": "agendado"
+    }
+   ],
+   "tipo": "short",
+   "titulo": "Por Que Você Leva um Tranco Antes de Dormir #shorts",
+   "descricao": "O abalo hípnico (hypnic jerk): o susto de 'cair' quando você está pegando no sono, e uma das teorias para ele.\n\nVídeo completo: https://youtu.be/qY0j5kTWY48\n\n#psicologia #curiosidades #shorts\n\nMúsica: \"Ice Flow\" — Kevin MacLeod (incompetech.com), licença CC BY 4.0 (creativecommons.org/licenses/by/4.0)",
+   "tags": [
+    "abalo hípnico",
+    "tranco ao dormir",
+    "sensação de cair",
+    "sono",
+    "psicologia",
+    "curiosidades",
+    "shorts",
+    "descifre"
+   ],
+   "thumb_texto": {},
+   "tema": "O tranco antes de dormir",
+   "duracao_s": 44,
+   "run": "43964914571",
+   "download": "https://github.com/amiraldopedro/descifre/actions/runs/43964914571",
+   "status": "agendado",
+   "youtube_id": "ywa3tZasEoQ",
+   "agendado_para": "2026-11-27T15:00:00Z"
+  },
+  {
    "id": "s38",
    "criado": "2026-11-16T22:01:47+00:00",
    "notas": [],
@@ -1630,5 +1662,5 @@
   ],
   "fuso": "America/Sao_Paulo"
  },
- "atualizado": "2026-11-16T22:01:53+00:00"
+ "atualizado": "2026-11-16T22:03:48+00:00"
 }
