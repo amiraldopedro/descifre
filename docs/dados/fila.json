@@ -1,6 +1,38 @@
 {
  "itens": [
   {
+   "id": "s34",
+   "criado": "2026-11-16T22:00:56+00:00",
+   "notas": [],
+   "historico": [
+    {
+     "quando": "2026-11-16T22:01:04+00:00",
+     "status": "agendado"
+    }
+   ],
+   "tipo": "short",
+   "titulo": "Quem Fala Sozinho Não É Doido (a Ciência Explica) #shorts",
+   "descricao": "Estudos sobre falar sozinho: dizer o nome do objeto ajuda a achá-lo (Lupyan e Swingley, 2012) e falar consigo na terceira pessoa reduz a ansiedade (Kross, 2014).\n\nVídeo completo: https://youtu.be/zuFiW7qSO7Y\n\n#psicologia #curiosidades #shorts\n\nMúsica: \"Sneaky Snitch\" — Kevin MacLeod (incompetech.com), licença CC BY 4.0 (creativecommons.org/licenses/by/4.0)",
+   "tags": [
+    "falar sozinho",
+    "inteligência",
+    "autoconversa",
+    "ansiedade",
+    "psicologia",
+    "curiosidades",
+    "shorts",
+    "descifre"
+   ],
+   "thumb_texto": {},
+   "tema": "Quem fala sozinho",
+   "duracao_s": 41,
+   "run": "43964934176",
+   "download": "https://github.com/amiraldopedro/descifre/actions/runs/43964934176",
+   "status": "agendado",
+   "youtube_id": "uMVo2VJRggI",
+   "agendado_para": "2026-11-28T15:00:00Z"
+  },
+  {
    "id": "s36",
    "criado": "2026-11-16T22:00:49+00:00",
    "notas": [],
@@ -1438,5 +1470,5 @@
   ],
   "fuso": "America/Sao_Paulo"
  },
- "atualizado": "2026-11-16T22:01:00+00:00"
+ "atualizado": "2026-11-16T22:01:05+00:00"
 }
