@@ -33,6 +33,38 @@
    "agendado_para": "2026-11-28T15:00:00Z"
   },
   {
+   "id": "s40",
+   "criado": "2026-11-16T22:00:49+00:00",
+   "notas": [],
+   "historico": [
+    {
+     "quando": "2026-11-16T22:01:00+00:00",
+     "status": "agendado"
+    }
+   ],
+   "tipo": "short",
+   "titulo": "Ele Esquece Tudo a Cada 30 Segundos (Caso Real) #shorts",
+   "descricao": "O caso de Clive Wearing: amnésia profunda após uma encefalite por herpes em 1985.\n\nVídeo completo: https://youtu.be/zuFiW7qSO7Y\n\n#psicologia #curiosidades #shorts\n\nMúsica: \"Lightless Dawn\" — Kevin MacLeod (incompetech.com), licença CC BY 4.0 (creativecommons.org/licenses/by/4.0)",
+   "tags": [
+    "clive wearing",
+    "amnésia",
+    "memória",
+    "cérebro",
+    "psicologia",
+    "curiosidades",
+    "shorts",
+    "descifre"
+   ],
+   "thumb_texto": {},
+   "tema": "Memória de 30 segundos",
+   "duracao_s": 42,
+   "run": "43964961708",
+   "download": "https://github.com/amiraldopedro/descifre/actions/runs/43964961708",
+   "status": "agendado",
+   "youtube_id": "3sBEOM1OgUE",
+   "agendado_para": "2026-11-29T22:00:00Z"
+  },
+  {
    "id": "s36",
    "criado": "2026-11-16T22:00:49+00:00",
    "notas": [],
@@ -1470,5 +1502,5 @@
   ],
   "fuso": "America/Sao_Paulo"
  },
- "atualizado": "2026-11-16T22:01:05+00:00"
+ "atualizado": "2026-11-16T22:01:10+00:00"
 }
