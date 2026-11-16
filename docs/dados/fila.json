@@ -1,6 +1,38 @@
 {
  "itens": [
   {
+   "id": "s39",
+   "criado": "2026-11-16T21:59:09+00:00",
+   "notas": [],
+   "historico": [
+    {
+     "quando": "2026-11-16T21:59:18+00:00",
+     "status": "agendado"
+    }
+   ],
+   "tipo": "short",
+   "titulo": "A Mulher Que Não Sente Medo (Caso Real S.M.) #shorts",
+   "descricao": "A paciente S.M., sem amígdala por causa da doença de Urbach-Wiethe (Feinstein e colegas, 2011 e 2013).\n\nVídeo completo: https://youtu.be/qY0j5kTWY48\n\n#psicologia #curiosidades #shorts\n\nMúsica: \"Interloper\" — Kevin MacLeod (incompetech.com), licença CC BY 4.0 (creativecommons.org/licenses/by/4.0)",
+   "tags": [
+    "paciente sm",
+    "amígdala",
+    "sem medo",
+    "cérebro",
+    "psicologia",
+    "curiosidades",
+    "shorts",
+    "descifre"
+   ],
+   "thumb_texto": {},
+   "tema": "A mulher que não sente medo",
+   "duracao_s": 44,
+   "run": "43964944196",
+   "download": "https://github.com/amiraldopedro/descifre/actions/runs/43964944196",
+   "status": "agendado",
+   "youtube_id": "Ynz5MyedtVw",
+   "agendado_para": "2026-11-28T22:00:00Z"
+  },
+  {
    "id": "s31",
    "criado": "2026-11-12T05:03:58+00:00",
    "notas": [],
@@ -1310,5 +1342,5 @@
   ],
   "fuso": "America/Sao_Paulo"
  },
- "atualizado": "2026-11-16T19:35:28+00:00"
+ "atualizado": "2026-11-16T21:59:18+00:00"
 }
