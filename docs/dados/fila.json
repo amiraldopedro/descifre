@@ -1,6 +1,38 @@
 {
  "itens": [
   {
+   "id": "s42",
+   "criado": "2026-11-16T21:59:54+00:00",
+   "notas": [],
+   "historico": [
+    {
+     "quando": "2026-11-16T22:00:00+00:00",
+     "status": "agendado"
+    }
+   ],
+   "tipo": "short",
+   "titulo": "Aposto Que Você Vai Bocejar Vendo Isso #shorts",
+   "descricao": "Por que o bocejo é contagioso: estudos sobre o contágio do bocejo em pessoas e cães.\n\nVídeo completo: https://youtu.be/EpxCyMwZYZg\n\n#psicologia #curiosidades #shorts\n\nMúsica: \"Sneaky Snitch\" — Kevin MacLeod (incompetech.com), licença CC BY 4.0 (creativecommons.org/licenses/by/4.0)",
+   "tags": [
+    "bocejo contagioso",
+    "contágio",
+    "curiosidades",
+    "cérebro",
+    "psicologia",
+    "curiosidades",
+    "shorts",
+    "descifre"
+   ],
+   "thumb_texto": {},
+   "tema": "Você vai bocejar",
+   "duracao_s": 38,
+   "run": "43964924425",
+   "download": "https://github.com/amiraldopedro/descifre/actions/runs/43964924425",
+   "status": "agendado",
+   "youtube_id": "pAmcTU2rVzM",
+   "agendado_para": "2026-11-27T22:00:00Z"
+  },
+  {
    "id": "s41",
    "criado": "2026-11-16T21:59:29+00:00",
    "notas": [],
@@ -1374,5 +1406,5 @@
   ],
   "fuso": "America/Sao_Paulo"
  },
- "atualizado": "2026-11-16T21:59:39+00:00"
+ "atualizado": "2026-11-16T22:00:00+00:00"
 }
