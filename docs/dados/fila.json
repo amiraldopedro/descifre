@@ -1,6 +1,38 @@
 {
  "itens": [
   {
+   "id": "s33",
+   "criado": "2026-11-16T22:08:56+00:00",
+   "notas": [],
+   "historico": [
+    {
+     "quando": "2026-11-16T22:09:07+00:00",
+     "status": "agendado"
+    }
+   ],
+   "tipo": "short",
+   "titulo": "Seu Celular Vibrou? Não Vibrou (Vibração Fantasma) #shorts",
+   "descricao": "A síndrome da vibração fantasma: por que você sente o celular vibrar quando ele não vibrou.\n\nVídeo completo: https://youtu.be/qY0j5kTWY48\n\n#psicologia #curiosidades #shorts\n\nMúsica: \"Mesmerize\" — Kevin MacLeod (incompetech.com), licença CC BY 4.0 (creativecommons.org/licenses/by/4.0)",
+   "tags": [
+    "vibração fantasma",
+    "celular",
+    "ansiedade",
+    "cérebro",
+    "psicologia",
+    "curiosidades",
+    "shorts",
+    "descifre"
+   ],
+   "thumb_texto": {},
+   "tema": "O celular que não vibrou",
+   "duracao_s": 44,
+   "run": "43964953850",
+   "download": "https://github.com/amiraldopedro/descifre/actions/runs/43964953850",
+   "status": "agendado",
+   "youtube_id": "C1XEW31-KdE",
+   "agendado_para": "2026-11-29T15:00:00Z"
+  },
+  {
    "id": "s32",
    "criado": "2026-11-16T22:03:39+00:00",
    "notas": [],
@@ -1662,5 +1694,5 @@
   ],
   "fuso": "America/Sao_Paulo"
  },
- "atualizado": "2026-11-16T22:03:48+00:00"
+ "atualizado": "2026-11-16T22:09:07+00:00"
 }
