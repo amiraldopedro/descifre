@@ -1,6 +1,38 @@
 {
  "itens": [
   {
+   "id": "s41",
+   "criado": "2026-11-16T21:59:29+00:00",
+   "notas": [],
+   "historico": [
+    {
+     "quando": "2026-11-16T21:59:39+00:00",
+     "status": "agendado"
+    }
+   ],
+   "tipo": "short",
+   "titulo": "Ela Lembra de Todos os Dias da Vida (e Odeia Isso) #shorts",
+   "descricao": "O caso de Jill Price, a primeira pessoa descrita com memória autobiográfica altamente superior (Parker, Cahill e McGaugh, 2006).\n\nVídeo completo: https://youtu.be/zuFiW7qSO7Y\n\n#psicologia #curiosidades #shorts\n\nMúsica: \"Mesmerize\" — Kevin MacLeod (incompetech.com), licença CC BY 4.0 (creativecommons.org/licenses/by/4.0)",
+   "tags": [
+    "jill price",
+    "memória perfeita",
+    "hsam",
+    "memória",
+    "psicologia",
+    "curiosidades",
+    "shorts",
+    "descifre"
+   ],
+   "thumb_texto": {},
+   "tema": "A mulher que lembra de tudo",
+   "duracao_s": 39,
+   "run": "43964982182",
+   "download": "https://github.com/amiraldopedro/descifre/actions/runs/43964982182",
+   "status": "agendado",
+   "youtube_id": "YV6UY0EzukE",
+   "agendado_para": "2026-11-30T22:00:00Z"
+  },
+  {
    "id": "s39",
    "criado": "2026-11-16T21:59:09+00:00",
    "notas": [],
@@ -1342,5 +1374,5 @@
   ],
   "fuso": "America/Sao_Paulo"
  },
- "atualizado": "2026-11-16T21:59:18+00:00"
+ "atualizado": "2026-11-16T21:59:39+00:00"
 }
