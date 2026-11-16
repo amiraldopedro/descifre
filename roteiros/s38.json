@@ -1,0 +1,83 @@
+{
+ "id": "s38",
+ "titulo": "11 dias sem dormir",
+ "formato": "short",
+ "layout": "gameplay",
+ "voz": "en-US-BrianMultilingualNeural",
+ "taxa": "+8%",
+ "trilha": "acao1",
+ "trilha_inicio": 0,
+ "cenas": [
+  {
+   "texto": "E se você ficasse onze dias sem dormir?",
+   "animacao": {
+    "tipo": "gancho",
+    "texto": "11 DIAS SEM DORMIR?"
+   },
+   "id": 1
+  },
+  {
+   "texto": "Em mil novecentos e sessenta e quatro, um estudante de dezessete anos chamado Randy Gardner fez isso numa feira de ciências.",
+   "animacao": {
+    "tipo": "conceito",
+    "nome": "REAL",
+    "frase": "264 horas acordado",
+    "rotulo": "ATENÇÃO"
+   },
+   "id": 2
+  },
+  {
+   "texto": "No segundo dia, ele já não conseguia focar os olhos. No quarto, achou que uma placa de rua era uma pessoa.",
+   "animacao": {
+    "tipo": "ilustracao",
+    "nome": "olho",
+    "texto": "VENDO COISAS"
+   },
+   "sons": [
+    {
+     "som": "glitch",
+     "t": 1.0
+    }
+   ],
+   "id": 3
+  },
+  {
+   "texto": "Depois, jurou que era um jogador famoso de futebol americano. Esquecia o que estava falando no meio da frase.",
+   "animacao": {
+    "tipo": "cena3d",
+    "nome": "cerebro",
+    "texto": "PANE"
+   },
+   "sons": [
+    {
+     "som": "estatica",
+     "t": 0.5
+    }
+   ],
+   "id": 4
+  },
+  {
+   "texto": "No fim, ele dormiu catorze horas seguidas e se recuperou. E o Guinness parou de aceitar esse tipo de recorde.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "anima/quarto",
+    "props": {
+     "luz": "apagada",
+     "camera": "cima",
+     "olhos": "fechados",
+     "efeito": "zzz",
+     "coberta": 0.8
+    }
+   },
+   "id": 5
+  },
+  {
+   "texto": "Você aguentaria quantos dias? Comenta. E veja como o seu cérebro mente pra você no vídeo do link.",
+   "animacao": {
+    "tipo": "cta",
+    "texto": "QUANTOS DIAS?"
+   },
+   "id": 6
+  }
+ ]
+}

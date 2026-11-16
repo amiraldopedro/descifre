@@ -1,0 +1,84 @@
+{
+ "id": "s37",
+ "titulo": "Acorda antes do despertador",
+ "formato": "short",
+ "layout": "animado",
+ "voz": "en-US-BrianMultilingualNeural",
+ "taxa": "+8%",
+ "trilha": "misterio2",
+ "trilha_inicio": 0,
+ "cenas": [
+  {
+   "texto": "Você conhece alguém que acorda um minuto antes do despertador tocar? Isso não é coincidência.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "anima/quarto",
+    "props": {
+     "luz": "dia",
+     "camera": "aproxima",
+     "olhos": "abertos",
+     "efeito": "alerta",
+     "entra": 0.45
+    }
+   },
+   "sons": [
+    {
+     "som": "relogio",
+     "t": 0.0
+    }
+   ],
+   "id": 1
+  },
+  {
+   "texto": "Num estudo alemão, pessoas foram dormir sabendo que seriam acordadas às seis. Perto desse horário, o corpo delas soltou um hormônio de despertar sozinho.",
+   "animacao": {
+    "tipo": "conceito",
+    "nome": "RELÓGIO INTERNO",
+    "frase": "o corpo se prepara sozinho",
+    "rotulo": "A CIÊNCIA"
+   },
+   "id": 2
+  },
+  {
+   "texto": "Quem foi avisado que acordaria às nove não teve esse pico às seis. O cérebro tinha feito as contas durante o sono.",
+   "animacao": {
+    "tipo": "ilustracao",
+    "nome": "ampulheta",
+    "texto": "CONTANDO O TEMPO"
+   },
+   "sons": [
+    {
+     "som": "riser",
+     "t": 2.5
+    },
+    {
+     "som": "ding",
+     "t": 4.4
+    }
+   ],
+   "id": 3
+  },
+  {
+   "texto": "Ah, mas eu durmo pesado. Não importa: a contagem roda mesmo com você apagado.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "anima/quarto",
+    "props": {
+     "luz": "apagada",
+     "camera": "cima",
+     "olhos": "fechados",
+     "efeito": "zzz"
+    }
+   },
+   "id": 4
+  },
+  {
+   "texto": "Manda pra quem sempre ganha do despertador. E comenta: você é desses?",
+   "animacao": {
+    "tipo": "cta",
+    "texto": "VOCÊ É DESSES?"
+   },
+   "id": 5
+  }
+ ]
+}

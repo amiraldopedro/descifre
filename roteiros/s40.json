@@ -1,0 +1,76 @@
+{
+ "id": "s40",
+ "titulo": "Memória de 30 segundos",
+ "formato": "short",
+ "layout": "gameplay",
+ "voz": "en-US-BrianMultilingualNeural",
+ "taxa": "+8%",
+ "trilha": "drama1",
+ "trilha_inicio": 0,
+ "cenas": [
+  {
+   "texto": "E se você esquecesse tudo a cada trinta segundos?",
+   "animacao": {
+    "tipo": "gancho",
+    "texto": "ESQUECE TUDO EM 30s"
+   },
+   "id": 1
+  },
+  {
+   "texto": "Isso aconteceu com Clive Wearing, um músico inglês. Em mil novecentos e oitenta e cinco, um vírus atacou o cérebro dele.",
+   "animacao": {
+    "tipo": "conceito",
+    "nome": "REAL",
+    "frase": "Clive Wearing, 1985",
+    "rotulo": "ATENÇÃO"
+   },
+   "id": 2
+  },
+  {
+   "texto": "Desde então, ele sente que acabou de acordar, o tempo todo. No diário, escrevia: agora estou acordado de verdade. Riscava. E escrevia de novo.",
+   "animacao": {
+    "tipo": "ilustracao",
+    "nome": "ampulheta",
+    "texto": "AGORA... AGORA..."
+   },
+   "sons": [
+    {
+     "som": "caneta",
+     "t": 1.5
+    },
+    {
+     "som": "risco",
+     "t": 4.0
+    },
+    {
+     "som": "caneta",
+     "t": 5.2
+    }
+   ],
+   "id": 3
+  },
+  {
+   "texto": "Mas duas coisas sobreviveram. Ele ainda toca piano perfeitamente. E sempre reconhece a esposa, com uma alegria enorme, como se não visse ela há anos.",
+   "animacao": {
+    "tipo": "ilustracao",
+    "nome": "coracao",
+    "texto": "O AMOR FICOU"
+   },
+   "sons": [
+    {
+     "som": "brilho_longo",
+     "t": 3.0
+    }
+   ],
+   "id": 4
+  },
+  {
+   "texto": "Prova de que existem memórias que moram em outro lugar do cérebro. Como cada mente vê o mundo tá no vídeo do link.",
+   "animacao": {
+    "tipo": "cta",
+    "texto": "VEJA O VÍDEO"
+   },
+   "id": 5
+  }
+ ]
+}

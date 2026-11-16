@@ -26,8 +26,18 @@ export type SomCena = { som: NomeSom; p?: number; t?: number; fim?: number; vol?
 /** Converte proporção da fala em frame (use na cena para bater com os sons). */
 export const emP = (p: number, fala: number) => p * fala;
 
-export type NomeSom =
-  | "whoosh" | "pop" | "ding" | "click" | "tique" | "boom" | "zap" | "brilho"
-  | "mecanico" | "batida" | "glitch" | "sobe" | "desce" | "porta" | "passos" | "papel" | "marcador";
+export type NomeSom = // sintetizados (montar.py) + gravados em public/sons (mapa.json, CC0)
+  | "808" | "alarme" | "alerta" | "aparece" | "aplausos" | "barra" | "batida" | "batida_leve"
+  | "bolha" | "boom" | "boom_forte" | "brilho" | "brilho_longo" | "caixa" | "caneta" | "certo"
+  | "click" | "confete" | "conta_sobe" | "contagem" | "decifra" | "degrau1" | "degrau2" | "degrau3"
+  | "degrau4" | "degrau5" | "desce" | "desliga" | "digitar" | "ding" | "enter" | "errado"
+  | "estatica" | "falha" | "faller" | "gira" | "giz" | "glitch" | "hacker" | "impacto"
+  | "impacto_max" | "liga" | "marcador" | "mecanico" | "mensagem" | "metal" | "moeda" | "moedas"
+  | "mola" | "numero" | "pagina" | "papel" | "passos" | "pop" | "pop_pequeno" | "pop_sai"
+  | "porta" | "puf" | "queda_grave" | "relogio" | "relogio_rapido" | "risco" | "riser" | "riser_longo"
+  | "riser_suave" | "rumble" | "scan" | "shutter" | "shutter_forte" | "slam" | "sobe" | "soco"
+  | "sub" | "swipe" | "swish" | "tap" | "tecla" | "tique" | "toggle" | "toque"
+  | "trava" | "trovao" | "vibra" | "vinheta_bold" | "vinheta_tech" | "whoosh" | "whoosh_forte" | "whoosh_lento"
+  | "whoosh_leve" | "whoosh_rev" | "zap" | "zip" | "zoom";
 
 export type ModuloSobMedida = { default: React.FC<PropsSobMedida>; sons?: SomCena[]; vertical?: boolean }; // vertical = a cena já se adapta ao Short (senão roda numa telinha 16:9)

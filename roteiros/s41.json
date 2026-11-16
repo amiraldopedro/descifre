@@ -1,0 +1,63 @@
+{
+ "id": "s41",
+ "titulo": "A mulher que lembra de tudo",
+ "formato": "short",
+ "layout": "gameplay",
+ "voz": "en-US-BrianMultilingualNeural",
+ "taxa": "+8%",
+ "trilha": "misterio3",
+ "trilha_inicio": 0,
+ "cenas": [
+  {
+   "texto": "E se você lembrasse de todos os dias da sua vida?",
+   "animacao": {
+    "tipo": "gancho",
+    "texto": "LEMBRAR DE TUDO?"
+   },
+   "id": 1
+  },
+  {
+   "texto": "Jill Price é assim. Fala uma data qualquer desde que ela tinha catorze anos, e ela diz o dia da semana, o que comeu e o que passou na TV.",
+   "animacao": {
+    "tipo": "conceito",
+    "nome": "MEMÓRIA PERFEITA",
+    "frase": "todos os dias desde os 14",
+    "rotulo": "A CIÊNCIA"
+   },
+   "id": 2
+  },
+  {
+   "texto": "Ela foi a primeira pessoa estudada com isso. Os cientistas chamaram de memória autobiográfica altamente superior.",
+   "animacao": {
+    "tipo": "cena3d",
+    "nome": "cristais",
+    "texto": "TUDO GUARDADO"
+   },
+   "sons": [
+    {
+     "som": "decifra",
+     "t": 0.5
+    }
+   ],
+   "id": 3
+  },
+  {
+   "texto": "Parece um sonho? Ela diz que é um fardo. As brigas, as vergonhas e as perdas voltam com a mesma força do primeiro dia.",
+   "animacao": {
+    "tipo": "conceito",
+    "nome": "FARDO",
+    "frase": "ela não consegue esquecer",
+    "rotulo": "ATENÇÃO"
+   },
+   "id": 4
+  },
+  {
+   "texto": "Esquecer, no fim, é um presente. Você queria essa memória? Comenta. E veja como cada mente vê o mundo no link.",
+   "animacao": {
+    "tipo": "cta",
+    "texto": "VOCÊ QUERIA?"
+   },
+   "id": 5
+  }
+ ]
+}

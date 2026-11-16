@@ -1,0 +1,75 @@
+{
+ "id": "s36",
+ "titulo": "A teoria do carrinho de mercado",
+ "formato": "short",
+ "layout": "animado",
+ "voz": "en-US-BrianMultilingualNeural",
+ "taxa": "+8%",
+ "trilha": "curioso1",
+ "trilha_inicio": 0,
+ "cenas": [
+  {
+   "texto": "Você conhece alguém que devolve o carrinho de mercado no lugar, mesmo quando ninguém tá vendo?",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "anima/quarto",
+    "props": {
+     "cenario": "rua",
+     "luz": "dia",
+     "pose": "andando",
+     "camera": "afasta",
+     "efeito": "brilho",
+     "entra": 0.6
+    }
+   },
+   "id": 1
+  },
+  {
+   "texto": "Na internet, isso virou um teste de caráter: a teoria do carrinho. Ninguém te obriga, ninguém te elogia. É você e a sua consciência.",
+   "animacao": {
+    "tipo": "conceito",
+    "nome": "TEORIA DO CARRINHO",
+    "frase": "ninguém tá olhando",
+    "rotulo": "O TESTE"
+   },
+   "id": 2
+  },
+  {
+   "texto": "Não existe um estudo sobre o carrinho em si. Mas a psicologia mede um traço parecido: a conscienciosidade, a mania de fazer o certo e terminar o que começou.",
+   "animacao": {
+    "tipo": "carimbo",
+    "texto": "CUIDADO",
+    "frase": "não é ciência pura",
+    "p": 0.2
+   },
+   "id": 3
+  },
+  {
+   "texto": "E quem tem esse traço forte costuma ir melhor no trabalho e nos estudos.",
+   "animacao": {
+    "tipo": "ilustracao",
+    "nome": "grafico",
+    "texto": "VAI MAIS LONGE"
+   },
+   "sons": [
+    {
+     "som": "conta_sobe",
+     "t": 0.3
+    },
+    {
+     "som": "certo",
+     "t": 1.4
+    }
+   ],
+   "id": 4
+  },
+  {
+   "texto": "E aí, você devolve ou deixa no estacionamento? Comenta. E tem outros gestos pequenos que dizem muito, no vídeo do link.",
+   "animacao": {
+    "tipo": "cta",
+    "texto": "VOCÊ DEVOLVE?"
+   },
+   "id": 5
+  }
+ ]
+}

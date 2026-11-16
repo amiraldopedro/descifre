@@ -1,0 +1,88 @@
+{
+ "id": "s39",
+ "titulo": "A mulher que não sente medo",
+ "formato": "short",
+ "layout": "gameplay",
+ "voz": "en-US-BrianMultilingualNeural",
+ "taxa": "+8%",
+ "trilha": "suspense3",
+ "trilha_inicio": 0,
+ "cenas": [
+  {
+   "texto": "E se você nunca mais sentisse medo?",
+   "animacao": {
+    "tipo": "gancho",
+    "texto": "ZERO MEDO?"
+   },
+   "id": 1
+  },
+  {
+   "texto": "Existe uma mulher assim. Os cientistas chamam ela só de S.M. Uma doença rara destruiu uma parte do cérebro dela chamada amígdala, o alarme do medo.",
+   "animacao": {
+    "tipo": "cena3d",
+    "nome": "cerebro",
+    "texto": "AMÍGDALA"
+   },
+   "sons": [
+    {
+     "som": "desliga",
+     "t": 4.0
+    }
+   ],
+   "id": 2
+  },
+  {
+   "texto": "Levaram ela numa loja de cobras: ela queria pegar as mais perigosas. Numa casa assombrada, tentou cutucar os monstros.",
+   "animacao": {
+    "tipo": "ilustracao",
+    "nome": "interrogacao",
+    "texto": "NADA?"
+   },
+   "sons": [
+    {
+     "som": "pop",
+     "t": 0.3
+    }
+   ],
+   "id": 3
+  },
+  {
+   "texto": "Parece um superpoder. Mas não é. Sem medo, ela confia em quem não devia e já entrou em situações bem perigosas.",
+   "animacao": {
+    "tipo": "conceito",
+    "nome": "PERIGO",
+    "frase": "o medo protege você",
+    "rotulo": "ATENÇÃO"
+   },
+   "id": 4
+  },
+  {
+   "texto": "E o mais curioso: quando respirou um ar com muito gás carbônico, ela sentiu pânico pela primeira vez.",
+   "animacao": {
+    "tipo": "conceito",
+    "nome": "PÂNICO",
+    "frase": "veio de dentro do corpo",
+    "rotulo": "A CIÊNCIA"
+   },
+   "sons": [
+    {
+     "som": "riser",
+     "t": 0.5
+    },
+    {
+     "som": "impacto",
+     "t": 2.4
+    }
+   ],
+   "id": 5
+  },
+  {
+   "texto": "Você trocaria o seu medo por isso? Comenta. E veja mais truques do cérebro no vídeo do link.",
+   "animacao": {
+    "tipo": "cta",
+    "texto": "VOCÊ TROCARIA?"
+   },
+   "id": 6
+  }
+ ]
+}

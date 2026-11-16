@@ -1,0 +1,94 @@
+{
+ "id": "s35",
+ "titulo": "Grosso só em casa",
+ "formato": "short",
+ "layout": "animado",
+ "voz": "en-US-BrianMultilingualNeural",
+ "taxa": "+8%",
+ "trilha": "drama2",
+ "trilha_inicio": 0,
+ "cenas": [
+  {
+   "texto": "Você conhece alguém que é um amor com todo mundo na rua, mas chega em casa e é grosso com quem mais ama?",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "anima/quarto",
+    "props": {
+     "cenario": "sala",
+     "luz": "acesa",
+     "camera": "aproxima",
+     "efeito": "alerta",
+     "entra": 0.6,
+     "pessoas": [
+      {
+       "x": 1.6,
+       "z": 0.9,
+       "olhando": -1.2,
+       "cor": "#22D3EE"
+      }
+     ]
+    }
+   },
+   "id": 1
+  },
+  {
+   "texto": "Parece falta de amor. Mas a psicologia diz que é quase o contrário.",
+   "animacao": {
+    "tipo": "carimbo",
+    "texto": "PARECE",
+    "frase": "falta de amor",
+    "p": 0.2
+   },
+   "id": 2
+  },
+  {
+   "texto": "Na rua, você passa o dia segurando a irritação, sendo educado. Isso gasta energia. Quando chega em casa, onde se sente seguro, a guarda cai.",
+   "animacao": {
+    "tipo": "ilustracao",
+    "nome": "balanca",
+    "texto": "SEGURA... E SOLTA"
+   },
+   "sons": [
+    {
+     "som": "riser",
+     "t": 3.0
+    },
+    {
+     "som": "boom",
+     "t": 5.0
+    }
+   ],
+   "id": 3
+  },
+  {
+   "texto": "O problema é que o cérebro entende que quem te ama não vai embora. E aí você descarrega justo em quem fica.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "anima/quarto",
+    "props": {
+     "cenario": "sala",
+     "luz": "apagada",
+     "camera": "orbita",
+     "efeito": "coracao",
+     "pessoas": [
+      {
+       "x": 1.6,
+       "z": 0.9,
+       "olhando": -1.2,
+       "cor": "#22D3EE"
+      }
+     ]
+    }
+   },
+   "id": 4
+  },
+  {
+   "texto": "Manda pra quem precisa ouvir isso. Como consertar tá no vídeo completo do link.",
+   "animacao": {
+    "tipo": "cta",
+    "texto": "COMO CONSERTAR"
+   },
+   "id": 5
+  }
+ ]
+}

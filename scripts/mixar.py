@@ -25,8 +25,12 @@ def main(vid, mudo, saida):
         mix.append("[fx]")
         n += 1
     if m.get("musica") and (RAIZ / "public" / m["musica"]).exists():
-        ent += ["-stream_loop", "-1", "-i", str(RAIZ / "public" / m["musica"])]
-        filtros.append(f"[{n}:a]volume={v['musica']},aformat=channel_layouts=stereo[m]")
+        ent += ["-stream_loop", "-1", "-ss", str(m.get("musica_inicio", 0)), "-i", str(RAIZ / "public" / m["musica"])]
+        cat_p = RAIZ / "public" / "musica" / "catalogo.json"
+        ganho = 1.0
+        if cat_p.exists():  # trilhas baixadas são normalizadas mais altas (-16 LUFS) que as próprias (~-20)
+            ganho = json.loads(cat_p.read_text()).get(Path(m["musica"]).stem, {}).get("ganho", 0.65 if "credito" in json.loads(cat_p.read_text()).get(Path(m["musica"]).stem, {}) else 1.0)
+        filtros.append(f"[{n}:a]volume={v['musica'] * ganho:.3f},aformat=channel_layouts=stereo[m]")
         filtros.append("[m][v2]sidechaincompress=threshold=0.02:ratio=9:attack=70:release=600[md]")
         mix.append("[md]")
     else:

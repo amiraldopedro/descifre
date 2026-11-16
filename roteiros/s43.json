@@ -1,0 +1,78 @@
+{
+ "id": "s43",
+ "titulo": "15 minutos no escuro",
+ "formato": "short",
+ "layout": "gameplay",
+ "voz": "en-US-BrianMultilingualNeural",
+ "taxa": "+8%",
+ "trilha": "suspense1",
+ "trilha_inicio": 0,
+ "cenas": [
+  {
+   "texto": "E se você ficasse quinze minutos num quarto totalmente escuro e silencioso?",
+   "animacao": {
+    "tipo": "gancho",
+    "texto": "15 MINUTOS NO ESCURO"
+   },
+   "id": 1
+  },
+  {
+   "texto": "Pesquisadores ingleses fizeram isso. Voluntários sentaram num quarto à prova de som, sem nenhuma luz.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "anima/quarto",
+    "props": {
+     "luz": "apagada",
+     "pose": "sentado",
+     "cenario": "sala",
+     "camera": "aproxima",
+     "efeito": "pergunta",
+     "entra": 0.6
+    }
+   },
+   "id": 2
+  },
+  {
+   "texto": "Em poucos minutos, muitos começaram a ver formas, sentir uma presença e até ver rostos que não estavam lá.",
+   "animacao": {
+    "tipo": "ilustracao",
+    "nome": "olho",
+    "texto": "VENDO COISAS"
+   },
+   "sons": [
+    {
+     "som": "riser_suave",
+     "t": 0.5
+    },
+    {
+     "som": "estatica",
+     "t": 2.5
+    }
+   ],
+   "id": 3
+  },
+  {
+   "texto": "Sem informação de fora, o cérebro não desliga. Ele começa a inventar o que falta.",
+   "animacao": {
+    "tipo": "cena3d",
+    "nome": "tunel",
+    "texto": "INVENTANDO"
+   },
+   "sons": [
+    {
+     "som": "glitch",
+     "t": 1.2
+    }
+   ],
+   "id": 4
+  },
+  {
+   "texto": "Ou seja: o que você vê é, em boa parte, um palpite do seu cérebro. Ele mente pra você de sete jeitos, no vídeo do link.",
+   "animacao": {
+    "tipo": "cta",
+    "texto": "SEU CÉREBRO MENTE"
+   },
+   "id": 5
+  }
+ ]
+}

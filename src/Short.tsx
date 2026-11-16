@@ -7,6 +7,7 @@ import { Palco } from "./personagens/Palco";
 import { CamadaEspecial, ehEspecial } from "./CamadaEspecial";
 import { COR, Cena, FONTE_TEXTO, FONTE_TITULO, Manifesto, Palavra } from "./tema";
 import { CamadaDocumentario, DOC_TELA_CHEIA, EtiquetaLocal } from "./Documentario";
+import { Corrida } from "./3d/Corrida";
 import { FUSAO, Clarao, GlitchEntrada, TipoTransicao, cameraDaCena, sobra, transicaoDaCena, tremidaGlitch, useCamera, useTransicao } from "./Camera";
 
 /* ---------- utilitários de "dopamina" ---------- */
@@ -38,12 +39,12 @@ const texto3D = (borda = 14): React.CSSProperties => ({
 
 /* ---------- legenda gigante (1 a 3 palavras por vez) ---------- */
 
-function blocos(ps: Palavra[]): Palavra[][] {
+function blocos(ps: Palavra[], max = 3): Palavra[][] {
   const out: Palavra[][] = [];
   let a: Palavra[] = [];
   for (const p of ps) {
     a.push(p);
-    if (a.length >= 3 || /[.!?,:]$/.test(p.w)) {
+    if (a.length >= max || /[.!?,:]$/.test(p.w) || (max <= 2 && p.w.length > 7)) {
       out.push(a);
       a = [];
     }
@@ -52,11 +53,11 @@ function blocos(ps: Palavra[]): Palavra[][] {
   return out;
 }
 
-const LegendaGigante: React.FC<{ palavras: Palavra[]; y: number }> = ({ palavras, y }) => {
+const LegendaGigante: React.FC<{ palavras: Palavra[]; y: number; max?: number; tamanho?: number }> = ({ palavras, y, max = 3, tamanho = 108 }) => {
   const f = useCurrentFrame();
   const { fps } = useVideoConfig();
   const t = f / fps;
-  const gs = blocos(palavras);
+  const gs = blocos(palavras, max);
   const gi = gs.findIndex((g) => t >= g[0].t0 - 0.04 && t <= g[g.length - 1].t1 + 0.12);
   if (gi < 0) return null;
   const g = gs[gi];
@@ -80,7 +81,8 @@ const LegendaGigante: React.FC<{ palavras: Palavra[]; y: number }> = ({ palavras
       {g.map((p, i) => {
         const ativa = t >= p.t0 && t <= p.t1 + 0.04;
         const palavra = p.w.replace(/[,.:;!?]$/, "");
-        const tam = palavra.length > 9 ? Math.floor((108 * 9) / palavra.length) : 108; // palavra longa encolhe para caber
+        const lim = Math.round((9 * 108) / tamanho);
+        const tam = palavra.length > lim ? Math.floor((tamanho * lim) / palavra.length) : tamanho; // palavra longa encolhe para caber
         return (
           <span
             key={i}
@@ -323,9 +325,10 @@ const Cta: React.FC<{ texto: string; falando: boolean }> = ({ texto, falando }) 
 
 /* ---------- cena ---------- */
 
-type PropsCena = { cena: Cena; entrada: TipoTransicao; saida: TipoTransicao };
+export type LayoutShort = "padrao" | "gameplay" | "animado";
+type PropsCena = { cena: Cena; entrada: TipoTransicao; saida: TipoTransicao; layout: LayoutShort };
 
-const CenaShort: React.FC<PropsCena> = ({ cena, entrada, saida }) => {
+const CenaShort: React.FC<PropsCena> = ({ cena, entrada, saida, layout }) => {
   const f = useCurrentFrame();
   const { fps } = useVideoConfig();
   const t = f / fps;
@@ -343,17 +346,20 @@ const CenaShort: React.FC<PropsCena> = ({ cena, entrada, saida }) => {
   const atores = cena.personagens ?? [];
   const temPalco = atores.length > 0;
   const legendaY = temPalco ? 1500 : soEtiqueta ? 1020 : a.tipo === "documento" || a.tipo === "carimbo" ? 1460 : 1420;
-  const semLegenda = a.tipo === "cta" || a.tipo === "fim" || a.tipo === "capitulo" || a.tipo === "vinheta";
+  const semLegenda = a.tipo === "cta" || a.tipo === "fim" || a.tipo === "capitulo" || a.tipo === "vinheta" || layout === "gameplay";
+  const limpo = layout !== "padrao" && ehEspecial(cena); // 3D em tela cheia: sem véu escuro por cima
 
   return (
     <AbsoluteFill style={{ opacity: tr.opacidade, ...tr.estilo, transform: entrada === "glitch" ? `translateX(${tremidaGlitch(f)}px)` : tr.estilo.transform }}>
       <AbsoluteFill style={{ transform: `translate(${s.x}px, ${s.y}px) scale(${impacto}) ${cam.fundo}` }}>
         {cosmico ? <FundoCosmico /> : <BRoll src={cena.broll!} duracao={cena.duracao} clipe={cena.brollFrames} lofi={cena.lofi ?? (gancho ? "forte" : "leve")} />}
       </AbsoluteFill>
-      <AbsoluteFill
-        style={{ background: "linear-gradient(180deg, rgba(7,15,51,.55) 0%, rgba(7,15,51,.1) 35%, rgba(7,15,51,.2) 60%, rgba(7,15,51,.8) 100%)" }}
-      />
-      {!soEtiqueta && !gancho && !telaCheia && <AbsoluteFill style={{ backgroundColor: "rgba(7,15,51,.35)" }} />}
+      {!limpo && (
+        <AbsoluteFill
+          style={{ background: "linear-gradient(180deg, rgba(7,15,51,.55) 0%, rgba(7,15,51,.1) 35%, rgba(7,15,51,.2) 60%, rgba(7,15,51,.8) 100%)" }}
+        />
+      )}
+      {!soEtiqueta && !gancho && !telaCheia && !limpo && <AbsoluteFill style={{ backgroundColor: "rgba(7,15,51,.35)" }} />}
       <AbsoluteFill style={{ transform: cam.frente }}>
         {ehEspecial(cena) && <CamadaEspecial cena={cena} falando={falando} />}
         <CamadaDocumentario cena={cena} falando={falando} />
@@ -377,7 +383,9 @@ const CenaShort: React.FC<PropsCena> = ({ cena, entrada, saida }) => {
         )}
       </AbsoluteFill>
       <EtiquetaLocal cena={cena} />
-      {!semLegenda && <LegendaGigante palavras={cena.palavras} y={legendaY} />}
+      {!semLegenda && (layout === "animado"
+        ? <LegendaGigante palavras={cena.palavras} y={1330} max={2} tamanho={128} />
+        : <LegendaGigante palavras={cena.palavras} y={legendaY} />)}
       {gancho && <Flash />}
       {entrada === "glitch" && <GlitchEntrada />}
       <Clarao forca={tr.clarao} />
@@ -395,26 +403,58 @@ const BarraProgresso: React.FC<{ total: number }> = ({ total }) => {
   );
 };
 
-export const ShortVideo: React.FC<Manifesto & { sfx?: string | null }> = (m) => (
-  <AbsoluteFill style={{ backgroundColor: COR.azulEscuro }}>
-    {m.cenas.map((c, i) => {
-      const entrada = transicaoDaCena(c, m.cenas[i - 1]);
-      const prox = m.cenas[i + 1];
-      const saida = prox ? transicaoDaCena(prox, c) : "corte";
-      return (
-        <Sequence key={c.id} from={c.inicio} durationInFrames={c.duracao + sobra(saida, FUSAO.short)} layout="none">
-          <AbsoluteFill>
-            <CenaShort cena={c} entrada={entrada} saida={saida} />
-          </AbsoluteFill>
-        </Sequence>
-      );
-    })}
-    <BarraProgresso total={m.totalFrames} />
-    <div style={{ position: "absolute", top: 76, width: "100%", textAlign: "center", fontFamily: FONTE_TITULO, fontWeight: 800, fontSize: 40, color: COR.branco, opacity: 0.85 }}>
-      DES<span style={{ color: COR.vermelho }}>C</span>IFRE
+/** Faixa de "gameplay" (corredor 3D original) na parte de baixo, contínua entre as cenas. */
+const ALTURA_JOGO = 760;
+const FaixaJogo: React.FC = () => {
+  const f = useCurrentFrame();
+  const { width, height } = useVideoConfig();
+  return (
+    <div style={{ position: "absolute", left: 0, top: height - ALTURA_JOGO, width, height: ALTURA_JOGO, overflow: "hidden" }}>
+      <Corrida frame={f} width={width} height={ALTURA_JOGO} />
+      <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 10, background: COR.azulEscuro }} />
     </div>
-    {m.narracao && <Audio src={staticFile(m.narracao)} />}
-    {m.sfx && <Audio src={staticFile(m.sfx)} volume={0.6} />}
-    {m.musica && <Audio src={staticFile(m.musica)} volume={0.12} loop />}
-  </AbsoluteFill>
-);
+  );
+};
+
+export const ShortVideo: React.FC<Manifesto & { sfx?: string | null }> = (m) => {
+  const layout: LayoutShort = (m.layout as LayoutShort) ?? "padrao";
+  const { height } = useVideoConfig();
+  const jogo = layout === "gameplay";
+  return (
+    <AbsoluteFill style={{ backgroundColor: COR.azulEscuro }}>
+      {/* no gameplay, as cenas sobem um pouco e ficam na parte de cima */}
+      <AbsoluteFill style={jogo ? { height: height - ALTURA_JOGO, overflow: "hidden" } : undefined}>
+        <AbsoluteFill style={jogo ? { transform: "translateY(-120px)", height } : undefined}>
+          {m.cenas.map((c, i) => {
+            const entrada = transicaoDaCena(c, m.cenas[i - 1]);
+            const prox = m.cenas[i + 1];
+            const saida = prox ? transicaoDaCena(prox, c) : "corte";
+            return (
+              <Sequence key={c.id} from={c.inicio} durationInFrames={c.duracao + sobra(saida, FUSAO.short)} layout="none">
+                <AbsoluteFill>
+                  <CenaShort cena={c} entrada={entrada} saida={saida} layout={layout} />
+                </AbsoluteFill>
+              </Sequence>
+            );
+          })}
+        </AbsoluteFill>
+      </AbsoluteFill>
+      {jogo && <FaixaJogo />}
+      {jogo &&
+        m.cenas.map((c) =>
+          ["cta", "fim"].includes(c.animacao.tipo) ? null : (
+            <Sequence key={"leg" + c.id} from={c.inicio} durationInFrames={c.duracao} layout="none">
+              <LegendaGigante palavras={c.palavras} y={height - ALTURA_JOGO - 150} max={2} tamanho={124} />
+            </Sequence>
+          ),
+        )}
+      <BarraProgresso total={m.totalFrames} />
+      <div style={{ position: "absolute", top: jogo ? height - 80 : 76, width: "100%", textAlign: "center", fontFamily: FONTE_TITULO, fontWeight: 800, fontSize: 40, color: COR.branco, opacity: 0.85, textShadow: "0 3px 8px rgba(0,0,0,.5)" }}>
+        DES<span style={{ color: COR.vermelho }}>C</span>IFRE
+      </div>
+      {m.narracao && <Audio src={staticFile(m.narracao)} />}
+      {m.sfx && <Audio src={staticFile(m.sfx)} volume={0.6} />}
+      {m.musica && <Audio src={staticFile(m.musica)} volume={0.12} loop />}
+    </AbsoluteFill>
+  );
+};

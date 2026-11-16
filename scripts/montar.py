@@ -421,7 +421,7 @@ def main(vid, estimar_tempos=False):
     musica = f"musica/{trilha}.mp3" if (RAIZ / "public" / "musica" / f"{trilha}.mp3").exists() else None
     manifesto = {"id": vid, "titulo": roteiro["titulo"], "fps": FPS, "totalFrames": inicio,
                  "narracao": narracao, "musica": musica, "sfx": sfx_arq,
-                 "formato": roteiro.get("formato", "longo"), "cenas": cenas}
+                 "formato": roteiro.get("formato", "longo"), "layout": roteiro.get("layout", "padrao"), "musica_inicio": roteiro.get("trilha_inicio", 0), "cenas": cenas}
     build.mkdir(parents=True, exist_ok=True)
     (build / "manifest.json").write_text(json.dumps(manifesto, ensure_ascii=False))
     print(f"manifesto: {len(cenas)} cenas, {inicio} frames ({inicio / FPS / 60:.1f} min)")

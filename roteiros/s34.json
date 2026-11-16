@@ -1,0 +1,83 @@
+{
+ "id": "s34",
+ "titulo": "Quem fala sozinho",
+ "formato": "short",
+ "layout": "animado",
+ "voz": "en-US-BrianMultilingualNeural",
+ "taxa": "+8%",
+ "trilha": "curioso1",
+ "trilha_inicio": 0,
+ "cenas": [
+  {
+   "texto": "Você conhece alguém que fala sozinho? Se eu fosse você, prestava atenção nessa pessoa.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "anima/quarto",
+    "props": {
+     "cenario": "escritorio",
+     "luz": "acesa",
+     "camera": "aproxima",
+     "efeito": "pergunta",
+     "entra": 0.5
+    }
+   },
+   "id": 1
+  },
+  {
+   "texto": "Num experimento, pessoas tinham que achar um objeto no meio de várias fotos. Quem falava o nome do objeto em voz alta achava mais rápido.",
+   "animacao": {
+    "tipo": "ilustracao",
+    "nome": "olho",
+    "texto": "ACHOU MAIS RÁPIDO"
+   },
+   "sons": [
+    {
+     "som": "degrau1",
+     "t": 2.5
+    },
+    {
+     "som": "degrau3",
+     "t": 3.2
+    },
+    {
+     "som": "certo",
+     "t": 4.3
+    }
+   ],
+   "id": 2
+  },
+  {
+   "texto": "E tem mais. Falar consigo mesmo pelo próprio nome, tipo: calma, João, você consegue, ajuda a controlar a ansiedade antes de um desafio.",
+   "animacao": {
+    "tipo": "conceito",
+    "nome": "FALA EM 3ª PESSOA",
+    "frase": "acalma antes do desafio",
+    "rotulo": "A CIÊNCIA"
+   },
+   "id": 3
+  },
+  {
+   "texto": "Ah, mas não é coisa de doido? Não. Falar sozinho é o cérebro organizando o pensamento em voz alta.",
+   "animacao": {
+    "tipo": "cena3d",
+    "nome": "cerebro",
+    "texto": "ORGANIZANDO"
+   },
+   "sons": [
+    {
+     "som": "brilho",
+     "t": 0.4
+    }
+   ],
+   "id": 4
+  },
+  {
+   "texto": "Manda pra aquele amigo que fala sozinho e diz que ele é um gênio. Como cada mente vê o mundo tá no vídeo do link.",
+   "animacao": {
+    "tipo": "cta",
+    "texto": "ELE É UM GÊNIO?"
+   },
+   "id": 5
+  }
+ ]
+}

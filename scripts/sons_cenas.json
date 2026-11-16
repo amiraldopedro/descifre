@@ -1246,6 +1246,18 @@
    "p": 0.95
   }
  ],
+ "anima/quarto": [
+  {
+   "som": "whoosh_lento",
+   "p": 0.0,
+   "vol": 0.6
+  },
+  {
+   "som": "pop",
+   "p": 0.15,
+   "vol": 0.8
+  }
+ ],
  "cenario/lugar": [
   {
    "som": "whoosh",

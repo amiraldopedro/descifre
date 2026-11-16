@@ -1,0 +1,103 @@
+{
+ "id": "s32",
+ "titulo": "O tranco antes de dormir",
+ "formato": "short",
+ "layout": "animado",
+ "voz": "en-US-BrianMultilingualNeural",
+ "taxa": "+8%",
+ "trilha": "suspense2",
+ "trilha_inicio": 0,
+ "cenas": [
+  {
+   "texto": "Você conhece alguém que, quando tá quase dormindo, leva um tranco do nada, como se tivesse caído de um prédio?",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "anima/quarto",
+    "props": {
+     "luz": "apagada",
+     "camera": "aproxima",
+     "olhos": "fechados",
+     "efeito": "alerta",
+     "entra": 0.75,
+     "tremer": 1
+    }
+   },
+   "id": 1
+  },
+  {
+   "texto": "Isso tem nome: abalo hípnico. E até setenta por cento das pessoas já sentiram.",
+   "animacao": {
+    "tipo": "conceito",
+    "nome": "ABALO HÍPNICO",
+    "frase": "até 70% já sentiram",
+    "rotulo": "A CIÊNCIA"
+   },
+   "id": 2
+  },
+  {
+   "texto": "Uma das teorias é assustadora. Quando você relaxa pra dormir, os músculos amolecem de uma vez. E uma parte antiga do cérebro lê isso como: estou caindo!",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "anima/quarto",
+    "props": {
+     "luz": "apagada",
+     "camera": "rosto",
+     "olhos": "fechados",
+     "rotulo": "ESTOU CAINDO!",
+     "entra": 0.7
+    }
+   },
+   "sons": [
+    {
+     "som": "riser",
+     "t": 4.2
+    },
+    {
+     "som": "queda_grave",
+     "t": 6.3
+    }
+   ],
+   "id": 3
+  },
+  {
+   "texto": "Aí ele dá um choque nos músculos pra você se segurar. Coisa de quando nossos ancestrais dormiam em árvore.",
+   "animacao": {
+    "tipo": "ilustracao",
+    "nome": "raio",
+    "texto": "SUSTO!"
+   },
+   "sons": [
+    {
+     "som": "zap",
+     "t": 0.2
+    },
+    {
+     "som": "impacto",
+     "t": 0.5
+    }
+   ],
+   "id": 4
+  },
+  {
+   "texto": "Ah, mas é perigoso? Normalmente não. Fica mais forte com cansaço, café e estresse.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "anima/quarto",
+    "props": {
+     "luz": "celular",
+     "camera": "orbita",
+     "efeito": "pergunta"
+    }
+   },
+   "id": 5
+  },
+  {
+   "texto": "Manda pra quem sempre leva esse susto. E comenta: você já sentiu?",
+   "animacao": {
+    "tipo": "cta",
+    "texto": "VOCÊ JÁ SENTIU?"
+   },
+   "id": 6
+  }
+ ]
+}

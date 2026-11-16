@@ -1,0 +1,93 @@
+{
+ "id": "s33",
+ "titulo": "O celular que não vibrou",
+ "formato": "short",
+ "layout": "animado",
+ "voz": "en-US-BrianMultilingualNeural",
+ "taxa": "+8%",
+ "trilha": "misterio3",
+ "trilha_inicio": 0,
+ "cenas": [
+  {
+   "texto": "Você conhece alguém que pega o celular jurando que ele vibrou, e não tinha nada?",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "anima/quarto",
+    "props": {
+     "cenario": "sala",
+     "luz": "celular",
+     "camera": "aproxima",
+     "efeito": "pergunta",
+     "entra": 0.6
+    }
+   },
+   "sons": [
+    {
+     "som": "vibra",
+     "t": 1.4
+    }
+   ],
+   "id": 1
+  },
+  {
+   "texto": "Isso é a vibração fantasma. Num estudo, quase nove em cada dez universitários disseram que sentem isso.",
+   "animacao": {
+    "tipo": "conceito",
+    "nome": "VIBRAÇÃO FANTASMA",
+    "frase": "9 em cada 10 estudantes",
+    "rotulo": "A CIÊNCIA"
+   },
+   "id": 2
+  },
+  {
+   "texto": "O motivo é que o seu cérebro vive esperando uma notificação. Ele fica tão ligado que começa a confundir qualquer coceira, ou a roupa encostando, com o celular.",
+   "animacao": {
+    "tipo": "cena3d",
+    "nome": "neuronios",
+    "texto": "ALERTA LIGADO"
+   },
+   "sons": [
+    {
+     "som": "scan",
+     "t": 0.3
+    },
+    {
+     "som": "alerta",
+     "t": 3.0
+    }
+   ],
+   "id": 3
+  },
+  {
+   "texto": "É o mesmo truque de quando você acha que ouviu seu nome numa multidão. O cérebro prefere errar pra mais do que perder um aviso.",
+   "animacao": {
+    "tipo": "cena3d",
+    "nome": "multidao",
+    "texto": "ACHOU QUE OUVIU?"
+   },
+   "id": 4
+  },
+  {
+   "texto": "Quer diminuir? Deixa o celular longe do corpo por algumas horas.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "anima/quarto",
+    "props": {
+     "cenario": "escritorio",
+     "luz": "dia",
+     "camera": "aproxima",
+     "efeito": "brilho"
+    }
+   },
+   "id": 5
+  },
+  {
+   "texto": "Manda pra quem vive checando o celular. Seu cérebro mente pra você mais do que isso. Tem um vídeo completo no link.",
+   "animacao": {
+    "tipo": "cta",
+    "texto": "SEU CÉREBRO MENTE"
+   },
+   "id": 6
+  }
+ ]
+}

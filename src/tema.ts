@@ -72,5 +72,6 @@ export type Manifesto = {
   musica: string | null;
   sfx?: string | null;
   formato?: "longo" | "short";
+  layout?: "padrao" | "gameplay" | "animado"; // só no Short
   cenas: Cena[];
 };

@@ -1,0 +1,56 @@
+{
+ "id": "s42",
+ "titulo": "Você vai bocejar",
+ "formato": "short",
+ "layout": "gameplay",
+ "voz": "en-US-BrianMultilingualNeural",
+ "taxa": "+8%",
+ "trilha": "curioso1",
+ "trilha_inicio": 0,
+ "cenas": [
+  {
+   "texto": "E se eu te disser que você vai bocejar antes desse vídeo acabar?",
+   "animacao": {
+    "tipo": "gancho",
+    "texto": "VOCÊ VAI BOCEJAR"
+   },
+   "id": 1
+  },
+  {
+   "texto": "Bocejo pega. Ver alguém bocejar, ouvir um bocejo, e até ler a palavra bocejo, já dá vontade.",
+   "animacao": {
+    "tipo": "cena3d",
+    "nome": "multidao",
+    "texto": "BOCEJO PEGA"
+   },
+   "id": 2
+  },
+  {
+   "texto": "Em estudos, cerca de metade das pessoas boceja só de ver os outros bocejando. E cachorros bocejam quando o dono boceja.",
+   "animacao": {
+    "tipo": "conceito",
+    "nome": "BOCEJO CONTAGIOSO",
+    "frase": "metade das pessoas cai",
+    "rotulo": "A CIÊNCIA"
+   },
+   "id": 3
+  },
+  {
+   "texto": "Uma teoria diz que é um jeito antigo de sincronizar o grupo: todo mundo fica alerta, ou todo mundo vai dormir, ao mesmo tempo.",
+   "animacao": {
+    "tipo": "ilustracao",
+    "nome": "dominos",
+    "texto": "UM PUXA O OUTRO"
+   },
+   "id": 4
+  },
+  {
+   "texto": "É o mesmo contágio que já fez cidades inteiras enlouquecerem. A história tá no link. E aí, bocejou? Comenta.",
+   "animacao": {
+    "tipo": "cta",
+    "texto": "BOCEJOU?"
+   },
+   "id": 5
+  }
+ ]
+}
