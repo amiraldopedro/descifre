@@ -9,7 +9,7 @@ import sys
 from pathlib import Path
 
 RAIZ = Path(__file__).resolve().parent.parent
-VOL = {"short": {"musica": 0.5, "sfx": 0.55}, "longo": {"musica": 0.35, "sfx": 0.32}}
+VOL = {"short": {"musica": 0.45, "sfx": 0.7}, "longo": {"musica": 0.35, "sfx": 0.32}}
 
 
 def main(vid, mudo, saida):

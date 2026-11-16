@@ -1,0 +1,26 @@
+name: Baixar trilhas livres
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  baixar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: ffmpeg
+        run: |
+          BASE=https://github.com/BtbN/FFmpeg-Builds/releases/download/latest
+          for NOME in ffmpeg-n7.1-latest-linux64-gpl-7.1 ffmpeg-master-latest-linux64-gpl; do
+            curl -sfL --max-time 240 --retry 3 -o /tmp/ff.tar.xz $BASE/$NOME.tar.xz && tar -xJf /tmp/ff.tar.xz -C /tmp \
+              && sudo cp /tmp/$NOME/bin/ff* /usr/local/bin/ && break
+          done
+          ffmpeg -version | head -1
+      - run: python scripts/baixar_musicas.py
+      - name: commit
+        run: |
+          git config user.name "descifre-bot"; git config user.email "actions@github.com"
+          git add public/musica
+          git commit -m "Trilhas livres (Kevin MacLeod, CC BY 4.0) [skip ci]" || exit 0
+          for i in 1 2 3 4 5; do git pull --rebase origin main && git push && break; sleep 5; done

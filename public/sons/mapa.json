@@ -1,0 +1,639 @@
+{
+ "whoosh": {
+  "arquivo": "whoosh.wav",
+  "sync": 0.096,
+  "dur": 0.252,
+  "origem": "whoosh-fast-medium",
+  "uso": "A quick, clean swish of air with a defined middle."
+ },
+ "whoosh_leve": {
+  "arquivo": "whoosh_leve.wav",
+  "sync": 0.099,
+  "dur": 0.25,
+  "origem": "whoosh-fast-soft",
+  "uso": "A quick, gentle puff of air with a soft edge and no weight."
+ },
+ "whoosh_forte": {
+  "arquivo": "whoosh_forte.wav",
+  "sync": 0.201,
+  "dur": 0.55,
+  "origem": "whoosh-medium-hard",
+  "uso": "A strong rush of air with a bright crack at its peak and weight behind it."
+ },
+ "whoosh_lento": {
+  "arquivo": "whoosh_lento.wav",
+  "sync": 0.438,
+  "dur": 1.002,
+  "origem": "whoosh-slow-medium",
+  "uso": "A slow, full sweep of air with a gentle swell and a long, settled tail."
+ },
+ "whoosh_rev": {
+  "arquivo": "whoosh_rev.wav",
+  "sync": 0.682,
+  "dur": 0.836,
+  "origem": "reverse-whoosh-medium-strong",
+  "uso": "A strong, bright reverse whoosh: air drawn in, building to a sudden stop."
+ },
+ "swish": {
+  "arquivo": "swish.wav",
+  "sync": 0.076,
+  "dur": 0.201,
+  "origem": "swish-medium",
+  "uso": "A quick, clean swish through the air, with a little whistle."
+ },
+ "swipe": {
+  "arquivo": "swipe.wav",
+  "sync": 0,
+  "dur": 0.199,
+  "origem": "swipe-fast-firm",
+  "uso": "A quick, definite swipe: a fingertip pressed and flicked across glass."
+ },
+ "zip": {
+  "arquivo": "zip.wav",
+  "sync": 0.233,
+  "dur": 0.349,
+  "origem": "zip-in-medium",
+  "uso": "A quick zip in: rising to a stop."
+ },
+ "pop": {
+  "arquivo": "pop.wav",
+  "sync": 0.011,
+  "dur": 0.06,
+  "origem": "pop-medium-in",
+  "uso": "A round, friendly pop that lifts into place."
+ },
+ "pop_pequeno": {
+  "arquivo": "pop_pequeno.wav",
+  "sync": 0.01,
+  "dur": 0.04,
+  "origem": "pop-small-in",
+  "uso": "A tiny, bright pop that lifts as it appears."
+ },
+ "pop_sai": {
+  "arquivo": "pop_sai.wav",
+  "sync": 0.011,
+  "dur": 0.051,
+  "origem": "pop-small-out",
+  "uso": "A tiny, soft pop that drops away."
+ },
+ "bolha": {
+  "arquivo": "bolha.wav",
+  "sync": 0.011,
+  "dur": 0.126,
+  "origem": "pop-medium-bubble",
+  "uso": "A clean bubble plip with a small one after it."
+ },
+ "click": {
+  "arquivo": "click.wav",
+  "sync": 0.009,
+  "dur": 0.094,
+  "origem": "click-mouse-firm",
+  "uso": "A firm, crisp mouse click with a clear release."
+ },
+ "tap": {
+  "arquivo": "tap.wav",
+  "sync": 0.009,
+  "dur": 0.024,
+  "origem": "click-tap-firm",
+  "uso": "A firm, definite tap with a crisp tick."
+ },
+ "toggle": {
+  "arquivo": "toggle.wav",
+  "sync": 0.025,
+  "dur": 0.038,
+  "origem": "click-toggle-on-firm",
+  "uso": "A firm switch on: a crisp tick and a bright, definite snap."
+ },
+ "tique": {
+  "arquivo": "tique.wav",
+  "sync": 0.01,
+  "dur": 0.087,
+  "origem": "impact-light-hard",
+  "uso": "A light, crisp tick: a small, hard object landing on stone."
+ },
+ "shutter": {
+  "arquivo": "shutter.wav",
+  "sync": 0.01,
+  "dur": 0.11,
+  "origem": "mechanical-shutter-light",
+  "uso": "A compact camera shutter: a quick ka-chik."
+ },
+ "shutter_forte": {
+  "arquivo": "shutter_forte.wav",
+  "sync": 0.01,
+  "dur": 0.184,
+  "origem": "mechanical-shutter-heavy",
+  "uso": "A camera's mirror and shutter: a fuller, slower ka-chunk."
+ },
+ "ding": {
+  "arquivo": "ding.wav",
+  "sync": 0,
+  "dur": 0.812,
+  "origem": "tone-ding-high",
+  "uso": "A small bell's clear ding (E, high)."
+ },
+ "certo": {
+  "arquivo": "certo.wav",
+  "sync": 0,
+  "dur": 0.987,
+  "origem": "notification-success-ding-ding",
+  "uso": "Two quick bell dings: correct!"
+ },
+ "errado": {
+  "arquivo": "errado.wav",
+  "sync": 0,
+  "dur": 0.905,
+  "origem": "notification-error-clear",
+  "uso": "A clear, falling two-note chime: an error, without alarm."
+ },
+ "falha": {
+  "arquivo": "falha.wav",
+  "sync": 0,
+  "dur": 0.982,
+  "origem": "notification-failure-thud",
+  "uso": "A dull, low bonk: that didn't work."
+ },
+ "alerta": {
+  "arquivo": "alerta.wav",
+  "sync": 0,
+  "dur": 0.657,
+  "origem": "notification-alert-clear",
+  "uso": "A bright double ding: an alert."
+ },
+ "mensagem": {
+  "arquivo": "mensagem.wav",
+  "sync": 0.041,
+  "dur": 0.607,
+  "origem": "notification-message-in-clear",
+  "uso": "A bubble and a bright ping: a message arrives."
+ },
+ "brilho": {
+  "arquivo": "brilho.wav",
+  "sync": 0.011,
+  "dur": 1.105,
+  "origem": "shimmer-medium-sparkle",
+  "uso": "A shimmer: a dense, tinkling sparkle, high and light."
+ },
+ "brilho_longo": {
+  "arquivo": "brilho_longo.wav",
+  "sync": 0.01,
+  "dur": 2.072,
+  "origem": "shimmer-long-bright",
+  "uso": "A long shimmer: a bright cloud of glassy glints."
+ },
+ "aparece": {
+  "arquivo": "aparece.wav",
+  "sync": 0.026,
+  "dur": 1.209,
+  "origem": "appear-materialise",
+  "uso": "Something materialising: particles gathering in and settling."
+ },
+ "puf": {
+  "arquivo": "puf.wav",
+  "sync": 0.026,
+  "dur": 0.62,
+  "origem": "appear-poof",
+  "uso": "A poof: something vanishing in a puff of smoke, a few glints as it clears."
+ },
+ "boom": {
+  "arquivo": "boom.wav",
+  "sync": 0.038,
+  "dur": 1.301,
+  "origem": "boom-hit-medium",
+  "uso": "A deep, rounded boom with a warm hall."
+ },
+ "boom_forte": {
+  "arquivo": "boom_forte.wav",
+  "sync": 0.047,
+  "dur": 1.693,
+  "origem": "boom-hit-strong",
+  "uso": "A big, deep boom that fills the room."
+ },
+ "queda_grave": {
+  "arquivo": "queda_grave.wav",
+  "sync": 0.095,
+  "dur": 4.293,
+  "origem": "boom-drop-strong",
+  "uso": "A huge, sinking drop with a rolling rumble: the biggest moment."
+ },
+ "sub": {
+  "arquivo": "sub.wav",
+  "sync": 0.021,
+  "dur": 2.154,
+  "origem": "bass-sub-drop-medium",
+  "uso": "A sub drop of about two seconds: deep and falling, felt more than heard."
+ },
+ "rumble": {
+  "arquivo": "rumble.wav",
+  "sync": 0.017,
+  "dur": 2.805,
+  "origem": "bass-rumble-medium",
+  "uso": "A low rumble of about three seconds: distant thunder, the ground shaking."
+ },
+ "808": {
+  "arquivo": "808.wav",
+  "sync": 0.011,
+  "dur": 1.469,
+  "origem": "bass-808-medium",
+  "uso": "An 808-style bass that rings on: a tuned bass kick on C."
+ },
+ "impacto": {
+  "arquivo": "impacto.wav",
+  "sync": 0.011,
+  "dur": 2.178,
+  "origem": "cinematic-drum-big",
+  "uso": "A giant drum struck hard: the crack of the stick and a big, deep boom."
+ },
+ "impacto_max": {
+  "arquivo": "impacto_max.wav",
+  "sync": 0.034,
+  "dur": 3.335,
+  "origem": "cinematic-drum-massive",
+  "uso": "A colossal drum hit: a crack, then a huge boom sinking into a vast hall."
+ },
+ "metal": {
+  "arquivo": "metal.wav",
+  "sync": 0.03,
+  "dur": 2.115,
+  "origem": "cinematic-metal-big",
+  "uso": "A big metal hit: a deep clang of steel ringing on."
+ },
+ "slam": {
+  "arquivo": "slam.wav",
+  "sync": 0.011,
+  "dur": 2.225,
+  "origem": "cinematic-slam-big",
+  "uso": "A big slam: a heavy wooden door crashing shut in a hall."
+ },
+ "trovao": {
+  "arquivo": "trovao.wav",
+  "sync": 0.011,
+  "dur": 3.813,
+  "origem": "cinematic-thunder-big",
+  "uso": "A thunderclap: a sharp crack and a rolling rumble."
+ },
+ "batida": {
+  "arquivo": "batida.wav",
+  "sync": 0.011,
+  "dur": 0.3,
+  "origem": "impact-heavy-firm",
+  "uso": "A deep, weighty knock: a heavy object landing on a wooden floor."
+ },
+ "batida_leve": {
+  "arquivo": "batida_leve.wav",
+  "sync": 0.013,
+  "dur": 0.21,
+  "origem": "impact-medium-soft",
+  "uso": "A soft, padded thud: something landing on fabric."
+ },
+ "soco": {
+  "arquivo": "soco.wav",
+  "sync": 0.01,
+  "dur": 1.205,
+  "origem": "impact-deep-hard",
+  "uso": "A deep, hard hit: a crisp crack over a heavy, rumbling low end."
+ },
+ "sobe": {
+  "arquivo": "sobe.wav",
+  "sync": 0.984,
+  "dur": 1.216,
+  "origem": "riser-1s-strong",
+  "uso": "A 1-second strong, bright rise that builds to its peak at the end."
+ },
+ "riser": {
+  "arquivo": "riser.wav",
+  "sync": 1.978,
+  "dur": 2.195,
+  "origem": "riser-2s-strong",
+  "uso": "A 2-second strong, bright rise that builds to its peak at the end."
+ },
+ "riser_longo": {
+  "arquivo": "riser_longo.wav",
+  "sync": 3.977,
+  "dur": 4.191,
+  "origem": "riser-4s-strong",
+  "uso": "A 4-second strong, bright rise that builds to its peak at the end."
+ },
+ "riser_suave": {
+  "arquivo": "riser_suave.wav",
+  "sync": 1.994,
+  "dur": 2.189,
+  "origem": "riser-2s-soft",
+  "uso": "A 2-second soft, airy rise that builds to its peak at the end."
+ },
+ "desce": {
+  "arquivo": "desce.wav",
+  "sync": 0.01,
+  "dur": 0.862,
+  "origem": "faller-1s-soft",
+  "uso": "A 1-second soft, airy fall from its peak, descending and settling."
+ },
+ "faller": {
+  "arquivo": "faller.wav",
+  "sync": 0.034,
+  "dur": 1.882,
+  "origem": "faller-2s-strong",
+  "uso": "A 2-second strong, bright fall from its peak, descending and settling."
+ },
+ "zap": {
+  "arquivo": "zap.wav",
+  "sync": 0.018,
+  "dur": 0.24,
+  "origem": "digital-glitch-clear",
+  "uso": "A crisp little glitch, stepping in pitch."
+ },
+ "glitch": {
+  "arquivo": "glitch.wav",
+  "sync": 0,
+  "dur": 0.649,
+  "origem": "digital-corrupt",
+  "uso": "Data corrupting: a slice of data stuttering, crushed and smeared."
+ },
+ "scan": {
+  "arquivo": "scan.wav",
+  "sync": 0,
+  "dur": 0.837,
+  "origem": "digital-scan-clear",
+  "uso": "A clean scan: a defined tone gliding up, pulsing."
+ },
+ "hacker": {
+  "arquivo": "hacker.wav",
+  "sync": 0,
+  "dur": 1.569,
+  "origem": "digital-hacker",
+  "uso": "Hacker chatter: a terminal pouring out data in tiny ticks and blips."
+ },
+ "liga": {
+  "arquivo": "liga.wav",
+  "sync": 0,
+  "dur": 1.131,
+  "origem": "digital-power-up",
+  "uso": "A device powering up: a click, its hum rising, a ping when it's ready."
+ },
+ "desliga": {
+  "arquivo": "desliga.wav",
+  "sync": 0,
+  "dur": 0.882,
+  "origem": "digital-power-down",
+  "uso": "A device powering down: a click, then its hum sinking away."
+ },
+ "estatica": {
+  "arquivo": "estatica.wav",
+  "sync": 0,
+  "dur": 0.646,
+  "origem": "digital-static",
+  "uso": "A burst of TV static: bright snow with a faint buzz in it."
+ },
+ "decifra": {
+  "arquivo": "decifra.wav",
+  "sync": 0.659,
+  "dur": 1.262,
+  "origem": "digital-decrypt",
+  "uso": "Decrypted: a scramble slowing and resolving into a clean, rising chime."
+ },
+ "digitar": {
+  "arquivo": "digitar.wav",
+  "sync": 0,
+  "dur": 0.73,
+  "origem": "keyboard-typing-quick-short",
+  "uso": "A quick burst of typing: a word or two."
+ },
+ "tecla": {
+  "arquivo": "tecla.wav",
+  "sync": 0.009,
+  "dur": 0.081,
+  "origem": "keyboard-letter-firm",
+  "uso": "A firm, crisp keypress."
+ },
+ "enter": {
+  "arquivo": "enter.wav",
+  "sync": 0.009,
+  "dur": 0.09,
+  "origem": "keyboard-return-firm",
+  "uso": "A firm, decisive Return: send, submit, done."
+ },
+ "relogio": {
+  "arquivo": "relogio.wav",
+  "sync": 0,
+  "dur": 3.037,
+  "origem": "time-clock",
+  "uso": "A clock ticking: tick, tock, once a second."
+ },
+ "relogio_rapido": {
+  "arquivo": "relogio_rapido.wav",
+  "sync": 0,
+  "dur": 2.534,
+  "origem": "time-clock-fast",
+  "uso": "Fast, urgent ticking: twice a second."
+ },
+ "contagem": {
+  "arquivo": "contagem.wav",
+  "sync": 0,
+  "dur": 3.604,
+  "origem": "time-countdown",
+  "uso": "A countdown: three beeps a second apart, then a higher beep on go."
+ },
+ "alarme": {
+  "arquivo": "alarme.wav",
+  "sync": 0,
+  "dur": 2.314,
+  "origem": "time-alarm",
+  "uso": "An alarm clock ringing: a hammer rattling between two bells."
+ },
+ "papel": {
+  "arquivo": "papel.wav",
+  "sync": 0.006,
+  "dur": 0.492,
+  "origem": "foley-paper-slide",
+  "uso": "Paper sliding across a desk: a soft, dry hiss."
+ },
+ "pagina": {
+  "arquivo": "pagina.wav",
+  "sync": 0,
+  "dur": 0.54,
+  "origem": "props-page-turn",
+  "uso": "A page turning: lifted at the corner, swung over and falling flat."
+ },
+ "marcador": {
+  "arquivo": "marcador.wav",
+  "sync": 0,
+  "dur": 0.381,
+  "origem": "writing-highlighter",
+  "uso": "A highlighter swept across a line of text."
+ },
+ "caneta": {
+  "arquivo": "caneta.wav",
+  "sync": 0,
+  "dur": 1.328,
+  "origem": "writing-pen-write",
+  "uso": "A pen on paper, writing a word or two."
+ },
+ "risco": {
+  "arquivo": "risco.wav",
+  "sync": 0,
+  "dur": 1.063,
+  "origem": "writing-marker-draw",
+  "uso": "A marker on a whiteboard, drawing a few long strokes."
+ },
+ "giz": {
+  "arquivo": "giz.wav",
+  "sync": 0,
+  "dur": 1.372,
+  "origem": "writing-chalk-write",
+  "uso": "Chalk on a blackboard, writing a word or two."
+ },
+ "mecanico": {
+  "arquivo": "mecanico.wav",
+  "sync": 0,
+  "dur": 0.398,
+  "origem": "mechanical-ratchet-light",
+  "uso": "A small dial or ratchet turning, quick clicks."
+ },
+ "trava": {
+  "arquivo": "trava.wav",
+  "sync": 0.331,
+  "dur": 0.464,
+  "origem": "mechanical-lock-heavy",
+  "uso": "A deadbolt locking: pins turning, then a heavy clunk."
+ },
+ "vibra": {
+  "arquivo": "vibra.wav",
+  "sync": 0,
+  "dur": 1.116,
+  "origem": "phone-vibrate-table",
+  "uso": "A phone vibrating on a table, twice: a buzzing rattle."
+ },
+ "toque": {
+  "arquivo": "toque.wav",
+  "sync": 0,
+  "dur": 2.079,
+  "origem": "phone-ring-modern",
+  "uso": "A modern ringtone: a short kalimba figure, played twice."
+ },
+ "moedas": {
+  "arquivo": "moedas.wav",
+  "sync": 0,
+  "dur": 1.125,
+  "origem": "money-coins-pour",
+  "uso": "A handful of coins poured onto a pile: a dense, short clatter."
+ },
+ "moeda": {
+  "arquivo": "moeda.wav",
+  "sync": 0.01,
+  "dur": 0.681,
+  "origem": "money-coin-drop",
+  "uso": "A coin dropped on a table: it rings, bounces and rattles flat."
+ },
+ "caixa": {
+  "arquivo": "caixa.wav",
+  "sync": 0.093,
+  "dur": 0.912,
+  "origem": "money-register",
+  "uso": "A cash register: a key, the bell's ching and the drawer sliding open."
+ },
+ "numero": {
+  "arquivo": "numero.wav",
+  "sync": 0.011,
+  "dur": 0.233,
+  "origem": "data-number-land",
+  "uso": "A woody knock with a small, bright ping: a number landing."
+ },
+ "conta_sobe": {
+  "arquivo": "conta_sobe.wav",
+  "sync": 0,
+  "dur": 0.621,
+  "origem": "data-countup-short",
+  "uso": "A short count-up: ticks that speed up and settle, about 0.6 seconds."
+ },
+ "barra": {
+  "arquivo": "barra.wav",
+  "sync": 0.328,
+  "dur": 0.35,
+  "origem": "data-bar-grow",
+  "uso": "A quick upward swish that lands on a tick: a bar growing to its value."
+ },
+ "degrau1": {
+  "arquivo": "degrau1.wav",
+  "sync": 0,
+  "dur": 0.513,
+  "origem": "tone-step-1",
+  "uso": "Step 1 of 5: a soft marimba note (C), each one higher."
+ },
+ "degrau2": {
+  "arquivo": "degrau2.wav",
+  "sync": 0,
+  "dur": 0.445,
+  "origem": "tone-step-2",
+  "uso": "Step 2 of 5: a soft marimba note (E), each one higher."
+ },
+ "degrau3": {
+  "arquivo": "degrau3.wav",
+  "sync": 0,
+  "dur": 0.403,
+  "origem": "tone-step-3",
+  "uso": "Step 3 of 5: a soft marimba note (G), each one higher."
+ },
+ "degrau4": {
+  "arquivo": "degrau4.wav",
+  "sync": 0,
+  "dur": 0.372,
+  "origem": "tone-step-4",
+  "uso": "Step 4 of 5: a soft marimba note (A), each one higher."
+ },
+ "degrau5": {
+  "arquivo": "degrau5.wav",
+  "sync": 0,
+  "dur": 0.347,
+  "origem": "tone-step-5",
+  "uso": "Step 5 of 5: a soft marimba note (C), each one higher."
+ },
+ "zoom": {
+  "arquivo": "zoom.wav",
+  "sync": 0.489,
+  "dur": 0.566,
+  "origem": "move-zoom-in",
+  "uso": "Zooming in: air rushing nearer and rising to the moment it arrives."
+ },
+ "mola": {
+  "arquivo": "mola.wav",
+  "sync": 0,
+  "dur": 0.899,
+  "origem": "move-spring",
+  "uso": "A coiled spring flicked: a wobbling boing."
+ },
+ "gira": {
+  "arquivo": "gira.wav",
+  "sync": 0.007,
+  "dur": 1.138,
+  "origem": "move-spin",
+  "uso": "Something spinning fast, whirring up and winding down."
+ },
+ "aplausos": {
+  "arquivo": "aplausos.wav",
+  "sync": 0,
+  "dur": 2.938,
+  "origem": "celebration-applause-small",
+  "uso": "A few people applauding warmly."
+ },
+ "confete": {
+  "arquivo": "confete.wav",
+  "sync": 0.166,
+  "dur": 2.05,
+  "origem": "celebration-confetti",
+  "uso": "A burst of confetti: a soft puff, then tiny paper flakes falling."
+ },
+ "vinheta_tech": {
+  "arquivo": "vinheta_tech.wav",
+  "sync": 0.155,
+  "dur": 3.143,
+  "origem": "sting-tech-short",
+  "uso": "A tech sting: a few data pips and a flick of glitch into a clean digital chord."
+ },
+ "vinheta_bold": {
+  "arquivo": "vinheta_bold.wav",
+  "sync": 0.304,
+  "dur": 1.708,
+  "origem": "sting-bold-short",
+  "uso": "A bold sting: a quick pull of air into a deep drum, a knock and a struck chord."
+ }
+}

@@ -5,6 +5,7 @@ Uso:
   python scripts/montar.py 001 --estimar  # sem voz (prévia): estima os tempos
 """
 import json
+import os
 import subprocess
 import sys
 from pathlib import Path
@@ -182,6 +183,28 @@ def sons_local(por, t0):
         por("click", t0 + 0.34 + k * 0.09, 0.3)
 
 
+_AMOSTRAS = None
+
+
+def carregar_amostras():
+    """Biblioteca de efeitos gravados em public/sons (SFX Kit, CC0). Nome -> (onda, ponto de sincronia em s).
+    Se o nome existir aqui, ganha do som sintetizado de _sons()."""
+    global _AMOSTRAS
+    if _AMOSTRAS is None:
+        import wave
+        import numpy as np
+        _AMOSTRAS = {}
+        pasta = RAIZ / "public" / "sons"
+        mapa = pasta / "mapa.json"
+        if mapa.exists() and not os.environ.get("SONS_SINTETICOS"):
+            for nome, info in json.loads(mapa.read_text()).items():
+                with wave.open(str(pasta / info["arquivo"])) as w:
+                    x = np.frombuffer(w.readframes(w.getnframes()), "<i2").astype(float) / 32768
+                pk = max(1e-6, np.abs(x).max())
+                _AMOSTRAS[nome] = (x / pk * 0.55, info["sync"])
+    return _AMOSTRAS
+
+
 def sfx(cenas, roteiro, destino: Path, short: bool):
     """Monta a faixa de efeitos de TODO o vídeo (longo ou short)."""
     import numpy as np
@@ -194,10 +217,16 @@ def sfx(cenas, roteiro, destino: Path, short: bool):
         sons_sm = json.loads(arq.read_text())
     por_id = {c["id"]: c for c in roteiro["cenas"]}
 
+    amostras = carregar_amostras()
+
     def por(nome, seg, vol=1.0):
-        if nome not in S:
+        if nome in amostras:  # som gravado (public/sons, CC0): alinha o ponto de sincronia ao instante pedido
+            som, sync = amostras[nome]
+            som = som * vol; seg = seg - sync
+        elif nome in S:
+            som = S[nome]() * vol
+        else:
             return
-        som = S[nome]() * vol
         i = int(max(0, seg) * SR); f = min(total, i + len(som)); trilha[i:f] += som[: f - i]
 
     anterior, tipo_ant = None, None
@@ -271,8 +300,9 @@ def sfx(cenas, roteiro, destino: Path, short: bool):
         for at in c.get("personagens", []):
             if at.get("novo"):
                 por(SONS_ENTRADA.get(at.get("entrada", "pop"), "pop"), t0 + 0.02, 0.8)
+    trilha = np.tanh(trilha * 1.2) / np.tanh(1.2)  # limitador suave: um boom não abafa o resto
     pico = max(1e-6, np.abs(trilha).max())
-    trilha = (trilha / pico * 0.8 * 32767).astype("<i2")
+    trilha = (trilha / pico * 0.85 * 32767).astype("<i2")
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-f", "s16le", "-ar", str(SR), "-ac", "1", "-i", "-",
                     "-b:a", "160k", str(destino)], input=trilha.tobytes(), check=True)
 

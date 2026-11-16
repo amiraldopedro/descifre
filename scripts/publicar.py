@@ -80,6 +80,11 @@ def main(vid, video, thumb, privacidade="privado", agendar=None):
     cred_p = RAIZ / "public" / "build" / vid / "creditos.json"
     if cred_p.exists() and json.loads(cred_p.read_text()):
         descricao += "\n\nImagens de arquivo (domínio público):\n" + "\n".join("• " + c for c in json.loads(cred_p.read_text()))
+    cat_p = RAIZ / "public" / "musica" / "catalogo.json"
+    if man and man.get("musica") and cat_p.exists():  # trilhas CC BY pedem crédito na descrição
+        faixa = json.loads(cat_p.read_text()).get(Path(man["musica"]).stem, {})
+        if faixa.get("credito"):
+            descricao += "\n\nMúsica: " + faixa["credito"]
     corpo = {
         "snippet": {
             "title": meta["titulo"][:100],
