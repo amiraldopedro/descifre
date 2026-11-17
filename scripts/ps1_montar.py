@@ -1,7 +1,7 @@
 """Monta um Short no estilo PS1 (motor em ps1/): planos, legenda palavra a palavra e o áudio completo.
 
 Uso: python scripts/ps1_montar.py p01 [--estimar]
-  (antes: python scripts/voz.py p01, que grava public/build/p01/voz/cena_N.mp3 + .json)
+  (antes: python scripts/voz.py p01, que grava public/build/p01/voz/001.mp3 + .json)
 
 Roteiro (roteiros/pNN.json):
   { "id", "motor": "ps1", "titulo", "trilha": "suspense1", "voz", "taxa",
@@ -93,8 +93,11 @@ def main(vid, estimar=False):
     narr, palavras, planos, t = [], [], [], 0.0
     sons = [("boom", 0.02, 0.5), ("riser_suave", 0.0, 0.25)] if rot.get("gancho") else []
     for ci, cena in enumerate(rot["cenas"]):
-        js, mp3 = voz / f"cena_{cena['id']}.json", voz / f"cena_{cena['id']}.mp3"
-        if estimar or not mp3.exists():
+        mp3 = voz / f"{cena['id']:03d}.mp3"   # mesmo nome que o voz.py grava
+        js = mp3.with_suffix(".json")
+        if not estimar and not mp3.exists():
+            sys.exit(f"faltou a narração da frase {cena['id']} ({mp3}): rode scripts/voz.py antes")
+        if estimar:
             ws = cena["texto"].split()
             pal = [{"w": w, "t0": i * 0.34, "t1": i * 0.34 + 0.3} for i, w in enumerate(ws)]
             audio = np.zeros(int((len(ws) * 0.34 + 0.1) * SR), np.float32)
