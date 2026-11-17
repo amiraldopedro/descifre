@@ -477,7 +477,7 @@ export function filme(S, F) {
         a.rotation.set(0, typeof d.rot === 'number' ? d.rot : rotCam + (d.giro ?? 0), 0);
         if (d.anda) { a.position.z += (d.anda[1] ?? 0) * tl; a.position.x += (d.anda[0] ?? 0) * tl; }
       }
-      a.pose(d.pose ?? (onde === 'deitado' ? 'deitado' : onde.startsWith('sofa') || onde === 'cadeira' || onde === 'banco' ? 'sentado' : d.anda ? 'andar' : 'pe'), t);
+      a.pose(d.pose ?? (onde === 'deitado' ? 'deitado' : (typeof onde === 'string' && (onde.startsWith('sofa') || onde === 'cadeira' || onde === 'banco')) ? 'sentado' : d.anda ? 'andar' : 'pe'), t);
       a.expr(d.expr ?? 'normal');
       // celular na mão quando a pose pede
       if (d.pose === 'celular' && !a._cel) { a._cel = celular(); a.maoDir.add(a._cel); a._cel.position.set(-.08, -.06, .12); a._cel.rotation.set(-1.3, 0, 0); }
