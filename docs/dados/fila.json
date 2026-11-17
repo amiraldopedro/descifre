@@ -12,6 +12,10 @@
     {
      "quando": "2026-11-17T02:41:09+00:00",
      "status": "descartado"
+    },
+    {
+     "quando": "2026-11-17T03:05:48+00:00",
+     "status": "rascunho"
     }
    ],
    "tipo": "short",
@@ -30,10 +34,10 @@
    "thumb_texto": {},
    "tema": "A mulher sem medo",
    "duracao_s": 43,
-   "run": "44003609082",
-   "download": "https://github.com/amiraldopedro/descifre/actions/runs/44003609082",
-   "status": "descartado",
-   "youtube_id": "GdSAs6ZCh9c"
+   "run": "44007317557",
+   "download": "https://github.com/amiraldopedro/descifre/actions/runs/44007317557",
+   "status": "rascunho",
+   "youtube_id": "cIebmJPz5lg"
   },
   {
    "id": "p07",
@@ -2012,5 +2016,5 @@
   ],
   "fuso": "America/Sao_Paulo"
  },
- "atualizado": "2026-11-17T03:05:43+00:00"
+ "atualizado": "2026-11-17T03:05:49+00:00"
 }
