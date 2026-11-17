@@ -388,6 +388,10 @@
     {
      "quando": "2026-11-16T21:59:18+00:00",
      "status": "agendado"
+    },
+    {
+     "quando": "2026-11-17T00:16:05+00:00",
+     "status": "descartado"
     }
    ],
    "tipo": "short",
@@ -408,7 +412,7 @@
    "duracao_s": 44,
    "run": "43964944196",
    "download": "https://github.com/amiraldopedro/descifre/actions/runs/43964944196",
-   "status": "agendado",
+   "status": "descartado",
    "youtube_id": "Ynz5MyedtVw",
    "agendado_para": "2026-11-28T22:00:00Z"
   },
@@ -1722,5 +1726,5 @@
   ],
   "fuso": "America/Sao_Paulo"
  },
- "atualizado": "2026-11-17T00:15:05+00:00"
+ "atualizado": "2026-11-17T00:16:07+00:00"
 }
