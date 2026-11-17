@@ -164,6 +164,10 @@
     {
      "quando": "2026-11-17T02:39:12+00:00",
      "status": "descartado"
+    },
+    {
+     "quando": "2026-11-17T03:05:43+00:00",
+     "status": "rascunho"
     }
    ],
    "tipo": "short",
@@ -183,10 +187,10 @@
    "thumb_texto": {},
    "tema": "O truque do preço isca",
    "duracao_s": 46,
-   "run": "44003467394",
-   "download": "https://github.com/amiraldopedro/descifre/actions/runs/44003467394",
-   "status": "descartado",
-   "youtube_id": "umHB7Bq2E_g"
+   "run": "44007215371",
+   "download": "https://github.com/amiraldopedro/descifre/actions/runs/44007215371",
+   "status": "rascunho",
+   "youtube_id": "QxNNdSSaVAw"
   },
   {
    "id": "p02",
@@ -2008,5 +2012,5 @@
   ],
   "fuso": "America/Sao_Paulo"
  },
- "atualizado": "2026-11-17T03:05:27+00:00"
+ "atualizado": "2026-11-17T03:05:43+00:00"
 }
