@@ -8,6 +8,10 @@
     {
      "quando": "2026-11-17T02:34:54+00:00",
      "status": "rascunho"
+    },
+    {
+     "quando": "2026-11-17T02:41:09+00:00",
+     "status": "descartado"
     }
    ],
    "tipo": "short",
@@ -28,7 +32,7 @@
    "duracao_s": 43,
    "run": "44003609082",
    "download": "https://github.com/amiraldopedro/descifre/actions/runs/44003609082",
-   "status": "rascunho",
+   "status": "descartado",
    "youtube_id": "GdSAs6ZCh9c"
   },
   {
@@ -1980,5 +1984,5 @@
   ],
   "fuso": "America/Sao_Paulo"
  },
- "atualizado": "2026-11-17T02:40:32+00:00"
+ "atualizado": "2026-11-17T02:41:10+00:00"
 }
