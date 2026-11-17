@@ -71,7 +71,7 @@ def main():
             q["videoDuration"] = "short"
         elif a.tipo == "longos":
             q["videoDuration"] = "medium"
-        for pagina in range(2):
+        for _pg in range(2):
             r = api.search().list(**q).execute()
             for it in r.get("items", []):
                 achados.setdefault(it["id"]["videoId"], t)
