@@ -82,6 +82,10 @@
     {
      "quando": "2026-11-17T02:40:30+00:00",
      "status": "descartado"
+    },
+    {
+     "quando": "2026-11-17T03:05:04+00:00",
+     "status": "rascunho"
     }
    ],
    "tipo": "short",
@@ -100,10 +104,10 @@
    "thumb_texto": {},
    "tema": "O celular que não vibrou",
    "duracao_s": 39,
-   "run": "44003562135",
-   "download": "https://github.com/amiraldopedro/descifre/actions/runs/44003562135",
-   "status": "descartado",
-   "youtube_id": "eurU_5Ft6Fs"
+   "run": "44007283860",
+   "download": "https://github.com/amiraldopedro/descifre/actions/runs/44007283860",
+   "status": "rascunho",
+   "youtube_id": "zwjEAl_nJEE"
   },
   {
    "id": "p04",
@@ -1996,5 +2000,5 @@
   ],
   "fuso": "America/Sao_Paulo"
  },
- "atualizado": "2026-11-17T03:04:40+00:00"
+ "atualizado": "2026-11-17T03:05:05+00:00"
 }
