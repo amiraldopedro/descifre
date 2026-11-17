@@ -1,0 +1,15 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8">
+<!-- Short do Descifre no estilo PS1: tudo vem de filme.json (gerado por scripts/ps1_montar.py) -->
+<script>VIDEO={w:1080,h:1920,fps:30,dur:__DUR__}</script>
+<script src="../../lib/boot.js"></script>
+<style>#stage{background:#000;overflow:hidden}.layer{position:absolute;inset:0;width:100%;height:100%}</style></head><body>
+<div id="stage"></div>
+<script type="module">
+import * as P from '../../lib/ps1.js';
+import * as D from '../../lib/descifre.js';
+window.SETUP = async () => {
+  const F = await fetch('filme.json').then(r => r.json());
+  const S = P.palco({ cenario: 'degrade', fov: 45, cam: [0, 2, 5], alvo: [0, 1, 0] });
+  D.filme(S, F);
+};
+</script></body></html>

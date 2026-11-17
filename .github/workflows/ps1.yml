@@ -1,0 +1,89 @@
+name: Short PS1
+
+on:
+  workflow_dispatch:
+    inputs:
+      id:
+        description: "Roteiro PS1 (ex.: p01)"
+        required: true
+      publicar:
+        description: "YouTube: rascunho = sobe PRIVADO e espera aprovação no painel"
+        type: choice
+        options: [rascunho, nao, privado, nao_listado, publico]
+        default: rascunho
+      agendar:
+        description: "Agendar (opcional, UTC, ex.: 2026-11-30T15:00:00Z)"
+        required: false
+
+concurrency:
+  group: ps1-${{ github.event.inputs.id }}
+  cancel-in-progress: false
+
+jobs:
+  short:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    permissions:
+      contents: write
+    env:
+      ID: ${{ github.event.inputs.id }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - name: Ferramentas
+        timeout-minutes: 12
+        run: |
+          BASE=https://github.com/BtbN/FFmpeg-Builds/releases/download/latest
+          for NOME in ffmpeg-n7.1-latest-linux64-gpl-7.1 ffmpeg-master-latest-linux64-gpl; do
+            curl -sfL --max-time 240 --retry 3 -o /tmp/ff.tar.xz $BASE/$NOME.tar.xz && tar -xJf /tmp/ff.tar.xz -C /tmp \
+              && sudo cp /tmp/$NOME/bin/ff* /usr/local/bin/ && break
+          done
+          ffmpeg -version | head -1
+          pip install -q --timeout 60 edge-tts numpy google-api-python-client google-auth
+          cd ps1 && npm install --no-audit --no-fund --loglevel=error && npx playwright install --with-deps chromium > /dev/null
+      - name: Voz
+        run: python scripts/voz.py $ID
+      - name: Planos, legenda e áudio
+        run: python scripts/ps1_montar.py $ID
+      - name: Renderizar (PS1)
+        run: |
+          cd ps1 && node render.mjs $ID --conc=1
+          ls -la out/
+      - name: Capa
+        run: |
+          mkdir -p out && cp ps1/out/$ID.mp4 out/final.mp4
+          ffmpeg -y -loglevel error -ss 2.2 -i out/final.mp4 -frames:v 1 out/thumb.png
+      - uses: actions/upload-artifact@v4
+        with:
+          name: video_final_${{ github.event.inputs.id }}
+          path: |
+            out/final.mp4
+            out/thumb.png
+          retention-days: 14
+      - name: YouTube (rascunho privado) e fila do painel
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+          MODO: ${{ github.event.inputs.publicar || 'rascunho' }}
+          AGENDAR: ${{ github.event.inputs.agendar }}
+        run: |
+          git config user.name "fabrica-descifre"
+          git config user.email "fabrica@users.noreply.github.com"
+          git pull -q --rebase || true
+          python scripts/painel.py registrar $ID --run ${{ github.run_id }}
+          if [ "$MODO" != "nao" ] && [ -n "$YT_REFRESH_TOKEN" ]; then
+            python scripts/publicar.py $ID out/final.mp4 out/thumb.png $MODO $AGENDAR || echo "::warning::não subiu para o YouTube"
+          fi
+          python -c "import json,sys; sys.path.insert(0,'scripts'); import painel; json.dump(painel.achar(painel.carregar(),'$ID'), open('/tmp/item.json','w'))"
+          for i in 1 2 3 4 5 6; do
+            git fetch -q origin main && git reset -q --hard origin/main
+            python -c "import json,sys; sys.path.insert(0,'scripts'); import painel; it=json.load(open('/tmp/item.json')); f=painel.carregar(); f['itens']=[x for x in f['itens'] if x['id']!=it['id']]+[it]; painel.salvar(f)"
+            git add docs/dados/fila.json
+            git commit -qm "Painel: $ID pronto [skip ci]" || exit 0
+            git push -q && break
+            sleep $((RANDOM % 10 + 3))
+          done

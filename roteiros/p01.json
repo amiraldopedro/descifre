@@ -1,0 +1,652 @@
+{
+ "id": "p01",
+ "motor": "ps1",
+ "titulo": "Acorda antes do despertador",
+ "formato": "short",
+ "voz": "en-US-BrianMultilingualNeural",
+ "taxa": "+8%",
+ "trilha": "misterio3",
+ "gancho": {
+  "txt": "CUIDADO",
+  "sub": "com quem acorda antes do despertador"
+ },
+ "elenco": {
+  "voce": {
+   "camisa": "#4f7cff"
+  },
+  "cientista": {
+   "camisa": "#f2f2f2",
+   "cabelo": "#9a9a9a",
+   "calca": "#3a3a3a",
+   "pele": "#d9a77f"
+  }
+ },
+ "destaque": [
+  "coincidência",
+  "hormônio",
+  "cérebro",
+  "seis"
+ ],
+ "cenas": [
+  {
+   "texto": "Você conhece alguém que acorda um minuto antes do despertador tocar?",
+   "planos": [
+    {
+     "palavras": 4,
+     "cena": "quarto",
+     "cam": {
+      "tipo": "medio",
+      "alvo": "cama",
+      "ang": 40
+     },
+     "atores": {
+      "voce": {
+       "onde": "deitado",
+       "expr": "dormindo"
+      }
+     },
+     "estado": {
+      "coberta": 0.7
+     }
+    },
+    {
+     "palavras": 4,
+     "cena": "quarto",
+     "cam": {
+      "tipo": "close",
+      "alvo": "cabeca",
+      "ang": 30,
+      "alt": 1.0
+     },
+     "atores": {
+      "voce": {
+       "onde": "deitado",
+       "expr": "susto"
+      }
+     },
+     "estado": {
+      "coberta": 0.7
+     },
+     "onoma": "?!"
+    },
+    {
+     "palavras": 0,
+     "cena": "vazio",
+     "cam": {
+      "tipo": "americano",
+      "ang": 0,
+      "mov": "gira",
+      "zoom": 0.62
+     },
+     "objeto": {
+      "nome": "despertador",
+      "txt": "06:59"
+     }
+    }
+   ],
+   "id": 1
+  },
+  {
+   "texto": "Se eu fosse você, ficava de olho nessa pessoa.",
+   "planos": [
+    {
+     "palavras": 4,
+     "cena": "quarto",
+     "cam": {
+      "tipo": "americano",
+      "alvo": "pe",
+      "ang": 30,
+      "alturaAlvo": 0.5
+     },
+     "atores": {
+      "voce": {
+       "onde": "pe",
+       "pose": "pensando",
+       "expr": "normal"
+      }
+     },
+     "clima": "abajur",
+     "estado": {
+      "abajur": true,
+      "coberta": 0.62
+     }
+    },
+    {
+     "palavras": 0,
+     "cena": "quarto",
+     "cam": {
+      "tipo": "close",
+      "alvo": [
+       0.6,
+       1.32,
+       0.9
+      ],
+      "ang": 20,
+      "alt": 0.05
+     },
+     "atores": {
+      "voce": {
+       "onde": "pe",
+       "pose": "pensando",
+       "expr": "bravo"
+      }
+     },
+     "clima": "abajur",
+     "estado": {
+      "abajur": true,
+      "coberta": 0.62
+     }
+    }
+   ],
+   "id": 2
+  },
+  {
+   "texto": "Isso não é coincidência.",
+   "planos": [
+    {
+     "palavras": 0,
+     "cena": "vazio",
+     "cam": {
+      "tipo": "americano",
+      "ang": 0,
+      "mov": "entra"
+     },
+     "objeto": "cerebro",
+     "revela": true,
+     "etiqueta": {
+      "txt": "NÃO É SORTE",
+      "cor": "amarelo",
+      "icone": "!"
+     }
+    }
+   ],
+   "id": 3
+  },
+  {
+   "texto": "Em mil novecentos e noventa e nove, cientistas alemães colocaram voluntários pra dormir num laboratório.",
+   "planos": [
+    {
+     "palavras": 6,
+     "cena": "quarto",
+     "cam": {
+      "tipo": "geral",
+      "alvo": "centro",
+      "ang": 45
+     },
+     "atores": {
+      "voce": {
+       "onde": "deitado",
+       "expr": "dormindo"
+      }
+     },
+     "etiqueta": {
+      "txt": "1999 · ALEMANHA",
+      "cor": "branco"
+     },
+     "estado": {
+      "coberta": 0.62
+     }
+    },
+    {
+     "palavras": 0,
+     "cena": "quarto",
+     "cam": {
+      "tipo": "medio",
+      "alvo": "cama",
+      "ang": 60,
+      "mov": "gira"
+     },
+     "atores": {
+      "voce": {
+       "onde": "deitado",
+       "expr": "dormindo"
+      }
+     },
+     "estado": {
+      "coberta": 0.62
+     }
+    }
+   ],
+   "id": 4
+  },
+  {
+   "texto": "Uns ouviram: vamos te acordar às seis.",
+   "planos": [
+    {
+     "palavras": 0,
+     "cena": "quarto",
+     "cam": {
+      "tipo": "medio",
+      "alvo": "cama",
+      "ang": 35
+     },
+     "atores": {
+      "voce": {
+       "onde": "deitado",
+       "expr": "normal"
+      },
+      "cientista": {
+       "onde": [
+        0.55,
+        0,
+        0.5
+       ],
+       "pose": "tchau",
+       "expr": "feliz"
+      }
+     },
+     "clima": "abajur",
+     "estado": {
+      "abajur": true,
+      "coberta": 0.62
+     },
+     "etiqueta": {
+      "txt": "\"às 6h\"",
+      "cor": "branco"
+     }
+    }
+   ],
+   "id": 5
+  },
+  {
+   "texto": "Outros ouviram: às nove.",
+   "planos": [
+    {
+     "palavras": 0,
+     "cena": "quarto",
+     "cam": {
+      "tipo": "medio",
+      "alvo": "cama",
+      "ang": 50,
+      "mov": "gira"
+     },
+     "atores": {
+      "voce": {
+       "onde": "deitado",
+       "expr": "normal"
+      },
+      "cientista": {
+       "onde": [
+        0.55,
+        0,
+        0.5
+       ],
+       "pose": "tchau",
+       "expr": "feliz"
+      }
+     },
+     "clima": "abajur",
+     "estado": {
+      "abajur": true,
+      "coberta": 0.62
+     },
+     "etiqueta": {
+      "txt": "\"às 9h\"",
+      "cor": "amarelo"
+     }
+    }
+   ],
+   "id": 6
+  },
+  {
+   "texto": "Mas os cientistas acordaram todo mundo às seis.",
+   "planos": [
+    {
+     "palavras": 4,
+     "cena": "quarto",
+     "cam": {
+      "tipo": "close",
+      "alvo": "cabeca",
+      "ang": 40,
+      "alt": 1.0
+     },
+     "atores": {
+      "voce": {
+       "onde": "deitado",
+       "expr": "susto"
+      }
+     },
+     "estado": {
+      "coberta": 0.62
+     }
+    },
+    {
+     "palavras": 0,
+     "cena": "vazio",
+     "cam": {
+      "tipo": "americano",
+      "ang": 0,
+      "mov": "entra",
+      "zoom": 0.62
+     },
+     "objeto": {
+      "nome": "despertador",
+      "txt": "06:00"
+     },
+     "onoma": "TRIIIM!"
+    }
+   ],
+   "id": 7
+  },
+  {
+   "texto": "E olha o que aconteceu.",
+   "planos": [
+    {
+     "palavras": 0,
+     "cena": "vazio",
+     "cam": {
+      "tipo": "americano",
+      "ang": 20,
+      "mov": "gira"
+     },
+     "objeto": "cerebro",
+     "revela": true
+    }
+   ],
+   "id": 8
+  },
+  {
+   "texto": "Quem esperava acordar às seis já estava com um hormônio de despertar subindo, uma hora antes.",
+   "planos": [
+    {
+     "palavras": 5,
+     "cena": "vazio",
+     "cam": {
+      "tipo": "americano",
+      "ang": -20,
+      "mov": "entra"
+     },
+     "objeto": "cerebro",
+     "etiqueta": {
+      "txt": "ACTH SUBINDO",
+      "cor": "verde",
+      "icone": "↑"
+     }
+    },
+    {
+     "palavras": 5,
+     "cena": "quarto",
+     "cam": {
+      "tipo": "close",
+      "alvo": "cabeca",
+      "ang": 25,
+      "alt": 1.0
+     },
+     "atores": {
+      "voce": {
+       "onde": "deitado",
+       "expr": "dormindo"
+      }
+     },
+     "estado": {
+      "coberta": 0.62
+     }
+    },
+    {
+     "palavras": 0,
+     "cena": "vazio",
+     "cam": {
+      "tipo": "americano",
+      "ang": 0,
+      "mov": "gira",
+      "zoom": 0.62
+     },
+     "objeto": {
+      "nome": "despertador",
+      "txt": "05:00"
+     }
+    }
+   ],
+   "id": 9
+  },
+  {
+   "texto": "Quem esperava as nove, não.",
+   "planos": [
+    {
+     "palavras": 0,
+     "cena": "quarto",
+     "cam": {
+      "tipo": "medio",
+      "alvo": "cama",
+      "ang": 30,
+      "mov": "sai"
+     },
+     "atores": {
+      "voce": {
+       "onde": "deitado",
+       "expr": "dormindo"
+      }
+     },
+     "etiqueta": {
+      "txt": "NADA",
+      "cor": "vermelho",
+      "icone": "✗"
+     },
+     "estado": {
+      "coberta": 0.62
+     }
+    }
+   ],
+   "id": 10
+  },
+  {
+   "texto": "Ou seja: o seu cérebro conta as horas enquanto você dorme.",
+   "planos": [
+    {
+     "palavras": 5,
+     "cena": "vazio",
+     "cam": {
+      "tipo": "americano",
+      "ang": 10,
+      "mov": "gira"
+     },
+     "objeto": "cerebro"
+    },
+    {
+     "palavras": 0,
+     "cena": "quarto",
+     "cam": {
+      "tipo": "cima",
+      "alvo": "cama",
+      "ang": 30
+     },
+     "atores": {
+      "voce": {
+       "onde": "deitado",
+       "expr": "dormindo"
+      }
+     },
+     "estado": {
+      "coberta": 0.8
+     }
+    }
+   ],
+   "id": 11
+  },
+  {
+   "texto": "Ah, mas eu durmo pesado.",
+   "planos": [
+    {
+     "palavras": 0,
+     "cena": "quarto",
+     "cam": {
+      "tipo": "medio",
+      "alvo": "cama",
+      "ang": 20
+     },
+     "atores": {
+      "voce": {
+       "onde": "deitado",
+       "expr": "bravo"
+      }
+     },
+     "clima": "abajur",
+     "estado": {
+      "abajur": true,
+      "coberta": 0.62
+     },
+     "etiqueta": {
+      "txt": "\"eu durmo pesado\"",
+      "cor": "branco"
+     }
+    }
+   ],
+   "id": 12
+  },
+  {
+   "texto": "Não importa. A contagem roda do mesmo jeito.",
+   "planos": [
+    {
+     "palavras": 2,
+     "cena": "quarto",
+     "cam": {
+      "tipo": "close",
+      "alvo": "cabeca",
+      "ang": 45,
+      "alt": 1.0
+     },
+     "atores": {
+      "voce": {
+       "onde": "deitado",
+       "expr": "dormindo"
+      }
+     },
+     "etiqueta": {
+      "txt": "NÃO IMPORTA",
+      "cor": "vermelho",
+      "icone": "✗"
+     },
+     "estado": {
+      "coberta": 0.62
+     }
+    },
+    {
+     "palavras": 0,
+     "cena": "vazio",
+     "cam": {
+      "tipo": "americano",
+      "ang": 0,
+      "mov": "entra",
+      "zoom": 0.62
+     },
+     "objeto": {
+      "nome": "despertador",
+      "txt": "06:59"
+     }
+    }
+   ],
+   "id": 13
+  },
+  {
+   "texto": "Por isso, acordar sempre no mesmo horário deixa as manhãs bem mais fáceis.",
+   "planos": [
+    {
+     "palavras": 6,
+     "cena": "quarto",
+     "cam": {
+      "tipo": "americano",
+      "alvo": "pe",
+      "ang": 35,
+      "alturaAlvo": 0.5
+     },
+     "atores": {
+      "voce": {
+       "onde": "pe",
+       "expr": "feliz"
+      }
+     },
+     "clima": "dia",
+     "estado": {
+      "dia": true,
+      "coberta": 0.2
+     }
+    },
+    {
+     "palavras": 0,
+     "cena": "quarto",
+     "cam": {
+      "tipo": "geral",
+      "alvo": "centro",
+      "ang": 40,
+      "mov": "sai"
+     },
+     "atores": {
+      "voce": {
+       "onde": "pe",
+       "expr": "feliz",
+       "pose": "tchau"
+      }
+     },
+     "clima": "dia",
+     "estado": {
+      "dia": true,
+      "coberta": 0.2
+     },
+     "etiqueta": {
+      "txt": "MESMO HORÁRIO",
+      "cor": "verde",
+      "icone": "✓"
+     }
+    }
+   ],
+   "id": 14
+  },
+  {
+   "texto": "Manda esse vídeo pra quem sempre ganha do despertador. E você, acorda antes?",
+   "planos": [
+    {
+     "palavras": 8,
+     "cena": "quarto",
+     "cam": {
+      "tipo": "americano",
+      "alvo": "pe",
+      "ang": 25,
+      "alturaAlvo": 0.5
+     },
+     "atores": {
+      "voce": {
+       "onde": "pe",
+       "expr": "feliz",
+       "pose": "tchau"
+      }
+     },
+     "clima": "dia",
+     "estado": {
+      "dia": true,
+      "coberta": 0.2
+     }
+    },
+    {
+     "palavras": 0,
+     "cena": "quarto",
+     "cam": {
+      "tipo": "close",
+      "alvo": [
+       0.6,
+       1.32,
+       0.9
+      ],
+      "ang": 25,
+      "alt": 0.05
+     },
+     "atores": {
+      "voce": {
+       "onde": "pe",
+       "expr": "feliz"
+      }
+     },
+     "clima": "dia",
+     "estado": {
+      "dia": true,
+      "coberta": 0.62
+     },
+     "etiqueta": {
+      "txt": "E VOCÊ?",
+      "cor": "amarelo"
+     }
+    }
+   ],
+   "id": 15
+  }
+ ]
+}
