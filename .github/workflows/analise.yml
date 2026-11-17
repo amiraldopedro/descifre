@@ -1,0 +1,33 @@
+name: Analisar Shorts de referência
+on:
+  workflow_dispatch:
+    inputs:
+      urls: { description: "URLs separadas por espaço", required: true }
+permissions:
+  contents: write
+jobs:
+  analisar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - name: ferramentas
+        run: |
+          BASE=https://github.com/BtbN/FFmpeg-Builds/releases/download/latest
+          for NOME in ffmpeg-n7.1-latest-linux64-gpl-7.1 ffmpeg-master-latest-linux64-gpl; do
+            curl -sfL --max-time 240 --retry 3 -o /tmp/ff.tar.xz $BASE/$NOME.tar.xz && tar -xJf /tmp/ff.tar.xz -C /tmp \
+              && sudo cp /tmp/$NOME/bin/ff* /usr/local/bin/ && break
+          done
+          pip install -q -U yt-dlp
+      - run: python scripts/analisar_virais.py ${{ inputs.urls }}
+      - name: salvar na branch analise
+        run: |
+          git config user.name "fabrica-descifre"; git config user.email "fabrica@users.noreply.github.com"
+          mv analise /tmp/analise_nova
+          git fetch origin analise && git checkout analise || git checkout --orphan analise
+          git rm -rq --cached . 2>/dev/null || true
+          find . -maxdepth 1 ! -name .git ! -name . ! -name analise -exec rm -rf {} + 2>/dev/null || true
+          mkdir -p analise && cp -r /tmp/analise_nova/* analise/ 2>/dev/null || true
+          git add analise
+          git commit -qm "Análise de referências [skip ci]" || exit 0
+          git push -q origin analise
