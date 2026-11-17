@@ -1,6 +1,37 @@
 {
  "itens": [
   {
+   "id": "p02",
+   "criado": "2026-11-17T02:33:21+00:00",
+   "notas": [],
+   "historico": [
+    {
+     "quando": "2026-11-17T02:33:33+00:00",
+     "status": "rascunho"
+    }
+   ],
+   "tipo": "short",
+   "titulo": "Dormir 6 Horas Por Noite Faz Isso Com Seu Cérebro #shorts",
+   "descricao": "Estudo de Van Dongen e colegas (Sleep, 2003): 14 dias dormindo 6 horas por noite deixaram o desempenho tão ruim quanto o de quem passou até duas noites sem dormir, e as pessoas quase não perceberam.\n\nVídeo completo: https://youtu.be/qY0j5kTWY48\n\n#psicologia #curiosidades #shorts\n\nMúsica: \"Ice Flow\" — Kevin MacLeod (incompetech.com), licença CC BY 4.0 (creativecommons.org/licenses/by/4.0)",
+   "tags": [
+    "dormir 6 horas",
+    "privação de sono",
+    "sono",
+    "cérebro",
+    "psicologia",
+    "curiosidades",
+    "shorts",
+    "descifre"
+   ],
+   "thumb_texto": {},
+   "tema": "6 horas por noite",
+   "duracao_s": 38,
+   "run": "44003414614",
+   "download": "https://github.com/amiraldopedro/descifre/actions/runs/44003414614",
+   "status": "rascunho",
+   "youtube_id": "a9AcZYvXkqI"
+  },
+  {
    "id": "p01",
    "criado": "2026-11-17T02:32:06+00:00",
    "notas": [],
@@ -1773,5 +1804,5 @@
   ],
   "fuso": "America/Sao_Paulo"
  },
- "atualizado": "2026-11-17T02:32:16+00:00"
+ "atualizado": "2026-11-17T02:33:33+00:00"
 }
