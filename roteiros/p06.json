@@ -1,0 +1,375 @@
+{
+ "id": "p06",
+ "motor": "ps1",
+ "titulo": "A mulher sem medo",
+ "formato": "short",
+ "voz": "en-US-BrianMultilingualNeural",
+ "taxa": "+8%",
+ "trilha": "suspense3",
+ "gancho": {
+  "txt": "ZERO MEDO",
+  "sub": "o caso real da mulher que não sente medo"
+ },
+ "elenco": {
+  "voce": {
+   "camisa": "#2a9d8f",
+   "cabelo": "#7a4a2a",
+   "estilo": "longo"
+  }
+ },
+ "destaque": [
+  "medo",
+  "amígdala",
+  "pânico"
+ ],
+ "cenas": [
+  {
+   "texto": "E se você nunca mais sentisse medo?",
+   "planos": [
+    {
+     "palavras": 0,
+     "cena": "rua",
+     "cam": {
+      "tipo": "medio",
+      "alvo": "calcada",
+      "ang": 30
+     },
+     "atores": {
+      "voce": {
+       "onde": "calcada",
+       "expr": "feliz",
+       "anda": [
+        0,
+        -0.5
+       ]
+      }
+     }
+    }
+   ],
+   "id": 1
+  },
+  {
+   "texto": "Existe uma mulher assim. Os cientistas chamam ela só de S. M.",
+   "planos": [
+    {
+     "palavras": 4,
+     "cena": "rua",
+     "cam": {
+      "tipo": "close",
+      "alvo": [
+       -2.4,
+       1.5,
+       1.0
+      ],
+      "ang": 20
+     },
+     "atores": {
+      "voce": {
+       "onde": "calcada",
+       "expr": "feliz",
+       "anda": [
+        0,
+        -0.2
+       ]
+      }
+     }
+    },
+    {
+     "palavras": 0,
+     "cena": "escritorio",
+     "cam": {
+      "tipo": "medio",
+      "alvo": "rosto",
+      "ang": 35
+     },
+     "atores": {
+      "voce": {
+       "onde": "cadeira",
+       "expr": "feliz"
+      }
+     },
+     "etiqueta": {
+      "txt": "PACIENTE S.M.",
+      "cor": "branco"
+     }
+    }
+   ],
+   "id": 2
+  },
+  {
+   "texto": "Uma doença rara destruiu uma parte do cérebro dela chamada amígdala, o alarme do medo.",
+   "planos": [
+    {
+     "palavras": 5,
+     "cena": "vazio",
+     "cam": {
+      "tipo": "americano",
+      "mov": "entra"
+     },
+     "objeto": "cerebro"
+    },
+    {
+     "palavras": 0,
+     "cena": "vazio",
+     "cam": {
+      "tipo": "close",
+      "ang": 30,
+      "mov": "entra"
+     },
+     "objeto": "cerebro",
+     "revela": true,
+     "etiqueta": {
+      "txt": "AMÍGDALA",
+      "cor": "vermelho",
+      "icone": "!"
+     }
+    }
+   ],
+   "id": 3
+  },
+  {
+   "texto": "Levaram ela numa loja de cobras. Ela queria pegar as mais perigosas.",
+   "planos": [
+    {
+     "palavras": 4,
+     "cena": "rua",
+     "cam": {
+      "tipo": "geral",
+      "alvo": "meio",
+      "ang": 35,
+      "zoom": 0.8
+     },
+     "atores": {
+      "voce": {
+       "onde": "calcada",
+       "expr": "normal",
+       "anda": [
+        0,
+        -0.5
+       ]
+      }
+     }
+    },
+    {
+     "palavras": 0,
+     "cena": "escritorio",
+     "cam": {
+      "tipo": "close",
+      "alvo": "rosto",
+      "ang": 20
+     },
+     "atores": {
+      "voce": {
+       "onde": "cadeira",
+       "expr": "feliz"
+      }
+     },
+     "onoma": "FOFA!"
+    }
+   ],
+   "id": 4
+  },
+  {
+   "texto": "Numa casa assombrada, tentou cutucar os monstros.",
+   "planos": [
+    {
+     "palavras": 0,
+     "cena": "rua",
+     "cam": {
+      "tipo": "medio",
+      "alvo": "poste",
+      "ang": 25
+     },
+     "atores": {
+      "voce": {
+       "onde": "poste",
+       "expr": "feliz",
+       "pose": "tchau"
+      }
+     },
+     "clima": "noite",
+     "onoma": "BU!"
+    }
+   ],
+   "id": 5
+  },
+  {
+   "texto": "Parece um superpoder. Mas não é.",
+   "planos": [
+    {
+     "palavras": 3,
+     "cena": "escritorio",
+     "cam": {
+      "tipo": "americano",
+      "alvo": "rosto",
+      "ang": 40,
+      "alt": 0.2
+     },
+     "atores": {
+      "voce": {
+       "onde": "cadeira",
+       "expr": "feliz"
+      }
+     }
+    },
+    {
+     "palavras": 0,
+     "cena": "escritorio",
+     "cam": {
+      "tipo": "close",
+      "alvo": "rosto",
+      "ang": 20
+     },
+     "atores": {
+      "voce": {
+       "onde": "cadeira",
+       "expr": "triste",
+       "pose": "triste"
+      }
+     },
+     "etiqueta": {
+      "txt": "NÃO É",
+      "cor": "vermelho",
+      "icone": "✗"
+     }
+    }
+   ],
+   "id": 6
+  },
+  {
+   "texto": "Sem medo, ela confiou em quem não devia e já passou por situações perigosas.",
+   "planos": [
+    {
+     "palavras": 6,
+     "cena": "rua",
+     "cam": {
+      "tipo": "medio",
+      "alvo": "calcada",
+      "ang": 20
+     },
+     "atores": {
+      "voce": {
+       "onde": "calcada",
+       "expr": "triste",
+       "anda": [
+        0,
+        -0.5
+       ]
+      }
+     },
+     "clima": "noite"
+    },
+    {
+     "palavras": 0,
+     "cena": "vazio",
+     "cam": {
+      "tipo": "americano",
+      "mov": "gira"
+     },
+     "objeto": "cerebro",
+     "etiqueta": {
+      "txt": "O MEDO PROTEGE",
+      "cor": "amarelo"
+     }
+    }
+   ],
+   "id": 7
+  },
+  {
+   "texto": "E o mais curioso: quando respirou um ar com muito gás carbônico, ela sentiu pânico pela primeira vez.",
+   "planos": [
+    {
+     "palavras": 6,
+     "cena": "vazio",
+     "cam": {
+      "tipo": "americano",
+      "ang": -20,
+      "mov": "entra"
+     },
+     "objeto": "cerebro"
+    },
+    {
+     "palavras": 0,
+     "cena": "escritorio",
+     "cam": {
+      "tipo": "close",
+      "alvo": "rosto",
+      "ang": 15
+     },
+     "atores": {
+      "voce": {
+       "onde": "cadeira",
+       "expr": "susto",
+       "pose": "susto"
+      }
+     },
+     "revela": true,
+     "onoma": "PÂNICO!"
+    }
+   ],
+   "id": 8
+  },
+  {
+   "texto": "O alarme veio de dentro do corpo, por outro caminho.",
+   "planos": [
+    {
+     "palavras": 0,
+     "cena": "vazio",
+     "cam": {
+      "tipo": "americano",
+      "ang": 10,
+      "mov": "gira"
+     },
+     "objeto": "cerebro",
+     "etiqueta": {
+      "txt": "OUTRO CAMINHO",
+      "cor": "verde"
+     }
+    }
+   ],
+   "id": 9
+  },
+  {
+   "texto": "Manda pra quem diz que não tem medo de nada. Você trocaria o seu medo por isso?",
+   "planos": [
+    {
+     "palavras": 8,
+     "cena": "escritorio",
+     "cam": {
+      "tipo": "americano",
+      "alvo": "rosto",
+      "ang": 25,
+      "alt": 0.15
+     },
+     "atores": {
+      "voce": {
+       "onde": "cadeira",
+       "expr": "feliz",
+       "pose": "tchau"
+      }
+     }
+    },
+    {
+     "palavras": 0,
+     "cena": "escritorio",
+     "cam": {
+      "tipo": "close",
+      "alvo": "rosto",
+      "ang": 15
+     },
+     "atores": {
+      "voce": {
+       "onde": "cadeira",
+       "expr": "feliz"
+      }
+     },
+     "etiqueta": {
+      "txt": "VOCÊ TROCARIA?",
+      "cor": "amarelo"
+     }
+    }
+   ],
+   "id": 10
+  }
+ ]
+}

@@ -1,0 +1,403 @@
+{
+ "id": "p02",
+ "motor": "ps1",
+ "titulo": "6 horas por noite",
+ "formato": "short",
+ "voz": "en-US-BrianMultilingualNeural",
+ "taxa": "+8%",
+ "trilha": "suspense2",
+ "gancho": {
+  "txt": "6 HORAS?",
+  "sub": "o que acontece se você dormir só isso por 2 semanas"
+ },
+ "elenco": {
+  "voce": {
+   "camisa": "#2fbf5b"
+  }
+ },
+ "destaque": [
+  "seis",
+  "cérebro",
+  "esconde",
+  "duas"
+ ],
+ "cenas": [
+  {
+   "texto": "E se você dormisse só seis horas por noite, durante duas semanas?",
+   "planos": [
+    {
+     "palavras": 4,
+     "cena": "quarto",
+     "cam": {
+      "tipo": "medio",
+      "alvo": "cama",
+      "ang": 40
+     },
+     "atores": {
+      "voce": {
+       "onde": "deitado",
+       "expr": "dormindo"
+      }
+     }
+    },
+    {
+     "palavras": 4,
+     "cena": "vazio",
+     "cam": {
+      "tipo": "americano",
+      "zoom": 0.62,
+      "mov": "gira"
+     },
+     "objeto": {
+      "nome": "despertador",
+      "txt": "06:00"
+     }
+    },
+    {
+     "palavras": 0,
+     "cena": "escritorio",
+     "cam": {
+      "tipo": "americano",
+      "alvo": "rosto",
+      "ang": 20,
+      "alt": 0.1
+     },
+     "atores": {
+      "voce": {
+       "onde": "cadeira",
+       "expr": "normal"
+      }
+     }
+    }
+   ],
+   "id": 1
+  },
+  {
+   "texto": "Parece pouco, né? Muita gente vive assim.",
+   "planos": [
+    {
+     "palavras": 4,
+     "cena": "escritorio",
+     "cam": {
+      "tipo": "close",
+      "alvo": "rosto",
+      "ang": 15
+     },
+     "atores": {
+      "voce": {
+       "onde": "cadeira",
+       "expr": "feliz"
+      }
+     },
+     "etiqueta": {
+      "txt": "\"tô de boa\"",
+      "cor": "branco"
+     }
+    },
+    {
+     "palavras": 0,
+     "cena": "rua",
+     "cam": {
+      "tipo": "geral",
+      "alvo": "calcada",
+      "ang": 30,
+      "zoom": 0.75
+     },
+     "atores": {
+      "voce": {
+       "onde": "calcada",
+       "anda": [
+        0,
+        -0.6
+       ]
+      }
+     }
+    }
+   ],
+   "id": 2
+  },
+  {
+   "texto": "Cientistas nos Estados Unidos testaram exatamente isso.",
+   "planos": [
+    {
+     "palavras": 0,
+     "cena": "quarto",
+     "cam": {
+      "tipo": "geral",
+      "alvo": "centro",
+      "ang": 45
+     },
+     "atores": {
+      "voce": {
+       "onde": "deitado",
+       "expr": "dormindo"
+      }
+     },
+     "etiqueta": {
+      "txt": "2003 · EUA",
+      "cor": "branco"
+     }
+    }
+   ],
+   "id": 3
+  },
+  {
+   "texto": "Na primeira noite, quase nada muda.",
+   "planos": [
+    {
+     "palavras": 0,
+     "cena": "escritorio",
+     "cam": {
+      "tipo": "medio",
+      "alvo": "rosto",
+      "ang": 35,
+      "mov": "gira"
+     },
+     "atores": {
+      "voce": {
+       "onde": "cadeira",
+       "expr": "normal"
+      }
+     },
+     "marco": "1 noite"
+    }
+   ],
+   "id": 4
+  },
+  {
+   "texto": "Com três dias, a atenção já começa a cair.",
+   "planos": [
+    {
+     "palavras": 4,
+     "cena": "escritorio",
+     "cam": {
+      "tipo": "close",
+      "alvo": "rosto",
+      "ang": 10
+     },
+     "atores": {
+      "voce": {
+       "onde": "cadeira",
+       "expr": "triste",
+       "pose": "triste"
+      }
+     },
+     "marco": "3 dias"
+    },
+    {
+     "palavras": 0,
+     "cena": "vazio",
+     "cam": {
+      "tipo": "americano",
+      "mov": "entra"
+     },
+     "objeto": "cerebro",
+     "onoma": "?"
+    }
+   ],
+   "id": 5
+  },
+  {
+   "texto": "Com dez dias, o cérebro errava como quem passou uma noite inteira acordado.",
+   "planos": [
+    {
+     "palavras": 4,
+     "cena": "escritorio",
+     "cam": {
+      "tipo": "americano",
+      "alvo": "rosto",
+      "ang": 40,
+      "alt": 0.2
+     },
+     "atores": {
+      "voce": {
+       "onde": "cadeira",
+       "expr": "triste",
+       "pose": "triste"
+      }
+     },
+     "marco": "10 dias"
+    },
+    {
+     "palavras": 0,
+     "cena": "vazio",
+     "cam": {
+      "tipo": "americano",
+      "ang": -15,
+      "mov": "gira"
+     },
+     "objeto": "cerebro",
+     "revela": true,
+     "etiqueta": {
+      "txt": "= 1 NOITE SEM DORMIR",
+      "cor": "vermelho",
+      "icone": "!"
+     }
+    }
+   ],
+   "id": 6
+  },
+  {
+   "texto": "Com duas semanas, o tombo era igual a duas noites sem dormir.",
+   "planos": [
+    {
+     "palavras": 4,
+     "cena": "escritorio",
+     "cam": {
+      "tipo": "close",
+      "alvo": "rosto",
+      "ang": 25
+     },
+     "atores": {
+      "voce": {
+       "onde": "cadeira",
+       "expr": "bravo",
+       "pose": "bravo"
+      }
+     },
+     "marco": "2 semanas"
+    },
+    {
+     "palavras": 0,
+     "cena": "rua",
+     "cam": {
+      "tipo": "medio",
+      "alvo": "calcada",
+      "ang": 20
+     },
+     "atores": {
+      "voce": {
+       "onde": "calcada",
+       "anda": [
+        0,
+        -0.4
+       ],
+       "expr": "triste"
+      }
+     },
+     "etiqueta": {
+      "txt": "= 2 NOITES",
+      "cor": "vermelho",
+      "icone": "!"
+     }
+    }
+   ],
+   "id": 7
+  },
+  {
+   "texto": "Mas o mais assustador vem agora.",
+   "planos": [
+    {
+     "palavras": 0,
+     "cena": "vazio",
+     "cam": {
+      "tipo": "americano",
+      "ang": 20,
+      "mov": "entra"
+     },
+     "objeto": "cerebro",
+     "revela": true
+    }
+   ],
+   "id": 8
+  },
+  {
+   "texto": "Eles mal se sentiam com sono.",
+   "planos": [
+    {
+     "palavras": 0,
+     "cena": "escritorio",
+     "cam": {
+      "tipo": "close",
+      "alvo": "rosto",
+      "ang": 20
+     },
+     "atores": {
+      "voce": {
+       "onde": "cadeira",
+       "expr": "feliz"
+      }
+     },
+     "etiqueta": {
+      "txt": "\"tô ótimo\"",
+      "cor": "branco"
+     }
+    }
+   ],
+   "id": 9
+  },
+  {
+   "texto": "Ou seja: o seu cérebro piora, e esconde isso de você.",
+   "planos": [
+    {
+     "palavras": 4,
+     "cena": "vazio",
+     "cam": {
+      "tipo": "americano",
+      "ang": 0,
+      "mov": "gira"
+     },
+     "objeto": "cerebro"
+    },
+    {
+     "palavras": 0,
+     "cena": "quarto",
+     "cam": {
+      "tipo": "cima",
+      "alvo": "cama",
+      "ang": 30
+     },
+     "atores": {
+      "voce": {
+       "onde": "deitado",
+       "expr": "dormindo"
+      }
+     }
+    }
+   ],
+   "id": 10
+  },
+  {
+   "texto": "Manda pra aquele amigo que jura que seis horas bastam. Quantas horas você dorme?",
+   "planos": [
+    {
+     "palavras": 8,
+     "cena": "escritorio",
+     "cam": {
+      "tipo": "americano",
+      "alvo": "rosto",
+      "ang": 25,
+      "alt": 0.15
+     },
+     "atores": {
+      "voce": {
+       "onde": "cadeira",
+       "expr": "feliz",
+       "pose": "tchau"
+      }
+     }
+    },
+    {
+     "palavras": 0,
+     "cena": "escritorio",
+     "cam": {
+      "tipo": "close",
+      "alvo": "rosto",
+      "ang": 15
+     },
+     "atores": {
+      "voce": {
+       "onde": "cadeira",
+       "expr": "feliz"
+      }
+     },
+     "etiqueta": {
+      "txt": "E VOCÊ?",
+      "cor": "amarelo"
+     }
+    }
+   ],
+   "id": 11
+  }
+ ]
+}

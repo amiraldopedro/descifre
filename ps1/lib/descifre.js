@@ -154,7 +154,7 @@ export function despertador(txt = '07:00') {
   const g = new THREE.Group(), m = P.mat({ cor: '#1b1b20' });
   g.add(P.caixa(.5, .26, .2, m));
   const tela = P.caixa(.42, .18, .01, P.mat({ mapa: texTexto(txt), semLuz: true }), { pos: [0, 0, .102] }); g.add(tela);
-  g.trocar = t => { tela.material.uniforms.uMapa.value = texTexto(t); };
+  let atual = txt; g.trocar = t => { if (t !== atual) { tela.material.uniforms.uMapa.value = texTexto(t); atual = t; } };
   for (const s of [-1, 1]) g.add(P.esfera(.07, P.mat({ cor: '#c9a227' }), { pos: [s * .18, .17, 0], seg: 6, segV: 4 }));
   return g;
 }
@@ -164,6 +164,22 @@ export function abajur(acesa = true) {
   g.add(P.cilindro(.015, .015, .32, P.mat({ cor: '#3a3a40' }), { pos: [0, .18, 0], seg: 5 }));
   const cup = P.cilindro(.1, .17, .2, P.mat({ cor: '#ffe7b0', semLuz: acesa, lados: THREE.DoubleSide }), { pos: [0, .38, 0], seg: 8, aberto: true }); g.add(cup);
   g.acender = v => { cup.material.uniforms.uSemLuz.value = v ? 1 : 0; cup.material.uniforms.uCor.value.set(v ? '#ffe9b8' : '#9b8f78'); };
+  return g;
+}
+
+// quadro com linhas de texto (preços, lista, placar): linhas = ['WEB  $59', ...], marca = índice destacado
+export function quadro(linhas = ['A', 'B', 'C'], marca = -1) {
+  const g = new THREE.Group();
+  const tex = l => P.textura(192, 256, (x, w, h) => {
+    x.fillStyle = '#1f3b2c'; x.fillRect(0, 0, w, h); x.fillStyle = '#5a3a24'; x.fillRect(0, 0, w, 4); x.fillRect(0, h - 4, w, 4); x.fillRect(0, 0, 4, h); x.fillRect(w - 4, 0, 4, h);
+    x.textBaseline = 'middle'; x.textAlign = 'center';
+    l.forEach((t, i) => { const [nome, preco] = t.split(/\s*\.{2,}\s*|\s{2,}/); const y = 40 + i * (180 / Math.max(1, l.length - 1));
+      if (i === marca) { x.fillStyle = '#ffd23f'; x.fillRect(8, y - 30, w - 16, 62); x.fillStyle = '#1b1b1b'; } else x.fillStyle = '#f2f2e8';
+      x.font = 'bold 22px monospace'; x.fillText(nome, w / 2, y - 12); if (preco) { x.font = 'bold 30px monospace'; x.fillText(preco, w / 2, y + 16); } });
+  }, { niveis: 0 });
+  const face = P.caixa(1.2, 1.6, .06, [P.mat({ cor: '#5a3a24' }), P.mat({ cor: '#5a3a24' }), P.mat({ cor: '#5a3a24' }), P.mat({ cor: '#5a3a24' }), P.mat({ mapa: tex(linhas), semLuz: true }), P.mat({ cor: '#5a3a24' })]);
+  g.add(face);
+  g.trocar = (l, m) => { marca = m ?? -1; face.material[4].uniforms.uMapa.value = tex(l); };
   return g;
 }
 
@@ -217,12 +233,12 @@ export function sala(o = {}) {
   sofa.add(P.caixa(1.8, .42, .8, tec, { pos: [0, .21, 0] }));
   sofa.add(P.caixa(1.8, .55, .22, tec, { pos: [0, .7, -.3] }));
   for (const s of [-1, 1]) sofa.add(P.caixa(.2, .35, .8, tec, { pos: [s * .95, .55, 0] }));
-  // TV na frente (de costas pra câmera geral), mesa de centro, planta
-  const tv = new THREE.Group(); tv.position.set(.1, 0, 1.25); g.add(tv);
-  tv.add(P.caixa(1, .5, .35, P.mat({ mapa: TEX2.madeira(), rep: [2, 1] }), { pos: [0, .25, 0] }));
-  tv.add(P.caixa(.95, .58, .08, P.mat({ cor: '#18181c' }), { pos: [0, .82, 0] }));
-  tv.add(P.caixa(.88, .5, .01, P.mat({ cor: '#7cc6ff', semLuz: true }), { pos: [0, .82, -.045] }));
-  g.add(P.caixa(.8, .3, .5, P.mat({ mapa: TEX2.madeira(), rep: [1, 1] }), { pos: [0, .15, .1] }));
+  // TV no canto do fundo, à direita (não fica na frente da câmera)
+  const tv = new THREE.Group(); tv.position.set(1.15, 0, -.7); tv.rotation.y = -1.2; g.add(tv);
+  tv.add(P.caixa(.8, .45, .35, P.mat({ mapa: TEX2.madeira(), rep: [2, 1] }), { pos: [0, .22, 0] }));
+  tv.add(P.caixa(.8, .48, .06, P.mat({ cor: '#18181c' }), { pos: [0, .72, 0] }));
+  tv.add(P.caixa(.74, .42, .01, P.mat({ cor: '#7cc6ff', semLuz: true }), { pos: [0, .72, .035] }));
+  g.add(P.caixa(.7, .28, .45, P.mat({ mapa: TEX2.madeira(), rep: [1, 1] }), { pos: [.2, .14, .1] }));
   g.add(P.cilindro(.16, .12, .35, P.mat({ cor: '#b8693f' }), { pos: [1.3, .18, -1.3], seg: 8 }));
   for (let i = 0; i < 6; i++) g.add(P.cilindro(0, .09, .6, P.mat({ cor: '#3f8f4e' }), { pos: [1.3 + Math.sin(i) * .12, .6, -1.3 + Math.cos(i) * .12], rot: [Math.cos(i) * .4, 0, Math.sin(i) * .4], seg: 4 }));
   g.add(P.caixa(1.6, .01, 1, P.mat({ mapa: TEX2.tapete({ cor: '#d8c9a8', borda: '#a8977a' }), rep: [1, 1] }), { pos: [0, .005, .1] }));
@@ -239,9 +255,10 @@ export function escritorio(o = {}) {
   const mesa = new THREE.Group(); mesa.position.set(.1, 0, -.2); g.add(mesa);
   mesa.add(P.caixa(1.6, .06, .7, P.mat({ mapa: TEX2.madeira(), rep: [2, 1] }), { pos: [0, .76, 0] }));
   for (const s of [-1, 1]) mesa.add(P.caixa(.06, .76, .65, P.mat({ cor: '#3a3a40' }), { pos: [s * .75, .38, 0] }));
-  mesa.add(P.caixa(.8, .48, .04, P.mat({ cor: '#1b1b20' }), { pos: [0, 1.12, .12] }));
-  const telaPc = P.caixa(.74, .42, .01, P.mat({ mapa: TEX2.tela({ cor: '#3f8cff' }), rep: [1, 1], semLuz: true }), { pos: [0, 1.12, .095] }); mesa.add(telaPc);
-  mesa.add(P.caixa(.08, .14, .08, P.mat({ cor: '#1b1b20' }), { pos: [0, .86, .12] }));
+  const mon = new THREE.Group(); mon.position.set(-.55, 0, .05); mon.rotation.y = .55; mesa.add(mon);
+  mon.add(P.caixa(.6, .38, .04, P.mat({ cor: '#1b1b20' }), { pos: [0, 1.06, 0] }));
+  mon.add(P.caixa(.54, .32, .01, P.mat({ mapa: TEX2.tela({ cor: '#3f8cff' }), rep: [1, 1], semLuz: true }), { pos: [0, 1.06, -.025] }));
+  mon.add(P.caixa(.08, .14, .08, P.mat({ cor: '#1b1b20' }), { pos: [0, .86, 0] }));
   mesa.add(P.caixa(.45, .02, .15, P.mat({ cor: '#2b2b30' }), { pos: [0, .8, -.15] }));
   mesa.add(P.cilindro(.05, .04, .1, P.mat({ cor: '#ffffff' }), { pos: [.55, .84, -.1], seg: 8 }));
   const cad = new THREE.Group(); cad.position.set(.1, 0, -.85); g.add(cad);
@@ -406,7 +423,7 @@ export function diretor(S, planos, cenas) {
 //                 atores:{ nome:{ onde:'ponto'|[x,y,z], pose, expr, rot } }, estado:{...}, objeto, etiqueta, onoma, marco }] }
 const FABRICAS = { quarto, sala, escritorio, rua, vazio };
 const CLIMA_PADRAO = { quarto: 'noite', sala: 'dia', escritorio: 'dia', rua: 'noite', vazio: 'vazio' };
-const OBJETOS = { cerebro, celular: () => { const c = celular(); c.scale.setScalar(3.2); return c; }, despertador: () => { const d = despertador('03:00'); d.scale.setScalar(1.6); return d; }, abajur: () => { const a = abajur(true); a.scale.setScalar(2.2); a.position.y = -.5; return a; } };
+const OBJETOS = { cerebro, celular: () => { const c = celular(); c.scale.setScalar(3.2); return c; }, despertador: () => { const d = despertador('03:00'); d.scale.setScalar(1.6); return d; }, abajur: () => { const a = abajur(true); a.scale.setScalar(2.2); a.position.y = -.5; return a; }, quadro: () => quadro() };
 
 export function filme(S, F) {
   const cenas = {}, atores = {}, objetos = {};
@@ -457,13 +474,14 @@ export function filme(S, F) {
     for (const [nome, o] of Object.entries(objetos)) {
       const sel = typeof p.objeto === 'string' ? p.objeto : p.objeto?.nome;
       o.visible = p.cena === 'vazio' && sel === nome;
-      if (o.visible) { o.rotation.y = .5 + tl * .6; o.rotation.x = Math.sin(tl * 1.3) * .08; if (nome === 'despertador' && p.objeto?.txt) o.trocar(p.objeto.txt); }
+      if (o.visible) { o.rotation.y = .5 + tl * .6; o.rotation.x = Math.sin(tl * 1.3) * .08; if (nome === 'despertador' && p.objeto?.txt) o.trocar(p.objeto.txt);
+        if (nome === 'quadro' && p.objeto?.linhas) { const chave = JSON.stringify([p.objeto.linhas, p.objeto.marca]); if (o._k !== chave) { o.trocar(p.objeto.linhas, p.objeto.marca); o._k = chave; } o.rotation.y = Math.sin(tl * .8) * .12; } }
     }
   }
   diretor(S, planos, cenas);
   // sobreposições
   if (F.gancho) titulo(F.gancho.txt, F.gancho.sub, F.gancho.ate ?? 1.8);
-  etiquetas(F.planos.filter(p => p.etiqueta).map(p => ({ t0: p.t0 + .12, t1: p.t1, ...(typeof p.etiqueta === 'string' ? { txt: p.etiqueta } : p.etiqueta) })));
+  etiquetas(F.planos.filter(p => p.etiqueta).map(p => { const e = typeof p.etiqueta === 'string' ? { txt: p.etiqueta } : p.etiqueta; return { t0: p.t0 + .12, t1: e.fim ?? p.t1, ...e }; }));
   onomatopeias(F.planos.filter(p => p.onoma).map(p => ({ t0: p.t0 + .05, t1: Math.min(p.t1, p.t0 + .9), ...(typeof p.onoma === 'string' ? { txt: p.onoma } : p.onoma) })));
   const marcos = F.planos.filter(p => p.marco).map(p => ({ t: p.t0, rotulo: p.marco }));
   if (marcos.length > 1) barraTempo(marcos, { ate: F.planos.filter(p => p.marco).at(-1).t1 + 2 });

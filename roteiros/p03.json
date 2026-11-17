@@ -1,0 +1,460 @@
+{
+ "id": "p03",
+ "motor": "ps1",
+ "titulo": "O truque do preço isca",
+ "formato": "short",
+ "voz": "en-US-BrianMultilingualNeural",
+ "taxa": "+8%",
+ "trilha": "curioso2",
+ "gancho": {
+  "txt": "VOCÊ CAIU",
+  "sub": "nesse truque de preço sem perceber"
+ },
+ "elenco": {
+  "dono": {
+   "camisa": "#e63946",
+   "cabelo": "#1b1b1b"
+  }
+ },
+ "destaque": [
+  "isca",
+  "oitenta",
+  "quatro"
+ ],
+ "cenas": [
+  {
+   "texto": "Você vende assinaturas de uma revista, e tem um problema.",
+   "planos": [
+    {
+     "palavras": 5,
+     "cena": "escritorio",
+     "cam": {
+      "tipo": "medio",
+      "alvo": "rosto",
+      "ang": 35
+     },
+     "atores": {
+      "dono": {
+       "onde": "cadeira",
+       "expr": "normal"
+      }
+     }
+    },
+    {
+     "palavras": 0,
+     "cena": "escritorio",
+     "cam": {
+      "tipo": "close",
+      "alvo": "rosto",
+      "ang": 20
+     },
+     "atores": {
+      "dono": {
+       "onde": "cadeira",
+       "expr": "triste",
+       "pose": "pensando"
+      }
+     },
+     "onoma": "?"
+    }
+   ],
+   "id": 1
+  },
+  {
+   "texto": "A maioria escolhe o plano mais barato.",
+   "planos": [
+    {
+     "palavras": 0,
+     "cena": "vazio",
+     "cam": {
+      "tipo": "americano",
+      "zoom": 1.05,
+      "mov": "entra"
+     },
+     "objeto": {
+      "nome": "quadro",
+      "linhas": [
+       "WEB ......... $59",
+       "PAPEL+WEB ... $125"
+      ],
+      "marca": 0
+     },
+     "etiqueta": {
+      "txt": "68% NO BARATO",
+      "cor": "vermelho",
+      "icone": "✗"
+     }
+    }
+   ],
+   "id": 2
+  },
+  {
+   "texto": "Você precisa que eles peguem o caro. Sem baixar o preço.",
+   "planos": [
+    {
+     "palavras": 5,
+     "cena": "escritorio",
+     "cam": {
+      "tipo": "americano",
+      "alvo": "rosto",
+      "ang": 40,
+      "alt": 0.2
+     },
+     "atores": {
+      "dono": {
+       "onde": "cadeira",
+       "expr": "bravo",
+       "pose": "bravo"
+      }
+     }
+    },
+    {
+     "palavras": 0,
+     "cena": "vazio",
+     "cam": {
+      "tipo": "americano",
+      "zoom": 1.05,
+      "mov": "gira"
+     },
+     "objeto": {
+      "nome": "quadro",
+      "linhas": [
+       "WEB ......... $59",
+       "PAPEL+WEB ... $125"
+      ],
+      "marca": 1
+     }
+    }
+   ],
+   "id": 3
+  },
+  {
+   "texto": "Primeiro passo: você cria uma terceira opção.",
+   "planos": [
+    {
+     "palavras": 0,
+     "cena": "escritorio",
+     "cam": {
+      "tipo": "close",
+      "alvo": "rosto",
+      "ang": 15
+     },
+     "atores": {
+      "dono": {
+       "onde": "cadeira",
+       "expr": "feliz",
+       "pose": "pensando"
+      }
+     },
+     "etiqueta": {
+      "txt": "PASSO 1",
+      "cor": "amarelo"
+     }
+    }
+   ],
+   "id": 4
+  },
+  {
+   "texto": "Só a revista de papel. Pelo mesmo preço do combo completo.",
+   "planos": [
+    {
+     "palavras": 5,
+     "cena": "vazio",
+     "cam": {
+      "tipo": "americano",
+      "zoom": 1.05,
+      "mov": "entra"
+     },
+     "objeto": {
+      "nome": "quadro",
+      "linhas": [
+       "WEB ......... $59",
+       "PAPEL ....... $125",
+       "PAPEL+WEB ... $125"
+      ],
+      "marca": 1
+     },
+     "onoma": "!?"
+    },
+    {
+     "palavras": 0,
+     "cena": "vazio",
+     "cam": {
+      "tipo": "americano",
+      "zoom": 1.0,
+      "mov": "gira"
+     },
+     "objeto": {
+      "nome": "quadro",
+      "linhas": [
+       "WEB ......... $59",
+       "PAPEL ....... $125",
+       "PAPEL+WEB ... $125"
+      ],
+      "marca": 2
+     }
+    }
+   ],
+   "id": 5
+  },
+  {
+   "texto": "Ninguém vai escolher essa. E é exatamente essa a ideia.",
+   "planos": [
+    {
+     "palavras": 3,
+     "cena": "escritorio",
+     "cam": {
+      "tipo": "medio",
+      "alvo": "rosto",
+      "ang": 30
+     },
+     "atores": {
+      "dono": {
+       "onde": "cadeira",
+       "expr": "feliz"
+      }
+     }
+    },
+    {
+     "palavras": 0,
+     "cena": "escritorio",
+     "cam": {
+      "tipo": "close",
+      "alvo": "rosto",
+      "ang": 25
+     },
+     "atores": {
+      "dono": {
+       "onde": "cadeira",
+       "expr": "feliz",
+       "pose": "tchau"
+      }
+     },
+     "etiqueta": {
+      "txt": "A ISCA",
+      "cor": "vermelho"
+     }
+    }
+   ],
+   "id": 6
+  },
+  {
+   "texto": "Do lado dela, o combo parece um presente.",
+   "planos": [
+    {
+     "palavras": 0,
+     "cena": "vazio",
+     "cam": {
+      "tipo": "americano",
+      "zoom": 1.05,
+      "mov": "entra"
+     },
+     "objeto": {
+      "nome": "quadro",
+      "linhas": [
+       "WEB ......... $59",
+       "PAPEL ....... $125",
+       "PAPEL+WEB ... $125"
+      ],
+      "marca": 2
+     },
+     "etiqueta": {
+      "txt": "\"PAPEL GRÁTIS!\"",
+      "cor": "verde",
+      "icone": "✓"
+     }
+    }
+   ],
+   "id": 7
+  },
+  {
+   "texto": "Resultado: os que escolhiam o caro pularam de trinta e dois para oitenta e quatro por cento.",
+   "planos": [
+    {
+     "palavras": 6,
+     "cena": "vazio",
+     "cam": {
+      "tipo": "americano",
+      "zoom": 1.05,
+      "mov": "gira"
+     },
+     "objeto": {
+      "nome": "quadro",
+      "linhas": [
+       "WEB ......... $59",
+       "PAPEL ....... $125",
+       "PAPEL+WEB ... $125"
+      ],
+      "marca": 2
+     },
+     "revela": true
+    },
+    {
+     "palavras": 0,
+     "cena": "escritorio",
+     "cam": {
+      "tipo": "medio",
+      "alvo": "rosto",
+      "ang": 35,
+      "mov": "sai"
+     },
+     "atores": {
+      "dono": {
+       "onde": "cadeira",
+       "expr": "feliz",
+       "pose": "tchau"
+      }
+     },
+     "etiqueta": {
+      "txt": "32% → 84%",
+      "cor": "verde",
+      "icone": "↑"
+     }
+    }
+   ],
+   "id": 8
+  },
+  {
+   "texto": "E isso aconteceu de verdade.",
+   "planos": [
+    {
+     "palavras": 0,
+     "cena": "vazio",
+     "cam": {
+      "tipo": "americano",
+      "ang": 0,
+      "mov": "entra"
+     },
+     "objeto": "cerebro",
+     "revela": true
+    }
+   ],
+   "id": 9
+  },
+  {
+   "texto": "Era a revista The Economist, e o psicólogo Dan Ariely testou com cem alunos do MIT.",
+   "planos": [
+    {
+     "palavras": 6,
+     "cena": "vazio",
+     "cam": {
+      "tipo": "americano",
+      "zoom": 1.05,
+      "mov": "entra"
+     },
+     "objeto": {
+      "nome": "quadro",
+      "linhas": [
+       "WEB ......... $59",
+       "PAPEL ....... $125",
+       "PAPEL+WEB ... $125"
+      ],
+      "marca": 2
+     },
+     "etiqueta": {
+      "txt": "THE ECONOMIST",
+      "cor": "branco"
+     }
+    },
+    {
+     "palavras": 0,
+     "cena": "escritorio",
+     "cam": {
+      "tipo": "geral",
+      "alvo": "centro",
+      "ang": 40
+     },
+     "atores": {
+      "dono": {
+       "onde": "cadeira",
+       "expr": "normal"
+      }
+     },
+     "etiqueta": {
+      "txt": "100 ALUNOS DO MIT",
+      "cor": "branco"
+     }
+    }
+   ],
+   "id": 10
+  },
+  {
+   "texto": "Isso se chama efeito isca. Está em cardápio, cinema e loja de celular.",
+   "planos": [
+    {
+     "palavras": 5,
+     "cena": "vazio",
+     "cam": {
+      "tipo": "americano",
+      "ang": -15,
+      "mov": "gira"
+     },
+     "objeto": "cerebro",
+     "etiqueta": {
+      "txt": "EFEITO ISCA",
+      "cor": "amarelo",
+      "icone": "!"
+     }
+    },
+    {
+     "palavras": 0,
+     "cena": "sala",
+     "cam": {
+      "tipo": "medio",
+      "alvo": "sofa",
+      "ang": 30
+     },
+     "atores": {
+      "dono": {
+       "onde": "sofa",
+       "pose": "celular",
+       "expr": "normal"
+      }
+     }
+    }
+   ],
+   "id": 11
+  },
+  {
+   "texto": "Manda pra quem sempre pega o combo. Você já caiu nessa?",
+   "planos": [
+    {
+     "palavras": 6,
+     "cena": "sala",
+     "cam": {
+      "tipo": "americano",
+      "alvo": "sofa",
+      "ang": 20,
+      "alt": 0.5
+     },
+     "atores": {
+      "dono": {
+       "onde": "sofa",
+       "expr": "susto"
+      }
+     }
+    },
+    {
+     "palavras": 0,
+     "cena": "sala",
+     "cam": {
+      "tipo": "close",
+      "alvo": "rosto",
+      "ang": 15
+     },
+     "atores": {
+      "dono": {
+       "onde": "sofa",
+       "expr": "feliz"
+      }
+     },
+     "etiqueta": {
+      "txt": "E VOCÊ?",
+      "cor": "amarelo"
+     }
+    }
+   ],
+   "id": 12
+  }
+ ]
+}

@@ -1,0 +1,357 @@
+{
+ "id": "p04",
+ "motor": "ps1",
+ "titulo": "Quem fala sozinho",
+ "formato": "short",
+ "voz": "en-US-BrianMultilingualNeural",
+ "taxa": "+8%",
+ "trilha": "curioso1",
+ "gancho": {
+  "txt": "PRESTA ATENÇÃO",
+  "sub": "em quem fala sozinho"
+ },
+ "elenco": {
+  "voce": {
+   "camisa": "#ffb703",
+   "cabelo": "#5a3a1a"
+  }
+ },
+ "destaque": [
+  "sozinho",
+  "rápido",
+  "nome",
+  "ansiedade"
+ ],
+ "cenas": [
+  {
+   "texto": "Você conhece alguém que fala sozinho? Se eu fosse você, prestava atenção nessa pessoa.",
+   "planos": [
+    {
+     "palavras": 5,
+     "cena": "escritorio",
+     "cam": {
+      "tipo": "medio",
+      "alvo": "rosto",
+      "ang": 35
+     },
+     "atores": {
+      "voce": {
+       "onde": "cadeira",
+       "expr": "normal",
+       "pose": "pensando"
+      }
+     }
+    },
+    {
+     "palavras": 5,
+     "cena": "escritorio",
+     "cam": {
+      "tipo": "close",
+      "alvo": "rosto",
+      "ang": 15
+     },
+     "atores": {
+      "voce": {
+       "onde": "cadeira",
+       "expr": "feliz",
+       "pose": "pensando"
+      }
+     },
+     "onoma": "blá blá"
+    },
+    {
+     "palavras": 0,
+     "cena": "escritorio",
+     "cam": {
+      "tipo": "americano",
+      "alvo": "rosto",
+      "ang": 50,
+      "mov": "gira"
+     },
+     "atores": {
+      "voce": {
+       "onde": "cadeira",
+       "expr": "bravo"
+      }
+     }
+    }
+   ],
+   "id": 1
+  },
+  {
+   "texto": "Num experimento, pessoas tinham que achar um objeto no meio de várias fotos.",
+   "planos": [
+    {
+     "palavras": 6,
+     "cena": "vazio",
+     "cam": {
+      "tipo": "americano",
+      "mov": "entra"
+     },
+     "objeto": "cerebro",
+     "etiqueta": {
+      "txt": "O EXPERIMENTO",
+      "cor": "branco"
+     }
+    },
+    {
+     "palavras": 0,
+     "cena": "sala",
+     "cam": {
+      "tipo": "medio",
+      "alvo": "sofa",
+      "ang": 30
+     },
+     "atores": {
+      "voce": {
+       "onde": "sofa",
+       "expr": "pensando",
+       "pose": "celular"
+      }
+     }
+    }
+   ],
+   "id": 2
+  },
+  {
+   "texto": "Quem falava o nome do objeto em voz alta achava mais rápido.",
+   "planos": [
+    {
+     "palavras": 5,
+     "cena": "sala",
+     "cam": {
+      "tipo": "close",
+      "alvo": "rosto",
+      "ang": 20
+     },
+     "atores": {
+      "voce": {
+       "onde": "sofa",
+       "expr": "feliz",
+       "pose": "celular"
+      }
+     },
+     "onoma": "ACHEI!"
+    },
+    {
+     "palavras": 0,
+     "cena": "vazio",
+     "cam": {
+      "tipo": "americano",
+      "ang": -20,
+      "mov": "gira"
+     },
+     "objeto": "cerebro",
+     "revela": true,
+     "etiqueta": {
+      "txt": "MAIS RÁPIDO",
+      "cor": "verde",
+      "icone": "✓"
+     }
+    }
+   ],
+   "id": 3
+  },
+  {
+   "texto": "E tem mais. Falar consigo mesmo pelo próprio nome acalma.",
+   "planos": [
+    {
+     "palavras": 3,
+     "cena": "escritorio",
+     "cam": {
+      "tipo": "close",
+      "alvo": "rosto",
+      "ang": 25
+     },
+     "atores": {
+      "voce": {
+       "onde": "cadeira",
+       "expr": "susto"
+      }
+     }
+    },
+    {
+     "palavras": 0,
+     "cena": "escritorio",
+     "cam": {
+      "tipo": "americano",
+      "alvo": "rosto",
+      "ang": 40,
+      "alt": 0.2
+     },
+     "atores": {
+      "voce": {
+       "onde": "cadeira",
+       "expr": "feliz"
+      }
+     },
+     "etiqueta": {
+      "txt": "\"calma, João\"",
+      "cor": "branco"
+     }
+    }
+   ],
+   "id": 4
+  },
+  {
+   "texto": "Em outro estudo, quem fez isso antes de um discurso sentiu bem menos ansiedade.",
+   "planos": [
+    {
+     "palavras": 6,
+     "cena": "vazio",
+     "cam": {
+      "tipo": "americano",
+      "mov": "entra"
+     },
+     "objeto": "cerebro",
+     "etiqueta": {
+      "txt": "MENOS ANSIEDADE",
+      "cor": "verde",
+      "icone": "↓"
+     }
+    },
+    {
+     "palavras": 0,
+     "cena": "rua",
+     "cam": {
+      "tipo": "medio",
+      "alvo": "calcada",
+      "ang": 25
+     },
+     "atores": {
+      "voce": {
+       "onde": "calcada",
+       "expr": "feliz",
+       "anda": [
+        0,
+        -0.5
+       ]
+      }
+     }
+    }
+   ],
+   "id": 5
+  },
+  {
+   "texto": "Ah, mas isso não é coisa de doido? Não.",
+   "planos": [
+    {
+     "palavras": 6,
+     "cena": "escritorio",
+     "cam": {
+      "tipo": "medio",
+      "alvo": "rosto",
+      "ang": 30
+     },
+     "atores": {
+      "voce": {
+       "onde": "cadeira",
+       "expr": "bravo",
+       "pose": "bravo"
+      }
+     },
+     "etiqueta": {
+      "txt": "\"é coisa de doido\"",
+      "cor": "branco"
+     }
+    },
+    {
+     "palavras": 0,
+     "cena": "escritorio",
+     "cam": {
+      "tipo": "close",
+      "alvo": "rosto",
+      "ang": 20
+     },
+     "atores": {
+      "voce": {
+       "onde": "cadeira",
+       "expr": "feliz"
+      }
+     },
+     "etiqueta": {
+      "txt": "NÃO",
+      "cor": "vermelho",
+      "icone": "✗"
+     }
+    }
+   ],
+   "id": 6
+  },
+  {
+   "texto": "Falar sozinho é o cérebro organizando o pensamento em voz alta.",
+   "planos": [
+    {
+     "palavras": 4,
+     "cena": "vazio",
+     "cam": {
+      "tipo": "americano",
+      "ang": 10,
+      "mov": "gira"
+     },
+     "objeto": "cerebro"
+    },
+    {
+     "palavras": 0,
+     "cena": "escritorio",
+     "cam": {
+      "tipo": "americano",
+      "alvo": "rosto",
+      "ang": 45,
+      "mov": "sai"
+     },
+     "atores": {
+      "voce": {
+       "onde": "cadeira",
+       "expr": "feliz",
+       "pose": "pensando"
+      }
+     }
+    }
+   ],
+   "id": 7
+  },
+  {
+   "texto": "Manda pra aquele amigo que fala sozinho. E você, fala também?",
+   "planos": [
+    {
+     "palavras": 6,
+     "cena": "sala",
+     "cam": {
+      "tipo": "americano",
+      "alvo": "sofa",
+      "ang": 25,
+      "alt": 0.5
+     },
+     "atores": {
+      "voce": {
+       "onde": "sofa",
+       "expr": "feliz",
+       "pose": "tchau"
+      }
+     }
+    },
+    {
+     "palavras": 0,
+     "cena": "sala",
+     "cam": {
+      "tipo": "close",
+      "alvo": "rosto",
+      "ang": 15
+     },
+     "atores": {
+      "voce": {
+       "onde": "sofa",
+       "expr": "feliz"
+      }
+     },
+     "etiqueta": {
+      "txt": "E VOCÊ?",
+      "cor": "amarelo"
+     }
+    }
+   ],
+   "id": 8
+  }
+ ]
+}

@@ -50,6 +50,43 @@ def amostras():
     return out
 
 
+APROXIMA = {"geral": "medio", "medio": "americano", "americano": "close", "close": "americano", "cima": "medio", "detalhe": "americano"}
+MOVS = ["entra", "gira", "sai", "sobe", "lado"]
+
+
+def picotar(planos, alvo=1.35, maximo=1.75):
+    """Os virais cortam a cada ~1,3 s: plano comprido vira 2-3 ângulos do mesmo momento (como a Bizzarologia)."""
+    out = []
+    for p in planos:
+        d = p["t1"] - p["t0"]
+        if d <= maximo:
+            out.append(p); continue
+        n = max(2, round(d / alvo))
+        passo = d / n
+        for k in range(n):
+            q = json.loads(json.dumps(p))
+            q["t0"] = round(p["t0"] + k * passo, 3); q["t1"] = round(p["t0"] + (k + 1) * passo, 3)
+            if k > 0:
+                cam = q.setdefault("cam", {})
+                if q.get("cena") == "vazio":
+                    cam["ang"] = cam.get("ang", 0) + (35 if k % 2 else -35)
+                    cam["zoom"] = round(cam.get("zoom", 1) * (0.78 if k % 2 else 1.15), 2)
+                else:
+                    cam["ang"] = max(5, min(80, cam.get("ang", 35) + (30 if k % 2 else -25)))
+                    if k % 2:
+                        cam["tipo"] = APROXIMA.get(cam.get("tipo", "medio"), "americano")
+                cam["mov"] = MOVS[(k + len(out)) % len(MOVS)]
+                for chave in ("onoma", "revela", "marco"):
+                    q.pop(chave, None)
+                q.pop("etiqueta", None)
+            elif q.get("etiqueta"):
+                e = q["etiqueta"] if isinstance(q["etiqueta"], dict) else {"txt": q["etiqueta"]}
+                e["fim"] = p["t1"]; q["etiqueta"] = e
+            q["sub"] = k
+            out.append(q)
+    return out
+
+
 def main(vid, estimar=False):
     rot = json.loads((RAIZ / "roteiros" / f"{vid}.json").read_text())
     voz = RAIZ / "public" / "build" / vid / "voz"
@@ -86,12 +123,16 @@ def main(vid, estimar=False):
         a["t1"] = b["t0"]
     planos[-1]["t1"] = round(t + 0.6, 3)
     total = round(t + 0.6, 2)
+    planos = picotar(planos)
     # efeitos automáticos: um por corte (alternando), pop na etiqueta, impacto na onomatopeia, riser antes da revelação
     cortes = ["whoosh", "swish", "whoosh_leve", "swipe", "whoosh", "zip"]
     for i, p in enumerate(planos):
         if i > 0:
             troca = planos[i - 1]["cena"] != p["cena"]
-            sons.append(("whoosh_forte" if troca else cortes[i % len(cortes)], p["t0"], 0.55 if troca else 0.38))
+            if p.get("sub"):
+                sons.append(("click" if i % 2 else "tap", p["t0"], 0.32))   # troca de ângulo: um clique seco
+            else:
+                sons.append(("whoosh_forte" if troca else cortes[i % len(cortes)], p["t0"], 0.55 if troca else 0.38))
         if p.get("etiqueta"):
             sons.append(("pop", p["t0"] + 0.12, 0.7))
         if p.get("onoma"):

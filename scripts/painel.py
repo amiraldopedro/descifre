@@ -55,7 +55,7 @@ def dados_roteiro(vid):
     dur = None
     if man_p.exists():
         m = json.loads(man_p.read_text())
-        dur = round(sum(c["duracao"] for c in m["cenas"]) / m.get("fps", 30))
+        dur = round((sum(c["duracao"] for c in m["cenas"]) if m.get("cenas") else m.get("totalFrames", 0)) / m.get("fps", 30))
     return {
         "tipo": "short" if vid[:1] in ("s", "p") else "longo",
         "titulo": meta.get("titulo", rot.get("titulo", vid)),

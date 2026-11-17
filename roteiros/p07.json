@@ -1,0 +1,362 @@
+{
+ "id": "p07",
+ "motor": "ps1",
+ "titulo": "11 dias sem dormir",
+ "formato": "short",
+ "voz": "en-US-BrianMultilingualNeural",
+ "taxa": "+8%",
+ "trilha": "acao1",
+ "gancho": {
+  "txt": "11 DIAS",
+  "sub": "sem dormir: veja o que aconteceu"
+ },
+ "elenco": {
+  "voce": {
+   "camisa": "#e76f51",
+   "cabelo": "#3a2416"
+  }
+ },
+ "destaque": [
+  "onze",
+  "placa",
+  "catorze"
+ ],
+ "cenas": [
+  {
+   "texto": "E se você ficasse onze dias sem dormir?",
+   "planos": [
+    {
+     "palavras": 0,
+     "cena": "quarto",
+     "cam": {
+      "tipo": "medio",
+      "alvo": "cama",
+      "ang": 40
+     },
+     "atores": {
+      "voce": {
+       "onde": "deitado",
+       "expr": "susto"
+      }
+     },
+     "clima": "noite"
+    }
+   ],
+   "id": 1
+  },
+  {
+   "texto": "Em mil novecentos e sessenta e quatro, um estudante de dezessete anos fez isso numa feira de ciências.",
+   "planos": [
+    {
+     "palavras": 6,
+     "cena": "escritorio",
+     "cam": {
+      "tipo": "medio",
+      "alvo": "rosto",
+      "ang": 35
+     },
+     "atores": {
+      "voce": {
+       "onde": "cadeira",
+       "expr": "feliz"
+      }
+     },
+     "etiqueta": {
+      "txt": "1964 · EUA",
+      "cor": "branco"
+     }
+    },
+    {
+     "palavras": 0,
+     "cena": "escritorio",
+     "cam": {
+      "tipo": "close",
+      "alvo": "rosto",
+      "ang": 20
+     },
+     "atores": {
+      "voce": {
+       "onde": "cadeira",
+       "expr": "feliz",
+       "pose": "tchau"
+      }
+     },
+     "etiqueta": {
+      "txt": "17 ANOS",
+      "cor": "branco"
+     }
+    }
+   ],
+   "id": 2
+  },
+  {
+   "texto": "No segundo dia, ele já não conseguia focar os olhos.",
+   "planos": [
+    {
+     "palavras": 0,
+     "cena": "escritorio",
+     "cam": {
+      "tipo": "close",
+      "alvo": "rosto",
+      "ang": 10
+     },
+     "atores": {
+      "voce": {
+       "onde": "cadeira",
+       "expr": "triste"
+      }
+     },
+     "marco": "dia 2"
+    }
+   ],
+   "id": 3
+  },
+  {
+   "texto": "No quarto dia, achou que uma placa de rua era uma pessoa.",
+   "planos": [
+    {
+     "palavras": 5,
+     "cena": "rua",
+     "cam": {
+      "tipo": "medio",
+      "alvo": "poste",
+      "ang": 30
+     },
+     "atores": {
+      "voce": {
+       "onde": "calcada",
+       "expr": "susto",
+       "anda": [
+        0,
+        -0.3
+       ]
+      }
+     },
+     "marco": "dia 4"
+    },
+    {
+     "palavras": 0,
+     "cena": "rua",
+     "cam": {
+      "tipo": "close",
+      "alvo": [
+       -2.4,
+       1.5,
+       0.9
+      ],
+      "ang": 15
+     },
+     "atores": {
+      "voce": {
+       "onde": "calcada",
+       "expr": "susto",
+       "pose": "susto"
+      }
+     },
+     "onoma": "QUEM?"
+    }
+   ],
+   "id": 4
+  },
+  {
+   "texto": "Depois, jurou que era um jogador famoso de futebol americano.",
+   "planos": [
+    {
+     "palavras": 5,
+     "cena": "escritorio",
+     "cam": {
+      "tipo": "americano",
+      "alvo": "rosto",
+      "ang": 40
+     },
+     "atores": {
+      "voce": {
+       "onde": "cadeira",
+       "expr": "feliz",
+       "pose": "tchau"
+      }
+     },
+     "marco": "dia 6"
+    },
+    {
+     "palavras": 0,
+     "cena": "vazio",
+     "cam": {
+      "tipo": "americano",
+      "mov": "gira"
+     },
+     "objeto": "cerebro",
+     "etiqueta": {
+      "txt": "\"eu sou famoso\"",
+      "cor": "branco"
+     }
+    }
+   ],
+   "id": 5
+  },
+  {
+   "texto": "No fim, esquecia o que estava falando no meio da frase.",
+   "planos": [
+    {
+     "palavras": 0,
+     "cena": "escritorio",
+     "cam": {
+      "tipo": "close",
+      "alvo": "rosto",
+      "ang": 25
+     },
+     "atores": {
+      "voce": {
+       "onde": "cadeira",
+       "expr": "triste",
+       "pose": "pensando"
+      }
+     },
+     "marco": "dia 11",
+     "onoma": "...?"
+    }
+   ],
+   "id": 6
+  },
+  {
+   "texto": "Foram duzentas e sessenta e quatro horas acordado.",
+   "planos": [
+    {
+     "palavras": 0,
+     "cena": "vazio",
+     "cam": {
+      "tipo": "americano",
+      "zoom": 1.0,
+      "mov": "entra"
+     },
+     "objeto": {
+      "nome": "despertador",
+      "txt": "264 h"
+     },
+     "revela": true
+    }
+   ],
+   "id": 7
+  },
+  {
+   "texto": "Quando terminou, ele dormiu catorze horas seguidas e se recuperou.",
+   "planos": [
+    {
+     "palavras": 5,
+     "cena": "quarto",
+     "cam": {
+      "tipo": "medio",
+      "alvo": "cama",
+      "ang": 40
+     },
+     "atores": {
+      "voce": {
+       "onde": "deitado",
+       "expr": "dormindo"
+      }
+     },
+     "clima": "noite"
+    },
+    {
+     "palavras": 0,
+     "cena": "quarto",
+     "cam": {
+      "tipo": "cima",
+      "alvo": "cama",
+      "ang": 30
+     },
+     "atores": {
+      "voce": {
+       "onde": "deitado",
+       "expr": "dormindo"
+      }
+     },
+     "etiqueta": {
+      "txt": "14 HORAS DE SONO",
+      "cor": "verde",
+      "icone": "✓"
+     }
+    }
+   ],
+   "id": 8
+  },
+  {
+   "texto": "Mas o Guinness parou de aceitar esse tipo de recorde. É perigoso demais.",
+   "planos": [
+    {
+     "palavras": 6,
+     "cena": "vazio",
+     "cam": {
+      "tipo": "americano",
+      "mov": "gira"
+     },
+     "objeto": "cerebro",
+     "etiqueta": {
+      "txt": "PERIGOSO",
+      "cor": "vermelho",
+      "icone": "✗"
+     }
+    },
+    {
+     "palavras": 0,
+     "cena": "quarto",
+     "cam": {
+      "tipo": "close",
+      "alvo": "cabeca",
+      "ang": 30,
+      "alt": 1.0
+     },
+     "atores": {
+      "voce": {
+       "onde": "deitado",
+       "expr": "dormindo"
+      }
+     }
+    }
+   ],
+   "id": 9
+  },
+  {
+   "texto": "Manda pra quem vira a noite toda hora. Quantas horas você já ficou acordado?",
+   "planos": [
+    {
+     "palavras": 8,
+     "cena": "escritorio",
+     "cam": {
+      "tipo": "americano",
+      "alvo": "rosto",
+      "ang": 25,
+      "alt": 0.15
+     },
+     "atores": {
+      "voce": {
+       "onde": "cadeira",
+       "expr": "feliz",
+       "pose": "tchau"
+      }
+     }
+    },
+    {
+     "palavras": 0,
+     "cena": "escritorio",
+     "cam": {
+      "tipo": "close",
+      "alvo": "rosto",
+      "ang": 15
+     },
+     "atores": {
+      "voce": {
+       "onde": "cadeira",
+       "expr": "feliz"
+      }
+     },
+     "etiqueta": {
+      "txt": "E VOCÊ?",
+      "cor": "amarelo"
+     }
+    }
+   ],
+   "id": 10
+  }
+ ]
+}

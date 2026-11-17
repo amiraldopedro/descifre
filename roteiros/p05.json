@@ -1,0 +1,358 @@
+{
+ "id": "p05",
+ "motor": "ps1",
+ "titulo": "O celular que não vibrou",
+ "formato": "short",
+ "voz": "en-US-BrianMultilingualNeural",
+ "taxa": "+8%",
+ "trilha": "misterio3",
+ "gancho": {
+  "txt": "VIBROU?",
+  "sub": "então olha isso antes de pegar o celular"
+ },
+ "elenco": {
+  "voce": {
+   "camisa": "#8338ec",
+   "cabelo": "#1b1b1b",
+   "estilo": "longo",
+   "pele": "#c98d63"
+  }
+ },
+ "destaque": [
+  "fantasma",
+  "nove",
+  "cérebro",
+  "aviso"
+ ],
+ "cenas": [
+  {
+   "texto": "Você conhece alguém que pega o celular jurando que ele vibrou, e não tinha nada?",
+   "planos": [
+    {
+     "palavras": 4,
+     "cena": "sala",
+     "cam": {
+      "tipo": "medio",
+      "alvo": "sofa",
+      "ang": 35
+     },
+     "atores": {
+      "voce": {
+       "onde": "sofa",
+       "expr": "normal"
+      }
+     }
+    },
+    {
+     "palavras": 4,
+     "cena": "sala",
+     "cam": {
+      "tipo": "close",
+      "alvo": "rosto",
+      "ang": 20
+     },
+     "atores": {
+      "voce": {
+       "onde": "sofa",
+       "expr": "susto"
+      }
+     },
+     "onoma": "BZZZ"
+    },
+    {
+     "palavras": 0,
+     "cena": "sala",
+     "cam": {
+      "tipo": "americano",
+      "alvo": "sofa",
+      "ang": 45,
+      "alt": 0.5
+     },
+     "atores": {
+      "voce": {
+       "onde": "sofa",
+       "expr": "triste",
+       "pose": "celular"
+      }
+     }
+    }
+   ],
+   "id": 1
+  },
+  {
+   "texto": "Isso tem nome: vibração fantasma.",
+   "planos": [
+    {
+     "palavras": 0,
+     "cena": "vazio",
+     "cam": {
+      "tipo": "americano",
+      "zoom": 1.0,
+      "mov": "entra"
+     },
+     "objeto": "celular",
+     "revela": true,
+     "etiqueta": {
+      "txt": "VIBRAÇÃO FANTASMA",
+      "cor": "amarelo",
+      "icone": "!"
+     }
+    }
+   ],
+   "id": 2
+  },
+  {
+   "texto": "Num estudo, quase nove em cada dez universitários disseram que sentem isso.",
+   "planos": [
+    {
+     "palavras": 5,
+     "cena": "rua",
+     "cam": {
+      "tipo": "geral",
+      "alvo": "calcada",
+      "ang": 30,
+      "zoom": 0.8
+     },
+     "atores": {
+      "voce": {
+       "onde": "calcada",
+       "expr": "normal",
+       "anda": [
+        0,
+        -0.5
+       ]
+      }
+     }
+    },
+    {
+     "palavras": 0,
+     "cena": "vazio",
+     "cam": {
+      "tipo": "americano",
+      "mov": "gira"
+     },
+     "objeto": "cerebro",
+     "etiqueta": {
+      "txt": "9 EM CADA 10",
+      "cor": "vermelho"
+     }
+    }
+   ],
+   "id": 3
+  },
+  {
+   "texto": "O motivo: o seu cérebro vive esperando uma notificação.",
+   "planos": [
+    {
+     "palavras": 3,
+     "cena": "vazio",
+     "cam": {
+      "tipo": "americano",
+      "ang": 20,
+      "mov": "entra"
+     },
+     "objeto": "cerebro"
+    },
+    {
+     "palavras": 0,
+     "cena": "sala",
+     "cam": {
+      "tipo": "close",
+      "alvo": "rosto",
+      "ang": 25
+     },
+     "atores": {
+      "voce": {
+       "onde": "sofa",
+       "expr": "normal",
+       "pose": "celular"
+      }
+     }
+    }
+   ],
+   "id": 4
+  },
+  {
+   "texto": "Ele fica tão ligado que confunde qualquer coceira, ou a roupa encostando, com o celular.",
+   "planos": [
+    {
+     "palavras": 5,
+     "cena": "sala",
+     "cam": {
+      "tipo": "americano",
+      "alvo": "sofa",
+      "ang": 30,
+      "alt": 0.5
+     },
+     "atores": {
+      "voce": {
+       "onde": "sofa",
+       "expr": "susto"
+      }
+     }
+    },
+    {
+     "palavras": 5,
+     "cena": "vazio",
+     "cam": {
+      "tipo": "americano",
+      "zoom": 1.0,
+      "mov": "gira"
+     },
+     "objeto": "celular",
+     "onoma": "?!"
+    },
+    {
+     "palavras": 0,
+     "cena": "sala",
+     "cam": {
+      "tipo": "close",
+      "alvo": "rosto",
+      "ang": 15
+     },
+     "atores": {
+      "voce": {
+       "onde": "sofa",
+       "expr": "bravo"
+      }
+     }
+    }
+   ],
+   "id": 5
+  },
+  {
+   "texto": "Pro cérebro, é melhor errar pra mais do que perder um aviso.",
+   "planos": [
+    {
+     "palavras": 0,
+     "cena": "vazio",
+     "cam": {
+      "tipo": "americano",
+      "ang": -15,
+      "mov": "gira"
+     },
+     "objeto": "cerebro",
+     "etiqueta": {
+      "txt": "MELHOR ERRAR",
+      "cor": "branco"
+     }
+    }
+   ],
+   "id": 6
+  },
+  {
+   "texto": "Ah, mas eu nem uso tanto o celular. Aí é que tá: quem usa mais, sente mais.",
+   "planos": [
+    {
+     "palavras": 7,
+     "cena": "sala",
+     "cam": {
+      "tipo": "medio",
+      "alvo": "sofa",
+      "ang": 40
+     },
+     "atores": {
+      "voce": {
+       "onde": "sofa",
+       "expr": "feliz"
+      }
+     },
+     "etiqueta": {
+      "txt": "\"eu nem uso tanto\"",
+      "cor": "branco"
+     }
+    },
+    {
+     "palavras": 0,
+     "cena": "rua",
+     "cam": {
+      "tipo": "medio",
+      "alvo": "calcada",
+      "ang": 20
+     },
+     "atores": {
+      "voce": {
+       "onde": "calcada",
+       "pose": "celular",
+       "anda": [
+        0,
+        -0.4
+       ]
+      }
+     }
+    }
+   ],
+   "id": 7
+  },
+  {
+   "texto": "Quer diminuir? Deixa o celular longe do corpo por umas horas.",
+   "planos": [
+    {
+     "palavras": 0,
+     "cena": "sala",
+     "cam": {
+      "tipo": "americano",
+      "alvo": "sofa",
+      "ang": 30,
+      "alt": 0.5,
+      "mov": "sai"
+     },
+     "atores": {
+      "voce": {
+       "onde": "sofa",
+       "expr": "feliz"
+      }
+     },
+     "etiqueta": {
+      "txt": "LONGE DO CORPO",
+      "cor": "verde",
+      "icone": "✓"
+     }
+    }
+   ],
+   "id": 8
+  },
+  {
+   "texto": "Manda pra quem vive checando o celular. Isso já aconteceu com você?",
+   "planos": [
+    {
+     "palavras": 6,
+     "cena": "sala",
+     "cam": {
+      "tipo": "americano",
+      "alvo": "sofa",
+      "ang": 25,
+      "alt": 0.5
+     },
+     "atores": {
+      "voce": {
+       "onde": "sofa",
+       "expr": "feliz",
+       "pose": "tchau"
+      }
+     }
+    },
+    {
+     "palavras": 0,
+     "cena": "sala",
+     "cam": {
+      "tipo": "close",
+      "alvo": "rosto",
+      "ang": 15
+     },
+     "atores": {
+      "voce": {
+       "onde": "sofa",
+       "expr": "feliz"
+      }
+     },
+     "etiqueta": {
+      "txt": "E VOCÊ?",
+      "cor": "amarelo"
+     }
+    }
+   ],
+   "id": 9
+  }
+ ]
+}
