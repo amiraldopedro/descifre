@@ -239,6 +239,10 @@
     {
      "quando": "2026-11-17T02:37:40+00:00",
      "status": "descartado"
+    },
+    {
+     "quando": "2026-11-17T03:05:27+00:00",
+     "status": "rascunho"
     }
    ],
    "tipo": "short",
@@ -257,10 +261,10 @@
    "thumb_texto": {},
    "tema": "Acorda antes do despertador",
    "duracao_s": 50,
-   "run": "44003368932",
-   "download": "https://github.com/amiraldopedro/descifre/actions/runs/44003368932",
-   "status": "descartado",
-   "youtube_id": "RlhlRhFb40Q"
+   "run": "44007144280",
+   "download": "https://github.com/amiraldopedro/descifre/actions/runs/44007144280",
+   "status": "rascunho",
+   "youtube_id": "S3mVHaSlBI0"
   },
   {
    "id": "s33",
@@ -2004,5 +2008,5 @@
   ],
   "fuso": "America/Sao_Paulo"
  },
- "atualizado": "2026-11-17T03:05:21+00:00"
+ "atualizado": "2026-11-17T03:05:27+00:00"
 }
