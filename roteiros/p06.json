@@ -11,10 +11,17 @@
   "sub": "o caso real da mulher que não sente medo"
  },
  "elenco": {
-  "voce": {
+  "sm": {
    "camisa": "#2a9d8f",
-   "cabelo": "#7a4a2a",
-   "estilo": "longo"
+   "estilo": "longo",
+   "cabelo": "#d9c27a",
+   "pele": "#f0c9a0"
+  },
+  "medico": {
+   "camisa": "#f4f4f4",
+   "oculos": true,
+   "cabelo": "#3a2416",
+   "calca": "#2d3550"
   }
  },
  "destaque": [
@@ -28,20 +35,17 @@
    "planos": [
     {
      "palavras": 0,
-     "cena": "rua",
+     "cena": "assombrada",
      "cam": {
       "tipo": "medio",
-      "alvo": "calcada",
-      "ang": 30
+      "alvo": "pe",
+      "ang": 35,
+      "alturaAlvo": 0.6
      },
      "atores": {
-      "voce": {
-       "onde": "calcada",
-       "expr": "feliz",
-       "anda": [
-        0,
-        -0.5
-       ]
+      "sm": {
+       "onde": "pe",
+       "expr": "feliz"
       }
      }
     }
@@ -53,39 +57,44 @@
    "planos": [
     {
      "palavras": 4,
-     "cena": "rua",
+     "cena": "assombrada",
      "cam": {
       "tipo": "close",
       "alvo": [
-       -2.4,
-       1.5,
-       1.0
+       0.4,
+       1.35,
+       0.7
       ],
       "ang": 20
      },
      "atores": {
-      "voce": {
-       "onde": "calcada",
-       "expr": "feliz",
-       "anda": [
-        0,
-        -0.2
-       ]
+      "sm": {
+       "onde": "pe",
+       "expr": "feliz"
       }
      }
     },
     {
      "palavras": 0,
-     "cena": "escritorio",
+     "cena": "laboratorio",
      "cam": {
       "tipo": "medio",
-      "alvo": "rosto",
-      "ang": 35
+      "alvo": "pe",
+      "ang": 35,
+      "alturaAlvo": 0.6
      },
      "atores": {
-      "voce": {
-       "onde": "cadeira",
+      "sm": {
+       "onde": "pe",
        "expr": "feliz"
+      },
+      "medico": {
+       "onde": [
+        0.55,
+        0,
+        -1.15
+       ],
+       "expr": "normal"
       }
      },
      "etiqueta": {
@@ -101,12 +110,18 @@
    "planos": [
     {
      "palavras": 5,
-     "cena": "vazio",
+     "cena": "laboratorio",
      "cam": {
       "tipo": "americano",
-      "mov": "entra"
+      "alvo": "monitor",
+      "ang": 25
      },
-     "objeto": "cerebro"
+     "atores": {
+      "medico": {
+       "onde": "pe",
+       "expr": "triste"
+      }
+     }
     },
     {
      "palavras": 0,
@@ -132,36 +147,33 @@
    "planos": [
     {
      "palavras": 4,
-     "cena": "rua",
+     "cena": "lojaCobras",
      "cam": {
       "tipo": "geral",
-      "alvo": "meio",
-      "ang": 35,
-      "zoom": 0.8
+      "alvo": "centro",
+      "ang": 40,
+      "zoom": 0.75
      },
      "atores": {
-      "voce": {
-       "onde": "calcada",
-       "expr": "normal",
-       "anda": [
-        0,
-        -0.5
-       ]
+      "sm": {
+       "onde": "pe",
+       "expr": "feliz"
       }
      }
     },
     {
      "palavras": 0,
-     "cena": "escritorio",
+     "cena": "lojaCobras",
      "cam": {
       "tipo": "close",
-      "alvo": "rosto",
-      "ang": 20
+      "alvo": "cobra",
+      "ang": 30
      },
      "atores": {
-      "voce": {
-       "onde": "cadeira",
-       "expr": "feliz"
+      "sm": {
+       "onde": "pe",
+       "expr": "feliz",
+       "pose": "tchau"
       }
      },
      "onoma": "FOFA!"
@@ -173,21 +185,31 @@
    "texto": "Numa casa assombrada, tentou cutucar os monstros.",
    "planos": [
     {
-     "palavras": 0,
-     "cena": "rua",
+     "palavras": 4,
+     "cena": "assombrada",
      "cam": {
-      "tipo": "medio",
-      "alvo": "poste",
-      "ang": 25
+      "tipo": "geral",
+      "alvo": "centro",
+      "ang": 35,
+      "zoom": 0.7
      },
      "atores": {
-      "voce": {
-       "onde": "poste",
+      "sm": {
+       "onde": "pe",
        "expr": "feliz",
        "pose": "tchau"
       }
+     }
+    },
+    {
+     "palavras": 0,
+     "cena": "vazio",
+     "cam": {
+      "tipo": "americano",
+      "zoom": 1.0,
+      "mov": "entra"
      },
-     "clima": "noite",
+     "objeto": "fantasma",
      "onoma": "BU!"
     }
    ],
@@ -198,31 +220,35 @@
    "planos": [
     {
      "palavras": 3,
-     "cena": "escritorio",
+     "cena": "assombrada",
      "cam": {
       "tipo": "americano",
-      "alvo": "rosto",
+      "alvo": "pe",
       "ang": 40,
-      "alt": 0.2
+      "alturaAlvo": 0.6
      },
      "atores": {
-      "voce": {
-       "onde": "cadeira",
+      "sm": {
+       "onde": "pe",
        "expr": "feliz"
       }
      }
     },
     {
      "palavras": 0,
-     "cena": "escritorio",
+     "cena": "assombrada",
      "cam": {
       "tipo": "close",
-      "alvo": "rosto",
+      "alvo": [
+       0.4,
+       1.35,
+       0.7
+      ],
       "ang": 20
      },
      "atores": {
-      "voce": {
-       "onde": "cadeira",
+      "sm": {
+       "onde": "pe",
        "expr": "triste",
        "pose": "triste"
       }
@@ -248,25 +274,31 @@
       "ang": 20
      },
      "atores": {
-      "voce": {
+      "sm": {
        "onde": "calcada",
        "expr": "triste",
        "anda": [
         0,
-        -0.5
+        -0.4
        ]
       }
-     },
-     "clima": "noite"
+     }
     },
     {
      "palavras": 0,
-     "cena": "vazio",
+     "cena": "rua",
      "cam": {
-      "tipo": "americano",
-      "mov": "gira"
+      "tipo": "geral",
+      "alvo": "poste",
+      "ang": 35,
+      "zoom": 0.8
      },
-     "objeto": "cerebro",
+     "atores": {
+      "sm": {
+       "onde": "poste",
+       "expr": "triste"
+      }
+     },
      "etiqueta": {
       "txt": "O MEDO PROTEGE",
       "cor": "amarelo"
@@ -280,25 +312,43 @@
    "planos": [
     {
      "palavras": 6,
-     "cena": "vazio",
+     "cena": "laboratorio",
      "cam": {
-      "tipo": "americano",
-      "ang": -20,
-      "mov": "entra"
+      "tipo": "medio",
+      "alvo": "pe",
+      "ang": 30,
+      "alturaAlvo": 0.6
      },
-     "objeto": "cerebro"
+     "atores": {
+      "sm": {
+       "onde": "pe",
+       "expr": "normal"
+      },
+      "medico": {
+       "onde": [
+        0.55,
+        0,
+        -1.15
+       ],
+       "expr": "normal"
+      }
+     }
     },
     {
      "palavras": 0,
-     "cena": "escritorio",
+     "cena": "laboratorio",
      "cam": {
       "tipo": "close",
-      "alvo": "rosto",
-      "ang": 15
+      "alvo": [
+       0.7,
+       1.35,
+       0.7
+      ],
+      "ang": 20
      },
      "atores": {
-      "voce": {
-       "onde": "cadeira",
+      "sm": {
+       "onde": "pe",
        "expr": "susto",
        "pose": "susto"
       }
@@ -314,13 +364,19 @@
    "planos": [
     {
      "palavras": 0,
-     "cena": "vazio",
+     "cena": "laboratorio",
      "cam": {
       "tipo": "americano",
-      "ang": 10,
+      "alvo": "monitor",
+      "ang": 30,
       "mov": "gira"
      },
-     "objeto": "cerebro",
+     "atores": {
+      "medico": {
+       "onde": "pe",
+       "expr": "susto"
+      }
+     },
      "etiqueta": {
       "txt": "OUTRO CAMINHO",
       "cor": "verde"
@@ -334,16 +390,16 @@
    "planos": [
     {
      "palavras": 8,
-     "cena": "escritorio",
+     "cena": "lojaCobras",
      "cam": {
       "tipo": "americano",
-      "alvo": "rosto",
-      "ang": 25,
-      "alt": 0.15
+      "alvo": "pe",
+      "ang": 30,
+      "alturaAlvo": 0.6
      },
      "atores": {
-      "voce": {
-       "onde": "cadeira",
+      "sm": {
+       "onde": "pe",
        "expr": "feliz",
        "pose": "tchau"
       }
@@ -351,15 +407,19 @@
     },
     {
      "palavras": 0,
-     "cena": "escritorio",
+     "cena": "lojaCobras",
      "cam": {
       "tipo": "close",
-      "alvo": "rosto",
-      "ang": 15
+      "alvo": [
+       0.3,
+       1.35,
+       0.6
+      ],
+      "ang": 25
      },
      "atores": {
-      "voce": {
-       "onde": "cadeira",
+      "sm": {
+       "onde": "pe",
        "expr": "feliz"
       }
      },

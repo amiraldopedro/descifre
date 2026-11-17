@@ -180,6 +180,10 @@ def main(vid, estimar=False):
         # abaixa a trilha onde tem voz (envelope suave)
         env = np.convolve((np.abs(voz_tr) > 0.02).astype(np.float32), np.ones(int(0.25 * SR)) / int(0.25 * SR), "same")
         musica *= 1 - 0.55 * np.clip(env * 3, 0, 1)
+    fala = float(np.sqrt((voz_tr ** 2).mean()))
+    print(f"narração: volume médio {fala:.3f}" + ("  <<< SEM VOZ" if fala < 0.005 else " (ok)"))
+    if fala < 0.005 and not estimar:
+        sys.exit("a narração saiu muda: não vou montar um vídeo sem voz")
     mix = voz_tr * 1.0 + sfx + musica
     mix = np.tanh(mix * 1.1) / np.tanh(1.1)
     mix = (mix / max(1e-6, np.abs(mix).max()) * 0.92 * 32767).astype("<i2")

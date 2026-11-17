@@ -11,9 +11,10 @@
   "sub": "sem dormir: veja o que aconteceu"
  },
  "elenco": {
-  "voce": {
-   "camisa": "#e76f51",
-   "cabelo": "#3a2416"
+  "randy": {
+   "camisa": "#e9e3d6",
+   "cabelo": "#2b1a10",
+   "calca": "#3a3a3a"
   }
  },
  "destaque": [
@@ -34,7 +35,7 @@
       "ang": 40
      },
      "atores": {
-      "voce": {
+      "randy": {
        "onde": "deitado",
        "expr": "susto"
       }
@@ -49,15 +50,16 @@
    "planos": [
     {
      "palavras": 6,
-     "cena": "escritorio",
+     "cena": "feira",
      "cam": {
-      "tipo": "medio",
-      "alvo": "rosto",
-      "ang": 35
+      "tipo": "geral",
+      "alvo": "centro",
+      "ang": 40,
+      "zoom": 0.8
      },
      "atores": {
-      "voce": {
-       "onde": "cadeira",
+      "randy": {
+       "onde": "pe",
        "expr": "feliz"
       }
      },
@@ -68,15 +70,19 @@
     },
     {
      "palavras": 0,
-     "cena": "escritorio",
+     "cena": "feira",
      "cam": {
       "tipo": "close",
-      "alvo": "rosto",
+      "alvo": [
+       0.3,
+       1.35,
+       -0.3
+      ],
       "ang": 20
      },
      "atores": {
-      "voce": {
-       "onde": "cadeira",
+      "randy": {
+       "onde": "pe",
        "expr": "feliz",
        "pose": "tchau"
       }
@@ -94,15 +100,19 @@
    "planos": [
     {
      "palavras": 0,
-     "cena": "escritorio",
+     "cena": "feira",
      "cam": {
       "tipo": "close",
-      "alvo": "rosto",
+      "alvo": [
+       0.3,
+       1.35,
+       -0.3
+      ],
       "ang": 10
      },
      "atores": {
-      "voce": {
-       "onde": "cadeira",
+      "randy": {
+       "onde": "pe",
        "expr": "triste"
       }
      },
@@ -123,7 +133,7 @@
       "ang": 30
      },
      "atores": {
-      "voce": {
+      "randy": {
        "onde": "calcada",
        "expr": "susto",
        "anda": [
@@ -147,7 +157,7 @@
       "ang": 15
      },
      "atores": {
-      "voce": {
+      "randy": {
        "onde": "calcada",
        "expr": "susto",
        "pose": "susto"
@@ -163,15 +173,16 @@
    "planos": [
     {
      "palavras": 5,
-     "cena": "escritorio",
+     "cena": "palco",
      "cam": {
-      "tipo": "americano",
+      "tipo": "medio",
       "alvo": "rosto",
-      "ang": 40
+      "ang": 60,
+      "alt": 0.2
      },
      "atores": {
-      "voce": {
-       "onde": "cadeira",
+      "randy": {
+       "onde": "mic",
        "expr": "feliz",
        "pose": "tchau"
       }
@@ -180,12 +191,21 @@
     },
     {
      "palavras": 0,
-     "cena": "vazio",
+     "cena": "palco",
      "cam": {
-      "tipo": "americano",
-      "mov": "gira"
+      "tipo": "geral",
+      "alvo": "plateia",
+      "ang": 180,
+      "alt": 0.8,
+      "zoom": 0.7
      },
-     "objeto": "cerebro",
+     "atores": {
+      "randy": {
+       "onde": "mic",
+       "expr": "feliz",
+       "pose": "tchau"
+      }
+     },
      "etiqueta": {
       "txt": "\"eu sou famoso\"",
       "cor": "branco"
@@ -199,15 +219,19 @@
    "planos": [
     {
      "palavras": 0,
-     "cena": "escritorio",
+     "cena": "feira",
      "cam": {
       "tipo": "close",
-      "alvo": "rosto",
+      "alvo": [
+       0.3,
+       1.35,
+       -0.3
+      ],
       "ang": 25
      },
      "atores": {
-      "voce": {
-       "onde": "cadeira",
+      "randy": {
+       "onde": "pe",
        "expr": "triste",
        "pose": "pensando"
       }
@@ -223,15 +247,19 @@
    "planos": [
     {
      "palavras": 0,
-     "cena": "vazio",
+     "cena": "feira",
      "cam": {
       "tipo": "americano",
-      "zoom": 1.0,
+      "alvo": "mesa",
+      "ang": 10,
+      "zoom": 0.7,
       "mov": "entra"
      },
-     "objeto": {
-      "nome": "despertador",
-      "txt": "264 h"
+     "atores": {
+      "randy": {
+       "onde": "pe",
+       "expr": "triste"
+      }
      },
      "revela": true
     }
@@ -250,7 +278,7 @@
       "ang": 40
      },
      "atores": {
-      "voce": {
+      "randy": {
        "onde": "deitado",
        "expr": "dormindo"
       }
@@ -266,7 +294,7 @@
       "ang": 30
      },
      "atores": {
-      "voce": {
+      "randy": {
        "onde": "deitado",
        "expr": "dormindo"
       }
@@ -288,9 +316,13 @@
      "cena": "vazio",
      "cam": {
       "tipo": "americano",
-      "mov": "gira"
+      "mov": "gira",
+      "zoom": 1.0
      },
-     "objeto": "cerebro",
+     "objeto": {
+      "nome": "despertador",
+      "txt": "264 h"
+     },
      "etiqueta": {
       "txt": "PERIGOSO",
       "cor": "vermelho",
@@ -307,7 +339,7 @@
       "alt": 1.0
      },
      "atores": {
-      "voce": {
+      "randy": {
        "onde": "deitado",
        "expr": "dormindo"
       }
@@ -321,16 +353,16 @@
    "planos": [
     {
      "palavras": 8,
-     "cena": "escritorio",
+     "cena": "feira",
      "cam": {
       "tipo": "americano",
-      "alvo": "rosto",
+      "alvo": "pe",
       "ang": 25,
-      "alt": 0.15
+      "alturaAlvo": 0.6
      },
      "atores": {
-      "voce": {
-       "onde": "cadeira",
+      "randy": {
+       "onde": "pe",
        "expr": "feliz",
        "pose": "tchau"
       }
@@ -338,15 +370,19 @@
     },
     {
      "palavras": 0,
-     "cena": "escritorio",
+     "cena": "feira",
      "cam": {
       "tipo": "close",
-      "alvo": "rosto",
+      "alvo": [
+       0.3,
+       1.35,
+       -0.3
+      ],
       "ang": 15
      },
      "atores": {
-      "voce": {
-       "onde": "cadeira",
+      "randy": {
+       "onde": "pe",
        "expr": "feliz"
       }
      },

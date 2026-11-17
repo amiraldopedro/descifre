@@ -13,15 +13,14 @@
  "elenco": {
   "voce": {
    "camisa": "#8338ec",
-   "cabelo": "#1b1b1b",
    "estilo": "longo",
+   "cabelo": "#1b1b1b",
    "pele": "#c98d63"
   }
  },
  "destaque": [
   "fantasma",
   "nove",
-  "cérebro",
   "aviso"
  ],
  "cenas": [
@@ -30,30 +29,32 @@
    "planos": [
     {
      "palavras": 4,
-     "cena": "sala",
+     "cena": "onibus",
      "cam": {
       "tipo": "medio",
-      "alvo": "sofa",
-      "ang": 35
+      "alvo": "rosto",
+      "ang": 70,
+      "alt": 0.1
      },
      "atores": {
       "voce": {
-       "onde": "sofa",
+       "onde": "banco",
        "expr": "normal"
       }
      }
     },
     {
      "palavras": 4,
-     "cena": "sala",
+     "cena": "onibus",
      "cam": {
       "tipo": "close",
       "alvo": "rosto",
-      "ang": 20
+      "ang": 80,
+      "alt": 0.05
      },
      "atores": {
       "voce": {
-       "onde": "sofa",
+       "onde": "banco",
        "expr": "susto"
       }
      },
@@ -61,16 +62,16 @@
     },
     {
      "palavras": 0,
-     "cena": "sala",
+     "cena": "onibus",
      "cam": {
       "tipo": "americano",
-      "alvo": "sofa",
-      "ang": 45,
-      "alt": 0.5
+      "alvo": "rosto",
+      "ang": 60,
+      "alt": 0.1
      },
      "atores": {
       "voce": {
-       "onde": "sofa",
+       "onde": "banco",
        "expr": "triste",
        "pose": "celular"
       }
@@ -106,32 +107,38 @@
    "planos": [
     {
      "palavras": 5,
-     "cena": "rua",
+     "cena": "onibus",
      "cam": {
       "tipo": "geral",
-      "alvo": "calcada",
-      "ang": 30,
-      "zoom": 0.8
+      "alvo": "centro",
+      "ang": 75,
+      "alt": -0.6,
+      "zoom": 0.75
      },
      "atores": {
       "voce": {
-       "onde": "calcada",
+       "onde": "banco",
        "expr": "normal",
-       "anda": [
-        0,
-        -0.5
-       ]
+       "pose": "celular"
       }
      }
     },
     {
      "palavras": 0,
-     "cena": "vazio",
+     "cena": "feira",
      "cam": {
-      "tipo": "americano",
-      "mov": "gira"
+      "tipo": "geral",
+      "alvo": "centro",
+      "ang": 40,
+      "zoom": 0.85
      },
-     "objeto": "cerebro",
+     "atores": {
+      "voce": {
+       "onde": "pe",
+       "expr": "normal",
+       "pose": "celular"
+      }
+     },
      "etiqueta": {
       "txt": "9 EM CADA 10",
       "cor": "vermelho"
@@ -155,15 +162,16 @@
     },
     {
      "palavras": 0,
-     "cena": "sala",
+     "cena": "onibus",
      "cam": {
       "tipo": "close",
       "alvo": "rosto",
-      "ang": 25
+      "ang": 75,
+      "alt": 0.05
      },
      "atores": {
       "voce": {
-       "onde": "sofa",
+       "onde": "banco",
        "expr": "normal",
        "pose": "celular"
       }
@@ -177,16 +185,16 @@
    "planos": [
     {
      "palavras": 5,
-     "cena": "sala",
+     "cena": "onibus",
      "cam": {
       "tipo": "americano",
-      "alvo": "sofa",
-      "ang": 30,
-      "alt": 0.5
+      "alvo": "rosto",
+      "ang": 65,
+      "alt": 0.1
      },
      "atores": {
       "voce": {
-       "onde": "sofa",
+       "onde": "banco",
        "expr": "susto"
       }
      }
@@ -204,15 +212,16 @@
     },
     {
      "palavras": 0,
-     "cena": "sala",
+     "cena": "onibus",
      "cam": {
       "tipo": "close",
       "alvo": "rosto",
-      "ang": 15
+      "ang": 85,
+      "alt": 0.05
      },
      "atores": {
       "voce": {
-       "onde": "sofa",
+       "onde": "banco",
        "expr": "bravo"
       }
      }
@@ -225,13 +234,20 @@
    "planos": [
     {
      "palavras": 0,
-     "cena": "vazio",
+     "cena": "onibus",
      "cam": {
-      "tipo": "americano",
-      "ang": -15,
+      "tipo": "medio",
+      "alvo": "rosto",
+      "ang": 70,
       "mov": "gira"
      },
-     "objeto": "cerebro",
+     "atores": {
+      "voce": {
+       "onde": "banco",
+       "expr": "normal",
+       "pose": "celular"
+      }
+     },
      "etiqueta": {
       "txt": "MELHOR ERRAR",
       "cor": "branco"
@@ -273,13 +289,15 @@
      "atores": {
       "voce": {
        "onde": "calcada",
+       "expr": "normal",
        "pose": "celular",
        "anda": [
         0,
         -0.4
        ]
       }
-     }
+     },
+     "clima": "dia"
     }
    ],
    "id": 7
@@ -317,16 +335,16 @@
    "planos": [
     {
      "palavras": 6,
-     "cena": "sala",
+     "cena": "onibus",
      "cam": {
       "tipo": "americano",
-      "alvo": "sofa",
-      "ang": 25,
-      "alt": 0.5
+      "alvo": "rosto",
+      "ang": 70,
+      "alt": 0.1
      },
      "atores": {
       "voce": {
-       "onde": "sofa",
+       "onde": "banco",
        "expr": "feliz",
        "pose": "tchau"
       }
@@ -334,15 +352,16 @@
     },
     {
      "palavras": 0,
-     "cena": "sala",
+     "cena": "onibus",
      "cam": {
       "tipo": "close",
       "alvo": "rosto",
-      "ang": 15
+      "ang": 80,
+      "alt": 0.05
      },
      "atores": {
       "voce": {
-       "onde": "sofa",
+       "onde": "banco",
        "expr": "feliz"
       }
      },

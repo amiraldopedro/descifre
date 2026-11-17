@@ -106,6 +106,9 @@ export function personagem(o = {}) {
     const mao = new THREE.Group(); mao.position.set(0, -.52, 0); mao.add(P.esfera(.065, mPele, { seg: 6, segV: 4 })); b.add(mao); b.mao = mao;
     return b;
   });
+  if (c.oculos) { const mo = P.mat({ cor: c.oculos === true ? '#151515' : c.oculos }); for (const s of [-1, 1]) cab.add(P.caixa(.11, .07, .02, mo, { pos: [s * .085, .23, .175] })); cab.add(P.caixa(.07, .015, .02, mo, { pos: [0, .24, .175] })); }
+  if (c.barba) { const mb = P.mat({ cor: c.barba === true ? c.cabelo : c.barba }); cab.add(P.caixa(.3, .05, .03, mb, { pos: [0, .025, .17] })); for (const s of [-1, 1]) cab.add(P.caixa(.05, .12, .03, mb, { pos: [s * .14, .07, .17] })); }
+  if (c.bone) { const mb = P.mat({ cor: c.bone }); cab.add(P.caixa(.4, .12, .38, mb, { pos: [0, .44, 0] })); cab.add(P.caixa(.36, .03, .2, mb, { pos: [0, .39, .26] })); }
   g.maoDir = bracos[1].mao; g.maoEsq = bracos[0].mao; g.cabeca = cab;
   g.expr = e => { mRosto.uniforms.uMapa.value = exprs[e] ?? exprs.normal; };
   // poses (k = 0..1 entra na pose; t = tempo para respirar/andar)
@@ -244,7 +247,7 @@ export function sala(o = {}) {
   g.add(P.caixa(1.6, .01, 1, P.mat({ mapa: TEX2.tapete({ cor: '#d8c9a8', borda: '#a8977a' }), rep: [1, 1] }), { pos: [0, .005, .1] }));
   const jan = P.caixa(.8, .7, .02, P.mat({ mapa: TEX2.janela({ dia: true }), semLuz: true }), { pos: [.8, 1.6, -Q / 2 + .15] }); g.add(jan);
   g.janela = d => { jan.material.uniforms.uMapa.value = TEX2.janela({ dia: d }); };
-  g.pts = { sofa: [-.45, -.02, -.85], sofa2: [.35, -.02, -.85], rosto: [-.45, 1.2, -.85], pe: [.7, 0, .5], centro: [0, 0, .3] };
+  g.pts = { sofa: [-.45, -.02, -.85], sofa2: [.35, -.02, -.85], rosto: [-.45, 1.32, -.85], pe: [.7, 0, .5], centro: [0, 0, .3] };
   return g;
 }
 
@@ -269,7 +272,7 @@ export function escritorio(o = {}) {
   for (let i = 0; i < 3; i++) g.add(P.caixa(.9, .04, .3, P.mat({ mapa: TEX2.madeira(), rep: [1, 1] }), { pos: [-1.2, 1.1 + i * .45, -1.5] }));
   const cores = ['#c0392b', '#2980b9', '#27ae60', '#f1c40f', '#8e44ad'];
   for (let i = 0; i < 3; i++) for (let k = 0; k < 6; k++) g.add(P.caixa(.1, .3, .22, P.mat({ cor: cores[(i + k) % 5] }), { pos: [-1.55 + k * .13, 1.27 + i * .45, -1.5] }));
-  g.pts = { cadeira: [.1, -.02, -.82], rosto: [.1, 1.25, -.82], mesa: [.1, .9, -.2], pe: [.8, 0, .6], centro: [0, 0, 0] };
+  g.pts = { cadeira: [.1, -.02, -.82], rosto: [.1, 1.36, -.82], mesa: [.1, .9, -.2], pe: [.8, 0, .6], centro: [0, 0, 0] };
   return g;
 }
 
@@ -363,11 +366,17 @@ export function barraTempo(marcos, o = {}) {
 }
 
 // ───────────────────────── luz e céu por clima ─────────────────────────
-const CLIMAS = {
+export const CLIMAS = {
   dia: { key: '#f3ece0', fill: '#6d7686', amb: '#6a6c72', ceu: [[0, '#6f8496'], [.5, '#aab5bd'], [1, '#c6cbce']], nevoa: ['#c4c9cc', 6, 18] },
   noite: { key: '#7d8dc8', fill: '#2a2f55', amb: '#30344f', ceu: [[0, '#05081c'], [.6, '#121a40'], [1, '#26305e']], nevoa: ['#141a38', 5, 16] },
   abajur: { key: '#ffcf8a', fill: '#3a3358', amb: '#4a3f48', ceu: [[0, '#0b0c22'], [.6, '#1d1a3a'], [1, '#3a2f4a']], nevoa: ['#1d1a32', 5, 16] },
   vazio: { key: '#e8e2f4', fill: '#4a4f8a', amb: '#4a4c66', ceu: [[0, '#0a0f2e'], [.6, '#1a2560'], [1, '#2c3a80']], nevoa: ['#1a2560', 30, 60] },
+  lab: { key: '#eef6ff', fill: '#6f8aa0', amb: '#5f6e78', ceu: [[0, '#1c2a33'], [.6, '#3a5260'], [1, '#6f8a96']], nevoa: ['#3a5260', 8, 22] },
+  palco: { key: '#ffe2a8', fill: '#3a2a55', amb: '#2a2238', ceu: [[0, '#05040a'], [.6, '#120d1e'], [1, '#22183a']], nevoa: ['#120d1e', 5, 14] },
+  assombrado: { key: '#9a7ad0', fill: '#2a1440', amb: '#2a1f38', ceu: [[0, '#05020a'], [.6, '#1a0b2a'], [1, '#3a1a4f']], nevoa: ['#1a0b2a', 3.5, 11] },
+  feira: { key: '#fff1cf', fill: '#8a7350', amb: '#6e6250', ceu: [[0, '#8a7a5a'], [.6, '#cdbb92'], [1, '#e8dcbc']], nevoa: ['#cdbb92', 7, 20] },
+  loja: { key: '#e6f2c8', fill: '#3f5a3a', amb: '#4a5a44', ceu: [[0, '#0f1a10'], [.6, '#22361f'], [1, '#3e5a3a']], nevoa: ['#22361f', 6, 16] },
+  madrugada: { key: '#d6e2f5', fill: '#5a6a90', amb: '#4e5872', ceu: [[0, '#03050f'], [.6, '#0d1430'], [1, '#1d2850']], nevoa: ['#0d1430', 6, 16] },
 };
 const ceus = {};
 export function clima(S, nome) {
@@ -421,9 +430,9 @@ export function diretor(S, planos, cenas) {
 // F = { gancho:{txt,sub,ate}, elenco:{nome:{camisa,cabelo,pele,estilo}}, destaque:[...], palavras:[{w,t0,t1}],
 //       planos:[{ t0, t1, cena, clima, cam:{tipo, alvo:'ponto'|[x,y,z], ang, mov, alt, zoom, dy},
 //                 atores:{ nome:{ onde:'ponto'|[x,y,z], pose, expr, rot } }, estado:{...}, objeto, etiqueta, onoma, marco }] }
-const FABRICAS = { quarto, sala, escritorio, rua, vazio };
-const CLIMA_PADRAO = { quarto: 'noite', sala: 'dia', escritorio: 'dia', rua: 'noite', vazio: 'vazio' };
-const OBJETOS = { cerebro, celular: () => { const c = celular(); c.scale.setScalar(3.2); return c; }, despertador: () => { const d = despertador('03:00'); d.scale.setScalar(1.6); return d; }, abajur: () => { const a = abajur(true); a.scale.setScalar(2.2); a.position.y = -.5; return a; }, quadro: () => quadro() };
+export const FABRICAS = { quarto, sala, escritorio, rua, vazio };
+export const CLIMA_PADRAO = { quarto: 'noite', sala: 'dia', escritorio: 'dia', rua: 'noite', vazio: 'vazio' };
+export const OBJETOS = { cerebro, celular: () => { const c = celular(); c.scale.setScalar(3.2); return c; }, despertador: () => { const d = despertador('03:00'); d.scale.setScalar(1.6); return d; }, abajur: () => { const a = abajur(true); a.scale.setScalar(2.2); a.position.y = -.5; return a; }, quadro: () => quadro() };
 
 export function filme(S, F) {
   const cenas = {}, atores = {}, objetos = {};
@@ -440,7 +449,7 @@ export function filme(S, F) {
   for (const p of F.planos) {
     const c = p.cam ?? {};
     let alvo = c.alvo ?? (p.cena === 'vazio' ? [0, 1.1, 0] : 'centro');
-    if (typeof alvo === 'string') { const pt = ponto(p.cena, alvo); alvo = [pt[0], Math.max(pt[1], c.tipo === 'geral' ? .8 : .6) + (c.alturaAlvo ?? 0), pt[2]]; }
+    if (typeof alvo === 'string') { const pt = ponto(p.cena, alvo), sentado = ['sofa', 'sofa2', 'cadeira', 'banco'].includes(alvo); alvo = [pt[0], (sentado ? pt[1] + 1.05 : Math.max(pt[1], c.tipo === 'geral' ? .8 : .6)) + (c.alturaAlvo ?? 0), pt[2]]; }
     p._cam = cam(alvo, c.tipo ?? 'medio', c);
     p.clima = p.clima ?? CLIMA_PADRAO[p.cena];
   }
@@ -452,12 +461,15 @@ export function filme(S, F) {
     if (g.cobrir) g.cobrir(E.coberta ?? .7, !!E.pe);
     if (g.janela) g.janela(E.dia ?? (p.clima === 'dia'));
     if (g.despertador && E.hora) g.despertador.trocar(E.hora);
+    if (g.anda) g.anda(t); if (g.anima) g.anima(t);
+    if (g.quadro && E.quadro) { const chave = JSON.stringify(E.quadro); if (g._q !== chave) { g.quadro.trocar(E.quadro.linhas, E.quadro.marca); g._q = chave; } }
     for (const [nome, a] of Object.entries(atores[p.cena])) {
       const d = p.atores?.[nome];
       a.visible = !!d;
       if (!d) continue;
       const onde = d.onde ?? 'pe';
       if (onde === 'deitado' && g.deitar) { g.deitar(a); }
+      else if (a._eletrodos) a._eletrodos.visible = false;
       else {
         const pt = ponto(p.cena, onde); a.position.set(...pt);
         // por padrão vira o rosto pra câmera (quem está em pé ou sentado)
@@ -465,7 +477,7 @@ export function filme(S, F) {
         a.rotation.set(0, typeof d.rot === 'number' ? d.rot : rotCam + (d.giro ?? 0), 0);
         if (d.anda) { a.position.z += (d.anda[1] ?? 0) * tl; a.position.x += (d.anda[0] ?? 0) * tl; }
       }
-      a.pose(d.pose ?? (onde === 'deitado' ? 'deitado' : onde.startsWith('sofa') || onde === 'cadeira' ? 'sentado' : d.anda ? 'andar' : 'pe'), t);
+      a.pose(d.pose ?? (onde === 'deitado' ? 'deitado' : onde.startsWith('sofa') || onde === 'cadeira' || onde === 'banco' ? 'sentado' : d.anda ? 'andar' : 'pe'), t);
       a.expr(d.expr ?? 'normal');
       // celular na mão quando a pose pede
       if (d.pose === 'celular' && !a._cel) { a._cel = celular(); a.maoDir.add(a._cel); a._cel.position.set(-.08, -.06, .12); a._cel.rotation.set(-1.3, 0, 0); }

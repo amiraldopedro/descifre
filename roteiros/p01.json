@@ -12,20 +12,25 @@
  },
  "elenco": {
   "voce": {
-   "camisa": "#4f7cff"
+   "camisa": "#2a9d8f",
+   "estilo": "longo",
+   "cabelo": "#a0522d",
+   "pele": "#f0c9a0"
   },
   "cientista": {
-   "camisa": "#f2f2f2",
-   "cabelo": "#9a9a9a",
+   "camisa": "#f4f4f4",
    "calca": "#3a3a3a",
+   "cabelo": "#8a8a8a",
+   "oculos": true,
+   "barba": "#8a8a8a",
    "pele": "#d9a77f"
   }
  },
  "destaque": [
   "coincidência",
   "hormônio",
-  "cérebro",
-  "seis"
+  "seis",
+  "conta"
  ],
  "cenas": [
   {
@@ -46,7 +51,7 @@
       }
      },
      "estado": {
-      "coberta": 0.7
+      "coberta": 0.62
      }
     },
     {
@@ -64,9 +69,6 @@
        "expr": "susto"
       }
      },
-     "estado": {
-      "coberta": 0.7
-     },
      "onoma": "?!"
     },
     {
@@ -74,9 +76,8 @@
      "cena": "vazio",
      "cam": {
       "tipo": "americano",
-      "ang": 0,
-      "mov": "gira",
-      "zoom": 0.62
+      "zoom": 1.0,
+      "mov": "gira"
      },
      "objeto": {
       "nome": "despertador",
@@ -101,14 +102,14 @@
      "atores": {
       "voce": {
        "onde": "pe",
-       "pose": "pensando",
-       "expr": "normal"
+       "expr": "normal",
+       "pose": "pensando"
       }
      },
      "clima": "abajur",
      "estado": {
       "abajur": true,
-      "coberta": 0.62
+      "coberta": 0.3
      }
     },
     {
@@ -127,14 +128,13 @@
      "atores": {
       "voce": {
        "onde": "pe",
-       "pose": "pensando",
-       "expr": "bravo"
+       "expr": "bravo",
+       "pose": "pensando"
       }
      },
      "clima": "abajur",
      "estado": {
-      "abajur": true,
-      "coberta": 0.62
+      "abajur": true
      }
     }
    ],
@@ -148,10 +148,10 @@
      "cena": "vazio",
      "cam": {
       "tipo": "americano",
-      "ang": 0,
-      "mov": "entra"
+      "mov": "entra",
+      "zoom": 1.1
      },
-     "objeto": "cerebro",
+     "objeto": "onda",
      "revela": true,
      "etiqueta": {
       "txt": "NÃO É SORTE",
@@ -167,29 +167,31 @@
    "planos": [
     {
      "palavras": 6,
-     "cena": "quarto",
+     "cena": "laboratorio",
      "cam": {
       "tipo": "geral",
       "alvo": "centro",
-      "ang": 45
+      "ang": 45,
+      "zoom": 0.85
      },
      "atores": {
       "voce": {
        "onde": "deitado",
        "expr": "dormindo"
+      },
+      "cientista": {
+       "onde": "pe",
+       "expr": "normal"
       }
      },
      "etiqueta": {
       "txt": "1999 · ALEMANHA",
       "cor": "branco"
-     },
-     "estado": {
-      "coberta": 0.62
      }
     },
     {
      "palavras": 0,
-     "cena": "quarto",
+     "cena": "laboratorio",
      "cam": {
       "tipo": "medio",
       "alvo": "cama",
@@ -201,9 +203,6 @@
        "onde": "deitado",
        "expr": "dormindo"
       }
-     },
-     "estado": {
-      "coberta": 0.62
      }
     }
    ],
@@ -214,11 +213,12 @@
    "planos": [
     {
      "palavras": 0,
-     "cena": "quarto",
+     "cena": "laboratorio",
      "cam": {
       "tipo": "medio",
-      "alvo": "cama",
-      "ang": 35
+      "alvo": "pe",
+      "ang": 30,
+      "alturaAlvo": 0.6
      },
      "atores": {
       "voce": {
@@ -226,19 +226,10 @@
        "expr": "normal"
       },
       "cientista": {
-       "onde": [
-        0.55,
-        0,
-        0.5
-       ],
-       "pose": "tchau",
-       "expr": "feliz"
+       "onde": "pe",
+       "expr": "feliz",
+       "pose": "tchau"
       }
-     },
-     "clima": "abajur",
-     "estado": {
-      "abajur": true,
-      "coberta": 0.62
      },
      "etiqueta": {
       "txt": "\"às 6h\"",
@@ -253,12 +244,12 @@
    "planos": [
     {
      "palavras": 0,
-     "cena": "quarto",
+     "cena": "laboratorio",
      "cam": {
-      "tipo": "medio",
-      "alvo": "cama",
-      "ang": 50,
-      "mov": "gira"
+      "tipo": "americano",
+      "alvo": "pe",
+      "ang": 55,
+      "alturaAlvo": 0.6
      },
      "atores": {
       "voce": {
@@ -266,19 +257,10 @@
        "expr": "normal"
       },
       "cientista": {
-       "onde": [
-        0.55,
-        0,
-        0.5
-       ],
-       "pose": "tchau",
-       "expr": "feliz"
+       "onde": "pe",
+       "expr": "feliz",
+       "pose": "tchau"
       }
-     },
-     "clima": "abajur",
-     "estado": {
-      "abajur": true,
-      "coberta": 0.62
      },
      "etiqueta": {
       "txt": "\"às 9h\"",
@@ -293,7 +275,7 @@
    "planos": [
     {
      "palavras": 4,
-     "cena": "quarto",
+     "cena": "laboratorio",
      "cam": {
       "tipo": "close",
       "alvo": "cabeca",
@@ -305,9 +287,6 @@
        "onde": "deitado",
        "expr": "susto"
       }
-     },
-     "estado": {
-      "coberta": 0.62
      }
     },
     {
@@ -315,9 +294,8 @@
      "cena": "vazio",
      "cam": {
       "tipo": "americano",
-      "ang": 0,
-      "mov": "entra",
-      "zoom": 0.62
+      "zoom": 1.0,
+      "mov": "entra"
      },
      "objeto": {
       "nome": "despertador",
@@ -333,13 +311,19 @@
    "planos": [
     {
      "palavras": 0,
-     "cena": "vazio",
+     "cena": "laboratorio",
      "cam": {
       "tipo": "americano",
+      "alvo": "monitor",
       "ang": 20,
-      "mov": "gira"
+      "mov": "entra"
      },
-     "objeto": "cerebro",
+     "atores": {
+      "cientista": {
+       "onde": "pe",
+       "expr": "susto"
+      }
+     },
      "revela": true
     }
    ],
@@ -365,7 +349,7 @@
     },
     {
      "palavras": 5,
-     "cena": "quarto",
+     "cena": "laboratorio",
      "cam": {
       "tipo": "close",
       "alvo": "cabeca",
@@ -377,9 +361,6 @@
        "onde": "deitado",
        "expr": "dormindo"
       }
-     },
-     "estado": {
-      "coberta": 0.62
      }
     },
     {
@@ -387,9 +368,8 @@
      "cena": "vazio",
      "cam": {
       "tipo": "americano",
-      "ang": 0,
-      "mov": "gira",
-      "zoom": 0.62
+      "zoom": 1.0,
+      "mov": "gira"
      },
      "objeto": {
       "nome": "despertador",
@@ -404,7 +384,7 @@
    "planos": [
     {
      "palavras": 0,
-     "cena": "quarto",
+     "cena": "laboratorio",
      "cam": {
       "tipo": "medio",
       "alvo": "cama",
@@ -421,9 +401,6 @@
       "txt": "NADA",
       "cor": "vermelho",
       "icone": "✗"
-     },
-     "estado": {
-      "coberta": 0.62
      }
     }
    ],
@@ -438,13 +415,14 @@
      "cam": {
       "tipo": "americano",
       "ang": 10,
-      "mov": "gira"
+      "mov": "gira",
+      "zoom": 1.1
      },
-     "objeto": "cerebro"
+     "objeto": "onda"
     },
     {
      "palavras": 0,
-     "cena": "quarto",
+     "cena": "laboratorio",
      "cam": {
       "tipo": "cima",
       "alvo": "cama",
@@ -455,9 +433,6 @@
        "onde": "deitado",
        "expr": "dormindo"
       }
-     },
-     "estado": {
-      "coberta": 0.8
      }
     }
    ],
@@ -482,8 +457,7 @@
      },
      "clima": "abajur",
      "estado": {
-      "abajur": true,
-      "coberta": 0.62
+      "abajur": true
      },
      "etiqueta": {
       "txt": "\"eu durmo pesado\"",
@@ -515,9 +489,6 @@
       "txt": "NÃO IMPORTA",
       "cor": "vermelho",
       "icone": "✗"
-     },
-     "estado": {
-      "coberta": 0.62
      }
     },
     {
@@ -525,9 +496,8 @@
      "cena": "vazio",
      "cam": {
       "tipo": "americano",
-      "ang": 0,
-      "mov": "entra",
-      "zoom": 0.62
+      "zoom": 1.0,
+      "mov": "entra"
      },
      "objeto": {
       "nome": "despertador",
@@ -637,8 +607,7 @@
      },
      "clima": "dia",
      "estado": {
-      "dia": true,
-      "coberta": 0.62
+      "dia": true
      },
      "etiqueta": {
       "txt": "E VOCÊ?",

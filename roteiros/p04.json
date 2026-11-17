@@ -13,7 +13,8 @@
  "elenco": {
   "voce": {
    "camisa": "#ffb703",
-   "cabelo": "#5a3a1a"
+   "cabelo": "#5a3a1a",
+   "oculos": "#c0392b"
   }
  },
  "destaque": [
@@ -28,35 +29,45 @@
    "planos": [
     {
      "palavras": 5,
-     "cena": "escritorio",
+     "cena": "rua",
      "cam": {
       "tipo": "medio",
-      "alvo": "rosto",
-      "ang": 35
+      "alvo": "calcada",
+      "ang": 30
      },
      "atores": {
       "voce": {
-       "onde": "cadeira",
-       "expr": "normal",
-       "pose": "pensando"
+       "onde": "calcada",
+       "expr": "feliz",
+       "pose": "pensando",
+       "anda": [
+        0,
+        -0.4
+       ]
       }
-     }
+     },
+     "clima": "dia"
     },
     {
      "palavras": 5,
-     "cena": "escritorio",
+     "cena": "rua",
      "cam": {
       "tipo": "close",
-      "alvo": "rosto",
-      "ang": 15
+      "alvo": [
+       -2.4,
+       1.4,
+       0.9
+      ],
+      "ang": 20
      },
      "atores": {
       "voce": {
-       "onde": "cadeira",
+       "onde": "calcada",
        "expr": "feliz",
        "pose": "pensando"
       }
      },
+     "clima": "dia",
      "onoma": "blá blá"
     },
     {
@@ -83,12 +94,19 @@
    "planos": [
     {
      "palavras": 6,
-     "cena": "vazio",
+     "cena": "laboratorio",
      "cam": {
-      "tipo": "americano",
-      "mov": "entra"
+      "tipo": "geral",
+      "alvo": "centro",
+      "ang": 45,
+      "zoom": 0.85
      },
-     "objeto": "cerebro",
+     "atores": {
+      "voce": {
+       "onde": "pe",
+       "expr": "pensando"
+      }
+     },
      "etiqueta": {
       "txt": "O EXPERIMENTO",
       "cor": "branco"
@@ -96,17 +114,17 @@
     },
     {
      "palavras": 0,
-     "cena": "sala",
+     "cena": "banca",
      "cam": {
-      "tipo": "medio",
-      "alvo": "sofa",
-      "ang": 30
+      "tipo": "americano",
+      "alvo": "vitrine",
+      "ang": 20
      },
      "atores": {
       "voce": {
-       "onde": "sofa",
+       "onde": "cliente",
        "expr": "pensando",
-       "pose": "celular"
+       "giro": 3.1
       }
      }
     }
@@ -118,17 +136,21 @@
    "planos": [
     {
      "palavras": 5,
-     "cena": "sala",
+     "cena": "banca",
      "cam": {
       "tipo": "close",
-      "alvo": "rosto",
+      "alvo": [
+       0.9,
+       1.35,
+       0.7
+      ],
       "ang": 20
      },
      "atores": {
       "voce": {
-       "onde": "sofa",
+       "onde": "cliente",
        "expr": "feliz",
-       "pose": "celular"
+       "giro": 3.1
       }
      },
      "onoma": "ACHEI!"
@@ -139,9 +161,10 @@
      "cam": {
       "tipo": "americano",
       "ang": -20,
-      "mov": "gira"
+      "mov": "gira",
+      "zoom": 1.0
      },
-     "objeto": "cerebro",
+     "objeto": "revista",
      "revela": true,
      "etiqueta": {
       "txt": "MAIS RÁPIDO",
@@ -157,31 +180,32 @@
    "planos": [
     {
      "palavras": 3,
-     "cena": "escritorio",
+     "cena": "palco",
      "cam": {
       "tipo": "close",
       "alvo": "rosto",
-      "ang": 25
+      "ang": 50,
+      "alt": 0.1
      },
      "atores": {
       "voce": {
-       "onde": "cadeira",
+       "onde": "mic",
        "expr": "susto"
       }
      }
     },
     {
      "palavras": 0,
-     "cena": "escritorio",
+     "cena": "palco",
      "cam": {
       "tipo": "americano",
       "alvo": "rosto",
-      "ang": 40,
-      "alt": 0.2
+      "ang": 65,
+      "alt": 0.1
      },
      "atores": {
       "voce": {
-       "onde": "cadeira",
+       "onde": "mic",
        "expr": "feliz"
       }
      },
@@ -198,12 +222,20 @@
    "planos": [
     {
      "palavras": 6,
-     "cena": "vazio",
+     "cena": "palco",
      "cam": {
-      "tipo": "americano",
-      "mov": "entra"
+      "tipo": "geral",
+      "alvo": "centro",
+      "ang": 45,
+      "alt": 0.6,
+      "zoom": 0.8
      },
-     "objeto": "cerebro",
+     "atores": {
+      "voce": {
+       "onde": "mic",
+       "expr": "normal"
+      }
+     },
      "etiqueta": {
       "txt": "MENOS ANSIEDADE",
       "cor": "verde",
@@ -212,22 +244,13 @@
     },
     {
      "palavras": 0,
-     "cena": "rua",
+     "cena": "vazio",
      "cam": {
-      "tipo": "medio",
-      "alvo": "calcada",
-      "ang": 25
+      "tipo": "americano",
+      "mov": "entra",
+      "zoom": 1.1
      },
-     "atores": {
-      "voce": {
-       "onde": "calcada",
-       "expr": "feliz",
-       "anda": [
-        0,
-        -0.5
-       ]
-      }
-     }
+     "objeto": "microfone"
     }
    ],
    "id": 5
@@ -293,18 +316,19 @@
     },
     {
      "palavras": 0,
-     "cena": "escritorio",
+     "cena": "palco",
      "cam": {
-      "tipo": "americano",
+      "tipo": "medio",
       "alvo": "rosto",
-      "ang": 45,
+      "ang": 60,
+      "alt": 0.2,
       "mov": "sai"
      },
      "atores": {
       "voce": {
-       "onde": "cadeira",
+       "onde": "mic",
        "expr": "feliz",
-       "pose": "pensando"
+       "pose": "tchau"
       }
      }
     }
@@ -316,16 +340,16 @@
    "planos": [
     {
      "palavras": 6,
-     "cena": "sala",
+     "cena": "palco",
      "cam": {
       "tipo": "americano",
-      "alvo": "sofa",
-      "ang": 25,
-      "alt": 0.5
+      "alvo": "rosto",
+      "ang": 55,
+      "alt": 0.15
      },
      "atores": {
       "voce": {
-       "onde": "sofa",
+       "onde": "mic",
        "expr": "feliz",
        "pose": "tchau"
       }
@@ -333,15 +357,16 @@
     },
     {
      "palavras": 0,
-     "cena": "sala",
+     "cena": "palco",
      "cam": {
       "tipo": "close",
       "alvo": "rosto",
-      "ang": 15
+      "ang": 50,
+      "alt": 0.1
      },
      "atores": {
       "voce": {
-       "onde": "sofa",
+       "onde": "mic",
        "expr": "feliz"
       }
      },

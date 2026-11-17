@@ -12,8 +12,17 @@
  },
  "elenco": {
   "dono": {
+   "camisa": "#1f7a4a",
+   "bone": "#ffd23f",
+   "barba": true,
+   "pele": "#8d5a3b",
+   "cabelo": "#111"
+  },
+  "cliente": {
    "camisa": "#e63946",
-   "cabelo": "#1b1b1b"
+   "estilo": "longo",
+   "cabelo": "#3a2416",
+   "pele": "#f0c9a0"
   }
  },
  "destaque": [
@@ -27,32 +36,51 @@
    "planos": [
     {
      "palavras": 5,
-     "cena": "escritorio",
+     "cena": "banca",
      "cam": {
-      "tipo": "medio",
-      "alvo": "rosto",
-      "ang": 35
+      "tipo": "geral",
+      "alvo": "centro",
+      "ang": 30,
+      "zoom": 0.8
      },
      "atores": {
       "dono": {
-       "onde": "cadeira",
+       "onde": "balcao",
        "expr": "normal"
+      }
+     },
+     "estado": {
+      "quadro": {
+       "linhas": [
+        "WEB .. $59",
+        "PAPEL+WEB .. $125"
+       ],
+       "marca": -1
       }
      }
     },
     {
      "palavras": 0,
-     "cena": "escritorio",
+     "cena": "banca",
      "cam": {
       "tipo": "close",
-      "alvo": "rosto",
-      "ang": 20
+      "alvo": "dono",
+      "ang": 15
      },
      "atores": {
       "dono": {
-       "onde": "cadeira",
+       "onde": "balcao",
        "expr": "triste",
        "pose": "pensando"
+      }
+     },
+     "estado": {
+      "quadro": {
+       "linhas": [
+        "WEB .. $59",
+        "PAPEL+WEB .. $125"
+       ],
+       "marca": -1
       }
      },
      "onoma": "?"
@@ -65,19 +93,29 @@
    "planos": [
     {
      "palavras": 0,
-     "cena": "vazio",
+     "cena": "banca",
      "cam": {
       "tipo": "americano",
-      "zoom": 1.05,
+      "alvo": "quadro",
+      "ang": 0,
+      "zoom": 0.9,
       "mov": "entra"
      },
-     "objeto": {
-      "nome": "quadro",
-      "linhas": [
-       "WEB ......... $59",
-       "PAPEL+WEB ... $125"
-      ],
-      "marca": 0
+     "atores": {
+      "cliente": {
+       "onde": "cliente",
+       "expr": "normal",
+       "giro": 0
+      }
+     },
+     "estado": {
+      "quadro": {
+       "linhas": [
+        "WEB .. $59",
+        "PAPEL+WEB .. $125"
+       ],
+       "marca": 0
+      }
      },
      "etiqueta": {
       "txt": "68% NO BARATO",
@@ -93,18 +131,26 @@
    "planos": [
     {
      "palavras": 5,
-     "cena": "escritorio",
+     "cena": "banca",
      "cam": {
       "tipo": "americano",
-      "alvo": "rosto",
-      "ang": 40,
-      "alt": 0.2
+      "alvo": "dono",
+      "ang": 35
      },
      "atores": {
       "dono": {
-       "onde": "cadeira",
+       "onde": "balcao",
        "expr": "bravo",
        "pose": "bravo"
+      }
+     },
+     "estado": {
+      "quadro": {
+       "linhas": [
+        "WEB .. $59",
+        "PAPEL+WEB .. $125"
+       ],
+       "marca": -1
       }
      }
     },
@@ -113,17 +159,10 @@
      "cena": "vazio",
      "cam": {
       "tipo": "americano",
-      "zoom": 1.05,
+      "zoom": 1.0,
       "mov": "gira"
      },
-     "objeto": {
-      "nome": "quadro",
-      "linhas": [
-       "WEB ......... $59",
-       "PAPEL+WEB ... $125"
-      ],
-      "marca": 1
-     }
+     "objeto": "revista"
     }
    ],
    "id": 3
@@ -133,17 +172,26 @@
    "planos": [
     {
      "palavras": 0,
-     "cena": "escritorio",
+     "cena": "banca",
      "cam": {
       "tipo": "close",
-      "alvo": "rosto",
-      "ang": 15
+      "alvo": "dono",
+      "ang": 20
      },
      "atores": {
       "dono": {
-       "onde": "cadeira",
+       "onde": "balcao",
        "expr": "feliz",
        "pose": "pensando"
+      }
+     },
+     "estado": {
+      "quadro": {
+       "linhas": [
+        "WEB .. $59",
+        "PAPEL+WEB .. $125"
+       ],
+       "marca": -1
       }
      },
      "etiqueta": {
@@ -159,39 +207,57 @@
    "planos": [
     {
      "palavras": 5,
-     "cena": "vazio",
+     "cena": "banca",
      "cam": {
       "tipo": "americano",
-      "zoom": 1.05,
+      "alvo": "quadro",
+      "ang": -10,
+      "zoom": 0.9,
       "mov": "entra"
      },
-     "objeto": {
-      "nome": "quadro",
-      "linhas": [
-       "WEB ......... $59",
-       "PAPEL ....... $125",
-       "PAPEL+WEB ... $125"
-      ],
-      "marca": 1
+     "atores": {
+      "dono": {
+       "onde": "balcao",
+       "expr": "feliz"
+      }
+     },
+     "estado": {
+      "quadro": {
+       "linhas": [
+        "WEB .. $59",
+        "PAPEL .. $125",
+        "PAPEL+WEB .. $125"
+       ],
+       "marca": 1
+      }
      },
      "onoma": "!?"
     },
     {
      "palavras": 0,
-     "cena": "vazio",
+     "cena": "banca",
      "cam": {
       "tipo": "americano",
-      "zoom": 1.0,
+      "alvo": "quadro",
+      "ang": 15,
+      "zoom": 0.8,
       "mov": "gira"
      },
-     "objeto": {
-      "nome": "quadro",
-      "linhas": [
-       "WEB ......... $59",
-       "PAPEL ....... $125",
-       "PAPEL+WEB ... $125"
-      ],
-      "marca": 2
+     "atores": {
+      "dono": {
+       "onde": "balcao",
+       "expr": "feliz"
+      }
+     },
+     "estado": {
+      "quadro": {
+       "linhas": [
+        "WEB .. $59",
+        "PAPEL .. $125",
+        "PAPEL+WEB .. $125"
+       ],
+       "marca": 2
+      }
      }
     }
    ],
@@ -202,32 +268,52 @@
    "planos": [
     {
      "palavras": 3,
-     "cena": "escritorio",
+     "cena": "banca",
      "cam": {
       "tipo": "medio",
-      "alvo": "rosto",
+      "alvo": "dono",
       "ang": 30
      },
      "atores": {
       "dono": {
-       "onde": "cadeira",
+       "onde": "balcao",
        "expr": "feliz"
+      }
+     },
+     "estado": {
+      "quadro": {
+       "linhas": [
+        "WEB .. $59",
+        "PAPEL .. $125",
+        "PAPEL+WEB .. $125"
+       ],
+       "marca": -1
       }
      }
     },
     {
      "palavras": 0,
-     "cena": "escritorio",
+     "cena": "banca",
      "cam": {
       "tipo": "close",
-      "alvo": "rosto",
+      "alvo": "dono",
       "ang": 25
      },
      "atores": {
       "dono": {
-       "onde": "cadeira",
+       "onde": "balcao",
        "expr": "feliz",
        "pose": "tchau"
+      }
+     },
+     "estado": {
+      "quadro": {
+       "linhas": [
+        "WEB .. $59",
+        "PAPEL .. $125",
+        "PAPEL+WEB .. $125"
+       ],
+       "marca": 1
       }
      },
      "etiqueta": {
@@ -243,23 +329,40 @@
    "planos": [
     {
      "palavras": 0,
-     "cena": "vazio",
+     "cena": "banca",
      "cam": {
       "tipo": "americano",
-      "zoom": 1.05,
-      "mov": "entra"
-     },
-     "objeto": {
-      "nome": "quadro",
-      "linhas": [
-       "WEB ......... $59",
-       "PAPEL ....... $125",
-       "PAPEL+WEB ... $125"
+      "alvo": [
+       0.9,
+       1.2,
+       0.7
       ],
-      "marca": 2
+      "ang": 20
+     },
+     "atores": {
+      "cliente": {
+       "onde": "cliente",
+       "expr": "feliz",
+       "pose": "celular",
+       "giro": 0
+      },
+      "dono": {
+       "onde": "balcao",
+       "expr": "normal"
+      }
+     },
+     "estado": {
+      "quadro": {
+       "linhas": [
+        "WEB .. $59",
+        "PAPEL .. $125",
+        "PAPEL+WEB .. $125"
+       ],
+       "marca": 2
+      }
      },
      "etiqueta": {
-      "txt": "\"PAPEL GRÁTIS!\"",
+      "txt": "\"PAPEL DE GRAÇA!\"",
       "cor": "verde",
       "icone": "✓"
      }
@@ -272,37 +375,63 @@
    "planos": [
     {
      "palavras": 6,
-     "cena": "vazio",
+     "cena": "banca",
      "cam": {
       "tipo": "americano",
-      "zoom": 1.05,
+      "alvo": "quadro",
+      "ang": 5,
+      "zoom": 0.85,
       "mov": "gira"
      },
-     "objeto": {
-      "nome": "quadro",
-      "linhas": [
-       "WEB ......... $59",
-       "PAPEL ....... $125",
-       "PAPEL+WEB ... $125"
-      ],
-      "marca": 2
+     "atores": {
+      "cliente": {
+       "onde": "cliente",
+       "expr": "feliz",
+       "giro": 0
+      }
+     },
+     "estado": {
+      "quadro": {
+       "linhas": [
+        "WEB .. $59",
+        "PAPEL .. $125",
+        "PAPEL+WEB .. $125"
+       ],
+       "marca": 2
+      }
      },
      "revela": true
     },
     {
      "palavras": 0,
-     "cena": "escritorio",
+     "cena": "banca",
      "cam": {
-      "tipo": "medio",
-      "alvo": "rosto",
+      "tipo": "geral",
+      "alvo": "centro",
       "ang": 35,
+      "zoom": 0.85,
       "mov": "sai"
      },
      "atores": {
       "dono": {
-       "onde": "cadeira",
+       "onde": "balcao",
        "expr": "feliz",
        "pose": "tchau"
+      },
+      "cliente": {
+       "onde": "cliente",
+       "expr": "feliz",
+       "giro": 0
+      }
+     },
+     "estado": {
+      "quadro": {
+       "linhas": [
+        "WEB .. $59",
+        "PAPEL .. $125",
+        "PAPEL+WEB .. $125"
+       ],
+       "marca": 2
       }
      },
      "etiqueta": {
@@ -323,9 +452,10 @@
      "cam": {
       "tipo": "americano",
       "ang": 0,
-      "mov": "entra"
+      "mov": "entra",
+      "zoom": 1.0
      },
-     "objeto": "cerebro",
+     "objeto": "revista",
      "revela": true
     }
    ],
@@ -339,18 +469,11 @@
      "cena": "vazio",
      "cam": {
       "tipo": "americano",
-      "zoom": 1.05,
-      "mov": "entra"
+      "zoom": 0.95,
+      "mov": "entra",
+      "ang": 20
      },
-     "objeto": {
-      "nome": "quadro",
-      "linhas": [
-       "WEB ......... $59",
-       "PAPEL ....... $125",
-       "PAPEL+WEB ... $125"
-      ],
-      "marca": 2
-     },
+     "objeto": "revista",
      "etiqueta": {
       "txt": "THE ECONOMIST",
       "cor": "branco"
@@ -358,15 +481,16 @@
     },
     {
      "palavras": 0,
-     "cena": "escritorio",
+     "cena": "feira",
      "cam": {
       "tipo": "geral",
       "alvo": "centro",
-      "ang": 40
+      "ang": 40,
+      "zoom": 0.85
      },
      "atores": {
-      "dono": {
-       "onde": "cadeira",
+      "cliente": {
+       "onde": "pe",
        "expr": "normal"
       }
      },
@@ -383,13 +507,30 @@
    "planos": [
     {
      "palavras": 5,
-     "cena": "vazio",
+     "cena": "banca",
      "cam": {
       "tipo": "americano",
-      "ang": -15,
+      "alvo": "vitrine",
+      "ang": 20,
       "mov": "gira"
      },
-     "objeto": "cerebro",
+     "atores": {
+      "cliente": {
+       "onde": "cliente",
+       "expr": "pensando",
+       "giro": 0
+      }
+     },
+     "estado": {
+      "quadro": {
+       "linhas": [
+        "WEB .. $59",
+        "PAPEL .. $125",
+        "PAPEL+WEB .. $125"
+       ],
+       "marca": 2
+      }
+     },
      "etiqueta": {
       "txt": "EFEITO ISCA",
       "cor": "amarelo",
@@ -405,10 +546,10 @@
       "ang": 30
      },
      "atores": {
-      "dono": {
+      "cliente": {
        "onde": "sofa",
-       "pose": "celular",
-       "expr": "normal"
+       "expr": "normal",
+       "pose": "celular"
       }
      }
     }
@@ -428,7 +569,7 @@
       "alt": 0.5
      },
      "atores": {
-      "dono": {
+      "cliente": {
        "onde": "sofa",
        "expr": "susto"
       }
@@ -443,7 +584,7 @@
       "ang": 15
      },
      "atores": {
-      "dono": {
+      "cliente": {
        "onde": "sofa",
        "expr": "feliz"
       }

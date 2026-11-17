@@ -12,12 +12,15 @@
  },
  "elenco": {
   "voce": {
-   "camisa": "#2fbf5b"
+   "camisa": "#6c757d",
+   "oculos": true,
+   "cabelo": "#1b1b1b",
+   "barba": true,
+   "pele": "#c98d63"
   }
  },
  "destaque": [
   "seis",
-  "cérebro",
   "esconde",
   "duas"
  ],
@@ -45,7 +48,7 @@
      "cena": "vazio",
      "cam": {
       "tipo": "americano",
-      "zoom": 0.62,
+      "zoom": 1.0,
       "mov": "gira"
      },
      "objeto": {
@@ -55,7 +58,7 @@
     },
     {
      "palavras": 0,
-     "cena": "escritorio",
+     "cena": "madrugada",
      "cam": {
       "tipo": "americano",
       "alvo": "rosto",
@@ -77,7 +80,7 @@
    "planos": [
     {
      "palavras": 4,
-     "cena": "escritorio",
+     "cena": "madrugada",
      "cam": {
       "tipo": "close",
       "alvo": "rosto",
@@ -106,12 +109,14 @@
      "atores": {
       "voce": {
        "onde": "calcada",
+       "expr": "normal",
        "anda": [
         0,
-        -0.6
+        -0.5
        ]
       }
-     }
+     },
+     "clima": "dia"
     }
    ],
    "id": 2
@@ -121,11 +126,12 @@
    "planos": [
     {
      "palavras": 0,
-     "cena": "quarto",
+     "cena": "laboratorio",
      "cam": {
       "tipo": "geral",
       "alvo": "centro",
-      "ang": 45
+      "ang": 45,
+      "zoom": 0.85
      },
      "atores": {
       "voce": {
@@ -146,7 +152,7 @@
    "planos": [
     {
      "palavras": 0,
-     "cena": "escritorio",
+     "cena": "madrugada",
      "cam": {
       "tipo": "medio",
       "alvo": "rosto",
@@ -169,7 +175,7 @@
    "planos": [
     {
      "palavras": 4,
-     "cena": "escritorio",
+     "cena": "madrugada",
      "cam": {
       "tipo": "close",
       "alvo": "rosto",
@@ -182,16 +188,20 @@
        "pose": "triste"
       }
      },
-     "marco": "3 dias"
+     "marco": "3 dias",
+     "estado": {
+      "hora": "03:12"
+     }
     },
     {
      "palavras": 0,
      "cena": "vazio",
      "cam": {
       "tipo": "americano",
-      "mov": "entra"
+      "mov": "entra",
+      "zoom": 1.1
      },
-     "objeto": "cerebro",
+     "objeto": "cafe",
      "onoma": "?"
     }
    ],
@@ -202,12 +212,12 @@
    "planos": [
     {
      "palavras": 4,
-     "cena": "escritorio",
+     "cena": "madrugada",
      "cam": {
       "tipo": "americano",
-      "alvo": "rosto",
+      "alvo": "cafe",
       "ang": 40,
-      "alt": 0.2
+      "alt": 0.3
      },
      "atores": {
       "voce": {
@@ -216,7 +226,10 @@
        "pose": "triste"
       }
      },
-     "marco": "10 dias"
+     "marco": "10 dias",
+     "estado": {
+      "hora": "04:30"
+     }
     },
     {
      "palavras": 0,
@@ -242,7 +255,7 @@
    "planos": [
     {
      "palavras": 4,
-     "cena": "escritorio",
+     "cena": "madrugada",
      "cam": {
       "tipo": "close",
       "alvo": "rosto",
@@ -255,7 +268,10 @@
        "pose": "bravo"
       }
      },
-     "marco": "2 semanas"
+     "marco": "2 semanas",
+     "estado": {
+      "hora": "05:58"
+     }
     },
     {
      "palavras": 0,
@@ -268,13 +284,14 @@
      "atores": {
       "voce": {
        "onde": "calcada",
+       "expr": "triste",
        "anda": [
         0,
-        -0.4
-       ],
-       "expr": "triste"
+        -0.5
+       ]
       }
      },
+     "clima": "dia",
      "etiqueta": {
       "txt": "= 2 NOITES",
       "cor": "vermelho",
@@ -289,13 +306,19 @@
    "planos": [
     {
      "palavras": 0,
-     "cena": "vazio",
+     "cena": "madrugada",
      "cam": {
       "tipo": "americano",
-      "ang": 20,
+      "alvo": "janela",
+      "ang": 30,
       "mov": "entra"
      },
-     "objeto": "cerebro",
+     "atores": {
+      "voce": {
+       "onde": "cadeira",
+       "expr": "triste"
+      }
+     },
      "revela": true
     }
    ],
@@ -306,7 +329,7 @@
    "planos": [
     {
      "palavras": 0,
-     "cena": "escritorio",
+     "cena": "madrugada",
      "cam": {
       "tipo": "close",
       "alvo": "rosto",
@@ -335,9 +358,10 @@
      "cam": {
       "tipo": "americano",
       "ang": 0,
-      "mov": "gira"
+      "mov": "gira",
+      "zoom": 1.1
      },
-     "objeto": "cerebro"
+     "objeto": "cafe"
     },
     {
      "palavras": 0,
@@ -362,7 +386,7 @@
    "planos": [
     {
      "palavras": 8,
-     "cena": "escritorio",
+     "cena": "madrugada",
      "cam": {
       "tipo": "americano",
       "alvo": "rosto",
@@ -379,7 +403,7 @@
     },
     {
      "palavras": 0,
-     "cena": "escritorio",
+     "cena": "madrugada",
      "cam": {
       "tipo": "close",
       "alvo": "rosto",

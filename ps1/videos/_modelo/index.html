@@ -7,6 +7,7 @@
 <script type="module">
 import * as P from '../../lib/ps1.js';
 import * as D from '../../lib/descifre.js';
+import '../../lib/cenarios.js';
 window.SETUP = async () => {
   const F = await fetch('filme.json').then(r => r.json());
   const S = P.palco({ cenario: 'degrade', fov: 45, cam: [0, 2, 5], alvo: [0, 1, 0] });
