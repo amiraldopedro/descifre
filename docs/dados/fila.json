@@ -1,6 +1,37 @@
 {
  "itens": [
   {
+   "id": "p06",
+   "criado": "2026-11-17T02:34:50+00:00",
+   "notas": [],
+   "historico": [
+    {
+     "quando": "2026-11-17T02:34:54+00:00",
+     "status": "rascunho"
+    }
+   ],
+   "tipo": "short",
+   "titulo": "A Mulher Que Não Sente Medo (Caso Real) #shorts",
+   "descricao": "A paciente S.M. perdeu as duas amígdalas por causa da doença de Urbach-Wiethe e não sente medo (Feinstein e colegas, 2011). Mesmo assim, sentiu pânico ao inalar CO2 (Feinstein e colegas, 2013).\n\nVídeo completo: https://youtu.be/qY0j5kTWY48\n\n#psicologia #curiosidades #shorts\n\nMúsica: \"Interloper\" — Kevin MacLeod (incompetech.com), licença CC BY 4.0 (creativecommons.org/licenses/by/4.0)",
+   "tags": [
+    "paciente sm",
+    "amígdala",
+    "medo",
+    "cérebro",
+    "psicologia",
+    "curiosidades",
+    "shorts",
+    "descifre"
+   ],
+   "thumb_texto": {},
+   "tema": "A mulher sem medo",
+   "duracao_s": 43,
+   "run": "44003609082",
+   "download": "https://github.com/amiraldopedro/descifre/actions/runs/44003609082",
+   "status": "rascunho",
+   "youtube_id": "GdSAs6ZCh9c"
+  },
+  {
    "id": "p07",
    "criado": "2026-11-17T02:34:34+00:00",
    "notas": [],
@@ -1929,5 +1960,5 @@
   ],
   "fuso": "America/Sao_Paulo"
  },
- "atualizado": "2026-11-17T02:34:42+00:00"
+ "atualizado": "2026-11-17T02:34:54+00:00"
 }
