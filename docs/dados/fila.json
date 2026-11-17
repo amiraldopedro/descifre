@@ -1,6 +1,38 @@
 {
  "itens": [
   {
+   "id": "p03",
+   "criado": "2026-11-17T02:33:35+00:00",
+   "notas": [],
+   "historico": [
+    {
+     "quando": "2026-11-17T02:33:41+00:00",
+     "status": "rascunho"
+    }
+   ],
+   "tipo": "short",
+   "titulo": "O Truque de Preço Que Faz Você Pagar Mais (Efeito Isca) #shorts",
+   "descricao": "O efeito isca (decoy effect): no experimento de Dan Ariely com 100 alunos do MIT, uma opção que ninguém escolhia fez o plano caro da The Economist saltar de 32% para 84% das escolhas.\n\nVídeo completo: https://youtu.be/sZwWHfmSUzU\n\n#psicologia #curiosidades #shorts",
+   "tags": [
+    "efeito isca",
+    "decoy effect",
+    "dan ariely",
+    "marketing",
+    "preço",
+    "psicologia",
+    "curiosidades",
+    "shorts",
+    "descifre"
+   ],
+   "thumb_texto": {},
+   "tema": "O truque do preço isca",
+   "duracao_s": 46,
+   "run": "44003467394",
+   "download": "https://github.com/amiraldopedro/descifre/actions/runs/44003467394",
+   "status": "rascunho",
+   "youtube_id": "umHB7Bq2E_g"
+  },
+  {
    "id": "p02",
    "criado": "2026-11-17T02:33:21+00:00",
    "notas": [],
@@ -1804,5 +1836,5 @@
   ],
   "fuso": "America/Sao_Paulo"
  },
- "atualizado": "2026-11-17T02:33:33+00:00"
+ "atualizado": "2026-11-17T02:33:41+00:00"
 }
