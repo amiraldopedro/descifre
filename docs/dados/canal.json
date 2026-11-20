@@ -1,22 +1,13 @@
 {
- "atualizado": "2026-11-19T18:15:40+00:00",
+ "atualizado": "2026-11-20T17:47:15+00:00",
  "canal": {
   "nome": "Descifre & Domine",
-  "inscritos": 76,
-  "views": 13402,
-  "videos": 53,
+  "inscritos": 78,
+  "views": 16685,
+  "videos": 59,
   "foto": "https://yt3.ggpht.com/7Icg6egJLFOFwkgsi62NDeasvlxROJNTG4xwD9zW3QXpBDFZXnp9fRwoogERz3lbiCJG8mkHuH0=s88-c-k-c0x00ffffff-no-rj"
  },
  "por_dia": [
-  {
-   "day": "2026-08-21",
-   "views": 15,
-   "estimatedMinutesWatched": 129,
-   "subscribersGained": 0,
-   "subscribersLost": 0,
-   "likes": 0,
-   "comments": 0
-  },
   {
    "day": "2026-08-22",
    "views": 7,
@@ -784,8 +775,8 @@
   },
   {
    "day": "2026-11-15",
-   "views": 389,
-   "estimatedMinutesWatched": 313,
+   "views": 379,
+   "estimatedMinutesWatched": 291,
    "subscribersGained": 0,
    "subscribersLost": 0,
    "likes": 7,
@@ -799,9 +790,91 @@
    "subscribersLost": 1,
    "likes": 2,
    "comments": 0
+  },
+  {
+   "day": "2026-11-17",
+   "views": 1211,
+   "estimatedMinutesWatched": 286,
+   "subscribersGained": 5,
+   "subscribersLost": 2,
+   "likes": 20,
+   "comments": 0
   }
  ],
  "videos": [
+  {
+   "youtube_id": "1JofgeV51cY",
+   "titulo": "Você Empurra a Cadeira Quando Levanta? #shorts",
+   "publicado": "2026-11-20T15:00:02Z",
+   "privacidade": "public",
+   "agendado_para": null,
+   "views": 12,
+   "curtidas": 0,
+   "comentarios": 0,
+   "duracao": "PT35S"
+  },
+  {
+   "youtube_id": "E680HDKOb08",
+   "titulo": "Quem Empurra a Cadeira ao Sair Tem Estes 3 Traços",
+   "publicado": "2026-11-20T13:00:06Z",
+   "privacidade": "public",
+   "agendado_para": null,
+   "views": 25,
+   "curtidas": 4,
+   "comentarios": 0,
+   "duracao": "PT4M34S"
+  },
+  {
+   "youtube_id": "YkLOo7EV2CU",
+   "titulo": "15 Minutos no Escuro Total: O Cérebro Começa a Inventar #shorts",
+   "publicado": "2026-11-20T12:45:38Z",
+   "privacidade": "public",
+   "agendado_para": null,
+   "views": 630,
+   "curtidas": 14,
+   "comentarios": 0,
+   "duracao": "PT35S"
+  },
+  {
+   "youtube_id": "rls5I5TkubE",
+   "titulo": "Por Que Você É Grosso Justo Com Quem Mais Ama #shorts",
+   "publicado": "2026-11-19T22:30:34Z",
+   "privacidade": "public",
+   "agendado_para": null,
+   "views": 2,
+   "curtidas": 0,
+   "comentarios": 0,
+   "duracao": "PT35S"
+  },
+  {
+   "youtube_id": "pUhRJe4_bCY",
+   "titulo": "O Pânico dos Marcianos Nunca Existiu #shorts",
+   "publicado": "2026-11-19T22:00:07Z",
+   "privacidade": "public",
+   "agendado_para": null,
+   "views": 0,
+   "curtidas": 0,
+   "comentarios": 0,
+   "duracao": "PT32S"
+  },
+  {
+   "youtube_id": "wcwuKyeqTN4",
+   "titulo": "Quem Fala Sozinho Não É Doido (Olha o Que a Ciência Diz) #shorts",
+   "publicado": "2026-11-19T18:56:10Z",
+   "privacidade": "public",
+   "agendado_para": null,
+   "views": 1,
+   "curtidas": 0,
+   "comentarios": 0,
+   "duracao": "PT40S",
+   "estimatedMinutesWatched": 0,
+   "averageViewDuration": 39,
+   "averageViewPercentage": 98.95,
+   "subscribersGained": 0,
+   "likes": 0,
+   "comments": 0,
+   "shares": 0
+  },
   {
    "youtube_id": "U5k3FogsKeg",
    "titulo": "A Dança Que Não Parava (Estrasburgo, 1518) #shorts",
@@ -820,7 +893,7 @@
    "privacidade": "public",
    "agendado_para": null,
    "views": 1,
-   "curtidas": 25,
+   "curtidas": 29,
    "comentarios": 0,
    "duracao": "PT36S",
    "estimatedMinutesWatched": 0,
@@ -837,9 +910,9 @@
    "publicado": "2026-11-19T11:00:01Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 792,
+   "views": 965,
    "curtidas": 41,
-   "comentarios": 1,
+   "comentarios": 2,
    "duracao": "PT41S"
   },
   {
@@ -892,7 +965,7 @@
    "publicado": "2026-11-18T13:00:01Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 9,
+   "views": 14,
    "curtidas": 0,
    "comentarios": 0,
    "duracao": "PT4M9S"
@@ -904,7 +977,7 @@
    "privacidade": "public",
    "agendado_para": null,
    "views": 1,
-   "curtidas": 17,
+   "curtidas": 18,
    "comentarios": 0,
    "duracao": "PT38S",
    "estimatedMinutesWatched": 0,
@@ -921,7 +994,7 @@
    "publicado": "2026-11-18T09:45:17Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 946,
+   "views": 949,
    "curtidas": 18,
    "comentarios": 0,
    "duracao": "PT45S"
@@ -932,15 +1005,15 @@
    "publicado": "2026-11-18T01:34:44Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 1,
+   "views": 537,
    "curtidas": 28,
    "comentarios": 0,
    "duracao": "PT46S",
-   "estimatedMinutesWatched": 0,
-   "averageViewDuration": 45,
-   "averageViewPercentage": 99.75,
-   "subscribersGained": 0,
-   "likes": 0,
+   "estimatedMinutesWatched": 108,
+   "averageViewDuration": 20,
+   "averageViewPercentage": 44.9,
+   "subscribersGained": 3,
+   "likes": 11,
    "comments": 0,
    "shares": 0
   },
@@ -972,10 +1045,17 @@
    "publicado": "2026-11-17T18:30:06Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 4,
+   "views": 0,
    "curtidas": 0,
    "comentarios": 0,
-   "duracao": "PT40S"
+   "duracao": "PT40S",
+   "estimatedMinutesWatched": 0,
+   "averageViewDuration": 0,
+   "averageViewPercentage": 0,
+   "subscribersGained": 0,
+   "likes": 0,
+   "comments": 0,
+   "shares": 0
   },
   {
    "youtube_id": "s6oo_WYGK0c",
@@ -983,10 +1063,17 @@
    "publicado": "2026-11-17T15:00:10Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 118,
+   "views": 80,
    "curtidas": 2,
    "comentarios": 0,
-   "duracao": "PT33S"
+   "duracao": "PT33S",
+   "estimatedMinutesWatched": 4,
+   "averageViewDuration": 8,
+   "averageViewPercentage": 27.149999999999995,
+   "subscribersGained": 0,
+   "likes": 0,
+   "comments": 0,
+   "shares": 0
   },
   {
    "youtube_id": "cIebmJPz5lg",
@@ -994,17 +1081,17 @@
    "publicado": "2026-11-17T10:00:31Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 1,
+   "views": 327,
    "curtidas": 12,
    "comentarios": 0,
    "duracao": "PT48S",
-   "estimatedMinutesWatched": 0,
-   "averageViewDuration": 47,
-   "averageViewPercentage": 99.75,
-   "subscribersGained": 0,
-   "likes": 0,
+   "estimatedMinutesWatched": 54,
+   "averageViewDuration": 23,
+   "averageViewPercentage": 48.38,
+   "subscribersGained": 1,
+   "likes": 7,
    "comments": 0,
-   "shares": 0
+   "shares": 1
   },
   {
    "youtube_id": "Ynz5MyedtVw",
@@ -1012,15 +1099,15 @@
    "publicado": "2026-11-17T09:53:50Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 2,
+   "views": 192,
    "curtidas": 5,
    "comentarios": 0,
    "duracao": "PT44S",
-   "estimatedMinutesWatched": 0,
-   "averageViewDuration": 44,
-   "averageViewPercentage": 100.68,
-   "subscribersGained": 0,
-   "likes": 0,
+   "estimatedMinutesWatched": 31,
+   "averageViewDuration": 19,
+   "averageViewPercentage": 45.3,
+   "subscribersGained": 1,
+   "likes": 2,
    "comments": 0,
    "shares": 0
   },
@@ -1048,24 +1135,6 @@
    "estimatedMinutesWatched": 0,
    "averageViewDuration": 40,
    "averageViewPercentage": 92.94,
-   "subscribersGained": 0,
-   "likes": 0,
-   "comments": 0,
-   "shares": 0
-  },
-  {
-   "youtube_id": "wcwuKyeqTN4",
-   "titulo": "Quem Fala Sozinho Não É Doido (Olha o Que a Ciência Diz) #shorts",
-   "publicado": "2026-11-17T03:04:35Z",
-   "privacidade": "unlisted",
-   "agendado_para": null,
-   "views": 1,
-   "curtidas": 0,
-   "comentarios": 0,
-   "duracao": "PT40S",
-   "estimatedMinutesWatched": 0,
-   "averageViewDuration": 39,
-   "averageViewPercentage": 98.95,
    "subscribersGained": 0,
    "likes": 0,
    "comments": 0,
@@ -1148,40 +1217,18 @@
    "duracao": "PT41S"
   },
   {
-   "youtube_id": "YkLOo7EV2CU",
-   "titulo": "15 Minutos no Escuro Total: O Cérebro Começa a Inventar #shorts",
-   "publicado": "2026-11-16T22:01:27Z",
-   "privacidade": "private",
-   "agendado_para": "2026-11-20T12:45:00Z",
-   "views": 0,
-   "curtidas": 0,
-   "comentarios": 0,
-   "duracao": "PT35S"
-  },
-  {
-   "youtube_id": "rls5I5TkubE",
-   "titulo": "Por Que Você É Grosso Justo Com Quem Mais Ama #shorts",
-   "publicado": "2026-11-16T22:01:25Z",
-   "privacidade": "private",
-   "agendado_para": "2026-11-19T22:30:00Z",
-   "views": 0,
-   "curtidas": 0,
-   "comentarios": 0,
-   "duracao": "PT35S"
-  },
-  {
    "youtube_id": "lUAzYfYnEVk",
    "titulo": "O Experimento da Prisão de Stanford Foi Armação? #shorts",
    "publicado": "2026-11-16T22:00:32Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 6,
+   "views": 7,
    "curtidas": 0,
    "comentarios": 0,
    "duracao": "PT37S",
    "estimatedMinutesWatched": 0,
-   "averageViewDuration": 0,
-   "averageViewPercentage": 0,
+   "averageViewDuration": 30,
+   "averageViewPercentage": 82.16,
    "subscribersGained": 0,
    "likes": 0,
    "comments": 0,
@@ -1193,7 +1240,7 @@
    "publicado": "2026-11-16T15:00:25Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 26,
+   "views": 28,
    "curtidas": 0,
    "comentarios": 0,
    "duracao": "PT43S",
@@ -1229,13 +1276,13 @@
    "publicado": "2026-11-15T22:00:21Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 23,
+   "views": 25,
    "curtidas": 0,
    "comentarios": 0,
    "duracao": "PT41S",
-   "estimatedMinutesWatched": 1,
-   "averageViewDuration": 18,
-   "averageViewPercentage": 45.41,
+   "estimatedMinutesWatched": 2,
+   "averageViewDuration": 19,
+   "averageViewPercentage": 48.41,
    "subscribersGained": 0,
    "likes": 0,
    "comments": 0,
@@ -1247,7 +1294,7 @@
    "publicado": "2026-11-15T15:00:33Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 224,
+   "views": 219,
    "curtidas": 3,
    "comentarios": 0,
    "duracao": "PT38S",
@@ -1265,7 +1312,7 @@
    "publicado": "2026-11-14T22:00:15Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 65,
+   "views": 64,
    "curtidas": 0,
    "comentarios": 0,
    "duracao": "PT32S",
@@ -1283,7 +1330,7 @@
    "publicado": "2026-11-14T15:00:16Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 250,
+   "views": 248,
    "curtidas": 2,
    "comentarios": 0,
    "duracao": "PT35S",
@@ -1301,13 +1348,13 @@
    "publicado": "2026-11-14T13:00:00Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 115,
+   "views": 156,
    "curtidas": 4,
    "comentarios": 1,
    "duracao": "PT22M30S",
-   "estimatedMinutesWatched": 497,
-   "averageViewDuration": 364,
-   "averageViewPercentage": 27.04,
+   "estimatedMinutesWatched": 496,
+   "averageViewDuration": 362,
+   "averageViewPercentage": 26.83,
    "subscribersGained": 0,
    "likes": 4,
    "comments": 1,
@@ -1430,17 +1477,6 @@
    "duracao": "PT29S"
   },
   {
-   "youtube_id": "pUhRJe4_bCY",
-   "titulo": "O Pânico dos Marcianos Nunca Existiu #shorts",
-   "publicado": "2026-11-12T04:54:49Z",
-   "privacidade": "private",
-   "agendado_para": "2026-11-19T22:00:00Z",
-   "views": 0,
-   "curtidas": 0,
-   "comentarios": 0,
-   "duracao": "PT32S"
-  },
-  {
    "youtube_id": "vqKFT9rxZok",
    "titulo": "Que Lado do Cérebro Você Usa? (Pegadinha) #shorts",
    "publicado": "2026-11-12T04:41:11Z",
@@ -1485,26 +1521,15 @@
    "duracao": "PT39S"
   },
   {
-   "youtube_id": "bZpi4XCywko",
-   "titulo": "Gandhi morreu com mais ou menos de 140 anos? #shorts",
-   "publicado": "2026-11-12T04:40:32Z",
-   "privacidade": "private",
-   "agendado_para": "2026-11-22T22:00:00Z",
-   "views": 0,
-   "curtidas": 0,
+   "youtube_id": "E680HDKOb08",
+   "titulo": "Quem Empurra a Cadeira ao Sair Tem Estes 3 Traços",
+   "publicado": "2026-11-20T13:00:06Z",
+   "privacidade": "public",
+   "agendado_para": null,
+   "views": 25,
+   "curtidas": 4,
    "comentarios": 0,
-   "duracao": "PT42S"
-  },
-  {
-   "youtube_id": "l99BC3fBuJY",
-   "titulo": "Metade das pessoas não viu o gorila 🦍 #shorts",
-   "publicado": "2026-11-12T04:40:22Z",
-   "privacidade": "private",
-   "agendado_para": "2026-11-22T15:00:00Z",
-   "views": 0,
-   "curtidas": 0,
-   "comentarios": 0,
-   "duracao": "PT40S"
+   "duracao": "PT4M34S"
   },
   {
    "youtube_id": "zuFiW7qSO7Y",
@@ -1512,7 +1537,7 @@
    "publicado": "2026-11-18T13:00:01Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 9,
+   "views": 14,
    "curtidas": 0,
    "comentarios": 0,
    "duracao": "PT4M9S"
@@ -1619,17 +1644,6 @@
    "duracao": "PT5M30S"
   },
   {
-   "youtube_id": "E680HDKOb08",
-   "titulo": "Quem Empurra a Cadeira ao Sair Tem Estes 3 Traços",
-   "publicado": "2026-11-10T19:23:47Z",
-   "privacidade": "private",
-   "agendado_para": "2026-11-20T13:00:00Z",
-   "views": 0,
-   "curtidas": 0,
-   "comentarios": 0,
-   "duracao": "PT4M34S"
-  },
-  {
    "youtube_id": "sJCFxNu2aFg",
    "titulo": "Qual a sua escolha? Vamos descobrir se você é manipulável.  #gatilhosmentais #psicologia",
    "publicado": "2026-11-10T14:35:00Z",
@@ -1653,13 +1667,13 @@
    "publicado": "2026-11-10T02:34:36Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 51,
+   "views": 52,
    "curtidas": 4,
    "comentarios": 1,
    "duracao": "PT8M28S",
    "estimatedMinutesWatched": 106,
-   "averageViewDuration": 144,
-   "averageViewPercentage": 28.53,
+   "averageViewDuration": 141,
+   "averageViewPercentage": 27.91,
    "subscribersGained": 0,
    "likes": 4,
    "comments": 1,
@@ -1815,13 +1829,13 @@
    "publicado": "2025-10-15T13:01:22Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 3306,
+   "views": 3328,
    "curtidas": 98,
    "comentarios": 5,
    "duracao": "PT15M59S",
-   "estimatedMinutesWatched": 14683,
-   "averageViewDuration": 364,
-   "averageViewPercentage": 37.98,
+   "estimatedMinutesWatched": 14734,
+   "averageViewDuration": 363,
+   "averageViewPercentage": 37.92,
    "subscribersGained": 32,
    "likes": 97,
    "comments": 3,
@@ -1905,13 +1919,13 @@
    "publicado": "2025-10-13T13:00:56Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 118,
+   "views": 123,
    "curtidas": 6,
    "comentarios": 2,
    "duracao": "PT10M1S",
-   "estimatedMinutesWatched": 297,
-   "averageViewDuration": 208,
-   "averageViewPercentage": 34.76,
+   "estimatedMinutesWatched": 307,
+   "averageViewDuration": 204,
+   "averageViewPercentage": 33.95,
    "subscribersGained": 1,
    "likes": 6,
    "comments": 1,
@@ -2103,13 +2117,13 @@
    "publicado": "2025-10-06T13:00:23Z",
    "privacidade": "unlisted",
    "agendado_para": null,
-   "views": 46,
+   "views": 49,
    "curtidas": 5,
    "comentarios": 2,
    "duracao": "PT6M14S",
-   "estimatedMinutesWatched": 70,
-   "averageViewDuration": 92,
-   "averageViewPercentage": 24.65,
+   "estimatedMinutesWatched": 76,
+   "averageViewDuration": 94,
+   "averageViewPercentage": 25.19,
    "subscribersGained": 0,
    "likes": 5,
    "comments": 1,
@@ -2191,23 +2205,23 @@
  "fontes": [
   {
    "insightTrafficSourceType": "SHORTS",
-   "views": 2901,
-   "estimatedMinutesWatched": 230
+   "views": 4007,
+   "estimatedMinutesWatched": 417
   },
   {
    "insightTrafficSourceType": "YT_SEARCH",
-   "views": 529,
-   "estimatedMinutesWatched": 1300
+   "views": 548,
+   "estimatedMinutesWatched": 1274
+  },
+  {
+   "insightTrafficSourceType": "SUBSCRIBER",
+   "views": 179,
+   "estimatedMinutesWatched": 186
   },
   {
    "insightTrafficSourceType": "RELATED_VIDEO",
    "views": 151,
-   "estimatedMinutesWatched": 758
-  },
-  {
-   "insightTrafficSourceType": "SUBSCRIBER",
-   "views": 124,
-   "estimatedMinutesWatched": 144
+   "estimatedMinutesWatched": 759
   },
   {
    "insightTrafficSourceType": "YT_CHANNEL",
@@ -2216,13 +2230,13 @@
   },
   {
    "insightTrafficSourceType": "EXT_URL",
-   "views": 24,
+   "views": 25,
    "estimatedMinutesWatched": 33
   },
   {
    "insightTrafficSourceType": "YT_OTHER_PAGE",
-   "views": 17,
-   "estimatedMinutesWatched": 8
+   "views": 22,
+   "estimatedMinutesWatched": 12
   },
   {
    "insightTrafficSourceType": "NO_LINK_OTHER",
@@ -2253,11 +2267,15 @@
  "paises": [
   {
    "country": "BR",
-   "views": 3175
+   "views": 4180
   },
   {
    "country": "PT",
    "views": 62
+  },
+  {
+   "country": "MX",
+   "views": 22
   },
   {
    "country": "AO",
@@ -2276,32 +2294,42 @@
   {
    "ageGroup": "age13-17",
    "gender": "female",
-   "viewerPercentage": 17.1
+   "viewerPercentage": 14
   },
   {
    "ageGroup": "age13-17",
    "gender": "male",
-   "viewerPercentage": 16.5
+   "viewerPercentage": 14.6
+  },
+  {
+   "ageGroup": "age18-24",
+   "gender": "female",
+   "viewerPercentage": 2.5
+  },
+  {
+   "ageGroup": "age18-24",
+   "gender": "male",
+   "viewerPercentage": 1.9
   },
   {
    "ageGroup": "age25-34",
    "gender": "female",
-   "viewerPercentage": 9.6
+   "viewerPercentage": 12.8
   },
   {
    "ageGroup": "age25-34",
    "gender": "male",
-   "viewerPercentage": 14.3
+   "viewerPercentage": 14.5
   },
   {
    "ageGroup": "age35-44",
    "gender": "female",
-   "viewerPercentage": 15.3
+   "viewerPercentage": 14.2
   },
   {
    "ageGroup": "age35-44",
    "gender": "male",
-   "viewerPercentage": 11.5
+   "viewerPercentage": 11.6
   },
   {
    "ageGroup": "age45-54",
@@ -2311,21 +2339,21 @@
   {
    "ageGroup": "age45-54",
    "gender": "male",
-   "viewerPercentage": 8.9
+   "viewerPercentage": 7.1
   }
  ],
  "tipo_conteudo": [
   {
    "creatorContentType": "shorts",
-   "views": 3056,
-   "estimatedMinutesWatched": 252,
-   "subscribersGained": 2
+   "views": 4193,
+   "estimatedMinutesWatched": 449,
+   "subscribersGained": 7
   },
   {
    "creatorContentType": "videoOnDemand",
-   "views": 784,
-   "estimatedMinutesWatched": 2378,
-   "subscribersGained": 12
+   "views": 833,
+   "estimatedMinutesWatched": 2389,
+   "subscribersGained": 10
   }
  ],
  "retencao": {},
