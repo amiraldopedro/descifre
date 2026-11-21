@@ -1,22 +1,13 @@
 {
- "atualizado": "2026-11-20T17:47:15+00:00",
+ "atualizado": "2026-11-21T16:47:07+00:00",
  "canal": {
   "nome": "Descifre & Domine",
-  "inscritos": 78,
-  "views": 16685,
-  "videos": 59,
+  "inscritos": 82,
+  "views": 16756,
+  "videos": 62,
   "foto": "https://yt3.ggpht.com/7Icg6egJLFOFwkgsi62NDeasvlxROJNTG4xwD9zW3QXpBDFZXnp9fRwoogERz3lbiCJG8mkHuH0=s88-c-k-c0x00ffffff-no-rj"
  },
  "por_dia": [
-  {
-   "day": "2026-08-22",
-   "views": 7,
-   "estimatedMinutesWatched": 65,
-   "subscribersGained": 0,
-   "subscribersLost": 0,
-   "likes": 0,
-   "comments": 0
-  },
   {
    "day": "2026-08-23",
    "views": 8,
@@ -799,16 +790,65 @@
    "subscribersLost": 2,
    "likes": 20,
    "comments": 0
+  },
+  {
+   "day": "2026-11-18",
+   "views": 2566,
+   "estimatedMinutesWatched": 743,
+   "subscribersGained": 4,
+   "subscribersLost": 1,
+   "likes": 56,
+   "comments": 0
   }
  ],
  "videos": [
+  {
+   "youtube_id": "bkbOSYdmTy8",
+   "titulo": "As Bruxas de Salém NÃO Foram Queimadas #shorts",
+   "publicado": "2026-11-21T15:00:12Z",
+   "privacidade": "public",
+   "agendado_para": null,
+   "views": 0,
+   "curtidas": 0,
+   "comentarios": 0,
+   "duracao": "PT29S"
+  },
+  {
+   "youtube_id": "rSfMtWA9_KM",
+   "titulo": "O Teste do Carrinho de Mercado #shorts",
+   "publicado": "2026-11-20T22:00:37Z",
+   "privacidade": "public",
+   "agendado_para": null,
+   "views": 5,
+   "curtidas": 0,
+   "comentarios": 0,
+   "duracao": "PT47S"
+  },
+  {
+   "youtube_id": "zwjEAl_nJEE",
+   "titulo": "Seu Celular Vibrou? Não Vibrou (Vibração Fantasma) #shorts",
+   "publicado": "2026-11-20T18:40:10Z",
+   "privacidade": "public",
+   "agendado_para": null,
+   "views": 1,
+   "curtidas": 10,
+   "comentarios": 0,
+   "duracao": "PT44S",
+   "estimatedMinutesWatched": 0,
+   "averageViewDuration": 40,
+   "averageViewPercentage": 92.94,
+   "subscribersGained": 0,
+   "likes": 0,
+   "comments": 0,
+   "shares": 0
+  },
   {
    "youtube_id": "1JofgeV51cY",
    "titulo": "Você Empurra a Cadeira Quando Levanta? #shorts",
    "publicado": "2026-11-20T15:00:02Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 12,
+   "views": 36,
    "curtidas": 0,
    "comentarios": 0,
    "duracao": "PT35S"
@@ -819,9 +859,9 @@
    "publicado": "2026-11-20T13:00:06Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 25,
-   "curtidas": 4,
-   "comentarios": 0,
+   "views": 149,
+   "curtidas": 12,
+   "comentarios": 2,
    "duracao": "PT4M34S"
   },
   {
@@ -830,8 +870,8 @@
    "publicado": "2026-11-20T12:45:38Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 630,
-   "curtidas": 14,
+   "views": 1036,
+   "curtidas": 13,
    "comentarios": 0,
    "duracao": "PT35S"
   },
@@ -910,8 +950,8 @@
    "publicado": "2026-11-19T11:00:01Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 965,
-   "curtidas": 41,
+   "views": 1031,
+   "curtidas": 45,
    "comentarios": 2,
    "duracao": "PT41S"
   },
@@ -946,7 +986,14 @@
    "views": 1,
    "curtidas": 0,
    "comentarios": 0,
-   "duracao": "PT31S"
+   "duracao": "PT31S",
+   "estimatedMinutesWatched": 0,
+   "averageViewDuration": 0,
+   "averageViewPercentage": 0,
+   "subscribersGained": 0,
+   "likes": 0,
+   "comments": 0,
+   "shares": 0
   },
   {
    "youtube_id": "QxNNdSSaVAw",
@@ -965,10 +1012,17 @@
    "publicado": "2026-11-18T13:00:01Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 14,
+   "views": 8,
    "curtidas": 0,
    "comentarios": 0,
-   "duracao": "PT4M9S"
+   "duracao": "PT4M9S",
+   "estimatedMinutesWatched": 16,
+   "averageViewDuration": 107,
+   "averageViewPercentage": 43.12,
+   "subscribersGained": 0,
+   "likes": 0,
+   "comments": 0,
+   "shares": 0
   },
   {
    "youtube_id": "YV6UY0EzukE",
@@ -976,15 +1030,15 @@
    "publicado": "2026-11-18T10:00:24Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 1,
+   "views": 463,
    "curtidas": 18,
    "comentarios": 0,
    "duracao": "PT38S",
-   "estimatedMinutesWatched": 0,
-   "averageViewDuration": 34,
-   "averageViewPercentage": 89.47,
-   "subscribersGained": 0,
-   "likes": 0,
+   "estimatedMinutesWatched": 56,
+   "averageViewDuration": 13,
+   "averageViewPercentage": 35.59,
+   "subscribersGained": 2,
+   "likes": 13,
    "comments": 0,
    "shares": 0
   },
@@ -997,7 +1051,14 @@
    "views": 949,
    "curtidas": 18,
    "comentarios": 0,
-   "duracao": "PT45S"
+   "duracao": "PT45S",
+   "estimatedMinutesWatched": 255,
+   "averageViewDuration": 23,
+   "averageViewPercentage": 52.99,
+   "subscribersGained": 1,
+   "likes": 18,
+   "comments": 0,
+   "shares": 0
   },
   {
    "youtube_id": "YT0uXIwyEoI",
@@ -1005,15 +1066,15 @@
    "publicado": "2026-11-18T01:34:44Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 537,
+   "views": 1111,
    "curtidas": 28,
    "comentarios": 0,
    "duracao": "PT46S",
-   "estimatedMinutesWatched": 108,
-   "averageViewDuration": 20,
-   "averageViewPercentage": 44.9,
-   "subscribersGained": 3,
-   "likes": 11,
+   "estimatedMinutesWatched": 272,
+   "averageViewDuration": 23,
+   "averageViewPercentage": 50.68,
+   "subscribersGained": 4,
+   "likes": 28,
    "comments": 0,
    "shares": 0
   },
@@ -1037,7 +1098,14 @@
    "views": 1,
    "curtidas": 0,
    "comentarios": 0,
-   "duracao": "PT33S"
+   "duracao": "PT33S",
+   "estimatedMinutesWatched": 0,
+   "averageViewDuration": 0,
+   "averageViewPercentage": 0,
+   "subscribersGained": 0,
+   "likes": 0,
+   "comments": 0,
+   "shares": 0
   },
   {
    "youtube_id": "24BLho16FZE",
@@ -1045,13 +1113,13 @@
    "publicado": "2026-11-17T18:30:06Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 0,
+   "views": 4,
    "curtidas": 0,
    "comentarios": 0,
    "duracao": "PT40S",
    "estimatedMinutesWatched": 0,
-   "averageViewDuration": 0,
-   "averageViewPercentage": 0,
+   "averageViewDuration": 12,
+   "averageViewPercentage": 32.25,
    "subscribersGained": 0,
    "likes": 0,
    "comments": 0,
@@ -1063,15 +1131,15 @@
    "publicado": "2026-11-17T15:00:10Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 80,
+   "views": 115,
    "curtidas": 2,
    "comentarios": 0,
    "duracao": "PT33S",
-   "estimatedMinutesWatched": 4,
-   "averageViewDuration": 8,
-   "averageViewPercentage": 27.149999999999995,
+   "estimatedMinutesWatched": 7,
+   "averageViewDuration": 9,
+   "averageViewPercentage": 29.299999999999997,
    "subscribersGained": 0,
-   "likes": 0,
+   "likes": 1,
    "comments": 0,
    "shares": 0
   },
@@ -1081,15 +1149,15 @@
    "publicado": "2026-11-17T10:00:31Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 327,
+   "views": 514,
    "curtidas": 12,
    "comentarios": 0,
    "duracao": "PT48S",
-   "estimatedMinutesWatched": 54,
-   "averageViewDuration": 23,
-   "averageViewPercentage": 48.38,
+   "estimatedMinutesWatched": 102,
+   "averageViewDuration": 25,
+   "averageViewPercentage": 54.010000000000005,
    "subscribersGained": 1,
-   "likes": 7,
+   "likes": 12,
    "comments": 0,
    "shares": 1
   },
@@ -1099,15 +1167,15 @@
    "publicado": "2026-11-17T09:53:50Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 192,
+   "views": 466,
    "curtidas": 5,
    "comentarios": 0,
    "duracao": "PT44S",
-   "estimatedMinutesWatched": 31,
-   "averageViewDuration": 19,
-   "averageViewPercentage": 45.3,
+   "estimatedMinutesWatched": 91,
+   "averageViewDuration": 20,
+   "averageViewPercentage": 46.69,
    "subscribersGained": 1,
-   "likes": 2,
+   "likes": 4,
    "comments": 0,
    "shares": 0
   },
@@ -1121,24 +1189,6 @@
    "curtidas": 0,
    "comentarios": 0,
    "duracao": "PT59S"
-  },
-  {
-   "youtube_id": "zwjEAl_nJEE",
-   "titulo": "Seu Celular Vibrou? Não Vibrou (Vibração Fantasma) #shorts",
-   "publicado": "2026-11-17T03:05:00Z",
-   "privacidade": "unlisted",
-   "agendado_para": null,
-   "views": 1,
-   "curtidas": 0,
-   "comentarios": 0,
-   "duracao": "PT44S",
-   "estimatedMinutesWatched": 0,
-   "averageViewDuration": 40,
-   "averageViewPercentage": 92.94,
-   "subscribersGained": 0,
-   "likes": 0,
-   "comments": 0,
-   "shares": 0
   },
   {
    "youtube_id": "a9AcZYvXkqI",
@@ -1240,13 +1290,13 @@
    "publicado": "2026-11-16T15:00:25Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 28,
+   "views": 32,
    "curtidas": 0,
    "comentarios": 0,
    "duracao": "PT43S",
-   "estimatedMinutesWatched": 1,
-   "averageViewDuration": 13,
-   "averageViewPercentage": 32.01,
+   "estimatedMinutesWatched": 2,
+   "averageViewDuration": 12,
+   "averageViewPercentage": 27.98,
    "subscribersGained": 0,
    "likes": 0,
    "comments": 0,
@@ -1258,13 +1308,13 @@
    "publicado": "2026-11-16T13:00:28Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 1,
+   "views": 2,
    "curtidas": 0,
    "comentarios": 0,
    "duracao": "PT4M21S",
    "estimatedMinutesWatched": 0,
-   "averageViewDuration": 2,
-   "averageViewPercentage": 0.8,
+   "averageViewDuration": 9,
+   "averageViewPercentage": 3.7699999999999996,
    "subscribersGained": 0,
    "likes": 0,
    "comments": 0,
@@ -1276,7 +1326,7 @@
    "publicado": "2026-11-15T22:00:21Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 25,
+   "views": 27,
    "curtidas": 0,
    "comentarios": 0,
    "duracao": "PT41S",
@@ -1294,7 +1344,7 @@
    "publicado": "2026-11-15T15:00:33Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 219,
+   "views": 221,
    "curtidas": 3,
    "comentarios": 0,
    "duracao": "PT38S",
@@ -1348,13 +1398,13 @@
    "publicado": "2026-11-14T13:00:00Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 156,
+   "views": 186,
    "curtidas": 4,
    "comentarios": 1,
    "duracao": "PT22M30S",
-   "estimatedMinutesWatched": 496,
-   "averageViewDuration": 362,
-   "averageViewPercentage": 26.83,
+   "estimatedMinutesWatched": 520,
+   "averageViewDuration": 374,
+   "averageViewPercentage": 27.750000000000004,
    "subscribersGained": 0,
    "likes": 4,
    "comments": 1,
@@ -1466,17 +1516,6 @@
    "duracao": "PT33S"
   },
   {
-   "youtube_id": "bkbOSYdmTy8",
-   "titulo": "As Bruxas de Salém NÃO Foram Queimadas #shorts",
-   "publicado": "2026-11-12T04:55:02Z",
-   "privacidade": "private",
-   "agendado_para": "2026-11-21T15:00:00Z",
-   "views": 0,
-   "curtidas": 0,
-   "comentarios": 0,
-   "duracao": "PT29S"
-  },
-  {
    "youtube_id": "vqKFT9rxZok",
    "titulo": "Que Lado do Cérebro Você Usa? (Pegadinha) #shorts",
    "publicado": "2026-11-12T04:41:11Z",
@@ -1510,25 +1549,14 @@
    "duracao": "PT34S"
   },
   {
-   "youtube_id": "N9QpTP-W2Rk",
-   "titulo": "Mais da Metade de Harvard Errou Essa Pergunta #shorts",
-   "publicado": "2026-11-12T04:40:42Z",
-   "privacidade": "private",
-   "agendado_para": "2026-11-24T15:00:00Z",
-   "views": 0,
-   "curtidas": 0,
-   "comentarios": 0,
-   "duracao": "PT39S"
-  },
-  {
    "youtube_id": "E680HDKOb08",
    "titulo": "Quem Empurra a Cadeira ao Sair Tem Estes 3 Traços",
    "publicado": "2026-11-20T13:00:06Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 25,
-   "curtidas": 4,
-   "comentarios": 0,
+   "views": 149,
+   "curtidas": 12,
+   "comentarios": 2,
    "duracao": "PT4M34S"
   },
   {
@@ -1537,10 +1565,17 @@
    "publicado": "2026-11-18T13:00:01Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 14,
+   "views": 8,
    "curtidas": 0,
    "comentarios": 0,
-   "duracao": "PT4M9S"
+   "duracao": "PT4M9S",
+   "estimatedMinutesWatched": 16,
+   "averageViewDuration": 107,
+   "averageViewPercentage": 43.12,
+   "subscribersGained": 0,
+   "likes": 0,
+   "comments": 0,
+   "shares": 0
   },
   {
    "youtube_id": "QG9r_mC34mE",
@@ -1548,13 +1583,13 @@
    "publicado": "2026-11-16T13:00:28Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 1,
+   "views": 2,
    "curtidas": 0,
    "comentarios": 0,
    "duracao": "PT4M21S",
    "estimatedMinutesWatched": 0,
-   "averageViewDuration": 2,
-   "averageViewPercentage": 0.8,
+   "averageViewDuration": 9,
+   "averageViewPercentage": 3.7699999999999996,
    "subscribersGained": 0,
    "likes": 0,
    "comments": 0,
@@ -1829,13 +1864,13 @@
    "publicado": "2025-10-15T13:01:22Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 3328,
+   "views": 3360,
    "curtidas": 98,
    "comentarios": 5,
    "duracao": "PT15M59S",
-   "estimatedMinutesWatched": 14734,
+   "estimatedMinutesWatched": 14849,
    "averageViewDuration": 363,
-   "averageViewPercentage": 37.92,
+   "averageViewPercentage": 37.91,
    "subscribersGained": 32,
    "likes": 97,
    "comments": 3,
@@ -2205,28 +2240,33 @@
  "fontes": [
   {
    "insightTrafficSourceType": "SHORTS",
-   "views": 4007,
-   "estimatedMinutesWatched": 417
+   "views": 6425,
+   "estimatedMinutesWatched": 988
   },
   {
    "insightTrafficSourceType": "YT_SEARCH",
-   "views": 548,
-   "estimatedMinutesWatched": 1274
+   "views": 592,
+   "estimatedMinutesWatched": 1318
   },
   {
    "insightTrafficSourceType": "SUBSCRIBER",
-   "views": 179,
-   "estimatedMinutesWatched": 186
+   "views": 210,
+   "estimatedMinutesWatched": 200
   },
   {
    "insightTrafficSourceType": "RELATED_VIDEO",
-   "views": 151,
-   "estimatedMinutesWatched": 759
+   "views": 156,
+   "estimatedMinutesWatched": 746
   },
   {
    "insightTrafficSourceType": "YT_CHANNEL",
-   "views": 31,
-   "estimatedMinutesWatched": 29
+   "views": 50,
+   "estimatedMinutesWatched": 35
+  },
+  {
+   "insightTrafficSourceType": "YT_OTHER_PAGE",
+   "views": 30,
+   "estimatedMinutesWatched": 23
   },
   {
    "insightTrafficSourceType": "EXT_URL",
@@ -2234,24 +2274,19 @@
    "estimatedMinutesWatched": 33
   },
   {
-   "insightTrafficSourceType": "YT_OTHER_PAGE",
-   "views": 22,
-   "estimatedMinutesWatched": 12
+   "insightTrafficSourceType": "NO_LINK_OTHER",
+   "views": 16,
+   "estimatedMinutesWatched": 57
   },
   {
-   "insightTrafficSourceType": "NO_LINK_OTHER",
-   "views": 15,
-   "estimatedMinutesWatched": 56
+   "insightTrafficSourceType": "NOTIFICATION",
+   "views": 6,
+   "estimatedMinutesWatched": 1
   },
   {
    "insightTrafficSourceType": "END_SCREEN",
    "views": 6,
    "estimatedMinutesWatched": 5
-  },
-  {
-   "insightTrafficSourceType": "NOTIFICATION",
-   "views": 5,
-   "estimatedMinutesWatched": 1
   },
   {
    "insightTrafficSourceType": "SHORTS_CONTENT_LINKS",
@@ -2262,20 +2297,29 @@
    "insightTrafficSourceType": "PLAYLIST",
    "views": 3,
    "estimatedMinutesWatched": 30
+  },
+  {
+   "insightTrafficSourceType": "SOUND_PAGE",
+   "views": 2,
+   "estimatedMinutesWatched": 0
   }
  ],
  "paises": [
   {
    "country": "BR",
-   "views": 4180
+   "views": 6519
   },
   {
    "country": "PT",
-   "views": 62
+   "views": 117
   },
   {
    "country": "MX",
    "views": 22
+  },
+  {
+   "country": "US",
+   "views": 20
   },
   {
    "country": "AO",
@@ -2284,75 +2328,81 @@
   {
    "country": "ID",
    "views": 0
-  },
-  {
-   "country": "US",
-   "views": 0
   }
  ],
  "publico": [
   {
    "ageGroup": "age13-17",
    "gender": "female",
-   "viewerPercentage": 14
+   "viewerPercentage": 12.7
   },
   {
    "ageGroup": "age13-17",
    "gender": "male",
-   "viewerPercentage": 14.6
-  },
-  {
-   "ageGroup": "age18-24",
-   "gender": "female",
-   "viewerPercentage": 2.5
-  },
-  {
-   "ageGroup": "age18-24",
-   "gender": "male",
-   "viewerPercentage": 1.9
-  },
-  {
-   "ageGroup": "age25-34",
-   "gender": "female",
-   "viewerPercentage": 12.8
-  },
-  {
-   "ageGroup": "age25-34",
-   "gender": "male",
-   "viewerPercentage": 14.5
-  },
-  {
-   "ageGroup": "age35-44",
-   "gender": "female",
    "viewerPercentage": 14.2
   },
   {
+   "ageGroup": "age18-24",
+   "gender": "female",
+   "viewerPercentage": 2.2
+  },
+  {
+   "ageGroup": "age18-24",
+   "gender": "male",
+   "viewerPercentage": 3.3
+  },
+  {
+   "ageGroup": "age25-34",
+   "gender": "female",
+   "viewerPercentage": 12.9
+  },
+  {
+   "ageGroup": "age25-34",
+   "gender": "male",
+   "viewerPercentage": 12.5
+  },
+  {
+   "ageGroup": "age35-44",
+   "gender": "female",
+   "viewerPercentage": 16.2
+  },
+  {
    "ageGroup": "age35-44",
    "gender": "male",
-   "viewerPercentage": 11.6
+   "viewerPercentage": 10.8
   },
   {
    "ageGroup": "age45-54",
    "gender": "female",
-   "viewerPercentage": 6.9
+   "viewerPercentage": 6.4
   },
   {
    "ageGroup": "age45-54",
    "gender": "male",
-   "viewerPercentage": 7.1
+   "viewerPercentage": 6.4
+  },
+  {
+   "ageGroup": "age55-64",
+   "gender": "female",
+   "viewerPercentage": 1.4
+  },
+  {
+   "ageGroup": "age55-64",
+   "gender": "male",
+   "viewerPercentage": 1
   }
  ],
  "tipo_conteudo": [
   {
    "creatorContentType": "shorts",
-   "views": 4193,
-   "estimatedMinutesWatched": 449,
-   "subscribersGained": 7
+   "views": 6660,
+   "estimatedMinutesWatched": 1036,
+   "subscribersGained": 11
   },
   {
    "creatorContentType": "videoOnDemand",
-   "views": 833,
-   "estimatedMinutesWatched": 2389,
+   "views": 871,
+   "estimatedMinutesWatched": 2413,
    "subscribersGained": 10
   }
  ],

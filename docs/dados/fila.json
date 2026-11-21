@@ -42,7 +42,7 @@
    "download": "https://github.com/amiraldopedro/descifre/actions/runs/44007317557",
    "status": "publicado",
    "youtube_id": "cIebmJPz5lg",
-   "views": 327,
+   "views": 514,
    "publicado_em": "2026-11-17T10:00:31Z"
   },
   {
@@ -87,7 +87,7 @@
    "download": "https://github.com/amiraldopedro/descifre/actions/runs/44007352967",
    "status": "publicado",
    "youtube_id": "YT0uXIwyEoI",
-   "views": 537,
+   "views": 1111,
    "publicado_em": "2026-11-18T01:34:44Z"
   },
   {
@@ -106,6 +106,10 @@
     {
      "quando": "2026-11-17T03:05:04+00:00",
      "status": "rascunho"
+    },
+    {
+     "quando": "2026-11-21T16:47:07+00:00",
+     "status": "publicado"
     }
    ],
    "tipo": "short",
@@ -126,9 +130,10 @@
    "duracao_s": 39,
    "run": "44007283860",
    "download": "https://github.com/amiraldopedro/descifre/actions/runs/44007283860",
-   "status": "rascunho",
+   "status": "publicado",
    "youtube_id": "zwjEAl_nJEE",
-   "views": 1
+   "views": 1,
+   "publicado_em": "2026-11-20T18:40:10Z"
   },
   {
    "id": "p04",
@@ -456,7 +461,7 @@
    "status": "publicado",
    "youtube_id": "YkLOo7EV2CU",
    "agendado_para": "2026-11-20T12:45:00Z",
-   "views": 630,
+   "views": 1036,
    "publicado_em": "2026-11-20T12:45:38Z"
   },
   {
@@ -582,7 +587,7 @@
    "status": "publicado",
    "youtube_id": "uMVo2VJRggI",
    "agendado_para": "2026-11-19T11:00:00Z",
-   "views": 965,
+   "views": 1031,
    "publicado_em": "2026-11-19T11:00:01Z"
   },
   {
@@ -666,7 +671,7 @@
    "status": "publicado",
    "youtube_id": "24BLho16FZE",
    "agendado_para": "2026-11-30T15:00:00Z",
-   "views": 0,
+   "views": 4,
    "publicado_em": "2026-11-17T18:30:06Z"
   },
   {
@@ -750,7 +755,7 @@
    "status": "publicado",
    "youtube_id": "YV6UY0EzukE",
    "agendado_para": "2026-11-18T10:00:00Z",
-   "views": 1,
+   "views": 463,
    "publicado_em": "2026-11-18T10:00:24Z"
   },
   {
@@ -792,7 +797,7 @@
    "status": "publicado",
    "youtube_id": "Ynz5MyedtVw",
    "agendado_para": "2026-11-28T22:00:00Z",
-   "views": 192,
+   "views": 466,
    "publicado_em": "2026-11-17T09:53:50Z"
   },
   {
@@ -888,7 +893,7 @@
    "youtube_id": "ui2xeEa7j6M",
    "status": "publicado",
    "agendado_para": "2026-11-15T15:00:00Z",
-   "views": 219,
+   "views": 221,
    "publicado_em": "2026-11-15T15:00:33Z"
   },
   {
@@ -924,7 +929,7 @@
    "status": "publicado",
    "youtube_id": "2b4uaaaNyog",
    "agendado_para": "2026-11-15T22:00:00Z",
-   "views": 25,
+   "views": 27,
    "publicado_em": "2026-11-15T22:00:21Z"
   },
   {
@@ -1033,6 +1038,10 @@
     {
      "quando": "2026-11-12T04:55:09+00:00",
      "status": "agendado"
+    },
+    {
+     "quando": "2026-11-21T16:47:07+00:00",
+     "status": "publicado"
     }
    ],
    "tipo": "short",
@@ -1051,10 +1060,11 @@
    "duracao_s": 30,
    "run": "43157604329",
    "download": "https://github.com/amiraldopedro/descifre/actions/runs/43157604329",
-   "status": "agendado",
+   "status": "publicado",
    "youtube_id": "bkbOSYdmTy8",
    "agendado_para": "2026-11-21T15:00:00Z",
-   "views": 0
+   "views": 0,
+   "publicado_em": "2026-11-21T15:00:12Z"
   },
   {
    "id": "s29",
@@ -1407,7 +1417,7 @@
    "status": "publicado",
    "youtube_id": "s6oo_WYGK0c",
    "agendado_para": "2026-11-17T15:00:00Z",
-   "views": 80,
+   "views": 115,
    "publicado_em": "2026-11-17T15:00:10Z"
   },
   {
@@ -1443,7 +1453,7 @@
    "status": "publicado",
    "youtube_id": "5hyvtK6FZ1w",
    "agendado_para": "2026-11-16T15:00:00Z",
-   "views": 28,
+   "views": 32,
    "publicado_em": "2026-11-16T15:00:25Z"
   },
   {
@@ -1588,6 +1598,10 @@
     {
      "quando": "2026-11-12T04:40:20+00:00",
      "status": "agendado"
+    },
+    {
+     "quando": "2026-11-21T16:47:07+00:00",
+     "status": "publicado"
     }
    ],
    "tipo": "short",
@@ -1606,10 +1620,11 @@
    "duracao_s": 48,
    "run": "42874160808",
    "download": "https://github.com/amiraldopedro/descifre/actions/runs/42874160808",
-   "status": "agendado",
+   "status": "publicado",
    "youtube_id": "rSfMtWA9_KM",
    "agendado_para": "2026-11-20T22:00:00Z",
-   "views": 0
+   "views": 5,
+   "publicado_em": "2026-11-20T22:00:37Z"
   },
   {
    "id": "s07",
@@ -1644,7 +1659,7 @@
    "status": "publicado",
    "youtube_id": "1JofgeV51cY",
    "agendado_para": "2026-11-20T15:00:00Z",
-   "views": 12,
+   "views": 36,
    "publicado_em": "2026-11-20T15:00:02Z"
   },
   {
@@ -1881,7 +1896,7 @@
    "download": "https://github.com/amiraldopedro/descifre/actions/runs/43018427007",
    "status": "publicado",
    "youtube_id": "Zpu8nbqIgPI",
-   "views": 156,
+   "views": 186,
    "agendado_para": "2026-11-14T13:00:00Z",
    "publicado_em": "2026-11-14T13:00:00Z"
   },
@@ -1921,7 +1936,7 @@
    "download": "https://github.com/amiraldopedro/descifre/actions/runs/42874117282",
    "status": "publicado",
    "youtube_id": "zuFiW7qSO7Y",
-   "views": 14,
+   "views": 8,
    "agendado_para": "2026-11-18T13:00:00Z",
    "publicado_em": "2026-11-18T13:00:01Z"
   },
@@ -1961,7 +1976,7 @@
    "download": "https://github.com/amiraldopedro/descifre/actions/runs/42874107393",
    "status": "publicado",
    "youtube_id": "QG9r_mC34mE",
-   "views": 1,
+   "views": 2,
    "agendado_para": "2026-11-16T13:00:00Z",
    "publicado_em": "2026-11-16T13:00:28Z"
   },
@@ -2079,7 +2094,7 @@
    "download": "https://github.com/amiraldopedro/descifre/actions/runs/42874077017",
    "status": "publicado",
    "youtube_id": "E680HDKOb08",
-   "views": 25,
+   "views": 149,
    "agendado_para": "2026-11-20T13:00:00Z",
    "publicado_em": "2026-11-20T13:00:06Z"
   },
@@ -2157,5 +2172,5 @@
   ],
   "fuso": "America/Sao_Paulo"
  },
- "atualizado": "2026-11-20T17:47:15+00:00"
+ "atualizado": "2026-11-21T16:47:07+00:00"
 }
