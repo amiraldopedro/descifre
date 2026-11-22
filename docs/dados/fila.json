@@ -42,7 +42,7 @@
    "download": "https://github.com/amiraldopedro/descifre/actions/runs/44007317557",
    "status": "publicado",
    "youtube_id": "cIebmJPz5lg",
-   "views": 514,
+   "views": 518,
    "publicado_em": "2026-11-17T10:00:31Z"
   },
   {
@@ -87,7 +87,7 @@
    "download": "https://github.com/amiraldopedro/descifre/actions/runs/44007352967",
    "status": "publicado",
    "youtube_id": "YT0uXIwyEoI",
-   "views": 1111,
+   "views": 1115,
    "publicado_em": "2026-11-18T01:34:44Z"
   },
   {
@@ -545,7 +545,7 @@
    "status": "publicado",
    "youtube_id": "e_a3ithW9e0",
    "agendado_para": "2026-11-19T14:45:00Z",
-   "views": 1,
+   "views": 1023,
    "publicado_em": "2026-11-19T14:45:30Z"
   },
   {
@@ -587,7 +587,7 @@
    "status": "publicado",
    "youtube_id": "uMVo2VJRggI",
    "agendado_para": "2026-11-19T11:00:00Z",
-   "views": 1031,
+   "views": 959,
    "publicado_em": "2026-11-19T11:00:01Z"
   },
   {
@@ -671,7 +671,7 @@
    "status": "publicado",
    "youtube_id": "24BLho16FZE",
    "agendado_para": "2026-11-30T15:00:00Z",
-   "views": 4,
+   "views": 5,
    "publicado_em": "2026-11-17T18:30:06Z"
   },
   {
@@ -755,7 +755,7 @@
    "status": "publicado",
    "youtube_id": "YV6UY0EzukE",
    "agendado_para": "2026-11-18T10:00:00Z",
-   "views": 463,
+   "views": 936,
    "publicado_em": "2026-11-18T10:00:24Z"
   },
   {
@@ -797,7 +797,7 @@
    "status": "publicado",
    "youtube_id": "Ynz5MyedtVw",
    "agendado_para": "2026-11-28T22:00:00Z",
-   "views": 466,
+   "views": 477,
    "publicado_em": "2026-11-17T09:53:50Z"
   },
   {
@@ -940,6 +940,10 @@
     {
      "quando": "2026-11-12T04:56:02+00:00",
      "status": "agendado"
+    },
+    {
+     "quando": "2026-11-22T17:09:03+00:00",
+     "status": "publicado"
     }
    ],
    "tipo": "short",
@@ -958,10 +962,11 @@
    "duracao_s": 37,
    "run": "43157615454",
    "download": "https://github.com/amiraldopedro/descifre/actions/runs/43157615454",
-   "status": "agendado",
+   "status": "publicado",
    "youtube_id": "UFOUQSQhAMg",
    "agendado_para": "2026-11-21T22:00:00Z",
-   "views": 0
+   "views": 3,
+   "publicado_em": "2026-11-21T22:00:20Z"
   },
   {
    "id": "s27",
@@ -1063,7 +1068,7 @@
    "status": "publicado",
    "youtube_id": "bkbOSYdmTy8",
    "agendado_para": "2026-11-21T15:00:00Z",
-   "views": 0,
+   "views": 7,
    "publicado_em": "2026-11-21T15:00:12Z"
   },
   {
@@ -1623,7 +1628,7 @@
    "status": "publicado",
    "youtube_id": "rSfMtWA9_KM",
    "agendado_para": "2026-11-20T22:00:00Z",
-   "views": 5,
+   "views": 8,
    "publicado_em": "2026-11-20T22:00:37Z"
   },
   {
@@ -1659,7 +1664,7 @@
    "status": "publicado",
    "youtube_id": "1JofgeV51cY",
    "agendado_para": "2026-11-20T15:00:00Z",
-   "views": 36,
+   "views": 39,
    "publicado_em": "2026-11-20T15:00:02Z"
   },
   {
@@ -1702,6 +1707,10 @@
     {
      "quando": "2026-11-12T04:40:30+00:00",
      "status": "agendado"
+    },
+    {
+     "quando": "2026-11-22T17:09:03+00:00",
+     "status": "publicado"
     }
    ],
    "tipo": "short",
@@ -1721,10 +1730,11 @@
    "duracao_s": 42,
    "run": "42874127494",
    "download": "https://github.com/amiraldopedro/descifre/actions/runs/42874127494",
-   "status": "agendado",
+   "status": "publicado",
    "youtube_id": "l99BC3fBuJY",
    "agendado_para": "2026-11-22T15:00:00Z",
-   "views": 0
+   "views": 12,
+   "publicado_em": "2026-11-22T15:00:10Z"
   },
   {
    "id": "s04",
@@ -1896,7 +1906,7 @@
    "download": "https://github.com/amiraldopedro/descifre/actions/runs/43018427007",
    "status": "publicado",
    "youtube_id": "Zpu8nbqIgPI",
-   "views": 186,
+   "views": 187,
    "agendado_para": "2026-11-14T13:00:00Z",
    "publicado_em": "2026-11-14T13:00:00Z"
   },
@@ -1936,7 +1946,7 @@
    "download": "https://github.com/amiraldopedro/descifre/actions/runs/42874117282",
    "status": "publicado",
    "youtube_id": "zuFiW7qSO7Y",
-   "views": 8,
+   "views": 13,
    "agendado_para": "2026-11-18T13:00:00Z",
    "publicado_em": "2026-11-18T13:00:01Z"
   },
@@ -2094,7 +2104,7 @@
    "download": "https://github.com/amiraldopedro/descifre/actions/runs/42874077017",
    "status": "publicado",
    "youtube_id": "E680HDKOb08",
-   "views": 149,
+   "views": 153,
    "agendado_para": "2026-11-20T13:00:00Z",
    "publicado_em": "2026-11-20T13:00:06Z"
   },
@@ -2102,7 +2112,12 @@
    "id": "002",
    "criado": "2026-11-12T00:42:04+00:00",
    "notas": [],
-   "historico": [],
+   "historico": [
+    {
+     "quando": "2026-11-22T17:09:03+00:00",
+     "status": "publicado"
+    }
+   ],
    "tipo": "longo",
    "titulo": "Seu Cérebro Mente Pra Você: 7 Provas (Faça o Teste)",
    "descricao": "Seu cérebro te engana o tempo todo, e eu vou provar com 7 testes rápidos. Faz comigo e conta nos comentários quantas você acertou, de 0 a 7.\n\n{capitulos}\n\nAs provas:\n1. Ilusão de Müller-Lyer (1889)\n2. O gorila invisível: cegueira por desatenção (Simons e Chabris, 1999)\n3. A troca atrás da porta: cegueira para mudanças (Simons e Levin, 1998)\n4. Ancoragem: a idade de Gandhi (Strack e Mussweiler, 1997)\n5. Conformidade: o elevador (Candid Camera, 1962) e as linhas de Asch (1951)\n6. Efeito halo (Nisbett e Wilson, 1977)\n7. Viés de confirmação: a tarefa 2-4-6 (Wason, 1960)\n\nDescifre e domine.\n#psicologia #vieses #cerebro",
@@ -2126,10 +2141,11 @@
    },
    "tema": "Seu cérebro mente pra você: 7 provas (faça o teste)",
    "duracao_s": 315,
-   "status": "agendado",
+   "status": "publicado",
    "youtube_id": "qY0j5kTWY48",
    "views": 0,
-   "agendado_para": "2026-11-22T13:00:00Z"
+   "agendado_para": "2026-11-22T13:00:00Z",
+   "publicado_em": "2026-11-22T13:00:27Z"
   },
   {
    "id": "001",
@@ -2172,5 +2188,5 @@
   ],
   "fuso": "America/Sao_Paulo"
  },
- "atualizado": "2026-11-21T16:47:07+00:00"
+ "atualizado": "2026-11-22T17:09:03+00:00"
 }
