@@ -1,22 +1,13 @@
 {
- "atualizado": "2026-11-22T17:09:03+00:00",
+ "atualizado": "2026-11-23T21:19:06+00:00",
  "canal": {
   "nome": "Descifre & Domine",
-  "inscritos": 82,
-  "views": 16876,
-  "videos": 65,
+  "inscritos": 83,
+  "views": 18590,
+  "videos": 67,
   "foto": "https://yt3.ggpht.com/7Icg6egJLFOFwkgsi62NDeasvlxROJNTG4xwD9zW3QXpBDFZXnp9fRwoogERz3lbiCJG8mkHuH0=s88-c-k-c0x00ffffff-no-rj"
  },
  "por_dia": [
-  {
-   "day": "2026-08-24",
-   "views": 11,
-   "estimatedMinutesWatched": 115,
-   "subscribersGained": 0,
-   "subscribersLost": 0,
-   "likes": 0,
-   "comments": 0
-  },
   {
    "day": "2026-08-25",
    "views": 6,
@@ -784,8 +775,8 @@
   },
   {
    "day": "2026-11-18",
-   "views": 2566,
-   "estimatedMinutesWatched": 743,
+   "views": 2559,
+   "estimatedMinutesWatched": 742,
    "subscribersGained": 4,
    "subscribersLost": 1,
    "likes": 56,
@@ -794,21 +785,61 @@
   {
    "day": "2026-11-19",
    "views": 2531,
-   "estimatedMinutesWatched": 670,
+   "estimatedMinutesWatched": 669,
    "subscribersGained": 17,
    "subscribersLost": 2,
    "likes": 78,
    "comments": 1
+  },
+  {
+   "day": "2026-11-20",
+   "views": 1634,
+   "estimatedMinutesWatched": 705,
+   "subscribersGained": 6,
+   "subscribersLost": 0,
+   "likes": 34,
+   "comments": 1
+  },
+  {
+   "day": "2026-11-21",
+   "views": 188,
+   "estimatedMinutesWatched": 169,
+   "subscribersGained": 0,
+   "subscribersLost": 0,
+   "likes": 5,
+   "comments": 0
   }
  ],
  "videos": [
+  {
+   "youtube_id": "QxZLkJqWiRU",
+   "titulo": "A Epidemia de Riso Que Fechou Escolas (1962) #shorts",
+   "publicado": "2026-11-23T15:00:12Z",
+   "privacidade": "public",
+   "agendado_para": null,
+   "views": 1,
+   "curtidas": 0,
+   "comentarios": 0,
+   "duracao": "PT31S"
+  },
+  {
+   "youtube_id": "bZpi4XCywko",
+   "titulo": "Gandhi morreu com mais ou menos de 140 anos? #shorts",
+   "publicado": "2026-11-22T22:00:10Z",
+   "privacidade": "public",
+   "agendado_para": null,
+   "views": 4,
+   "curtidas": 0,
+   "comentarios": 0,
+   "duracao": "PT42S"
+  },
   {
    "youtube_id": "l99BC3fBuJY",
    "titulo": "Metade das pessoas não viu o gorila 🦍 #shorts",
    "publicado": "2026-11-22T15:00:10Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 12,
+   "views": 73,
    "curtidas": 0,
    "comentarios": 0,
    "duracao": "PT40S"
@@ -819,8 +850,8 @@
    "publicado": "2026-11-22T13:00:27Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 0,
-   "curtidas": 0,
+   "views": 24,
+   "curtidas": 1,
    "comentarios": 0,
    "duracao": "PT5M30S"
   },
@@ -833,7 +864,14 @@
    "views": 3,
    "curtidas": 0,
    "comentarios": 0,
-   "duracao": "PT37S"
+   "duracao": "PT37S",
+   "estimatedMinutesWatched": 0,
+   "averageViewDuration": 26,
+   "averageViewPercentage": 72.35,
+   "subscribersGained": 0,
+   "likes": 0,
+   "comments": 0,
+   "shares": 0
   },
   {
    "youtube_id": "bkbOSYdmTy8",
@@ -841,10 +879,17 @@
    "publicado": "2026-11-21T15:00:12Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 7,
+   "views": 6,
    "curtidas": 0,
    "comentarios": 0,
-   "duracao": "PT29S"
+   "duracao": "PT29S",
+   "estimatedMinutesWatched": 0,
+   "averageViewDuration": 15,
+   "averageViewPercentage": 52.53,
+   "subscribersGained": 0,
+   "likes": 0,
+   "comments": 0,
+   "shares": 0
   },
   {
    "youtube_id": "rSfMtWA9_KM",
@@ -855,7 +900,14 @@
    "views": 8,
    "curtidas": 0,
    "comentarios": 0,
-   "duracao": "PT47S"
+   "duracao": "PT47S",
+   "estimatedMinutesWatched": 1,
+   "averageViewDuration": 25,
+   "averageViewPercentage": 54.67999999999999,
+   "subscribersGained": 0,
+   "likes": 0,
+   "comments": 0,
+   "shares": 0
   },
   {
    "youtube_id": "zwjEAl_nJEE",
@@ -863,15 +915,15 @@
    "publicado": "2026-11-20T18:40:10Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 1,
-   "curtidas": 11,
+   "views": 409,
+   "curtidas": 12,
    "comentarios": 0,
    "duracao": "PT44S",
-   "estimatedMinutesWatched": 0,
-   "averageViewDuration": 40,
-   "averageViewPercentage": 92.94,
-   "subscribersGained": 0,
-   "likes": 0,
+   "estimatedMinutesWatched": 110,
+   "averageViewDuration": 21,
+   "averageViewPercentage": 48.96,
+   "subscribersGained": 3,
+   "likes": 10,
    "comments": 0,
    "shares": 0
   },
@@ -881,10 +933,17 @@
    "publicado": "2026-11-20T15:00:02Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 39,
+   "views": 38,
    "curtidas": 0,
    "comentarios": 0,
-   "duracao": "PT35S"
+   "duracao": "PT35S",
+   "estimatedMinutesWatched": 14,
+   "averageViewDuration": 67,
+   "averageViewPercentage": 191.68,
+   "subscribersGained": 0,
+   "likes": 0,
+   "comments": 0,
+   "shares": 0
   },
   {
    "youtube_id": "E680HDKOb08",
@@ -895,7 +954,14 @@
    "views": 153,
    "curtidas": 12,
    "comentarios": 2,
-   "duracao": "PT4M34S"
+   "duracao": "PT4M34S",
+   "estimatedMinutesWatched": 304,
+   "averageViewDuration": 148,
+   "averageViewPercentage": 54.059999999999995,
+   "subscribersGained": 0,
+   "likes": 12,
+   "comments": 1,
+   "shares": 5
   },
   {
    "youtube_id": "YkLOo7EV2CU",
@@ -903,10 +969,17 @@
    "publicado": "2026-11-20T12:45:38Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 1036,
-   "curtidas": 13,
+   "views": 1035,
+   "curtidas": 14,
    "comentarios": 0,
-   "duracao": "PT35S"
+   "duracao": "PT35S",
+   "estimatedMinutesWatched": 190,
+   "averageViewDuration": 20,
+   "averageViewPercentage": 57.56,
+   "subscribersGained": 2,
+   "likes": 13,
+   "comments": 0,
+   "shares": 0
   },
   {
    "youtube_id": "rls5I5TkubE",
@@ -917,7 +990,14 @@
    "views": 2,
    "curtidas": 0,
    "comentarios": 0,
-   "duracao": "PT35S"
+   "duracao": "PT35S",
+   "estimatedMinutesWatched": 0,
+   "averageViewDuration": 29,
+   "averageViewPercentage": 85.43,
+   "subscribersGained": 0,
+   "likes": 0,
+   "comments": 0,
+   "shares": 0
   },
   {
    "youtube_id": "pUhRJe4_bCY",
@@ -936,13 +1016,13 @@
    "publicado": "2026-11-19T18:56:10Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 1,
+   "views": 5,
    "curtidas": 0,
    "comentarios": 0,
    "duracao": "PT40S",
    "estimatedMinutesWatched": 0,
-   "averageViewDuration": 39,
-   "averageViewPercentage": 98.95,
+   "averageViewDuration": 17,
+   "averageViewPercentage": 43.15,
    "subscribersGained": 0,
    "likes": 0,
    "comments": 0,
@@ -965,13 +1045,13 @@
    "publicado": "2026-11-19T14:45:30Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 1023,
+   "views": 1027,
    "curtidas": 29,
    "comentarios": 0,
    "duracao": "PT36S",
-   "estimatedMinutesWatched": 218,
+   "estimatedMinutesWatched": 220,
    "averageViewDuration": 18,
-   "averageViewPercentage": 52.2,
+   "averageViewPercentage": 52.33,
    "subscribersGained": 8,
    "likes": 29,
    "comments": 0,
@@ -983,17 +1063,17 @@
    "publicado": "2026-11-19T11:00:01Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 959,
+   "views": 1032,
    "curtidas": 45,
    "comentarios": 2,
    "duracao": "PT41S",
-   "estimatedMinutesWatched": 254,
+   "estimatedMinutesWatched": 270,
    "averageViewDuration": 23,
-   "averageViewPercentage": 58.19,
+   "averageViewPercentage": 58.24,
    "subscribersGained": 7,
-   "likes": 40,
+   "likes": 45,
    "comments": 1,
-   "shares": 9
+   "shares": 10
   },
   {
    "youtube_id": "49s6VduOowo",
@@ -1059,13 +1139,13 @@
    "publicado": "2026-11-18T13:00:01Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 13,
-   "curtidas": 0,
+   "views": 15,
+   "curtidas": 1,
    "comentarios": 0,
    "duracao": "PT4M9S",
-   "estimatedMinutesWatched": 24,
-   "averageViewDuration": 136,
-   "averageViewPercentage": 54.7,
+   "estimatedMinutesWatched": 27,
+   "averageViewDuration": 143,
+   "averageViewPercentage": 57.75,
    "subscribersGained": 0,
    "likes": 0,
    "comments": 0,
@@ -1077,15 +1157,15 @@
    "publicado": "2026-11-18T10:00:24Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 936,
+   "views": 930,
    "curtidas": 18,
    "comentarios": 0,
    "duracao": "PT38S",
-   "estimatedMinutesWatched": 135,
+   "estimatedMinutesWatched": 134,
    "averageViewDuration": 14,
    "averageViewPercentage": 36.89,
    "subscribersGained": 2,
-   "likes": 19,
+   "likes": 18,
    "comments": 0,
    "shares": 1
   },
@@ -1095,13 +1175,13 @@
    "publicado": "2026-11-18T09:45:17Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 949,
+   "views": 951,
    "curtidas": 18,
    "comentarios": 0,
    "duracao": "PT45S",
    "estimatedMinutesWatched": 255,
    "averageViewDuration": 23,
-   "averageViewPercentage": 52.99,
+   "averageViewPercentage": 52.98,
    "subscribersGained": 1,
    "likes": 18,
    "comments": 0,
@@ -1119,7 +1199,7 @@
    "duracao": "PT46S",
    "estimatedMinutesWatched": 274,
    "averageViewDuration": 23,
-   "averageViewPercentage": 50.63999999999999,
+   "averageViewPercentage": 50.78,
    "subscribersGained": 4,
    "likes": 28,
    "comments": 0,
@@ -1178,7 +1258,7 @@
    "publicado": "2026-11-17T15:00:10Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 115,
+   "views": 114,
    "curtidas": 2,
    "comentarios": 0,
    "duracao": "PT33S",
@@ -1355,13 +1435,13 @@
    "publicado": "2026-11-16T13:00:28Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 2,
+   "views": 4,
    "curtidas": 0,
    "comentarios": 0,
    "duracao": "PT4M21S",
-   "estimatedMinutesWatched": 0,
-   "averageViewDuration": 9,
-   "averageViewPercentage": 3.7699999999999996,
+   "estimatedMinutesWatched": 8,
+   "averageViewDuration": 128,
+   "averageViewPercentage": 49.27,
    "subscribersGained": 0,
    "likes": 0,
    "comments": 0,
@@ -1517,28 +1597,17 @@
    "publicado": "2026-11-12T13:00:31Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 27,
+   "views": 28,
    "curtidas": 2,
    "comentarios": 1,
    "duracao": "PT21M37S",
    "estimatedMinutesWatched": 168,
-   "averageViewDuration": 388,
-   "averageViewPercentage": 29.92,
+   "averageViewDuration": 373,
+   "averageViewPercentage": 28.809999999999995,
    "subscribersGained": 1,
    "likes": 2,
    "comments": 1,
    "shares": 0
-  },
-  {
-   "youtube_id": "QxZLkJqWiRU",
-   "titulo": "A Epidemia de Riso Que Fechou Escolas (1962) #shorts",
-   "publicado": "2026-11-12T04:55:53Z",
-   "privacidade": "private",
-   "agendado_para": "2026-11-23T15:00:00Z",
-   "views": 0,
-   "curtidas": 0,
-   "comentarios": 0,
-   "duracao": "PT31S"
   },
   {
    "youtube_id": "62DAMS2vQzc",
@@ -1552,24 +1621,13 @@
    "duracao": "PT33S"
   },
   {
-   "youtube_id": "vqKFT9rxZok",
-   "titulo": "Que Lado do Cérebro Você Usa? (Pegadinha) #shorts",
-   "publicado": "2026-11-12T04:41:11Z",
-   "privacidade": "private",
-   "agendado_para": "2026-11-25T22:00:00Z",
-   "views": 0,
-   "curtidas": 0,
-   "comentarios": 0,
-   "duracao": "PT36S"
-  },
-  {
    "youtube_id": "qY0j5kTWY48",
    "titulo": "Seu Cérebro Mente Pra Você: 7 Provas (Faça o Teste)",
    "publicado": "2026-11-22T13:00:27Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 0,
-   "curtidas": 0,
+   "views": 24,
+   "curtidas": 1,
    "comentarios": 0,
    "duracao": "PT5M30S"
   },
@@ -1582,7 +1640,14 @@
    "views": 153,
    "curtidas": 12,
    "comentarios": 2,
-   "duracao": "PT4M34S"
+   "duracao": "PT4M34S",
+   "estimatedMinutesWatched": 304,
+   "averageViewDuration": 148,
+   "averageViewPercentage": 54.059999999999995,
+   "subscribersGained": 0,
+   "likes": 12,
+   "comments": 1,
+   "shares": 5
   },
   {
    "youtube_id": "zuFiW7qSO7Y",
@@ -1590,13 +1655,13 @@
    "publicado": "2026-11-18T13:00:01Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 13,
-   "curtidas": 0,
+   "views": 15,
+   "curtidas": 1,
    "comentarios": 0,
    "duracao": "PT4M9S",
-   "estimatedMinutesWatched": 24,
-   "averageViewDuration": 136,
-   "averageViewPercentage": 54.7,
+   "estimatedMinutesWatched": 27,
+   "averageViewDuration": 143,
+   "averageViewPercentage": 57.75,
    "subscribersGained": 0,
    "likes": 0,
    "comments": 0,
@@ -1608,13 +1673,13 @@
    "publicado": "2026-11-16T13:00:28Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 2,
+   "views": 4,
    "curtidas": 0,
    "comentarios": 0,
    "duracao": "PT4M21S",
-   "estimatedMinutesWatched": 0,
-   "averageViewDuration": 9,
-   "averageViewPercentage": 3.7699999999999996,
+   "estimatedMinutesWatched": 8,
+   "averageViewDuration": 128,
+   "averageViewPercentage": 49.27,
    "subscribersGained": 0,
    "likes": 0,
    "comments": 0,
@@ -1626,13 +1691,13 @@
    "publicado": "2026-11-12T13:00:31Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 27,
+   "views": 28,
    "curtidas": 2,
    "comentarios": 1,
    "duracao": "PT21M37S",
    "estimatedMinutesWatched": 168,
-   "averageViewDuration": 388,
-   "averageViewPercentage": 29.92,
+   "averageViewDuration": 373,
+   "averageViewPercentage": 28.809999999999995,
    "subscribersGained": 1,
    "likes": 2,
    "comments": 1,
@@ -1644,13 +1709,13 @@
    "publicado": "2026-11-11T13:00:40Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 130,
+   "views": 132,
    "curtidas": 2,
    "comentarios": 0,
    "duracao": "PT38S",
    "estimatedMinutesWatched": 8,
-   "averageViewDuration": 13,
-   "averageViewPercentage": 36.79,
+   "averageViewDuration": 14,
+   "averageViewPercentage": 39.28,
    "subscribersGained": 0,
    "likes": 2,
    "comments": 0,
@@ -1662,13 +1727,13 @@
    "publicado": "2026-11-11T13:00:15Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 36,
+   "views": 37,
    "curtidas": 3,
    "comentarios": 1,
    "duracao": "PT4M18S",
-   "estimatedMinutesWatched": 37,
-   "averageViewDuration": 109,
-   "averageViewPercentage": 42.31,
+   "estimatedMinutesWatched": 39,
+   "averageViewDuration": 111,
+   "averageViewPercentage": 43.2,
    "subscribersGained": 0,
    "likes": 3,
    "comments": 1,
@@ -1878,17 +1943,17 @@
    "publicado": "2025-10-15T13:01:22Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 3404,
-   "curtidas": 98,
+   "views": 3480,
+   "curtidas": 99,
    "comentarios": 5,
    "duracao": "PT15M59S",
-   "estimatedMinutesWatched": 14936,
-   "averageViewDuration": 362,
-   "averageViewPercentage": 37.79,
+   "estimatedMinutesWatched": 15144,
+   "averageViewDuration": 361,
+   "averageViewPercentage": 37.7,
    "subscribersGained": 33,
    "likes": 98,
    "comments": 3,
-   "shares": 32
+   "shares": 34
   },
   {
    "youtube_id": "ce0UC8b69o4",
@@ -1968,13 +2033,13 @@
    "publicado": "2025-10-13T13:00:56Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 123,
+   "views": 125,
    "curtidas": 6,
    "comentarios": 2,
    "duracao": "PT10M1S",
-   "estimatedMinutesWatched": 307,
-   "averageViewDuration": 204,
-   "averageViewPercentage": 33.95,
+   "estimatedMinutesWatched": 317,
+   "averageViewDuration": 208,
+   "averageViewPercentage": 34.67,
    "subscribersGained": 1,
    "likes": 6,
    "comments": 1,
@@ -2254,33 +2319,33 @@
  "fontes": [
   {
    "insightTrafficSourceType": "SHORTS",
-   "views": 8831,
-   "estimatedMinutesWatched": 1524
+   "views": 10332,
+   "estimatedMinutesWatched": 1839
   },
   {
    "insightTrafficSourceType": "YT_SEARCH",
-   "views": 648,
-   "estimatedMinutesWatched": 1272
+   "views": 742,
+   "estimatedMinutesWatched": 1356
   },
   {
    "insightTrafficSourceType": "SUBSCRIBER",
-   "views": 223,
-   "estimatedMinutesWatched": 218
+   "views": 292,
+   "estimatedMinutesWatched": 358
   },
   {
    "insightTrafficSourceType": "RELATED_VIDEO",
-   "views": 163,
-   "estimatedMinutesWatched": 806
+   "views": 287,
+   "estimatedMinutesWatched": 1102
   },
   {
    "insightTrafficSourceType": "YT_CHANNEL",
-   "views": 57,
-   "estimatedMinutesWatched": 40
+   "views": 68,
+   "estimatedMinutesWatched": 51
   },
   {
    "insightTrafficSourceType": "YT_OTHER_PAGE",
-   "views": 42,
-   "estimatedMinutesWatched": 29
+   "views": 47,
+   "estimatedMinutesWatched": 34
   },
   {
    "insightTrafficSourceType": "EXT_URL",
@@ -2289,8 +2354,8 @@
   },
   {
    "insightTrafficSourceType": "NO_LINK_OTHER",
-   "views": 19,
-   "estimatedMinutesWatched": 60
+   "views": 25,
+   "estimatedMinutesWatched": 68
   },
   {
    "insightTrafficSourceType": "NOTIFICATION",
@@ -2321,11 +2386,15 @@
  "paises": [
   {
    "country": "BR",
-   "views": 8816
+   "views": 10379
   },
   {
    "country": "PT",
-   "views": 237
+   "views": 330
+  },
+  {
+   "country": "US",
+   "views": 75
   },
   {
    "country": "AO",
@@ -2334,10 +2403,6 @@
   {
    "country": "MX",
    "views": 22
-  },
-  {
-   "country": "US",
-   "views": 20
   },
   {
    "country": "ID",
@@ -2353,42 +2418,42 @@
   {
    "ageGroup": "age13-17",
    "gender": "male",
-   "viewerPercentage": 14.3
+   "viewerPercentage": 13.8
   },
   {
    "ageGroup": "age18-24",
    "gender": "female",
-   "viewerPercentage": 2.7
+   "viewerPercentage": 2.6
   },
   {
    "ageGroup": "age18-24",
    "gender": "male",
-   "viewerPercentage": 4
+   "viewerPercentage": 3.7
   },
   {
    "ageGroup": "age25-34",
    "gender": "female",
-   "viewerPercentage": 11.7
+   "viewerPercentage": 11.6
   },
   {
    "ageGroup": "age25-34",
    "gender": "male",
-   "viewerPercentage": 12
+   "viewerPercentage": 11.5
   },
   {
    "ageGroup": "age35-44",
    "gender": "female",
-   "viewerPercentage": 15.7
+   "viewerPercentage": 15.9
   },
   {
    "ageGroup": "age35-44",
    "gender": "male",
-   "viewerPercentage": 10.5
+   "viewerPercentage": 10.4
   },
   {
    "ageGroup": "age45-54",
    "gender": "female",
-   "viewerPercentage": 6.4
+   "viewerPercentage": 6.8
   },
   {
    "ageGroup": "age45-54",
@@ -2398,22 +2463,22 @@
   {
    "ageGroup": "age55-64",
    "gender": "female",
-   "viewerPercentage": 1.8
+   "viewerPercentage": 2.1
   },
   {
    "ageGroup": "age55-64",
    "gender": "male",
-   "viewerPercentage": 1.1
+   "viewerPercentage": 0.9
   },
   {
    "ageGroup": "age65-",
    "gender": "female",
-   "viewerPercentage": 0.6
+   "viewerPercentage": 1.3
   },
   {
    "ageGroup": "age65-",
    "gender": "male",
-   "viewerPercentage": 0.3
+   "viewerPercentage": 0.5
   }
  ],
  "tipo_conteudo": [
@@ -2421,21 +2486,424 @@
    "creatorContentType": "creatorContentTypeUnspecified",
    "views": 0,
    "estimatedMinutesWatched": 0,
-   "subscribersGained": 1
+   "subscribersGained": 2
   },
   {
    "creatorContentType": "shorts",
-   "views": 9133,
-   "estimatedMinutesWatched": 1591,
-   "subscribersGained": 26
+   "views": 10712,
+   "estimatedMinutesWatched": 1928,
+   "subscribersGained": 31
   },
   {
    "creatorContentType": "videoOnDemand",
-   "views": 902,
-   "estimatedMinutesWatched": 2443,
+   "views": 1127,
+   "estimatedMinutesWatched": 2965,
    "subscribersGained": 11
   }
  ],
- "retencao": {},
+ "retencao": {
+  "zwjEAl_nJEE": [
+   [
+    0.01,
+    1.093
+   ],
+   [
+    0.02,
+    1.101
+   ],
+   [
+    0.03,
+    1.097
+   ],
+   [
+    0.04,
+    1.09
+   ],
+   [
+    0.05,
+    1.086
+   ],
+   [
+    0.06,
+    1.083
+   ],
+   [
+    0.07,
+    1.083
+   ],
+   [
+    0.08,
+    1.083
+   ],
+   [
+    0.09,
+    1.075
+   ],
+   [
+    0.1,
+    1.079
+   ],
+   [
+    0.11,
+    1.036
+   ],
+   [
+    0.12,
+    0.993
+   ],
+   [
+    0.13,
+    0.935
+   ],
+   [
+    0.14,
+    0.924
+   ],
+   [
+    0.15,
+    0.892
+   ],
+   [
+    0.16,
+    0.856
+   ],
+   [
+    0.17,
+    0.831
+   ],
+   [
+    0.18,
+    0.813
+   ],
+   [
+    0.19,
+    0.748
+   ],
+   [
+    0.2,
+    0.734
+   ],
+   [
+    0.21,
+    0.734
+   ],
+   [
+    0.22,
+    0.719
+   ],
+   [
+    0.23,
+    0.709
+   ],
+   [
+    0.24,
+    0.683
+   ],
+   [
+    0.25,
+    0.658
+   ],
+   [
+    0.26,
+    0.637
+   ],
+   [
+    0.27,
+    0.622
+   ],
+   [
+    0.28,
+    0.611
+   ],
+   [
+    0.29,
+    0.586
+   ],
+   [
+    0.3,
+    0.579
+   ],
+   [
+    0.31,
+    0.568
+   ],
+   [
+    0.32,
+    0.554
+   ],
+   [
+    0.33,
+    0.543
+   ],
+   [
+    0.34,
+    0.525
+   ],
+   [
+    0.35,
+    0.525
+   ],
+   [
+    0.36,
+    0.511
+   ],
+   [
+    0.37,
+    0.5
+   ],
+   [
+    0.38,
+    0.493
+   ],
+   [
+    0.39,
+    0.486
+   ],
+   [
+    0.4,
+    0.478
+   ],
+   [
+    0.41,
+    0.471
+   ],
+   [
+    0.42,
+    0.457
+   ],
+   [
+    0.43,
+    0.446
+   ],
+   [
+    0.44,
+    0.446
+   ],
+   [
+    0.45,
+    0.439
+   ],
+   [
+    0.46,
+    0.439
+   ],
+   [
+    0.47,
+    0.428
+   ],
+   [
+    0.48,
+    0.425
+   ],
+   [
+    0.49,
+    0.417
+   ],
+   [
+    0.5,
+    0.414
+   ],
+   [
+    0.51,
+    0.414
+   ],
+   [
+    0.52,
+    0.406
+   ],
+   [
+    0.53,
+    0.399
+   ],
+   [
+    0.54,
+    0.396
+   ],
+   [
+    0.55,
+    0.389
+   ],
+   [
+    0.56,
+    0.389
+   ],
+   [
+    0.57,
+    0.385
+   ],
+   [
+    0.58,
+    0.378
+   ],
+   [
+    0.59,
+    0.374
+   ],
+   [
+    0.6,
+    0.367
+   ],
+   [
+    0.61,
+    0.345
+   ],
+   [
+    0.62,
+    0.342
+   ],
+   [
+    0.63,
+    0.327
+   ],
+   [
+    0.64,
+    0.299
+   ],
+   [
+    0.65,
+    0.288
+   ],
+   [
+    0.66,
+    0.288
+   ],
+   [
+    0.67,
+    0.288
+   ],
+   [
+    0.68,
+    0.288
+   ],
+   [
+    0.69,
+    0.288
+   ],
+   [
+    0.7,
+    0.288
+   ],
+   [
+    0.71,
+    0.281
+   ],
+   [
+    0.72,
+    0.277
+   ],
+   [
+    0.73,
+    0.273
+   ],
+   [
+    0.74,
+    0.273
+   ],
+   [
+    0.75,
+    0.273
+   ],
+   [
+    0.76,
+    0.273
+   ],
+   [
+    0.77,
+    0.273
+   ],
+   [
+    0.78,
+    0.273
+   ],
+   [
+    0.79,
+    0.273
+   ],
+   [
+    0.8,
+    0.27
+   ],
+   [
+    0.81,
+    0.27
+   ],
+   [
+    0.82,
+    0.27
+   ],
+   [
+    0.83,
+    0.27
+   ],
+   [
+    0.84,
+    0.263
+   ],
+   [
+    0.85,
+    0.255
+   ],
+   [
+    0.86,
+    0.252
+   ],
+   [
+    0.87,
+    0.252
+   ],
+   [
+    0.88,
+    0.248
+   ],
+   [
+    0.89,
+    0.241
+   ],
+   [
+    0.9,
+    0.23
+   ],
+   [
+    0.91,
+    0.219
+   ],
+   [
+    0.92,
+    0.198
+   ],
+   [
+    0.93,
+    0.198
+   ],
+   [
+    0.94,
+    0.169
+   ],
+   [
+    0.95,
+    0.162
+   ],
+   [
+    0.96,
+    0.155
+   ],
+   [
+    0.97,
+    0.151
+   ],
+   [
+    0.98,
+    0.137
+   ],
+   [
+    0.99,
+    0.122
+   ],
+   [
+    1,
+    0.122
+   ]
+  ]
+ },
  "avisos": []
 }
