@@ -1,22 +1,13 @@
 {
- "atualizado": "2026-11-23T21:19:06+00:00",
+ "atualizado": "2026-11-24T20:09:46+00:00",
  "canal": {
   "nome": "Descifre & Domine",
   "inscritos": 83,
-  "views": 18590,
-  "videos": 67,
+  "views": 19679,
+  "videos": 71,
   "foto": "https://yt3.ggpht.com/7Icg6egJLFOFwkgsi62NDeasvlxROJNTG4xwD9zW3QXpBDFZXnp9fRwoogERz3lbiCJG8mkHuH0=s88-c-k-c0x00ffffff-no-rj"
  },
  "por_dia": [
-  {
-   "day": "2026-08-25",
-   "views": 6,
-   "estimatedMinutesWatched": 39,
-   "subscribersGained": 0,
-   "subscribersLost": 0,
-   "likes": 0,
-   "comments": 0
-  },
   {
    "day": "2026-08-26",
    "views": 4,
@@ -808,16 +799,69 @@
    "subscribersLost": 0,
    "likes": 5,
    "comments": 0
+  },
+  {
+   "day": "2026-11-22",
+   "views": 192,
+   "estimatedMinutesWatched": 155,
+   "subscribersGained": 1,
+   "subscribersLost": 0,
+   "likes": 5,
+   "comments": 0
   }
  ],
  "videos": [
+  {
+   "youtube_id": "VZjDvgNgyOw",
+   "titulo": "Sua Posição de Dormir Revela Isso (Não É Personalidade) #shorts",
+   "publicado": "2026-11-24T17:57:55Z",
+   "privacidade": "public",
+   "agendado_para": null,
+   "views": 105,
+   "curtidas": 2,
+   "comentarios": 0,
+   "duracao": "PT43S"
+  },
+  {
+   "youtube_id": "N9QpTP-W2Rk",
+   "titulo": "Mais da Metade de Harvard Errou Essa Pergunta #shorts",
+   "publicado": "2026-11-24T15:00:23Z",
+   "privacidade": "public",
+   "agendado_para": null,
+   "views": 8,
+   "curtidas": 0,
+   "comentarios": 0,
+   "duracao": "PT39S"
+  },
+  {
+   "youtube_id": "D3enVn9AkA0",
+   "titulo": "Teste de Burrice: 4 Armadilhas Que Enganam Gente Inteligente",
+   "publicado": "2026-11-24T13:00:08Z",
+   "privacidade": "public",
+   "agendado_para": null,
+   "views": 1,
+   "curtidas": 0,
+   "comentarios": 0,
+   "duracao": "PT4M36S"
+  },
+  {
+   "youtube_id": "62DAMS2vQzc",
+   "titulo": "Eles Fingiram Ser Loucos e Ninguém Percebeu #shorts",
+   "publicado": "2026-11-23T22:00:33Z",
+   "privacidade": "public",
+   "agendado_para": null,
+   "views": 866,
+   "curtidas": 10,
+   "comentarios": 0,
+   "duracao": "PT33S"
+  },
   {
    "youtube_id": "QxZLkJqWiRU",
    "titulo": "A Epidemia de Riso Que Fechou Escolas (1962) #shorts",
    "publicado": "2026-11-23T15:00:12Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 1,
+   "views": 16,
    "curtidas": 0,
    "comentarios": 0,
    "duracao": "PT31S"
@@ -831,7 +875,14 @@
    "views": 4,
    "curtidas": 0,
    "comentarios": 0,
-   "duracao": "PT42S"
+   "duracao": "PT42S",
+   "estimatedMinutesWatched": 1,
+   "averageViewDuration": 20,
+   "averageViewPercentage": 49.44,
+   "subscribersGained": 0,
+   "likes": 0,
+   "comments": 0,
+   "shares": 0
   },
   {
    "youtube_id": "l99BC3fBuJY",
@@ -840,9 +891,16 @@
    "privacidade": "public",
    "agendado_para": null,
    "views": 73,
-   "curtidas": 0,
+   "curtidas": 1,
    "comentarios": 0,
-   "duracao": "PT40S"
+   "duracao": "PT40S",
+   "estimatedMinutesWatched": 5,
+   "averageViewDuration": 14,
+   "averageViewPercentage": 37.32,
+   "subscribersGained": 0,
+   "likes": 0,
+   "comments": 0,
+   "shares": 0
   },
   {
    "youtube_id": "qY0j5kTWY48",
@@ -853,7 +911,14 @@
    "views": 24,
    "curtidas": 1,
    "comentarios": 0,
-   "duracao": "PT5M30S"
+   "duracao": "PT5M30S",
+   "estimatedMinutesWatched": 52,
+   "averageViewDuration": 134,
+   "averageViewPercentage": 40.87,
+   "subscribersGained": 1,
+   "likes": 1,
+   "comments": 0,
+   "shares": 0
   },
   {
    "youtube_id": "UFOUQSQhAMg",
@@ -861,7 +926,7 @@
    "publicado": "2026-11-21T22:00:20Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 3,
+   "views": 4,
    "curtidas": 0,
    "comentarios": 0,
    "duracao": "PT37S",
@@ -879,13 +944,13 @@
    "publicado": "2026-11-21T15:00:12Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 6,
+   "views": 10,
    "curtidas": 0,
    "comentarios": 0,
    "duracao": "PT29S",
-   "estimatedMinutesWatched": 0,
+   "estimatedMinutesWatched": 1,
    "averageViewDuration": 15,
-   "averageViewPercentage": 52.53,
+   "averageViewPercentage": 53.12,
    "subscribersGained": 0,
    "likes": 0,
    "comments": 0,
@@ -915,15 +980,15 @@
    "publicado": "2026-11-20T18:40:10Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 409,
+   "views": 425,
    "curtidas": 12,
    "comentarios": 0,
    "duracao": "PT44S",
-   "estimatedMinutesWatched": 110,
+   "estimatedMinutesWatched": 113,
    "averageViewDuration": 21,
-   "averageViewPercentage": 48.96,
+   "averageViewPercentage": 49.31,
    "subscribersGained": 3,
-   "likes": 10,
+   "likes": 12,
    "comments": 0,
    "shares": 0
   },
@@ -933,7 +998,7 @@
    "publicado": "2026-11-20T15:00:02Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 38,
+   "views": 39,
    "curtidas": 0,
    "comentarios": 0,
    "duracao": "PT35S",
@@ -951,11 +1016,11 @@
    "publicado": "2026-11-20T13:00:06Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 153,
+   "views": 155,
    "curtidas": 12,
    "comentarios": 2,
    "duracao": "PT4M34S",
-   "estimatedMinutesWatched": 304,
+   "estimatedMinutesWatched": 305,
    "averageViewDuration": 148,
    "averageViewPercentage": 54.059999999999995,
    "subscribersGained": 0,
@@ -969,13 +1034,13 @@
    "publicado": "2026-11-20T12:45:38Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 1035,
+   "views": 1040,
    "curtidas": 14,
    "comentarios": 0,
    "duracao": "PT35S",
-   "estimatedMinutesWatched": 190,
+   "estimatedMinutesWatched": 191,
    "averageViewDuration": 20,
-   "averageViewPercentage": 57.56,
+   "averageViewPercentage": 57.59000000000001,
    "subscribersGained": 2,
    "likes": 13,
    "comments": 0,
@@ -1045,13 +1110,13 @@
    "publicado": "2026-11-19T14:45:30Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 1027,
+   "views": 1032,
    "curtidas": 29,
    "comentarios": 0,
    "duracao": "PT36S",
    "estimatedMinutesWatched": 220,
    "averageViewDuration": 18,
-   "averageViewPercentage": 52.33,
+   "averageViewPercentage": 52.28,
    "subscribersGained": 8,
    "likes": 29,
    "comments": 0,
@@ -1139,15 +1204,15 @@
    "publicado": "2026-11-18T13:00:01Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 15,
+   "views": 20,
    "curtidas": 1,
    "comentarios": 0,
    "duracao": "PT4M9S",
-   "estimatedMinutesWatched": 27,
-   "averageViewDuration": 143,
-   "averageViewPercentage": 57.75,
+   "estimatedMinutesWatched": 37,
+   "averageViewDuration": 136,
+   "averageViewPercentage": 54.81,
    "subscribersGained": 0,
-   "likes": 0,
+   "likes": 1,
    "comments": 0,
    "shares": 0
   },
@@ -1435,7 +1500,7 @@
    "publicado": "2026-11-16T13:00:28Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 4,
+   "views": 5,
    "curtidas": 0,
    "comentarios": 0,
    "duracao": "PT4M21S",
@@ -1471,7 +1536,7 @@
    "publicado": "2026-11-15T15:00:33Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 221,
+   "views": 222,
    "curtidas": 3,
    "comentarios": 0,
    "duracao": "PT38S",
@@ -1556,71 +1621,6 @@
    "shares": 0
   },
   {
-   "youtube_id": "FT2N4-jIc7I",
-   "titulo": "Qual Desses Distúrbios Você Escolheria? #shorts",
-   "publicado": "2026-11-13T15:00:02Z",
-   "privacidade": "public",
-   "agendado_para": null,
-   "views": 316,
-   "curtidas": 3,
-   "comentarios": 0,
-   "duracao": "PT36S",
-   "estimatedMinutesWatched": 23,
-   "averageViewDuration": 15,
-   "averageViewPercentage": 42.26,
-   "subscribersGained": 1,
-   "likes": 3,
-   "comments": 0,
-   "shares": 0
-  },
-  {
-   "youtube_id": "eOriluDjg68",
-   "titulo": "O Contrário do Placebo (e Ele Te Faz Mal de Verdade) #shorts",
-   "publicado": "2026-11-12T15:08:09Z",
-   "privacidade": "public",
-   "agendado_para": null,
-   "views": 172,
-   "curtidas": 1,
-   "comentarios": 0,
-   "duracao": "PT39S",
-   "estimatedMinutesWatched": 10,
-   "averageViewDuration": 18,
-   "averageViewPercentage": 48.47,
-   "subscribersGained": 0,
-   "likes": 1,
-   "comments": 0,
-   "shares": 0
-  },
-  {
-   "youtube_id": "EpxCyMwZYZg",
-   "titulo": "HISTERIA COLETIVA: quando cidades inteiras enlouqueceram",
-   "publicado": "2026-11-12T13:00:31Z",
-   "privacidade": "public",
-   "agendado_para": null,
-   "views": 28,
-   "curtidas": 2,
-   "comentarios": 1,
-   "duracao": "PT21M37S",
-   "estimatedMinutesWatched": 168,
-   "averageViewDuration": 373,
-   "averageViewPercentage": 28.809999999999995,
-   "subscribersGained": 1,
-   "likes": 2,
-   "comments": 1,
-   "shares": 0
-  },
-  {
-   "youtube_id": "62DAMS2vQzc",
-   "titulo": "Eles Fingiram Ser Loucos e Ninguém Percebeu #shorts",
-   "publicado": "2026-11-12T04:55:47Z",
-   "privacidade": "private",
-   "agendado_para": "2026-11-23T22:00:00Z",
-   "views": 0,
-   "curtidas": 0,
-   "comentarios": 0,
-   "duracao": "PT33S"
-  },
-  {
    "youtube_id": "qY0j5kTWY48",
    "titulo": "Seu Cérebro Mente Pra Você: 7 Provas (Faça o Teste)",
    "publicado": "2026-11-22T13:00:27Z",
@@ -1629,7 +1629,14 @@
    "views": 24,
    "curtidas": 1,
    "comentarios": 0,
-   "duracao": "PT5M30S"
+   "duracao": "PT5M30S",
+   "estimatedMinutesWatched": 52,
+   "averageViewDuration": 134,
+   "averageViewPercentage": 40.87,
+   "subscribersGained": 1,
+   "likes": 1,
+   "comments": 0,
+   "shares": 0
   },
   {
    "youtube_id": "E680HDKOb08",
@@ -1637,11 +1644,11 @@
    "publicado": "2026-11-20T13:00:06Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 153,
+   "views": 155,
    "curtidas": 12,
    "comentarios": 2,
    "duracao": "PT4M34S",
-   "estimatedMinutesWatched": 304,
+   "estimatedMinutesWatched": 305,
    "averageViewDuration": 148,
    "averageViewPercentage": 54.059999999999995,
    "subscribersGained": 0,
@@ -1655,15 +1662,15 @@
    "publicado": "2026-11-18T13:00:01Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 15,
+   "views": 20,
    "curtidas": 1,
    "comentarios": 0,
    "duracao": "PT4M9S",
-   "estimatedMinutesWatched": 27,
-   "averageViewDuration": 143,
-   "averageViewPercentage": 57.75,
+   "estimatedMinutesWatched": 37,
+   "averageViewDuration": 136,
+   "averageViewPercentage": 54.81,
    "subscribersGained": 0,
-   "likes": 0,
+   "likes": 1,
    "comments": 0,
    "shares": 0
   },
@@ -1673,7 +1680,7 @@
    "publicado": "2026-11-16T13:00:28Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 4,
+   "views": 5,
    "curtidas": 0,
    "comentarios": 0,
    "duracao": "PT4M21S",
@@ -1683,6 +1690,24 @@
    "subscribersGained": 0,
    "likes": 0,
    "comments": 0,
+   "shares": 0
+  },
+  {
+   "youtube_id": "Zpu8nbqIgPI",
+   "titulo": "OS EXPERIMENTOS MAIS SOMBRIOS DA PSICOLOGIA: a história completa",
+   "publicado": "2026-11-14T13:00:00Z",
+   "privacidade": "public",
+   "agendado_para": null,
+   "views": 187,
+   "curtidas": 4,
+   "comentarios": 1,
+   "duracao": "PT22M30S",
+   "estimatedMinutesWatched": 540,
+   "averageViewDuration": 384,
+   "averageViewPercentage": 28.48,
+   "subscribersGained": 0,
+   "likes": 4,
+   "comments": 1,
    "shares": 0
   },
   {
@@ -1781,7 +1806,7 @@
    "publicado": "2026-11-10T02:34:36Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 52,
+   "views": 53,
    "curtidas": 4,
    "comentarios": 1,
    "duracao": "PT8M28S",
@@ -1943,15 +1968,15 @@
    "publicado": "2025-10-15T13:01:22Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 3480,
-   "curtidas": 99,
+   "views": 3524,
+   "curtidas": 100,
    "comentarios": 5,
    "duracao": "PT15M59S",
-   "estimatedMinutesWatched": 15144,
-   "averageViewDuration": 361,
-   "averageViewPercentage": 37.7,
+   "estimatedMinutesWatched": 15211,
+   "averageViewDuration": 360,
+   "averageViewPercentage": 37.62,
    "subscribersGained": 33,
-   "likes": 98,
+   "likes": 99,
    "comments": 3,
    "shares": 34
   },
@@ -2033,13 +2058,13 @@
    "publicado": "2025-10-13T13:00:56Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 125,
+   "views": 129,
    "curtidas": 6,
    "comentarios": 2,
    "duracao": "PT10M1S",
-   "estimatedMinutesWatched": 317,
-   "averageViewDuration": 208,
-   "averageViewPercentage": 34.67,
+   "estimatedMinutesWatched": 330,
+   "averageViewDuration": 210,
+   "averageViewPercentage": 35.01,
    "subscribersGained": 1,
    "likes": 6,
    "comments": 1,
@@ -2051,7 +2076,7 @@
    "publicado": "2025-10-12T13:01:09Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 75,
+   "views": 76,
    "curtidas": 0,
    "comentarios": 0,
    "duracao": "PT31S",
@@ -2319,43 +2344,43 @@
  "fontes": [
   {
    "insightTrafficSourceType": "SHORTS",
-   "views": 10332,
-   "estimatedMinutesWatched": 1839
+   "views": 10432,
+   "estimatedMinutesWatched": 1851
   },
   {
    "insightTrafficSourceType": "YT_SEARCH",
-   "views": 742,
-   "estimatedMinutesWatched": 1356
+   "views": 766,
+   "estimatedMinutesWatched": 1389
   },
   {
    "insightTrafficSourceType": "SUBSCRIBER",
-   "views": 292,
-   "estimatedMinutesWatched": 358
+   "views": 311,
+   "estimatedMinutesWatched": 368
   },
   {
    "insightTrafficSourceType": "RELATED_VIDEO",
-   "views": 287,
-   "estimatedMinutesWatched": 1102
+   "views": 309,
+   "estimatedMinutesWatched": 1148
   },
   {
    "insightTrafficSourceType": "YT_CHANNEL",
-   "views": 68,
+   "views": 70,
    "estimatedMinutesWatched": 51
   },
   {
    "insightTrafficSourceType": "YT_OTHER_PAGE",
-   "views": 47,
-   "estimatedMinutesWatched": 34
-  },
-  {
-   "insightTrafficSourceType": "EXT_URL",
-   "views": 26,
-   "estimatedMinutesWatched": 34
+   "views": 48,
+   "estimatedMinutesWatched": 38
   },
   {
    "insightTrafficSourceType": "NO_LINK_OTHER",
+   "views": 30,
+   "estimatedMinutesWatched": 78
+  },
+  {
+   "insightTrafficSourceType": "EXT_URL",
    "views": 25,
-   "estimatedMinutesWatched": 68
+   "estimatedMinutesWatched": 33
   },
   {
    "insightTrafficSourceType": "NOTIFICATION",
@@ -2386,7 +2411,7 @@
  "paises": [
   {
    "country": "BR",
-   "views": 10379
+   "views": 10553
   },
   {
    "country": "PT",
@@ -2490,126 +2515,528 @@
   },
   {
    "creatorContentType": "shorts",
-   "views": 10712,
-   "estimatedMinutesWatched": 1928,
+   "views": 10823,
+   "estimatedMinutesWatched": 1940,
    "subscribersGained": 31
   },
   {
    "creatorContentType": "videoOnDemand",
-   "views": 1127,
-   "estimatedMinutesWatched": 2965,
-   "subscribersGained": 11
+   "views": 1188,
+   "estimatedMinutesWatched": 3068,
+   "subscribersGained": 12
   }
  ],
  "retencao": {
-  "zwjEAl_nJEE": [
+  "l99BC3fBuJY": [
    [
     0.01,
-    1.093
+    1.062
    ],
    [
     0.02,
-    1.101
+    1
    ],
    [
     0.03,
-    1.097
+    1
    ],
    [
     0.04,
-    1.09
+    1
    ],
    [
     0.05,
-    1.086
+    1
    ],
    [
     0.06,
-    1.083
+    1
    ],
    [
     0.07,
-    1.083
+    0.938
    ],
    [
     0.08,
-    1.083
+    0.938
    ],
    [
     0.09,
-    1.075
+    0.938
    ],
    [
     0.1,
-    1.079
+    0.938
    ],
    [
     0.11,
-    1.036
+    0.938
    ],
    [
     0.12,
-    0.993
+    0.812
    ],
    [
     0.13,
-    0.935
+    0.75
    ],
    [
     0.14,
-    0.924
+    0.688
    ],
    [
     0.15,
-    0.892
+    0.562
    ],
    [
     0.16,
-    0.856
+    0.562
    ],
    [
     0.17,
-    0.831
+    0.562
    ],
    [
     0.18,
-    0.813
+    0.562
    ],
    [
     0.19,
-    0.748
+    0.438
    ],
    [
     0.2,
-    0.734
+    0.438
    ],
    [
     0.21,
-    0.734
+    0.438
    ],
    [
     0.22,
-    0.719
+    0.438
    ],
    [
     0.23,
-    0.709
+    0.438
    ],
    [
     0.24,
-    0.683
+    0.375
    ],
    [
     0.25,
-    0.658
+    0.375
    ],
    [
     0.26,
-    0.637
+    0.375
    ],
    [
     0.27,
-    0.622
+    0.375
+   ],
+   [
+    0.28,
+    0.375
+   ],
+   [
+    0.29,
+    0.375
+   ],
+   [
+    0.3,
+    0.375
+   ],
+   [
+    0.31,
+    0.375
+   ],
+   [
+    0.32,
+    0.375
+   ],
+   [
+    0.33,
+    0.375
+   ],
+   [
+    0.34,
+    0.375
+   ],
+   [
+    0.35,
+    0.375
+   ],
+   [
+    0.36,
+    0.375
+   ],
+   [
+    0.37,
+    0.375
+   ],
+   [
+    0.38,
+    0.375
+   ],
+   [
+    0.39,
+    0.375
+   ],
+   [
+    0.4,
+    0.375
+   ],
+   [
+    0.41,
+    0.375
+   ],
+   [
+    0.42,
+    0.375
+   ],
+   [
+    0.43,
+    0.375
+   ],
+   [
+    0.44,
+    0.375
+   ],
+   [
+    0.45,
+    0.375
+   ],
+   [
+    0.46,
+    0.375
+   ],
+   [
+    0.47,
+    0.375
+   ],
+   [
+    0.48,
+    0.375
+   ],
+   [
+    0.49,
+    0.375
+   ],
+   [
+    0.5,
+    0.375
+   ],
+   [
+    0.51,
+    0.375
+   ],
+   [
+    0.52,
+    0.375
+   ],
+   [
+    0.53,
+    0.375
+   ],
+   [
+    0.54,
+    0.375
+   ],
+   [
+    0.55,
+    0.375
+   ],
+   [
+    0.56,
+    0.375
+   ],
+   [
+    0.57,
+    0.375
+   ],
+   [
+    0.58,
+    0.375
+   ],
+   [
+    0.59,
+    0.375
+   ],
+   [
+    0.6,
+    0.375
+   ],
+   [
+    0.61,
+    0.312
+   ],
+   [
+    0.62,
+    0.312
+   ],
+   [
+    0.63,
+    0.312
+   ],
+   [
+    0.64,
+    0.312
+   ],
+   [
+    0.65,
+    0.312
+   ],
+   [
+    0.66,
+    0.312
+   ],
+   [
+    0.67,
+    0.312
+   ],
+   [
+    0.68,
+    0.312
+   ],
+   [
+    0.69,
+    0.312
+   ],
+   [
+    0.7,
+    0.312
+   ],
+   [
+    0.71,
+    0.312
+   ],
+   [
+    0.72,
+    0.312
+   ],
+   [
+    0.73,
+    0.312
+   ],
+   [
+    0.74,
+    0.25
+   ],
+   [
+    0.75,
+    0.25
+   ],
+   [
+    0.76,
+    0.25
+   ],
+   [
+    0.77,
+    0.188
+   ],
+   [
+    0.78,
+    0.188
+   ],
+   [
+    0.79,
+    0.188
+   ],
+   [
+    0.8,
+    0.188
+   ],
+   [
+    0.81,
+    0.125
+   ],
+   [
+    0.82,
+    0.062
+   ],
+   [
+    0.83,
+    0.062
+   ],
+   [
+    0.84,
+    0.062
+   ],
+   [
+    0.85,
+    0.062
+   ],
+   [
+    0.86,
+    0.062
+   ],
+   [
+    0.87,
+    0.062
+   ],
+   [
+    0.88,
+    0.062
+   ],
+   [
+    0.89,
+    0.062
+   ],
+   [
+    0.9,
+    0.062
+   ],
+   [
+    0.91,
+    0.062
+   ],
+   [
+    0.92,
+    0.062
+   ],
+   [
+    0.93,
+    0.062
+   ],
+   [
+    0.94,
+    0.062
+   ],
+   [
+    0.95,
+    0.062
+   ],
+   [
+    0.96,
+    0.062
+   ],
+   [
+    0.97,
+    0.062
+   ],
+   [
+    0.98,
+    0.062
+   ],
+   [
+    0.99,
+    0.062
+   ],
+   [
+    1,
+    0.062
+   ]
+  ],
+  "qY0j5kTWY48": [
+   [
+    0.01,
+    1.111
+   ],
+   [
+    0.02,
+    0.944
+   ],
+   [
+    0.03,
+    0.944
+   ],
+   [
+    0.04,
+    0.944
+   ],
+   [
+    0.05,
+    0.889
+   ],
+   [
+    0.06,
+    0.833
+   ],
+   [
+    0.07,
+    0.833
+   ],
+   [
+    0.08,
+    0.833
+   ],
+   [
+    0.09,
+    0.833
+   ],
+   [
+    0.1,
+    0.833
+   ],
+   [
+    0.11,
+    0.833
+   ],
+   [
+    0.12,
+    0.833
+   ],
+   [
+    0.13,
+    0.778
+   ],
+   [
+    0.14,
+    0.778
+   ],
+   [
+    0.15,
+    0.722
+   ],
+   [
+    0.16,
+    0.722
+   ],
+   [
+    0.17,
+    0.778
+   ],
+   [
+    0.18,
+    0.778
+   ],
+   [
+    0.19,
+    0.778
+   ],
+   [
+    0.2,
+    0.778
+   ],
+   [
+    0.21,
+    0.778
+   ],
+   [
+    0.22,
+    0.778
+   ],
+   [
+    0.23,
+    0.778
+   ],
+   [
+    0.24,
+    0.778
+   ],
+   [
+    0.25,
+    0.722
+   ],
+   [
+    0.26,
+    0.722
+   ],
+   [
+    0.27,
+    0.667
    ],
    [
     0.28,
@@ -2617,35 +3044,35 @@
    ],
    [
     0.29,
-    0.586
+    0.611
    ],
    [
     0.3,
-    0.579
+    0.5
    ],
    [
     0.31,
-    0.568
+    0.5
    ],
    [
     0.32,
-    0.554
+    0.5
    ],
    [
     0.33,
-    0.543
+    0.5
    ],
    [
     0.34,
-    0.525
+    0.5
    ],
    [
     0.35,
-    0.525
+    0.5
    ],
    [
     0.36,
-    0.511
+    0.5
    ],
    [
     0.37,
@@ -2653,255 +3080,255 @@
    ],
    [
     0.38,
-    0.493
+    0.5
    ],
    [
     0.39,
-    0.486
+    0.444
    ],
    [
     0.4,
-    0.478
+    0.444
    ],
    [
     0.41,
-    0.471
+    0.444
    ],
    [
     0.42,
-    0.457
+    0.444
    ],
    [
     0.43,
-    0.446
+    0.444
    ],
    [
     0.44,
-    0.446
+    0.444
    ],
    [
     0.45,
-    0.439
+    0.444
    ],
    [
     0.46,
-    0.439
+    0.444
    ],
    [
     0.47,
-    0.428
+    0.444
    ],
    [
     0.48,
-    0.425
+    0.389
    ],
    [
     0.49,
-    0.417
+    0.333
    ],
    [
     0.5,
-    0.414
+    0.278
    ],
    [
     0.51,
-    0.414
+    0.278
    ],
    [
     0.52,
-    0.406
+    0.278
    ],
    [
     0.53,
-    0.399
+    0.278
    ],
    [
     0.54,
-    0.396
+    0.278
    ],
    [
     0.55,
-    0.389
+    0.278
    ],
    [
     0.56,
-    0.389
+    0.278
    ],
    [
     0.57,
-    0.385
+    0.278
    ],
    [
     0.58,
-    0.378
+    0.278
    ],
    [
     0.59,
-    0.374
+    0.278
    ],
    [
     0.6,
-    0.367
+    0.333
    ],
    [
     0.61,
-    0.345
+    0.278
    ],
    [
     0.62,
-    0.342
+    0.278
    ],
    [
     0.63,
-    0.327
+    0.278
    ],
    [
     0.64,
-    0.299
+    0.278
    ],
    [
     0.65,
-    0.288
+    0.278
    ],
    [
     0.66,
-    0.288
+    0.278
    ],
    [
     0.67,
-    0.288
+    0.278
    ],
    [
     0.68,
-    0.288
+    0.222
    ],
    [
     0.69,
-    0.288
+    0.222
    ],
    [
     0.7,
-    0.288
+    0.222
    ],
    [
     0.71,
-    0.281
+    0.222
    ],
    [
     0.72,
-    0.277
+    0.222
    ],
    [
     0.73,
-    0.273
+    0.222
    ],
    [
     0.74,
-    0.273
+    0.222
    ],
    [
     0.75,
-    0.273
+    0.222
    ],
    [
     0.76,
-    0.273
+    0.222
    ],
    [
     0.77,
-    0.273
+    0.222
    ],
    [
     0.78,
-    0.273
+    0.222
    ],
    [
     0.79,
-    0.273
+    0.222
    ],
    [
     0.8,
-    0.27
+    0.222
    ],
    [
     0.81,
-    0.27
+    0.222
    ],
    [
     0.82,
-    0.27
+    0.222
    ],
    [
     0.83,
-    0.27
+    0.222
    ],
    [
     0.84,
-    0.263
+    0.222
    ],
    [
     0.85,
-    0.255
+    0.222
    ],
    [
     0.86,
-    0.252
+    0.222
    ],
    [
     0.87,
-    0.252
+    0.222
    ],
    [
     0.88,
-    0.248
+    0.222
    ],
    [
     0.89,
-    0.241
+    0.222
    ],
    [
     0.9,
-    0.23
+    0.222
    ],
    [
     0.91,
-    0.219
+    0.222
    ],
    [
     0.92,
-    0.198
+    0.222
    ],
    [
     0.93,
-    0.198
+    0.167
    ],
    [
     0.94,
-    0.169
+    0.167
    ],
    [
     0.95,
-    0.162
+    0.167
    ],
    [
     0.96,
-    0.155
+    0.167
    ],
    [
     0.97,
-    0.151
+    0.167
    ],
    [
     0.98,
-    0.137
+    0.167
    ],
    [
     0.99,
-    0.122
+    0.167
    ],
    [
     1,
-    0.122
+    0.167
    ]
   ]
  },
