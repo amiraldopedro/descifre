@@ -1,6 +1,30 @@
 {
  "itens": [
   {
+   "id": "s49",
+   "criado": "2026-11-24T13:49:40+00:00",
+   "notas": [],
+   "historico": [],
+   "tipo": "short",
+   "titulo": "Ninguém Reparou na Sua Mancha (Efeito Holofote) #shorts",
+   "descricao": "Efeito holofote (Gilovich, Medvec e Savitsky, 2000): quem usava uma camiseta constrangedora achou que cerca de metade da sala tinha notado; na prática, perto de um quarto notou.\n\nVídeo completo: [LINK DO VÍDEO]\n\n#psicologia #curiosidades #shorts",
+   "tags": [
+    "efeito holofote",
+    "vergonha",
+    "ansiedade social",
+    "psicologia",
+    "curiosidades",
+    "shorts",
+    "descifre"
+   ],
+   "thumb_texto": {},
+   "tema": "Efeito holofote",
+   "duracao_s": 19,
+   "run": "45406749927",
+   "download": "https://github.com/amiraldopedro/descifre/actions/runs/45406749927",
+   "status": "renderizado"
+  },
+  {
    "id": "s51",
    "criado": "2026-11-24T13:49:38+00:00",
    "notas": [],
@@ -2246,5 +2270,5 @@
   ],
   "fuso": "America/Sao_Paulo"
  },
- "atualizado": "2026-11-24T13:49:38+00:00"
+ "atualizado": "2026-11-24T13:49:40+00:00"
 }
