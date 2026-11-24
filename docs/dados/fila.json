@@ -1,6 +1,30 @@
 {
  "itens": [
   {
+   "id": "s50",
+   "criado": "2026-11-24T13:49:02+00:00",
+   "notas": [],
+   "historico": [],
+   "tipo": "short",
+   "titulo": "Daqui a 10 Anos Você Vai Ser Outra Pessoa (e Não Acredita) #shorts",
+   "descricao": "Ilusão do fim da história (Quoidbach, Gilbert e Wilson, Science, 2013): mais de 19 mil pessoas subestimaram o quanto ainda mudariam de gostos, valores e personalidade nos 10 anos seguintes, em todas as idades.\n\nVídeo completo: [LINK DO VÍDEO]\n\n#psicologia #curiosidades #shorts",
+   "tags": [
+    "ilusão do fim da história",
+    "mudança",
+    "personalidade",
+    "psicologia",
+    "curiosidades",
+    "shorts",
+    "descifre"
+   ],
+   "thumb_texto": {},
+   "tema": "Fim da história",
+   "duracao_s": 21,
+   "run": "45406765282",
+   "download": "https://github.com/amiraldopedro/descifre/actions/runs/45406765282",
+   "status": "renderizado"
+  },
+  {
    "id": "p06",
    "criado": "2026-11-17T02:34:50+00:00",
    "notas": [],
@@ -2198,5 +2222,5 @@
   ],
   "fuso": "America/Sao_Paulo"
  },
- "atualizado": "2026-11-23T21:19:06+00:00"
+ "atualizado": "2026-11-24T13:49:02+00:00"
 }
