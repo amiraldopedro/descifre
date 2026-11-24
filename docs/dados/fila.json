@@ -1,6 +1,31 @@
 {
  "itens": [
   {
+   "id": "s48",
+   "criado": "2026-11-24T13:51:17+00:00",
+   "notas": [],
+   "historico": [],
+   "tipo": "short",
+   "titulo": "Por Que Barulho de Chuva Faz Você Dormir Rápido #shorts",
+   "descricao": "Som constante e previsível não dispara alerta no cérebro. A chuva se parece com ruído rosa: Ngo e colegas (Neuron, 2013) mostraram que esse tipo de som sincronizado com o sono profundo melhora a consolidação da memória; Zhou e colegas (2012) viram sono mais estável com ruído rosa constante.\n\nVídeo completo: [LINK DO VÍDEO]\n\n#psicologia #curiosidades #shorts",
+   "tags": [
+    "barulho de chuva",
+    "ruído rosa",
+    "dormir rápido",
+    "sono",
+    "psicologia",
+    "curiosidades",
+    "shorts",
+    "descifre"
+   ],
+   "thumb_texto": {},
+   "tema": "Barulho de chuva",
+   "duracao_s": 38,
+   "run": "45406733715",
+   "download": "https://github.com/amiraldopedro/descifre/actions/runs/45406733715",
+   "status": "renderizado"
+  },
+  {
    "id": "s47",
    "criado": "2026-11-24T13:51:06+00:00",
    "notas": [],
@@ -2320,5 +2345,5 @@
   ],
   "fuso": "America/Sao_Paulo"
  },
- "atualizado": "2026-11-24T13:51:06+00:00"
+ "atualizado": "2026-11-24T13:51:17+00:00"
 }
