@@ -17,6 +17,7 @@ const P_ENTRA = 0.15;
 const P_OLHA = 0.55;
 const P_VIRA = 0.84;
 
+export const vertical = true; // já se adapta ao Short (fov e câmera)
 export const sons: SomCena[] = [
   { som: "porta", p: 0.05 },
   { som: "passos", p: 0.15 },

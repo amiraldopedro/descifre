@@ -1,0 +1,31 @@
+{
+ "id": "s51",
+ "titulo": "Acima da média",
+ "voz": "en-US-BrianMultilingualNeural",
+ "taxa": "+8%",
+ "formato": "short",
+ "layout": "animado",
+ "trilha_inicio": 0,
+ "trilha": "curioso1",
+ "cenas": [
+  {
+   "texto": "93% dos motoristas americanos se acham MELHORES que a média. A conta não fecha. E você? Também se acha acima da média?",
+   "animacao": {
+    "tipo": "tweet",
+    "curtidas": 39800,
+    "reposts": 2600,
+    "reacao": "apontar",
+    "titulo": "A CIÊNCIA DIZ"
+   },
+   "id": 1
+  },
+  {
+   "texto": "Isso se chama superioridade ilusória. Quer ver se você cai nas armadilhas que pegam gente inteligente? O teste tá no vídeo do canal.",
+   "animacao": {
+    "tipo": "cta",
+    "texto": "VOCÊ TAMBÉM?"
+   },
+   "id": 2
+  }
+ ]
+}

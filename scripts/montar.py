@@ -247,7 +247,12 @@ def sfx(cenas, roteiro, destino: Path, short: bool):
             for s_ in manual:
                 por(s_["som"], t0 + s_["t"], s_.get("vol", 1))
             continue
-        if tipo in ("gancho", "cta", "titulo"):
+        if tipo == "tweet":  # post do @descifre: notificação, teclas a cada palavra, curtidas no fim
+            por("mensagem", t0 + 0.05)
+            for pw in c["palavras"]:
+                por("tecla", t0 + pw["t0"], 0.35)
+            por("pop", t0 + c["fala"] / FPS + 0.1, 0.8); por("ding", t0 + c["fala"] / FPS + 0.35, 0.6)
+        elif tipo in ("gancho", "cta", "titulo"):
             por("boom", t0)
         elif tipo == "conceito":
             por("ding", t0 + 0.05)
@@ -350,7 +355,7 @@ def main(vid, estimar_tempos=False):
             fala_s, palavras = estimar(c["texto"])
 
         if short:
-            pausa = 2.0 if anim["tipo"] == "contagem" else (1.2 if anim["tipo"] == "cta" else 0.08)
+            pausa = 2.0 if anim["tipo"] == "contagem" else (1.2 if anim["tipo"] in ("cta", "tweet") else 0.08)
         else:
             pausa = PAUSA_CONTAGEM if anim["tipo"] == "contagem" else PAUSA
         if anim["tipo"] == "encerramento":

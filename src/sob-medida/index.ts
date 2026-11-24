@@ -35,14 +35,17 @@ import * as m31 from "./008/onda";
 import * as m32 from "./008/samaritano";
 import * as m33 from "./anima/quarto";
 import * as m34 from "./cenario/lugar";
-import * as m35 from "./d02/elevador";
-import * as m36 from "./d02/linhas-asch";
-import * as m37 from "./d03/gerador";
-import * as m38 from "./ilusao/escolha";
-import * as m39 from "./ilusao/passos";
-import * as m40 from "./ilusao/vaso";
-import * as m41 from "./ilustra/galeria";
-import * as m42 from "./mapa/voo";
+import * as m35 from "./criacao/estilos";
+import * as m36 from "./d02/elevador";
+import * as m37 from "./d02/linhas-asch";
+import * as m38 from "./d03/gerador";
+import * as m39 from "./ilusao/escolha";
+import * as m40 from "./ilusao/passos";
+import * as m41 from "./ilusao/vaso";
+import * as m42 from "./ilustra/galeria";
+import * as m43 from "./mapa/voo";
+import * as m44 from "./social/bateria";
+import * as m45 from "./sono/posicoes";
 export const SOB_MEDIDA: Record<string, ModuloSobMedida> = {
   "002/ancora": m0 as ModuloSobMedida,
   "002/gorila": m1 as ModuloSobMedida,
@@ -79,12 +82,15 @@ export const SOB_MEDIDA: Record<string, ModuloSobMedida> = {
   "008/samaritano": m32 as ModuloSobMedida,
   "anima/quarto": m33 as ModuloSobMedida,
   "cenario/lugar": m34 as ModuloSobMedida,
-  "d02/elevador": m35 as ModuloSobMedida,
-  "d02/linhas-asch": m36 as ModuloSobMedida,
-  "d03/gerador": m37 as ModuloSobMedida,
-  "ilusao/escolha": m38 as ModuloSobMedida,
-  "ilusao/passos": m39 as ModuloSobMedida,
-  "ilusao/vaso": m40 as ModuloSobMedida,
-  "ilustra/galeria": m41 as ModuloSobMedida,
-  "mapa/voo": m42 as ModuloSobMedida,
+  "criacao/estilos": m35 as ModuloSobMedida,
+  "d02/elevador": m36 as ModuloSobMedida,
+  "d02/linhas-asch": m37 as ModuloSobMedida,
+  "d03/gerador": m38 as ModuloSobMedida,
+  "ilusao/escolha": m39 as ModuloSobMedida,
+  "ilusao/passos": m40 as ModuloSobMedida,
+  "ilusao/vaso": m41 as ModuloSobMedida,
+  "ilustra/galeria": m42 as ModuloSobMedida,
+  "mapa/voo": m43 as ModuloSobMedida,
+  "social/bateria": m44 as ModuloSobMedida,
+  "sono/posicoes": m45 as ModuloSobMedida,
 };

@@ -8,6 +8,7 @@ import { CamadaEspecial, ehEspecial } from "./CamadaEspecial";
 import { COR, Cena, FONTE_TEXTO, FONTE_TITULO, Manifesto, Palavra } from "./tema";
 import { CamadaDocumentario, DOC_TELA_CHEIA, EtiquetaLocal } from "./Documentario";
 import { Corrida } from "./3d/Corrida";
+import { Tweet } from "./Tweet";
 import { FUSAO, Clarao, GlitchEntrada, TipoTransicao, cameraDaCena, sobra, transicaoDaCena, tremidaGlitch, useCamera, useTransicao } from "./Camera";
 
 /* ---------- utilitários de "dopamina" ---------- */
@@ -335,7 +336,7 @@ const CenaShort: React.FC<PropsCena> = ({ cena, entrada, saida, layout }) => {
   const falando = cena.palavras.some((p) => t >= p.t0 && t <= p.t1);
   const a = cena.animacao;
   const telaCheia = DOC_TELA_CHEIA.has(a.tipo);
-  const cosmico = !cena.broll || a.tipo === "cta" || telaCheia;
+  const cosmico = !cena.broll || a.tipo === "cta" || telaCheia || a.tipo === "tweet";
   const soEtiqueta = a.tipo === "nenhuma" || a.tipo === "local";
   const cam = useCamera(cameraDaCena(cena), cena.duracao + sobra(saida, FUSAO.short), cena.id);
   const tr = useTransicao(entrada, saida, cena.duracao, FUSAO.short);
@@ -346,8 +347,8 @@ const CenaShort: React.FC<PropsCena> = ({ cena, entrada, saida, layout }) => {
   const atores = cena.personagens ?? [];
   const temPalco = atores.length > 0;
   const legendaY = temPalco ? 1500 : soEtiqueta ? 1020 : a.tipo === "documento" || a.tipo === "carimbo" ? 1460 : 1420;
-  const semLegenda = a.tipo === "cta" || a.tipo === "fim" || a.tipo === "capitulo" || a.tipo === "vinheta" || layout === "gameplay";
-  const limpo = layout !== "padrao" && ehEspecial(cena); // 3D em tela cheia: sem véu escuro por cima
+  const semLegenda = a.tipo === "cta" || a.tipo === "fim" || a.tipo === "tweet" || a.tipo === "capitulo" || a.tipo === "vinheta" || layout === "gameplay";
+  const limpo = (layout !== "padrao" && ehEspecial(cena)) || a.tipo === "tweet"; // 3D em tela cheia: sem véu escuro por cima
 
   return (
     <AbsoluteFill style={{ opacity: tr.opacidade, ...tr.estilo, transform: entrada === "glitch" ? `translateX(${tremidaGlitch(f)}px)` : tr.estilo.transform }}>
@@ -370,6 +371,7 @@ const CenaShort: React.FC<PropsCena> = ({ cena, entrada, saida, layout }) => {
         )}
         {a.tipo === "conceito" && <Conceito nome={a.nome} frase={a.frase} rotulo={a.rotulo} />}
         {a.tipo === "cta" && <Cta texto={a.texto} falando={falando} />}
+        {a.tipo === "tweet" && <Tweet palavras={cena.palavras} fala={cena.fala} dur={cena.duracao} curtidas={a.curtidas} reposts={a.reposts} reacao={a.reacao} titulo={a.titulo} falando={falando} seed={cena.id} />}
         {a.tipo === "ilustracao" && (
           <AbsoluteFill style={{ alignItems: "center", paddingTop: temPalco ? 190 : 330 }}>
             <Ilustracao nome={a.nome} texto={a.texto} tamanho={temPalco ? 520 : 680} />

@@ -13,6 +13,7 @@
  *  rotulo:  texto curto no topo (ex.: "MELATONINA ↓"), cor_rotulo: "vermelho" | "ciano" | "amarelo"
  *  cor:     cor da camisa · pessoas: [{"x":1.2,"z":-1,"pose":"em-pe","olhando":-0.6,"cor":"#..."}] (gente extra)
  *  entra:   proporção da fala em que o efeito/rótulo aparece (padrão 0.15)
+ *  chuva:   true = chuva escorrendo na frente da câmera (como se visse pela janela) e relâmpago suave
  */
 import React from "react";
 import { AbsoluteFill, interpolate, spring, useCurrentFrame, useVideoConfig } from "remotion";
@@ -281,6 +282,25 @@ const Efeito: React.FC<{ nome: string; k: number; y: number }> = ({ nome, k, y }
   );
 };
 
+/** Chuva determinística por cima da cena (gotas em diagonal + brilho de relâmpago). */
+const Chuva: React.FC<{ forca?: number }> = ({ forca = 1 }) => {
+  const f = useCurrentFrame();
+  const gotas = Array.from({ length: Math.round(90 * forca) }).map((_, i) => {
+    const x0 = (i * 137.5) % 1180 - 50;
+    const vel = 22 + ((i * 29) % 17);
+    const comp = 60 + ((i * 53) % 90);
+    const y = ((f * vel + i * 211) % 2200) - 200;
+    return <line key={i} x1={x0} y1={y} x2={x0 - 14} y2={y + comp} stroke={COR.ciano} strokeWidth={i % 4 === 0 ? 4 : 2.5} strokeLinecap="round" opacity={0.18 + ((i * 7) % 5) * 0.08} />;
+  });
+  const rel = f % 170 > 160 ? interpolate(f % 170, [160, 162, 165, 170], [0, 0.35, 0.1, 0]) : 0;
+  return (
+    <>
+      <AbsoluteFill style={{ backgroundColor: "#DDE9FF", opacity: rel, mixBlendMode: "screen" }} />
+      <svg width={1080} height={1920} viewBox="0 0 1080 1920" style={{ position: "absolute", inset: 0 }}>{gotas}</svg>
+    </>
+  );
+};
+
 const CORES_ROTULO: Record<string, string> = { vermelho: COR.vermelho, ciano: COR.ciano, amarelo: COR.amarelo };
 
 /* ---------------------------------------------------------------- cena */
@@ -347,6 +367,7 @@ const Quarto: React.FC<PropsSobMedida> = ({ dur, fala, props }) => {
       </Palco3D>
       {/* vinheta de cinema nas bordas */}
       <AbsoluteFill style={{ background: "radial-gradient(ellipse at 50% 45%, rgba(0,0,0,0) 55%, rgba(0,0,0,.55) 100%)" }} />
+      {props.chuva && <Chuva forca={typeof props.chuva === "number" ? props.chuva : 1} />}
       {props.efeito && <Efeito nome={props.efeito} k={k} y={330} />}
       {props.rotulo && (
         <div style={{ position: "absolute", top: 170, width: "100%", textAlign: "center", transform: `scale(${k})` }}>

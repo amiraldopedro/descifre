@@ -15,6 +15,7 @@ const N = 7;
 const P_VOCE = P0 + N * PASSO + 0.03; // ~0.845: "você" hesita
 const P_CEDE = P_VOCE + 0.1; // e cede
 
+export const vertical = true; // já se adapta ao Short (fov e câmera)
 export const sons: SomCena[] = [
   { som: "pop", t: 0.2 },
   { som: "click", p: 0.5 }, { som: "click", p: 0.545 }, { som: "click", p: 0.59 }, { som: "click", p: 0.635 },

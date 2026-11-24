@@ -1,0 +1,66 @@
+{
+ "id": "s45",
+ "titulo": "Cada tipo de pai",
+ "voz": "en-US-BrianMultilingualNeural",
+ "taxa": "+8%",
+ "formato": "short",
+ "layout": "animado",
+ "trilha_inicio": 0,
+ "trilha": "curioso1",
+ "cenas": [
+  {
+   "texto": "Cada tipo de pai cria um tipo de filho. O autoritário, que só manda e nunca explica, costuma criar um filho obediente por fora e inseguro por dentro.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "criacao/estilos",
+    "props": {
+     "estilo": "autoritario",
+     "entra": 0.3
+    }
+   },
+   "id": 1
+  },
+  {
+   "texto": "O permissivo, que não coloca limite nenhum, cria um filho que não sabe ouvir um não.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "criacao/estilos",
+    "props": {
+     "estilo": "permissivo"
+    }
+   },
+   "id": 2
+  },
+  {
+   "texto": "O ausente, que está ali mas não está, deixa a marca mais funda: o filho aprende que não é prioridade.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "criacao/estilos",
+    "props": {
+     "estilo": "ausente"
+    }
+   },
+   "id": 3
+  },
+  {
+   "texto": "E tem o quarto tipo: firme e afetuoso. Regra clara, mas com carinho e explicação. A psicóloga Diana Baumrind descobriu isso nos anos sessenta, e os filhos desse grupo são os mais seguros e independentes.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "criacao/estilos",
+    "props": {
+     "estilo": "firme",
+     "entra": 0.08
+    }
+   },
+   "id": 4
+  },
+  {
+   "texto": "Qual desses foi o seu? Comenta. E por que somos grossos justo com quem mais amamos tá no vídeo do canal.",
+   "animacao": {
+    "tipo": "cta",
+    "texto": "QUAL FOI O SEU?"
+   },
+   "id": 5
+  }
+ ]
+}

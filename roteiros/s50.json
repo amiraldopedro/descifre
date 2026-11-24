@@ -1,0 +1,31 @@
+{
+ "id": "s50",
+ "titulo": "Fim da história",
+ "voz": "en-US-BrianMultilingualNeural",
+ "taxa": "+8%",
+ "formato": "short",
+ "layout": "animado",
+ "trilha_inicio": 0,
+ "trilha": "curioso1",
+ "cenas": [
+  {
+   "texto": "Você acha que já mudou tudo que ia mudar na vida. Pesquisa com 19 MIL pessoas: daqui a dez anos você vai ser OUTRA pessoa. E vai achar a mesma coisa de novo.",
+   "animacao": {
+    "tipo": "tweet",
+    "curtidas": 61300,
+    "reposts": 7200,
+    "reacao": "pensar",
+    "titulo": "A CIÊNCIA DIZ"
+   },
+   "id": 1
+  },
+  {
+   "texto": "Isso é a ilusão do fim da história. E o seu cérebro mente mais do que isso: as sete provas tão no vídeo do canal.",
+   "animacao": {
+    "tipo": "cta",
+    "texto": "VOCÊ VAI MUDAR"
+   },
+   "id": 2
+  }
+ ]
+}

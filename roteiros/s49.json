@@ -1,0 +1,31 @@
+{
+ "id": "s49",
+ "titulo": "Efeito holofote",
+ "voz": "en-US-BrianMultilingualNeural",
+ "taxa": "+8%",
+ "formato": "short",
+ "layout": "animado",
+ "trilha_inicio": 0,
+ "trilha": "curioso1",
+ "cenas": [
+  {
+   "texto": "Você jura que todo mundo reparou na mancha da sua camisa. Numa pesquisa, MENOS DA METADE percebeu. Isso tem nome: efeito holofote.",
+   "animacao": {
+    "tipo": "tweet",
+    "curtidas": 48200,
+    "reposts": 3900,
+    "reacao": "surpreso",
+    "titulo": "A CIÊNCIA DIZ"
+   },
+   "id": 1
+  },
+  {
+   "texto": "Ninguém tá olhando tanto pra você quanto você pensa. As outras mentiras do seu cérebro tão no vídeo do canal.",
+   "animacao": {
+    "tipo": "cta",
+    "texto": "NINGUÉM VIU"
+   },
+   "id": 2
+  }
+ ]
+}

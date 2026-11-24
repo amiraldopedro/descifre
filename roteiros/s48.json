@@ -1,0 +1,76 @@
+{
+ "id": "s48",
+ "titulo": "Barulho de chuva",
+ "voz": "en-US-BrianMultilingualNeural",
+ "taxa": "+8%",
+ "formato": "short",
+ "layout": "animado",
+ "trilha_inicio": 0,
+ "trilha": "leve",
+ "cenas": [
+  {
+   "texto": "Por que o barulho de chuva faz você dormir tão rápido?",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "anima/quarto",
+    "props": {
+     "cenario": "quarto",
+     "luz": "apagada",
+     "pose": "deitado",
+     "olhos": "fechados",
+     "efeito": "pergunta",
+     "camera": "aproxima",
+     "chuva": true,
+     "entra": 0.5
+    }
+   },
+   "pausa": 0.4,
+   "id": 1
+  },
+  {
+   "texto": "Primeiro: é um som constante, sem surpresa. O cérebro entende que não existe perigo e baixa a guarda.",
+   "animacao": {
+    "tipo": "cena3d",
+    "nome": "neuronios",
+    "texto": "SEM AMEAÇA"
+   },
+   "id": 2
+  },
+  {
+   "texto": "Segundo: chuva é um ruído rosa. Um estudo de 2013 mostrou que esse tipo de som deixa o sono profundo mais estável e até melhora a memória no dia seguinte.",
+   "animacao": {
+    "tipo": "conceito",
+    "nome": "RUÍDO ROSA",
+    "frase": "sono profundo + memória",
+    "rotulo": "A CIÊNCIA"
+   },
+   "id": 3
+  },
+  {
+   "texto": "Terceiro: ela esconde os sons que te acordam. Porta, cachorro, vizinho. Tudo some atrás da chuva.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "anima/quarto",
+    "props": {
+     "cenario": "quarto",
+     "luz": "apagada",
+     "pose": "deitado",
+     "olhos": "fechados",
+     "efeito": "zzz",
+     "camera": "rosto",
+     "chuva": 1.4,
+     "entra": 0.2
+    }
+   },
+   "id": 4
+  },
+  {
+   "texto": "Salva pra hoje à noite. E o que dormir só seis horas faz com o seu cérebro tá no vídeo do canal.",
+   "animacao": {
+    "tipo": "cta",
+    "texto": "SALVA PRA HOJE"
+   },
+   "id": 5
+  }
+ ]
+}

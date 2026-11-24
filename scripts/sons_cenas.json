@@ -1265,6 +1265,18 @@
    "vol": 0.5
   }
  ],
+ "criacao/estilos": [
+  {
+   "som": "whoosh_lento",
+   "p": 0.0,
+   "vol": 0.5
+  },
+  {
+   "som": "pop",
+   "p": 0.1,
+   "vol": 0.8
+  }
+ ],
  "d02/elevador": [
   {
    "som": "porta",
@@ -1398,6 +1410,54 @@
   {
    "som": "whoosh",
    "p": 0.02
+  }
+ ],
+ "social/bateria": [
+  {
+   "som": "whoosh_lento",
+   "p": 0.0,
+   "vol": 0.5
+  },
+  {
+   "som": "desce",
+   "p": 0.5,
+   "vol": 0.5,
+   "fase": "festa"
+  },
+  {
+   "som": "alerta",
+   "p": 0.9,
+   "vol": 0.8,
+   "fase": "festa"
+  },
+  {
+   "som": "sobe",
+   "p": 0.5,
+   "vol": 0.5,
+   "fase": "sofa"
+  },
+  {
+   "som": "ding",
+   "p": 0.92,
+   "vol": 0.8,
+   "fase": "sofa"
+  }
+ ],
+ "sono/posicoes": [
+  {
+   "som": "whoosh_lento",
+   "p": 0.0,
+   "vol": 0.5
+  },
+  {
+   "som": "swish",
+   "p": 0.38,
+   "vol": 0.8
+  },
+  {
+   "som": "swish",
+   "p": 0.7,
+   "vol": 0.8
   }
  ]
 }

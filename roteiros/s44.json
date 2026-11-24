@@ -1,0 +1,67 @@
+{
+ "id": "s44",
+ "titulo": "Posição de dormir",
+ "voz": "en-US-BrianMultilingualNeural",
+ "taxa": "+8%",
+ "formato": "short",
+ "layout": "animado",
+ "trilha_inicio": 0,
+ "trilha": "curioso1",
+ "cenas": [
+  {
+   "texto": "Em que posição você dorme? De costas, de lado ou de bruços?",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "sono/posicoes",
+    "props": {
+     "posicao": "ciclo"
+    }
+   },
+   "pausa": 0.5,
+   "id": 1
+  },
+  {
+   "texto": "Tem um teste viral dizendo que isso revela a sua personalidade. Mentira. Essa história vem de uma pesquisa de 2003 feita pra uma rede de hotéis, que nunca saiu em revista científica.",
+   "animacao": {
+    "tipo": "carimbo",
+    "texto": "MITO",
+    "frase": "pesquisa de hotel, 2003",
+    "p": 0.3
+   },
+   "lofi": "forte",
+   "id": 2
+  },
+  {
+   "texto": "Mas a posição diz algo real sobre o seu corpo. De lado, o cérebro limpa melhor os resíduos do dia. Foi o que um estudo de 2015 mostrou.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "sono/posicoes",
+    "props": {
+     "posicao": "lado",
+     "cerebro": true
+    }
+   },
+   "id": 3
+  },
+  {
+   "texto": "De costas, a língua cai pra trás: mais ronco e mais apneia. E de bruços, o pescoço passa a noite inteira torcido.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "sono/posicoes",
+    "props": {
+     "posicao": "costas",
+     "ronco": true
+    }
+   },
+   "id": 4
+  },
+  {
+   "texto": "Comenta qual é a sua. E o que dormir só seis horas faz com o seu cérebro tá no vídeo do canal.",
+   "animacao": {
+    "tipo": "cta",
+    "texto": "QUAL É A SUA?"
+   },
+   "id": 5
+  }
+ ]
+}

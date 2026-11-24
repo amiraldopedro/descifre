@@ -28,6 +28,10 @@ public/musica/           (opcional) coloque 1 música .mp3 sem direitos autorais
   dominos, balanca, ampulheta, marionete, raio, grafico, cadeado, coracao, olho, interrogacao (`src/Ilustracoes.tsx`).
 - Trilha: `"trilha": "misterio" | "tenso" | "leve"` no roteiro (geradas por `scripts/trilha.py`).
 - Shorts: `"formato": "short"` no roteiro (arquivos `roteiros/sNN.json`).
+- Short "tweet" (uma curiosidade só, 12 a 20 s): `"animacao": {"tipo": "tweet", "curtidas": 48200, "reposts": 3900, "reacao": "surpreso", "titulo": "A CIÊNCIA DIZ"}`.
+  O texto da cena vira um post do @descifre que se escreve com a fala (palavras em MAIÚSCULAS ficam amarelas); no fim as curtidas disparam e o
+  Cifrinho reage embaixo (`reacao`: surpreso, apontar, pensar, comemorar). Fundo 3D (túnel + cristais). Depois, uma cena `cta`. Exemplo: `roteiros/s49.json`.
+- Cenas 3D verticais prontas para Shorts: `anima/quarto` (agora com `"chuva": true`), `sono/posicoes`, `criacao/estilos`, `social/bateria`, `d02/elevador`, `d02/linhas-asch`.
 
 ## Linguagem de documentário animado
 

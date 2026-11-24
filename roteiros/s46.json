@@ -1,0 +1,57 @@
+{
+ "id": "s46",
+ "titulo": "Poder da má influência",
+ "voz": "en-US-BrianMultilingualNeural",
+ "taxa": "+8%",
+ "formato": "short",
+ "layout": "animado",
+ "trilha_inicio": 0,
+ "trilha": "suspense1",
+ "cenas": [
+  {
+   "texto": "Uma pessoa entra no elevador. Todo mundo lá dentro está virado pro fundo. Ela estranha, olha pros lados... e se vira também.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "d02/elevador",
+    "props": {}
+   },
+   "id": 1
+  },
+  {
+   "texto": "Isso era uma pegadinha de TV. Mas o cientista Solomon Asch testou pra valer: qual linha tem o mesmo tamanho? Fácil. Só que os outros da sala eram atores e davam a resposta errada de propósito.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "d02/linhas-asch",
+    "props": {}
+   },
+   "id": 2
+  },
+  {
+   "texto": "Resultado: setenta e cinco por cento das pessoas concordaram com a resposta errada pelo menos uma vez. Só pra não ficar de fora.",
+   "animacao": {
+    "tipo": "cena3d",
+    "nome": "multidao",
+    "texto": "75% CEDERAM"
+   },
+   "lofi": "forte",
+   "id": 3
+  },
+  {
+   "texto": "Então, quando o grupo inteiro fala a mesma coisa, desconfia. O seu cérebro prefere estar errado junto do que certo sozinho.",
+   "animacao": {
+    "tipo": "ilustracao",
+    "nome": "marionete",
+    "texto": "ERRADO JUNTO"
+   },
+   "id": 4
+  },
+  {
+   "texto": "Manda pro amigo que faz tudo que a turma faz. E se você é fácil de manipular, o teste tá no vídeo do canal.",
+   "animacao": {
+    "tipo": "cta",
+    "texto": "VOCÊ CEDERIA?"
+   },
+   "id": 5
+  }
+ ]
+}

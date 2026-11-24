@@ -1,0 +1,65 @@
+{
+ "id": "s47",
+ "titulo": "Bateria social",
+ "voz": "en-US-BrianMultilingualNeural",
+ "taxa": "+8%",
+ "formato": "short",
+ "layout": "animado",
+ "trilha_inicio": 0,
+ "trilha": "curioso1",
+ "cenas": [
+  {
+   "texto": "Você já chegou numa festa animado e, uma hora depois, só queria ir embora? Isso tem nome: bateria social.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "social/bateria",
+    "props": {
+     "cenario": "festa",
+     "fase": "festa"
+    }
+   },
+   "id": 1
+  },
+  {
+   "texto": "Não é frescura. Pela teoria de Eysenck, o cérebro do introvertido já funciona mais ligado. Então barulho e gente demais estouram o limite mais rápido.",
+   "animacao": {
+    "tipo": "conceito",
+    "nome": "INTROVERTIDO",
+    "frase": "cérebro já ligado no máximo",
+    "rotulo": "TEORIA DE EYSENCK"
+   },
+   "id": 2
+  },
+  {
+   "texto": "E não é só introvertido. Um estudo de 2017 mostrou que até extrovertido fica cansado umas três horas depois de agir sociável demais.",
+   "animacao": {
+    "tipo": "ilustracao",
+    "nome": "ampulheta",
+    "texto": "3 HORAS DEPOIS"
+   },
+   "id": 3
+  },
+  {
+   "texto": "Por isso recarregar sozinho no sofá não é ser antissocial. É manutenção.",
+   "animacao": {
+    "tipo": "sobmedida",
+    "nome": "social/bateria",
+    "props": {
+     "cenario": "sofa",
+     "fase": "sofa",
+     "rotulo": "RECARREGANDO",
+     "cor": "ciano"
+    }
+   },
+   "id": 4
+  },
+  {
+   "texto": "Marca aquele amigo que some da festa sem avisar. E por que somos grossos com quem mais amamos tá no vídeo do canal.",
+   "animacao": {
+    "tipo": "cta",
+    "texto": "SUA BATERIA ACABOU?"
+   },
+   "id": 5
+  }
+ ]
+}

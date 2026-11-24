@@ -33,6 +33,7 @@ export type Animacao =
   | { tipo: "ilustracao"; nome: string; texto?: string }
   | { tipo: "gancho"; texto: string }
   | { tipo: "cta"; texto: string }
+  | { tipo: "tweet"; curtidas?: number; reposts?: number; reacao?: "surpreso" | "apontar" | "pensar" | "comemorar" | "explicar"; titulo?: string } // só Shorts: post do @descifre que se escreve com a fala
   | { tipo: "cena3d"; nome: string; texto?: string } // cena 3D padrão (src/3d/cenas3d.tsx)
   | { tipo: "sobmedida"; nome: string; props?: Record<string, any> } // cena da história deste vídeo (src/sob-medida/ID/)
   // linguagem de "documentário animado" (src/Documentario.tsx)
