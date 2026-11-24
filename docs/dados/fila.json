@@ -1,6 +1,37 @@
 {
  "itens": [
   {
+   "id": "s44",
+   "criado": "2026-11-24T13:54:03+00:00",
+   "notas": [],
+   "historico": [
+    {
+     "quando": "2026-11-24T13:54:11+00:00",
+     "status": "rascunho"
+    }
+   ],
+   "tipo": "short",
+   "titulo": "Sua Posição de Dormir Revela Isso (Não É Personalidade) #shorts",
+   "descricao": "A 'personalidade pela posição de dormir' vem de uma pesquisa encomendada por uma rede de hotéis (Idzikowski, 2003), nunca publicada em revista científica. O que é real: dormir de lado melhora a limpeza de resíduos do cérebro (Lee e colegas, Journal of Neuroscience, 2015); de costas aumenta ronco e apneia.\n\nVídeo completo: https://youtu.be/qY0j5kTWY48\n\n#psicologia #curiosidades #shorts\n\nMúsica: \"Sneaky Snitch\" — Kevin MacLeod (incompetech.com), licença CC BY 4.0 (creativecommons.org/licenses/by/4.0)",
+   "tags": [
+    "posição de dormir",
+    "sono",
+    "cérebro",
+    "mito",
+    "psicologia",
+    "curiosidades",
+    "shorts",
+    "descifre"
+   ],
+   "thumb_texto": {},
+   "tema": "Posição de dormir",
+   "duracao_s": 43,
+   "run": "45406633615",
+   "download": "https://github.com/amiraldopedro/descifre/actions/runs/45406633615",
+   "status": "rascunho",
+   "youtube_id": "VZjDvgNgyOw"
+  },
+  {
    "id": "s45",
    "criado": "2026-11-24T13:53:02+00:00",
    "notas": [],
@@ -2370,5 +2401,5 @@
   ],
   "fuso": "America/Sao_Paulo"
  },
- "atualizado": "2026-11-24T13:53:02+00:00"
+ "atualizado": "2026-11-24T13:54:11+00:00"
 }
