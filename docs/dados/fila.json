@@ -1,6 +1,30 @@
 {
  "itens": [
   {
+   "id": "s51",
+   "criado": "2026-11-24T13:49:38+00:00",
+   "notas": [],
+   "historico": [],
+   "tipo": "short",
+   "titulo": "93% Se Acham Acima da Média. Você Também? #shorts",
+   "descricao": "Superioridade ilusória: no estudo de Ola Svenson (1981), 93% dos motoristas americanos (e 69% dos suecos) se colocaram acima da mediana em habilidade ao dirigir.\n\nVídeo completo: [LINK DO VÍDEO]\n\n#psicologia #curiosidades #shorts",
+   "tags": [
+    "superioridade ilusória",
+    "viés",
+    "autoavaliação",
+    "psicologia",
+    "curiosidades",
+    "shorts",
+    "descifre"
+   ],
+   "thumb_texto": {},
+   "tema": "Acima da média",
+   "duracao_s": 21,
+   "run": "45406777439",
+   "download": "https://github.com/amiraldopedro/descifre/actions/runs/45406777439",
+   "status": "renderizado"
+  },
+  {
    "id": "s50",
    "criado": "2026-11-24T13:49:02+00:00",
    "notas": [],
@@ -2222,5 +2246,5 @@
   ],
   "fuso": "America/Sao_Paulo"
  },
- "atualizado": "2026-11-24T13:49:02+00:00"
+ "atualizado": "2026-11-24T13:49:38+00:00"
 }
