@@ -1,6 +1,31 @@
 {
  "itens": [
   {
+   "id": "s47",
+   "criado": "2026-11-24T13:51:06+00:00",
+   "notas": [],
+   "historico": [],
+   "tipo": "short",
+   "titulo": "Bateria Social Existe? O Que Acontece no Seu Cérebro na Festa #shorts",
+   "descricao": "Teoria da ativação cortical de Hans Eysenck (1967): introvertidos teriam um nível basal de ativação mais alto, por isso se saturam antes com estímulos. Leikas e Ilmarinen (2017) mostraram cansaço cerca de 3 horas depois de comportamento extrovertido, mesmo em extrovertidos.\n\nVídeo completo: [LINK DO VÍDEO]\n\n#psicologia #curiosidades #shorts",
+   "tags": [
+    "bateria social",
+    "introvertido",
+    "extrovertido",
+    "Eysenck",
+    "psicologia",
+    "curiosidades",
+    "shorts",
+    "descifre"
+   ],
+   "thumb_texto": {},
+   "tema": "Bateria social",
+   "duracao_s": 41,
+   "run": "45406721667",
+   "download": "https://github.com/amiraldopedro/descifre/actions/runs/45406721667",
+   "status": "renderizado"
+  },
+  {
    "id": "s46",
    "criado": "2026-11-24T13:51:02+00:00",
    "notas": [],
@@ -2295,5 +2320,5 @@
   ],
   "fuso": "America/Sao_Paulo"
  },
- "atualizado": "2026-11-24T13:51:02+00:00"
+ "atualizado": "2026-11-24T13:51:06+00:00"
 }
