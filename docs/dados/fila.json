@@ -1,6 +1,31 @@
 {
  "itens": [
   {
+   "id": "s45",
+   "criado": "2026-11-24T13:53:02+00:00",
+   "notas": [],
+   "historico": [],
+   "tipo": "short",
+   "titulo": "Cada Tipo de Pai Cria Um Tipo de Filho (Baumrind) #shorts",
+   "descricao": "Os estilos de criação de Diana Baumrind (1966/1971): autoritário, permissivo e autoritativo (firme e afetuoso), mais o negligente acrescentado por Maccoby e Martin (1983). Filhos de pais autoritativos tendem a ter mais autoestima e autonomia.\n\nVídeo completo: [LINK DO VÍDEO]\n\n#psicologia #curiosidades #shorts",
+   "tags": [
+    "estilos parentais",
+    "Baumrind",
+    "pais e filhos",
+    "criação",
+    "psicologia",
+    "curiosidades",
+    "shorts",
+    "descifre"
+   ],
+   "thumb_texto": {},
+   "tema": "Cada tipo de pai",
+   "duracao_s": 44,
+   "run": "45406692289",
+   "download": "https://github.com/amiraldopedro/descifre/actions/runs/45406692289",
+   "status": "renderizado"
+  },
+  {
    "id": "s48",
    "criado": "2026-11-24T13:51:17+00:00",
    "notas": [],
@@ -2345,5 +2370,5 @@
   ],
   "fuso": "America/Sao_Paulo"
  },
- "atualizado": "2026-11-24T13:51:17+00:00"
+ "atualizado": "2026-11-24T13:53:02+00:00"
 }
