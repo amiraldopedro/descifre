@@ -12,6 +12,12 @@ on:
       quantos:
         description: "Quantos vídeos analisar a fundo"
         default: "4"
+      extras:
+        description: "IDs de vídeos para incluir (separados por espaço)"
+        default: ""
+      idiomas:
+        description: "Idiomas da legenda"
+        default: "pt.*,pt-BR,en,en-orig,en.*"
 
 jobs:
   analisar:
@@ -42,13 +48,15 @@ jobs:
           if es:
               rec = json.load(open("lista_videos.json"))["entries"][0]["id"]
               if rec not in ids: ids.append(rec)
+          for x in "${{ github.event.inputs.extras }}".split():
+              if x not in ids: ids.insert(0, x)
           open("ids.txt", "w").write("\n".join(ids))
           print("analisar:", ids)
           EOF
           for id in $(cat ids.txt); do
             mkdir -p $id
             yt-dlp -J "https://www.youtube.com/watch?v=$id" > $id/meta.json || true
-            yt-dlp --skip-download --write-auto-subs --write-subs --sub-langs "pt.*,pt-BR" --sub-format vtt -o "$id/legenda" "https://www.youtube.com/watch?v=$id" || true
+            yt-dlp --skip-download --write-auto-subs --write-subs --sub-langs "${{ github.event.inputs.idiomas }}" --sub-format vtt -o "$id/legenda" "https://www.youtube.com/watch?v=$id" || true
           done
           # quadros de amostra dos 2 primeiros: 1 a cada 40 s, em folhas
           for id in $(head -2 ids.txt); do
