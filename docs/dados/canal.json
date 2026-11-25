@@ -1,22 +1,13 @@
 {
- "atualizado": "2026-11-24T20:09:46+00:00",
+ "atualizado": "2026-11-25T19:14:21+00:00",
  "canal": {
   "nome": "Descifre & Domine",
-  "inscritos": 83,
-  "views": 19679,
-  "videos": 71,
+  "inscritos": 87,
+  "views": 21174,
+  "videos": 73,
   "foto": "https://yt3.ggpht.com/7Icg6egJLFOFwkgsi62NDeasvlxROJNTG4xwD9zW3QXpBDFZXnp9fRwoogERz3lbiCJG8mkHuH0=s88-c-k-c0x00ffffff-no-rj"
  },
  "por_dia": [
-  {
-   "day": "2026-08-26",
-   "views": 4,
-   "estimatedMinutesWatched": 21,
-   "subscribersGained": 1,
-   "subscribersLost": 0,
-   "likes": 0,
-   "comments": 0
-  },
   {
    "day": "2026-08-27",
    "views": 21,
@@ -812,13 +803,35 @@
  ],
  "videos": [
   {
+   "youtube_id": "JIYCggQjYmU",
+   "titulo": "Explica Como Funciona um Zíper (Você Não Consegue) #shorts",
+   "publicado": "2026-11-25T15:00:11Z",
+   "privacidade": "public",
+   "agendado_para": null,
+   "views": 8,
+   "curtidas": 0,
+   "comentarios": 0,
+   "duracao": "PT35S"
+  },
+  {
+   "youtube_id": "YIK0S5cp6tE",
+   "titulo": "Qual Caminhão Está Freando? 🚚 #shorts",
+   "publicado": "2026-11-24T22:00:19Z",
+   "privacidade": "public",
+   "agendado_para": null,
+   "views": 464,
+   "curtidas": 4,
+   "comentarios": 3,
+   "duracao": "PT34S"
+  },
+  {
    "youtube_id": "VZjDvgNgyOw",
    "titulo": "Sua Posição de Dormir Revela Isso (Não É Personalidade) #shorts",
    "publicado": "2026-11-24T17:57:55Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 105,
-   "curtidas": 2,
+   "views": 966,
+   "curtidas": 16,
    "comentarios": 0,
    "duracao": "PT43S"
   },
@@ -828,8 +841,8 @@
    "publicado": "2026-11-24T15:00:23Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 8,
-   "curtidas": 0,
+   "views": 56,
+   "curtidas": 1,
    "comentarios": 0,
    "duracao": "PT39S"
   },
@@ -839,7 +852,7 @@
    "publicado": "2026-11-24T13:00:08Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 1,
+   "views": 9,
    "curtidas": 0,
    "comentarios": 0,
    "duracao": "PT4M36S"
@@ -850,7 +863,7 @@
    "publicado": "2026-11-23T22:00:33Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 866,
+   "views": 906,
    "curtidas": 10,
    "comentarios": 0,
    "duracao": "PT33S"
@@ -861,7 +874,7 @@
    "publicado": "2026-11-23T15:00:12Z",
    "privacidade": "public",
    "agendado_para": null,
-   "views": 16,
+   "views": 22,
    "curtidas": 0,
    "comentarios": 0,
    "duracao": "PT31S"
@@ -1579,42 +1592,6 @@
    "estimatedMinutesWatched": 17,
    "averageViewDuration": 16,
    "averageViewPercentage": 47.65,
-   "subscribersGained": 0,
-   "likes": 2,
-   "comments": 0,
-   "shares": 0
-  },
-  {
-   "youtube_id": "Zpu8nbqIgPI",
-   "titulo": "OS EXPERIMENTOS MAIS SOMBRIOS DA PSICOLOGIA: a história completa",
-   "publicado": "2026-11-14T13:00:00Z",
-   "privacidade": "public",
-   "agendado_para": null,
-   "views": 187,
-   "curtidas": 4,
-   "comentarios": 1,
-   "duracao": "PT22M30S",
-   "estimatedMinutesWatched": 540,
-   "averageViewDuration": 384,
-   "averageViewPercentage": 28.48,
-   "subscribersGained": 0,
-   "likes": 4,
-   "comments": 1,
-   "shares": 0
-  },
-  {
-   "youtube_id": "IRTDFDaSRng",
-   "titulo": "Você Fala Com Sua Mãe Como Fala Com o Chefe? #shorts",
-   "publicado": "2026-11-13T22:00:07Z",
-   "privacidade": "public",
-   "agendado_para": null,
-   "views": 144,
-   "curtidas": 2,
-   "comentarios": 0,
-   "duracao": "PT28S",
-   "estimatedMinutesWatched": 8,
-   "averageViewDuration": 16,
-   "averageViewPercentage": 59.5,
    "subscribersGained": 0,
    "likes": 2,
    "comments": 0,
@@ -2344,13 +2321,13 @@
  "fontes": [
   {
    "insightTrafficSourceType": "SHORTS",
-   "views": 10432,
-   "estimatedMinutesWatched": 1851
+   "views": 10431,
+   "estimatedMinutesWatched": 1850
   },
   {
    "insightTrafficSourceType": "YT_SEARCH",
-   "views": 766,
-   "estimatedMinutesWatched": 1389
+   "views": 739,
+   "estimatedMinutesWatched": 1303
   },
   {
    "insightTrafficSourceType": "SUBSCRIBER",
@@ -2359,8 +2336,8 @@
   },
   {
    "insightTrafficSourceType": "RELATED_VIDEO",
-   "views": 309,
-   "estimatedMinutesWatched": 1148
+   "views": 306,
+   "estimatedMinutesWatched": 1117
   },
   {
    "insightTrafficSourceType": "YT_CHANNEL",
@@ -2374,7 +2351,7 @@
   },
   {
    "insightTrafficSourceType": "NO_LINK_OTHER",
-   "views": 30,
+   "views": 29,
    "estimatedMinutesWatched": 78
   },
   {
@@ -2411,7 +2388,7 @@
  "paises": [
   {
    "country": "BR",
-   "views": 10553
+   "views": 10525
   },
   {
    "country": "PT",
@@ -2521,816 +2498,11 @@
   },
   {
    "creatorContentType": "videoOnDemand",
-   "views": 1188,
-   "estimatedMinutesWatched": 3068,
-   "subscribersGained": 12
+   "views": 1157,
+   "estimatedMinutesWatched": 2956,
+   "subscribersGained": 11
   }
  ],
- "retencao": {
-  "l99BC3fBuJY": [
-   [
-    0.01,
-    1.062
-   ],
-   [
-    0.02,
-    1
-   ],
-   [
-    0.03,
-    1
-   ],
-   [
-    0.04,
-    1
-   ],
-   [
-    0.05,
-    1
-   ],
-   [
-    0.06,
-    1
-   ],
-   [
-    0.07,
-    0.938
-   ],
-   [
-    0.08,
-    0.938
-   ],
-   [
-    0.09,
-    0.938
-   ],
-   [
-    0.1,
-    0.938
-   ],
-   [
-    0.11,
-    0.938
-   ],
-   [
-    0.12,
-    0.812
-   ],
-   [
-    0.13,
-    0.75
-   ],
-   [
-    0.14,
-    0.688
-   ],
-   [
-    0.15,
-    0.562
-   ],
-   [
-    0.16,
-    0.562
-   ],
-   [
-    0.17,
-    0.562
-   ],
-   [
-    0.18,
-    0.562
-   ],
-   [
-    0.19,
-    0.438
-   ],
-   [
-    0.2,
-    0.438
-   ],
-   [
-    0.21,
-    0.438
-   ],
-   [
-    0.22,
-    0.438
-   ],
-   [
-    0.23,
-    0.438
-   ],
-   [
-    0.24,
-    0.375
-   ],
-   [
-    0.25,
-    0.375
-   ],
-   [
-    0.26,
-    0.375
-   ],
-   [
-    0.27,
-    0.375
-   ],
-   [
-    0.28,
-    0.375
-   ],
-   [
-    0.29,
-    0.375
-   ],
-   [
-    0.3,
-    0.375
-   ],
-   [
-    0.31,
-    0.375
-   ],
-   [
-    0.32,
-    0.375
-   ],
-   [
-    0.33,
-    0.375
-   ],
-   [
-    0.34,
-    0.375
-   ],
-   [
-    0.35,
-    0.375
-   ],
-   [
-    0.36,
-    0.375
-   ],
-   [
-    0.37,
-    0.375
-   ],
-   [
-    0.38,
-    0.375
-   ],
-   [
-    0.39,
-    0.375
-   ],
-   [
-    0.4,
-    0.375
-   ],
-   [
-    0.41,
-    0.375
-   ],
-   [
-    0.42,
-    0.375
-   ],
-   [
-    0.43,
-    0.375
-   ],
-   [
-    0.44,
-    0.375
-   ],
-   [
-    0.45,
-    0.375
-   ],
-   [
-    0.46,
-    0.375
-   ],
-   [
-    0.47,
-    0.375
-   ],
-   [
-    0.48,
-    0.375
-   ],
-   [
-    0.49,
-    0.375
-   ],
-   [
-    0.5,
-    0.375
-   ],
-   [
-    0.51,
-    0.375
-   ],
-   [
-    0.52,
-    0.375
-   ],
-   [
-    0.53,
-    0.375
-   ],
-   [
-    0.54,
-    0.375
-   ],
-   [
-    0.55,
-    0.375
-   ],
-   [
-    0.56,
-    0.375
-   ],
-   [
-    0.57,
-    0.375
-   ],
-   [
-    0.58,
-    0.375
-   ],
-   [
-    0.59,
-    0.375
-   ],
-   [
-    0.6,
-    0.375
-   ],
-   [
-    0.61,
-    0.312
-   ],
-   [
-    0.62,
-    0.312
-   ],
-   [
-    0.63,
-    0.312
-   ],
-   [
-    0.64,
-    0.312
-   ],
-   [
-    0.65,
-    0.312
-   ],
-   [
-    0.66,
-    0.312
-   ],
-   [
-    0.67,
-    0.312
-   ],
-   [
-    0.68,
-    0.312
-   ],
-   [
-    0.69,
-    0.312
-   ],
-   [
-    0.7,
-    0.312
-   ],
-   [
-    0.71,
-    0.312
-   ],
-   [
-    0.72,
-    0.312
-   ],
-   [
-    0.73,
-    0.312
-   ],
-   [
-    0.74,
-    0.25
-   ],
-   [
-    0.75,
-    0.25
-   ],
-   [
-    0.76,
-    0.25
-   ],
-   [
-    0.77,
-    0.188
-   ],
-   [
-    0.78,
-    0.188
-   ],
-   [
-    0.79,
-    0.188
-   ],
-   [
-    0.8,
-    0.188
-   ],
-   [
-    0.81,
-    0.125
-   ],
-   [
-    0.82,
-    0.062
-   ],
-   [
-    0.83,
-    0.062
-   ],
-   [
-    0.84,
-    0.062
-   ],
-   [
-    0.85,
-    0.062
-   ],
-   [
-    0.86,
-    0.062
-   ],
-   [
-    0.87,
-    0.062
-   ],
-   [
-    0.88,
-    0.062
-   ],
-   [
-    0.89,
-    0.062
-   ],
-   [
-    0.9,
-    0.062
-   ],
-   [
-    0.91,
-    0.062
-   ],
-   [
-    0.92,
-    0.062
-   ],
-   [
-    0.93,
-    0.062
-   ],
-   [
-    0.94,
-    0.062
-   ],
-   [
-    0.95,
-    0.062
-   ],
-   [
-    0.96,
-    0.062
-   ],
-   [
-    0.97,
-    0.062
-   ],
-   [
-    0.98,
-    0.062
-   ],
-   [
-    0.99,
-    0.062
-   ],
-   [
-    1,
-    0.062
-   ]
-  ],
-  "qY0j5kTWY48": [
-   [
-    0.01,
-    1.111
-   ],
-   [
-    0.02,
-    0.944
-   ],
-   [
-    0.03,
-    0.944
-   ],
-   [
-    0.04,
-    0.944
-   ],
-   [
-    0.05,
-    0.889
-   ],
-   [
-    0.06,
-    0.833
-   ],
-   [
-    0.07,
-    0.833
-   ],
-   [
-    0.08,
-    0.833
-   ],
-   [
-    0.09,
-    0.833
-   ],
-   [
-    0.1,
-    0.833
-   ],
-   [
-    0.11,
-    0.833
-   ],
-   [
-    0.12,
-    0.833
-   ],
-   [
-    0.13,
-    0.778
-   ],
-   [
-    0.14,
-    0.778
-   ],
-   [
-    0.15,
-    0.722
-   ],
-   [
-    0.16,
-    0.722
-   ],
-   [
-    0.17,
-    0.778
-   ],
-   [
-    0.18,
-    0.778
-   ],
-   [
-    0.19,
-    0.778
-   ],
-   [
-    0.2,
-    0.778
-   ],
-   [
-    0.21,
-    0.778
-   ],
-   [
-    0.22,
-    0.778
-   ],
-   [
-    0.23,
-    0.778
-   ],
-   [
-    0.24,
-    0.778
-   ],
-   [
-    0.25,
-    0.722
-   ],
-   [
-    0.26,
-    0.722
-   ],
-   [
-    0.27,
-    0.667
-   ],
-   [
-    0.28,
-    0.611
-   ],
-   [
-    0.29,
-    0.611
-   ],
-   [
-    0.3,
-    0.5
-   ],
-   [
-    0.31,
-    0.5
-   ],
-   [
-    0.32,
-    0.5
-   ],
-   [
-    0.33,
-    0.5
-   ],
-   [
-    0.34,
-    0.5
-   ],
-   [
-    0.35,
-    0.5
-   ],
-   [
-    0.36,
-    0.5
-   ],
-   [
-    0.37,
-    0.5
-   ],
-   [
-    0.38,
-    0.5
-   ],
-   [
-    0.39,
-    0.444
-   ],
-   [
-    0.4,
-    0.444
-   ],
-   [
-    0.41,
-    0.444
-   ],
-   [
-    0.42,
-    0.444
-   ],
-   [
-    0.43,
-    0.444
-   ],
-   [
-    0.44,
-    0.444
-   ],
-   [
-    0.45,
-    0.444
-   ],
-   [
-    0.46,
-    0.444
-   ],
-   [
-    0.47,
-    0.444
-   ],
-   [
-    0.48,
-    0.389
-   ],
-   [
-    0.49,
-    0.333
-   ],
-   [
-    0.5,
-    0.278
-   ],
-   [
-    0.51,
-    0.278
-   ],
-   [
-    0.52,
-    0.278
-   ],
-   [
-    0.53,
-    0.278
-   ],
-   [
-    0.54,
-    0.278
-   ],
-   [
-    0.55,
-    0.278
-   ],
-   [
-    0.56,
-    0.278
-   ],
-   [
-    0.57,
-    0.278
-   ],
-   [
-    0.58,
-    0.278
-   ],
-   [
-    0.59,
-    0.278
-   ],
-   [
-    0.6,
-    0.333
-   ],
-   [
-    0.61,
-    0.278
-   ],
-   [
-    0.62,
-    0.278
-   ],
-   [
-    0.63,
-    0.278
-   ],
-   [
-    0.64,
-    0.278
-   ],
-   [
-    0.65,
-    0.278
-   ],
-   [
-    0.66,
-    0.278
-   ],
-   [
-    0.67,
-    0.278
-   ],
-   [
-    0.68,
-    0.222
-   ],
-   [
-    0.69,
-    0.222
-   ],
-   [
-    0.7,
-    0.222
-   ],
-   [
-    0.71,
-    0.222
-   ],
-   [
-    0.72,
-    0.222
-   ],
-   [
-    0.73,
-    0.222
-   ],
-   [
-    0.74,
-    0.222
-   ],
-   [
-    0.75,
-    0.222
-   ],
-   [
-    0.76,
-    0.222
-   ],
-   [
-    0.77,
-    0.222
-   ],
-   [
-    0.78,
-    0.222
-   ],
-   [
-    0.79,
-    0.222
-   ],
-   [
-    0.8,
-    0.222
-   ],
-   [
-    0.81,
-    0.222
-   ],
-   [
-    0.82,
-    0.222
-   ],
-   [
-    0.83,
-    0.222
-   ],
-   [
-    0.84,
-    0.222
-   ],
-   [
-    0.85,
-    0.222
-   ],
-   [
-    0.86,
-    0.222
-   ],
-   [
-    0.87,
-    0.222
-   ],
-   [
-    0.88,
-    0.222
-   ],
-   [
-    0.89,
-    0.222
-   ],
-   [
-    0.9,
-    0.222
-   ],
-   [
-    0.91,
-    0.222
-   ],
-   [
-    0.92,
-    0.222
-   ],
-   [
-    0.93,
-    0.167
-   ],
-   [
-    0.94,
-    0.167
-   ],
-   [
-    0.95,
-    0.167
-   ],
-   [
-    0.96,
-    0.167
-   ],
-   [
-    0.97,
-    0.167
-   ],
-   [
-    0.98,
-    0.167
-   ],
-   [
-    0.99,
-    0.167
-   ],
-   [
-    1,
-    0.167
-   ]
-  ]
- },
+ "retencao": {},
  "avisos": []
 }

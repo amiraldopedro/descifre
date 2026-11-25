@@ -34,7 +34,7 @@
    "download": "https://github.com/amiraldopedro/descifre/actions/runs/45406633615",
    "status": "publicado",
    "youtube_id": "VZjDvgNgyOw",
-   "views": 105,
+   "views": 966,
    "publicado_em": "2026-11-24T17:57:55Z"
   },
   {
@@ -1039,7 +1039,7 @@
    "youtube_id": "QxZLkJqWiRU",
    "status": "publicado",
    "agendado_para": "2026-11-23T15:00:00Z",
-   "views": 16,
+   "views": 22,
    "publicado_em": "2026-11-23T15:00:12Z"
   },
   {
@@ -1215,7 +1215,7 @@
    "status": "publicado",
    "youtube_id": "62DAMS2vQzc",
    "agendado_para": "2026-11-23T22:00:00Z",
-   "views": 866,
+   "views": 906,
    "publicado_em": "2026-11-23T22:00:33Z"
   },
   {
@@ -1476,6 +1476,10 @@
     {
      "quando": "2026-11-12T04:40:57+00:00",
      "status": "agendado"
+    },
+    {
+     "quando": "2026-11-25T19:14:21+00:00",
+     "status": "publicado"
     }
    ],
    "tipo": "short",
@@ -1494,10 +1498,11 @@
    "duracao_s": 32,
    "run": "43089100016",
    "download": "https://github.com/amiraldopedro/descifre/actions/runs/43089100016",
-   "status": "agendado",
+   "status": "publicado",
    "youtube_id": "YIK0S5cp6tE",
    "agendado_para": "2026-11-24T22:00:00Z",
-   "views": 0
+   "views": 464,
+   "publicado_em": "2026-11-24T22:00:19Z"
   },
   {
    "id": "s17",
@@ -1760,6 +1765,10 @@
     {
      "quando": "2026-11-12T04:41:09+00:00",
      "status": "agendado"
+    },
+    {
+     "quando": "2026-11-25T19:14:21+00:00",
+     "status": "publicado"
     }
    ],
    "tipo": "short",
@@ -1778,10 +1787,11 @@
    "duracao_s": 33,
    "run": "42874182237",
    "download": "https://github.com/amiraldopedro/descifre/actions/runs/42874182237",
-   "status": "agendado",
+   "status": "publicado",
    "youtube_id": "JIYCggQjYmU",
    "agendado_para": "2026-11-25T15:00:00Z",
-   "views": 0
+   "views": 8,
+   "publicado_em": "2026-11-25T15:00:11Z"
   },
   {
    "id": "s09",
@@ -1816,7 +1826,7 @@
    "status": "publicado",
    "youtube_id": "N9QpTP-W2Rk",
    "agendado_para": "2026-11-24T15:00:00Z",
-   "views": 8,
+   "views": 56,
    "publicado_em": "2026-11-24T15:00:23Z"
   },
   {
@@ -2299,7 +2309,7 @@
    "status": "publicado",
    "youtube_id": "D3enVn9AkA0",
    "agendado_para": "2026-11-24T13:00:00Z",
-   "views": 1,
+   "views": 9,
    "publicado_em": "2026-11-24T13:00:08Z"
   },
   {
@@ -2422,5 +2432,5 @@
   ],
   "fuso": "America/Sao_Paulo"
  },
- "atualizado": "2026-11-24T20:09:46+00:00"
+ "atualizado": "2026-11-25T19:14:21+00:00"
 }
