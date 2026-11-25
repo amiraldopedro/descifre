@@ -1,6 +1,20 @@
 {
  "itens": [
   {
+   "id": "c02",
+   "criado": "2026-11-25T20:34:49+00:00",
+   "notas": [],
+   "historico": [],
+   "tipo": "longo",
+   "titulo": "Se Você Fosse Phineas Gage, Uma Barra de Ferro Atravessaria Sua Cabeça 💀 #shorts",
+   "thumb_texto": {},
+   "tema": "Se Você Fosse Phineas Gage, Uma Barra de Ferro Atravessaria Sua Cabeça 💀 #shorts",
+   "duracao_s": 44,
+   "run": "45695223314",
+   "download": "https://github.com/amiraldopedro/descifre/actions/runs/45695223314",
+   "status": "renderizado"
+  },
+  {
    "id": "s44",
    "criado": "2026-11-24T13:54:03+00:00",
    "notas": [],
@@ -2432,5 +2446,5 @@
   ],
   "fuso": "America/Sao_Paulo"
  },
- "atualizado": "2026-11-25T19:14:21+00:00"
+ "atualizado": "2026-11-25T20:34:49+00:00"
 }
