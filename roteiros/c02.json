@@ -1,0 +1,125 @@
+{
+ "id": "c02",
+ "motor": "ps1",
+ "cinema": "gage",
+ "formato": "short",
+ "titulo": "Se Você Fosse Phineas Gage, Uma Barra de Ferro Atravessaria Sua Cabeça 💀 #shorts",
+ "voz": "pt-BR-AntonioNeural",
+ "taxa": "+6%",
+ "tom": "-6Hz",
+ "trilha": "drama1",
+ "cenas": [
+  {
+   "id": 1,
+   "texto": "Se você fosse Phineas Gage, uma barra de ferro de seis quilos atravessaria a sua cabeça.",
+   "planos": [
+    {
+     "tiro": "escuro_barra",
+     "palavras": 8
+    },
+    {
+     "tiro": "barra_voa"
+    }
+   ],
+   "sons": [
+    {
+     "som": "riser_suave",
+     "t": 0
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "texto": "Mil oitocentos e quarenta e oito. Você soca pólvora numa rocha.",
+   "planos": [
+    {
+     "tiro": "grua_ferrovia",
+     "palavras": 5,
+     "marca": {
+      "tipo": "data",
+      "txt": "1848",
+      "x": 8,
+      "y": 17
+     }
+    },
+    {
+     "tiro": "barra_detalhe"
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "texto": "Alguém chama o seu nome. Você vira a cabeça…",
+   "planos": [
+    {
+     "tiro": "gage_vira",
+     "palavras": 4
+    },
+    {
+     "tiro": "gage_vira_close"
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "texto": "e a barra bate na pedra.",
+   "planos": [
+    {
+     "tiro": "faisca"
+    }
+   ],
+   "sons": [
+    {
+     "som": "metal",
+     "t": 0.55,
+     "vol": 0.9
+    },
+    {
+     "som": "boom_forte",
+     "t": 0.85,
+     "vol": 1.0
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "texto": "Ela entra pela sua bochecha esquerda, sai pelo topo da cabeça e cai a mais de vinte metros.",
+   "planos": [
+    {
+     "tiro": "barra_voa2"
+    }
+   ]
+  },
+  {
+   "id": 6,
+   "texto": "E você? Não desmaia. Minutos depois, está sentado numa carroça… conversando.",
+   "planos": [
+    {
+     "tiro": "porta_contra",
+     "palavras": 4
+    },
+    {
+     "tiro": "carroca"
+    }
+   ]
+  },
+  {
+   "id": 7,
+   "texto": "Você sobrevive. Mas os seus amigos dizem: esse não é mais o Gage.",
+   "planos": [
+    {
+     "tiro": "porta_amigos"
+    }
+   ]
+  },
+  {
+   "id": 8,
+   "texto": "O que mudou dentro da sua cabeça? Eu sou o Cifrinho, e a história inteira está no canal.",
+   "planos": [
+    {
+     "tiro": "cifrinho"
+    }
+   ]
+  }
+ ]
+}

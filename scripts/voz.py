@@ -80,7 +80,7 @@ def candidatos(cena, roteiro):
     taxa_rot = roteiro.get("taxa", TAXA)
     lista = []
     if quem == "cifrinho":
-        lista.append((roteiro.get("voz", ficha.get("voz", "pt-BR-AntonioNeural")), taxa_rot, ficha.get("tom", "+0Hz")))
+        lista.append((roteiro.get("voz", ficha.get("voz", "pt-BR-AntonioNeural")), taxa_rot, roteiro.get("tom", ficha.get("tom", "+0Hz"))))
         lista.append(("pt-BR-AntonioNeural", taxa_rot, "+0Hz"))  # reserva se a voz principal falhar
     else:
         lista.append((ficha.get("voz", "pt-BR-AntonioNeural"), ficha.get("taxa", taxa_rot), ficha.get("tom", "+0Hz")))

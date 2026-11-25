@@ -1,0 +1,194 @@
+{
+ "id": "c01",
+ "motor": "ps1",
+ "cinema": "gage",
+ "formato": "longo",
+ "titulo": "E se você fosse Phineas Gage? (abertura piloto)",
+ "voz": "pt-BR-AntonioNeural",
+ "taxa": "-4%",
+ "tom": "-6Hz",
+ "trilha": "drama1",
+ "cenas": [
+  {
+   "id": 1,
+   "texto": "Se você fosse Phineas Gage, uma barra de ferro atravessaria a sua cabeça.",
+   "planos": [
+    {
+     "tiro": "escuro_barra",
+     "palavras": 5
+    },
+    {
+     "tiro": "barra_voa"
+    }
+   ],
+   "sons": [
+    {
+     "som": "riser_suave",
+     "t": 0
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "texto": "Depois, você subiria numa carroça… sentado, conversando.",
+   "planos": [
+    {
+     "tiro": "carroca"
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "texto": "Depois, os seus amigos diriam que você morreu. Mesmo com você ali, vivo, na frente deles.",
+   "planos": [
+    {
+     "tiro": "porta_amigos",
+     "palavras": 8
+    },
+    {
+     "tiro": "porta_contra"
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "texto": "E se você fosse Phineas Gage?",
+   "planos": [
+    {
+     "tiro": "titulo",
+     "marca": {
+      "tipo": "cap",
+      "txt": "E SE VOCÊ FOSSE<br>PHINEAS GAGE?"
+     }
+    }
+   ],
+   "sons": [
+    {
+     "som": "boom",
+     "t": 0.05,
+     "vol": 0.7
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "texto": "Mas agora? É treze de setembro de mil oitocentos e quarenta e oito.",
+   "planos": [
+    {
+     "tiro": "grua_ferrovia",
+     "marca": {
+      "tipo": "data",
+      "txt": "13 DE SETEMBRO DE 1848",
+      "x": 6,
+      "y": 10
+     }
+    }
+   ]
+  },
+  {
+   "id": 6,
+   "texto": "Você tem vinte e cinco anos, e é o capataz mais respeitado da ferrovia.",
+   "planos": [
+    {
+     "tiro": "gage_close",
+     "marcas": [
+      {
+       "tipo": "idade",
+       "txt": "25 ANOS",
+       "x": 60,
+       "y": 34
+      },
+      {
+       "tipo": "nome",
+       "txt": "PHINEAS GAGE",
+       "x": 14,
+       "y": 16,
+       "seta": [
+        230,
+        120
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 7,
+   "texto": "Você está em Cavendish, no interior de Vermont, abrindo caminho na rocha para os trilhos do trem.",
+   "planos": [
+    {
+     "tiro": "travelling_corte",
+     "marca": {
+      "tipo": "data",
+      "txt": "CAVENDISH, VERMONT",
+      "x": 6,
+      "y": 10
+     }
+    }
+   ]
+  },
+  {
+   "id": 8,
+   "texto": "O seu trabalho é o mais perigoso da obra: furar a pedra e encher o buraco de pólvora…",
+   "planos": [
+    {
+     "tiro": "furo_polvora"
+    }
+   ]
+  },
+  {
+   "id": 9,
+   "texto": "e socar tudo com uma barra de ferro. Um metro e nove. Seis quilos.",
+   "planos": [
+    {
+     "tiro": "barra_detalhe",
+     "marca": {
+      "tipo": "idade",
+      "txt": "1,09 m · 6 kg",
+      "x": 62,
+      "y": 30
+     }
+    }
+   ]
+  },
+  {
+   "id": 10,
+   "texto": "São quatro e meia da tarde. Alguém chama o seu nome.",
+   "planos": [
+    {
+     "tiro": "gage_vira"
+    }
+   ]
+  },
+  {
+   "id": 11,
+   "texto": "Você vira a cabeça…",
+   "planos": [
+    {
+     "tiro": "gage_vira_close"
+    }
+   ]
+  },
+  {
+   "id": 12,
+   "texto": "e a barra bate na pedra.",
+   "planos": [
+    {
+     "tiro": "faisca"
+    }
+   ],
+   "sons": [
+    {
+     "som": "metal",
+     "t": 0.55,
+     "vol": 0.9
+    },
+    {
+     "som": "boom_forte",
+     "t": 0.85,
+     "vol": 1.0
+    }
+   ]
+  }
+ ]
+}

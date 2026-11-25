@@ -1,0 +1,250 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8">
+<!-- "E se você fosse Phineas Gage?" — cenários e planos de cinema. Tempo de cada plano vem de filme.json (ps1_montar.py). -->
+<script>VIDEO={w:__W__,h:__H__,fps:30,dur:__DUR__}</script>
+<script src="../../lib/boot.js"></script>
+<style>
+@font-face{font-family:'Poppins';src:url(../../lib/fonts/Poppins-ExtraBold.ttf);font-weight:600 900}
+@font-face{font-family:'Baskerville';src:url(../../lib/fonts/LibreBaskerville-Italic.woff2);font-style:italic}
+@font-face{font-family:'Baskerville';src:url(../../lib/fonts/LibreBaskerville-Regular.woff2)}
+#stage{background:#000;overflow:hidden;width:var(--w);height:var(--h);position:relative}.layer{position:absolute;inset:0;width:100%;height:100%}</style></head><body>
+<div id="stage"></div>
+<script type="module">
+import * as C from '../../lib/cinema.js';
+const { THREE } = C;
+const V = window.VIDEO, VERT = V.h > V.w;
+
+window.SETUP = async () => {
+  const F = await fetch('filme.json').then(r => r.json());
+  const S = C.estudio({ divisor: 3, tarja: VERT ? 0 : .06, fov: 35 });
+
+  // ════════════ PERSONAGENS ════════════
+  const ROSTO_GAGE = { pele: '#cf9f7e', peleEsc: '#a07052', cabelo: '#3b2414', iris: '#4a6070', seed: 21 };
+  const novoGage = (extra = {}) => C.pessoa({ rosto: { ...ROSTO_GAGE, ...extra }, cores: { camisa: '#d8ccb4', colete: '#3c3128', calca: '#3a332c', chapeu: '#2b231c' } });
+  const operario = (seed, cores = {}) => C.pessoa({ rosto: { pele: ['#c49473', '#a87556', '#d6a989'][seed % 3], cabelo: ['#2a1a10', '#5a3a1c', '#1a1410'][seed % 3], bigode: seed % 2 === 0, barba: seed === 3, seed }, cores: { camisa: ['#8a7a60', '#6d5a44', '#9c8a6c'][seed % 3], colete: '#2e2620', calca: '#2c2722', ...cores } });
+  const segurarBarra = (p) => { const [e, d] = p.partes.bracos; e.rotation.set(-1.15, 0, .35); d.rotation.set(-1.15, 0, -.35); };
+
+  // ════════════ CENÁRIO 1: FERROVIA (fim de tarde dourado) ════════════
+  const fer = new THREE.Group(); S.scene.add(fer);
+  const ceuFer = C.ceu({ topo: '#2c3c66', meio: '#c98a52', baixo: '#f2c487', sol: [-.7, .32, -.55], solCor: '#ffe0a8', solI: 5, nuvem: .7 });
+  fer.add(ceuFer);
+  const solFer = C.sol({ cor: '#ffcf92', forca: 4.2, pos: [-9, 13, -7], alvo: [0, 0, 0], area: 14, mapa: 2048 }); fer.add(solFer);
+  fer.add(new THREE.HemisphereLight('#8fa2d4', '#5a4030', 1.1));
+  const chaoFer = C.terreno({ w: 120, d: 120, seg: 60, altura: 3, plano: 7, mapa: C.TEX.grama(), y: 0 }); fer.add(chaoFer);
+  // leito da ferrovia: cascalho, dormentes e trilhos (só até onde já foram assentados)
+  const leito = new THREE.Mesh(new THREE.BoxGeometry(5.6, .06, 40), C.mat({ mapa: C.TEX.cascalho(), rep: [4, 28] })); leito.position.set(0, .03, -6); leito.receiveShadow = true; fer.add(leito);
+  const madeira = C.mat({ mapa: C.TEX.madeira(5, '#5b3f26'), rep: [1, 1] }), ferro = C.mat({ cor: '#3b3836', brilho: .6, spec: '#ffcf96' });
+  for (let z = -26; z < -2.5; z += .62) { const d = new THREE.Mesh(new THREE.BoxGeometry(2.3, .1, .22), madeira); d.position.set(0, .1, z); d.castShadow = d.receiveShadow = true; fer.add(d); }
+  for (const x of [-.72, .72]) { const t = new THREE.Mesh(new THREE.BoxGeometry(.07, .1, 23.5), ferro); t.position.set(x, .2, -14.2); t.castShadow = true; fer.add(t); }
+  // dormentes soltos esperando, empilhados
+  for (let i = 0; i < 6; i++) { const d = new THREE.Mesh(new THREE.BoxGeometry(2.3, .1, .22), madeira); d.position.set(2.6 + (i % 2) * .05, .1 + i * .11, -1.6 + (i % 3) * .02); d.rotation.y = 1.45 + (i % 2) * .08; d.castShadow = d.receiveShadow = true; fer.add(d); }
+  // o corte na rocha: paredões dos dois lados
+  for (let i = 0; i < 9; i++) {
+    for (const lado of [-1, 1]) {
+      const r = C.rocha({ w: 3, h: 3.6 + (i % 3) * .7, d: 4.6, seg: 5, forca: .28, seed: 30 + i * 2 + (lado > 0 ? 1 : 0), rep: [4, 4] });
+      r.position.set(lado * (4.1 + (i % 2) * .4), 1.4, -24 + i * 4.4); r.rotation.y = i * .7; fer.add(r);
+    }
+  }
+  // a laje onde Gage trabalha: um bloco baixo com o furo
+  const laje = C.rocha({ w: 2.2, h: .5, d: 1.6, seg: 4, forca: .12, seed: 77, rep: [3, 2] }); laje.position.set(0, .05, .55); fer.add(laje);
+  const furo = new THREE.Mesh(new THREE.CylinderGeometry(.035, .035, .02, 8), C.basico('#050302')); furo.position.set(0, .31, .42); fer.add(furo);
+  // pólvora caindo (grãos escuros) e polvorinho
+  const polvorinho = new THREE.Group(); { const c = new THREE.Mesh(new THREE.ConeGeometry(.06, .2, 6), C.mat({ cor: '#3a2a1a', brilho: .3 })); c.rotation.z = Math.PI; polvorinho.add(c); const b = new THREE.Mesh(new THREE.CylinderGeometry(.012, .012, .05, 6), C.mat({ cor: '#b08a40', brilho: .9 })); b.position.y = -.12; polvorinho.add(b); }
+  polvorinho.position.set(.05, .62, .42); fer.add(polvorinho);
+  const graos = new THREE.Points(new THREE.BufferGeometry().setAttribute('position', new THREE.BufferAttribute(new Float32Array(60 * 3), 3)), new THREE.PointsMaterial({ color: '#100c08', size: 2, sizeAttenuation: false })); fer.add(graos);
+  // Gage + barra
+  const gage = novoGage(); gage.position.set(0, 0, -.05); fer.add(gage); segurarBarra(gage);
+  const barra = C.barraFerro(); barra.position.set(0, .32, .42); fer.add(barra);
+  // operários (um deles chama o nome dele)
+  const op1 = operario(1); op1.position.set(-2.1, 0, -3.2); op1.rotation.y = .9; fer.add(op1);
+  const op2 = operario(2); op2.position.set(1.8, 0, -6.5); op2.rotation.y = -2.4; op2.partes.bracos[1].rotation.x = -1.6; fer.add(op2);
+  const op3 = operario(3); op3.position.set(-1.2, 0, -10); op3.rotation.y = .3; fer.add(op3);
+  const marreta = new THREE.Mesh(new THREE.BoxGeometry(.05, .9, .05), madeira); marreta.position.set(.2, -.4, .1); op2.partes.bracos[1].add(marreta);
+  // atmosfera: feixes do sol entre os paredões e poeira
+  const raios = [C.feixe({ de: [-9, 7, -10], para: [1, 0, -1], comp: 16, r0: .6, r1: 3.2, cor: '#ffc983', forca: .16 }), C.feixe({ de: [-9, 7.5, -5], para: [2, 0, 3], comp: 16, r0: .4, r1: 2.2, cor: '#ffd59a', forca: .12 })];
+  raios.forEach(r => fer.add(r));
+  const poFer = C.poeira({ n: 260, caixa: [7, 3, 9], cor: '#ffdcaa', forca: 1.4, seed: 8 }); poFer.position.set(0, 0, -1); fer.add(poFer);
+  // faísca: pontos brilhantes que explodem do furo
+  const nF = 80, faiscaPos = new Float32Array(nF * 3), faiscaV = []; { const r = C.rng(4); for (let i = 0; i < nF; i++) faiscaV.push([(r() - .5) * 2.4, r() * 2.6 + .6, (r() - .5) * 2.4]); }
+  const faiscas = new THREE.Points(new THREE.BufferGeometry().setAttribute('position', new THREE.BufferAttribute(faiscaPos, 3)), new THREE.PointsMaterial({ color: new THREE.Color('#ffd27a').multiplyScalar(8), size: 3, sizeAttenuation: false, transparent: true, blending: THREE.AdditiveBlending, depthWrite: false }));
+  fer.add(faiscas);
+  const rebate = new THREE.PointLight('#ffbf80', 2.2, 3.5, 1.5); rebate.position.set(.7, .9, 1.3); fer.add(rebate);
+  const luzFaisca = new THREE.PointLight('#ffb050', 0, 6, 1.4); luzFaisca.position.set(0, .5, .45); fer.add(luzFaisca);
+
+  // ════════════ CENÁRIO 2: ROCHA À NOITE (a barra encostada, um lampião) ════════════
+  const noite = new THREE.Group(); S.scene.add(noite);
+  noite.add(new THREE.HemisphereLight('#1a2038', '#050404', .25));
+  const paredao = C.rocha({ w: 6, h: 4, d: 2, seg: 8, forca: .22, seed: 5, rep: [7, 5] }); paredao.position.set(0, 1.6, -1.2); noite.add(paredao);
+  const chaoN = new THREE.Mesh(new THREE.PlaneGeometry(14, 14), C.mat({ mapa: C.TEX.cascalho(9), rep: [8, 8] })); chaoN.rotation.x = -Math.PI / 2; chaoN.receiveShadow = true; noite.add(chaoN);
+  const barraN = C.barraFerro(); barraN.position.set(0, 0, -.12); barraN.rotation.set(-.18, 0, .12); noite.add(barraN);
+  const lampN = C.lampiao({ forca: 4.5, alcance: 6, sombra: true, seed: 2 }); lampN.position.set(.45, 0, .55); noite.add(lampN);
+  const poN = C.poeira({ n: 120, caixa: [2.5, 1.6, 2], cor: '#ffc27a', forca: 1.2, seed: 3 }); poN.position.set(0, 0, .2); noite.add(poN);
+
+  // ════════════ CENÁRIO 3: O CÉU (a barra voando contra o pôr do sol) ════════════
+  const ceuG = new THREE.Group(); S.scene.add(ceuG);
+  ceuG.add(C.ceu({ topo: '#3a2a4a', meio: '#d36a3a', baixo: '#ffbf6a', sol: [.2, .05, -1], solCor: '#fff0c0', solI: 6, nuvem: .9 }));
+  ceuG.add(new THREE.HemisphereLight('#ffb070', '#201010', .6));
+  const solC = C.sol({ cor: '#ffb070', forca: 2.5, pos: [2, 3, -12] }); ceuG.add(solC);
+  const barraC = C.barraFerro(); ceuG.add(barraC);
+  const silh = []; for (let i = 0; i < 5; i++) { const r = C.rocha({ w: 4, h: 2.4, d: 3, seg: 4, forca: .3, seed: 60 + i, cor: '#3a2c26' }); r.position.set(-8 + i * 4, -.6, -3 - (i % 2)); ceuG.add(r); silh.push(r); }
+  const fumaca = []; { const r = C.rng(12); for (let i = 0; i < 14; i++) { const f = new THREE.Mesh(new THREE.IcosahedronGeometry(.5, 0), C.mat({ cor: '#7a6a62', flat: true })); f.userData = { x: (r() - .5) * 2, z: (r() - .5) * 1.5, v: .6 + r() * .8, s: .6 + r() }; ceuG.add(f); fumaca.push(f); } }
+
+  // ════════════ CENÁRIO 4: ESTRADA AO ANOITECER (a carroça) ════════════
+  const est = new THREE.Group(); S.scene.add(est);
+  est.add(C.ceu({ topo: '#141d3a', meio: '#5a4a6a', baixo: '#c0785a', sol: [1, .02, -.3], solCor: '#ff9a60', solI: 2, nuvem: .6 }));
+  est.add(new THREE.HemisphereLight('#4a5a8a', '#1a1410', .45));
+  const solE = C.sol({ cor: '#ff9060', forca: 1.4, pos: [14, 2.5, -4] }); est.add(solE);
+  const estrada = new THREE.Mesh(new THREE.PlaneGeometry(200, 3, 100, 2), C.mat({ mapa: C.TEX.terra(), rep: [80, 1.5] })); estrada.rotation.x = -Math.PI / 2; estrada.position.y = .02; estrada.receiveShadow = true; est.add(estrada);
+  est.add(C.terreno({ w: 200, d: 80, seg: 60, altura: 2.5, plano: 3, mapa: C.TEX.grama(7), cor: '#9a9a8a' }));
+  const cerca = C.mat({ mapa: C.TEX.madeira(3, '#4a3826') });
+  for (let x = -60; x < 60; x += 2.2) { const poste = new THREE.Mesh(new THREE.BoxGeometry(.08, .9, .08), cerca); poste.position.set(x, .45, -2.2); poste.castShadow = true; est.add(poste); }
+  { const v = new THREE.Mesh(new THREE.BoxGeometry(120, .06, .05), cerca); v.position.set(0, .7, -2.2); est.add(v); }
+  const carroca = new THREE.Group(); est.add(carroca);
+  { const tab = C.mat({ mapa: C.TEX.tabua(), rep: [1, 1] });
+    const caixa = new THREE.Mesh(new THREE.BoxGeometry(1.8, .12, 1.1), tab); caixa.position.y = .7; carroca.add(caixa);
+    for (const z of [-.55, .55]) { const lat = new THREE.Mesh(new THREE.BoxGeometry(1.8, .3, .05), tab); lat.position.set(0, .88, z); carroca.add(lat); }
+    carroca.rodas = [-.6, .6].map(z => { const r = new THREE.Mesh(new THREE.CylinderGeometry(.42, .42, .06, 10), C.mat({ mapa: C.TEX.madeira(4, '#3d2c1c'), flat: true })); r.rotation.x = Math.PI / 2; r.position.set(-.2, .42, z); carroca.add(r); return r; });
+    for (const z of [-.3, .3]) { const v = new THREE.Mesh(new THREE.BoxGeometry(1.6, .05, .05), tab); v.position.set(1.6, .62, z); carroca.add(v); }
+    // boi em silhueta (formas simples, ele quase só aparece contra o céu)
+    const couro = C.mat({ cor: '#3a2a20' }); const boi = new THREE.Group(); boi.position.set(2.5, 0, 0); carroca.add(boi);
+    const corpo = new THREE.Mesh(new THREE.BoxGeometry(1.4, .7, .6), couro); corpo.position.y = 1.0; boi.add(corpo);
+    const cab = new THREE.Mesh(new THREE.BoxGeometry(.45, .4, .35), couro); cab.position.set(.85, 1.05, 0); boi.add(cab);
+    for (const s of [-1, 1]) { const ch = new THREE.Mesh(new THREE.ConeGeometry(.04, .25, 4), C.mat({ cor: '#d8cbb0' })); ch.position.set(.85, 1.3, s * .2); ch.rotation.x = s * .9; boi.add(ch); }
+    boi.pernas = [[-.5, -.2], [-.5, .2], [.5, -.2], [.5, .2]].map(([x, z]) => { const p = new THREE.Mesh(new THREE.BoxGeometry(.15, .7, .15), couro); p.geometry.translate(0, -.35, 0); p.position.set(x, .7, z); boi.add(p); return p; });
+    carroca.boi = boi;
+    carroca.traverse(o => { if (o.isMesh) o.castShadow = o.receiveShadow = true; });
+  }
+  const gageC = novoGage({ olhoE: false }); gageC.position.set(-.3, .76, 0); gageC.rotation.y = Math.PI / 2 - .35; carroca.add(gageC);
+  gageC.partes.pernas.forEach(p => p.rotation.x = -1.45); gageC.position.y = .32;
+  gageC.partes.bracos[0].rotation.set(-.5, 0, .2); gageC.partes.bracos[1].rotation.set(-.5, 0, -.2);
+  const ataduras = new THREE.Mesh(new THREE.BoxGeometry(.28, .1, .29), C.mat({ cor: '#e8e0d0' })); ataduras.position.y = .3; gageC.partes.cab.add(ataduras);
+  const condutor = operario(2); condutor.position.set(.6, .32, .2); condutor.rotation.y = Math.PI / 2; condutor.partes.pernas.forEach(p => p.rotation.x = -1.45); carroca.add(condutor);
+  const lampE = C.lampiao({ forca: 4, alcance: 6, sombra: false, seed: 5 }); lampE.position.set(.95, 1.25, -.5); carroca.add(lampE);
+  { const haste = new THREE.Mesh(new THREE.BoxGeometry(.04, .9, .04), cerca); haste.position.set(.95, 1.0, -.55); carroca.add(haste); }
+
+  // ════════════ CENÁRIO 5: A TAVERNA (amigos na porta, à noite) ════════════
+  const tav = new THREE.Group(); S.scene.add(tav);
+  tav.add(new THREE.HemisphereLight('#1c2440', '#060505', .35));
+  const lua = C.sol({ cor: '#8aa0d8', forca: .5, pos: [-6, 8, 8] }); tav.add(lua);
+  const tabTav = C.mat({ mapa: C.TEX.tabua(14), rep: [3, 2] });
+  for (const [x, w] of [[-2.6, 4], [2.6, 4]]) { const p = new THREE.Mesh(new THREE.BoxGeometry(w, 3.2, .2), tabTav); p.position.set(x, 1.6, 0); p.castShadow = p.receiveShadow = true; tav.add(p); }
+  { const v = new THREE.Mesh(new THREE.BoxGeometry(1.2, 1.0, .2), tabTav); v.position.set(0, 2.7, 0); tav.add(v); }
+  const interior = new THREE.Mesh(new THREE.BoxGeometry(6, 3.2, 4), C.mat({ mapa: C.TEX.tabua(15), rep: [4, 2], lados: true, cor: '#ffffff' })); interior.position.set(0, 1.6, -2.1); tav.add(interior);
+  const chaoTav = new THREE.Mesh(new THREE.PlaneGeometry(20, 20), C.mat({ mapa: C.TEX.terra(5), rep: [10, 10] })); chaoTav.rotation.x = -Math.PI / 2; chaoTav.receiveShadow = true; tav.add(chaoTav);
+  const luzDentro = C.luzPontual({ cor: '#ffa04a', forca: 14, alcance: 9, bulbo: false, seed: 9 }); luzDentro.position.set(0, 1.8, -1.6); tav.add(luzDentro);
+  const porta = C.foco({ cor: '#ffad60', forca: 40, pos: [0, 2.2, -1.4], alvo: [0, 0, 3], angulo: .55, penumbra: .6 }); tav.add(porta);
+  const feixePorta = C.feixe({ de: [0, 2.3, -.4], para: [0, 0, 4], comp: 5.5, r0: .5, r1: 2, cor: '#ffb062', forca: .14 }); tav.add(feixePorta);
+  const amigos = [operario(1), operario(3), operario(2)];
+  amigos.forEach((a, i) => { a.position.set((i - 1) * .55, 0, .15 - (i === 1 ? .35 : 0)); a.rotation.y = (i - 1) * -.15; tav.add(a); });
+  amigos[0].partes.bracos[1].rotation.set(-.3, 0, -.5); amigos[2].partes.bracos[0].rotation.set(-.6, 0, .9);
+  const gageT = novoGage({ olhoE: false, olhar: 0 }); gageT.position.set(0, 0, 3); gageT.rotation.y = Math.PI; tav.add(gageT);
+  const poT = C.poeira({ n: 120, caixa: [2, 2.4, 4], cor: '#ffc27a', forca: 1.3, seed: 7 }); poT.position.set(0, 0, 1.5); tav.add(poT);
+
+  // ════════════ CENÁRIO 6: TÍTULO e CIFRINHO (escuro, uma luz) ════════════
+  const tit = new THREE.Group(); S.scene.add(tit);
+  const poTit = C.poeira({ n: 200, caixa: [6, 4, 4], cor: '#ffd9a0', forca: 1.1, seed: 13 }); poTit.position.set(0, -.5, -2); tit.add(poTit);
+  const feixeTit = C.feixe({ de: [0, 4, -3], para: [0, -2, -3], comp: 7, r0: .3, r1: 2.2, cor: '#ffd29a', forca: .12 }); tit.add(feixeTit);
+  // Cifrinho em PS1: cérebro vermelho, terceiro olho, anel ciano
+  const cif = new THREE.Group(); tit.add(cif); cif.position.set(0, -.15, -2.4);
+  { const brainTex = C.textura(32, 32, (x, w, h, r) => { x.fillStyle = '#e8384c'; x.fillRect(0, 0, w, h); x.strokeStyle = '#a3172b'; for (let i = 0; i < 16; i++) { x.beginPath(); let px = r() * w, py = r() * h; x.moveTo(px, py); for (let k = 0; k < 4; k++) { px += (r() - .5) * 10; py += (r() - .5) * 10; x.lineTo(Math.round(px), Math.round(py)); } x.stroke(); } }, { seed: 3 });
+    for (const s of [-1, 1]) { const g = new THREE.Mesh(new THREE.SphereGeometry(.42, 10, 8), C.mat({ mapa: brainTex, rep: [2, 1], brilho: .2 })); g.scale.set(.9, 1, 1.15); g.position.x = s * .2; cif.add(g); }
+    const olhoB = C.mat({ cor: '#ffffff' }), pup = C.basico('#0a0a14');
+    for (const s of [-1, 1]) { const o = new THREE.Mesh(new THREE.SphereGeometry(.09, 8, 6), olhoB); o.position.set(s * .17, .02, .42); cif.add(o); const p = new THREE.Mesh(new THREE.SphereGeometry(.045, 6, 4), pup); p.position.set(s * .17, .02, .5); cif.add(p); }
+    const tE = new THREE.Mesh(new THREE.SphereGeometry(.06, 8, 6), C.basico('#5BE0FF')); tE.material.color.multiplyScalar(3); tE.position.set(0, .25, .44); cif.add(tE);
+    const anel = new THREE.Mesh(new THREE.TorusGeometry(.62, .025, 4, 24), C.basico('#5BE0FF')); anel.material.color.multiplyScalar(2.5); anel.rotation.x = 1.3; cif.add(anel); cif.anel = anel;
+    const boca = new THREE.Mesh(new THREE.TorusGeometry(.07, .015, 4, 8, Math.PI), C.basico('#3a0a10')); boca.rotation.z = Math.PI; boca.position.set(0, -.13, .44); cif.add(boca);
+  }
+  const lampTit = C.lampiao({ forca: 5, alcance: 6, sombra: false, seed: 11 }); lampTit.position.set(.55, -.75, -2.1); tit.add(lampTit);
+  const luzCif = new THREE.PointLight('#5BE0FF', 3, 4, 1.5); luzCif.position.set(-.9, .6, -1.5); tit.add(luzCif);
+  const chaveCif = new THREE.PointLight('#ffe2c0', 6, 5, 1.5); chaveCif.position.set(.5, .5, -1.2); tit.add(chaveCif); tit.add(new THREE.HemisphereLight('#3a4a7a', '#140c08', .5));
+
+  // ════════════ MAPA DE CENÁRIOS ════════════
+  const corFer = '#c99368';
+  const CEN = {
+    fer: { grupo: fer, fundo: null, nevoa: ['#d5a274', 14, 80], expo: 1.35, tinta: '#fff4e6' },
+    noite: { grupo: noite, fundo: new THREE.Color('#030304'), nevoa: ['#030304', 2, 9], expo: 1.1 },
+    ceu: { grupo: ceuG, fundo: null, nevoa: ['#e09060', 20, 80], expo: 1.0 },
+    est: { grupo: est, fundo: null, nevoa: ['#5a4a5a', 10, 60], expo: 1.15, tinta: '#e8ecff' },
+    tav: { grupo: tav, fundo: new THREE.Color('#05060c'), nevoa: ['#05060c', 6, 22], expo: 1.1 },
+    tit: { grupo: tit, fundo: new THREE.Color('#020203'), nevoa: ['#020203', 3, 10], expo: 1.0 },
+  };
+
+  // ════════════ PLANOS (câmera por plano; vert = Short 9:16) ════════════
+  const fov = f => VERT ? Math.min(75, f * 1.75) : f;
+  const TIROS = {
+    escuro_barra: p => ({ cena: 'noite', de: { pos: [.75, .45, 1.6], alvo: [0, .55, 0], fov: fov(30) }, ate: { pos: [.38, .8, .85], alvo: [0, .8, -.05], fov: fov(28) }, ease: 'lento', mao: .3, fadeIn: .6 }),
+    barra_voa: p => ({ cena: 'ceu', de: { pos: [-.6, 1.0, 2.6], alvo: [-.6, 1.6, -1], fov: fov(38) }, ate: { pos: [1.6, 3.4, 1.4], alvo: [2.2, 4.4, -2.6], fov: fov(38) }, ease: 'linear', mao: .6, voo: 1 }),
+    barra_voa2: p => ({ cena: 'ceu', de: { pos: [0, .4, 4.2], alvo: [0, 2.4, -1.5], fov: fov(44) }, ate: { pos: [.6, .6, 3.8], alvo: [1, 3.2, -2], fov: fov(44) }, ease: 'linear', mao: .7, voo: 2 }),
+    carroca: p => { const d = p.t1 - p.t0; return { cena: 'est', de: { pos: [-1.5, 1.2, 6.5], alvo: [.6, 1.1, 0], fov: fov(32) }, ate: { pos: [-.5 + d * .55, 1.2, 6.0], alvo: [d * .55 + .8, 1.1, 0], fov: fov(30) }, ease: 'linear', mao: .4, carro: d }; },
+    porta_amigos: p => ({ cena: 'tav', de: { pos: [1.15, 1.7, 5.4], alvo: [-.1, 1.35, 0], fov: fov(32) }, ate: { pos: [.95, 1.68, 4.8], alvo: [-.1, 1.4, 0], fov: fov(30) }, ease: 'lento', mao: .3 }),
+    porta_contra: p => ({ cena: 'tav', de: { pos: [.35, 1.6, 1.5], alvo: [0, 1.62, 3], fov: fov(30) }, ate: { pos: [.25, 1.62, 1.85], alvo: [0, 1.62, 3], fov: fov(28) }, ease: 'lento', mao: .25 }),
+    titulo: p => ({ cena: 'tit', de: { pos: [0, 0, 2], alvo: [0, 0, -3], fov: fov(35) }, ate: { pos: [0, 0, 1.6], alvo: [0, 0, -3], fov: fov(35) }, ease: 'lento', mao: .1, semCif: true }),
+    cifrinho: p => ({ cena: 'tit', de: { pos: [.3, .1, 1.2], alvo: [0, -.1, -2.4], fov: fov(30) }, ate: { pos: [0, 0, .6], alvo: [0, -.05, -2.4], fov: fov(30) }, ease: 'lento', mao: .2, fadeOut: .8 }),
+    grua_ferrovia: p => ({ cena: 'fer', de: { pos: [5, 8.5, 16], alvo: [0, .8, -4], fov: fov(42) }, ate: { pos: [2.6, 2.1, 6.4], alvo: [0, 1, 0], fov: fov(36) }, ease: 'inout', mao: .15 }),
+    gage_close: p => ({ cena: 'fer', de: { pos: [.95, 1.66, 1.7], alvo: [0, 1.6, 0], fov: fov(28) }, ate: { pos: [.62, 1.63, 1.3], alvo: [0, 1.6, 0], fov: fov(27) }, ease: 'lento', mao: .3 }),
+    travelling_corte: p => ({ cena: 'fer', de: { pos: [-1.5, 1.45, -14], alvo: [2, 1.1, -11.5], fov: fov(40) }, ate: { pos: [-1.5, 1.45, -5], alvo: [2, 1.1, -3], fov: fov(40) }, ease: 'linear', mao: .3, tamp: true }),
+    furo_polvora: p => ({ cena: 'fer', de: { pos: [.55, .6, 1.2], alvo: [0, .3, .42], fov: fov(30) }, ate: { pos: [.4, .55, .95], alvo: [0, .32, .42], fov: fov(28) }, ease: 'lento', mao: .25, polvora: true }),
+    barra_detalhe: p => ({ cena: 'fer', de: { pos: [-.95, .38, 1.15], alvo: [.2, .85, .3], fov: fov(32) }, ate: { pos: [-.75, .45, .95], alvo: [.2, .9, .3], fov: fov(30) }, ease: 'lento', mao: .3, tamp: true }),
+    gage_vira: p => ({ cena: 'fer', de: { pos: [1.7, 1.35, 2.6], alvo: [0, 1.25, 0], fov: fov(32) }, ate: { pos: [1.45, 1.4, 2.25], alvo: [0, 1.35, 0], fov: fov(31) }, ease: 'lento', mao: .3, tamp: true, chama: true }),
+    gage_vira_close: p => ({ cena: 'fer', de: { pos: [.5, 1.62, .9], alvo: [0, 1.6, 0], fov: fov(26) }, ate: { pos: [.36, 1.62, .66], alvo: [0, 1.6, 0], fov: fov(25) }, ease: 'inout', mao: .35, vira: true }),
+    faisca: p => ({ cena: 'fer', de: { pos: [.42, .42, .95], alvo: [0, .3, .42], fov: fov(30) }, ate: { pos: [.36, .4, .82], alvo: [0, .3, .42], fov: fov(29) }, ease: 'lento', mao: .4, bate: true, fadeOut: .01 }),
+  };
+  const planos = F.planos.map(p => ({ ...p, ...(TIROS[p.tiro] ?? TIROS.titulo)(p) }));
+  C.cenarios(S, CEN, planos);
+  C.rodaCamera(S, planos);
+
+  // ════════════ ANIMAÇÃO POR PLANO ════════════
+  const pAt = t => planos.find(x => t >= x.t0 && t < x.t1) ?? planos[planos.length - 1];
+  S.update.push(t => {
+    const p = pAt(t), k = C.clamp((t - p.t0) / Math.max(.01, p.t1 - p.t0)), dt = t - p.t0;
+    // ferrovia
+    raios.forEach(r => r.anima(t)); poFer.anima(t); poN.anima(t); poT.anima(t); poTit.anima(t); feixePorta.anima(t); feixeTit.anima(t);
+    lampN.tremula(t); lampE.tremula(t); lampTit.tremula(t); luzDentro.tremula(t, .08);
+    // socar a barra: sobe e desce num ritmo pesado
+    const soca = p.tamp ? Math.max(0, Math.sin(dt * 3.2)) : 0;
+    barra.position.y = .32 + soca * .32; gage.partes.tronco.rotation.x = .12 + soca * .06;
+    gage.partes.bracos.forEach(b => b.rotation.x = -1.15 + soca * .35);
+    // pólvora
+    polvorinho.visible = !!p.polvora; graos.visible = !!p.polvora; barra.visible = !p.polvora || true;
+    if (p.polvora) { polvorinho.rotation.z = .9 + Math.sin(dt) * .05; const a = graos.geometry.attributes.position; for (let i = 0; i < 60; i++) { const f = ((dt * 1.6 + i / 60) % 1); a.setXYZ(i, .05 + Math.sin(i * 7) * .006, .52 - f * .22, .42 + Math.cos(i * 5) * .006); } a.needsUpdate = true; barra.position.y = .9; }
+    // alguém chama: Gage para e vira a cabeça para a esquerda dele
+    const vira = p.vira ? C.EASE.inout(C.clamp((k - .2) / .6)) : 0;
+    gage.partes.cab.rotation.y = p.vira ? vira * .9 : (p.bate ? .9 : 0);
+    op1.partes.bracos[1].rotation.x = p.chama ? -2.6 + Math.sin(dt * 5) * .15 : 0;
+    // a batida: a barra desce, faísca, clarão, preto
+    faiscas.visible = !!p.bate; luzFaisca.intensity = 0; S.U.uFlash.value = 0;
+    if (p.bate) {
+      const desce = C.clamp(k / .5); barra.position.y = .32 + (1 - C.EASE.entra(desce)) * .4;
+      const kf = C.clamp((k - .5) / .5); const a = faiscas.geometry.attributes.position;
+      for (let i = 0; i < nF; i++) { const v = faiscaV[i]; a.setXYZ(i, v[0] * kf * .5, .31 + v[1] * kf * .5 - 1.6 * kf * kf * .25, .42 + v[2] * kf * .5); }
+      a.needsUpdate = true; faiscas.material.opacity = kf > 0 ? 1 : 0;
+      luzFaisca.intensity = kf > 0 ? 25 * (1 - kf * .5) : 0;
+      S.U.uFlash.value = k > .62 ? C.clamp((k - .62) / .12) : 0;
+    }
+    // céu: a barra gira no ar
+    if (p.voo) {
+      const v = p.voo === 2 ? k : k;
+      barraC.position.set(-1.6 + v * 4.5, .8 + v * 4.2 - v * v * 1.2, -1 - v * 2);
+      barraC.rotation.set(v * 9, .4, v * 13);
+      fumaca.forEach((f, i) => { const u = f.userData, s = (p.voo === 1 ? k : k) * u.v; f.position.set(u.x * (1 + s), -.2 + s * 1.6, u.z - 1); f.scale.setScalar(u.s * (.3 + s * 1.4)); f.rotation.set(s, s * .7, 0); });
+    }
+    // carroça andando
+    if (p.carro != null) { const x = dt * .55; carroca.position.x = x; carroca.rodas.forEach(r => r.rotation.y = -x / .42); carroca.boi.pernas.forEach((pe, i) => pe.rotation.z = Math.sin(dt * 5 + i * Math.PI / 2 + (i > 1 ? Math.PI : 0)) * .35); lampE.rotation.z = Math.sin(dt * 2.2) * .15; gageC.partes.cab.rotation.y = .3 + Math.sin(dt * 1.3) * .25; carroca.position.y = Math.abs(Math.sin(dt * 6)) * .015; }
+    // Cifrinho flutua e fala
+    cif.visible = !p.semCif; cif.position.y = -.15 + Math.sin(t * 2) * .05; cif.anel.rotation.z = t * .8; cif.rotation.y = Math.sin(t * .7) * .25;
+    // fades
+    let fade = 0;
+    if (p.fadeIn) fade = Math.max(fade, 1 - C.clamp(dt / p.fadeIn));
+    if (p.fadeOut) fade = Math.max(fade, C.clamp((t - (p.t1 - p.fadeOut)) / p.fadeOut));
+    if (p.bate && k > .74) fade = Math.max(fade, C.clamp((k - .74) / .06));
+    S.U.uFade.value = fade;
+  });
+
+  // ════════════ SOBREPOSIÇÕES ════════════
+  const marcas = [];
+  for (const p of planos) {
+    const lista = p.marcas ?? (p.marca ? [p.marca] : []);
+    lista.forEach((m, i) => marcas.push({ ...m, t0: p.t0 + .35 + i * .5, t1: p.t1 - .1, ...(VERT && m.x != null ? { x: Math.min(m.x, 55), y: m.y + 8 } : {}) }));
+  }
+  C.sobreposicoes({ palavras: F.palavras, marcas, tarja: !VERT });
+};
+</script></body></html>

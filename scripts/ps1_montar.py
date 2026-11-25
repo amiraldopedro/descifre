@@ -126,10 +126,16 @@ def main(vid, estimar=False):
         a["t1"] = b["t0"]
     planos[-1]["t1"] = round(t + 0.6, 3)
     total = round(t + 0.6, 2)
-    planos = picotar(planos)
+    cinema = rot.get("cinema")
+    if not cinema:
+        planos = picotar(planos)
     # efeitos automáticos: um por corte (alternando), pop na etiqueta, impacto na onomatopeia, riser antes da revelação
+    if cinema:   # cinema: corte seco e silencioso; só os efeitos marcados no roteiro, mais um grave no fim
+        planos_auto = []
+    else:
+        planos_auto = planos
     cortes = ["whoosh", "swish", "whoosh_leve", "swipe", "whoosh", "zip"]
-    for i, p in enumerate(planos):
+    for i, p in enumerate(planos_auto):
         if i > 0:
             troca = planos[i - 1]["cena"] != p["cena"]
             if p.get("sub"):
@@ -146,12 +152,18 @@ def main(vid, estimar=False):
             sons.append(("relogio_rapido", p["t0"], 0.5))
         if p.get("cena") == "vazio" and (i == 0 or planos[i - 1].get("cena") != "vazio"):
             sons.append(("brilho", p["t0"] + 0.1, 0.5))
-    sons.append(("ding", planos[-1]["t0"] + 0.1, 0.6))
+    if not cinema:
+        sons.append(("ding", planos[-1]["t0"] + 0.1, 0.6))
 
     # ── página do motor ──
     pasta = RAIZ / "ps1" / "videos" / vid
     pasta.mkdir(parents=True, exist_ok=True)
-    modelo = (RAIZ / "ps1" / "videos" / "_modelo" / "index.html").read_text()
+    if cinema:
+        w, h = (1080, 1920) if rot.get("formato") == "short" else (1920, 1080)
+        modelo = (RAIZ / "ps1" / "cinema" / f"{cinema}.html").read_text()
+        modelo = modelo.replace("__W__", str(w)).replace("__H__", str(h))
+    else:
+        modelo = (RAIZ / "ps1" / "videos" / "_modelo" / "index.html").read_text()
     (pasta / "index.html").write_text(modelo.replace("__DUR__", str(total)))
     filme = {"gancho": rot.get("gancho"), "elenco": rot.get("elenco", {"voce": {}}), "destaque": rot.get("destaque", []),
              "palavras": palavras, "planos": planos}
@@ -193,7 +205,7 @@ def main(vid, estimar=False):
     # crédito da trilha (publicar.py lê o manifesto)
     man = RAIZ / "public" / "build" / vid / "manifest.json"
     man.parent.mkdir(parents=True, exist_ok=True)
-    man.write_text(json.dumps({"formato": "short", "musica": f"musica/{trilha}.mp3", "totalFrames": int(total * 30)}, ensure_ascii=False))
+    man.write_text(json.dumps({"formato": rot.get("formato", "short"), "musica": f"musica/{trilha}.mp3", "totalFrames": int(total * 30)}, ensure_ascii=False))
     print(f"{vid}: {len(planos)} planos em {total:.1f}s ({total / len(planos):.2f}s por plano), {len(sons)} efeitos")
 
 
